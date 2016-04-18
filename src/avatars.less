@@ -1,59 +1,59 @@
 // Avatars
 .avatar {
+  border-radius: 50%;
   display: inline-block;
-  width: 3.2rem;
-  height: 3.2rem;
   font-size: 1.4rem;
   font-weight: 300;
+  height: 3.2rem;
   line-height: 1;
   margin: 0;
-  border-radius: 50%;
-  vertical-align: middle;
   position: relative;
+  vertical-align: middle;
+  width: 3.2rem;
 
   &.avatar-xs {
-    width: 1.6rem;
-    height: 1.6rem;
     font-size: .8rem;
+    height: 1.6rem;
+    width: 1.6rem;
   }
   &.avatar-sm {
-    width: 2.4rem;
-    height: 2.4rem;
     font-size: 1rem;
+    height: 2.4rem;
+    width: 2.4rem;
   }
   &.avatar-lg {
-    width: 4.8rem;
-    height: 4.8rem;
     font-size: 2rem;
+    height: 4.8rem;
+    width: 4.8rem;
   }
   &.avatar-xl {
-    width: 6.4rem;
-    height: 6.4rem;
     font-size: 2.6rem;
+    height: 6.4rem;
+    width: 6.4rem;
   }
 
   img {
-    width: 100%;
-    height: 100%;
     border-radius: 50%;
+    height: 100%;
+    width: 100%;
   }
 
   .avatar-icon {
-    width: 50%;
+    background-color: #fff;
+    bottom: -.2em;
     height: 50%;
     padding: 5%;
     position: absolute;
     right: -.2em;
-    bottom: -.2em;
-    background-color: #fff;
+    width: 50%;
   }
 
   &[data-initial]::after {
+    color: #fff;
     content: attr(data-initial);
+    left: 50%;
     position: absolute;
     top: 50%;
-    left: 50%;
-    color: #fff;
     transform: translate(-50%, -50%);
   }
 }

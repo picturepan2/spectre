@@ -1,16 +1,16 @@
 // Labels
 .label {
+  background-color: @core-border-color;
+  border-radius: .2rem;
+  color: lighten(@body-font-color, 20%);
   display: inline-block;
-  padding: .2rem .4rem;
   font-size: .9em;
   line-height: 1em;
-  color: lighten(@body-font-color, 20%);
-  background-color: @core-border-color;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: baseline;
   margin: -.2rem .1em 0 .1em;
-  border-radius: .2rem;
+  padding: .2rem .4rem;
+  text-align: center;
+  vertical-align: baseline;
+  white-space: nowrap;
 
   &.label-primary {
     .toast-variant(@core-color);

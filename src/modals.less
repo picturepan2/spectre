@@ -1,29 +1,29 @@
 // Modals
 .modal {
-  display: none;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
   align-items: center;
+  bottom: 0;
+  display: none;
   justify-content: center;
-  overflow: hidden;
+  left: 0;
   opacity: 0;
+  overflow: hidden;
+  position: fixed;
+  right: 0;
+  top: 0;
 
   &.active {
     display: flex;
-    z-index: 1988;
     opacity: 1;
+    z-index: 1988;
 
     .modal-overlay {
-      display: block;
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
       background-color: rgba(0, 0, 0, .75);
+      bottom: 0;
+      display: block;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
     }
     .modal-container {
       animation: slide-down .216s;
@@ -31,29 +31,29 @@
   }
 }
 .modal-container {
+  animation: slide-up .216s;
+  background-color: #fff;
+  border-radius: .3rem;
   display: block;
-  text-align: left;
   margin: 0 auto;
   padding: 0;
-  border-radius: .3rem;
-  background-color: #fff;
-  z-index: 1988;
-  animation: slide-up .216s;
   .shadow;
+  text-align: left;
+  z-index: 1988;
 
   .modal-header {
     padding: 1.5rem;
 
     .modal-title {
-      margin: 0;
       font-size: 1.5rem;
+      margin: 0;
     }
   }
   .modal-body {
-    position: relative;
-    padding: 1.5rem;
     max-height: 50vh;
     overflow-y: auto;
+    padding: 1.5rem;
+    position: relative;
   }
   .modal-footer {
     padding: 1.5rem;

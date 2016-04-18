@@ -1,20 +1,19 @@
 // Base
-* {
-  box-sizing: border-box;
-}
+*,
 *::before,
 *::after {
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 html {
+  box-sizing: border-box;
   font-size: 10px;
   -webkit-tap-highlight-color: transparent;
 }
 body {
+  background-color: @body-bg;
   color: @body-font-color;
   font-family: @body-font-family;
   font-size: @body-font-size;
-  background-color: @body-bg;
 }
 a {
   color: @core-link-color;
@@ -28,8 +27,8 @@ a {
 // Disabled state
 &[disabled],
 .disabled {
-  opacity: .5;
   cursor: default;
+  opacity: .5;
   pointer-events: none;
 }
 
@@ -38,9 +37,9 @@ a {
 .toast,
 .menu {
   .icon {
-    margin-right: .2rem;
     font-size: 1.3333em;
-    line-height: 0.8em;
+    line-height: .8em;
+    margin-right: .2rem;
     vertical-align: -20%;
   }
 }

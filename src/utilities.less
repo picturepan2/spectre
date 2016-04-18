@@ -101,11 +101,11 @@
   visibility: hidden;
 }
 .text-hide {
-  font: 0/0 a;
-  color: transparent;
-  text-shadow: none;
   background-color: transparent;
   border: 0;
+  color: transparent;
+  font: 0/0 a;
+  text-shadow: none;
 }
 // Text
 .text-left {
@@ -142,19 +142,19 @@
 }
 
 .text-ellipsis {
-  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .text-clip {
-  white-space: nowrap;
   overflow: hidden;
   text-overflow: clip;
+  white-space: nowrap;
 }
 .text-break {
+  hyphens: auto;
   word-break: break-word;
   word-wrap: break-word;
-  hyphens: auto;
 }
 .hand {
   cursor: pointer;
@@ -178,25 +178,25 @@
 
 // Loading
 .loading {
-  min-height: 1.6rem;
-  position: relative;
-  pointer-events: none;
   color: transparent !important;
+  min-height: 1.6rem;
+  pointer-events: none;
+  position: relative;
 
   &::after {
+    animation: loading 500ms infinite linear;
     border: .2rem solid @core-color;
+    border-radius: .8rem;
     border-right-color: transparent;
     border-top-color: transparent;
-    border-radius: .8rem;
     content: "";
-    position: absolute;
+    display: block;
+    height: 1.6rem;
     left: 50%;
-    top: 50%;
     margin-left: -.8rem;
     margin-top: -.8rem;
-    display: block;
+    position: absolute;
+    top: 50%;
     width: 1.6rem;
-    height: 1.6rem;
-    animation: loading 500ms infinite linear;
   }
 }

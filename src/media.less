@@ -1,28 +1,28 @@
 // Media
 .img-responsive {
   display: block;
-  max-width: 100%;
   height: auto;
+  max-width: 100%;
 }
 .video-responsive {
-  position: relative;
   height: 0;
-  padding-top: 3rem;
-  padding-bottom: 100% / (16 / 9);
   overflow: hidden;
+  padding-bottom: 100% / (16 / 9);
+  padding-top: 3rem;
+  position: relative;
 
   iframe,
   object,
   embed {
+    height: 100%;
+    left: 0;
     position: absolute;
     top: 0;
-    left: 0;
     width: 100%;
-    height: 100%;
   }
   video {
-    width: 100%;
-    max-width: 100%;
     height: auto;
+    max-width: 100%;
+    width: 100%;
   }
 }

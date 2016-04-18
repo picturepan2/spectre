@@ -1,53 +1,53 @@
 // Buttons
 .btn {
-  display: inline-block;
-  height: 3.2rem;
-  padding: .7rem 1.5rem;
-  border: .1rem solid @core-color;
+  -webkit-appearance: none;
   background-color: transparent;
+  border: .1rem solid @core-color;
   border-radius: .3rem;
   color: @core-link-color;
+  cursor: pointer;
+  display: inline-block;
   font-size: 1.4rem;
+  height: 3.2rem;
   line-height: 1.6rem;
+  outline: 0;
+  padding: .7rem 1.5rem;
   text-align: center;
   text-decoration: none;
+  user-select: none;
   vertical-align: middle;
   white-space: nowrap;
-  cursor: pointer;
-  user-select: none;
-  -webkit-appearance: none;
-  outline: 0;
 
   &:hover,
   &:focus {
-    color: #fff;
-    border-color: darken(@core-color, 5%);
     background-color: @core-color;
+    border-color: darken(@core-color, 5%);
+    color: #fff;
   }
   &:active,
   &.active {
-    color: #fff;
-    border-color: darken(@core-color, 10%);
     background-color: darken(@core-color, 5%);
+    border-color: darken(@core-color, 10%);
+    color: #fff;
   }
 
   // Button Primary
   &.btn-primary {
-    color: #fff;
-    border-color: darken(@core-color, 5%);
     background-color: @core-color;
+    border-color: darken(@core-color, 5%);
+    color: #fff;
 
     &:hover,
     &:focus {
-      color: #fff;
-      border-color: darken(@core-color, 10%);
       background-color: darken(@core-color, 5%);
+      border-color: darken(@core-color, 10%);
+      color: #fff;
     }
     &:active,
     &.active {
-      color: #fff;
-      border-color: darken(@core-color, 15%);
       background-color: darken(@core-color, 10%);
+      border-color: darken(@core-color, 15%);
+      color: #fff;
     }
 
     &.loading {
@@ -61,9 +61,9 @@
 
   // Button Link
   &.btn-link {
-    color: @core-link-color;
-    border-color: transparent;
     background-color: transparent;
+    border-color: transparent;
+    color: @core-link-color;
 
     &:hover,
     &:focus {
@@ -77,40 +77,40 @@
 
   // Button Small
   &.btn-sm {
-    height: 2.4rem;
     border-radius: .2rem;
     font-size: 1.2rem;
+    height: 2.4rem;
     line-height: 1.4rem;
     padding: .4rem 1rem;
   }
 
   // Button Large
   &.btn-lg {
-    height: 4.2rem;
     border-radius: .4rem;
     font-size: 1.8rem;
+    height: 4.2rem;
     line-height: 2rem;
     padding: 1rem 1.8rem;
   }
 
   // Button Block
   &.btn-block {
-    width: 100%;
     display: block;
+    width: 100%;
   }
 
   // Button Clear
   &.btn-clear {
-    width: 1.4rem;
-    height: 1.4rem;
-    padding: 0;
-    margin: .1rem -.2rem .1rem .2rem;
+    background-color: transparent;
     border: 0;
     border-radius: .7rem;
-    vertical-align: top;
-    position: relative;
-    background-color: transparent;
+    height: 1.4rem;
+    margin: .1rem -.2rem .1rem .2rem;
     opacity: .35;
+    padding: 0;
+    position: relative;
+    vertical-align: top;
+    width: 1.4rem;
 
     &:hover {
       opacity: .75;
@@ -118,26 +118,26 @@
 
     &::before,
     &::after {
+      background-color: #333;
       content: "";
       display: block;
+      left: 50%;
       position: absolute;
       top: 50%;
-      left: 50%;
-      background-color: #333;
       transform: rotate(-45deg);
     }
 
     &::before {
-      width: 1rem;
       height: .2rem;
       margin-left: -.5rem;
       margin-top: -.1rem;
+      width: 1rem;
     }
     &::after {
-      width: .2rem;
       height: 1rem;
       margin-left: -.1rem;
       margin-top: -.5rem;
+      width: .2rem;
     }
   }
 }
@@ -151,17 +151,17 @@
     flex: 1 0 auto;
 
     &:first-child:not(:last-child) {
-      border-top-right-radius: 0;
       border-bottom-right-radius: 0;
+      border-top-right-radius: 0;
     }
     &:not(:first-child):not(:last-child) {
-      margin-left: -.1rem;
       border-radius: 0;
+      margin-left: -.1rem;
     }
     &:last-child:not(:first-child) {
-      margin-left: -.1rem;
-      border-top-left-radius: 0;
       border-bottom-left-radius: 0;
+      border-top-left-radius: 0;
+      margin-left: -.1rem;
     }
     &:hover,
     &:focus {

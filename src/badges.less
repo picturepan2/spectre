@@ -1,21 +1,21 @@
 // Badges
 .badge {
   position: relative;
-  
+
   &::after {
-    content: attr(data-badge);
-    color: #fff;
-    font-size: 1.2rem;
-    text-align: center;
-    line-height: 1.4rem;
     background-color: @core-color;
-    display: inline-block;
-    min-width: 2rem;
-    height: 2rem;
-    padding: .2rem .5rem;
     border: .1rem solid #fff;
     border-radius: 1rem;
-    white-space: nowrap;
+    color: #fff;
+    content: attr(data-badge);
+    display: inline-block;
+    font-size: 1.2rem;
+    height: 2rem;
+    line-height: 1.4rem;
+    min-width: 2rem;
+    padding: .2rem .5rem;
+    text-align: center;
     transform: translate(-.2rem, -.8rem);
+    white-space: nowrap;
   }
 }

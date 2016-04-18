@@ -20,18 +20,18 @@
 // Mixins
 .clearfix() {
   &::after {
+    clear: both;
     content: "";
     display: table;
-    clear: both;
   }
 }
 
 .toast-variant(@color) {
-  color: #fff;
   background-color: @color;
   border-color: darken(@color, 2%);
+  color: #fff;
 }
 .label-variant(@color) {
-  color: #fff;
   background-color: @color;
+  color: #fff;
 }

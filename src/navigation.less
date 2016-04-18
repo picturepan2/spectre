@@ -27,27 +27,27 @@
 
     &:not(:last-child) {
       &::after {
+        color: @control-color;
         content: "/";
         padding: 0 .4rem;
-        color: @control-color;
       }
     }
   }
 }
 // Tabs
 .tab {
-  display: block;
   border-bottom: .1rem solid @control-color;
+  display: block;
 
   .tab-item {
     display: inline-block;
     margin-bottom: -.1rem;
 
     a {
-      display: block;
-      padding: .5rem 1.5rem;
       border-bottom: .2rem solid transparent;
       color: @body-font-color;
+      display: block;
+      padding: .5rem 1.5rem;
       text-decoration: none;
 
       &:hover,
@@ -87,10 +87,10 @@
       padding: .6rem .5rem;
     }
     a {
-      display: inline-block;
-      padding: .6rem 1.2rem;
-      margin: 0 .1rem;
       border-radius: .3rem;
+      display: inline-block;
+      margin: 0 .1rem;
+      padding: .6rem 1.2rem;
       text-decoration: none;
 
       &:hover,
@@ -101,10 +101,9 @@
 
     &.active {
       a {
-        color: #fff;
         background-color: @core-color;
+        color: #fff;
       }
     }
   }
 }
-

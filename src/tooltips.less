@@ -3,25 +3,25 @@
   position: relative;
 
   &::after {
+    background-color: fade(#333, 90%);
+    border-radius: .3rem;
+    bottom: 100%;
+    color: #fff;
     content: attr(data-tooltip);
     display: block;
-    max-width: 32rem;
-    padding: .6rem 1rem;
-    border-radius: .3rem;
-    background-color: fade(#333, 90%);
-    opacity: 0;
-    color: #fff;
     font-size: 1.2rem;
-    line-height: 1.6rem;
-    text-overflow: ellipsis;
-    position: absolute;
-    bottom: 100%;
     left: 50%;
-    transform: translate(-50%, 0);
+    line-height: 1.6rem;
+    max-width: 32rem;
+    opacity: 0;
     overflow: hidden;
-    z-index: 99;
+    padding: .6rem 1rem;
     pointer-events: none;
+    position: absolute;
+    text-overflow: ellipsis;
+    transform: translate(-50%, 0);
     transition: all .216s ease;
+    z-index: 99;
   }
   &:hover,
   &:focus {
@@ -46,8 +46,8 @@
   }
   &.tooltip-bottom {
     &::after {
-      top: 100%;
       bottom: auto;
+      top: 100%;
       transform: translate(-50%, 0);
     }
     &:hover,
@@ -59,9 +59,9 @@
   }
   &.tooltip-left {
     &::after {
-      right: 100%;
       bottom: 50%;
       left: auto;
+      right: 100%;
       transform: translate(0, 50%);
     }
     &:hover,

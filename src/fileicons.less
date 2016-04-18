@@ -1,111 +1,111 @@
 // File icons
 .file-icon {
-  display: inline-block;
-  width: 2.4rem;
-  height: 3.2rem;
   background-color: transparent;
-  position: relative;
-  border-width: 0 0 2.2rem 1.4rem;
-  border-style: solid;
   border-color: @control-color;
   border-radius: .2rem;
+  border-style: solid;
+  border-width: 0 0 2.2rem 1.4rem;
+  display: inline-block;
+  height: 3.2rem;
+  position: relative;
   text-align: left;
+  width: 2.4rem;
   zoom: 1;
 
   &::before,
   &::after {
-    position: absolute;
-    top: 0;
-    right: 0;
-    content: '';
-    width: 1rem;
-    height: 1rem;
+    background-color: transparent;
     border: .5rem solid @control-color;
     border-right-color: transparent;
     border-top-color: transparent;
-    background-color: transparent;
+    content: "";
+    height: 1rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1rem;
     z-index: 2;
   }
   &::after {
-    content: attr(data-type);
-    border-color: rgba(255, 255, 255, .5);
     border-bottom-left-radius: .2rem;
+    border-color: rgba(255, 255, 255, .5);
     color: #fff;
+    content: attr(data-type);
     font-size: 1rem;
-    text-indent: -1.6rem;
     line-height: 3.6rem;
+    text-indent: -1.6rem;
     z-index: 3;
   }
 
   &.file-icon-xs {
-    width: 1.2rem;
-    height: 1.6rem;
     border-width: 0 0 1.2rem .8rem;
+    height: 1.6rem;
+    width: 1.2rem;
 
     &::before,
     &::after {
-      width: .4rem;
-      height: .4rem;
       border-width: .2rem;
+      height: .4rem;
+      width: .4rem;
     }
     &::after {
-      text-indent: -.8rem;
-      line-height: 1.6rem;
-      font-size: .8rem;
       border-radius: .1rem;
-      content: '--';
+      content: "--";
+      font-size: .8rem;
+      line-height: 1.6rem;
+      text-indent: -.8rem;
     }
   }
   &.file-icon-sm {
-    width: 1.8rem;
-    height: 2.4rem;
     border-width: 0 0 1.6rem 1rem;
+    height: 2.4rem;
+    width: 1.8rem;
 
     &::before,
     &::after {
-      width: .8rem;
-      height: .8rem;
       border-width: .4rem;
+      height: .8rem;
+      width: .8rem;
     }
     &::after {
-      text-indent: -1.2rem;
-      line-height: 2.6rem;
       font-size: .8rem;
+      line-height: 2.6rem;
+      text-indent: -1.2rem;
     }
   }
   &.file-icon-lg {
-    width: 3.6rem;
-    height: 4.8rem;
     border-width: 0 0 3.4rem 2.2rem;
+    height: 4.8rem;
+    width: 3.6rem;
 
     &::before,
     &::after {
-      width: 1.4rem;
-      height: 1.4rem;
       border-width: .7rem;
+      height: 1.4rem;
+      width: 1.4rem;
     }
     &::after {
-      text-indent: -2.6rem;
-      line-height: 6.2rem;
       font-size: 1.2rem;
+      line-height: 6.2rem;
+      text-indent: -2.6rem;
     }
   }
   &.file-icon-xl {
-    width: 4.8rem;
-    height: 6.4rem;
-    border-width: 0 0 4.6rem 3rem;
     border-radius: .3rem;
+    border-width: 0 0 4.6rem 3rem;
+    height: 6.4rem;
+    width: 4.8rem;
 
     &::before,
     &::after {
-      width: 1.8rem;
-      height: 1.8rem;
       border-width: .9rem;
+      height: 1.8rem;
+      width: 1.8rem;
     }
     &::after {
-      text-indent: -3.4rem;
-      line-height: 8.8rem;
       font-size: 1.4rem;
+      line-height: 8.8rem;
+      text-indent: -3.4rem;
     }
   }
 }
