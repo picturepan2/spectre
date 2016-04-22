@@ -10,5 +10,10 @@
 
   &.toast-primary {
     .toast-variant(@core-color);
+    .btn.btn-clear {
+      &:before, &:after {
+        background-color: #fff !important;
+      }
+    }
   }
 }
