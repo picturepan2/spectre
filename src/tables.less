@@ -3,7 +3,7 @@
   border-collapse: collapse;
   border-spacing: 0;
   width: 100%;
-
+  
   th,
   td {
     border-bottom: .1rem solid @core-border-color;
@@ -15,5 +15,36 @@
   }
   .selected {
     background: lighten(@core-border-color, 2%);
+  }
+  &.table-striped-odd {
+    tbody tr:nth-child(odd) {
+      background: lighten(@core-border-color, 2%);
+    }
+  }
+  &.table-striped-even {
+    tbody tr:nth-child(even) {
+      background: lighten(@core-border-color, 2%);
+    }
+  }
+  &.table-vertical-header {
+    thead {
+      float: left;
+      th {
+        display: block;
+      }
+      th, td {
+        border-bottom: none;
+        border-right: .1rem solid darken(@core-border-color, 5%);
+      }
+    }
+    
+    tbody {
+      float: left;  
+    }
+  }
+  &.table-hover {
+    tbody tr:hover {
+      background: darken(@core-border-color, 15%) !important;
+    }
   }
 }
