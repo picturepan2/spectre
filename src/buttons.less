@@ -37,7 +37,6 @@
   &.btn-primary {
     background: @core-color;
     border-color: darken(@core-color, 5%);
-    color: @core-light-color;
 
     &:focus {
       background: darken(@core-color, 2%);
@@ -45,15 +44,61 @@
     &:hover {
       background: darken(@core-color, 5%);
       border-color: darken(@core-color, 10%);
-      color: @core-light-color;
     }
     &:active,
     &.active {
       background: darken(@core-color, 10%);
       border-color: darken(@core-color, 15%);
+    }
+  }
+
+  // Button Danger
+  &.btn-danger {
+    background: @control-color-danger;
+    border-color: darken(@control-color-danger, 5%);
+
+    &:focus {
+      background: darken(@control-color-danger, 2%);
+    }
+    &:hover {
+      background: darken(@control-color-danger, 5%);
+      border-color: darken(@control-color-danger, 10%);
+    }
+    &:active,
+    &.active {
+      background: darken(@control-color-danger, 10%);
+      border-color: darken(@control-color-danger, 15%);
+    }
+  }
+
+  // Button Success
+  &.btn-success {
+    background: @control-color-success;
+    border-color: darken(@control-color-success, 5%);
+
+    &:focus {
+      background: darken(@control-color-success, 2%);
+    }
+    &:hover {
+      background: darken(@control-color-success, 5%);
+      border-color: darken(@control-color-success, 10%);
+    }
+    &:active,
+    &.active {
+      background: darken(@control-color-success, 10%);
+      border-color: darken(@control-color-success, 15%);
+    }
+  }
+
+  &.btn-primary,
+  &.btn-danger,
+  &.btn-success {
+    color: @core-light-color;
+    &.hover,
+    &:active,
+    &.active{
       color: @core-light-color;
     }
-
     &.loading {
       &::after {
         border-color: @core-light-color;
@@ -62,7 +107,7 @@
       }
     }
   }
-
+  
   // Button Link
   &.btn-link {
     background: transparent;
