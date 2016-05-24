@@ -11,7 +11,7 @@ Spectre is a side project based on years of CSS development work on a large web 
 
 Read [the documentation](http://picturepan2.github.io/spectre/) to learn more.
 
-# Getting started
+## Getting started
 
 There are 3 ways to get started with Spectre CSS framework in your projects. You can either manually install or use NPM and Bower.
 ##### Install manually
@@ -25,11 +25,11 @@ And include it in your website or Web app &lt;head&gt; part.
 
 `<link rel="stylesheet" href="dist/spectre.min.css" />`
 
-# Compiling custom version
+## Compiling custom version
 
 You can compiling your custom version of Spectre.css. Read [the documentation](http://picturepan2.github.io/spectre/#compiling).
 
-# Documentation and demos
+## Documentation and demos
 
 #### Elements
 
@@ -63,11 +63,11 @@ You can compiling your custom version of Spectre.css. Read [the documentation](h
 
 - [utilities](http://picturepan2.github.io/spectre/#utilities) - layout, positions, display, text, shapes, loading things
 
-# Tools
+## Tools
 
 - [Responsive Resizer](http://picturepan2.github.io/spectre/tools/resizer) - responsive test tool
 
-# Browser support
+## Browser support
 Spectre uses [Autoprefixer](https://github.com/postcss/autoprefixer) to make most styles compatible with earlier browsers and [Normalize.css](https://necolas.github.io/normalize.css/) for CSS resets. Spectre is designed for modern browsers. For best compatiblity, these browsers are recommended:
 - Chrome (last two)
 - Edge (last two)
