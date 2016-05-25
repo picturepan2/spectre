@@ -27,7 +27,7 @@ And include it in your website or Web app &lt;head&gt; part.
 
 ### Compiling custom version
 
-You can compiling your custom version of Spectre.css. Read [the documentation](http://picturepan2.github.io/spectre/#compiling).
+You can compile your custom version of Spectre.css. Read [the documentation](http://picturepan2.github.io/spectre/#compiling).
 
 ### Documentation and demos
 
