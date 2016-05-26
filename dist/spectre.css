@@ -389,7 +389,7 @@ a:focus {
 [disabled],
 .disabled {
   cursor: default;
-  opacity: .5;
+  opacity: .75;
   pointer-events: none;
 }
 .btn .icon,
@@ -777,6 +777,8 @@ textarea.form-input {
   appearance: none;
   border: .1rem solid #c5c5c5;
   border-radius: .3rem;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
   outline: 0;
   padding: .5rem .8rem;
   vertical-align: middle;
@@ -799,7 +801,9 @@ textarea.form-input {
   padding: .4rem 2rem .4rem .6rem;
 }
 .form-select.select-lg {
+  font-size: 1.6rem;
   height: 4.2rem;
+  line-height: 2rem;
   padding: 1rem 2.4rem 1rem .8rem;
 }
 .form-checkbox input,
@@ -1909,6 +1913,10 @@ textarea.form-input {
   opacity: 1;
   -webkit-transform: translate(-50%, -.5rem);
   transform: translate(-50%, -.5rem);
+}
+.tooltip[disabled],
+.tooltip.disabled {
+  pointer-events: auto;
 }
 .tooltip.tooltip-right::after {
   bottom: 50%;

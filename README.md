@@ -68,7 +68,7 @@ You can compiling your custom version of Spectre.css. Read [the documentation](h
 - [Responsive Resizer](http://picturepan2.github.io/spectre/tools/resizer) - responsive test tool
 
 ### Browser support
-Spectre uses [Autoprefixer](https://github.com/postcss/autoprefixer) to make most styles compatible with earlier browsers and [Normalize.css](https://necolas.github.io/normalize.css/) for CSS resets. Spectre is designed for modern browsers. For best compatiblity, these browsers are recommended:
+Spectre uses [Autoprefixer](https://github.com/postcss/autoprefixer) to make most styles compatible with earlier browsers and [Normalize.css](https://necolas.github.io/normalize.css/) for CSS resets. Spectre is designed for modern browsers. For best compatibility, these browsers are recommended:
 - Chrome (last two)
 - Edge (last two)
 - Firefox (last two)
