@@ -1,6 +1,6 @@
 // Position
 .clearfix {
-  .clearfix();
+  @include clearfix();
 }
 .float-left {
   float: left !important;
@@ -177,7 +177,7 @@
 }
 // Divider
 .divider {
-  border-bottom: .1rem solid @core-border-color;
+  border-bottom: .1rem solid $core-border-color;
   display: block;
   margin: .5rem;
 }
@@ -191,7 +191,7 @@
 
   &::after {
     animation: loading 500ms infinite linear;
-    border: .2rem solid @core-color;
+    border: .2rem solid $core-color;
     border-radius: .8rem;
     border-right-color: transparent;
     border-top-color: transparent;

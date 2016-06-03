@@ -1,7 +1,7 @@
 // File icons
 .file-icon {
   background: transparent;
-  border-color: @control-color;
+  border-color: $control-color;
   border-radius: .2rem;
   border-style: solid;
   border-width: 0 0 2.2rem 1.4rem;
@@ -15,7 +15,7 @@
   &::before,
   &::after {
     background: transparent;
-    border: .5rem solid @control-color;
+    border: .5rem solid $control-color;
     border-right-color: transparent;
     border-top-color: transparent;
     content: "";
@@ -29,7 +29,7 @@
   &::after {
     border-bottom-left-radius: .2rem;
     border-color: rgba(255, 255, 255, .5);
-    color: @core-light-color;
+    color: $core-light-color;
     content: attr(data-type);
     font-size: 1rem;
     line-height: 3.6rem;

@@ -5,13 +5,13 @@
   display: block;
   margin: 0;
   padding: .5rem;
-  .shadow;
+  @extend .shadow;
   text-align: left;
   z-index: 999;
 
   .menu-item {
     border-radius: .3rem;
-    color: @body-font-color;
+    color: $body-font-color;
     display: block;
     line-height: 2.4rem;
     margin-top: .1rem;
@@ -29,18 +29,18 @@
 
       &:hover,
       &:focus {
-        color: @core-link-color;
+        color: $core-link-color;
       }
       &:active,
       &.active {
-        background: @core-secondary-color;
-        color: darken(@core-link-color, 5%);
+        background: $core-secondary-color;
+        color: darken($core-link-color, 5%);
       }
     }
   }
 
   .menu-header {
-    color: lighten(@body-font-color, 60%);
+    color: lighten($body-font-color, 60%);
     display: block;
     font-size: 1.2rem;
     line-height: 1.8rem;
@@ -57,7 +57,7 @@
     }
 
     &::after {
-      border-bottom: .1rem solid @core-border-color;
+      border-bottom: .1rem solid $core-border-color;
       content: "";
       display: block;
       height: .1rem;

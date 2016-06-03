@@ -20,14 +20,14 @@
     &:last-child {
       &,
       a {
-        color: lighten(@body-font-color, 20%);
+        color: lighten($body-font-color, 20%);
         pointer-events: none;
       }
     }
 
     &:not(:last-child) {
       &::after {
-        color: @control-color;
+        color: $control-color;
         content: "/";
         padding: 0 .4rem;
       }
@@ -36,7 +36,7 @@
 }
 // Tabs
 .tab {
-  border-bottom: .1rem solid @control-color;
+  border-bottom: .1rem solid $control-color;
   display: flex;
 
   .tab-item {
@@ -45,22 +45,22 @@
 
     a {
       border-bottom: .2rem solid transparent;
-      color: @body-font-color;
+      color: $body-font-color;
       display: block;
       padding: .5rem 1.5rem;
       text-decoration: none;
 
       &:hover,
       &:focus {
-        border-bottom-color: @core-color;
-        color: @core-link-color;
+        border-bottom-color: $core-color;
+        color: $core-link-color;
       }
     }
 
     &.active {
       a {
-        border-bottom-color: darken(@core-color, 10%);
-        color: darken(@core-link-color, 10%);
+        border-bottom-color: darken($core-color, 10%);
+        color: darken($core-link-color, 10%);
       }
     }
   }
@@ -102,14 +102,14 @@
 
       &:hover,
       &:focus {
-        background: @core-secondary-color;
+        background: $core-secondary-color;
       }
     }
 
     &.active {
       a {
-        background: @core-color;
-        color: @core-light-color;
+        background: $core-color;
+        color: $core-light-color;
       }
     }
   }

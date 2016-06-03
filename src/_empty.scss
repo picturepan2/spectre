@@ -1,18 +1,18 @@
 // Empty states (or Blank slates)
 .empty {
-  background: @core-empty-bg;
+  background: #f8f8f8;
   border-radius: .3rem;
   text-align: center;
-  padding: 4 * @layout-gutter;
+  padding: 2 * $layout-gutter;
 
   .empty-title {
     font-size: 1.8rem;
     margin: 1.5rem 0 .5rem 0;
   }
   .empty-meta {
-    color: @core-meta-color;
+    color: $core-meta-color;
   }
-  .empty-action {
+  .btn {
     margin-top: 1.5rem;
   }
 }

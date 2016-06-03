@@ -15,7 +15,7 @@
   .chip-content {
     flex: 1 1 auto;
     padding: 0 1rem;
-    .text-ellipsis;
+    @extend .text-ellipsis;
   }
   .chip-action {
     flex: 0 0 auto;
@@ -24,7 +24,7 @@
     font-size: 1.4rem;
   }
   .chip-meta {
-    color: lighten(@body-font-color, 50%);
+    color: lighten($body-font-color, 50%);
     font-size: 1.2rem;
   }
 }
@@ -32,7 +32,7 @@
 // Small chips
 .chip-sm {
   align-items: center;
-  background: @core-secondary-color;
+  background: $core-secondary-color;
   border-radius: .3rem;
   color: #666;
   display: inline-flex;
@@ -45,32 +45,32 @@
 
   &:hover,
   &:focus {
-    background: darken(@core-secondary-color, 2%);
+    background: darken($core-secondary-color, 2%);
   }
 
   .btn-clear {
     margin-top: -.2rem;
 
     &::before {
-      color: darken(@core-color, 10%);
+      color: darken($core-color, 10%);
       font-size: 1.6rem;
     }
   }
 
   &.selected {
-    background: @core-color;
-    color: @core-light-color;
+    background: $core-color;
+    color: $core-light-color;
 
     .btn-clear {
       &::before {
-        color: lighten(@core-color, 40%);
+        color: lighten($core-color, 40%);
       }
     }
   }
 
   .chip-name {
     margin-left: .4rem;
-    .text-ellipsis;
+    @extend .text-ellipsis;
   }
 
   .avatar {

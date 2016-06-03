@@ -1,7 +1,7 @@
 // Cards
 .card {
   background: #fff;
-  border: .1rem solid @core-border-color;
+  border: .1rem solid $core-border-color;
   border-radius: .3rem;
   display: block;
   margin: 0;
@@ -44,7 +44,7 @@
     margin-top: 0;
   }
   .card-meta {
-    color: lighten(@body-font-color, 50%);
+    color: lighten($body-font-color, 50%);
     font-size: 1em;
     margin-bottom: 0;
     margin-top: 0;

@@ -42,7 +42,7 @@ blockquote {
   }
 
   cite {
-    color: lighten(@body-font-color, 50%);
+    color: lighten($body-font-color, 50%);
   }
 }
 ul,
@@ -86,14 +86,14 @@ dl {
 }
 mark,
 .highlight {
-  background: lighten(@control-color-warning, 32%);
-  .label-base();
+  background: lighten($control-color-warning, 32%);
+  @include label-base();
 }
 
 // Code
 pre {
-  background: lighten(@core-border-color, 4%);
-  border-left: .2rem solid @core-color;
+  background: lighten($core-border-color, 4%);
+  border-left: .2rem solid $core-color;
   line-height: 1.8rem;
   margin-bottom: 1em;
   margin-top: 1em;
@@ -101,8 +101,8 @@ pre {
   padding: 1.5rem;
 }
 code {
-  background: @core-border-color;
-  .label-base();
+  background: $core-border-color;
+  @include label-base();
   white-space: nowrap;
 
   pre & {

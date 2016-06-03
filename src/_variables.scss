@@ -1,0 +1,56 @@
+// Core variables
+// Global
+$html-font-size: 10px;
+$html-line-height: 1.428571429;
+$body-bg: #fff;
+$body-font-color: #333;
+$body-font-size: 1.4rem;
+$body-font-family: "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Hiragino Kaku Gothic Pro", Meiryo, "Malgun Gothic", sans-serif;
+
+// Sizes
+$layout-gutter: 1rem;
+
+// Colors
+$core-color: #5764c6;
+$core-secondary-color: lighten($core-color, 40%);
+$core-light-color: #fff;
+$core-meta-color: #888;
+$core-link-color: #5764c6;
+$core-border-color: #efefef;
+$control-color: #c5c5c5;
+$control-color-success: #32b643;
+$control-color-info: #0193eb;
+$control-color-warning: #ffb700;
+$control-color-danger: #e85600;
+
+// Responsive breakpoints
+$size-xs: 480px;
+$size-sm: 600px;
+$size-md: 840px;
+$size-lg: 960px;
+$size-xl: 1280px;
+
+// Mixins
+@mixin clearfix() {
+  &::after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+}
+@mixin toast-variant($color) {
+  background: $color;
+  border-color: darken($color, 2%);
+  color: $core-light-color;
+}
+@mixin label-base() {
+  border-radius: .2rem;
+  display: inline;
+  font-size: 1em;
+  padding: .1em .3em;
+  vertical-align: baseline;
+}
+@mixin label-variant($color) {
+  background: $color;
+  color: $core-light-color;
+}
