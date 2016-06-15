@@ -4,14 +4,14 @@
     var sass = require('gulp-sass');
     var paths = {
         'styles': {
-            'src': 'src/**/*.scss',
+            'src': 'src/*.scss',
             'dest': 'dist/css'
         },
         'scripts': {
-            'src': 'dist/js/dev/**/*.js',
-            'dest': 'dist/js/min/**/*.js'
+            'src': 'dist/js/dev/*.js',
+            'dest': 'dist/js/min/*.js'
         },
-        'livereload': ['/**/*.html', 'src/**/*.scss', 'dist/js/devs/**/*.js']
+        'livereload': ['*.html', 'src/*.scss', 'dist/js/devs/*.js']
     };
     gulp.task('default', ['sass', 'watch']);
     gulp.task('sass', function () {
