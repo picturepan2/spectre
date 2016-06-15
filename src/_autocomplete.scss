@@ -4,9 +4,9 @@
 
   .form-autocomplete-input {
     background: #fff;
-    border: .1rem solid @control-color;
+    border: .1rem solid $control-color;
     border-radius: .3rem;
-    color: @body-font-color;
+    color: $body-font-color;
     display: block;
     font-size: 1.4rem;
     line-height: 1.6rem;
@@ -34,12 +34,12 @@
 
   .form-autocomplete-list {
     background: #fff;
-    border: .1rem solid lighten(@control-color, 5%);
+    border: .1rem solid lighten($control-color, 5%);
     border-radius: .3rem;
     display: block;
     height: auto;
     left: 0;
-    .light-shadow;
+    @extend .light-shadow;
     margin: .3rem 0 0 0;
     padding: .5rem;
     position: absolute;
@@ -55,10 +55,10 @@
 
     &:hover,
     &:focus {
-      background: lighten(@core-secondary-color, 5%);
+      background: lighten($core-secondary-color, 5%);
     }
     &.active {
-      background: @core-secondary-color;
+      background: $core-secondary-color;
     }
   }
 }

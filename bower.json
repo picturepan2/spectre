@@ -6,7 +6,7 @@
   "repository": "picturepan2/spectre",
   "license": "MIT",
   "author": "Yan Zhu <picturepan2@hotmail.com>",
-  "main": "dist/spectre.css",
+  "main": "src/spectre.css",
   "keywords": [
     "css",
     "framework",
@@ -14,7 +14,7 @@
     "responsive",
     "mobile-friendly",
     "front-end",
-    "less",
+    "sass",
     "modern"
   ],
   "ignore": [

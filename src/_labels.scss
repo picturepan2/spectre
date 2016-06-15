@@ -1,0 +1,11 @@
+// Labels
+.label {
+  background: $core-border-color;
+  color: lighten($body-font-color, 20%);
+  @include label-base();
+  white-space: nowrap;
+
+  &.label-primary {
+    @include toast-variant($core-color);
+  }
+}

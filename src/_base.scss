@@ -6,24 +6,24 @@
 }
 html {
   box-sizing: border-box;
-  font-size: @html-font-size;
-  line-height: @html-line-height;
+  font-size: $html-font-size;
+  line-height: $html-line-height;
   -webkit-tap-highlight-color: transparent;
 }
 body {
-  background: @body-bg;
-  color: @body-font-color;
-  font-family: @body-font-family;
-  font-size: @body-font-size;
+  background: $body-bg;
+  color: $body-font-color;
+  font-family: $body-font-family;
+  font-size: $body-font-size;
   overflow-x: hidden;
 }
 a {
-  color: @core-link-color;
+  color: $core-link-color;
   text-decoration: underline;
 
   &:hover,
   &:focus {
-    color: darken(@core-link-color, 25%);
+    color: darken($core-link-color, 25%);
   }
 }
 // Disabled state

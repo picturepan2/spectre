@@ -1,28 +1,29 @@
-var gulp = require('gulp');
-var less = require('gulp-less');
-var cleancss = require('gulp-clean-css');
-var csscomb = require('gulp-csscomb');
-var rename = require('gulp-rename');
-var LessPluginAutoPrefix = require('less-plugin-autoprefix');
-
-var autoprefix= new LessPluginAutoPrefix({ browsers: ["last 2 versions"] });
-
-gulp.task('watch', function() {
-    gulp.watch('./**/*.less', ['build']);
-});
-
-gulp.task('build', function() {
-    gulp.src('./*.less')
-        .pipe(less({
-            plugins: [autoprefix]
-        }))
-        .pipe(csscomb())
-        .pipe(gulp.dest('./dist'))
-        .pipe(cleancss())
-        .pipe(rename({
-            suffix: '.min'
-        }))
-        .pipe(gulp.dest('./dist'))
-});
-
-gulp.task('default', ['build']);
+(function () {
+    'use strict';
+    var gulp = require('gulp');
+    var sass = require('gulp-sass');
+    var paths = {
+        'styles': {
+            'src': 'src/*.scss',
+            'dest': 'dist/css'
+        },
+        'scripts': {
+            'src': 'dist/js/dev/*.js',
+            'dest': 'dist/js/min/*.js'
+        },
+        'livereload': ['*.html', 'src/*.scss', 'dist/js/devs/*.js']
+    };
+    gulp.task('default', ['sass', 'watch']);
+    gulp.task('sass', function () {
+        return gulp.src(paths.styles.src)
+        .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+        .pipe(gulp.dest(paths.styles.dest));
+    });
+    gulp.task('livereload', function() {
+        return gulp.src(paths.livereload);
+    });
+    gulp.task('watch', function() {
+        gulp.watch(paths.styles.src, ['sass']);
+        gulp.watch(paths.livereload, ['livereload']);
+    });
+}());

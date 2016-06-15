@@ -3,10 +3,10 @@
   position: relative;
 
   &::after {
-    background: fade(#333, 90%);
+    background: rgba(51, 51, 51, .9);
     border-radius: .3rem;
     bottom: 100%;
-    color: @core-light-color;
+    color: $core-light-color;
     content: attr(data-tooltip);
     display: block;
     font-size: 1.2rem;

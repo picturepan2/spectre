@@ -4,7 +4,7 @@
   "homepage": "http://picturepan2.github.io/spectre",
   "author": "Yan Zhu <picturepan2@hotmail.com>",
   "description": "Spectre.css: a lightweight, responsive and modern CSS framework.",
-  "main": "spectre.less",
+  "main": "spectre.sass",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/picturepan2/spectre.git"
@@ -17,7 +17,7 @@
     "responsive",
     "mobile-friendly",
     "front-end",
-    "less",
+    "sass",
     "modern"
   ],
   "bugs": {
@@ -25,10 +25,6 @@
   },
   "devDependencies": {
     "gulp": "^3.9.1",
-    "gulp-clean-css": "^2.0.6",
-    "gulp-csscomb": "^3.0.7",
-    "gulp-less": "^3.0.5",
-    "gulp-rename": "^1.2.2",
-    "less-plugin-autoprefix": "^1.5.1"
+    "gulp-sass": "^2.3.2"
   }
 }

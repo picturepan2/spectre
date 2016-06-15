@@ -49,7 +49,7 @@
   }
 
   &[data-initial]::after {
-    color: @core-light-color;
+    color: $core-light-color;
     content: attr(data-initial);
     left: 50%;
     position: absolute;

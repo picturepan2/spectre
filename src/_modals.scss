@@ -37,7 +37,7 @@
   display: block;
   margin: 0 auto;
   padding: 0;
-  .shadow;
+  @extend .shadow;
   text-align: left;
   z-index: 1988;
 

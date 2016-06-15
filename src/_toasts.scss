@@ -1,7 +1,7 @@
 // Toasts
 .toast {
-  background: @core-border-color;
-  border: .1rem solid darken(@core-border-color, 2%);
+  background: $core-border-color;
+  border: .1rem solid darken($core-border-color, 2%);
   border-radius: .3rem;
   color: #666;
   display: block;
@@ -9,15 +9,15 @@
   width: 100%;
 
   &.toast-primary {
-    .toast-variant(@core-color);
+    @include toast-variant($core-color);
   }
 
   &.toast-success {
-    .toast-variant(@control-color-success);
+    @include toast-variant($control-color-success);
   }
 
   &.toast-danger {
-    .toast-variant(@control-color-danger);
+    @include toast-variant($control-color-danger);
   }
 
   &.toast-primary,

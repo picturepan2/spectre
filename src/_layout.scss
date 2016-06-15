@@ -2,42 +2,32 @@
 .container {
   margin-left: auto;
   margin-right: auto;
-  padding-left: @layout-gutter;
-  padding-right: @layout-gutter;
+  padding-left: $layout-gutter;
+  padding-right: $layout-gutter;
   width: 100%;
-  &:extend(.clearfix all);
+  @extend .clearfix;
 }
 // Grid sizes
-@media screen and (min-width: (960px + 2 * @html-font-size * @layout-gutter)) {
+@media screen and (min-width: (960px + 2 * $html-font-size * 1)) {
   .grid-960 {
-    width: 96rem + 2 * @layout-gutter;
+    width: 96rem + 2 * $layout-gutter;
   }
 }
-@media screen and (min-width: (480px + 2 * @html-font-size * @layout-gutter)) {
+@media screen and (min-width: (480px + 2 * $html-font-size * 1)) {
   .grid-480 {
-    width: 48rem + 2 * @layout-gutter;
+    width: 48rem + 2 * $layout-gutter;
   }
 }
 
 // Responsive grid system
 .columns {
   display: flex;
-  margin-left: -@layout-gutter;
-  margin-right: -@layout-gutter;
-
-  &.col-gapless {
-    margin-left: 0;
-    margin-right: 0;
-
-    .column {
-      padding-left: 0;
-      padding-right: 0;
-    }
-  }
+  margin-left: -$layout-gutter;
+  margin-right: -$layout-gutter;
 }
 .column {
   flex: 1;
-  padding: @layout-gutter;
+  padding: $layout-gutter;
 
   &.col-12,
   &.col-11,
@@ -90,7 +80,7 @@
 .col-1 {
   width: 8.33333333%;
 }
-@media screen and (min-width: (@size-xs + 1px)) {
+@media screen and (min-width: ($size-xs + 1px)) {
   .col-xs-12,
   .col-xs-11,
   .col-xs-10,
@@ -142,7 +132,7 @@
     width: 8.33333333%;
   }
 }
-@media screen and (min-width: (@size-sm + 1px)) {
+@media screen and (min-width: ($size-sm + 1px)) {
   .col-sm-12,
   .col-sm-11,
   .col-sm-10,
@@ -194,7 +184,7 @@
     width: 8.33333333%;
   }
 }
-@media screen and (min-width: (@size-md + 1px)) {
+@media screen and (min-width: ($size-md + 1px)) {
   .col-md-12,
   .col-md-11,
   .col-md-10,
@@ -246,7 +236,7 @@
     width: 8.33333333%;
   }
 }
-@media screen and (min-width: (@size-md + 1px)) {
+@media screen and (min-width: ($size-md + 1px)) {
   .form-horizontal {
     padding: 1rem;
 
@@ -263,10 +253,10 @@
     }
   }
 }
-@media screen and (max-width: @size-xs) {
+@media screen and (max-width: $size-xs) {
   .columns {
     display: block;
-    &:extend(.clearfix all);
+    @include clearfix();
 
     .column {
       width: 100%;
@@ -275,27 +265,27 @@
 }
 
 // Responsive breakpoint system
-@media screen and (max-width: @size-xs) {
+@media screen and (max-width: $size-xs) {
   .hide-xs {
     display: none !important;
   }
 }
-@media screen and (max-width: @size-sm) {
+@media screen and (max-width: $size-sm) {
   .hide-sm {
     display: none !important;
   }
 }
-@media screen and (max-width: @size-md) {
+@media screen and (max-width: $size-md) {
   .hide-md {
     display: none !important;
   }
 }
-@media screen and (max-width: @size-lg) {
+@media screen and (max-width: $size-lg) {
   .hide-lg {
     display: none !important;
   }
 }
-@media screen and (max-width: @size-xl) {
+@media screen and (max-width: $size-xl) {
   .hide-xl {
     display: none !important;
   }

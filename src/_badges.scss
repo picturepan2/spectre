@@ -3,11 +3,11 @@
   position: relative;
 
   &[data-badge]::after {
-    background: @core-color;
+    background: $core-color;
     background-clip: padding-box;
     border: .1rem solid #fff;
     border-radius: 1rem;
-    color: @core-light-color;
+    color: $core-light-color;
     content: attr(data-badge);
     display: inline-block;
     font-size: 1.1rem;
