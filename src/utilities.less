@@ -160,12 +160,53 @@
   cursor: pointer;
 }
 
+// Text shadow
+.text-shadow {
+  text-shadow: 0 .1rem .4rem rgba(0, 0, 0, .3);
+}
+.text-light-shadow {
+  text-shadow: 0 .1rem .2rem rgba(0, 0, 0, .15);
+}
+
+// Light text
+.text-light {
+  color: @core-light-color;
+}
+
 // Shadow
 .shadow {
   box-shadow: 0 .1rem .4rem rgba(0, 0, 0, .3);
 }
 .light-shadow {
   box-shadow: 0 .1rem .2rem rgba(0, 0, 0, .15);
+}
+
+// Underline
+.text-underline::after {
+  display: block;
+  content: "";
+  height: 1px;
+  margin-top: 1rem;
+  background: @core-border-color;
+  max-width: 15rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-underline.text-underline-xs::after {
+  max-width: 7.5rem;
+}
+
+.text-underline.text-underline-sm::after {
+  max-width: 10rem;
+}
+
+.text-underline.text-underline-lg::after {
+  max-width: 25rem;
+}
+
+.text-underline.text-underline-xl::after {
+  max-width: 35rem;
 }
 
 // Shapes
