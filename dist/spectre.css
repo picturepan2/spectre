@@ -559,15 +559,15 @@ pre code {
   background: #fcfcfc;
 }
 .table.table-bordered {
-  border: 1px solid #efefef;
+  border: .1rem solid #efefef;
 }
 .table.table-bordered th {
-  border: 1px solid #efefef;
+  border: .1rem solid #efefef;
   border-bottom-color: #e2e2e2;
-  border-bottom-width: 2px;
+  border-bottom-width: .2rem;
 }
 .table.table-bordered tbody td {
-  border: 1px solid #efefef;
+  border: .1rem solid #efefef;
 }
 .table.table-hover tbody tr:hover {
   background: #f4f4f4;
