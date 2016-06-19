@@ -558,6 +558,17 @@ pre code {
 .table.table-striped tbody tr:nth-of-type(odd) {
   background: #fcfcfc;
 }
+.table.table-bordered {
+  border: 1px solid #efefef;
+}
+.table.table-bordered th {
+  border: 1px solid #efefef;
+  border-bottom-color: #e2e2e2;
+  border-bottom-width: 2px;
+}
+.table.table-bordered tbody td {
+  border: 1px solid #efefef;
+}
 .table.table-hover tbody tr:hover {
   background: #f4f4f4;
 }
@@ -683,13 +694,10 @@ pre code {
 .btn-group {
   display: inline-flex;
   display: -ms-inline-flexbox;
-  display: -webkit-inline-flex;
-  -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 .btn-group .btn {
-  -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
 }
@@ -713,7 +721,6 @@ pre code {
 .btn-group.btn-group-block {
   display: flex;
   display: -ms-flexbox;
-  display: -webkit-flex;
 }
 .form-group:not(:last-child) {
   margin-bottom: 1rem;
@@ -874,7 +881,6 @@ textarea.form-input {
   margin-top: -.6rem;
   position: absolute;
   top: 50%;
-  -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
   width: .6rem;
 }
@@ -938,7 +944,6 @@ textarea.form-input {
 .input-group {
   display: flex;
   display: -ms-flexbox;
-  display: -webkit-flex;
 }
 .input-group .input-group-addon {
   background: #f9f9f9;
@@ -958,7 +963,6 @@ textarea.form-input {
 }
 .input-group .input-group-addon,
 .input-group .input-group-btn {
-  -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
 }
@@ -1006,7 +1010,6 @@ textarea.form-input {
 .columns {
   display: flex;
   display: -ms-flexbox;
-  display: -webkit-flex;
   margin-left: -1rem;
   margin-right: -1rem;
 }
@@ -1019,7 +1022,6 @@ textarea.form-input {
   padding-right: 0;
 }
 .column {
-  -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
   padding: 1rem;
@@ -1036,7 +1038,6 @@ textarea.form-input {
 .column.col-3,
 .column.col-2,
 .column.col-1 {
-  -webkit-flex: none;
   -ms-flex: none;
   flex: none;
 }
@@ -1089,7 +1090,6 @@ textarea.form-input {
   .col-xs-3,
   .col-xs-2,
   .col-xs-1 {
-    -webkit-flex: none;
     -ms-flex: none;
     flex: none;
   }
@@ -1143,7 +1143,6 @@ textarea.form-input {
   .col-sm-3,
   .col-sm-2,
   .col-sm-1 {
-    -webkit-flex: none;
     -ms-flex: none;
     flex: none;
   }
@@ -1197,7 +1196,6 @@ textarea.form-input {
   .col-md-3,
   .col-md-2,
   .col-md-1 {
-    -webkit-flex: none;
     -ms-flex: none;
     flex: none;
   }
@@ -1245,7 +1243,6 @@ textarea.form-input {
   .form-horizontal .form-group {
     display: flex;
     display: -ms-flexbox;
-    display: -webkit-flex;
   }
   .form-horizontal .form-label {
     margin-bottom: 0;
@@ -1290,14 +1287,11 @@ textarea.form-input {
   }
 }
 .navbar {
-  -webkit-align-items: center;
   align-items: center;
   display: flex;
   display: -ms-flexbox;
-  display: -webkit-flex;
   -ms-flex-align: center;
   -ms-flex-pack: justify;
-  -webkit-justify-content: space-between;
   justify-content: space-between;
   padding: 1rem;
 }
@@ -1374,37 +1368,14 @@ textarea.form-input {
   left: 50%;
   position: absolute;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-}
-@-webkit-keyframes loading {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
 }
 @keyframes loading {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
-  }
-}
-@-webkit-keyframes slide-down {
-  0% {
-    margin-top: -3rem;
-    opacity: 0;
-  }
-  100% {
-    margin-top: 0;
-    opacity: 1;
   }
 }
 @keyframes slide-down {
@@ -1492,7 +1463,6 @@ textarea.form-input {
   min-width: 1.8rem;
   padding: .2rem .5rem;
   text-align: center;
-  -webkit-transform: translate(-.2rem, -.8rem);
   transform: translate(-.2rem, -.8rem);
   white-space: nowrap;
 }
@@ -1543,15 +1513,12 @@ textarea.form-input {
   margin-top: 0;
 }
 .chip {
-  -webkit-align-content: space-around;
   align-content: space-around;
-  -webkit-align-items: center;
   align-items: center;
   border: .1rem solid transparent;
   border-radius: .3rem;
   display: flex;
   display: -ms-flexbox;
-  display: -webkit-flex;
   -ms-flex-align: center;
   -ms-flex-line-pack: distribute;
   list-style: none;
@@ -1559,12 +1526,10 @@ textarea.form-input {
   padding: .5rem 0;
 }
 .chip .chip-icon {
-  -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
 }
 .chip .chip-content {
-  -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   overflow: hidden;
@@ -1573,7 +1538,6 @@ textarea.form-input {
   white-space: nowrap;
 }
 .chip .chip-action {
-  -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
 }
@@ -1585,14 +1549,12 @@ textarea.form-input {
   font-size: 1.2rem;
 }
 .chip-sm {
-  -webkit-align-items: center;
   align-items: center;
   background: #eff1fa;
   border-radius: .3rem;
   color: #666;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  display: -webkit-inline-flex;
   -ms-flex-align: center;
   font-size: 1.2rem;
   height: 2.4rem;
@@ -1706,19 +1668,16 @@ textarea.form-input {
   content: "";
   display: block;
   height: .1rem;
-  -webkit-transform: translateY(-1rem);
   transform: translateY(-1rem);
   width: 100%;
 }
 .modal {
-  -webkit-align-items: center;
   align-items: center;
   bottom: 0;
   display: none;
   -ms-flex-align: center;
   -ms-flex-pack: center;
   -ms-grid-row-align: center;
-  -webkit-justify-content: center;
   justify-content: center;
   left: 0;
   opacity: 0;
@@ -1730,7 +1689,6 @@ textarea.form-input {
 .modal.active {
   display: flex;
   display: -ms-flexbox;
-  display: -webkit-flex;
   opacity: 1;
   z-index: 1988;
 }
@@ -1744,11 +1702,9 @@ textarea.form-input {
   top: 0;
 }
 .modal.active .modal-container {
-  -webkit-animation: slide-down .216s;
   animation: slide-down .216s;
 }
 .modal-container {
-  -webkit-animation: slide-up .216s;
   animation: slide-up .216s;
   background: #fff;
   border-radius: .3rem;
@@ -1816,7 +1772,6 @@ textarea.form-input {
   border-bottom: .1rem solid #c5c5c5;
   display: flex;
   display: -ms-flexbox;
-  display: -webkit-flex;
 }
 .tab .tab-item {
   margin-bottom: -.1rem;
@@ -1839,7 +1794,6 @@ textarea.form-input {
   color: #3b49af;
 }
 .tab.tab-block .tab-item {
-  -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
   text-align: center;
@@ -1848,7 +1802,6 @@ textarea.form-input {
   position: absolute;
   right: 1.5rem;
   top: .6rem;
-  -webkit-transform: translate(50%, -.8rem);
   transform: translate(50%, -.8rem);
 }
 .pagination {
@@ -1926,7 +1879,6 @@ textarea.form-input {
   pointer-events: none;
   position: absolute;
   text-overflow: ellipsis;
-  -webkit-transform: translate(-50%, 0);
   transform: translate(-50%, 0);
   transition: all .216s ease;
   z-index: 99;
@@ -1934,7 +1886,6 @@ textarea.form-input {
 .tooltip:hover::after,
 .tooltip:focus::after {
   opacity: 1;
-  -webkit-transform: translate(-50%, -.5rem);
   transform: translate(-50%, -.5rem);
 }
 .tooltip[disabled],
@@ -1944,35 +1895,29 @@ textarea.form-input {
 .tooltip.tooltip-right::after {
   bottom: 50%;
   left: 100%;
-  -webkit-transform: translate(0, 50%);
   transform: translate(0, 50%);
 }
 .tooltip.tooltip-right:hover::after,
 .tooltip.tooltip-right:focus::after {
-  -webkit-transform: translate(.5rem, 50%);
   transform: translate(.5rem, 50%);
 }
 .tooltip.tooltip-bottom::after {
   bottom: auto;
   top: 100%;
-  -webkit-transform: translate(-50%, 0);
   transform: translate(-50%, 0);
 }
 .tooltip.tooltip-bottom:hover::after,
 .tooltip.tooltip-bottom:focus::after {
-  -webkit-transform: translate(-50%, .5rem);
   transform: translate(-50%, .5rem);
 }
 .tooltip.tooltip-left::after {
   bottom: 50%;
   left: auto;
   right: 100%;
-  -webkit-transform: translate(0, 50%);
   transform: translate(0, 50%);
 }
 .tooltip.tooltip-left:hover::after,
 .tooltip.tooltip-left:focus::after {
-  -webkit-transform: translate(-.5rem, 50%);
   transform: translate(-.5rem, 50%);
 }
 .clearfix::after,
@@ -2062,12 +2007,10 @@ textarea.form-input {
 .flex {
   display: flex;
   display: -ms-flexbox;
-  display: -webkit-flex;
 }
 .inline-flex {
   display: inline-flex;
   display: -ms-inline-flexbox;
-  display: -webkit-inline-flex;
 }
 .hide {
   display: none !important;
@@ -2159,7 +2102,6 @@ textarea.form-input {
   position: relative;
 }
 .loading::after {
-  -webkit-animation: loading 500ms infinite linear;
   animation: loading 500ms infinite linear;
   border: .2rem solid #5764c6;
   border-radius: .8rem;
