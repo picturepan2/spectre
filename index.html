@@ -2346,6 +2346,8 @@
                     <a href="#position" class="btn btn-primary">position</a>
                     <a href="#display" class="btn btn-primary">display</a>
                     <a href="#text" class="btn btn-primary">text</a>
+                    <a href="#effects" class="btn btn-primary">effects</a>
+                    <a href="#lines" class="btn btn-primary">lines</a>
                     <a href="#shapes" class="btn btn-primary">shapes</a>
                     <a href="#loading" class="btn btn-primary">loading</a>
                 </div>
@@ -2445,13 +2447,58 @@
 &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;text-clip&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
 <span class="com">&lt;!-- Text may be broken at arbitrary points --&gt;</span>
 &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;text-break&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-</pre>
 
+<span class="com">&lt;!-- Text that is lighter in color --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;text-light&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+
+<span class="com">&lt;!-- Text shadow --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;text-shadow&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+<span class="com">&lt;!-- Text shadow that is lighter in color --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;text-light-shadow&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+</pre>
+        </section>
+
+        <section id="effects" class="container grid-960">
+            <section class="notes">
+                <p><strong>Effects</strong> are used for applying different effects to elements.</p>
+            </section>
+
+            <!-- effects example -->
+<pre class="code lang-html">
+<span class="com">&lt;!-- Shadow: box shadow --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;shadow&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+<span class="com">&lt;!-- Lighter shadow: box shadow that is lighter in color --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;light-shadow&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+</pre>
+        </section>
+
+        <section id="lines" class="container grid-960">
+            <section class="notes">
+                <p><strong>Lines</strong> are used for underlining text with a line that is not full screen width.</p>
+            </section>
+
+            <section class="notes text-center">
+                <h4 class="text-line text-line-lg">
+                    Recent news
+                </h4>
+            </section>
+
+            <!-- lines example -->
+<pre class="code lang-html">
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;text-center&quot;</span>&gt;
+    &lt;<span class="tag">h4</span> <span class="atn">class</span>=<span class="atv">&quot;text-line text-line-lg&quot;</span>&gt;
+        Recent news
+    &lt;<span class="tag">/h4</span>&gt;
+&lt;<span class="tag">/div</span>&gt;
+</pre>
+            <section class="notes">
+                <p>Add the classes <code>text-line-xs</code>, <code>text-line-sm</code>, <code>text-line-lg</code> or <code>text-line-xl</code> to change their length.</p>
+            </section>
         </section>
 
         <section id="shapes" class="container grid-960">
             <section class="notes">
-                <p><strong>Shape utilities</strong> are used for change element shapes.</p>
+                <p><strong>Shape utilities</strong> are used for changing element shapes.</p>
             </section>
 
             <!-- shape utilities example -->
@@ -2484,7 +2531,7 @@
 
         <section id="loading" class="container grid-960">
             <section class="notes">
-                <p><strong>Loading indicator</strong> is used for loading or updating. Also, you can add the class <code>loading</code> to buttons for loading status.</p>
+                <p><strong>Loading indicator</strong> is used for loading or updating. You can also add the class <code>loading</code> to buttons for loading status.</p>
             </section>
             <div class="columns">
                 <div class="column">
