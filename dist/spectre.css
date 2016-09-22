@@ -1744,6 +1744,58 @@ textarea.form-input {
 .label.label-primary a:active {
   opacity: .75;
 }
+.label.label-info {
+  background: #0193eb;
+  border-color: #018de1;
+  color: #fff;
+}
+.label.label-info a {
+  color: #fff;
+}
+.label.label-info a:hover,
+.label.label-info a:focus,
+.label.label-info a:active {
+  opacity: .75;
+}
+.label.label-success {
+  background: #32b643;
+  border-color: #30ae40;
+  color: #fff;
+}
+.label.label-success a {
+  color: #fff;
+}
+.label.label-success a:hover,
+.label.label-success a:focus,
+.label.label-success a:active {
+  opacity: .75;
+}
+.label.label-warning {
+  background: #ffb700;
+  border-color: #f5b000;
+  color: #fff;
+}
+.label.label-warning a {
+  color: #fff;
+}
+.label.label-warning a:hover,
+.label.label-warning a:focus,
+.label.label-warning a:active {
+  opacity: .75;
+}
+.label.label-danger {
+  background: #e85600;
+  border-color: #de5200;
+  color: #fff;
+}
+.label.label-danger a {
+  color: #fff;
+}
+.label.label-danger a:hover,
+.label.label-danger a:focus,
+.label.label-danger a:active {
+  opacity: .75;
+}
 .menu {
   background: #fff;
   border-radius: .3rem;
