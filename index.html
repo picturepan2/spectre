@@ -5,7 +5,7 @@
     <meta name="robots" content="index, follow" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="author" content="https://github.com/picturepan2/spectre" />
+    <meta name="author" content="https://github.com/wijntjes/spectre" />
     <title>Spectre.css - a lightweight, responsive and modern CSS framework</title>
     <link rel="stylesheet" href="dist/spectre.css" />
     <link rel="stylesheet" href="demo/font/style.css" />
@@ -78,7 +78,7 @@
             </section>
             <section class="notes text-center">
                 <div class="btn-group">
-                    <a href="https://github.com/picturepan2/spectre" target="_blank" class="btn btn-primary">GitHub Repo</a>
+                    <a href="https://github.com/wijntjes/spectre" target="_blank" class="btn btn-primary">GitHub Repo</a>
                     <a href="#getting-started" class="btn btn-primary">Documentation</a>
                 </div>
             </section>
@@ -90,8 +90,8 @@
             <section class="notes">
                 <p>There are 3 ways to get started with Spectre CSS framework in your projects. You can either manually install or use NPM and Bower.</p>
                 <h5>Install manually</h5>
-                <p>Download the compiled and minified <a href="https://github.com/picturepan2/spectre/tree/master/dist" target="_blank">Spectre CSS file</a> (about 27KB):</p>
-                <p><a href="https://github.com/picturepan2/spectre/tree/master/dist" target="_blank" class="btn btn-primary">Download Spectre.css</a></p>
+                <p>Download the compiled and minified <a href="https://github.com/wijntjes/spectre/tree/master/dist" target="_blank">Spectre CSS file</a> (about 27KB):</p>
+                <p><a href="https://github.com/wijntjes/spectre/tree/master/dist" target="_blank" class="btn btn-primary">Download Spectre.css</a></p>
                 <h5>Install with NPM</h5>
                 <!-- install with npm example -->
 <pre class="code lang-html">
@@ -441,7 +441,7 @@
 &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary btn-sm&quot;</span>&gt;&lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-markunread&quot;</span>&gt;&lt;<span class="tag">/span</span>&gt; small&lt;<span class="tag">/button</span>&gt;
 </pre>
 
-            <header class="text-center"><h5>button colours</h5></header>
+            <header class="text-center"><h5>button colors</h5></header>
             <section class="notes">
                 <p><strong>Buttons</strong> include simple button styles for actions in different types and sizes. </p>
             </section>
@@ -464,7 +464,7 @@
                 </div>
             </div>
             <section class="notes">
-                <p>Add the class <code>btn-info</code>, <code>btn-success</code>, <code>btn-warning</code>, or <code>btn-danger</code> to &lt;a&gt;, &lt;input&gt; or &lt;button&gt; elements for a filled colour button.</p>
+                <p>Add the class <code>btn-info</code>, <code>btn-success</code>, <code>btn-warning</code>, or <code>btn-danger</code> to &lt;a&gt;, &lt;input&gt; or &lt;button&gt; elements for a filled color button.</p>
             </section>
 
 <!-- buttons example -->
@@ -1092,7 +1092,7 @@
                     <li><code>hide-xl</code> hides elements when the window width is smaller than or equal to <strong>1280px</strong>. </li>
                 </ul>
                 <p>Spectre also has a responsive web test tool Responsive Resizer. You can use it locally in the directory <code>/tools/resizer</code> or online.</p>
-                <p><a href="http://picturepan2.github.io/spectre/tools/resizer/" target="_blank" class="btn btn-primary">Responsive Resizer</a></p>
+                <p><a href="http://wijntjes.github.io/spectre/tools/resizer/" target="_blank" class="btn btn-primary">Responsive Resizer</a></p>
             </section>
         </section>
 
@@ -2457,6 +2457,18 @@
 <span class="com">&lt;!-- Italicized text --&gt;</span>
 &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;text-italic&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
 
+<span class="com">&lt;!-- Primary colored text --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;text-primary&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+<span class="com">&lt;!-- Info colored text --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;text-info&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+<span class="com">&lt;!-- Success colored text --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;text-success&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+<span class="com">&lt;!-- Warning colored text --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;text-warning&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+<span class="com">&lt;!-- Danger colored text --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;text-danger&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+
+
 <span class="com">&lt;!-- Overflow behavior: display an ellipsis to represent clipped text --&gt;</span>
 &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;text-ellipsis&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
 <span class="com">&lt;!-- Overflow behavior: truncate the text --&gt;</span>
@@ -2520,19 +2532,9 @@
     <footer class="bg-grey">
         <section id="copyright" class="grid-footer container grid-960">
             <p>
-                <a href="https://github.com/picturepan2/spectre" target="_blank">GitHub Repo</a> | <a href="#">Back to top</a> | version: 0.1.26
+                <a href="https://github.com/wijntjes/spectre" target="_blank">GitHub Repo</a> | <a href="#">Back to top</a> | version: 0.1.26
             </p>
-            <p>Designed and built with love by <a href="https://twitter.com/picturepan2" target="_blank">Yan Zhu</a>. Licensed under the <a href="https://github.com/picturepan2/spectre/blob/master/LICENSE" target="_blank">MIT License</a>.</p>
         </section>
     </footer>
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-        ga('create', 'UA-2702768-8', 'auto');
-        ga('send', 'pageview');
-    </script>
 </body>
 </html>

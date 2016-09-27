@@ -2298,6 +2298,21 @@ textarea.form-input {
   word-break: break-word;
   word-wrap: break-word;
 }
+.text-primary {
+  color: #0193eb;
+}
+.text-info {
+  color: #0193eb;
+}
+.text-success {
+  color: #32b643;
+}
+.text-warning {
+  color: #ffb700;
+}
+.text-danger {
+  color: #e85600;
+}
 .hand {
   cursor: pointer;
 }
