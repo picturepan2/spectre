@@ -8,7 +8,6 @@
   list-style: none;
   margin: 0;
   padding: .5rem 0;
-
   .chip-icon {
     flex: 0 0 auto;
   }
@@ -32,9 +31,9 @@
 // Small chips
 .chip-sm {
   align-items: center;
-  background: @core-secondary-color;
+  background: transparent;
   border-radius: .3rem;
-  color: #666;
+  color: lighten(@body-font-color, 20%);
   display: inline-flex;
   font-size: 1.2rem;
   height: 2.4rem;
@@ -42,7 +41,18 @@
   padding: .3rem .6rem;
   text-decoration: none;
   vertical-align: middle;
-
+  &.chip-primary {
+    .chip-variant(@core-color);
+  }
+  &.chip-success {
+    .chip-variant(@control-color-success);
+  }
+  &.chip-danger {
+    .chip-variant(@control-color-danger);
+  }
+  &.chip-warning {
+    .chip-variant(@control-color-warning);
+  }
   &:hover,
   &:focus {
     background: darken(@core-secondary-color, 2%);
