@@ -1886,7 +1886,7 @@ textarea.form-input {
 .dropdown .menu:hover {
   display: block;
 }
-.dropdown .dropdown-right .menu {
+.dropdown.dropdown-right .menu {
   left: inherit;
   right: 0;
 }
