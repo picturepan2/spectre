@@ -1,6 +1,6 @@
 var gulp = require('gulp');
 var less = require('gulp-less');
-var browserSync = require('browser-sync').create()
+var browserSync = require("browser-sync").create();
 var cleancss = require('gulp-clean-css');
 var csscomb = require('gulp-csscomb');
 var rename = require('gulp-rename');
@@ -17,7 +17,7 @@ gulp.task('server', ['watch'], function () {
         server: {
             baseDir: './docs'
         }
-    })
+    });
 });
 
 gulp.task('watch', function () {
