@@ -24,6 +24,7 @@
     "url": "https://github.com/picturepan2/spectre/issues"
   },
   "devDependencies": {
+    "browser-sync": "^2.18.8",
     "gulp": "^3.9.1",
     "gulp-clean-css": "^3.0.3",
     "gulp-csscomb": "^3.0.8",
