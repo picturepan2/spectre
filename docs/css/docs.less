@@ -1,7 +1,7 @@
 /*! Spectre.css Docs | MIT License | github.com/picturepan2/spectre */
 /* Spectre version */
 .version::after {
-  content: "0.2.8";
+  content: "0.2.9";
 }
 
 /* Spectre docs style */
@@ -121,6 +121,7 @@
 }
 
 .docs-content {
+  color: #666;
   padding-top: 0;
 
   .container {
@@ -134,7 +135,6 @@
 
   .notes {
     margin: 4rem 0;
-    color: #666;
   }
 
   .docs-block {
@@ -167,6 +167,10 @@
     margin-bottom: 2rem;
   }
 
+  .panel {
+    height: 75vh;
+  }
+
   .code {
     .com {
       color: #c5c5c5;
@@ -184,6 +188,10 @@
 
   .empty .icon {
     font-size: 4rem;
+  }
+
+  .navbar-brand .icon {
+    font-size: 3rem;
   }
 
   .form-autocomplete .menu {
@@ -204,7 +212,7 @@
 }
 
 @media screen and (min-width: 601px) {
-  .navbar {
+  .section-header {
     .navbar-section {
       padding: 0 .5rem;
     }

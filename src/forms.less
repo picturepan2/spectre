@@ -161,7 +161,6 @@
 }
 .form-checkbox,
 .form-radio {
-  cursor: pointer;
   display: inline-block;
   line-height: 1.8rem;
   padding: .3rem 2rem;
@@ -170,6 +169,7 @@
   .form-icon {
     border: .1rem solid @light-gray-color;
     .control-transition();
+    cursor: pointer;
     display: inline-block;
     font-size: 1.4rem;
     height: 1.4rem;
@@ -256,7 +256,6 @@
 
 // Form element: Switch
 .form-switch {
-  cursor: pointer;
   display: inline-block;
   line-height: 2rem;
   padding: .2rem 2rem .2rem 3.6rem;
@@ -267,6 +266,7 @@
     background-clip: padding-box;
     border: .1rem solid @light-gray-color;
     border-radius: .9rem;
+    cursor: pointer;
     display: inline-block;
     height: 1.8rem;
     left: 0;
@@ -365,7 +365,7 @@
   &:disabled,
   &.disabled {
     background-color: @dark-bg-color;
-    cursor: default;
+    cursor: not-allowed;
     opacity: .5;
   }
 }
@@ -376,9 +376,8 @@ input {
     & + .form-icon {
       background: @dark-bg-color;
       border-color: @light-gray-color;
-      cursor: default;
+      cursor: not-allowed;
       opacity: .5;
-      pointer-events: none;
     }
   }
 }

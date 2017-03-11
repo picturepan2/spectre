@@ -17,7 +17,7 @@
       <nav class="navbar">
         <section class="navbar-section">
           <a href="#sidebar" class="btn btn-lg btn-link btn-action show-sm"><i class="icon icon-menu"></i></a>
-          <a href="index.html" class="navbar-brand">Spectre.css</a>
+          <a href="index.html" class="navbar-brand mr-10">Spectre.css</a>
           <a href="index.html" class="btn btn-link">Docs</a>
         </section>
         <section class="navbar-section">
@@ -48,6 +48,9 @@
               </li>
               <li class="nav-item">
                 <a href="layout.html#navbar">Navbar</a>
+              </li>
+              <li class="nav-item">
+                <a href="layout.html#panels">Panels</a>
               </li>
               <li class="nav-item">
                 <a href="layout.html#empty">Empty states</a>
@@ -131,8 +134,8 @@
           </div>
 
           <section class="notes">
-            <p>Add the class <code>columns</code> to a container with the class <code>container</code>. And add any element you want with classname <code>column</code> inside the container. These columns will take up the space equally. You can specific the width of each column by adding class <code>col-[1-12]</code>.</p>
-            <p>And you can add the class <code>col-gapless</code> to have gapless columns.</p>
+            <p>Add the <code>columns</code> class to a container with the <code>container</code> class. And add any element you want with the <code>column</code> class inside the container. These columns will take up the space equally. You can specific the width of each column by adding class <code>col-[1-12]</code>.</p>
+            <p>And you can add the <code>col-gapless</code> class to have gapless columns.</p>
           </section>
 
           <div class="columns col-gapless">
@@ -145,7 +148,7 @@
           </div>
 
           <section class="notes">
-            <p>By default, Spectre grid has multi-line flexbox enabled. You can add the class <code>col-oneline</code> to <code>columns</code> to make all its child columns positioned in the same single row.</p>
+            <p>By default, Spectre grid has multi-line flexbox enabled. You can add the <code>col-oneline</code> class to <code>columns</code> to make all its child columns positioned in the same single row.</p>
           </section>
 
           <div class="columns col-oneline">
@@ -369,12 +372,12 @@
           <div class="columns">
             <div class="column">
               <section class="navbar">
+                <section class="navbar-primary">
+                  <a href="#navbar" class="navbar-brand mr-10">Spectre.css</a>
+                </section>
                 <section class="navbar-section">
-                  <a href="#navbar" class="navbar-brand">
-                    <i class="icon icon-pages"></i> Spectre.css
-                  </a>
-                  <a href="#navbar" class="btn btn-link">features</a>
-                  <a href="#navbar" class="btn btn-link">documents</a>
+                  <a href="#navbar" class="btn btn-link">Docs</a>
+                  <a href="https://github.com/picturepan2/spectre" class="btn btn-link">GitHub</a>
                 </section>
                 <section class="navbar-section">
                   <div class="input-group input-inline">
@@ -385,19 +388,35 @@
               </section>
             </div>
           </div>
-
           <section class="notes">
-            <p>A navbar component can include logo brand, nav links and buttons, search box or any combination of those elements. Each section with the class <code>navbar-section</code> will be evenly distributed in the container.</p>
+            <p>The navbar component can include logo brand, nav links and buttons, search box or any combination of those elements. Each section with the <code>navbar-section</code> class will be evenly distributed in the container.</p>
           </section>
+          <div class="columns">
+            <div class="column col-12">
+              <section class="navbar">
+                <section class="navbar-section">
+                  <a href="#navbar" class="btn btn-link">Docs</a>
+                  <a href="#navbar" class="btn btn-link">Examples</a>
+                </section>
+                <section class="navbar-primary">
+                  <figure class="avatar" data-initial="S" style="background-color: #5764c6;"></figure>
+                </section>
+                <section class="navbar-section">
+                  <a href="https://twitter.com/spectrecss" class="btn btn-link">Twitter</a>
+                  <a href="https://github.com/picturepan2/spectre" class="btn btn-link">GitHub</a>
+                </section>
+              </section>
+            </div>
+          </div>
 
 <!-- navbar example -->
 <pre class="code" data-lang="HTML"><code>&lt;<span class="tag">header</span> <span class="atn">class</span>=<span class="atv">&quot;navbar&quot;</span>&gt;
+  &lt;<span class="tag">section</span> <span class="atn">class</span>=<span class="atv">&quot;navbar-primary&quot;</span>&gt;
+    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;navbar-brand mr-10&quot;</span>&gt;Spectre.css&lt;<span class="tag">/a</span>&gt;
+  &lt;<span class="tag">/section</span>&gt;
   &lt;<span class="tag">section</span> <span class="atn">class</span>=<span class="atv">&quot;navbar-section&quot;</span>&gt;
-    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;navbar-brand&quot;</span>&gt;
-      &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-pages&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; Spectre.css
-    &lt;<span class="tag">/a</span>&gt;
-    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-link&quot;</span>&gt;features&lt;<span class="tag">/a</span>&gt;
-    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-link&quot;</span>&gt;documents&lt;<span class="tag">/a</span>&gt;
+    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-link&quot;</span>&gt;Docs&lt;<span class="tag">/a</span>&gt;
+    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;https://github.com/picturepan2/spectre&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-link&quot;</span>&gt;GitHub&lt;<span class="tag">/a</span>&gt;
   &lt;<span class="tag">/section</span>&gt;
   &lt;<span class="tag">section</span> <span class="atn">class</span>=<span class="atv">&quot;navbar-section&quot;</span>&gt;
     &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;input-group input-inline&quot;</span>&gt;
@@ -406,6 +425,166 @@
     &lt;<span class="tag">/div</span>&gt;
   &lt;<span class="tag">/section</span>&gt;
 &lt;<span class="tag">/header</span>&gt;
+</code></pre>
+
+        </section>
+
+        <section id="panels" class="container">
+          <header class="text-center"><h3>Panels</h3></header>
+          <section class="notes">
+            <p><strong>Panels</strong> are flexible view container layout with auto-expand content section.</p>
+          </section>
+          <div class="columns">
+            <div class="column col-6 col-xs-12">
+              <div class="panel">
+                <div class="panel-header text-center">
+                  <figure class="avatar avatar-lg">
+                    <img src="img/avatar-2.png" />
+                  </figure>
+                  <div class="panel-title mt-10">Bruce Banner</div>
+                </div>
+                <nav class="panel-nav">
+                  <ul class="tab tab-block">
+                    <li class="tab-item active">
+                      <a href="#panels">
+                        Profile
+                      </a>
+                    </li>
+                    <li class="tab-item">
+                      <a href="#panels">
+                        Files
+                      </a>
+                    </li>
+                    <li class="tab-item">
+                      <a href="#panels">
+                        Tasks
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+                <div class="panel-body">
+                  <div class="tile tile-centered">
+                    <div class="tile-content">
+                      <div class="tile-title">E-mail</div>
+                      <div class="tile-meta">bruce.banner@hulk.com</div>
+                    </div>
+                    <div class="tile-action">
+                      <button class="btn btn-link btn-action btn-lg"><i class="icon icon-mail_outline"></i></button>
+                    </div>
+                  </div>
+                  <div class="tile tile-centered">
+                    <div class="tile-content">
+                      <div class="tile-title">Skype</div>
+                      <div class="tile-meta">bruce.banner</div>
+                    </div>
+                    <div class="tile-action">
+                      <button class="btn btn-link btn-action btn-lg"><i class="icon icon-phone"></i></button>
+                    </div>
+                  </div>
+                  <div class="tile tile-centered">
+                    <div class="tile-content">
+                      <div class="tile-title">Location</div>
+                      <div class="tile-meta">Dayton, Ohio</div>
+                    </div>
+                    <div class="tile-action">
+                      <button class="btn btn-link btn-action btn-lg"><i class="icon icon-map"></i></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel-footer">
+                  <button class="btn btn-primary btn-block">Edit</button>
+                </div>
+              </div>
+            </div>
+            <div class="column col-6 col-xs-12">
+              <div class="panel">
+                <div class="panel-header">
+                  <div class="panel-title">Comments</div>
+                </div>
+                <div class="panel-body">
+                  <div class="tile">
+                    <div class="tile-icon">
+                      <figure class="avatar">
+                        <img src="img/avatar-1.png" />
+                      </figure>
+                    </div>
+                    <div class="tile-content">
+                      <p class="tile-title">Thor Odinson</p>
+                      <p class="tile-meta">Earth's Mightiest Heroes joined forces to take on threats that were too big for any one hero to tackle...</p>
+                    </div>
+                  </div>
+                  <div class="tile">
+                    <div class="tile-icon">
+                      <figure class="avatar">
+                        <img src="img/avatar-2.png" />
+                      </figure>
+                    </div>
+                    <div class="tile-content">
+                      <p class="tile-title">Bruce Banner</p>
+                      <p class="tile-meta">The Strategic Homeland Intervention, Enforcement, and Logistics Division...</p>
+                    </div>
+                  </div>
+                  <div class="tile">
+                    <div class="tile-icon">
+                      <figure class="avatar" data-initial="TS"></figure>
+                    </div>
+                    <div class="tile-content">
+                      <p class="tile-title">Tony Stark</p>
+                      <p class="tile-meta">Earth's Mightiest Heroes joined forces to take on threats that were too big for any one hero to tackle...</p>
+                    </div>
+                  </div>
+                  <div class="tile">
+                    <div class="tile-icon">
+                      <figure class="avatar">
+                        <img src="img/avatar-4.png" />
+                      </figure>
+                    </div>
+                    <div class="tile-content">
+                      <p class="tile-title">Steve Rogers</p>
+                      <p class="tile-meta">The Strategic Homeland Intervention, Enforcement, and Logistics Division...</p>
+                    </div>
+                  </div>
+                  <div class="tile">
+                    <div class="tile-icon">
+                      <figure class="avatar">
+                        <img src="img/avatar-3.png" />
+                      </figure>
+                    </div>
+                    <div class="tile-content">
+                      <p class="tile-title">Natasha Romanoff</p>
+                      <p class="tile-meta">Earth's Mightiest Heroes joined forces to take on threats that were too big for any one hero to tackle...</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel-footer">
+                  <div class="input-group">
+                    <input type="text" class="form-input" placeholder="Hello" />
+                    <button class="btn btn-primary input-group-btn">Send</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <section class="notes">
+            <p>Add a container element with the <code>panel</code> class. And add child elements with the <code>panel-header</code>, <code>panel-nav</code>, <code>panel-body</code> and/or <code>panel-footer</code> class. The <code>panel-body</code> can be auto expanded and vertically scrollable. </p>
+          </section>
+
+<!-- panels example -->
+<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;panel&quot;</span>&gt;
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;panel-header&quot;</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;panel-title&quot;</span>&gt;Comments&lt;<span class="tag">/div</span>&gt;
+  &lt;<span class="tag">/div</span>&gt;
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;panel-nav&quot;</span>&gt;
+    <span class="com">&lt;!-- navigation components: tabs, breadcrumbs or pagination --&gt;</span>
+  &lt;<span class="tag">/div</span>&gt;
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;panel-body&quot;</span>&gt;
+    <span class="com">&lt;!-- contents --&gt;</span>
+  &lt;<span class="tag">/div</span>&gt;
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;panel-footer&quot;</span>&gt;
+    <span class="com">&lt;!-- buttons or inputs --&gt;</span>
+  &lt;<span class="tag">/div</span>&gt;
+&lt;<span class="tag">/div</span>&gt;
 </code></pre>
 
         </section>
@@ -459,7 +638,7 @@
           </div>
 
           <section class="notes">
-            <p>An empty state component can include icons, messages(title and meta messages) and action buttons or any combination of those elements. Add <code>empty-icon</code>, <code>empty-title</code>, <code>empty-meta</code> or <code>empty-action</code> to the elements. HTML structure is exampled below. </p>
+            <p>An empty state component can include icons, messages (title and meta messages) and action buttons or any combination of those elements. Add <code>empty-icon</code>, <code>empty-title</code>, <code>empty-meta</code> or <code>empty-action</code> to the elements. HTML structure is exampled below. </p>
           </section>
 
 <!-- empty states example -->
