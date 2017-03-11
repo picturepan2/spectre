@@ -1,18 +1,31 @@
 var gulp = require('gulp');
 var less = require('gulp-less');
+var browserSync = require("browser-sync").create();
 var cleancss = require('gulp-clean-css');
 var csscomb = require('gulp-csscomb');
 var rename = require('gulp-rename');
 var LessPluginAutoPrefix = require('less-plugin-autoprefix');
 
-var autoprefix= new LessPluginAutoPrefix({ browsers: ["last 4 versions"] });
+var autoprefix = new LessPluginAutoPrefix({
+    browsers: ["last 4 versions"]
+});
 
-gulp.task('watch', function() {
+gulp.task('server', ['watch'], function () {
+    browserSync.init({
+        files: ['./docs/**/*', './dist/**/*'],
+        logPrefix: 'Spectre',
+        server: {
+            baseDir: './docs'
+        }
+    });
+});
+
+gulp.task('watch', function () {
     gulp.watch('./**/*.less', ['build']);
     gulp.watch('./**/*.less', ['docs']);
 });
 
-gulp.task('build', function() {
+gulp.task('build', function () {
     gulp.src('./*.less')
         .pipe(less({
             plugins: [autoprefix]
@@ -26,7 +39,7 @@ gulp.task('build', function() {
         .pipe(gulp.dest('./dist'))
 });
 
-gulp.task('docs', function() {
+gulp.task('docs', function () {
     gulp.src(['./docs/css/*.less', './*.less'])
         .pipe(less({
             plugins: [autoprefix]
