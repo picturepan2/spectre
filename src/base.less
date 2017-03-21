@@ -16,7 +16,7 @@ body {
   background: @body-bg;
   color: @body-font-color;
   font-family: @body-font-family;
-  font-size: @body-font-size;
+  font-size: @font-size;
   overflow-x: hidden;
   text-rendering: optimizeLegibility;
 }
@@ -29,7 +29,7 @@ a {
   &:hover,
   &:active,
   &.active {
-    color: @dark-link-color;
+    color: @link-color-dark;
     text-decoration: underline;
   }
 }
@@ -37,7 +37,7 @@ a {
 // Focus state
 :focus {
   .control-shadow();
-  outline: 0;
+  outline: none;
 }
 
 // Icons

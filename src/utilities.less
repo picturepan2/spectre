@@ -1,8 +1,20 @@
 // Divider
 .divider {
-  border-bottom: .1rem solid @border-color;
+  border-top: @border-width solid @border-color;
   display: block;
-  margin: .8rem 0;
+  height: .1rem;
+  margin: 1rem 0;
+  position: relative;
+
+  &[data-content]::before {
+    background: @light-color;
+    color: @gray-color-light;
+    content: attr(data-content);
+    display: inline-block;
+    font-size: @font-size-sm;
+    padding: 0 .8rem;
+    transform: translateY(-1.1rem);
+  }
 }
 
 // Loading
@@ -26,6 +38,7 @@
     position: absolute;
     top: 50%;
     width: 1.6rem;
+    z-index: @zindex-0;
   }
 }
 
@@ -206,11 +219,20 @@
 }
 
 // Shadow
-.shadow {
-  box-shadow: 0 .1rem .4rem rgba(0, 0, 0, .3);
+.shadow-0 {
+  box-shadow: @shadow-0;
 }
-.light-shadow {
-  box-shadow: 0 .1rem .2rem rgba(0, 0, 0, .15);
+.shadow-1 {
+  box-shadow: @shadow-1;
+}
+.shadow-2 {
+  box-shadow: @shadow-2;
+}
+.shadow-3 {
+  box-shadow: @shadow-3;
+}
+.shadow-4 {
+  box-shadow: @shadow-4;
 }
 
 // Shapes

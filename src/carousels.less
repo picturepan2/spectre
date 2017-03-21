@@ -13,7 +13,7 @@
     position: relative;
 
     .carousel-item {
-      animation: carousel-slideout 1s 1;
+      animation: carousel-slideout 1s ease-in-out 1;
       height: 100%;
       left: 0;
       margin: 0;
@@ -32,15 +32,15 @@
 
     .item-prev,
     .item-next {
-      background: fade(@light-gray-color, 25%);
-      border-color: fade(@light-gray-color, 50%);
-      color: @light-gray-color;
+      background: fade(@gray-color-light, 25%);
+      border-color: fade(@gray-color-light, 50%);
+      color: @gray-color-light;
       opacity: 0;
       position: absolute;
       top: 50%;
       transition: all .4s ease;
       transform: translateY(-50%);
-      z-index: 99;
+      z-index: @zindex-2;
     }
     .item-prev {
       left: 2rem;
@@ -55,15 +55,15 @@
     &:nth-of-type(2):checked ~ .carousel-container .carousel-item:nth-of-type(2),
     &:nth-of-type(3):checked ~ .carousel-container .carousel-item:nth-of-type(3),
     &:nth-of-type(4):checked ~ .carousel-container .carousel-item:nth-of-type(4) {
-      animation: carousel-slidein .75s 1;
+      animation: carousel-slidein .75s ease-in 1;
       opacity: 1;
-      z-index: 99;
+      z-index: @zindex-1;
     }
     &:nth-of-type(1):checked ~ .carousel-nav .nav-item:nth-of-type(1),
     &:nth-of-type(2):checked ~ .carousel-nav .nav-item:nth-of-type(2),
     &:nth-of-type(3):checked ~ .carousel-nav .nav-item:nth-of-type(3),
     &:nth-of-type(4):checked ~ .carousel-nav .nav-item:nth-of-type(4) {
-      color: @light-gray-color;
+      color: @gray-color-light;
     }
   }
 
@@ -75,10 +75,10 @@
     position: absolute;
     transform: translateX(-50%);
     width: 20rem;
-    z-index: 999;
+    z-index: @zindex-2;
 
     .nav-item {
-      color: fade(@light-gray-color, 50%);
+      color: fade(@gray-color-light, 50%);
       display: block;
       flex: 1 0 auto;
       height: 4rem;
@@ -127,10 +127,10 @@
 @keyframes carousel-slideout {
   0% {
     opacity: 1;
-    transform: translateX(0) scale(1);
+    transform: translateX(0);
   }
   100% {
-    opacity: 0;
-    transform: translateX(-50%) scale(.95);
+    opacity: 1;
+    transform: translateX(-50%);
   }
 }

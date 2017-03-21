@@ -1,24 +1,23 @@
 // Cards
 .card {
-  background: @light-bg-color;
-  border: .1rem solid @border-color;
+  background: @bg-color-light;
+  border: @border-width solid @border-color;
   border-radius: @border-radius;
   display: block;
-  margin: 0;
-  padding: 0;
-  text-align: left;
 
   .card-header,
   .card-body,
   .card-footer {
-    padding: 1.5rem 1.5rem 0 1.5rem;
+    padding: @layout-padding-lg;
+    padding-bottom: 0;
 
     &:last-child {
-      padding-bottom: 1.5rem;
+      padding-bottom: @layout-padding-lg;
     }
   }
+
   .card-image {
-    padding-top: 1.5rem;
+    padding-top: @layout-padding-lg;
 
     &:first-child {
       padding-top: 0;
@@ -36,12 +35,13 @@
       }
     }
   }
+
   .card-title {
     font-size: 2rem;
-    line-height: 1.4;
   }
-  .card-meta {
+
+  .card-subtitle {
     color: @gray-color;
-    font-size: 1.3rem;
+    font-size: @font-size-sm;
   }
 }

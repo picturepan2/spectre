@@ -2,9 +2,9 @@
 .avatar {
   background: @primary-color;
   border-radius: 50%;
-  color: fade(@light-color, 75%);
+  color: fade(@light-color, 85%);
   display: inline-block;
-  font-size: 1.4rem;
+  font-size: @font-size;
   font-weight: 300;
   height: 3.2rem;
   line-height: 1;
@@ -14,7 +14,7 @@
   width: 3.2rem;
 
   &.avatar-xs {
-    font-size: 1.4rem;
+    font-size: .8rem;
     height: 1.6rem;
     width: 1.6rem;
   }
@@ -39,11 +39,11 @@
     height: 100%;
     position: relative;
     width: 100%;
-    z-index: 99;
+    z-index: @zindex-1;
   }
 
   .avatar-icon {
-    background: @light-bg-color;
+    background: @bg-color-light;
     bottom: -.2em;
     height: 50%;
     padding: 5%;
@@ -59,13 +59,6 @@
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
-    vertical-align: middle;
-    z-index: 1;
-  }
-
-  &.avatar-xs {
-    &[data-initial]::before {
-      transform: translate(-50%, -50%) scale(.5);
-    }
+    z-index: @zindex-0;
   }
 }

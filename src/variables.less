@@ -3,9 +3,11 @@
 // Global
 @html-font-size: 10px;
 @html-line-height: 1.428571429;
-@body-bg: #fff;
-@body-font-color: #333;
-@body-font-size: 1.4rem;
+@body-bg: @bg-color-light;
+@body-font-color: lighten(@dark-color, 5%);
+@font-size: 1.4rem;
+@font-size-sm: 1.2rem;
+@font-size-lg: 1.6rem;
 
 // Fonts
 // Credit: https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/
@@ -15,35 +17,43 @@
 @body-font-family: @base-font-family, @fallback-font-family;
 
 // Sizes
-@layout-gutter: 1rem;
+@layout-padding: 1rem;
+@layout-padding-lg: 1.5rem;
 @control-min-width: 18rem;
 @border-radius: .2rem;
+@border-width: .1rem;
 
+// Colors
 // Core colors
 @primary-color: #5764c6;
-@dark-primary-color: darken(@primary-color, 5%);
-@light-primary-color: lighten(@primary-color, 2%);
+@primary-color-dark: darken(@primary-color, 3%);
+@primary-color-light: lighten(@primary-color, 3%);
 @secondary-color: lighten(@primary-color, 40%);
-@dark-secondary-color: darken(@secondary-color, 5%);
-@light-secondary-color: lighten(@secondary-color, 2%);
-@dark-color: #333;
-@dark-gray-color: #666;
-@gray-color: #999;
-@light-gray-color: #ccc;
-@light-color: #fff;
+@secondary-color-dark: darken(@secondary-color, 3%);
+@secondary-color-light: lighten(@secondary-color, 3%);
+
 @link-color: @primary-color;
-@dark-link-color: darken(@link-color, 10%);
-@border-color: #efefef;
-@bg-color: #f8f8f8;
-@dark-bg-color: darken(@bg-color, 3%);
-@light-bg-color: #fff;
+@link-color-dark: darken(@link-color, 10%);
+
+// Gray colors
+@dark-color: #454d5d;
+@light-color: #fff;
+@gray-color: lighten(@dark-color, 40%);
+@gray-color-dark: darken(@gray-color, 20%);
+@gray-color-light: lighten(@gray-color, 20%);
+
+@border-color: lighten(@gray-color-light, 3%);
+@border-color-dark: darken(@border-color, 15%);
+@bg-color: lighten(@dark-color, 66%);
+@bg-color-dark: darken(@bg-color, 3%);
+@bg-color-light: @light-color;
 
 // Control colors
 @control-color-success: #32b643;
 @control-color-warning: #ffb700;
 @control-color-danger: #e85600;
 
-// Meta colors
+// Other colors
 @code-color: #e06870;
 @highlight-color: #ffe9b3;
 
@@ -54,3 +64,16 @@
 @size-lg: 960px;
 @size-xl: 1280px;
 @size-2x: 1440px;
+
+// Z-index and shadows
+@zindex-0: 1;
+@zindex-1: 100;
+@zindex-2: 200;
+@zindex-3: 300;
+@zindex-4: 400;
+
+@shadow-0: 0 0 .2rem rgba(0, 0, 0, .3);
+@shadow-1: 0 .1rem .4rem rgba(0, 0, 0, .3);
+@shadow-2: 0 .2rem .8rem rgba(0, 0, 0, .3);
+@shadow-3: 0 .3rem 1.2rem rgba(0, 0, 0, .3);
+@shadow-4: 0 .4rem 1.6rem rgba(0, 0, 0, .3);

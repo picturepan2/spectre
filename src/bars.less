@@ -1,6 +1,6 @@
 // Bars
 .bar {
-  background: @border-color;
+  background: @bg-color-dark;
   border-radius: @border-radius;
   display: flex;
   flex-wrap: nowrap;
@@ -16,19 +16,20 @@
     background: @primary-color;
     color: @light-color;
     display: block;
-    font-size: 1.2rem;
+    font-size: @font-size-sm;
     flex-shrink: 0;
     line-height: 1;
     height: 100%;
     padding: .2rem 0;
+    position: relative;
     text-align: center;
     width: 0;
 
-    &:first-of-type {
+    &:first-child {
       border-bottom-left-radius: @border-radius;
       border-top-left-radius: @border-radius;
     }
-    &:last-of-type {
+    &:last-child {
       border-bottom-right-radius: @border-radius;
       border-top-right-radius: @border-radius;
       flex-shrink: 1;

@@ -1,18 +1,18 @@
 // Calendars
 .calendar {
-  border: .1rem solid @border-color;
+  border: @border-width solid @border-color;
   border-radius: @border-radius;
   display: block;
+  min-width: 28rem;
   text-align: center;
 
   .calendar-nav {
-    align-content: space-between;
     align-items: center;
     background: @bg-color;
     border-top-left-radius: @border-radius;
     border-top-right-radius: @border-radius;
     display: flex;
-    font-size: 2rem;
+    font-size: @font-size-lg;
     padding: 1rem;
   }
 
@@ -24,70 +24,60 @@
     padding: 1rem 0;
 
     .calendar-date {
-      flex: 0 0 14.28%;
+      flex: 0 0 14.28%; // 7 calendar-items each row
+      width: 14.28%;
     }
   }
 
   .calendar-header {
     background: @bg-color;
-    border-bottom: .1rem solid @border-color;
+    border-bottom: @border-width solid @border-color;
     color: @gray-color;
-    font-size: 1.2rem;
+    font-size: @font-size-sm;
   }
 
   .calendar-body {
-    color: @dark-gray-color;
+    color: @gray-color-dark;
+  }
 
-    .calendar-date {
-      border: 0;
-      padding: .6rem;
-
-      .date-item {
-        color: @dark-gray-color;
-      }
-
-      &.prev-month .date-item,
-      &.next-month .date-item,
-      .date-item:disabled {
-        cursor: default;
-        opacity: .25;
-        pointer-events: none;
-      }
-    }
+  .calendar-date {
+    border: 0;
+    padding: .4rem;
 
     .date-item {
       appearance: none;
       background: transparent;
-      border: .1rem solid transparent;
+      border: @border-width solid transparent;
       border-radius: 50%;
+      color: @gray-color-dark;
       .control-transition();
       cursor: pointer;
-      display: inline-block;
-      height: 3.2rem;
+      height: 2.8rem;
       line-height: 2rem;
-      padding: .5rem;
+      padding: .3rem;
+      position: relative;
       text-align: center;
       text-decoration: none;
       vertical-align: middle;
       white-space: nowrap;
-      width: 3.2rem;
+      width: 2.8rem;
 
       &.date-today {
-        background: @secondary-color;
+        border-color: @secondary-color-dark;
         color: @primary-color;
       }
 
       &:focus,
       &:hover {
-        background: @light-secondary-color;
-        border-color: @dark-secondary-color;
+        background: @secondary-color-light;
+        border-color: @secondary-color-dark;
         color: @primary-color;
         text-decoration: none;
       }
       &:active,
       &.active {
-        background: @dark-primary-color;
-        border-color: darken(@dark-primary-color, 5%);
+        background: @primary-color-dark;
+        border-color: darken(@primary-color-dark, 5%);
         color: @light-color;
       }
 
@@ -95,43 +85,49 @@
       &.badge {
         &::after {
           position: absolute;
-          top: .4rem;
-          right: .4rem;
+          top: .3rem;
+          right: .3rem;
           transform: translate(50%, -50%);
         }
       }
+    }
+
+    &.disabled .date-item,
+    &.disabled .calendar-event,
+    .date-item:disabled,
+    .calendar-event:disabled {
+      cursor: default;
+      opacity: .25;
+      pointer-events: none;
     }
   }
 
   .calendar-range {
     position: relative;
 
-    .date-item {
+    &::before {
+      background: @secondary-color;
+      content: "";
+      height: 2.8rem;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    &.range-start {
       &::before {
-        background: @secondary-color;
-        content: "";
-        height: 3.2rem;
-        position: absolute;
-        top: 50%;
         left: 50%;
-        transform: translateY(-50%);
-        width: 50%;
-        z-index: -9;
+      }
+    }
+    &.range-end {
+      &::before {
+        right: 50%;
       }
     }
 
-    & + .calendar-range {
-      .date-item {
-        &::before {
-          left: 0;
-          width: 100%;
-        }
-        &.active {
-          &::before {
-            width: 50%;
-          }
-        }
-      }
+    .date-item {
+      color: @primary-color;
     }
   }
 
@@ -140,12 +136,11 @@
       padding: 0;
 
       .calendar-date {
-        border-bottom: .1rem solid @border-color;
-        border-right: .1rem solid @border-color;
+        border-bottom: @border-width solid @border-color;
+        border-right: @border-width solid @border-color;
         display: flex;
         flex-direction: column;
         height: 11rem;
-        overflow: hidden;
         padding: 0;
 
         &:nth-child(7n) {
@@ -155,48 +150,28 @@
           border-bottom: 0;
         }
       }
+    }
 
-      .date-item {
-        align-self: flex-end;
-        flex: 0 0 2.4rem;
-        height: 2.4rem;
-        margin-right: .5rem;
-        margin-top: .5rem;
-        padding: .1rem;
-        width: 2.4rem;
+    .date-item {
+      align-self: flex-end;
+      height: 2.8rem;
+      margin-right: .5rem;
+      margin-top: .5rem;
+    }
 
-        &.badge {
-          &::after {
-            top: .2rem;
-            right: .2rem;
-          }
+    .calendar-range {
+      &::before {
+        top: 1.9rem;
+      }
+      &.range-start {
+        &::before {
+          left: auto;
+          width: 1.9rem;
         }
       }
-
-      .calendar-range {
-        .date-item {
-          &::before {
-            height: 2.4rem;
-            left: auto;
-            right: 0;
-            top: 1.7rem;
-            width: 2.2rem;
-          }
-        }
-
-        & + .calendar-range {
-          .date-item {
-            &::before {
-              left: 0;
-              width: 100%;
-            }
-            &.active {
-              &::before {
-                right: 1.7rem;
-                width: auto;
-              }
-            }
-          }
+      &.range-end {
+        &::before {
+          right: 1.9rem;
         }
       }
     }
@@ -212,7 +187,7 @@
       background: @secondary-color;
       border-radius: @border-radius;
       color: @primary-color;
-      font-size: 1.2rem;
+      font-size: @font-size-sm;
       display: block;
       margin: .2rem auto;
       overflow: hidden;

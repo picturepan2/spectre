@@ -27,7 +27,7 @@ gulp.task('build', function() {
 });
 
 gulp.task('docs', function() {
-    gulp.src(['./docs/css/*.less', './*.less'])
+    gulp.src(['./docs/src/*.less', './*.less'])
         .pipe(less({
             plugins: [autoprefix]
         }))

@@ -3,8 +3,6 @@
   align-content: space-between;
   align-items: flex-start;
   display: flex;
-  margin: 0;
-  padding: .5rem 0;
 
   .tile-icon,
   .tile-action {
@@ -20,11 +18,11 @@
     }
   }
   .tile-title {
-    font-size: 1.6rem;
     font-weight: 500;
   }
-  .tile-meta {
+  .tile-subtitle {
     color: @gray-color;
+    line-height: 2rem;
   }
 
   &.tile-centered {
@@ -35,7 +33,7 @@
     }
 
     .tile-title,
-    .tile-meta {
+    .tile-subtitle {
       .text-ellipsis;
     }
   }

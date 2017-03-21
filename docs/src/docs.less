@@ -1,25 +1,28 @@
 /*! Spectre.css Docs | MIT License | github.com/picturepan2/spectre */
 /* Spectre version */
 .version::after {
-  content: "0.2.8";
+  content: "0.2.9";
 }
+// Core variables and mixins
+@import '../../src/variables.less';
+@import '../../src/mixins.less';
 
 /* Spectre docs style */
 .bg-gray {
-  background: #f6f6f6;
-  color: #666;
+  background: @bg-color;
+  color: lighten(@body-font-color, 10%);
   padding: 1rem;
 }
 
 .bg-dark {
-  background: #333;
-  color: #fff;
+  background: @body-font-color;
+  color: @light-color;
   padding: 1rem;
 }
 
 .bg-primary {
-  background: #5764c6;
-  color: #fff;
+  background: @primary-color;
+  color: @light-color;
   padding: 1rem;
 }
 
@@ -28,12 +31,12 @@
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 499;
+  z-index: 200;
 }
 
 .section-hero {
   position: relative;
-  z-index: 999;
+  z-index: 300;
 }
 
 .grid-header {
@@ -46,18 +49,18 @@
   }
 
   .navbar-brand {
-    color: #444;
+    color: @body-font-color;
   }
 
   .btn-link {
-    color: #666;
+    color: lighten(@body-font-color, 10%);
     padding-left: .6rem;
     padding-right: .6rem;
 
-    &:hover,
     &:focus,
+    &:hover,
     &:active {
-      color: #444;
+      color: @body-font-color;
       opacity: .75;
     }
   }
@@ -68,19 +71,20 @@
   margin-bottom: 4rem;
 
   h1 {
-    color: #555;
-    font-weight: 400;
+    color: lighten(@body-font-color, 5%);
     font-size: 3.2rem;
+    font-weight: 400;
   }
+
   h2 {
-    color: #666;
+    color: lighten(@body-font-color, 5%);
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 3rem;
     margin-bottom: 3rem;
 
     u {
-      border-bottom: .2rem solid #666;
+      border-bottom: .2rem solid lighten(@body-font-color, 5%);
       padding-bottom: .1rem;
       text-decoration: none;
     }
@@ -89,11 +93,11 @@
   .card {
     background: none;
     border: 0;
-    color: #666;
+    color: lighten(@body-font-color, 10%);
     padding: 1rem;
 
     .card-title {
-      color: #5764c6;
+      color: @primary-color;
       font-size: 1.8rem;
       margin-bottom: 0;
     }
@@ -101,26 +105,17 @@
 }
 
 .grid-footer {
-  color: #888;
+  color: @gray-color;
   margin-top: 4rem;
   margin-bottom: 3rem;
 
   a {
-    color: #666;
+    color: @gray-color-dark;
   }
 }
 
-.grid-ads {
-  border-radius: .2rem;
-  display: block;
-  height: 12rem;
-  margin: 2rem auto;
-  max-width: 64rem;
-  padding: 1rem;
-  width: 100%
-}
-
 .docs-content {
+  color: lighten(@body-font-color, 10%);
   padding-top: 0;
 
   .container {
@@ -128,13 +123,12 @@
   }
 
   header {
-    color: #444;
+    color: @body-font-color;
     padding-top: 6rem;
   }
 
   .notes {
     margin: 4rem 0;
-    color: #666;
   }
 
   .docs-block {
@@ -167,15 +161,36 @@
     margin-bottom: 2rem;
   }
 
+  .docs-color {
+    border-radius: @border-radius;
+    margin: .5rem 0;
+    padding: 1rem;
+
+    .color-subtitle {
+      font-size: @font-size-sm;
+      opacity: .75;
+    }
+  }
+
+  .panel {
+    height: 75vh;
+
+    .tile {
+      margin: 1.5rem 0;
+    }
+  }
+
   .code {
+    color: lighten(@body-font-color, 10%);
+
     .com {
-      color: #c5c5c5;
+      color: @gray-color;
     }
     .tag {
-      color: #5764c6;
+      color: @primary-color;
     }
     .atn {
-      color: #666;
+      color: lighten(@body-font-color, 10%);
     }
     .atv {
       color: #e06870;
@@ -186,6 +201,10 @@
     font-size: 4rem;
   }
 
+  .navbar-brand .icon {
+    font-size: 3rem;
+  }
+
   .form-autocomplete .menu {
     position: static;
   }
@@ -193,9 +212,9 @@
   .example-tile-icon {
     align-content: space-around;
     align-items: center;
-    background: #5764c6;
+    background: @primary-color;
     border-radius: .2rem;
-    color: #fff;
+    color: @light-color;
     display: flex;
     font-size: 2.4rem;
     height: 4rem;
@@ -204,14 +223,14 @@
 }
 
 @media screen and (min-width: 601px) {
-  .navbar {
+  .section-header {
     .navbar-section {
       padding: 0 .5rem;
     }
   }
 
   .docs-sidebar {
-    padding: 7rem 1rem;
+    padding: 7rem 1rem 3.5rem 1rem;
 
       .docs-nav {
         position: relative;
@@ -247,7 +266,7 @@
   }
 
   .docs-sidebar {
-    background: #fff;
+    background: bg-color-light;
     height: 100%;
     overflow-y: auto;
     padding: 6rem 3rem;
@@ -257,7 +276,7 @@
     transform: translateX(-100%);
     transition: transform .2s ease;
     width: 24rem;
-    z-index: 999;
+    z-index: 400;
 
     &:target {
       transform: translateX(0);
@@ -278,6 +297,6 @@
     top: 0;
     position: fixed;
     width: 100%;
-    z-index: 499;
+    z-index: 300;
   }
 }

@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="robots" content="index, follow" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="author" content="https://github.com/picturepan2/" />
-    <title>Spectre.css - The lightweight, responsive and modern CSS framework</title>
-    <link rel="stylesheet" href="css/spectre.css" />
-    <link rel="stylesheet" href="css/docs.css" />
-    <link rel="stylesheet" href="font/style.css" />
+  <meta charset="UTF-8" />
+  <meta name="robots" content="index, follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="author" content="https://github.com/picturepan2/" />
+  <title>Spectre.css - The lightweight, responsive and modern CSS framework</title>
+  <link rel="stylesheet" href="css/spectre.css" />
+  <link rel="stylesheet" href="css/docs.css" />
+  <link rel="stylesheet" href="font/style.css" />
 </head>
 <body>
   <section class="section section-header bg-gray">
@@ -17,7 +17,7 @@
       <nav class="navbar">
         <section class="navbar-section">
           <a href="#sidebar" class="btn btn-lg btn-link btn-action show-sm"><i class="icon icon-menu"></i></a>
-          <a href="index.html" class="navbar-brand">Spectre.css</a>
+          <a href="index.html" class="navbar-brand mr-10">Spectre.css</a>
           <a href="index.html" class="btn btn-link">Docs</a>
         </section>
         <section class="navbar-section">
@@ -197,9 +197,88 @@
 └── spectre.less
 </code></pre>
 
-          <header id="colors" class="text-center"><h4>Colors</h4></header>
+          <header id="variables" class="text-center"><h4>Variables</h4></header>
           <section class="notes">
-            <p>Spectre.css has its consistent design language colors (primary color <span class="docs-dot bg-primary"></span> <span style="color:#5764c6;">#5764c6</span>), you can modify <code>variables.less</code> to create your new or match existing design. </p>
+            <p>Spectre.css is designed with consistent design language. You can modify <code>variables.less</code> to create your new or match existing design.
+            <h5>Colors</h5>
+            <div class="columns">
+              <div class="column col-3 col-md-6">
+                <div class="docs-color" style="background:#5764c6;color:#fff;">
+                  <div class="color-title">#5764c6</div>
+                  <div class="color-subtitle">Primary</div>
+                </div>
+              </div>
+              <div class="column col-3 col-md-6">
+                <div class="docs-color" style="background:#eff1fa;color:#5764c6;">
+                  <div class="color-title">#eff1fa</div>
+                  <div class="color-subtitle">Secondary</div>
+                </div>
+              </div>
+            </div>
+            <div class="columns">
+              <div class="column col-3 col-md-6">
+                <div class="docs-color" style="background:#454d5d;color:#fff;">
+                  <div class="color-title">#454d5d</div>
+                  <div class="color-subtitle">Dark</div>
+                </div>
+              </div>
+              <div class="column col-3 col-md-6">
+                <div class="docs-color" style="background:#727e96;color:#fff;">
+                  <div class="color-title">#727e96</div>
+                  <div class="color-subtitle">Gray dark</div>
+                </div>
+              </div>
+              <div class="column col-3 col-md-6">
+                <div class="docs-color" style="background:#acb3c2;color:#fff;">
+                  <div class="color-title">#acb3c2</div>
+                  <div class="color-subtitle">Gray</div>
+                </div>
+              </div>
+              <div class="column col-3 col-md-6">
+                <div class="docs-color" style="background:#e7e9ed;color:#727e96;">
+                  <div class="color-title">#e7e9ed</div>
+                  <div class="color-subtitle">Gray light</div>
+                </div>
+              </div>
+              <div class="column col-3 col-md-6">
+                <div class="docs-color" style="background:#f0f1f4;color:#727e96;">
+                  <div class="color-title">#f0f1f4</div>
+                  <div class="color-subtitle">Border</div>
+                </div>
+              </div>
+              <div class="column col-3 col-md-6">
+                <div class="docs-color" style="background:#f8f9fa;color:#727e96;">
+                  <div class="color-title">#f8f9fa</div>
+                  <div class="color-subtitle">Background</div>
+                </div>
+              </div>
+              <div class="column col-3 col-md-6">
+                <div class="docs-color" style="background:#fff;color:#727e96;">
+                  <div class="color-title">#fff</div>
+                  <div class="color-subtitle">Light</div>
+                </div>
+              </div>
+            </div>
+            <div class="columns">
+              <div class="column col-3 col-md-6">
+                <div class="docs-color" style="background:#32b643;color:#fff;">
+                  <div class="color-title">#32b643</div>
+                  <div class="color-subtitle">Success</div>
+                </div>
+              </div>
+              <div class="column col-3 col-md-6">
+                <div class="docs-color" style="background:#ffb700;color:#fff;">
+                  <div class="color-title">#ffb700</div>
+                  <div class="color-subtitle">Warning</div>
+                </div>
+              </div>
+              <div class="column col-3 col-md-6">
+                <div class="docs-color" style="background:#e85600;color:#fff;">
+                  <div class="color-title">#e85600</div>
+                  <div class="color-subtitle">Danger</div>
+                </div>
+              </div>
+            </div>
           </section>
         </section>
 
@@ -228,15 +307,18 @@
             <p><strong>March 2017</strong></p>
             <ul>
               <li>
-                <a href="experimentals.html#carousels">Carousels</a>: slideshows for cycling images
+                <a href="layout.html#panels">Panels</a>: flexible view container layout with auto-expand content section <small class="label label-primary">NEW</small>
               </li>
               <li>
-                <a href="experimentals.html#calendars">Calendars</a>: date or date range picker and events display
+                <a href="experimentals.html#carousels">Carousels</a>: slideshows for cycling images <small class="label label-primary">NEW</small>
+              </li>
+              <li>
+                <a href="experimentals.html#calendars">Calendars</a>: date or date range picker and events display <small class="label label-primary">NEW</small>
               </li>
             </ul>
             <p><strong>February 2017</strong></p>
             <ul>
-              <li>New Documents experience <small class="label label-primary">NEW</small></li>
+              <li>New Documents experience</li>
               <li>
                 <a href="components.html#bars">Bars</a>: represent the progress of a task or the value within the known range
               </li>
@@ -247,7 +329,7 @@
                 <a href="components.html#tiles">Tiles</a>: repeatable or embeddable information blocks
               </li>
               <li>
-                <a href="experimentals.html">Experimentals</a>: experimental elements and features <small class="label label-primary">NEW</small>
+                <a href="experimentals.html">Experimentals</a>: experimental elements and features
               </li>
               <li>
                 <a href="experimentals.html#meters">Meters</a>, <a href="experimentals.html#parallax">Parallax</a>, <a href="experimentals.html#progress">Progress</a> and <a href="experimentals.html#sliders">Sliders</a>
@@ -265,7 +347,7 @@
           <ul class="pagination">
             <li class="page-item page-next">
               <a href="elements.html">
-                <p class="page-item-meta">Next</p>
+                <p class="page-item-subtitle">Next</p>
                 <h4 class="page-item-title">Elements</h4>
               </a>
             </li>

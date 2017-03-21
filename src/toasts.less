@@ -1,10 +1,10 @@
 // Toasts
 .toast {
-  border: .1rem solid @dark-color;
+  border: @border-width solid @dark-color;
   border-radius: @border-radius;
   color: @light-color;
   display: block;
-  padding: 1.4rem;
+  padding: @layout-padding;
   .toast-variant(@dark-color);
   width: 100%;
 
@@ -23,10 +23,10 @@
   a {
     color: @light-color;
     text-decoration: underline;
-
-    &:hover,
     &:focus,
-    &:active {
+    &:hover,
+    &:active,
+    &.active {
       opacity: .75;
     }
   }

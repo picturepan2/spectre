@@ -12,33 +12,35 @@
       }
     }
   }
+
   &.table-hover {
     tbody {
       tr {
         &:hover {
-          background: @dark-bg-color;
+          background: @bg-color-dark;
         }
       }
     }
   }
+
   &,
   &.table-striped {
     tbody {
       tr {
         &.active {
-          background: @dark-bg-color;
+          background: @bg-color-dark;
         }
       }
     }
   }
 
   td {
-    border-bottom: .1rem solid @border-color;
+    border-bottom: @border-width solid @border-color;
     padding: 1.5rem 1rem;
   }
-  
+
   th {
-    border-bottom: .2rem solid @dark-color;
+    border-bottom: .2rem solid @gray-color-dark;
     padding: 1.5rem 1rem;
   }
 }

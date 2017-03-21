@@ -18,7 +18,7 @@
       <nav class="navbar">
         <section class="navbar-section">
           <a href="#sidebar" class="btn btn-lg btn-link btn-action show-sm"><i class="icon icon-menu"></i></a>
-          <a href="index.html" class="navbar-brand">Spectre.css</a>
+          <a href="index.html" class="navbar-brand mr-10">Spectre.css</a>
           <a href="index.html" class="btn btn-link">Docs</a>
         </section>
         <section class="navbar-section">
@@ -35,54 +35,8 @@
           <li class="nav-item">
             <a href="index.html">Getting started</a>
           </li>
-          <li class="nav-item active">
+          <li class="nav-item">
             <a href="elements.html">Elements</a>
-            <ul class="nav">
-              <li class="nav-item">
-                <a href="elements.html#typography">Typography</a>
-              </li>
-              <li class="nav-item">
-                <a href="elements.html#tables">Tables</a>
-              </li>
-              <li class="nav-item">
-                <a href="elements.html#buttons">Buttons</a>
-              </li>
-              <li class="nav-item">
-                <a href="elements.html#forms">Forms</a>
-              </li>
-              <li class="nav-item">
-                <a href="elements.html#labels">Labels</a>
-              </li>
-              <li class="nav-item">
-                <a href="elements.html#codes">Codes</a>
-              </li>
-              <li class="nav-item">
-                <a href="elements.html#media">Media</a>
-              </li>
-              <li class="nav-item active">
-                <a href="experimentals.html">Experimentals</a>
-                <ul class="nav">
-                  <li class="nav-item">
-                    <a href="experimentals.html#calendars">Calendars</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="experimentals.html#carousels">Carousels</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="experimentals.html#meters">Meters</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="experimentals.html#parallax">Parallax</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="experimentals.html#progress">Progress</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="experimentals.html#sliders">Sliders</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
           </li>
           <li class="nav-item">
             <a href="layout.html">Layout</a>
@@ -92,6 +46,29 @@
           </li>
           <li class="nav-item">
             <a href="utilities.html">Utilities</a>
+          </li>
+          <li class="nav-item active">
+            <a href="experimentals.html">Experimentals</a>
+            <ul class="nav">
+              <li class="nav-item">
+                <a href="experimentals.html#calendars">Calendars</a>
+              </li>
+              <li class="nav-item">
+                <a href="experimentals.html#carousels">Carousels</a>
+              </li>
+              <li class="nav-item">
+                <a href="experimentals.html#meters">Meters</a>
+              </li>
+              <li class="nav-item">
+                <a href="experimentals.html#parallax">Parallax</a>
+              </li>
+              <li class="nav-item">
+                <a href="experimentals.html#progress">Progress</a>
+              </li>
+              <li class="nav-item">
+                <a href="experimentals.html#sliders">Sliders</a>
+              </li>
+            </ul>
           </li>
         </ul>
       </div>
@@ -111,13 +88,13 @@
             <p><strong>Calendars</strong> are designed for date or date range picker and events display. It is made with flex layout.</p>
           </section>
           <div class="columns">
-            <div class="column col-6 col-md-12">
+            <div class="column col-4 col-md-12">
               <div class="calendar">
                 <div class="calendar-nav navbar">
                   <button class="btn btn-action btn-link btn-lg">
                     <i class="icon icon-keyboard_arrow_left"></i>
                   </button>
-                  <div class="navbar-section">March 2017</div>
+                  <div class="navbar-primary">March 2017</div>
                   <button class="btn btn-action btn-link btn-lg">
                     <i class="icon icon-keyboard_arrow_right"></i>
                   </button>
@@ -133,9 +110,9 @@
                     <div class="calendar-date">Sat</div>
                   </div>
                   <div class="calendar-body">
-                    <div class="calendar-date prev-month"><button class="date-item" disabled>26</button></div>
-                    <div class="calendar-date prev-month"><button class="date-item" disabled>27</button></div>
-                    <div class="calendar-date prev-month"><button class="date-item" disabled>28</button></div>
+                    <div class="calendar-date prev-month disabled"><button class="date-item">26</button></div>
+                    <div class="calendar-date prev-month disabled"><button class="date-item">27</button></div>
+                    <div class="calendar-date prev-month disabled"><button class="date-item">28</button></div>
                     <div class="calendar-date current-month"><button class="date-item">1</button></div>
                     <div class="calendar-date current-month"><button class="date-item">2</button></div>
                     <div class="calendar-date current-month"><button class="date-item">3</button></div>
@@ -151,11 +128,11 @@
                     <div class="calendar-date current-month"><button class="date-item">13</button></div>
                     <div class="calendar-date current-month"><button class="date-item">14</button></div>
                     <div class="calendar-date current-month"><button class="date-item">15</button></div>
-                    <div class="calendar-date current-month calendar-range"><button class="date-item active">16</button></div>
+                    <div class="calendar-date current-month calendar-range range-start"><button class="date-item active">16</button></div>
                     <div class="calendar-date current-month calendar-range"><button class="date-item">17</button></div>
                     <div class="calendar-date current-month calendar-range"><button class="date-item">18</button></div>
                     <div class="calendar-date current-month calendar-range"><button class="date-item">19</button></div>
-                    <div class="calendar-date current-month calendar-range"><button class="date-item active">20</button></div>
+                    <div class="calendar-date current-month calendar-range range-end"><button class="date-item active">20</button></div>
                     <div class="calendar-date current-month"><button class="date-item">21</button></div>
                     <div class="calendar-date current-month"><button class="date-item">22</button></div>
                     <div class="calendar-date current-month"><button class="date-item">23</button></div>
@@ -167,7 +144,7 @@
                     <div class="calendar-date current-month"><button class="date-item">29</button></div>
                     <div class="calendar-date current-month"><button class="date-item">30</button></div>
                     <div class="calendar-date current-month"><button class="date-item">31</button></div>
-                    <div class="calendar-date next-month"><button class="date-item" disabled>1</button></div>
+                    <div class="calendar-date next-month disabled"><button class="date-item">1</button></div>
                   </div>
                 </div>
               </div>
@@ -182,7 +159,7 @@
                   <button class="btn btn-action btn-link btn-lg">
                     <i class="icon icon-keyboard_arrow_left"></i>
                   </button>
-                  <div class="navbar-section">March 2017</div>
+                  <div class="navbar-primary">March 2017</div>
                   <button class="btn btn-action btn-link btn-lg">
                     <i class="icon icon-keyboard_arrow_right"></i>
                   </button>
@@ -198,17 +175,22 @@
                     <div class="calendar-date">Sat</div>
                   </div>
                   <div class="calendar-body">
-                    <div class="calendar-date prev-month"><button class="date-item" disabled>26</button></div>
-                    <div class="calendar-date prev-month"><button class="date-item" disabled>27</button></div>
-                    <div class="calendar-date prev-month"><button class="date-item" disabled>28</button></div>
+                    <div class="calendar-date prev-month disabled"><button class="date-item">26</button></div>
+                    <div class="calendar-date prev-month disabled">
+                      <button class="date-item">27</button>
+                      <div class="calendar-events">
+                        <a class="calendar-event" href="#calendars" style="background:#e85600;color:#fff;">Zhonghe Festival</a>
+                      </div>
+                    </div>
+                    <div class="calendar-date prev-month disabled"><button class="date-item">28</button></div>
                     <div class="calendar-date current-month"><button class="date-item">1</button></div>
                     <div class="calendar-date current-month"><button class="date-item">2</button></div>
                     <div class="calendar-date current-month"><button class="date-item">3</button></div>
-                    <div class="calendar-date current-month tooltip" data-tooltip="Today"><button class="date-item date-today">4</button></div>
-                    <div class="calendar-date current-month tooltip" data-tooltip="Not available"><button class="date-item" disabled>5</button></div>
+                    <div class="calendar-date current-month"><button class="date-item date-today">4</button></div>
+                    <div class="calendar-date current-month"><button class="date-item" disabled>5</button></div>
                     <div class="calendar-date current-month"><button class="date-item">6</button></div>
                     <div class="calendar-date current-month"><button class="date-item">7</button></div>
-                    <div class="calendar-date current-month">
+                    <div class="calendar-date current-month tooltip" data-tooltip="You have appointments">
                       <button class="date-item badge">8</button>
                       <div class="calendar-events">
                         <a class="calendar-event" href="#calendars" style="background:#5764c6;color:#fff;">Product launch event</a>
@@ -219,15 +201,20 @@
                     <div class="calendar-date current-month"><button class="date-item">9</button></div>
                     <div class="calendar-date current-month"><button class="date-item">10</button></div>
                     <div class="calendar-date current-month"><button class="date-item">11</button></div>
-                    <div class="calendar-date current-month"><button class="date-item">12</button></div>
+                    <div class="calendar-date current-month">
+                      <button class="date-item">12</button>
+                      <div class="calendar-events">
+                        <a class="calendar-event" href="#calendars" style="background:#e85600;color:#fff;">Arbor Day</a>
+                      </div>
+                    </div>
                     <div class="calendar-date current-month"><button class="date-item">13</button></div>
                     <div class="calendar-date current-month"><button class="date-item">14</button></div>
                     <div class="calendar-date current-month"><button class="date-item">15</button></div>
-                    <div class="calendar-date current-month calendar-range"><button class="date-item active">16</button></div>
+                    <div class="calendar-date current-month calendar-range range-start"><button class="date-item active">16</button></div>
                     <div class="calendar-date current-month calendar-range"><button class="date-item">17</button></div>
                     <div class="calendar-date current-month calendar-range"><button class="date-item">18</button></div>
                     <div class="calendar-date current-month calendar-range"><button class="date-item">19</button></div>
-                    <div class="calendar-date current-month calendar-range">
+                    <div class="calendar-date current-month calendar-range range-end">
                       <button class="date-item active">20</button>
                       <div class="calendar-events">
                         <a class="calendar-event" href="#calendars" style="background:#32b643;color:#fff;">Spring Equinox</a>
@@ -244,7 +231,12 @@
                     <div class="calendar-date current-month"><button class="date-item">29</button></div>
                     <div class="calendar-date current-month"><button class="date-item">30</button></div>
                     <div class="calendar-date current-month"><button class="date-item">31</button></div>
-                    <div class="calendar-date next-month"><button class="date-item" disabled>1</button></div>
+                    <div class="calendar-date next-month disabled">
+                      <button class="date-item">1</button>
+                      <div class="calendar-events">
+                        <a class="calendar-event" href="#calendars" style="background:#e85600;color:#fff;">April Fools' Day</a>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -408,12 +400,10 @@
               <progress class="progress" max="100"></progress>
             </div>
           </div>
-          <section class="notes">
-            <p></p>
-          </section>
 
 <!-- progress example -->
 <pre class="code" data-lang="HTML"><code>&lt;<span class="tag">progress</span> <span class="atn">class</span>=<span class="atv">&quot;progress&quot;</span> <span class="atn">value</span>=<span class="atv">&quot;25&quot;</span> <span class="atn">max</span>=<span class="atv">&quot;100&quot;</span>&gt;&lt;<span class="tag">/progress</span>&gt;
+&lt;<span class="tag">progress</span> <span class="atn">class</span>=<span class="atv">&quot;progress&quot;</span> <span class="atn">max</span>=<span class="atv">&quot;100&quot;</span>&gt;&lt;<span class="tag">/progress</span>&gt;
 </code></pre>
 
         </section>
@@ -442,15 +432,9 @@
           <div class="divider"></div>
           <ul class="pagination">
             <li class="page-item page-prev">
-              <a href="index.html">
-                <p class="page-item-meta">Previous</p>
-                <h4 class="page-item-title">Getting started</h4>
-              </a>
-            </li>
-            <li class="page-item page-next">
-              <a href="layout.html">
-                <p class="page-item-meta">Next</p>
-                <h4 class="page-item-title">Layout</h4>
+              <a href="utilities.html">
+                <p class="page-item-subtitle">Previous</p>
+                <h4 class="page-item-title">Utilities</h4>
               </a>
             </li>
           </ul>

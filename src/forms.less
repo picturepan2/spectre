@@ -1,19 +1,35 @@
 // Forms
-.form-group:not(:last-child) {
-  margin-bottom: 1rem;
+.form-group {
+  &:not(:last-child) {
+    margin-bottom: @layout-padding;
+  }
 }
 
-// Form element: Input boxes
+// Form element: Label
+.form-label {
+  display: block;
+  padding: .6rem 0;
+
+  &.label-sm {
+    padding: .2rem 0;
+  }
+
+  &.label-lg {
+    padding: 1rem 0;
+  }
+}
+
+// Form element: Input
 .form-input {
   appearance: none;
-  background: @light-bg-color;
+  background: @bg-color-light;
   background-image: none;
-  border: .1rem solid @light-gray-color;
+  border: @border-width solid @border-color-dark;
   border-radius: @border-radius;
   color: @body-font-color;
   .control-transition();
   display: block;
-  font-size: 1.4rem;
+  font-size: @font-size;
   height: 3.2rem;
   line-height: 2rem;
   max-width: 100%;
@@ -27,13 +43,13 @@
 
   // Input sizes
   &.input-sm {
-    font-size: 1.2rem;
+    font-size: @font-size-sm;
     height: 2.4rem;
-    padding: .1rem .6rem;
+    padding: .1rem .8rem;
   }
 
   &.input-lg {
-    font-size: 1.6rem;
+    font-size: @font-size-lg;
     height: 4rem;
     padding: .9rem .8rem;
   }
@@ -47,11 +63,10 @@
   // Textarea
   textarea& {
     height: auto;
-    line-height: 2rem;
   }
 
   // Input types
-  &[type=file] {
+  &[type="file"] {
     height: auto;
   }
 }
@@ -72,22 +87,15 @@
   }
 }
 
-// Form element: Label
-.form-label {
-  display: block;
-  line-height: 1.6rem;
-  margin-bottom: .5rem;
-}
-
 // Form element: Select
 .form-select {
   appearance: none;
-  border: .1rem solid @light-gray-color;
+  border: @border-width solid @border-color-dark;
   border-radius: @border-radius;
-  font-size: 1.4rem;
+  color: inherit;
+  font-size: @font-size;
   line-height: 2rem;
   min-width: @control-min-width;
-  outline: 0;
   padding: .5rem .8rem;
   vertical-align: middle;
 
@@ -97,7 +105,7 @@
     }
   }
   &:not([multiple]) {
-    background: @light-bg-color url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAUCAMAAACzvE1FAAAADFBMVEUzMzMzMzMzMzMzMzMKAG/3AAAAA3RSTlMAf4C/aSLHAAAAPElEQVR42q3NMQ4AIAgEQTn//2cLdRKppSGzBYwzVXvznNWs8C58CiussPJj8h6NwgorrKRdTvuV9v16Afn0AYFOB7aYAAAAAElFTkSuQmCC) no-repeat right .75rem center / .8rem 1rem;
+    background: @bg-color-light url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23667189' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right .75rem center / .8rem 1rem;
     height: 3.2rem;
     padding-right: 2.4rem;
   }
@@ -110,13 +118,13 @@
 
   // Select sizes
   &.select-sm {
-    font-size: 1.2rem;
+    font-size: @font-size-sm;
     height: 2.4rem;
     padding: .1rem 2rem .1rem .6rem;
   }
 
   &.select-lg {
-    font-size: 1.6rem;
+    font-size: @font-size-lg;
     height: 4rem;
     padding: .9rem 2.4rem .9rem .8rem;
   }
@@ -146,6 +154,10 @@
 .form-checkbox,
 .form-radio,
 .form-switch {
+  display: inline-block;
+  line-height: 2rem;
+  position: relative;
+
   input {
     clip: rect(0, 0, 0, 0);
     height: .1rem;
@@ -157,39 +169,35 @@
       border-color: @primary-color;
       .control-shadow();
     }
-  }
-}
-.form-checkbox,
-.form-radio {
-  cursor: pointer;
-  display: inline-block;
-  line-height: 1.8rem;
-  padding: .3rem 2rem;
-  position: relative;
-
-  .form-icon {
-    border: .1rem solid @light-gray-color;
-    .control-transition();
-    display: inline-block;
-    font-size: 1.4rem;
-    height: 1.4rem;
-    left: 0;
-    line-height: 2.4rem;
-    outline: none;
-    padding: 0;
-    position: absolute;
-    top: .5rem;
-    vertical-align: top;
-    width: 1.4rem;
-  }
-
-  input {
     &:checked + .form-icon {
       background: @primary-color;
       border-color: @primary-color;
     }
+  }
+
+  .form-icon {
+    border: @border-width solid @border-color-dark;
+    .control-transition();
+    cursor: pointer;
+    display: inline-block;
+    position: absolute;
+  }
+}
+
+.form-checkbox,
+.form-radio {
+  padding: .2rem 2rem;
+
+  .form-icon {
+    height: 1.4rem;
+    left: 0;
+    top: .5rem;
+    width: 1.4rem;
+  }
+
+  input {
     &:active + .form-icon {
-      background: @border-color;
+      background: @bg-color-dark;
     }
   }
 }
@@ -200,7 +208,7 @@
 
   input {
     &:checked + .form-icon {
-      &::after {
+      &::before {
         background-clip: padding-box;
         border: .2rem solid @light-color;
         border-left-width: 0;
@@ -219,16 +227,16 @@
     &:indeterminate + .form-icon {
       background: @primary-color;
       border-color: @primary-color;
-      &::after {
-        background: @light-bg-color;
+      &::before {
+        background: @bg-color-light;
         content: "";
         height: .2rem;
         left: 50%;
-        margin-left: -.4rem;
+        margin-left: -.5rem;
         margin-top: -.1rem;
         position: absolute;
         top: 50%;
-        width: .8rem;
+        width: 1rem;
       }
     }
   }
@@ -238,47 +246,38 @@
     border-radius: .7rem;
   }
 
-  input:checked + .form-icon {
-    &::after {
-      background: @light-bg-color;
-      border-radius: @border-radius;
-      content: "";
-      height: .4rem;
-      left: 50%;
-      margin-left: -.2rem;
-      margin-top: -.2rem;
-      position: absolute;
-      top: 50%;
-      width: .4rem;
+  input {
+    &:checked + .form-icon {
+      &::before {
+        background: @bg-color-light;
+        border-radius: @border-radius;
+        content: "";
+        height: .4rem;
+        left: 50%;
+        margin-left: -.2rem;
+        margin-top: -.2rem;
+        position: absolute;
+        top: 50%;
+        width: .4rem;
+      }
     }
   }
 }
 
 // Form element: Switch
 .form-switch {
-  cursor: pointer;
-  display: inline-block;
-  line-height: 2rem;
   padding: .2rem 2rem .2rem 3.6rem;
-  position: relative;
 
   .form-icon {
-    background: @light-gray-color;
+    background: @gray-color-light;
     background-clip: padding-box;
-    border: .1rem solid @light-gray-color;
     border-radius: .9rem;
-    display: inline-block;
     height: 1.8rem;
     left: 0;
-    line-height: 2.6rem;
-    outline: none;
-    padding: 0;
-    position: absolute;
     top: .3rem;
-    vertical-align: top;
     width: 3rem;
-    &::after {
-      background: @light-bg-color;
+    &::before {
+      background: @bg-color-light;
       border-radius: .8rem;
       content: "";
       display: block;
@@ -286,22 +285,20 @@
       left: 0;
       position: absolute;
       top: 0;
-      transition: left .2s ease;
+      .control-transition();
       width: 1.6rem;
     }
   }
 
   input {
     &:checked + .form-icon {
-      background: @primary-color;
-      border-color: @primary-color;
-      &::after {
+      &::before {
         left: 1.2rem;
       }
     }
     &:active + .form-icon {
-      &::after {
-        background: @border-color;
+      &::before {
+        background: @bg-color;
       }
     }
   }
@@ -313,18 +310,17 @@
 
   .input-group-addon {
     background: @bg-color;
-    border: .1rem solid @light-gray-color;
+    border: @border-width solid @border-color-dark;
     border-radius: @border-radius;
     line-height: 2rem;
     padding: .5rem .8rem;
 
     &.addon-sm {
-      font-size: 1.2rem;
-      padding: .1rem .6rem;
+      font-size: @font-size-sm;
+      padding: .1rem .8rem;
     }
     &.addon-lg {
-      font-size: 1.6rem;
-      line-height: 2rem;
+      font-size: @font-size-lg;
       padding: .9rem .8rem;
     }
   }
@@ -350,7 +346,7 @@
       margin-left: -.1rem;
     }
     &:focus {
-      z-index: 99;
+      z-index: @zindex-0;
     }
   }
 
@@ -364,8 +360,8 @@
 .form-select {
   &:disabled,
   &.disabled {
-    background-color: @dark-bg-color;
-    cursor: default;
+    background-color: @bg-color-dark;
+    cursor: not-allowed;
     opacity: .5;
   }
 }
@@ -374,11 +370,9 @@ input {
   &:disabled,
   &.disabled {
     & + .form-icon {
-      background: @dark-bg-color;
-      border-color: @light-gray-color;
-      cursor: default;
+      background: @bg-color-dark;
+      cursor: not-allowed;
       opacity: .5;
-      pointer-events: none;
     }
   }
 }
@@ -387,8 +381,8 @@ input {
   input {
     &:disabled,
     &.disabled {
-      & + .form-icon::after {
-        background: @light-bg-color;
+      & + .form-icon::before {
+        background: @bg-color-light;
       }
     }
   }
@@ -396,15 +390,10 @@ input {
 
 // Form Horizontal
 .form-horizontal {
-  padding: 1rem;
+  padding: @layout-padding;
 
   .form-group {
     display: flex;
-  }
-
-  .form-label {
-    padding: .8rem .4rem;
-    margin-bottom: 0;
   }
 
   .form-checkbox,

@@ -1,7 +1,7 @@
 // Tabs
 .tab {
   align-items: center;
-  border-bottom: .1rem solid @border-color;
+  border-bottom: @border-width solid @border-color;
   display: flex;
   flex-wrap: wrap;
 
@@ -15,11 +15,10 @@
 
     a {
       border-bottom: .2rem solid transparent;
-      color: @body-font-color;
+      color: inherit;
       display: block;
-      margin-bottom: -.1rem;
       margin-top: 0;
-      padding: .6rem 1.2rem;
+      padding: .5rem 1.2rem;
       text-decoration: none;
       &:focus,
       &:hover {

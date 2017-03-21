@@ -8,20 +8,19 @@
     color: @light-color;
     content: attr(data-tooltip);
     display: block;
-    font-size: 1.2rem;
+    font-size: @font-size-sm;
     left: 50%;
-    line-height: 1.6rem;
     max-width: 32rem;
     opacity: 0;
     overflow: hidden;
-    padding: .6rem 1rem;
+    padding: .4rem .8rem;
     pointer-events: none;
     position: absolute;
     text-overflow: ellipsis;
     transform: translate(-50%, 0);
     transition: transform .2s ease;
     white-space: nowrap;
-    z-index: 999;
+    z-index: @zindex-2;
   }
   &:focus,
   &:hover {

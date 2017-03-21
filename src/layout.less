@@ -2,17 +2,17 @@
 .container {
   margin-left: auto;
   margin-right: auto;
-  padding-left: @layout-gutter;
-  padding-right: @layout-gutter;
+  padding-left: @layout-padding;
+  padding-right: @layout-padding;
   width: 100%;
   &:extend(.clearfix all);
 
   &.grid-960 {
-    max-width: 96rem + 2 * @layout-gutter;
+    max-width: 96rem + 2 * @layout-padding;
   }
 
   &.grid-480 {
-    max-width: 48rem + 2 * @layout-gutter;
+    max-width: 48rem + 2 * @layout-padding;
   }
 }
 
@@ -20,8 +20,8 @@
 .columns {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -@layout-gutter;
-  margin-right: -@layout-gutter;
+  margin-left: -@layout-padding;
+  margin-right: -@layout-padding;
 
   &.col-gapless {
     margin-left: 0;
@@ -39,7 +39,7 @@
 }
 .column {
   flex: 1;
-  padding: @layout-gutter;
+  padding: @layout-padding;
 
   &.col-12,
   &.col-11,

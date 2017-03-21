@@ -1,36 +1,36 @@
 // Buttons
 .btn {
-  -webkit-appearance: none;
-  background: @light-bg-color;
-  border: .1rem solid @primary-color;
+  appearance: none;
+  background: @bg-color-light;
+  border: @border-width solid @primary-color;
   border-radius: @border-radius;
   color: @link-color;
   .control-transition();
   cursor: pointer;
   display: inline-block;
-  font-size: 1.4rem;
+  font-size: @font-size;
   height: 3.2rem;
   line-height: 2rem;
-  padding: .5rem 1.2rem;
+  padding: .5rem .8rem;
   text-align: center;
   text-decoration: none;
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
   &:focus {
-    background: @light-secondary-color;
+    background: @secondary-color-light;
     text-decoration: none;
   }
   &:hover {
     background: @primary-color;
-    border-color: @dark-primary-color;
+    border-color: @primary-color-dark;
     color: @light-color;
     text-decoration: none;
   }
   &:active,
   &.active {
-    background: @dark-primary-color;
-    border-color: darken(@dark-primary-color, 5%);
+    background: @primary-color-dark;
+    border-color: darken(@primary-color-dark, 5%);
     color: @light-color;
   }
   &[disabled],
@@ -44,29 +44,24 @@
   // Button Primary
   &.btn-primary {
     background: @primary-color;
-    border-color: @dark-primary-color;
+    border-color: @primary-color-dark;
     color: @light-color;
-    &:focus {
-      background: @dark-primary-color;
-      border-color: darken(@dark-primary-color, 2%);
-      color: @light-color;
-    }
+    &:focus,
     &:hover {
-      background: darken(@dark-primary-color, 2%);
-      border-color: darken(@dark-primary-color, 7%);
+      background: darken(@primary-color-dark, 2%);
+      border-color: darken(@primary-color-dark, 5%);
       color: @light-color;
     }
     &:active,
     &.active {
-      background: darken(@dark-primary-color, 4%);
-      border-color: darken(@dark-primary-color, 9%);
+      background: darken(@primary-color-dark, 4%);
+      border-color: darken(@primary-color-dark, 7%);
       color: @light-color;
     }
     &.loading {
       &::after {
-        border-color: @light-color;
-        border-right-color: transparent;
-        border-top-color: transparent;
+        border-bottom-color: @light-color;
+        border-left-color: @light-color;
       }
     }
   }
@@ -80,21 +75,21 @@
     &:hover,
     &:active,
     &.active {
-      color: @dark-link-color;
+      color: @link-color-dark;
     }
   }
 
   // Button Sizes
   &.btn-sm {
-    font-size: 1.2rem;
+    font-size: @font-size-sm;
     height: 2.4rem;
     padding: .1rem .8rem;
   }
 
   &.btn-lg {
-    font-size: 1.8rem;
+    font-size: @font-size-lg;
     height: 4rem;
-    padding: .9rem 1.5rem;
+    padding: .9rem .8rem;
   }
 
   // Button Block
@@ -123,23 +118,20 @@
     background: transparent;
     border: 0;
     color: currentColor;
-    height: 2rem;
-    margin-left: .2rem;
-    margin-right: -.4rem;
+    height: 1.6rem;
+    line-height: 1.6rem;
+    margin: .2rem -.2rem .2rem .4rem;
     opacity: .45;
-    padding: 0 .4rem;
+    padding: 0 .2rem;
     text-decoration: none;
-    width: 2rem;
+    width: 1.6rem;
 
     &:hover {
       opacity: .85;
     }
 
     &::before {
-      content: '\00d7';
-      display: inline-block;
-      font-family: sans-serif;
-      font-size: 2rem;
+      content: "\2715";
     }
   }
 }
@@ -151,24 +143,24 @@
 
   .btn {
     flex: 1 0 auto;
-    &:first-of-type:not(:last-of-type) {
+    &:first-child:not(:last-child) {
       border-bottom-right-radius: 0;
       border-top-right-radius: 0;
     }
-    &:not(:first-of-type):not(:last-of-type) {
+    &:not(:first-child):not(:last-child) {
       border-radius: 0;
       margin-left: -.1rem;
     }
-    &:last-of-type:not(:first-of-type) {
+    &:last-child:not(:first-child) {
       border-bottom-left-radius: 0;
       border-top-left-radius: 0;
       margin-left: -.1rem;
     }
-    &:hover,
     &:focus,
+    &:hover,
     &:active,
     &.active {
-      z-index: 9;
+      z-index: @zindex-0;
     }
   }
 

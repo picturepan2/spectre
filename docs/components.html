@@ -17,7 +17,7 @@
       <nav class="navbar">
         <section class="navbar-section">
           <a href="#sidebar" class="btn btn-lg btn-link btn-action show-sm"><i class="icon icon-menu"></i></a>
-          <a href="index.html" class="navbar-brand">Spectre.css</a>
+          <a href="index.html" class="navbar-brand mr-10">Spectre.css</a>
           <a href="index.html" class="btn btn-link">Docs</a>
         </section>
         <section class="navbar-section">
@@ -86,6 +86,9 @@
           </li>
           <li class="nav-item">
             <a href="utilities.html">Utilities</a>
+          </li>
+          <li class="nav-item">
+            <a href="experimentals.html">Experimentals</a>
           </li>
         </ul>
       </div>
@@ -156,6 +159,8 @@
                           </div>
                         </div>
                       </a>
+                    </li>
+                    <li class="menu-item">
                       <a href="#autocomplete">
                         <div class="tile tile-centered">
                           <div class="tile-icon">
@@ -173,7 +178,7 @@
             </div>
           </div>
           <section class="notes">
-            <p>Add a container element with the class <code>form-autocomplete</code>. There are 2 parts of it, one is <code>form-autocomplete-input</code>, another is <code>menu</code> component. You may add the class <code>is-focused</code> to <code>form-autocomplete-input</code> to make it appear as focus state.</p>
+            <p>Add a container element with the <code>form-autocomplete</code> class. There are 2 parts of it, one is <code>form-autocomplete-input</code>, another is <code>menu</code> component. You may add the <code>is-focused</code> class to <code>form-autocomplete-input</code> to make it appear as focus state.</p>
             <p>Spectre.css does NOT include JavaScript code, you will need to implement your JS to interact with the autocomplete. The autocomplete HTML structure is exampled below.</p>
           </section>
 
@@ -204,18 +209,6 @@
           &lt;<span class="tag">/div</span>&gt;
           &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;tile-content&quot;</span>&gt;
             Steve Rogers
-          &lt;<span class="tag">/div</span>&gt;
-        &lt;<span class="tag">/div</span>&gt;
-      &lt;<span class="tag">/a</span>&gt;
-    &lt;<span class="tag">/li</span>&gt;
-    &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;menu-item&quot;</span>&gt;
-      &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;
-        &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;tile tile-centered&quot;</span>&gt;
-          &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;tile-icon&quot;</span>&gt;
-            &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/avatar-3.png&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;avatar avatar-sm&quot;</span> <span class="atn">alt</span>=<span class="atv">&quot;Yan Zhu&quot;</span> /&gt;
-          &lt;<span class="tag">/div</span>&gt;
-          &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;tile-content&quot;</span>&gt;
-            Yan Zhu
           &lt;<span class="tag">/div</span>&gt;
         &lt;<span class="tag">/div</span>&gt;
       &lt;<span class="tag">/a</span>&gt;
@@ -251,14 +244,15 @@
             </div>
             <div class="column col-6 col-xs-12">
               <figure class="avatar avatar-xl" data-initial="YZ"></figure>
-              <figure class="avatar" data-initial="YZ" style="background-color: #5764c6;"></figure>
-              <figure class="avatar avatar-sm" data-initial="YZ" style="background-color: #5764c6;"></figure>
-              <figure class="avatar avatar-xs" data-initial="YZ" style="background-color: #5764c6;"></figure>
+              <figure class="avatar avatar-lg" data-initial="YZ"></figure>
+              <figure class="avatar" data-initial="YZ"></figure>
+              <figure class="avatar avatar-sm" data-initial="YZ"></figure>
+              <figure class="avatar avatar-xs" data-initial="YZ"></figure>
             </div>
           </div>
           <section class="notes">
-            <p>Add the class <code>avatar</code> to &lt;img&gt; element. There are 4 additional sizes available, including <code>avatar-xl</code> (64px), <code>avatar-lg</code> (48px), <code>avatar-sm</code> (24px), and <code>avatar-xs</code> (16px). By default, the avatar size is 32px.</p>
-            <p>For users who don't have profile pictures, you may use their initials for avatars. Add the class <code>avatar</code> and avatar size class to &lt;div&gt; element. The attribute <code>data-initial</code> is the name appear inside the avatar.</p>
+            <p>Add the <code>avatar</code> class to &lt;img&gt; element. There are 4 additional sizes available, including <code>avatar-xl</code> (64px), <code>avatar-lg</code> (48px), <code>avatar-sm</code> (24px), and <code>avatar-xs</code> (16px). By default, the avatar size is 32px.</p>
+            <p>For users who don't have profile pictures, you may use their initials for avatars. Add the <code>avatar</code> class and avatar size class to &lt;div&gt; element. The <code>data-initial</code> attribute is the name appear inside the avatar.</p>
           </section>
           <div class="columns">
             <div class="column col-6 col-xs-12">
@@ -312,29 +306,29 @@
             <p><strong>Badges</strong> are often used as unread number indicators.</p>
           </section>
           <div class="columns">
-            <div class="column col-xs-6">
+            <div class="column col-3 col-xs-6">
               <span class="badge" data-badge="">
                 Notifications
               </span>
             </div>
-            <div class="column col-xs-6">
+            <div class="column col-3 col-xs-6">
               <span class="badge" data-badge="8">
                 Notifications
               </span>
             </div>
-            <div class="column col-xs-6">
+            <div class="column col-3 col-xs-6">
               <span class="badge" data-badge="88">
                 Notifications
               </span>
             </div>
-            <div class="column col-xs-6">
+            <div class="column col-3 col-xs-6">
               <span class="badge" data-badge="888">
                 Notifications
               </span>
             </div>
           </div>
           <section class="notes">
-            <p>Add the class <code>badge</code> to non self closing elements. And add the attribute <code>data-badge</code> to define the content of a badge. The badge will appear in the top-right direction of the element. </p>
+            <p>Add the <code>badge</code> class to non self closing elements. And add the <code>data-badge</code> attribute to define the content of a badge. The badge will appear in the top-right direction of the element. </p>
             <p>If there is no <code>data-badge</code> or the attribute is not specified, the badge will appear as a dot.</p>
           </section>
           <div class="columns">
@@ -356,7 +350,7 @@
           </section>
 
 <!-- badges example -->
-<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;badge&quot;</span> <span class="atn">data-badge</span>=<span class="atv">&quot;&quot;</span>&gt;
+<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;badge&quot;</span>&gt;
   Notifications
 &lt;<span class="tag">/span</span>&gt;
 
@@ -401,7 +395,7 @@
             </div>
           </div>
           <section class="notes">
-            <p>Add a container element with the class <code>bar</code>. And add child elements with the class <code>bar-item</code>. The width percentage value is needed for every <code>bar-item</code>.</p>
+            <p>Add a container element with the <code>bar</code> class. And add child elements with the <code>bar-item</code> class. The width percentage value is needed for every <code>bar-item</code>.</p>
             <p>There is a class <code>bar-sm</code> for thinner Bars. Also, you could use <a href="#tooltips">Tooltips</a> for any <code>bar-item</code>.</p>
           </section>
 
@@ -412,7 +406,7 @@
 
 &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;bar&quot;</span>&gt;
   &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;bar-item tooltip&quot;</span> <span class="atn">data-tooltip</span>=<span class="atv">&quot;25%&quot;</span> <span class="atn">style</span>=<span class="atv">&quot;width:25%;&quot;</span>&gt;25%&lt;<span class="tag">/div</span>&gt;
-  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;bar-item&quot;</span> <span class="atn">style</span>=<span class="atv">&quot;width:15%;background:#818BD5;&quot;</span>&gt;15%&lt;<span class="tag">/div</span>&gt;
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;bar-item&quot;</span> <span class="atn">style</span>=<span class="atv">&quot;width:15%;background:#818bd5;&quot;</span>&gt;15%&lt;<span class="tag">/div</span>&gt;
 &lt;<span class="tag">/div</span>&gt;
 </code></pre>
 
@@ -431,7 +425,7 @@
                 </div>
                 <div class="card-header">
                   <div class="card-title">Microsoft</div>
-                  <div class="card-meta">Software and hardware</div>
+                  <div class="card-subtitle">Software and hardware</div>
                 </div>
                 <div class="card-body">
                   Empower every person and every organization on the planet to achieve more.
@@ -445,7 +439,7 @@
               <div class="card">
                 <div class="card-header">
                   <div class="card-title">Apple</div>
-                  <div class="card-meta">Hardware and software</div>
+                  <div class="card-subtitle">Hardware and software</div>
                 </div>
                 <div class="card-image">
                   <img class="img-responsive" src="img/osx-yosemite.jpg" />
@@ -466,7 +460,7 @@
               <div class="card">
                 <div class="card-header">
                   <div class="card-title">Google</div>
-                  <div class="card-meta">Software and hardware</div>
+                  <div class="card-subtitle">Software and hardware</div>
                 </div>
                 <div class="card-body">
                   Organize the world’s information and make it universally accessible and useful.
@@ -498,7 +492,7 @@
               <div class="card">
                 <div class="card-header">
                   <div class="card-title">Apple</div>
-                  <div class="card-meta">Hardware and software</div>
+                  <div class="card-subtitle">Hardware and software</div>
                 </div>
                 <div class="card-body">
                   To make a contribution to the world by making tools for the mind that advance humankind.
@@ -511,12 +505,12 @@
             <div class="column col-6 col-xs-12">
               <div class="card">
                 <div class="card-image">
-                  <img class="img-responsive" src="img/osx-yosemite.jpg" />
+                  <img class="img-responsive" src="img/osx-el-capitan-2.jpg" />
                 </div>
                 <div class="card-header">
                   <button class="btn btn-primary float-right"><i class="icon icon-playlist_add"></i></button>
                   <div class="card-title">Google I/O</div>
-                  <div class="card-meta">Software and hardware</div>
+                  <div class="card-subtitle">Software and hardware</div>
                 </div>
                 <div class="card-body">
                   An immersive, three-day experience focused on exploring the next generation of technology, mobile and beyond.
@@ -525,7 +519,7 @@
             </div>
           </div>
           <section class="notes">
-            <p>Add a container element with the class <code>card</code>. And add child elements with the class name <code>card-image</code>, <code>card-header</code>, <code>card-content</code> and/or <code>card-footer</code>. The <code>card-image</code> can be placed in any position. </p>
+            <p>Add a container element with the <code>card</code> class. And add child elements with the <code>card-image</code>, <code>card-header</code>, <code>card-body</code> and/or <code>card-footer</code> classes. The <code>card-image</code> can be placed in any position. </p>
           </section>
 
 <!-- cards example -->
@@ -535,7 +529,7 @@
   &lt;<span class="tag">/div</span>&gt;
   &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;card-header&quot;</span>&gt;
     &lt;<span class="tag">h4</span> <span class="atn">class</span>=<span class="atv">&quot;card-title&quot;</span>&gt;Microsoft&lt;<span class="tag">/h4</span>&gt;
-    &lt;<span class="tag">h6</span> <span class="atn">class</span>=<span class="atv">&quot;card-meta&quot;</span>&gt;Software and hardware&lt;<span class="tag">/h6</span>&gt;
+    &lt;<span class="tag">h6</span> <span class="atn">class</span>=<span class="atv">&quot;card-subtitle&quot;</span>&gt;Software and hardware&lt;<span class="tag">/h6</span>&gt;
   &lt;<span class="tag">/div</span>&gt;
   &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;card-body&quot;</span>&gt;
     To make a contribution to the world by making tools for the mind that advance humankind.
@@ -588,7 +582,7 @@
             </div>
           </div>
           <section class="notes">
-            <p>Add a container element with the class <code>chip</code>. And add child text element, buttons or avatars with the class <code>avatar</code>.</p>
+            <p>Add a container element with the <code>chip</code> class. And add child text element, buttons or avatars with the <code>avatar</code> class.</p>
           </section>
 
 <!-- chips example -->
@@ -647,11 +641,7 @@
             </div>
             <div class="column col-xs-12">
               <ul class="menu">
-                <li class="menu-header">
-                  <span class="menu-header-text">
-                    LINKS
-                  </span>
-                </li>
+                <li class="divider" data-content="LINKS"></li>
                 <li class="menu-item">
                   <a href="#menus">
                     <i class="icon icon-link"></i> Slack
@@ -671,16 +661,13 @@
             </div>
           </div>
           <section class="notes">
-            <p>Add a container element with the class <code>menu</code>. And add child elements with the classname <code>menu-item</code>. You can separate menu items with a <code>divider</code> or <code>menu-header</code>. Spectre.css does not include JavaScript code, you will need to implement your JS to interact with the menus.</p>
+            <p>Add a container element with the <code>menu</code> class. And add child elements with the <code>menu-item</code> class. You can separate menu items with a <code>divider</code> or <code>menu-header</code>. Spectre.css does not include JavaScript code, you will need to implement your JS to interact with the menus.</p>
           </section>
 
 <!-- menus example -->
 <pre class="code" data-lang="HTML"><code>&lt;<span class="tag">ul</span> <span class="atn">class</span>=<span class="atv">&quot;menu&quot;</span>&gt;
-  <span class="com">&lt;!-- menu header --&gt;</span>
-  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;menu-header&quot;</span>&gt;
-    &lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;menu-header-text&quot;</span>&gt;
-      LINKS
-    &lt;<span class="tag">/span</span>&gt;
+  <span class="com">&lt;!-- menu header text --&gt;</span>
+  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;divider&quot;</span> <span class="atn">data-content</span>=<span class="atv">&quot;LINKS&quot;</span>&gt;
   &lt;<span class="tag">/li</span>&gt;
   <span class="com">&lt;!-- menu item --&gt;</span>
   &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;menu-item&quot;</span>&gt;
@@ -688,18 +675,9 @@
       &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-link&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; Slack
     &lt;<span class="tag">/a</span>&gt;
   &lt;<span class="tag">/li</span>&gt;
-  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;menu-item&quot;</span>&gt;
-    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;
-      &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-link&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; Hipchat
-    &lt;<span class="tag">/a</span>&gt;
-  &lt;<span class="tag">/li</span>&gt;
-  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;menu-item&quot;</span>&gt;
-    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;
-      &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-link&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; Skype
-    &lt;<span class="tag">/a</span>&gt;
-  &lt;<span class="tag">/li</span>&gt;
   <span class="com">&lt;!-- menu divider --&gt;</span>
   &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;divider&quot;</span>&gt;&lt;<span class="tag">/li</span>&gt;
+  <span class="com">&lt;!-- menu item with badge --&gt;</span>
   &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;menu-item&quot;</span>&gt;
     &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;menu-badge&quot;</span>&gt;
       &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;label label-primary&quot;</span>&gt;2&lt;<span class="tag">/label</span>&gt;
@@ -788,10 +766,10 @@
           </div>
           <section class="notes">
             <p>Dropdown menus component is built entirely in CSS. It is triggered by <code>:focus</code> event.</p>
-            <p>Add a container element with the class <code>dropdown</code>. And add a focusable element with the classname <code>dropdown-toggle</code> for the button and a <code>menu</code> component right next to it. You also need to add <code>tabindex</code> to make the buttons focusable. If the dropdown is close to the right edge of the browser, you can add the class <code>dropdown-right</code> to the container to prevent it appearing off screen.</p>
+            <p>Add a container element with the <code>dropdown</code> class. And add a focusable element with the <code>dropdown-toggle</code> class for the button and a <code>menu</code> component right next to it. You also need to add <code>tabindex</code> to make the buttons focusable. If the dropdown is close to the right edge of the browser, you can add the <code>dropdown-right</code> class to the container to prevent it appearing off screen.</p>
           </section>
           <section class="notes">
-            <p>Also, you can implement your JS to interact with the dropdown menus by adding the class <code>active</code> to the <code>dropdown</code>.</p>
+            <p>Also, you can implement your JS to interact with the dropdown menus by adding the <code>active</code> class to the <code>dropdown</code>.</p>
           </section>
 
 <!-- dropdowns example -->
@@ -802,12 +780,7 @@
   &lt;<span class="tag">/a</span>&gt;
   <span class="com">&lt;!-- menu component --&gt;</span>
   &lt;<span class="tag">ul</span> <span class="atn">class</span>=<span class="atv">&quot;menu&quot;</span>&gt;
-    &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;menu-item&quot;</span>&gt;
-      &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;Slack&lt;<span class="tag">/a</span>&gt;
-    &lt;<span class="tag">/li</span>&gt;
-    &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;menu-item&quot;</span>&gt;
-      &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;Hipchat&lt;<span class="tag">/a</span>&gt;
-    &lt;<span class="tag">/li</span>&gt;
+    ...
   &lt;<span class="tag">/ul</span>&gt;
 &lt;<span class="tag">/div</span>&gt;
 
@@ -840,7 +813,7 @@
             <div class="column">
               <a href="#example-modal-1" class="btn btn-primary">Open Modal</a>
               <div class="modal" id="example-modal-1">
-                <div class="modal-overlay"></div>
+                <a href="#modals" class="modal-overlay" aria-label="Close"></a>
                 <div class="modal-container" role="document">
                   <div class="modal-header">
                     <a href="#modals" class="btn btn-clear float-right" aria-label="Close"></a>
@@ -869,8 +842,8 @@
             </div>
           </div>
           <section class="notes">
-            <p>Add a container element with the class <code>modal</code>. And add a real container <code>modal-container</code> and overlay <code>modal-overlay</code> inside it. You can add child elements with the class name <code>modal-header</code>, <code>modal-content</code> and <code>modal-footer</code> - any or all of them. </p>
-            <p>Spectre.css does not include JavaScript code, you will need to implement your JS to interact with modals. To make a modal appear, add the class <code>active</code> to the <code>modal</code> container.</p>
+            <p>Add a container element with the <code>modal</code> class. And add a real container <code>modal-container</code> and overlay <code>modal-overlay</code> inside it. You can add child elements with the <code>modal-header</code>, <code>modal-content</code> and <code>modal-footer</code> - any or all of them. </p>
+            <p>Spectre.css does not include JavaScript code, you will need to implement your JS to interact with modals. To make a modal appear, add the <code>active</code> class to the <code>modal</code> container.</p>
           </section>
 
 <!-- modals example -->
@@ -887,8 +860,7 @@
       &lt;<span class="tag">/div</span>&gt;
     &lt;<span class="tag">/div</span>&gt;
     &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;modal-footer&quot;</span>&gt;
-      &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-link&quot;</span>&gt;Close&lt;<span class="tag">/button</span>&gt;
-      &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary&quot;</span>&gt;Share&lt;<span class="tag">/button</span>&gt;
+      ...
     &lt;<span class="tag">/div</span>&gt;
   &lt;<span class="tag">/div</span>&gt;
 &lt;<span class="tag">/div</span>&gt;
@@ -954,7 +926,7 @@
             </div>
           </div>
           <section class="notes">
-            <p>Add the class <code>modal-sm</code> for a smaller modal dialog. </p>
+            <p>Add the <code>modal-sm</code> class for a smaller modal dialog. </p>
           </section>
 
 <!-- modals example -->
@@ -1009,7 +981,7 @@
             </div>
           </div>
           <section class="notes">
-            <p>Add a container element with the class <code>breadcrumb</code>. And add child elements with the classname <code>breadcrumb-item</code>.</p>
+            <p>Add a container element with the <code>breadcrumb</code> class. And add child elements with the <code>breadcrumb-item</code> class.</p>
           </section>
 
 <!-- breadcrumbs example -->
@@ -1077,7 +1049,7 @@
             </div>
           </div>
           <section class="notes">
-            <p>Add a container element with the class <code>tab</code>. And add child elements with the classname <code>tab-item</code>. You can add the class <code>tab-block</code> for a full-width tab. The <code>tab-item</code> or its child <code>&lt;a&gt;</code> with the class <code>active</code> will be highlighted.</p>
+            <p>Add a container element with the <code>tab</code> class. And add child elements with the <code>tab-item</code> class. You can add the <code>tab-block</code> class for a full-width tab. The <code>tab-item</code> or its child &lt;a&gt; with the <code>active</code> class will be highlighted.</p>
           </section>
 
 <!-- tabs example -->
@@ -1162,6 +1134,7 @@
                 <li class="tab-item">
                   <a href="#tabs">
                     Playlists
+                    <button class="btn btn-clear"></button>
                   </a>
                 </li>
                 <li class="tab-item">
@@ -1184,7 +1157,7 @@
             </div>
           </div>
           <section class="notes">
-            <p>You could add a search box or buttons inside a tab. Add the class <code>tab-action</code> to the <code>tab-item</code>. </p>
+            <p>You could add a search box or buttons inside a tab. Add the <code>tab-action</code> class to the <code>tab-item</code>. </p>
           </section>
 
 <!-- tabs with badges example -->
@@ -1263,7 +1236,7 @@
             </div>
           </div>
           <section class="notes">
-            <p>Add a container element with the class <code>pagination</code>. And add child elements with the classname <code>page-item</code>. The <code>page-item</code> with the class <code>active</code> will be highlighted.</p>
+            <p>Add a container element with the <code>pagination</code> class. And add child elements with the <code>page-item</code> class. The <code>page-item</code> with the <code>active</code> class will be highlighted.</p>
           </section>
 
 <!-- pagination example -->
@@ -1297,13 +1270,13 @@
               <ul class="pagination">
                 <li class="page-item page-prev">
                   <a href="#pagination">
-                    <p class="page-item-meta">Previous</p>
+                    <p class="page-item-subtitle">Previous</p>
                     <h3 class="page-item-title">Getting started</h3>
                   </a>
                 </li>
                 <li class="page-item page-next">
                   <a href="#pagination">
-                    <p class="page-item-meta">Next</p>
+                    <p class="page-item-subtitle">Next</p>
                     <h3 class="page-item-title">Layout</h3>
                   </a>
                 </li>
@@ -1318,13 +1291,13 @@
 <pre class="code" data-lang="HTML"><code>&lt;<span class="tag">ul</span> <span class="atn">class</span>=<span class="atv">&quot;pagination&quot;</span>&gt;
   &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;page-item page-prev&quot;</span>&gt;
     &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;
-      &lt;<span class="tag">p</span> <span class="atn">class</span>=<span class="atv">&quot;page-item-meta&quot;</span>&gt;Previous&lt;<span class="tag">/p</span>&gt;
+      &lt;<span class="tag">p</span> <span class="atn">class</span>=<span class="atv">&quot;page-item-subtitle&quot;</span>&gt;Previous&lt;<span class="tag">/p</span>&gt;
       &lt;<span class="tag">h3</span> <span class="atn">class</span>=<span class="atv">&quot;page-item-title&quot;</span>&gt;Getting started&lt;<span class="tag">/h3</span>&gt;
     &lt;<span class="tag">/a</span>&gt;
   &lt;<span class="tag">/li</span>&gt;
   &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;page-item page-next&quot;</span>&gt;
     &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;
-      &lt;<span class="tag">p</span> <span class="atn">class</span>=<span class="atv">&quot;page-item-meta&quot;</span>&gt;Next&lt;<span class="tag">/p</span>&gt;
+      &lt;<span class="tag">p</span> <span class="atn">class</span>=<span class="atv">&quot;page-item-subtitle&quot;</span>&gt;Next&lt;<span class="tag">/p</span>&gt;
       &lt;<span class="tag">h3</span> <span class="atn">class</span>=<span class="atv">&quot;page-item-title&quot;</span>&gt;Layout&lt;<span class="tag">/h3</span>&gt;
     &lt;<span class="tag">/a</span>&gt;
   &lt;<span class="tag">/li</span>&gt;
@@ -1365,7 +1338,7 @@
             </div>
           </div>
           <section class="notes">
-            <p>Add a container element with the class <code>nav</code>. And add child elements with the classname <code>nav-item</code>. The <code>nav-item</code> with the class <code>active</code> will be highlighted.</p>
+            <p>Add a container element with the <code>nav</code> class. And add child elements with the <code>nav-item</code> class. The <code>nav-item</code> with the <code>active</code> class will be highlighted.</p>
           </section>
 
 <!-- navs example -->
@@ -1441,7 +1414,7 @@
             </div>
           </div>
           <section class="notes">
-            <p>Add a container element with the class <code>step</code>. And add child elements with the classname <code>step-item</code>. The <code>step-item</code> with the class <code>active</code> will be highlighted and indicate the current state of progress.</p>
+            <p>Add a container element with the <code>step</code> class. And add child elements with the <code>step-item</code> class. The <code>step-item</code> with the <code>active</code> class will be highlighted and indicate the current state of progress.</p>
           </section>
 
 <!-- steps example -->
@@ -1478,7 +1451,7 @@
                 </div>
                 <div class="tile-content">
                   <p class="tile-title">The Avengers</p>
-                  <p class="tile-meta">Earth's Mightiest Heroes joined forces to take on threats that were too big for any one hero to tackle...</p>
+                  <p class="tile-subtitle">Earth's Mightiest Heroes joined forces to take on threats that were too big for any one hero to tackle...</p>
                 </div>
                 <div class="tile-action">
                   <button class="btn btn-primary">Join</button>
@@ -1495,7 +1468,7 @@
                 </div>
                 <div class="tile-content">
                   <p class="tile-title">The S.H.I.E.L.D.</p>
-                  <p class="tile-meta">The Strategic Homeland Intervention, Enforcement, and Logistics Division...</p>
+                  <p class="tile-subtitle">The Strategic Homeland Intervention, Enforcement, and Logistics Division...</p>
                   <p>
                     <button class="btn btn-primary btn-sm">Join</button>
                     <button class="btn btn-sm">Contact</button>
@@ -1505,8 +1478,8 @@
             </div>
           </div>
           <section class="notes">
-            <p>Add a container with the class <code>tile</code>. And add child elements with the class name <code>tile-icon</code>, <code>tile-content</code> and <code>tile-action</code>. The <code>tile-icon</code> and <code>tile-action</code> are optional.</p>
-            <p>There are <code>tile-title</code> and <code>tile-meta</code> classes for title and meta text styles.</p>
+            <p>Add a container with the <code>tile</code> class. And add child elements with the <code>tile-icon</code>, <code>tile-content</code> or/and <code>tile-action</code> classes. The <code>tile-icon</code> and <code>tile-action</code> are optional.</p>
+            <p>There are <code>tile-title</code> and <code>tile-subtitle</code> classes for title and subtitle text styles.</p>
           </section>
 
 <!-- tiles example -->
@@ -1518,7 +1491,7 @@
   &lt;<span class="tag">/div</span>&gt;
   &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;tile-content&quot;</span>&gt;
     &lt;<span class="tag">p</span> <span class="atn">class</span>=<span class="atv">&quot;tile-title&quot;</span>&gt;The Avengers&lt;<span class="tag">/p</span>&gt;
-    &lt;<span class="tag">p</span>&gt;Earth's Mightiest Heroes joined forces to take on threats that were too big for any one hero to tackle...&lt;<span class="tag">/p</span>&gt;
+    &lt;<span class="tag">p</span> <span class="atn">class</span>=<span class="atv">&quot;tile-subtitle&quot;</span>&gt;Earth's Mightiest Heroes joined forces to take on threats that were too big for any one hero to tackle...&lt;<span class="tag">/p</span>&gt;
   &lt;<span class="tag">/div</span>&gt;
   &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;tile-action&quot;</span>&gt;
     &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary&quot;</span>&gt;Join&lt;<span class="tag">/button</span>&gt;
@@ -1528,7 +1501,7 @@
 
           <section class="notes">
             <p>There is compact version of Tiles component, which is often used as contact and file info blocks.</p>
-            <p>Add the class <code>tile-centered</code> to the container <code>tile</code>. The <code>tile-icon</code>, <code>tile-content</code> and <code>tile-action</code> will be vertically centered.</p>
+            <p>Add the <code>tile-centered</code> class to the container <code>tile</code>. The <code>tile-icon</code>, <code>tile-content</code> and <code>tile-action</code> will be vertically centered.</p>
           </section>
           <div class="columns">
             <div class="column col-6 col-md-9 col-xs-12">
@@ -1540,7 +1513,7 @@
                 </div>
                 <div class="tile-content">
                   <div class="tile-title">spectre-docs.pdf</div>
-                  <div class="tile-meta">14MB · Public · 1 Jan, 2017</div>
+                  <div class="tile-subtitle">14MB · Public · 1 Jan, 2017</div>
                 </div>
                 <div class="tile-action">
                   <button class="btn btn-link btn-action"><i class="icon icon-more_vert"></i></button>
@@ -1558,7 +1531,7 @@
   &lt;<span class="tag">/div</span>&gt;
   &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;tile-content&quot;</span>&gt;
     &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;tile-title&quot;</span>&gt;spectre-docs.pdf&lt;<span class="tag">/div</span>&gt;
-    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;tile-meta&quot;</span>&gt;14MB · Public · 1 Jan, 2017&lt;<span class="tag">/div</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;tile-subtitle&quot;</span>&gt;14MB · Public · 1 Jan, 2017&lt;<span class="tag">/div</span>&gt;
   &lt;<span class="tag">/div</span>&gt;
   &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;tile-action&quot;</span>&gt;
     &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-link&quot;</span>&gt;
@@ -1584,7 +1557,7 @@
             </div>
           </div>
           <section class="notes">
-            <p>Add a container element with the class <code>toast</code>. You can add any text within the container, and even icons. You may also add a close button with the class <code>btn-clear</code> if you need. </p>
+            <p>Add a container element with the <code>toast</code> class. You can add any text within the container, and even icons. You may also add a close button with the <code>btn-clear</code> class if you need. </p>
           </section>
           <div class="columns">
             <div class="column col-sm-12">
@@ -1607,7 +1580,7 @@
             </div>
           </div>
           <section class="notes">
-            <p>And you can add the class <code>toast-primary</code>, <code>toast-success</code> or <code>toast-danger</code> for additional toast colors.</p>
+            <p>And you can add the <code>toast-primary</code>, <code>toast-success</code> or <code>toast-danger</code> class for additional toast colors.</p>
           </section>
 
 <!-- toasts example -->
@@ -1632,21 +1605,21 @@
           </section>
           <div class="columns text-center">
             <div class="column col-xs-12">
-              <button class="btn btn-primary tooltip" data-tooltip="Tooltip text" data-tooltip-pos="top">top tooltip</button>
+              <button class="btn btn-primary tooltip" data-tooltip="Tooltip Text" data-tooltip-pos="top">top tooltip</button>
             </div>
             <div class="column col-xs-12">
-              <button class="btn btn-primary tooltip tooltip-right" data-tooltip="Tooltip text">right tooltip</button>
+              <button class="btn btn-primary tooltip tooltip-right" data-tooltip="Tooltip Text">right tooltip</button>
             </div>
             <div class="column col-xs-12">
-              <button class="btn btn-primary tooltip tooltip-bottom" data-tooltip="Tooltip text">bottom tooltip</button>
+              <button class="btn btn-primary tooltip tooltip-bottom" data-tooltip="Tooltip Text">bottom tooltip</button>
             </div>
             <div class="column col-xs-12">
-              <button class="btn btn-primary tooltip tooltip-left" data-tooltip="Tooltip text">left tooltip</button>
+              <button class="btn btn-primary tooltip tooltip-left" data-tooltip="Tooltip Text">left tooltip</button>
             </div>
           </div>
           <section class="notes">
             <p>Tooltips component is built entirely in CSS.</p>
-            <p>Add the class <code>tooltip</code> and the attribute <code>data-tooltip</code>, which contains the tooltip content, to non self closing elements. And add the class name <code>tooltip-right</code>, <code>tooltip-bottom</code> or <code>tooltip-left</code> to define the position of a tooltip. By default, the tooltip appears above the element.</p>
+            <p>Add the <code>tooltip</code> class and the <code>data-tooltip</code> attribute, which contains the tooltip content, to non self closing elements. And add the <code>tooltip-right</code>, <code>tooltip-bottom</code> or <code>tooltip-left</code> class to define the position of a tooltip. By default, the tooltip appears above the element.</p>
           </section>
 
 <!-- tooltips example -->
@@ -1661,13 +1634,13 @@
           <ul class="pagination">
             <li class="page-item page-prev">
               <a href="layout.html">
-                <p class="page-item-meta">Previous</p>
+                <p class="page-item-subtitle">Previous</p>
                 <h4 class="page-item-title">Layout</h4>
               </a>
             </li>
             <li class="page-item page-next">
               <a href="utilities.html">
-                <p class="page-item-meta">Next</p>
+                <p class="page-item-subtitle">Next</p>
                 <h4 class="page-item-title">Utilities</h4>
               </a>
             </li>

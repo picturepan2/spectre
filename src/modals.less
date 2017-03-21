@@ -7,7 +7,7 @@
   left: 0;
   opacity: 0;
   overflow: hidden;
-  padding: @layout-gutter;
+  padding: @layout-padding;
   position: fixed;
   right: 0;
   top: 0;
@@ -16,11 +16,12 @@
   &.active {
     display: flex;
     opacity: 1;
-    z-index: 1988;
+    z-index: @zindex-4;
 
     .modal-overlay {
       background: fade(@dark-color, 50%);
       bottom: 0;
+      cursor: default;
       display: block;
       left: 0;
       position: absolute;
@@ -29,8 +30,9 @@
     }
 
     .modal-container {
-      animation: slide-down .2s;
+      animation: slide-down .2s ease 1;
       max-width: 64rem;
+      z-index: @zindex-0;
     }
   }
 
@@ -42,21 +44,19 @@
 }
 
 .modal-container {
-  background: @light-bg-color;
+  background: @bg-color-light;
   border-radius: @border-radius;
   display: block;
   margin: 0 auto;
   padding: 0;
-  .shadow;
+  box-shadow: @shadow-4;
   text-align: left;
 
-  z-index: 1988;
-
   .modal-header {
-    padding: 1.5rem;
+    padding: @layout-padding-lg;
 
     .modal-title {
-      font-size: 1.6rem;
+      font-size: @font-size-lg;
       margin: 0;
     }
   }
@@ -64,12 +64,12 @@
   .modal-body {
     max-height: 50vh;
     overflow-y: auto;
-    padding: 1.5rem;
+    padding: @layout-padding-lg;
     position: relative;
   }
 
   .modal-footer {
-    padding: 1.5rem;
+    padding: @layout-padding-lg;
     text-align: right;
   }
 }

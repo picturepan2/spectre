@@ -7,14 +7,14 @@ code {
 
 .code {
   border-radius: @border-radius;
-  color: @dark-gray-color;
+  color: @body-font-color;
   line-height: 2rem;
   position: relative;
 
   &::before {
     content: attr(data-lang);
-    color: @light-gray-color;
-    font-size: 1.2rem;
+    color: @gray-color;
+    font-size: @font-size-sm;
     position: absolute;
     right: 1rem;
     top: .2rem;

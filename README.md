@@ -50,6 +50,7 @@ You can compile your custom version of Spectre.css. Read [the documentation](htt
 - [Flexbox-grid](http://picturepan2.github.io/spectre/layout.html#grid) - flexbox based responsive grid system
 - [Responsive](http://picturepan2.github.io/spectre/layout.html#responsive) - responsive grid and utilities
 - [Navbar](http://picturepan2.github.io/spectre/layout.html#navbar) - layout container that appears in the header of apps and websites
+- [Panels](http://picturepan2.github.io/spectre/layout.html#panels) - flexible view container layout with auto-expand content section
 - [Empty states](http://picturepan2.github.io/spectre/layout.html#empty) - empty states/blank slates for first time use, empty data and error screens
 
 #### Components
@@ -59,7 +60,7 @@ You can compile your custom version of Spectre.css. Read [the documentation](htt
 - [Badges](http://picturepan2.github.io/spectre/components.html#badges) - unread number indicators
 - [Cards](http://picturepan2.github.io/spectre/components.html#cards) - flexible content containers
 - [Chips](http://picturepan2.github.io/spectre/components.html#chips) - complex entities in small blocks
-- [Menus](http://picturepan2.github.io/spectre/components.html#menus) - list of links or buttons for actions and navigation 
+- [Menus](http://picturepan2.github.io/spectre/components.html#menus) - list of links or buttons for actions and navigation
 - [Modals](http://picturepan2.github.io/spectre/components.html#modals) - flexible dialog prompts
 - [Navigation](http://picturepan2.github.io/spectre/components.html#navigation) - breadcrumb, tabs, pagination and navs
 - [Steps](http://picturepan2.github.io/spectre/components.html#steps) - progress indicators of a sequence of task steps
