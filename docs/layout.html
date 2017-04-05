@@ -393,6 +393,23 @@
           <section class="notes">
             <p>The navbar component can include logo brand, nav links and buttons, search box or any combination of those elements. Each section with the <code>navbar-section</code> class will be evenly distributed in the container.</p>
           </section>
+
+<!-- navbar example -->
+<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">header</span> <span class="atn">class</span>=<span class="atv">&quot;navbar&quot;</span>&gt;
+  &lt;<span class="tag">section</span> <span class="atn">class</span>=<span class="atv">&quot;navbar-section&quot;</span>&gt;
+    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;navbar-brand mr-10&quot;</span>&gt;Spectre.css&lt;<span class="tag">/a</span>&gt;
+    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-link&quot;</span>&gt;Docs&lt;<span class="tag">/a</span>&gt;
+    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;https://github.com/picturepan2/spectre&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-link&quot;</span>&gt;GitHub&lt;<span class="tag">/a</span>&gt;
+  &lt;<span class="tag">/section</span>&gt;
+  &lt;<span class="tag">section</span> <span class="atn">class</span>=<span class="atv">&quot;navbar-section&quot;</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;input-group input-inline&quot;</span>&gt;
+      &lt;<span class="tag">input</span> <span class="atn">class</span>=<span class="atv">&quot;form-input&quot;</span> <span class="atn">type</span>=<span class="atv">&quot;text&quot;</span> <span class="atn">placeholder</span>=<span class="atv">&quot;search&quot;</span> /&gt;
+      &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary input-group-btn&quot;</span>&gt;Search&lt;<span class="tag">/button</span>&gt;
+    &lt;<span class="tag">/div</span>&gt;
+  &lt;<span class="tag">/section</span>&gt;
+&lt;<span class="tag">/header</span>&gt;
+</code></pre>
+
           <div class="columns">
             <div class="column col-12">
               <section class="navbar">
@@ -410,21 +427,22 @@
               </section>
             </div>
           </div>
+          <section class="notes">
+            <p>You can use <code>navbar-center</code> class to have a centered section.</p>
+          </section>
 
 <!-- navbar example -->
 <pre class="code" data-lang="HTML"><code>&lt;<span class="tag">header</span> <span class="atn">class</span>=<span class="atv">&quot;navbar&quot;</span>&gt;
-  &lt;<span class="tag">section</span> <span class="atn">class</span>=<span class="atv">&quot;navbar-primary&quot;</span>&gt;
-    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;navbar-brand mr-10&quot;</span>&gt;Spectre.css&lt;<span class="tag">/a</span>&gt;
-  &lt;<span class="tag">/section</span>&gt;
   &lt;<span class="tag">section</span> <span class="atn">class</span>=<span class="atv">&quot;navbar-section&quot;</span>&gt;
     &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-link&quot;</span>&gt;Docs&lt;<span class="tag">/a</span>&gt;
-    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;https://github.com/picturepan2/spectre&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-link&quot;</span>&gt;GitHub&lt;<span class="tag">/a</span>&gt;
+    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-link&quot;</span>&gt;Examples&lt;<span class="tag">/a</span>&gt;
+  &lt;<span class="tag">/section</span>&gt;
+  &lt;<span class="tag">section</span> <span class="atn">class</span>=<span class="atv">&quot;navbar-center&quot;</span>&gt;
+    <span class="com">&lt;!-- centered logo or brand --&gt;</span>
   &lt;<span class="tag">/section</span>&gt;
   &lt;<span class="tag">section</span> <span class="atn">class</span>=<span class="atv">&quot;navbar-section&quot;</span>&gt;
-    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;input-group input-inline&quot;</span>&gt;
-      &lt;<span class="tag">input</span> <span class="atn">class</span>=<span class="atv">&quot;form-input&quot;</span> <span class="atn">type</span>=<span class="atv">&quot;text&quot;</span> <span class="atn">placeholder</span>=<span class="atv">&quot;search&quot;</span> /&gt;
-      &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary input-group-btn&quot;</span>&gt;Search&lt;<span class="tag">/button</span>&gt;
-    &lt;<span class="tag">/div</span>&gt;
+    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-link&quot;</span>&gt;Twitter&lt;<span class="tag">/a</span>&gt;
+    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-link&quot;</span>&gt;GitHub&lt;<span class="tag">/a</span>&gt;
   &lt;<span class="tag">/section</span>&gt;
 &lt;<span class="tag">/header</span>&gt;
 </code></pre>
