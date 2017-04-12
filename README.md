@@ -22,6 +22,9 @@ Download the compiled and minified [Spectre CSS file](https://github.com/picture
 ##### Install with Yarn
 `$ yarn add spectre.css`
 
+##### Include the stylesheet from CDN
+`<link rel="stylesheet" href="unpkg.com/spectre.css/docs/dist/spectre.min.css" />`
+
 ##### Install with Bower
 `$ bower install spectre.css --save`
 
