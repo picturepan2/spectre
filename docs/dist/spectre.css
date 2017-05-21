@@ -519,27 +519,6 @@ abbr[title] {
   cursor: help;
   text-decoration: none;
 }
-.text-primary {
-  color: #5764c6;
-}
-.text-secondary {
-  color: #eff1fa;
-}
-.text-success {
-  color: #32b643;
-}
-.text-warning {
-  color: #ffb700;
-}
-.text-error {
-  color: #e85600;
-}
-.text-light {
-  color: #fff;
-}
-.text-muted {
-  opacity: .6;
-}
 :lang(zh),
 :lang(ja),
 :lang(ko),
@@ -2875,4 +2854,115 @@ code {
 }
 .circle {
   border-radius: 50%;
+}
+.text-primary {
+  color: #5764c6;
+}
+.text-secondary {
+  color: #eff1fa;
+}
+.text-success {
+  color: #32b643;
+}
+.text-warning {
+  color: #ffb700;
+}
+.text-error {
+  color: #e85600;
+}
+.text-light {
+  color: #fff;
+}
+.text-muted {
+  opacity: .6;
+}
+a.text-primary {
+  color: #5764c6;
+}
+a.text-primary:focus,
+a.text-primary:hover,
+a.text-primary:active,
+a.text-primary.active {
+  color: #4c59c2;
+}
+a.text-secondary {
+  color: #eff1fa;
+}
+a.text-secondary:focus,
+a.text-secondary:hover,
+a.text-secondary:active,
+a.text-secondary.active {
+  color: #c9cded;
+}
+a.text-success {
+  color: #32b643;
+}
+a.text-success:focus,
+a.text-success:hover,
+a.text-success:active,
+a.text-success.active {
+  color: #278e34;
+}
+a.text-warning {
+  color: #ffb700;
+}
+a.text-warning:focus,
+a.text-warning:hover,
+a.text-warning:active,
+a.text-warning.active {
+  color: #cc9200;
+}
+a.text-error {
+  color: #e85600;
+}
+a.text-error:focus,
+a.text-error:hover,
+a.text-error:active,
+a.text-error.active {
+  color: #b54300;
+}
+a.text-error {
+  color: #e85600;
+}
+a.text-error:focus,
+a.text-error:hover,
+a.text-error:active,
+a.text-error.active {
+  color: #b54300;
+}
+a.text-light {
+  color: #fff;
+}
+a.text-light:focus,
+a.text-light:hover,
+a.text-light:active,
+a.text-light.active {
+  color: #d9d9d9;
+}
+a.text-muted {
+  opacity: .6;
+}
+a.text-muted:focus,
+a.text-muted:hover,
+a.text-muted:active,
+a.text-muted.active {
+  opacity: 1;
+}
+.bg-primary {
+  background-color: #5764c6;
+}
+.bg-secondary {
+  background-color: #eff1fa;
+}
+.bg-success {
+  background-color: #32b643;
+}
+.bg-warning {
+  background-color: #ffb700;
+}
+.bg-error {
+  background-color: #e85600;
+}
+.bg-light {
+  background-color: #fff;
 }

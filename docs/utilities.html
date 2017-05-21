@@ -47,6 +47,9 @@
             <a href="utilities.html">Utilities</a>
             <ul class="nav">
               <li class="nav-item">
+                <a href="utilities.html#colors">Colors</a>
+              </li>
+              <li class="nav-item">
                 <a href="utilities.html#position">Position</a>
               </li>
               <li class="nav-item">
@@ -74,7 +77,76 @@
       <a href="#sidebar-close" id="sidebar-close" class="docs-nav-clear"></a>
 
       <div class="docs-content column col-9 col-sm-12">
-        <section id="position" class="container">
+        <section id="colors" class="container">
+          
+          <header class="text-center"><h3><a href="#color" class="anchor" aria-hidden="true">#</a>Color utilities</h3></header>
+          
+          <header class="text-center"><h4>Text colors</h4></header>
+          <section class="notes">
+            <p><strong>text-muted</strong> class uses opacity so it can be displayed on any colored background. You can combine it with the other text color clases.</p>
+          </section>
+          <section class="notes">
+            <p class="text-muted">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
+            <p class="text-primary">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            <p class="text-secondary">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            <p class="text-success">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+            <p class="text-warning">Etiam porta sem malesuada magna mollis euismod.</p>
+            <p class="text-error">Donec ullamcorper nulla non metus auctor fringilla.</p>
+            <p class="text-light">Etiam porta sem malesuada ultricies vehicula.</p>
+          </section>
+            <!-- Colors example -->
+<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">p</span> <span class="atn">class</span>="<span class="atv">text-muted</span>">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.&lt;<span class="tag">/p</span>&gt;
+&lt;<span class="tag">p</span> <span class="atn">class</span>="<span class="atv">text-primary</span>">Nullam id dolor id nibh ultricies vehicula ut id elit.&lt;<span class="tag">/p</span>&gt;
+&lt;<span class="tag">p</span> <span class="atn">class</span>="<span class="atv">text-secondary</span>">Nullam id dolor id nibh ultricies vehicula ut id elit.&lt;<span class="tag">/p</span>&gt;
+&lt;<span class="tag">p</span> <span class="atn">class</span>="<span class="atv">text-success</span>">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.&lt;<span class="tag">/p</span>&gt;
+&lt;<span class="tag">p</span> <span class="atn">class</span>="<span class="atv">text-warning</span>">Etiam porta sem malesuada magna mollis euismod.&lt;<span class="tag">/p</span>&gt;
+&lt;<span class="tag">p</span> <span class="atn">class</span>="<span class="atv">text-error</span>">Donec ullamcorper nulla non metus auctor fringilla.&lt;<span class="tag">/p</span>&gt;
+&lt;<span class="tag">p</span> <span class="atn">class</span>="<span class="atv">text-light</span>">Etiam porta sem malesuada ultricies vehicula.&lt;<span class="tag">/p</span>&gt;</code></pre>
+
+            <header class="text-center"><h4>Link colors</h4></header>
+            <section class="notes">
+              <p>text color class work fine with links and provide hover, focus, active states and active class. You can combine text-muted with others.</p>
+            </section>
+            <section class="notes">
+              <a href="#" class="text-muted">Muted link</a>
+              <a href="#" class="text-primary">Primary link</a>
+              <a href="#" class="text-secondary">Secondary link</a>
+              <a href="#" class="text-success">Success link</a>
+              <a href="#" class="text-warning">Warning link</a>
+              <a href="#" class="text-error">Error link</a>
+              <a href="#" class="text-light">Light link</a>
+            </section>
+            <!-- Colors example -->
+<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">a</span> <span class="atn">class</span>="<span class="atv">text-muted</span>">Muted link&lt;<span class="tag">/a</span>&gt;
+&lt;<span class="tag">a</span> <span class="atn">class</span>="<span class="atv">text-primary</span>"Primary link&lt;<span class="tag">/a</span>&gt;
+&lt;<span class="tag">a</span> <span class="atn">class</span>="<span class="atv">text-secondary</span>">Secondary link&lt;<span class="tag">/a</span>&gt;
+&lt;<span class="tag">a</span> <span class="atn">class</span>="<span class="atv">text-success</span>">Success link&lt;<span class="tag">/a</span>&gt;
+&lt;<span class="tag">a</span> <span class="atn">class</span>="<span class="atv">text-warning</span>">Warning link&lt;<span class="tag">/a</span>&gt;
+&lt;<span class="tag">a</span> <span class="atn">class</span>="<span class="atv">text-error</span>">Error link&lt;<span class="tag">/a</span>&gt;
+&lt;<span class="tag">a</span> <span class="atn">class</span>="<span class="atv">text-light</span>">Light link&lt;<span class="tag">/a</span>&gt;</code></pre>
+
+          <header class="text-center"><h4>Background colors</h4></header>
+          <section class="notes">
+            <p>Background utilities do not set color, so in some cases you’ll want to use .text-* utilities.</p>
+          </section>
+          <section class="notes">
+            <p class="bg-primary text-light" style="padding: 0;">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            <p class="bg-secondary">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            <p class="bg-success">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+            <p class="bg-warning">Etiam porta sem malesuada magna mollis euismod.</p>
+            <p class="bg-error">Donec ullamcorper nulla non metus auctor fringilla.</p>
+            <p class="bg-light">Etiam porta sem malesuada ultricies vehicula.</p>
+          </section>
+            <!-- Colors example -->
+<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">p</span> <span class="atn">class</span>="<span class="atv">bg-primary text-light</span>">Nullam id dolor id nibh ultricies vehicula ut id elit.&lt;<span class="tag">/p</span>&gt;
+&lt;<span class="tag">p</span> <span class="atn">class</span>="<span class="atv">bg-secondary</span>">Nullam id dolor id nibh ultricies vehicula ut id elit.&lt;<span class="tag">/p</span>&gt;
+&lt;<span class="tag">p</span> <span class="atn">class</span>="<span class="atv">bg-success</span>">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.&lt;<span class="tag">/p</span>&gt;
+&lt;<span class="tag">p</span> <span class="atn">class</span>="<span class="atv">bg-warning</span>">Etiam porta sem malesuada magna mollis euismod.&lt;<span class="tag">/p</span>&gt;
+&lt;<span class="tag">p</span> <span class="atn">class</span>="<span class="atv">bg-error</span>">Donec ullamcorper nulla non metus auctor fringilla.&lt;<span class="tag">/p</span>&gt;
+&lt;<span class="tag">p</span> <span class="atn">class</span>="<span class="atv">bg-light</span>">Etiam porta sem malesuada ultricies vehicula.&lt;<span class="tag">/p</span>&gt;</code></pre>
+</section>
+
+          <section id="position" class="container">
           <header class="text-center"><h3><a href="#position" class="anchor" aria-hidden="true">#</a>Position utilities</h3></header>
           <section class="notes">
             <p><strong>Position utilities</strong> are used for useful layout and position things, including clearfix, float, position and margin/padding utilities.</p>
