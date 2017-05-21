@@ -271,3 +271,119 @@
 .circle {
   border-radius: 50%;
 }
+
+// Colors
+.text-primary {
+  color: @primary-color;
+}
+.text-secondary {
+  color: @secondary-color;
+}
+.text-success {
+  color: @control-color-success;
+}
+.text-warning {
+  color: @control-color-warning;
+}
+.text-error {
+  color: @control-color-error;
+}
+.text-light {
+  color: @light-color;
+}
+.text-muted {
+  opacity: 0.6;
+}
+
+a.text-primary {
+  color: @link-color;
+  &:focus,
+  &:hover,
+  &:active,
+  &.active {
+    color: @primary-color-dark;
+  }
+}
+a.text-secondary {
+  color: @secondary-color;
+  &:focus,
+  &:hover,
+  &:active,
+  &.active {
+    color: darken(@secondary-color, 10%);
+  }
+}
+a.text-success {
+  color: @control-color-success;
+  &:focus,
+  &:hover,
+  &:active,
+  &.active {
+    color: darken(@control-color-success, 10%);
+  }
+}
+a.text-warning {
+  color: @control-color-warning;
+  &:focus,
+  &:hover,
+  &:active,
+  &.active {
+    color: darken(@control-color-warning, 10%);
+  }
+}
+a.text-error {
+  color: @control-color-error;
+  &:focus,
+  &:hover,
+  &:active,
+  &.active {
+    color: darken(@control-color-error, 10%);
+  }
+}
+a.text-error {
+  color: @control-color-error;
+  &:focus,
+  &:hover,
+  &:active,
+  &.active {
+    color: darken(@control-color-error, 10%);
+  }
+}
+a.text-light {
+  color: @light-color;
+  &:focus,
+  &:hover,
+  &:active,
+  &.active {
+    color: darken(@light-color, 15%);
+  }
+}
+a.text-muted {
+  opacity: 0.6;
+  &:focus,
+  &:hover,
+  &:active,
+  &.active {
+    opacity: 1;
+  }
+}
+
+
+.bg-primary {
+  background-color: @primary-color;
+}
+.bg-secondary {
+  background-color: @secondary-color;
+}
+.bg-success {
+  background-color: @control-color-success;
+}
+.bg-warning {
+  background-color: @control-color-warning;
+}
+.bg-error {
+  background-color: @control-color-error;
+}
+.bg-light {
+  background-color: @light-color;
+}
