@@ -185,16 +185,13 @@
   position: static;
 }
 .docs-content .example-tile-icon {
-  -webkit-align-content: space-around;
   align-content: space-around;
-  -webkit-align-items: center;
   align-items: center;
   background: #5764c6;
   border-radius: .2rem;
   color: #fff;
   display: flex;
   display: -ms-flexbox;
-  display: -webkit-flex;
   -ms-flex-align: center;
   -ms-flex-line-pack: distribute;
   font-size: 2.4rem;
@@ -247,22 +244,16 @@
     padding: 6rem 3rem;
     position: fixed;
     top: 0;
-    -webkit-transform: translateX(-100%);
     -ms-transform: translateX(-100%);
     transform: translateX(-100%);
-    transition: transform .2s ease, -webkit-transform .2s ease;
     transition: transform .2s ease;
-    transition: -webkit-transform .2s ease;
     width: 24rem;
     z-index: 400;
   }
   .docs-sidebar:target {
-    -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
     transform: translateX(0);
-    transition: transform .2s ease, -webkit-transform .2s ease;
     transition: transform .2s ease;
-    transition: -webkit-transform .2s ease;
   }
   .docs-sidebar:target + .docs-nav-clear {
     display: block;
