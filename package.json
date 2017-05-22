@@ -30,6 +30,11 @@
   "bugs": {
     "url": "https://github.com/picturepan2/spectre/issues"
   },
+  "scripts": {
+    "build": "gulp build",
+    "docs": "gulp docs",
+    "watch": "gulp watch"
+  },
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-clean-css": "^3.0.3",
