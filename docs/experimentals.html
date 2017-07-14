@@ -80,6 +80,12 @@
               <li class="nav-item">
                 <a href="experimentals.html#timelines">Timelines</a>
               </li>
+              <li class="nav-item">
+                <a href="experimentals.html#drop">Drop</a>
+              </li>
+              <li class="nav-item">
+                <a href="experimentals.html#image-preview">Image preview</a>
+              </li>
             </ul>
           </li>
         </ul>
@@ -828,7 +834,103 @@
 </code></pre>
 
         </section>
+        <section class="container" id="drop">
+          <header class="text-center"><h3><a href="#drop" class="anchor" aria-hidden="true">#</a>Drop Uploader</h3></header>
+          <section class="notes">
+            <p><strong>Drop Uploader</strong> Is a section for drag and drop files</p>
+          </section>
+          <p class="text-center">Drop section</p>
+          <div class="empty drop">
+            <div class="empty-icon">
+              <i class="icon icon-upload"></i>
+            </div>
+            <h4 class="empty-title">You can drop your file to upload</h4>
+            <p class="empty-subtitle">or select your file</p>
+            <div class="empty-action">
+              <input type="file" class="form-input" placeholder="" />     
+            </div>
+          </div>
+          <div class="divider"></div>
+          <p class="text-center">Dropping section</p>
+          <div class="empty drop dropping">
+            <div class="empty-icon">
+              <i class="icon icon-upload"></i>
+            </div>
+            <h4 class="empty-title">Drop your file here</h4>
+            <p class="empty-subtitle">or select your file</p>
+            <div class="empty-action">
+              <input type="file" class="form-input" placeholder="" />     
+            </div>
+          </div>
+          <div class="divider"></div>
+          <p class="text-center">Droped section</p>
+          <div class="empty drop droped">
+            <h4 class="empty-title text-center">Droped files</h4>
+            <div class="divider"></div>
+            <div class="tile tile-centered">
+              <div class="tile-icon">
+                <figure class="avatar avatar-xl">
+                  <img src="img/avatar-1.png" />
+                </figure>
+              </div>
+              <div class="tile-content">
+                <div class="tile-title">spectre-doc.pdf</div>
+                <div class="tile-subtitle">14MB · Public · 1 Jan, 2017</div>
+                
+              </div>
+            </div>
+            <progress class="progress" value="25" max="100"></progress>
+          </div>
 
+          
+        </section>
+        <section class="container" id="image-preview">
+          <header class="text-center"><h3><a href="#image-preview" class="anchor" aria-hidden="true">#</a>Image Preview</h3></header>
+          <section class="notes">
+            <p><strong>Image preview</strong> Is a modal to preview images</p>
+          </section>
+          <div class="divider"></div>
+          <div class="columns">
+            <div class="column col-6">
+              <a href="#preview-example" class="">
+                <img src="img/osx-el-capitan.jpg" class="img-responsive" alt="Image preview" />
+              </a>
+            </div>
+            <div class="column col-6">
+              <a href="#preview-example-2" class="">
+                <img src="img/macos-sierra.jpg" class="img-responsive" alt="Image preview" />
+              </a>
+            </div>
+          </div>
+          <!-- IMAGE PREVIEW MODALS   -->
+          <div class="modal preview" id="preview-example">
+            <a href="#image-preview" class="modal-overlay" aria-label="Close"></a>
+            <div class="modal-container" role="document">
+              <div class="modal-header">
+                <a href="#image-preview" class="btn btn-clear float-right" aria-label="Close"></a>
+                <div class="modal-title">Image preview</div>
+              </div>
+              <div class="modal-body">
+                <img src="img/osx-el-capitan.jpg" class="img-responsive" alt="Image preview" />
+              </div>
+              <div class="modal-footer"></div>
+            </div>
+          </div>
+          <div class="modal preview" id="preview-example-2">
+            <a href="#image-preview" class="modal-overlay" aria-label="Close"></a>
+            <div class="modal-container" role="document">
+              <div class="modal-header">
+                <a href="#image-preview" class="btn btn-clear float-right" aria-label="Close"></a>
+                <div class="modal-title">Image preview</div>
+              </div>
+              <div class="modal-body">
+                <img src="img/macos-sierra.jpg" class="img-responsive" alt="Image preview" />
+              </div>
+              <div class="modal-footer"></div>
+            </div>
+          </div>
+
+        </section>
         <section class="container">
           <div class="divider"></div>
           <ul class="pagination">
