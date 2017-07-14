@@ -752,3 +752,6 @@
 .dropping .empty-subtitle {
   color: #fff;
 }
+.preview .modal-body {
+  max-height: none;
+}
