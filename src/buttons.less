@@ -69,6 +69,81 @@
     }
   }
 
+  // Button Success
+  &.btn-success {
+    background: @success-color;
+    border-color: @success-color-dark;
+    color: @light-color;
+    &:focus,
+    &:hover {
+      background: darken(@success-color-dark, 2%);
+      border-color: darken(@success-color-dark, 5%);
+      color: @light-color;
+    }
+    &:active,
+    &.active {
+      background: darken(@success-color-dark, 4%);
+      border-color: darken(@success-color-dark, 7%);
+      color: @light-color;
+    }
+    &.loading {
+      &::after {
+        border-bottom-color: @light-color;
+        border-left-color: @light-color;
+      }
+    }
+  }
+
+  // Button Warning
+  &.btn-warning {
+    background: @warning-color;
+    border-color: @warning-color-dark;
+    color: @light-color;
+    &:focus,
+    &:hover {
+      background: darken(@warning-color-dark, 2%);
+      border-color: darken(@warning-color-dark, 5%);
+      color: @light-color;
+    }
+    &:active,
+    &.active {
+      background: darken(@warning-color-dark, 4%);
+      border-color: darken(@warning-color-dark, 7%);
+      color: @light-color;
+    }
+    &.loading {
+      &::after {
+        border-bottom-color: @light-color;
+        border-left-color: @light-color;
+      }
+    }
+  }
+
+  // Button Error
+  &.btn-error {
+    background: @error-color;
+    border-color: @error-color-dark;
+    color: @light-color;
+    &:focus,
+    &:hover {
+      background: darken(@error-color-dark, 2%);
+      border-color: darken(@error-color-dark, 5%);
+      color: @light-color;
+    }
+    &:active,
+    &.active {
+      background: darken(@error-color-dark, 4%);
+      border-color: darken(@error-color-dark, 7%);
+      color: @light-color;
+    }
+    &.loading {
+      &::after {
+        border-bottom-color: @light-color;
+        border-left-color: @light-color;
+      }
+    }
+  }
+
   // Button Link
   &.btn-link {
     background: transparent;
