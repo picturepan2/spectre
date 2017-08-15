@@ -29,6 +29,9 @@ Alternatively, you can use the [unpkg](https://unpkg.com/) CDN to load compiled 
 ##### Install with Yarn
 `$ yarn add spectre.css`
 
+##### Include the stylesheet from CDN
+`<link rel="stylesheet" href="unpkg.com/spectre.css/docs/dist/spectre.min.css" />`
+
 ##### Install with Bower
 `$ bower install spectre.css --save`
 
