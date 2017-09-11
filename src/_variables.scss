@@ -1,103 +1,103 @@
 // Core variables
 // Colors
 // Core colors
-$primary-color: #5764c6;
-$primary-color-dark: darken($primary-color, 3%);
-$primary-color-light: lighten($primary-color, 3%);
-$secondary-color: lighten($primary-color, 40%);
-$secondary-color-dark: darken($secondary-color, 3%);
-$secondary-color-light: lighten($secondary-color, 3%);
+$primary-color: #5764c6 !default;
+$primary-color-dark: darken($primary-color, 3%) !default;
+$primary-color-light: lighten($primary-color, 3%) !default;
+$secondary-color: lighten($primary-color, 40%) !default;
+$secondary-color-dark: darken($secondary-color, 3%) !default;
+$secondary-color-light: lighten($secondary-color, 3%) !default;
 
-$link-color: $primary-color;
-$link-color-dark: darken($link-color, 5%);
+$link-color: $primary-color !default;
+$link-color-dark: darken($link-color, 5%) !default;
 
 // Gray colors
-$dark-color: #454d5d;
-$light-color: #fff;
-$gray-color: lighten($dark-color, 40%);
-$gray-color-dark: darken($gray-color, 20%);
-$gray-color-light: lighten($gray-color, 20%);
+$dark-color: #454d5d !default;
+$light-color: #fff !default;
+$gray-color: lighten($dark-color, 40%) !default;
+$gray-color-dark: darken($gray-color, 20%) !default;
+$gray-color-light: lighten($gray-color, 20%) !default;
 
-$border-color: lighten($dark-color, 60%);
-$border-color-dark: darken($border-color, 10%);
-$bg-color: lighten($dark-color, 66%);
-$bg-color-dark: darken($bg-color, 3%);
+$border-color: lighten($dark-color, 60%) !default;
+$border-color-dark: darken($border-color, 10%) !default;
+$bg-color: lighten($dark-color, 66%) !default;
+$bg-color-dark: darken($bg-color, 3%) !default;
 $bg-color-light: $light-color;
 
 // Control colors
-$success-color: #32b643;
-$warning-color: #ffb700;
-$error-color: #e85600;
+$success-color: #32b643 !default;
+$warning-color: #ffb700 !default;
+$error-color: #e85600 !default;
 
 // Other colors
-$code-color: #e06870;
-$highlight-color: #ffe9b3;
-$body-bg: $bg-color-light;
-$body-font-color: lighten($dark-color, 5%);
+$code-color: #e06870 !default;
+$highlight-color: #ffe9b3 !default;
+$body-bg: $bg-color-light !default;
+$body-font-color: lighten($dark-color, 5%) !default;
 
 // Fonts
 // Credit: https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/
-$base-font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto;
-$mono-font-family: "SF Mono", "Segoe UI Mono", "Roboto Mono", Menlo, Courier, monospace;
-$fallback-font-family: "Helvetica Neue", sans-serif;
-$cjk-zh-font-family: $base-font-family, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", $fallback-font-family;
-$cjk-jp-font-family: $base-font-family, "Hiragino Sans", "Hiragino Kaku Gothic Pro", "Yu Gothic", YuGothic, Meiryo, $fallback-font-family;
-$cjk-ko-font-family: $base-font-family, "Malgun Gothic", $fallback-font-family;
-$body-font-family: $base-font-family, $fallback-font-family;
+$base-font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto !default;
+$mono-font-family: "SF Mono", "Segoe UI Mono", "Roboto Mono", Menlo, Courier, monospace !default;
+$fallback-font-family: "Helvetica Neue", sans-serif !default;
+$cjk-zh-font-family: $base-font-family, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", $fallback-font-family !default;
+$cjk-jp-font-family: $base-font-family, "Hiragino Sans", "Hiragino Kaku Gothic Pro", "Yu Gothic", YuGothic, Meiryo, $fallback-font-family !default;
+$cjk-ko-font-family: $base-font-family, "Malgun Gothic", $fallback-font-family !default;
+$body-font-family: $base-font-family, $fallback-font-family !default;
 
 // Unit sizes
-$unit-o: .05rem;
-$unit-h: .1rem;
-$unit-1: .2rem;
-$unit-2: .4rem;
-$unit-3: .6rem;
-$unit-4: .8rem;
-$unit-5: 1rem;
-$unit-6: 1.2rem;
-$unit-7: 1.4rem;
-$unit-8: 1.6rem;
-$unit-9: 1.8rem;
-$unit-10: 2rem;
-$unit-12: 2.4rem;
-$unit-16: 3.2rem;
+$unit-o: .05rem !default;
+$unit-h: .1rem !default;
+$unit-1: .2rem !default;
+$unit-2: .4rem !default;
+$unit-3: .6rem !default;
+$unit-4: .8rem !default;
+$unit-5: 1rem !default;
+$unit-6: 1.2rem !default;
+$unit-7: 1.4rem !default;
+$unit-8: 1.6rem !default;
+$unit-9: 1.8rem !default;
+$unit-10: 2rem !default;
+$unit-12: 2.4rem !default;
+$unit-16: 3.2rem !default;
 
 // Font sizes
-$html-font-size: 20px;
-$html-line-height: 1.428571429;
-$font-size: .7rem;
-$font-size-sm: .6rem;
-$font-size-lg: .8rem;
-$line-height: 1rem;
+$html-font-size: 20px !default;
+$html-line-height: 1.428571429 !default;
+$font-size: .7rem !default;
+$font-size-sm: .6rem !default;
+$font-size-lg: .8rem !default;
+$line-height: 1rem !default;
 
 // Sizes
-$layout-spacing: $unit-2;
-$layout-spacing-sm: $unit-1;
-$layout-spacing-lg: $unit-4;
-$border-radius: $unit-h;
-$border-width: $unit-o;
-$border-width-lg: $unit-h;
-$control-size: $unit-8;
-$control-size-sm: $unit-6;
-$control-size-lg: $unit-10;
-$control-padding-h: $unit-2;
-$control-padding-v: ($control-size - $line-height) / 2 - $border-width;
-$control-padding-v-sm: ($control-size-sm - $line-height) / 2 - $border-width;
-$control-padding-v-lg: ($control-size-lg - $line-height) / 2 - $border-width;
-$control-icon-size: .7rem; 
-$control-min-width: 180px;
-$control-max-width: 320px;
+$layout-spacing: $unit-2 !default;
+$layout-spacing-sm: $unit-1 !default;
+$layout-spacing-lg: $unit-4 !default;
+$border-radius: $unit-h !default;
+$border-width: $unit-o !default;
+$border-width-lg: $unit-h !default;
+$control-size: $unit-8 !default;
+$control-size-sm: $unit-6 !default;
+$control-size-lg: $unit-10 !default;
+$control-padding-h: $unit-2 !default;
+$control-padding-v: ($control-size - $line-height) / 2 - $border-width !default;
+$control-padding-v-sm: ($control-size-sm - $line-height) / 2 - $border-width !default;
+$control-padding-v-lg: ($control-size-lg - $line-height) / 2 - $border-width !default;
+$control-icon-size: .7rem !default; 
+$control-min-width: 180px !default;
+$control-max-width: 320px !default;
 
 // Responsive breakpoints
-$size-xs: 480px;
-$size-sm: 600px;
-$size-md: 840px;
-$size-lg: 960px;
-$size-xl: 1280px;
-$size-2x: 1440px;
+$size-xs: 480px !default;
+$size-sm: 600px !default;
+$size-md: 840px !default;
+$size-lg: 960px !default;
+$size-xl: 1280px !default;
+$size-2x: 1440px !default;
 
 // Z-index
-$zindex-0: 1;
-$zindex-1: 100;
-$zindex-2: 200;
-$zindex-3: 300;
-$zindex-4: 400;
+$zindex-0: 1 !default;
+$zindex-1: 100 !default;
+$zindex-2: 200 !default;
+$zindex-3: 300 !default;
+$zindex-4: 400 !default;
