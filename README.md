@@ -16,14 +16,14 @@ Spectre.css is completely free to use. If you enjoy it, please consider [donatin
 There are 5 ways to get started with Spectre CSS framework in your projects. You can either manually install or use NPM, Yarn and Bower.
 
 ### Install manually
-Download the compiled and minified [Spectre CSS files](https://github.com/picturepan2/spectre/tree/master/docs/dist). And include `spectre.css` located in `/docs/dist` in your website or Web app &lt;head&gt; part.
+Download the compiled and minified [Spectre CSS files](https://github.com/picturepan2/spectre/tree/master/docs/dist). And include `spectre-<version>.css` located in `/docs/dist` in your website or Web app &lt;head&gt; part.
 
-`<link rel="stylesheet" href="spectre.min.css">`
+`<link rel="stylesheet" href="spectre-<version>.min.css">`
 
 ### Install from CDN
 Alternatively, you can use the [unpkg](https://unpkg.com/) or [cdnjs](https://cdnjs.com/libraries/spectre.css) CDN to load compiled Spectre.css.
 
-`<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">`
+`<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-<version>.min.css">`
 
 ### Install with NPM
 `$ npm install spectre.css --save`
