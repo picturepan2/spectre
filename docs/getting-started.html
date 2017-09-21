@@ -305,13 +305,13 @@
             <p class="h5">Install manually</p>
             <p>Download the compiled and minified <a href="https://github.com/picturepan2/spectre/releases" target="_blank">Spectre CSS file</a> (core ~10KB min+gzip):</p>
             <p><a href="https://github.com/picturepan2/spectre/releases" target="_blank" class="btn btn-primary">Download Spectre.css</a></p>
-            <p>Include <code>spectre.css</code> located in <strong>/docs/dist</strong> in your website or Web app &lt;head&gt;. Also, you can add <code>spectre-icons.css</code> and <code>spectre-exp.css</code> accordingly.</p>
+            <p>Include <code>spectre-<span class="version"></span>.css</code> located in <strong>/docs/dist</strong> in your website or Web app &lt;head&gt;. Also, you can add <code>spectre-icons-<span class="version"></span>.css</code> and <code>spectre-exp-<span class="version"></span>.css</code> accordingly.</p>
           </div>
 
 <!-- install manually -->
-<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">link</span> <span class="atn">rel</span>=<span class="atv">&quot;stylesheet&quot;</span> <span class="atn">href</span>=<span class="atv">&quot;spectre.min.css&quot;</span>&gt;
-&lt;<span class="tag">link</span> <span class="atn">rel</span>=<span class="atv">&quot;stylesheet&quot;</span> <span class="atn">href</span>=<span class="atv">&quot;spectre-exp.min.css&quot;</span>&gt;
-&lt;<span class="tag">link</span> <span class="atn">rel</span>=<span class="atv">&quot;stylesheet&quot;</span> <span class="atn">href</span>=<span class="atv">&quot;spectre-icons.min.css&quot;</span>&gt;
+<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">link</span> <span class="atn">rel</span>=<span class="atv">&quot;stylesheet&quot;</span> <span class="atn">href</span>=<span class="atv">&quot;spectre-<span class="version"></span>.min.css&quot;</span>&gt;
+&lt;<span class="tag">link</span> <span class="atn">rel</span>=<span class="atv">&quot;stylesheet&quot;</span> <span class="atn">href</span>=<span class="atv">&quot;spectre-exp-<span class="version"></span>.min.css&quot;</span>&gt;
+&lt;<span class="tag">link</span> <span class="atn">rel</span>=<span class="atv">&quot;stylesheet&quot;</span> <span class="atn">href</span>=<span class="atv">&quot;spectre-icons-<span class="version"></span>.min.css&quot;</span>&gt;
 </code></pre>
 
           <div class="docs-note">
@@ -320,9 +320,9 @@
           </div>
 
 <!-- install from CDN -->
-<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">link</span> <span class="atn">rel</span>=<span class="atv">&quot;stylesheet&quot;</span> <span class="atn">href</span>=<span class="atv">&quot;https://unpkg.com/spectre.css/dist/spectre.min.css&quot;</span>&gt;
-&lt;<span class="tag">link</span> <span class="atn">rel</span>=<span class="atv">&quot;stylesheet&quot;</span> <span class="atn">href</span>=<span class="atv">&quot;https://unpkg.com/spectre.css/dist/spectre-exp.min.css&quot;</span>&gt;
-&lt;<span class="tag">link</span> <span class="atn">rel</span>=<span class="atv">&quot;stylesheet&quot;</span> <span class="atn">href</span>=<span class="atv">&quot;https://unpkg.com/spectre.css/dist/spectre-icons.min.css&quot;</span>&gt;
+<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">link</span> <span class="atn">rel</span>=<span class="atv">&quot;stylesheet&quot;</span> <span class="atn">href</span>=<span class="atv">&quot;https://unpkg.com/spectre.css/dist/spectre-<span class="version"></span>.min.css&quot;</span>&gt;
+&lt;<span class="tag">link</span> <span class="atn">rel</span>=<span class="atv">&quot;stylesheet&quot;</span> <span class="atn">href</span>=<span class="atv">&quot;https://unpkg.com/spectre.css/dist/spectre-exp-<span class="version"></span>.min.css&quot;</span>&gt;
+&lt;<span class="tag">link</span> <span class="atn">rel</span>=<span class="atv">&quot;stylesheet&quot;</span> <span class="atn">href</span>=<span class="atv">&quot;https://unpkg.com/spectre.css/dist/spectre-icons-<span class="version"></span>.min.css&quot;</span>&gt;
 </code></pre>
 
           <div class="docs-note">
@@ -382,12 +382,12 @@
 <!-- folder structure -->
 <pre class="code"><code>spectre/
 ├── dist/                           <span class="com">// Build folder (Git ignored)</span>
-│   ├── spectre-exp.css
-│   ├── spectre-exp.min.css
-│   ├── spectre-icons.css
-│   ├── spectre-icons.min.css
-│   ├── spectre.css
-│   └── spectre.min.css
+│   ├── spectre-exp-<span class="version"></span>.css
+│   ├── spectre-exp-<span class="version"></span>.min.css
+│   ├── spectre-icons-<span class="version"></span>.css
+│   ├── spectre-icons-<span class="version"></span>.min.css
+│   ├── spectre-<span class="version"></span>.css
+│   └── spectre-<span class="version"></span>.min.css
 │
 ├── docs/
 │   ├── dist/                       <span class="com">// Pre-built CSS folder</span>
