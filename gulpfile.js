@@ -1,3 +1,6 @@
+var fs = require('fs');
+var packageJson = JSON.parse(fs.readFileSync('./package.json'));
+
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var cleancss = require('gulp-clean-css');
@@ -22,6 +25,9 @@ gulp.task('build', function() {
     )
     .pipe(autoprefixer())
     .pipe(csscomb())
+    .pipe(rename({
+      suffix: '-' + packageJson.version
+    }))
     .pipe(gulp.dest('./dist'))
     .pipe(cleancss())
     .pipe(rename({
