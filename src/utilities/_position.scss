@@ -23,6 +23,11 @@
   position: fixed;
 }
 
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+}
+
 .centered {
   display: block;
   float: none;
