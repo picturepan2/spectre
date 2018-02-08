@@ -844,6 +844,10 @@ legend {
   color: #acb3c2;
 }
 
+.form-input::-ms-input-placeholder {
+  color: #acb3c2;
+}
+
 .form-input::placeholder {
   color: #acb3c2;
 }
@@ -3264,10 +3268,14 @@ a.text-error:hover {
 }
 
 .loading {
-  color: transparent !important;
   min-height: .8rem;
   pointer-events: none;
   position: relative;
+}
+
+.loading,
+.loading * {
+  color: transparent !important;
 }
 
 .loading::after {
