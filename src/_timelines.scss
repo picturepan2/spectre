@@ -2,7 +2,7 @@
 .timeline {
   .timeline-item {
     display: flex;
-    margin-bottom: $unit-6;
+    padding-bottom: $unit-6;
     position: relative;
     &::before {
       background: $border-color;
