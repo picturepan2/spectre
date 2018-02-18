@@ -4,6 +4,7 @@
   min-height: $unit-4;
   pointer-events: none;
   position: relative;
+  overflow: hidden;
   &::after {
     animation: loading 500ms infinite linear;
     border: $border-width-lg solid $primary-color;
