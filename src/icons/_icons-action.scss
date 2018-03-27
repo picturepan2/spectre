@@ -1,7 +1,6 @@
-
 // Icon resize
-.icon-resize-horiz,
-.icon-resize-vert {
+.#{$icon-prefix}-resize-horiz,
+.#{$icon-prefix}-resize-vert {
   &::before,
   &::after {
     border: $icon-border-width solid currentColor;
@@ -11,26 +10,29 @@
     height: .45em;
     width: .45em;
   }
+
   &::before {
     transform: translate(-50%, -90%) rotate(45deg);
   }
+
   &::after {
     transform: translate(-50%, -10%) rotate(225deg);
   }
 }
 
-.icon-resize-horiz {
+.#{$icon-prefix}-resize-horiz {
   &::before {
     transform: translate(-90%, -50%) rotate(-45deg);
   }
+
   &::after {
     transform: translate(-10%, -50%) rotate(135deg);
   }
 }
 
 // Icon more
-.icon-more-horiz,
-.icon-more-vert {
+.#{$icon-prefix}-more-horiz,
+.#{$icon-prefix}-more-vert {
   &::before {
     background: currentColor;
     box-shadow: -.4em 0, .4em 0;
@@ -41,16 +43,16 @@
   }
 }
 
-.icon-more-vert {
+.#{$icon-prefix}-more-vert {
   &::before {
     box-shadow: 0 -.4em, 0 .4em;
   }
 }
 
 // Icon plus, minus, cross
-.icon-plus,
-.icon-minus,
-.icon-cross {
+.#{$icon-prefix}-plus,
+.#{$icon-prefix}-minus,
+.#{$icon-prefix}-cross {
   &::before {
     background: currentColor;
     content: "";
@@ -59,8 +61,8 @@
   }
 }
 
-.icon-plus,
-.icon-cross {
+.#{$icon-prefix}-plus,
+.#{$icon-prefix}-cross {
   &::after {
     background: currentColor;
     content: "";
@@ -69,13 +71,15 @@
   }
 }
 
-.icon-cross {
+.#{$icon-prefix}-cross {
   &::before {
     width: 100%;
   }
+
   &::after {
     height: 100%;
   }
+
   &::before,
   &::after {
     transform: translate(-50%, -50%) rotate(45deg);
@@ -83,7 +87,7 @@
 }
 
 // Icon check
-.icon-check {
+.#{$icon-prefix}-check {
   &::before {
     border: $icon-border-width solid currentColor;
     border-right: 0;
@@ -96,9 +100,10 @@
 }
 
 // Icon stop
-.icon-stop {
+.#{$icon-prefix}-stop {
   border: $icon-border-width solid currentColor;
   border-radius: 50%;
+
   &::before {
     background: currentColor;
     content: "";
@@ -109,10 +114,11 @@
 }
 
 // Icon shutdown
-.icon-shutdown {
+.#{$icon-prefix}-shutdown {
   border: $icon-border-width solid currentColor;
   border-radius: 50%;
   border-top-color: transparent;
+
   &::before {
     background: currentColor;
     content: "";
@@ -123,7 +129,7 @@
 }
 
 // Icon refresh
-.icon-refresh {
+.#{$icon-prefix}-refresh {
   &::before {
     border: $icon-border-width solid currentColor;
     border-radius: 50%;
@@ -132,6 +138,7 @@
     height: 1em;
     width: 1em;
   }
+
   &::after {
     border: .2em solid currentColor;
     border-top-color: transparent;
@@ -145,7 +152,7 @@
 }
 
 // Icon search
-.icon-search {
+.#{$icon-prefix}-search {
   &::before {
     border: $icon-border-width solid currentColor;
     border-radius: 50%;
@@ -156,6 +163,7 @@
     transform: translate(0, 0) rotate(45deg);
     width: .75em;
   }
+
   &::after {
     background: currentColor;
     content: "";
@@ -168,7 +176,7 @@
 }
 
 // Icon edit
-.icon-edit {
+.#{$icon-prefix}-edit {
   &::before {
     border: $icon-border-width solid currentColor;
     content: "";
@@ -176,6 +184,7 @@
     transform: translate(-40%, -60%) rotate(-45deg);
     width: .85em;
   }
+
   &::after {
     border: .15em solid currentColor;
     border-top-color: transparent;
@@ -190,7 +199,7 @@
 }
 
 // Icon delete
-.icon-delete {
+.#{$icon-prefix}-delete {
   &::before {
     border: $icon-border-width solid currentColor;
     border-bottom-left-radius: $border-radius;
@@ -201,6 +210,7 @@
     top: 60%;
     width: .75em;
   }
+
   &::after {
     background: currentColor;
     box-shadow: -.25em .2em, .25em .2em;
@@ -212,11 +222,12 @@
 }
 
 // Icon share
-.icon-share {
+.#{$icon-prefix}-share {
   border: $icon-border-width solid currentColor;
   border-radius: $border-radius;
   border-right: 0;
   border-top: 0;
+
   &::before {
     border: $icon-border-width solid currentColor;
     border-left: 0;
@@ -228,6 +239,7 @@
     transform: translate(-125%, -50%) rotate(-45deg);
     width: .4em;
   }
+
   &::after {
     border: $icon-border-width solid currentColor;
     border-bottom: 0;
@@ -240,7 +252,7 @@
 }
 
 // Icon flag
-.icon-flag {
+.#{$icon-prefix}-flag {
   &::before {
     background: currentColor;
     content: "";
@@ -248,6 +260,7 @@
     left: 15%;
     width: $icon-border-width;
   }
+
   &::after {
     border: $icon-border-width solid currentColor;
     border-bottom-right-radius: $border-radius;
@@ -262,7 +275,7 @@
 }
 
 // Icon bookmark
-.icon-bookmark {
+.#{$icon-prefix}-bookmark {
   &::before {
     border: $icon-border-width solid currentColor;
     border-bottom: 0;
@@ -272,6 +285,7 @@
     height: .9em;
     width: .8em;
   }
+
   &::after {
     border: $icon-border-width solid currentColor;
     border-bottom: 0;
@@ -285,9 +299,10 @@
 }
 
 // Icon download & upload
-.icon-download,
-.icon-upload {
+.#{$icon-prefix}-download,
+.#{$icon-prefix}-upload {
   border-bottom: $icon-border-width solid currentColor;
+
   &::before {
     border: $icon-border-width solid currentColor;
     border-bottom: 0;
@@ -297,6 +312,7 @@
     width: .5em;
     transform: translate(-50%, -60%) rotate(-135deg);
   }
+
   &::after {
     background: currentColor;
     content: "";
@@ -306,10 +322,11 @@
   }
 }
 
-.icon-upload {
+.#{$icon-prefix}-upload {
   &::before {
     transform: translate(-50%, -60%) rotate(45deg);
   }
+
   &::after {
     top: 50%;
   }

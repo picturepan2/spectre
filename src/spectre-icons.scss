@@ -2,6 +2,11 @@
 @import "variables";
 @import "mixins";
 
+// Icon variables
+$icon-prefix: "icon";
+$icon-prefix: "#{$prefix}icon";
+$icon-border-width: $border-width-lg;
+
 /*! Spectre.css Icons v#{$version} | MIT License | github.com/picturepan2/spectre */
 // Icons
 @import "icons/icons-core";

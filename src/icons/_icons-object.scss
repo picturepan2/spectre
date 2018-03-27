@@ -1,7 +1,8 @@
 // Icon time
-.icon-time {
+.#{$icon-prefix}-time {
   border: $icon-border-width solid currentColor;
   border-radius: 50%;
+
   &::before {
     background: currentColor;
     content: "";
@@ -9,6 +10,7 @@
     transform: translate(-50%, -75%);
     width: $icon-border-width;
   }
+
   &::after {
     background: currentColor;
     content: "";
@@ -20,7 +22,7 @@
 }
 
 // Icon mail
-.icon-mail {
+.#{$icon-prefix}-mail {
   &::before {
     border: $icon-border-width solid currentColor;
     border-radius: $border-radius;
@@ -28,6 +30,7 @@
     height: .8em;
     width: 1em;
   }
+
   &::after {
     border: $icon-border-width solid currentColor;
     border-right: 0;
@@ -40,7 +43,7 @@
 }
 
 // Icon people
-.icon-people {
+.#{$icon-prefix}-people {
   &::before {
     border: $icon-border-width solid currentColor;
     border-radius: 50%;
@@ -49,6 +52,7 @@
     top: 25%;
     width: .45em;
   }
+
   &::after {
     border: $icon-border-width solid currentColor;
     border-radius: 50% 50% 0 0;
@@ -60,11 +64,12 @@
 }
 
 // Icon message
-.icon-message {
+.#{$icon-prefix}-message {
   border: $icon-border-width solid currentColor;
   border-bottom: 0;
   border-radius: $border-radius;
   border-right: 0;
+
   &::before {
     border: $icon-border-width solid currentColor;
     border-bottom-right-radius: $border-radius;
@@ -76,6 +81,7 @@
     top: 40%;
     width: .7em;
   }
+
   &::after {
     background: currentColor;
     border-radius: $border-radius;
@@ -89,9 +95,10 @@
 }
 
 // Icon photo
-.icon-photo {
+.#{$icon-prefix}-photo {
   border: $icon-border-width solid currentColor;
   border-radius: $border-radius;
+
   &::before {
     border: $icon-border-width solid currentColor;
     border-radius: 50%;
@@ -101,6 +108,7 @@
     top: 35%;
     width: .25em;
   }
+
   &::after {
     border: $icon-border-width solid currentColor;
     border-bottom: 0;
@@ -114,7 +122,7 @@
 }
 
 // Icon link
-.icon-link {
+.#{$icon-prefix}-link {
   &::before,
   &::after {
     border: $icon-border-width solid currentColor;
@@ -124,16 +132,18 @@
     height: .5em;
     width: .75em;
   }
+
   &::before {
     transform: translate(-70%, -45%) rotate(-45deg);
   }
+
   &::after {
     transform: translate(-30%, -55%) rotate(135deg);
   }
 }
 
 // Icon location
-.icon-location {
+.#{$icon-prefix}-location {
   &::before {
     border: $icon-border-width solid currentColor;
     border-radius: 50% 50% 50% 0;
@@ -142,6 +152,7 @@
     transform: translate(-50%, -60%) rotate(-45deg);
     width: .8em;
   }
+
   &::after {
     border: $icon-border-width solid currentColor;
     border-radius: 50%;
@@ -153,9 +164,10 @@
 }
 
 // Icon emoji
-.icon-emoji {
+.#{$icon-prefix}-emoji {
   border: $icon-border-width solid currentColor;
   border-radius: 50%;
+
   &::before {
     border-radius: 50%;
     box-shadow: -.17em -.15em, .17em -.15em;
@@ -163,6 +175,7 @@
     height: .1em;
     width: .1em;
   }
+
   &::after {
     border: $icon-border-width solid currentColor;
     border-bottom-color: transparent;

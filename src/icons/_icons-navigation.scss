@@ -1,12 +1,12 @@
 // Icon arrows
-.icon-arrow-down,
-.icon-arrow-left,
-.icon-arrow-right,
-.icon-arrow-up,
-.icon-downward,
-.icon-back,
-.icon-forward,
-.icon-upward {
+.#{$icon-prefix}-arrow-down,
+.#{$icon-prefix}-arrow-left,
+.#{$icon-prefix}-arrow-right,
+.#{$icon-prefix}-arrow-up,
+.#{$icon-prefix}-downward,
+.#{$icon-prefix}-back,
+.#{$icon-prefix}-forward,
+.#{$icon-prefix}-upward {
   &::before {
     border: $icon-border-width solid currentColor;
     border-bottom: 0;
@@ -17,32 +17,32 @@
   }
 }
 
-.icon-arrow-down {
+.#{$icon-prefix}-arrow-down {
   &::before {
     transform: translate(-50%, -75%) rotate(225deg);
   }
 }
 
-.icon-arrow-left {
+.#{$icon-prefix}-arrow-left {
   &::before {
     transform: translate(-25%, -50%) rotate(-45deg);
   }
 }
 
-.icon-arrow-right {
+.#{$icon-prefix}-arrow-right {
   &::before {
     transform: translate(-75%, -50%) rotate(135deg);
   }
 }
 
-.icon-arrow-up {
+.#{$icon-prefix}-arrow-up {
   &::before {
     transform: translate(-50%, -25%) rotate(45deg);
   }
 }
 
-.icon-back,
-.icon-forward {
+.#{$icon-prefix}-back,
+.#{$icon-prefix}-forward {
   &::after {
     background: currentColor;
     content: "";
@@ -51,8 +51,8 @@
   }
 }
 
-.icon-downward,
-.icon-upward {
+.#{$icon-prefix}-downward,
+.#{$icon-prefix}-upward {
   &::after {
     background: currentColor;
     content: "";
@@ -61,44 +61,48 @@
   }
 }
 
-.icon-back {
+.#{$icon-prefix}-back {
   &::after {
     left: 55%;
   }
+
   &::before {
     transform: translate(-50%, -50%) rotate(-45deg);
   }
 }
 
-.icon-downward {
+.#{$icon-prefix}-downward {
   &::after {
     top: 45%;
   }
+
   &::before {
     transform: translate(-50%, -50%) rotate(-135deg);
   }
 }
 
-.icon-forward {
+.#{$icon-prefix}-forward {
   &::after {
     left: 45%;
   }
+
   &::before {
     transform: translate(-50%, -50%) rotate(135deg);
   }
 }
 
-.icon-upward {
+.#{$icon-prefix}-upward {
   &::after {
     top: 55%;
   }
+
   &::before {
     transform: translate(-50%, -50%) rotate(45deg);
   }
 }
 
 // Icon caret
-.icon-caret {
+.#{$icon-prefix}-caret {
   &::before {
     border-top: .3em solid currentColor;
     border-right: .3em solid transparent;
@@ -111,7 +115,7 @@
 }
 
 // Icon menu
-.icon-menu {
+.#{$icon-prefix}-menu {
   &::before {
     background: currentColor;
     box-shadow: 0 -.35em, 0 .35em;
@@ -122,7 +126,7 @@
 }
 
 // Icon apps
-.icon-apps {
+.#{$icon-prefix}-apps {
   &::before {
     background: currentColor;
     box-shadow: -.35em -.35em, -.35em 0, -.35em .35em, 0 -.35em, 0 .35em, .35em -.35em, .35em 0, .35em .35em;
