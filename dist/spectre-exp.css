@@ -213,7 +213,7 @@
   border-right: 0;
 }
 
-.calendar.calendar-lg .calendar-body .calendar-date:nth-last-child(-n+7) {
+.calendar.calendar-lg .calendar-body .calendar-date:nth-last-child(-n + 7) {
   border-bottom: 0;
 }
 
