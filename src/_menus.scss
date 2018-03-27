@@ -1,5 +1,5 @@
 // Menus
-.menu {
+.#{$prefix}menu {
   @include shadow-variant(.05rem);
   background: $bg-color-light;
   border-radius: $border-radius;
@@ -10,12 +10,12 @@
   transform: translateY($layout-spacing-sm);
   z-index: $zindex-3;
 
-  &.menu-nav {
+  &.#{$prefix}menu-nav {
     background: transparent;
     box-shadow: none;
   }
 
-  .menu-item {
+  .#{$prefix}menu-item {
     margin-top: 0;
     padding: 0 $unit-2;
     text-decoration: none;
@@ -34,28 +34,28 @@
         color: $primary-color;
       }
       &:active,
-      &.active {
+      &.#{$prefix}active {
         background: $secondary-color;
         color: $primary-color;
       }
     }
 
-    .form-checkbox,
-    .form-radio,
-    .form-switch {
+    .#{$prefix}form-checkbox,
+    .#{$prefix}form-radio,
+    .#{$prefix}form-switch {
       margin: $unit-h 0;
     }
 
-    & + .menu-item {
+    & + .#{$prefix}menu-item {
       margin-top: $unit-1;
     }
   }
 
-  .menu-badge {
+  .#{$prefix}menu-badge {
     float: right;
     padding: $unit-1 0;
 
-    .btn {
+    .#{$prefix}btn {
       margin-top: -$unit-h;
     }
   }

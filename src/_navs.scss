@@ -1,11 +1,11 @@
 // Navs
-.nav {
+.#{$prefix}nav {
   display: flex;
   flex-direction: column;
   list-style: none;
   margin: $unit-1 0;
 
-  .nav-item {
+  .#{$prefix}nav-item {
     a {
       color: $gray-color-dark;
       padding: $unit-1 $unit-2;
@@ -15,7 +15,8 @@
         color: $primary-color;
       }
     }
-    &.active {
+
+    &.#{$prefix}active {
       & > a {
         color: darken($gray-color-dark, 10%);
         font-weight: bold;
@@ -27,7 +28,7 @@
     }
   }
 
-  & .nav {
+  & .#{$prefix}nav {
     margin-bottom: $unit-2;
     margin-left: $unit-4;
   }

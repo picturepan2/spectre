@@ -1,5 +1,5 @@
 // Animations
-@keyframes loading {
+@keyframes #{$prefix}loading {
   0% {
     transform: rotate(0deg);
   }
@@ -8,7 +8,7 @@
   }
 }
 
-@keyframes slide-down {
+@keyframes #{$prefix}slide-down {
   0% {
     opacity: 0;
     transform: translateY(-$unit-8);

@@ -1,9 +1,9 @@
 // Popovers
-.popover {
+.#{$prefix}popover {
   display: inline-block;
   position: relative;
 
-  .popover-container {
+  .#{$prefix}popover-container {
     left: 50%;
     opacity: 0;
     padding: $layout-spacing;
@@ -15,55 +15,55 @@
     z-index: $zindex-3;
   }
 
-  *:focus + .popover-container,
-  &:hover .popover-container,
-  .popover-container:hover {
+  *:focus + .#{$prefix}popover-container,
+  &:hover .#{$prefix}popover-container,
+  .#{$prefix}popover-container:hover {
     display: block;
     opacity: 1;
     transform: translate(-50%, -100%) scale(1);
   }
 
-  &.popover-right {
-    .popover-container {
+  &.#{$prefix}popover-right {
+    .#{$prefix}popover-container {
       left: 100%;
       top: 50%;
     }
 
-    :focus + .popover-container,
-    &:hover .popover-container,
-    .popover-container:hover {
+    :focus + .#{$prefix}popover-container,
+    &:hover .#{$prefix}popover-container,
+    .#{$prefix}popover-container:hover {
       transform: translate(0, -50%) scale(1);
     }
   }
 
-  &.popover-bottom {
-    .popover-container {
+  &.#{$prefix}popover-bottom {
+    .#{$prefix}popover-container {
       left: 50%;
       top: 100%;
     }
 
-    :focus + .popover-container,
-    &:hover .popover-container,
-    .popover-container:hover {
+    :focus + .#{$prefix}popover-container,
+    &:hover .#{$prefix}popover-container,
+    .#{$prefix}popover-container:hover {
       transform: translate(-50%, 0) scale(1);
     }
   }
 
-  &.popover-left {
-    .popover-container {
+  &.#{$prefix}popover-left {
+    .#{$prefix}popover-container {
       left: 0;
       top: 50%;
     }
 
-    :focus + .popover-container,
-    &:hover .popover-container,
-    .popover-container:hover {
+    :focus + .#{$prefix}popover-container,
+    &:hover .#{$prefix}popover-container,
+    .#{$prefix}popover-container:hover {
       transform: translate(-100%, -50%) scale(1);
     }
   }
 
-  .card {
-    @include shadow-variant(.2rem);
+  .#{$prefix}card {
+    @include shadow-variant(0.2rem);
     border: 0;
   }
 }

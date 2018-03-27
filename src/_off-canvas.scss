@@ -1,19 +1,20 @@
 // Off canvas menus
 $off-canvas-breakpoint: $size-lg !default;
 
-.off-canvas {
+.#{$prefix}off-canvas {
   display: flex;
   flex-flow: nowrap;
   height: 100%;
   position: relative;
   width: 100%;
 
-  .off-canvas-toggle {
+  .#{$prefix}off-canvas-toggle {
     display: block;
     position: absolute;
     top: $layout-spacing;
     transition: none;
     z-index: $zindex-0;
+
     @if $rtl == true {
       right: $layout-spacing;
     } @else {
@@ -21,7 +22,7 @@ $off-canvas-breakpoint: $size-lg !default;
     }
   }
 
-  .off-canvas-sidebar {
+  .#{$prefix}off-canvas-sidebar {
     background: $bg-color;
     bottom: 0;
     min-width: 10rem;
@@ -30,6 +31,7 @@ $off-canvas-breakpoint: $size-lg !default;
     top: 0;
     transition: transform .25s ease;
     z-index: $zindex-2;
+
     @if $rtl == true {
       right: 0;
       transform: translateX(100%);
@@ -39,18 +41,18 @@ $off-canvas-breakpoint: $size-lg !default;
     }
   }
 
-  .off-canvas-content {
+  .#{$prefix}off-canvas-content {
     flex: 1 1 auto;
     height: 100%;
     padding: $layout-spacing $layout-spacing $layout-spacing 4rem;
   }
 
-  .off-canvas-overlay {
-    background: rgba($dark-color, .1);
+  .#{$prefix}off-canvas-overlay {
     border-color: transparent;
     border-radius: 0;
     bottom: 0;
     display: none;
+    background: rgba($dark-color, .1);
     height: 100%;
     left: 0;
     position: fixed;
@@ -59,14 +61,14 @@ $off-canvas-breakpoint: $size-lg !default;
     width: 100%;
   }
 
-  .off-canvas-sidebar {
+  .#{$prefix}off-canvas-sidebar {
     &:target,
-    &.active {
+    &.#{$prefix}active {
       transform: translateX(0);
     }
 
     &:target ~ .off-canvas-overlay,
-    &.active ~ .off-canvas-overlay {
+    &.#{$prefix}active ~ .#{$prefix}off-canvas-overlay {
       display: block;
       z-index: $zindex-1;
     }
@@ -75,13 +77,13 @@ $off-canvas-breakpoint: $size-lg !default;
 
 // Responsive layout
 @media (min-width: $off-canvas-breakpoint) {
-  .off-canvas {
-    &.off-canvas-sidebar-show {
-      .off-canvas-toggle {
+  .#{$prefix}off-canvas {
+    &.#{$prefix}off-canvas-sidebar-show {
+      .#{$prefix}off-canvas-toggle {
         display: none;
       }
-  
-      .off-canvas-sidebar {
+
+      .#{$prefix}off-canvas-sidebar {
         flex: 0 0 auto;
         position: relative;
         transform: none;

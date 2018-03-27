@@ -5,7 +5,7 @@ code {
   font-size: 85%;
 }
 
-.code {
+.#{$prefix}code {
   border-radius: $border-radius;
   color: $body-font-color;
   position: relative;

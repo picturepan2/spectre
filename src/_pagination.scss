@@ -1,11 +1,11 @@
 // Pagination
-.pagination {
+.#{$prefix}pagination {
   display: flex;
   list-style: none;
   margin: $unit-1 0;
   padding: $unit-1 0;
 
-  .page-item {
+  .#{$prefix}page-item {
     margin: $unit-1 $unit-o;
 
     span {
@@ -25,7 +25,7 @@
       }
     }
 
-    &.disabled {
+    &.#{$prefix}disabled {
       a {
         cursor: default;
         opacity: .5;
@@ -33,27 +33,27 @@
       }
     }
 
-    &.active {
+    &.#{$prefix}active {
       a {
         background: $primary-color;
         color: $light-color;
       }
     }
 
-    &.page-prev,
-    &.page-next {
+    &.#{$prefix}page-prev,
+    &.#{$prefix}page-next {
       flex: 1 0 50%;
     }
 
-    &.page-next {
+    &.#{$prefix}page-next {
       text-align: right;
     }
 
-    .page-item-title {
+    .#{$prefix}page-item-title {
       margin: 0;
     }
 
-    .page-item-subtitle {
+    .#{$prefix}page-item-subtitle {
       margin: 0;
       opacity: .5;
     }

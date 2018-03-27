@@ -1,5 +1,5 @@
 // Tabs
-.tab {
+.#{$prefix}tab {
   align-items: center;
   border-bottom: $border-width solid $border-color;
   display: flex;
@@ -7,7 +7,7 @@
   list-style: none;
   margin: $unit-1 0 ($unit-1 - $border-width) 0;
 
-  .tab-item {
+  .#{$prefix}tab-item {
     margin-top: 0;
 
     a {
@@ -28,18 +28,18 @@
       color: $link-color;
     }
 
-    &.tab-action {
+    &.#{$prefix}tab-action {
       flex: 1 0 auto;
       text-align: right;
     }
 
-    .btn-clear {
+    .#{$prefix}btn-clear {
       margin-top: -$unit-1;
     }
   }
 
-  &.tab-block {
-    .tab-item {
+  &.#{$prefix}tab-block {
+    .#{$prefix}tab-item {
       flex: 1 0 0;
       text-align: center;
 
@@ -47,8 +47,8 @@
         margin: 0;
       }
 
-      .badge {
-        &[data-badge]::after {
+      .#{$prefix}badge {
+        &[data-#{$prefix}badge]::after {
           position: absolute;
           right: $unit-h;
           top: $unit-h;
@@ -58,8 +58,8 @@
     }
   }
 
-  &:not(.tab-block) {
-    .badge {
+  &:not(.tab-#{$prefix}block) {
+    .#{$prefix}badge {
       padding-right: 0;
     }
   }

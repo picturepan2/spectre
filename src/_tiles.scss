@@ -1,36 +1,40 @@
 // Tiles
-.tile {
+.#{$prefix}tile {
   align-content: space-between;
   align-items: flex-start;
   display: flex;
 
-  .tile-icon,
-  .tile-action {
+  .#{$prefix}tile-icon,
+  .#{$prefix}tile-action {
     flex: 0 0 auto;
   }
-  .tile-content {
+
+  .#{$prefix}tile-content {
     flex: 1 1 auto;
+
     &:not(:first-child) {
       padding-left: $unit-2;
     }
+
     &:not(:last-child) {
       padding-right: $unit-2;
     }
   }
-  .tile-title,
-  .tile-subtitle {
+
+  .#{$prefix}tile-title,
+  .#{$prefix}tile-subtitle {
     line-height: $line-height;
   }
 
-  &.tile-centered {
+  &.#{$prefix}tile-centered {
     align-items: center;
 
-    .tile-content {
+    .#{$prefix}tile-content {
       overflow: hidden;
     }
 
-    .tile-title,
-    .tile-subtitle {
+    .#{$prefix}tile-title,
+    .#{$prefix}tile-subtitle {
       @include text-ellipsis();
       margin-bottom: 0;
     }

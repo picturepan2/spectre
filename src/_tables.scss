@@ -1,15 +1,16 @@
 // Tables
-.table {
+.#{$prefix}table {
   border-collapse: collapse;
   border-spacing: 0;
   width: 100%;
+
   @if $rtl == true {
     text-align: right;
   } @else {
     text-align: left;
   }
 
-  &.table-striped {
+  &.#{$prefix}table-striped {
     tbody {
       tr:nth-of-type(odd) {
         background: $bg-color;
@@ -18,7 +19,7 @@
   }
 
   &,
-  &.table-striped {
+  &.#{$prefix}table-striped {
     tbody {
       tr {
         &.active {
@@ -28,7 +29,7 @@
     }
   }
 
-  &.table-hover {
+  &.#{$prefix}table-hover {
     tbody {
       tr {
         &:hover {
@@ -39,7 +40,7 @@
   }
 
   // Tables with horizontal scrollbar
-  &.table-scroll {
+  &.#{$prefix}table-scroll {
     display: block;
     overflow-x: auto;
     padding-bottom: .75rem;

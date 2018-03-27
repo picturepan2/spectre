@@ -1,63 +1,63 @@
 // Text
 // Text alignment utilities
-.text-left {
+.#{$prefix}text-left {
   text-align: left;
 }
 
-.text-right {
+.#{$prefix}text-right {
   text-align: right;
 }
 
-.text-center {
+.#{$prefix}text-center {
   text-align: center;
 }
 
-.text-justify {
+.#{$prefix}text-justify {
   text-align: justify;
 }
 
 // Text transform utilities
-.text-lowercase {
+.#{$prefix}text-lowercase {
   text-transform: lowercase;
 }
 
-.text-uppercase {
+.#{$prefix}text-uppercase {
   text-transform: uppercase;
 }
 
-.text-capitalize {
+.#{$prefix}text-capitalize {
   text-transform: capitalize;
 }
 
 // Text style utilities
-.text-normal {
+.#{$prefix}text-normal {
   font-weight: normal;
 }
 
-.text-bold {
+.#{$prefix}text-bold {
   font-weight: bold;
 }
 
-.text-italic {
+.#{$prefix}text-italic {
   font-style: italic;
 }
 
-.text-large {
+.#{$prefix}text-large {
   font-size: 1.2em;
 }
 
 // Text overflow utilities
-.text-ellipsis {
+.#{$prefix}text-ellipsis {
   @include text-ellipsis();
 }
 
-.text-clip {
+.#{$prefix}text-clip {
   overflow: hidden;
   text-overflow: clip;
   white-space: nowrap;
 }
 
-.text-break {
+.#{$prefix}text-break {
   hyphens: auto;
   word-break: break-word;
   word-wrap: break-word;

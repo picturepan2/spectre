@@ -1,13 +1,13 @@
 // Divider
-.divider,
-.divider-vert {
+.#{$prefix}divider,
+.#{$prefix}divider-vert {
   display: block;
   position: relative;
 
-  &[data-content]::after {
+  &[data-#{$prefix}content]::after {
     background: $bg-color-light;
     color: $gray-color;
-    content: attr(data-content);
+    content: attr(data-#{$prefix}content);
     display: inline-block;
     font-size: $font-size-sm;
     padding: 0 $unit-2;
@@ -15,17 +15,17 @@
   }
 }
 
-.divider {
+.#{$prefix}divider {
   border-top: $border-width solid $border-color;
   height: $border-width;
   margin: $unit-2 0;
 
-  &[data-content] {
+  &[data-#{$prefix}content] {
     margin: $unit-4 0;
   }
 }
 
-.divider-vert {
+.#{$prefix}divider-vert {
   display: block;
   padding: $unit-4;
 
@@ -40,7 +40,7 @@
     transform: translateX(-50%);
   }
 
-  &[data-content]::after {
+  &[data-#{$prefix}content]::after {
     left: 50%;
     padding: $unit-1 0;
     position: absolute;

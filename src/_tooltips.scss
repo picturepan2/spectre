@@ -1,6 +1,7 @@
 // Tooltips
-.tooltip {
+.#{$prefix}tooltip {
   position: relative;
+
   &::after {
     background: rgba($dark-color, .9);
     border-radius: $border-radius;
@@ -22,6 +23,7 @@
     white-space: pre;
     z-index: $zindex-3;
   }
+
   &:focus,
   &:hover {
     &::after {
@@ -29,17 +31,19 @@
       transform: translate(-50%, -$unit-1);
     }
   }
+
   &[disabled],
-  &.disabled {
+  &.#{$prefix}disabled {
     pointer-events: auto;
   }
 
-  &.tooltip-right {
+  &.#{$prefix}tooltip-right {
     &::after {
       bottom: 50%;
       left: 100%;
       transform: translate(-$unit-1, 50%);
     }
+
     &:focus,
     &:hover {
       &::after {
@@ -48,12 +52,13 @@
     }
   }
 
-  &.tooltip-bottom {
+  &.#{$prefix}tooltip-bottom {
     &::after {
       bottom: auto;
       top: 100%;
       transform: translate(-50%, -$unit-2);
     }
+
     &:focus,
     &:hover {
       &::after {
@@ -61,8 +66,8 @@
       }
     }
   }
-  
-  &.tooltip-left {
+
+  &.#{$prefix}tooltip-left {
     &::after {
       bottom: 50%;
       left: auto;

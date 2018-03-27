@@ -1,34 +1,34 @@
 // Labels
-.label {
+.#{$prefix}label {
   @include label-base();
   @include label-variant(lighten($body-font-color, 5%), $bg-color-dark);
   display: inline-block;
 
   // Label rounded
-  &.label-rounded {
+  &.#{$prefix}label-rounded {
     border-radius: 5rem;
     padding-left: .4rem;
     padding-right: .4rem; 
   }
 
   // Label colors
-  &.label-primary {
+  &.#{$prefix}label-primary {
     @include label-variant($light-color, $primary-color);
   }
 
-  &.label-secondary {
+  &.#{$prefix}label-secondary {
     @include label-variant($primary-color, $secondary-color);
   }
 
-  &.label-success {
+  &.#{$prefix}label-success {
     @include label-variant($light-color, $success-color);
   }
 
-  &.label-warning {
+  &.#{$prefix}label-warning {
     @include label-variant($light-color, $warning-color);
   }
 
-  &.label-error {
+  &.#{$prefix}label-error {
     @include label-variant($light-color, $error-color);
   }
 }

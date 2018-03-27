@@ -1,5 +1,5 @@
 // Modals
-.modal {
+.#{$prefix}modal {
   align-items: center;
   bottom: 0;
   display: none;
@@ -13,14 +13,14 @@
   top: 0;
 
   &:target,
-  &.active {
+  &.#{$prefix}active {
     display: flex;
     opacity: 1;
     z-index: $zindex-4;
 
-    .modal-overlay {
-      background: rgba($bg-color, .75);
+    .#{$prefix}modal-overlay {
       bottom: 0;
+      background: rgba($bg-color, .75);
       cursor: default;
       display: block;
       left: 0;
@@ -29,35 +29,34 @@
       top: 0;
     }
 
-    .modal-container {
-      animation: slide-down .2s ease 1;
+    .#{$prefix}modal-container {
+      animation: #{$prefix}slide-down 0.2s ease 1;
       max-width: $control-width-md;
       width: 100%;
       z-index: $zindex-0;
     }
   }
 
-  &.modal-sm {
+  &.#{$prefix}modal-sm {
     .modal-container {
       max-width: $control-width-sm;
       padding: 0 $unit-2;
     }
   }
 
-  &.modal-lg {
-    .modal-overlay {
+  &.#{$prefix}modal-lg {
+    .#{$prefix}modal-overlay {
       background: $bg-color-light;
     }
 
-    .modal-container {
+    .#{$prefix}modal-container {
       box-shadow: none;
       max-width: $control-width-lg;
     }
   }
 }
 
-.modal-container {
-  @include shadow-variant(.2rem);
+.#{$prefix}modal-container {
   background: $bg-color-light;
   border-radius: $border-radius;
   display: block;
@@ -67,6 +66,7 @@
     padding: $unit-4;
   }
 
+  @include shadow-variant(.2rem);
   .modal-body {
     max-height: 50vh;
     overflow-y: auto;

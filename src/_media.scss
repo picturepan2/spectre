@@ -1,6 +1,6 @@
 // Media
 // Image responsive
-.img-responsive {
+.#{$prefix}img-responsive {
   display: block;
   height: auto;
   max-width: 100%;
@@ -8,16 +8,16 @@
 
 // object-fit support is coming to Microsoft Edge
 // https://developer.microsoft.com/en-us/microsoft-edge/platform/status/objectfitandobjectposition/
-.img-fit-cover {
+.#{$prefix}img-fit-cover {
   object-fit: cover;
 }
 
-.img-fit-contain {
+.#{$prefix}img-fit-contain {
   object-fit: contain;
 }
 
 // Video responsive
-.video-responsive {
+.#{$prefix}video-responsive {
   display: block;
   overflow: hidden;
   padding: 0;
@@ -43,7 +43,7 @@
   }
 }
 
-video.video-responsive {
+video.#{$prefix}video-responsive {
   height: auto;
   max-width: 100%;
 
@@ -52,23 +52,23 @@ video.video-responsive {
   }
 }
 
-.video-responsive-4-3 {
+.#{$prefix}video-responsive-4-3 {
   &::before {
     padding-bottom: 75%; // Ratio 4:3
   }
 }
 
-.video-responsive-1-1 {
+.#{$prefix}video-responsive-1-1 {
   &::before {
     padding-bottom: 100%; // Ratio 1:1
   }
 }
 
 // Figure
-.figure {
+.#{$prefix}figure {
   margin: 0 0 $layout-spacing 0;
 
-  .figure-caption {
+  .#{$prefix}figure-caption {
     color: $gray-color-dark;
     margin-top: $layout-spacing;
   }

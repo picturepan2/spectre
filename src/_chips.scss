@@ -1,5 +1,5 @@
 // Chips
-.chip {
+.#{$prefix}chip {
   align-items: center;
   background: $bg-color-dark;
   border-radius: 5rem;
@@ -14,12 +14,12 @@
   text-decoration: none;
   vertical-align: middle;
 
-  &.active {
+  &.#{$prefix}active {
     background: $primary-color;
     color: $light-color;
   }
 
-  .avatar {
+  .#{$prefix}avatar {
     margin-left: -$unit-2;
     margin-right: $unit-1;
   }

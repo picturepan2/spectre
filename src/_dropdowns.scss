@@ -1,10 +1,10 @@
 // Dropdown
-.dropdown {
+.#{$prefix}dropdown {
   display: inline-block;
   position: relative;
 
-  .menu {
-    animation: slide-down .15s ease 1;
+  .#{$prefix}menu {
+    animation: #{$prefix}slide-down 0.15s ease 1;
     display: none;
     left: 0;
     max-height: 50vh;
@@ -13,22 +13,22 @@
     top: 100%;
   }
 
-  &.dropdown-right {
-    .menu {
+  &.#{$prefix}dropdown-right {
+    .#{$prefix}menu {
       left: auto;
       right: 0;
     }
   }
 
-  &.active .menu,
-  .dropdown-toggle:focus + .menu,
-  .menu:hover {
+  &.#{$prefix}active .#{$prefix}menu,
+  .#{$prefix}dropdown-toggle:focus + .#{$prefix}menu,
+  .#{$prefix}menu:hover {
     display: block;
   }
 
   // Fix dropdown-toggle border radius in button groups
-  .btn-group {
-    .dropdown-toggle:nth-last-child(2) {
+  .#{$prefix}btn-group {
+    .#{$prefix}dropdown-toggle:nth-last-child(2) {
       border-bottom-right-radius: $border-radius;
       border-top-right-radius: $border-radius;
     }

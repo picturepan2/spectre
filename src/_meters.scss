@@ -1,6 +1,6 @@
 // Meters
 // Credit: https://css-tricks.com/html5-meter-element/
-.meter {
+.#{$prefix}meter {
   appearance: none;
   background: $bg-color;
   border: 0;

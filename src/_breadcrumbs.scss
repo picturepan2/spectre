@@ -1,10 +1,10 @@
 // Breadcrumbs
-.breadcrumb {
+.#{$prefix}breadcrumb {
   list-style: none;
   margin: $unit-1 0;
   padding: $unit-1 0;
 
-  .breadcrumb-item {
+  .#{$prefix}breadcrumb-item {
     color: $gray-color-dark;
     display: inline-block;
     margin: 0;

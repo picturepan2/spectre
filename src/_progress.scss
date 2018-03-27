@@ -1,6 +1,6 @@
 // Progress
 // Credit: https://css-tricks.com/html5-progress-element/
-.progress {
+.#{$prefix}progress {
   appearance: none;
   background: $bg-color-dark;
   border: 0;
@@ -35,7 +35,7 @@
   }
 }
 
-@keyframes progress-indeterminate {
+@keyframes #{$prefix}progress-indeterminate {
   0% {
     background-position: 200% 0;
   }

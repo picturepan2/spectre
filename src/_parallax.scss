@@ -15,13 +15,13 @@ $parallax-fade-color: rgba(255, 255, 255, .35) !default;
   z-index: $zindex-1;
 }
 
-.parallax {
+.#{$prefix}parallax {
   display: block;
   height: auto;
   position: relative;
   width: auto;
 
-  .parallax-content {
+  .#{$prefix}parallax-content {
     @include shadow-variant(1rem);
     height: auto;
     transform: perspective($parallax-perspective);
@@ -40,7 +40,7 @@ $parallax-fade-color: rgba(255, 255, 255, .35) !default;
     }
   }
 
-  .parallax-front {
+  .#{$prefix}parallax-front {
     align-items: center;
     color: $light-color;
     display: flex;
@@ -57,32 +57,32 @@ $parallax-fade-color: rgba(255, 255, 255, .35) !default;
     z-index: $zindex-0;
   }
 
-  .parallax-top-left {
+  .#{$prefix}parallax-top-left {
     @include parallax-dir();
     left: 0;
     top: 0;
 
-    &:focus ~ .parallax-content,
-    &:hover ~ .parallax-content {
+    &:focus ~ .#{$prefix}parallax-content,
+    &:hover ~ .#{$prefix}parallax-content {
       transform: perspective($parallax-perspective) rotateX($parallax-deg) rotateY(-$parallax-deg);
 
       &::before {
         background: linear-gradient(135deg, $parallax-fade-color 0%, transparent 50%);
       }
 
-      .parallax-front {
+      .#{$prefix}parallax-front {
         transform: translate3d($parallax-offset, $parallax-offset, $parallax-offset-z) scale($parallax-scale);
       }
     }
   }
 
-  .parallax-top-right {
+  .#{$prefix}parallax-top-right {
     @include parallax-dir();
     right: 0;
     top: 0;
 
-    &:focus ~ .parallax-content,
-    &:hover ~ .parallax-content {
+    &:focus ~ .#{$prefix}parallax-content,
+    &:hover ~ .#{$prefix}parallax-content {
       transform: perspective($parallax-perspective) rotateX($parallax-deg) rotateY($parallax-deg);
 
       &::before {
@@ -95,13 +95,13 @@ $parallax-fade-color: rgba(255, 255, 255, .35) !default;
     }
   }
 
-  .parallax-bottom-left {
+  .#{$prefix}parallax-bottom-left {
     @include parallax-dir();
     bottom: 0;
     left: 0;
 
-    &:focus ~ .parallax-content,
-    &:hover ~ .parallax-content {
+    &:focus ~ .#{$prefix}parallax-content,
+    &:hover ~ .#{$prefix}parallax-content {
       transform: perspective($parallax-perspective) rotateX(-$parallax-deg) rotateY(-$parallax-deg);
 
       &::before {
@@ -114,20 +114,20 @@ $parallax-fade-color: rgba(255, 255, 255, .35) !default;
     }
   }
 
-  .parallax-bottom-right {
+  .#{$prefix}parallax-bottom-right {
     @include parallax-dir();
     bottom: 0;
     right: 0;
 
-    &:focus ~ .parallax-content,
-    &:hover ~ .parallax-content {
+    &:focus ~ .#{$prefix}parallax-content,
+    &:hover ~ .#{$prefix}parallax-content {
       transform: perspective($parallax-perspective) rotateX(-$parallax-deg) rotateY($parallax-deg);
 
       &::before {
         background: linear-gradient(-45deg, $parallax-fade-color 0%, transparent 50%);
       }
 
-      .parallax-front {
+      .#{$prefix}parallax-front {
         transform: translate3d(-$parallax-offset, -$parallax-offset, $parallax-offset-z) scale($parallax-scale);
       }
     }

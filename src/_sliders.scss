@@ -1,6 +1,6 @@
 // Sliders
 // Credit: https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/
-.slider {
+.#{$prefix}slider {
   appearance: none;
   background: transparent;
   display: block;
@@ -29,6 +29,7 @@
     transition: transform .2s ease;
     width: $unit-3;
   }
+
   &::-moz-range-thumb {
     background: $primary-color;
     border: 0;
@@ -37,6 +38,7 @@
     transition: transform .2s ease;
     width: $unit-3;
   }
+
   &::-ms-thumb {
     background: $primary-color;
     border: 0;
@@ -50,24 +52,28 @@
     &::-webkit-slider-thumb {
       transform: scale(1.25);
     }
+
     &::-moz-range-thumb {
       transform: scale(1.25);
     }
+
     &::-ms-thumb {
       transform: scale(1.25);
     }
   }
 
   &:disabled,
-  &.disabled {
+  &.#{$prefix}disabled {
     &::-webkit-slider-thumb {
       background: $gray-color-light;
       transform: scale(1);
     }
+
     &::-moz-range-thumb {
       background: $gray-color-light;
       transform: scale(1);
     }
+
     &::-ms-thumb {
       background: $gray-color-light;
       transform: scale(1);
@@ -81,18 +87,21 @@
     height: $unit-h;
     width: 100%;
   }
+
   &::-moz-range-track {
     background: $bg-color-dark;
     border-radius: $border-radius;
     height: $unit-h;
     width: 100%;
   }
+
   &::-ms-track {
     background: $bg-color-dark;
     border-radius: $border-radius;
     height: $unit-h;
     width: 100%;
   }
+
   &::-ms-fill-lower {
     background: $primary-color;
   }

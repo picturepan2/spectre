@@ -1,14 +1,14 @@
 // Image comparison slider
 // Credit: http://codepen.io/solipsistacp/pen/Gpmaq
-.comparison-slider {
+.#{$prefix}comparison-slider {
   height: 50vh;
   overflow: hidden;
   position: relative;
   width: 100%;
   -webkit-overflow-scrolling: touch;
 
-  .comparison-before,
-  .comparison-after {
+  .#{$prefix}comparison-before,
+  .#{$prefix}comparison-after {
     height: 100%;
     left: 0;
     margin: 0;
@@ -25,16 +25,16 @@
     }
   }
 
-  .comparison-before {
+  .#{$prefix}comparison-before {
     width: 100%;
     z-index: 1;
 
-    .comparison-label {
+    .#{$prefix}comparison-label {
       right: $unit-4;
     }
   }
 
-  .comparison-after {
+  .#{$prefix}comparison-after {
     max-width: 100%;
     min-width: 0;
     z-index: 2;
@@ -65,13 +65,13 @@
       width: 3px;
     }
 
-    .comparison-label {
+    .#{$prefix}comparison-label {
       left: $unit-4;
     }
   }
 
-  .comparison-resizer {
-    animation: first-run 1.5s 1 ease-in-out;
+  .#{$prefix}comparison-resizer {
+    animation: #{$prefix}first-run 1.5s 1 ease-in-out;
     cursor: ew-resize;
     height: $unit-4;
     left: 0;
@@ -86,17 +86,17 @@
     width: 0;
   }
 
-  .comparison-label {
-    background: rgba($dark-color, .5);
+  .#{$prefix}comparison-label {
     bottom: $unit-4;
     color: $light-color;
     padding: $unit-1 $unit-2;
+    background: rgba($dark-color, .5);
     position: absolute;
     user-select: none;
   }
 }
 
-@keyframes first-run {
+@keyframes #{$prefix}first-run {
   0% {
     width: 0;
   }

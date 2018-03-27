@@ -1,9 +1,10 @@
 // Timelines
-.timeline {
-  .timeline-item {
+.#{$prefix}timeline {
+  .#{$prefix}timeline-item {
     display: flex;
     margin-bottom: $unit-6;
     position: relative;
+
     &::before {
       background: $border-color;
       content: "";
@@ -14,22 +15,23 @@
       width: 2px;
     }
 
-    .timeline-left {
+    .#{$prefix}timeline-left {
       flex: 0 0 auto;
     }
 
-    .timeline-content {
+    .#{$prefix}timeline-content {
       flex: 1 1 auto;
       padding: 2px 0 2px $layout-spacing-lg;
     }
 
-    .timeline-icon {
+    .#{$prefix}timeline-icon {
       border-radius: 50%;
       color: $light-color;
       display: block;
       height: $unit-6;
       text-align: center;
       width: $unit-6;
+
       &::before {
         border: $border-width-lg solid $primary-color;
         border-radius: 50%;
@@ -45,6 +47,7 @@
       &.icon-lg {
         background: $primary-color;
         line-height: $line-height;
+
         &::before {
           content: none;
         }

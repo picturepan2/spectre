@@ -1,5 +1,5 @@
 // Background color utility mixin
-@mixin bg-color-variant($name: ".bg-primary", $color: $primary-color) {
+@mixin bg-color-variant($name: ".#{$prefix}bg-primary", $color: $primary-color) {
   #{$name} {
     background: $color;
 
@@ -10,7 +10,7 @@
 }
 
 // Text color utility mixin
-@mixin text-color-variant($name: ".text-primary", $color: $primary-color) {
+@mixin text-color-variant($name: ".#{$prefix}text-primary", $color: $primary-color) {
   #{$name} {
     color: $color;
   }

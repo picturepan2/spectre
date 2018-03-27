@@ -13,7 +13,7 @@
 
 :lang(zh),
 :lang(ja),
-.cjk {
+.#{$prefix}cjk {
   ins,
   u {
     border-bottom: $border-width solid;

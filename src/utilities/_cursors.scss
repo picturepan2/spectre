@@ -1,24 +1,24 @@
 // Cursors
-.c-hand {
+.#{$prefix}c-hand {
   cursor: pointer;
 }
 
-.c-move {
+.#{$prefix}c-move {
   cursor: move;
 }
 
-.c-zoom-in {
+.#{$prefix}c-zoom-in {
   cursor: zoom-in;
 }
 
-.c-zoom-out {
+.#{$prefix}c-zoom-out {
   cursor: zoom-out;
 }
 
-.c-not-allowed {
+.#{$prefix}c-not-allowed {
   cursor: not-allowed;
 }
 
-.c-auto {
+.#{$prefix}c-auto {
   cursor: auto;
 }

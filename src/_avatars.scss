@@ -1,5 +1,5 @@
 // Avatars
-.avatar {
+.#{$prefix}avatar {
   @include avatar-base();
   background: $primary-color;
   border-radius: 50%;
@@ -11,16 +11,16 @@
   position: relative;
   vertical-align: middle;
 
-  &.avatar-xs {
+  &.#{$prefix}avatar-xs {
     @include avatar-base($unit-4);
   }
-  &.avatar-sm {
+  &.#{$prefix}avatar-sm {
     @include avatar-base($unit-6);
   }
-  &.avatar-lg {
+  &.#{$prefix}avatar-lg {
     @include avatar-base($unit-12);
   }
-  &.avatar-xl {
+  &.#{$prefix}avatar-xl {
     @include avatar-base($unit-16);
   }
 
@@ -32,8 +32,8 @@
     z-index: $zindex-0;
   }
 
-  .avatar-icon,
-  .avatar-presence {
+  .#{$prefix}avatar-icon,
+  .#{$prefix}avatar-presence {
     background: $bg-color-light;
     bottom: 14.64%;
     height: 50%;
@@ -45,29 +45,29 @@
     z-index: $zindex-0 + 1;
   }
 
-  .avatar-presence {
+  .#{$prefix}avatar-presence {
     background: $gray-color;
     box-shadow: 0 0 0 $border-width-lg $light-color;
     border-radius: 50%;
     height: .5em;
     width: .5em;
 
-    &.online {
+    &.#{$prefix}online {
       background: $success-color;
     }
 
-    &.busy {
+    &.#{$prefix}busy {
       background: $error-color;
     }
 
-    &.away {
+    &.#{$prefix}away {
       background: $warning-color;
     }
   }
 
-  &[data-initial]::before {
+  &[data-#{$prefix}initial]::before {
     color: currentColor;
-    content: attr(data-initial);
+    content: attr(data-#{$prefix}initial);
     left: 50%;
     position: absolute;
     top: 50%;

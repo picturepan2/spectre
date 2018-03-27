@@ -1,12 +1,12 @@
 // Steps
-.step {
+.#{$prefix}step {
   display: flex;
   flex-wrap: nowrap;
   list-style: none;
   margin: $unit-1 0;
   width: 100%;
 
-  .step-item {
+  .#{$prefix}step-item {
     flex: 1 1 0;
     margin-top: 0;
     min-height: 1rem;
@@ -45,7 +45,7 @@
       }
     }
 
-    &.active {
+    &.#{$prefix}active {
       a {
         &::before {
           background: $light-color;
@@ -53,13 +53,12 @@
         }
       }
 
-      & ~ .step-item {
+      & ~ .#{$prefix}step-item {
         &::before {
           background: $border-color;
         }
 
         a {
-
           &::before {
             background: $gray-color-light;
           }

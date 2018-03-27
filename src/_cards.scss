@@ -1,14 +1,14 @@
 // Cards
-.card {
+.#{$prefix}card {
   background: $bg-color-light;
   border: $border-width solid $border-color;
   border-radius: $border-radius;
   display: flex;
   flex-direction: column;
 
-  .card-header,
-  .card-body,
-  .card-footer {
+  .#{$prefix}card-header,
+  .#{$prefix}card-body,
+  .#{$prefix}card-footer {
     padding: $layout-spacing-lg;
     padding-bottom: 0;
 
@@ -17,7 +17,7 @@
     }
   }
 
-  .card-image {
+  .#{$prefix}card-image {
     padding-top: $layout-spacing-lg;
 
     &:first-child {

@@ -1,8 +1,8 @@
 // Autocomplete
-.form-autocomplete {
+.#{$prefix}form-autocomplete {
   position: relative;
 
-  .form-autocomplete-input {
+  .#{$prefix}form-autocomplete-input {
     align-content: flex-start;
     display: flex;
     flex-wrap: wrap;
@@ -10,12 +10,12 @@
     min-height: $unit-8;
     padding: $unit-h;
 
-    &.is-focused {
+    &.#{$prefix}is-focused {
       @include control-shadow();
       border-color: $primary-color;
     }
 
-    .form-input {
+    .#{$prefix}form-input {
       border-color: transparent;
       box-shadow: none;
       display: inline-block;
@@ -27,20 +27,20 @@
     }
   }
 
-  .menu {
+  .#{$prefix}menu {
     left: 0;
     position: absolute;
     top: 100%;
     width: 100%;
   }
 
-  &.autocomplete-oneline {
-    .form-autocomplete-input {
+  &.#{$prefix}autocomplete-oneline {
+    .#{$prefix}form-autocomplete-input {
       flex-wrap: nowrap;
       overflow-x: auto;
     }
 
-    .chip {
+    .#{$prefix}chip {
       flex: 1 0 auto;
     }
   }

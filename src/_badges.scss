@@ -1,10 +1,10 @@
 // Badges
-.badge {
+.#{$prefix}badge {
   position: relative;
   white-space: nowrap;
 
-  &[data-badge],
-  &:not([data-badge]) {
+  &[data-#{$prefix}badge],
+  &:not([data-#{$prefix}badge]) {
     &::after {
       background: $primary-color;
       background-clip: padding-box;
@@ -16,7 +16,8 @@
       transform: translate(-.1rem, -.5rem);
     }
   }
-  &[data-badge] {
+
+  &[data-#{$prefix}badge] {
     &::after {
       font-size: $font-size-sm;
       height: .9rem;
@@ -27,8 +28,9 @@
       white-space: nowrap;
     }
   }
-  &:not([data-badge]),
-  &[data-badge=""] {
+
+  &:not([data-#{$prefix}badge]),
+  &[data-#{$prefix}badge=""] {
     &::after {
       height: 6px;
       min-width: 6px;

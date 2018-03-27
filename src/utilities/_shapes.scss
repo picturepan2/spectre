@@ -1,8 +1,8 @@
 // Shapes
-.rounded {
+.#{$prefix}rounded {
   border-radius: $border-radius;
 }
 
-.circle {
+.#{$prefix}circle {
   border-radius: 50%;
 }

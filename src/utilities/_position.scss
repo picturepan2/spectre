@@ -1,36 +1,36 @@
 // Position
-.clearfix {
+.#{$prefix}clearfix {
   @include clearfix();
 }
 
-.float-left {
+.#{$prefix}float-left {
   float: left !important;
 }
 
-.float-right {
+.#{$prefix}float-right {
   float: right !important;
 }
 
-.relative {
+.#{$prefix}relative {
   position: relative;
 }
 
-.absolute {
+.#{$prefix}absolute {
   position: absolute;
 }
 
-.fixed {
+.#{$prefix}fixed {
   position: fixed;
 }
 
-.centered {
+.#{$prefix}centered {
   display: block;
   float: none;
   margin-left: auto;
   margin-right: auto;
 }
 
-.flex-centered {
+.#{$prefix}flex-centered {
   align-items: center;
   display: flex;
   justify-content: center;
