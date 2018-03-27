@@ -9,23 +9,23 @@
 
   $grid-spacing: ($layout-spacing / ($layout-spacing * 0 + 1)) * $html-font-size;
 
-  &.grid-xl {
+  &.#{$prefix}grid-xl {
     max-width: $grid-spacing * 2 + $size-xl;
   }
 
-  &.grid-lg {
+  &.#{$prefix}grid-lg {
     max-width: $grid-spacing * 2 + $size-lg;
   }
 
-  &.grid-md {
+  &.#{$prefix}grid-md {
     max-width: $grid-spacing * 2 + $size-md;
   }
 
-  &.grid-sm {
+  &.#{$prefix}grid-sm {
     max-width: $grid-spacing * 2 + $size-sm;
   }
 
-  &.grid-xs {
+  &.#{$prefix}grid-xs {
     max-width: $grid-spacing * 2 + $size-xs;
   }
 }
