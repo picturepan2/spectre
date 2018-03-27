@@ -579,7 +579,7 @@
 </code></pre>
 
         <div class="docs-note">
-          <p>To add <code>spectre-</code> to all classes, you can add the Gulp task to <code>gulpfile.js</code> file.</p>
+          <p>To add <code>spectre-</code> to all classes in a postprocessing step, you can add the Gulp task to <code>gulpfile.js</code> file.</p>
         </div>
 
 <!-- custom prefix -->
@@ -594,6 +594,12 @@ gulp.task('prefix', function() {
 
         <div class="docs-note">
           <p>After you compile your version of Spectre in the /dist, run <code>gulp prefix</code> in the directory of Spectre.</p>
+        </div>
+
+        <h6>When using SASS</h6>
+
+        <div class="docs-note">
+          <p>If you use the Sass source files, you can set <code>$prefix</code> to <code>spectre-</code> to get the same result.</p>
         </div>
       </div>
 
