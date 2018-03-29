@@ -187,7 +187,7 @@
     display: none !important;
   }
   .show-xl {
-    display: block !important;
+    display: flex !important;
   }
 }
 @media (max-width: $size-lg) {
@@ -245,7 +245,7 @@
     display: none !important;
   }
   .show-lg {
-    display: block !important;
+    display: flex !important;
   }
 }
 @media (max-width: $size-md) {
@@ -303,7 +303,7 @@
     display: none !important;
   }
   .show-md {
-    display: block !important;
+    display: flex !important;
   }
 }
 @media (max-width: $size-sm) {
@@ -361,7 +361,7 @@
     display: none !important;
   }
   .show-sm {
-    display: block !important;
+    display: flex !important;
   }
 }
 @media (max-width: $size-xs) {
@@ -419,6 +419,6 @@
     display: none !important;
   }
   .show-xs {
-    display: block !important;
+    display: flex !important;
   }
 }
