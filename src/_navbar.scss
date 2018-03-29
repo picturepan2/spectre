@@ -1,11 +1,11 @@
 // Navbar
-.navbar {
+.#{$prefix}navbar {
   align-items: stretch;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 
-  .navbar-section {
+  .#{$prefix}navbar-section {
     align-items: center;
     display: flex;
     flex: 1 0 0;
@@ -15,13 +15,13 @@
     }
   }
 
-  .navbar-center {
+  .#{$prefix}navbar-center {
     align-items: center;
     display: flex;
     flex: 0 0 auto;
   }
 
-  .navbar-brand {
+  .#{$prefix}navbar-brand {
     font-size: $font-size-lg;
     font-weight: 500;
     text-decoration: none;
