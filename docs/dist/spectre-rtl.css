@@ -1963,13 +1963,34 @@ video.video-responsive::before {
   text-decoration: none;
 }
 
-.accordion input:checked ~ .accordion-header .icon,
-.accordion[open] .accordion-header .icon {
+.accordion input[type=radio],
+.accordion input[type=checkbox] {
+  border: 0; 
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.accordion input[type=radio]:focus + label,
+.accordion input[type=checkbox]:focus + label {
+  box-shadow: 0 0 0 .1rem rgba(87, 85, 217, .2);
+}
+
+.accordion input[type=radio]:checked ~ .accordion-header .icon,
+.accordion input[type=radio][open] .accordion-header .icon,
+.accordion input[type=checkbox]:checked ~ .accordion-header .icon,
+.accordion input[type=checkbox][open] .accordion-header .icon {
   transform: rotate(90deg);
 }
 
-.accordion input:checked ~ .accordion-body,
-.accordion[open] .accordion-body {
+.accordion input[type=radio]:checked ~ .accordion-body,
+.accordion input[type=radio][open] .accordion-body,
+.accordion input[type=checkbox]:checked ~ .accordion-body,
+.accordion input[type=checkbox][open] .accordion-body {
   max-height: 50rem;
 }
 
