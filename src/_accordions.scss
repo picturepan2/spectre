@@ -1,33 +1,33 @@
 // Accordions
 .accordion {
-  input[type=radio],
-  input[type=checkbox] {
-    position: absolute;
-    width: 1px;
+  [type=radio],
+  [type=checkbox] {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
     height: 1px;
-    padding: 0;
     margin: -1px;
     overflow: hidden;
-    clip: rect(0,0,0,0);
-    border: 0;
+    padding: 0;
+    position: absolute;
+    width: 1px;
 
     &:focus {
-      &+ label {
+      + label {
         @include control-shadow();
       }
     }
+  }
 
-    &:checked ~,
-    &[open] {
-      & .accordion-header {
-        .icon {
-          transform: rotate(90deg);
-        }
+  input:checked ~,
+  &[open] {
+    .accordion-header {
+      .icon {
+        transform: rotate(90deg);
       }
-  
-      & .accordion-body {
-        max-height: 50rem;
-      }
+    }
+
+    .accordion-body {
+      max-height: 50rem;
     }
   }
 
