@@ -1962,6 +1962,23 @@ video.video-responsive::before {
   text-decoration: none;
 }
 
+.accordion [type=radio],
+.accordion [type=checkbox] {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.accordion [type=radio]:focus + label,
+.accordion [type=checkbox]:focus + label {
+  box-shadow: 0 0 0 .1rem rgba(87, 85, 217, .2);
+}
+
 .accordion input:checked ~ .accordion-header .icon,
 .accordion[open] .accordion-header .icon {
   transform: rotate(90deg);
