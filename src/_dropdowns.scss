@@ -13,6 +13,12 @@
     top: 100%;
   }
 
+  // Simple dropup from current dropdwon
+  .menu[data-type="dropup"] {
+    top: auto;
+    bottom: 120%;
+  }
+
   &.dropdown-right {
     .menu {
       left: auto;

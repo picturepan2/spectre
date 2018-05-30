@@ -290,7 +290,7 @@
           </div>
         </div>
       </div>
-      
+
       <div id="accordions" class="container">
         <h3 class="s-title"><a href="#accordions" class="anchor" aria-hidden="true">#</a>Accordions</h3>
         <div class="docs-note">
@@ -970,7 +970,7 @@
 
 <!-- chips -->
 <pre class="code" data-lang="HTML"><code>&lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;chip&quot;</span>&gt;Crime&lt;<span class="tag">/span</span>&gt;
-  
+
 &lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;chip&quot;</span>&gt;
   Biography
   &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-clear&quot;</span> <span class="atn">aria-label</span>=<span class="atv">&quot;Close&quot;</span> <span class="atn">role</span>=<span class="atv">&quot;button&quot;</span>&gt;&lt;<span class="tag">/a</span>&gt;
@@ -1269,6 +1269,108 @@
 
     <span class="com">&lt;!-- menu component --&gt;</span>
     &lt;<span class="tag">ul</span> <span class="atn">class</span>=<span class="atv">&quot;menu&quot;</span>&gt;
+      ...
+    &lt;<span class="tag">/ul</span>&gt;
+  &lt;<span class="tag">/div</span>&gt;
+&lt;<span class="tag">/div</span>&gt;
+</code></pre>
+
+        <h4 id="dropups" class="s-subtitle"><a href="#dropups" class="anchor" aria-hidden="true">#</a>Dropup menus</h4>
+        <div class="columns">
+          <div class="column col-xs-12">
+            <div class="dropdown">
+              <div class="btn-group">
+                <a class="btn btn-primary">dropdown button</a>
+                <a class="btn btn-primary dropdown-toggle" tabindex="0"><i class="icon icon-caret"></i></a>
+                <ul class="menu" data-type="dropup">
+                  <li class="menu-item">
+                    <a href="#dropdowns">
+                      Slack
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#dropdowns">
+                      Hipchat
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#dropdowns">
+                      Skype
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="column col-xs-12">
+            <div class="dropdown">
+              <a class="btn btn-link dropdown-toggle" tabindex="0">dropdown button <i class="icon icon-caret"></i></a>
+              <ul class="menu" data-type="dropup">
+                <li class="menu-item">
+                  <a href="#dropdowns">
+                    Slack
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="#dropdowns">
+                    Hipchat
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="#dropdowns">
+                    Skype
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="docs-note">
+          <p>Dropup menus are an extension of the Dropdown menus. Just add <code>data-type=&quot;dropup&quot;</code> attribute to the <mark>dropdown list menu component</mark> to use. This way: <code>&lt;ul class=&quot;menu&quot; data-type=&quot;dropup&quot;&gt;</code></p>
+        </div>
+        <div class="columns">
+          <div class="column col-xs-12 text-right">
+            <div class="dropdown dropdown-right">
+              <a class="btn btn-primary dropdown-toggle" tabindex="0">dropup button <i class="icon icon-caret"></i></a>
+              <ul class="menu text-left" data-type="dropup">
+                <li class="menu-item">
+                  <a href="#dropdowns">Slack</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#dropdowns">Hipchat</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#dropdowns">Skype</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+<!-- dropups -->
+<pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- basic dropup button --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;dropdown&quot;</span>&gt;
+  &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-link dropdown-toggle&quot;</span> <span class="atn">tabindex</span>=<span class="atv">&quot;0&quot;</span>&gt;
+    dropdown menu &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-caret&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt;
+  &lt;<span class="tag">/a</span>&gt;
+  <span class="com">&lt;!-- menu component --&gt;</span>
+  &lt;<span class="tag">ul</span> <span class="atn">class</span>=<span class="atv">&quot;menu&quot;</span> <span class="atn">data-type</span>=<span class="atv">&quot;dropup&quot;</span>&gt;
+    ...
+  &lt;<span class="tag">/ul</span>&gt;
+&lt;<span class="tag">/div</span>&gt;
+
+<span class="com">&lt;!-- dropup button group --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;dropdown&quot;</span>&gt;
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;btn-group&quot;</span>&gt;
+    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;btn&quot;</span>&gt;
+      dropdown button
+    &lt;<span class="tag">/a</span>&gt;
+    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;btn dropdown-toggle&quot;</span> <span class="atn">tabindex</span>=<span class="atv">&quot;0&quot;</span>&gt;
+      &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-caret&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt;
+    &lt;<span class="tag">/a</span>&gt;
+
+    <span class="com">&lt;!-- menu component --&gt;</span>
+    &lt;<span class="tag">ul</span> <span class="atn">class</span>=<span class="atv">&quot;menu&quot;</span> <span class="atn">data-type</span>=<span class="atv">&quot;dropup&quot;</span>&gt;
       ...
     &lt;<span class="tag">/ul</span>&gt;
   &lt;<span class="tag">/div</span>&gt;
@@ -1772,7 +1874,7 @@
         <div class="docs-note">
           <p>Add a container element with the <code>panel</code> class. And add child elements with the <code>panel-header</code>, <code>panel-nav</code>, <code>panel-body</code> and/or <code>panel-footer</code> class. The <code>panel-body</code> can be auto expanded and vertically scrollable. </p>
         </div>
-  
+
 <!-- panels -->
 <pre class="code" data-lang="HTML"><code>&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;panel&quot;</span>&gt;
   &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;panel-header&quot;</span>&gt;
@@ -1789,7 +1891,7 @@
   &lt;<span class="tag">/div</span>&gt;
 &lt;<span class="tag">/div</span>&gt;
 </code></pre>
-  
+
       </div>
 
       <div id="popovers" class="container">
