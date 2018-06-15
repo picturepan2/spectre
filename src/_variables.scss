@@ -72,7 +72,21 @@ $html-line-height: 1.5 !default;
 $font-size: .8rem !default;
 $font-size-sm: .7rem !default;
 $font-size-lg: .9rem !default;
+$font-size-h1: 2rem !default;
+$font-size-h2: 1.6rem !default;
+$font-size-h3: 1.4rem !default;
+$font-size-h4: 1.2rem !default;
+$font-size-h5: 1rem !default;
+$font-size-h6: .8rem !default;
+
 $line-height: 1rem !default;
+$line-height-h: 1.2 !default;
+$line-height-h1: $line-height-h !default;
+$line-height-h2: $line-height-h !default;
+$line-height-h3: $line-height-h !default;
+$line-height-h4: $line-height-h !default;
+$line-height-h5: $line-height-h !default;
+$line-height-h6: $line-height-h !default;
 
 // Sizes
 $layout-spacing: $unit-2 !default;
