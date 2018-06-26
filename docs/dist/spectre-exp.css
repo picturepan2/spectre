@@ -1,60 +1,10 @@
-/*! Spectre.css Experimentals v0.5.1 | MIT License | github.com/picturepan2/spectre */
-.form-autocomplete {
-  position: relative;
-}
-
-.form-autocomplete .form-autocomplete-input {
-  align-content: flex-start;
-  display: flex;
-  display: -ms-flexbox;
-  -ms-flex-line-pack: start;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  height: auto;
-  min-height: 1.6rem;
-  padding: .1rem;
-}
-
-.form-autocomplete .form-autocomplete-input.is-focused {
-  border-color: #5755d9; 
-  box-shadow: 0 0 0 .1rem rgba(87, 85, 217, .2);
-}
-
-.form-autocomplete .form-autocomplete-input .form-input {
-  border-color: transparent;
-  box-shadow: none;
-  display: inline-block;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
-  height: 1.2rem;
-  line-height: .8rem;
-  margin: .1rem;
-  width: auto;
-}
-
-.form-autocomplete .menu {
-  left: 0;
-  position: absolute;
-  top: 100%;
-  width: 100%;
-}
-
-.form-autocomplete.autocomplete-oneline .form-autocomplete-input {
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-}
-
-.form-autocomplete.autocomplete-oneline .chip {
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
-}
-
+/*! Spectre.css Experimentals v0.5.0 | MIT License | github.com/picturepan2/spectre */
 .calendar {
   border: .05rem solid #e7e9ed;
   border-radius: .1rem;
   display: block;
   min-width: 280px;
+  text-align: center;
 }
 
 .calendar .calendar-nav {
@@ -92,7 +42,6 @@
   border-bottom: .05rem solid #e7e9ed;
   color: #acb3c2;
   font-size: .7rem;
-  text-align: center;
 }
 
 .calendar .calendar-body {
@@ -253,6 +202,7 @@
   margin: .1rem auto;
   overflow: hidden;
   padding: 3px 4px;
+  text-align: left;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
@@ -261,10 +211,9 @@
   background: #f8f9fa;
   display: block;
   overflow: hidden;
-  -webkit-overflow-scrolling: touch;
+  -webkit-overflow-scrolling: touch; 
   position: relative;
   width: 100%;
-  z-index: 1;
 }
 
 .carousel .carousel-container {
@@ -305,7 +254,7 @@
   top: 50%;
   transform: translateY(-50%);
   transition: all .4s ease;
-  z-index: 100;
+  z-index: 200;
 }
 
 .carousel .carousel-container .item-prev {
@@ -342,7 +291,7 @@
   position: absolute;
   transform: translateX(-50%);
   width: 10rem;
-  z-index: 100;
+  z-index: 200;
 }
 
 .carousel .carousel-nav .nav-item {
@@ -609,7 +558,7 @@
 
 .off-canvas .off-canvas-toggle {
   display: block;
-  left: .4rem; 
+  left: .4rem;
   position: absolute;
   top: .4rem;
   transition: none;
@@ -624,9 +573,9 @@
   overflow-y: auto;
   position: fixed;
   top: 0;
-  transform: translateX(-100%); 
+  transform: translateX(-100%);
   transition: transform .25s ease;
-  z-index: 200;
+  z-index: 300;
 }
 
 .off-canvas .off-canvas-content {
@@ -658,7 +607,7 @@
 .off-canvas .off-canvas-sidebar:target ~ .off-canvas-overlay,
 .off-canvas .off-canvas-sidebar.active ~ .off-canvas-overlay {
   display: block;
-  z-index: 100;
+  z-index: 200;
 }
 
 @media (min-width: 960px) {

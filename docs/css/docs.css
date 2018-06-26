@@ -1,6 +1,6 @@
 /*! Spectre.css Docs | MIT License | github.com/picturepan2/spectre */
 .version::after {
-  content: "0.5.1";
+  content: "0.5.0";
 }
 
 .off-canvas .off-canvas-toggle {
@@ -19,7 +19,7 @@
   position: fixed;
   right: 0;
   top: 0;
-  z-index: 100;
+  z-index: 200;
 }
 
 .docs-navbar .btn {
@@ -164,25 +164,6 @@
   top: .1rem;
 }
 
-.docs-content .docs-ad.docs-ad-sidebar::before {
-  content: none;
-}
-
-.docs-content .carbon-wrap .carbon-img {
-  display: block;
-}
-
-.docs-content .carbon-wrap .carbon-text {
-  color: #667189;
-  display: block;
-  font-size: .7rem;
-}
-
-.docs-content .carbon-poweredby {
-  color: #acb3c2;
-  font-size: .7rem;
-}
-
 .docs-content .column {
   padding: .4rem;
 }
@@ -296,6 +277,7 @@
 }
 
 .docs-content .comparison-slider .filter-grayscale {
+  -webkit-filter: grayscale(75%);
   filter: grayscale(75%);
 }
 
@@ -540,6 +522,5 @@
     bottom: 1rem;
     position: fixed;
     right: 1rem;
-    width: 7.3rem;
   }
 }

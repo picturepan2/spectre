@@ -33,15 +33,4 @@
     top: 100%;
     width: 100%;
   }
-
-  &.autocomplete-oneline {
-    .form-autocomplete-input {
-      flex-wrap: nowrap;
-      overflow-x: auto;
-    }
-
-    .chip {
-      flex: 1 0 auto;
-    }
-  }
 }

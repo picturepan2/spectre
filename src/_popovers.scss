@@ -12,7 +12,7 @@
     transform: translate(-50%, -50%) scale(0);
     transition: transform .2s ease;
     width: $control-width-sm;
-    z-index: $zindex-3;
+    z-index: $zindex-4;
   }
 
   *:focus + .popover-container,

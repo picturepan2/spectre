@@ -7,12 +7,10 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="author" content="https://github.com/picturepan2/">
   <title>Experimentals - Spectre.css CSS Framework</title>
-  <link rel="shortcut icon" href="https://picturepan2.github.io/spectre/img/favicons/favicon.ico">
-  <link rel="icon" href="https://picturepan2.github.io/spectre/img/favicons/favicon.png">
-  <link rel="stylesheet" href="dist/spectre.min.css">
-  <link rel="stylesheet" href="dist/spectre-icons.min.css">
-  <link rel="stylesheet" href="dist/spectre-exp.min.css">
-  <link rel="stylesheet" href="dist/docs.min.css">
+  <link rel="stylesheet" href="dist/spectre.css">
+  <link rel="stylesheet" href="dist/spectre-icons.css">
+  <link rel="stylesheet" href="dist/spectre-exp.css">
+  <link rel="stylesheet" href="css/docs.css">
 </head>
 <body>
   <div class="docs-container off-canvas off-canvas-sidebar-show">
@@ -121,6 +119,9 @@
                   <a href="components.html">Accordions</a>
                 </li>
                 <li class="menu-item">
+                  <a href="components.html#autocomplete">Autocomplete</a>
+                </li>
+                <li class="menu-item">
                   <a href="components.html#avatars">Avatars</a>
                 </li>
                 <li class="menu-item">
@@ -219,10 +220,7 @@
             <div class="accordion-body">
               <ul class="menu menu-nav">
                 <li class="menu-item">
-                  <a href="experimentals.html">Autocomplete</a>
-                </li>
-                <li class="menu-item">
-                  <a href="experimentals.html#calendars">Calendars</a>
+                  <a href="experimentals.html">Calendars</a>
                 </li>
                 <li class="menu-item">
                   <a href="experimentals.html#carousels">Carousels</a>
@@ -264,7 +262,7 @@
       <div id="experimentals" class="container">
         <h3 class="s-title"><a href="#experimentals" class="anchor" aria-hidden="true">#</a>Experimentals</h3>
         <div class="docs-note">
-          <p>The Experimentals include experimental elements and features, mostly are not yet ready for wide use. These elements and components are limited inside <code>spectre-exp.scss</code> before browsers fully support them. Sometimes, there are some specific browsers targeted components.</p>
+          <p>The Experimentals include experimental elements and features, mostly are not yet ready for wide use. These elements and components are limited inside <code>spectre-exp.less</code> before browsers fully support them. Sometimes, there are some specific browsers targeted components.</p>
         </div>
       </div>
 
@@ -291,165 +289,6 @@
             (adsbygoogle = window.adsbygoogle || []).push({});
             </script>
           </div>
-        </div>
-      </div>
-
-      <div id="autocomplete" class="container">
-        <h3 class="s-title"><a href="#autocomplete" class="anchor" aria-hidden="true">#</a>Autocomplete</h3>
-        <div class="docs-note">
-          <p>Autocomplete form component provides suggestions while you type. It is often used for tags and contacts input. </p>
-        </div>
-        <div class="columns">
-          <div class="column col-9 col-xs-12">
-            <div class="form-group">
-              <div class="form-autocomplete">
-                <div class="form-autocomplete-input form-input">
-                  <span class="chip">
-                    Bruce Banner
-                  </span>
-                  <div class="chip">
-                    <img src="img/avatar-1.png" class="avatar avatar-sm" alt="Avatar">
-                    Thor Odinson
-                  </div>
-                  <div class="chip">
-                    <img src="img/avatar-4.png" class="avatar avatar-sm" alt="Avatar">
-                    Steve Rogers
-                  </div>
-                  <div class="chip">
-                    <figure class="avatar avatar-sm" data-initial="TS" style="background-color: #5755d9;"></figure>
-                    Tony Stark
-                  </div>
-                  <span class="chip active">
-                    Natasha Romanoff
-                  </span>
-                  <input class="form-input" type="text" placeholder="">
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="column col-9 col-xs-12">
-            <div class="form-group">
-              <div class="form-autocomplete">
-                <div class="form-autocomplete-input form-input is-focused">
-                  <span class="chip">
-                    Bruce Banner
-                    <a href="#" class="btn btn-clear" aria-label="Close" role="button"></a>
-                  </span>
-                  <span class="chip">
-                    <img src="img/avatar-1.png" class="avatar avatar-sm" alt="Thor Odinson">
-                    Thor Odinson
-                    <a href="#" class="btn btn-clear" aria-label="Close" role="button"></a>
-                  </span>
-                  <div class="has-icon-left">
-                    <input class="form-input" type="text" placeholder="" value="S">
-                    <i class="form-icon loading"></i>
-                  </div>
-                </div>
-                <ul class="menu">
-                  <li class="menu-item">
-                    <a href="#autocomplete">
-                      <div class="tile tile-centered">
-                        <div class="tile-icon">
-                          <img src="img/avatar-4.png" class="avatar avatar-sm" alt="Steve Rogers">
-                        </div>
-                        <div class="tile-content">
-                          <mark>S</mark>teve Roger<mark>s</mark>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="menu-item">
-                    <a href="#autocomplete">
-                      <div class="tile tile-centered">
-                        <div class="tile-icon">
-                          <figure class="avatar avatar-sm" data-initial="TS" style="background-color: #5755d9;"></figure>
-                        </div>
-                        <div class="tile-content">
-                          Tony <mark>S</mark>tark
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="docs-note">
-          <p>Add a container element with the <code>form-autocomplete</code> class. There are 2 parts of it, one is <code>form-autocomplete-input</code>, another is <code>menu</code> component. You may add the <code>is-focused</code> class to <code>form-autocomplete-input</code> to make it appear as focus state.</p>
-          <p>Spectre.css does NOT include JavaScript code, you will need to implement your JS to interact with the autocomplete. The autocomplete HTML structure is exampled below.</p>
-        </div>
-
-        <div class="columns">
-          <div class="column col-6 col-xs-12">
-            <div class="form-group">
-              <div class="form-autocomplete autocomplete-oneline">
-                <div class="form-autocomplete-input form-input">
-                  <span class="chip">
-                    Bruce Banner
-                  </span>
-                  <div class="chip">
-                    <img src="img/avatar-1.png" class="avatar avatar-sm" alt="Avatar">
-                    Thor Odinson
-                  </div>
-                  <div class="chip">
-                    <img src="img/avatar-4.png" class="avatar avatar-sm" alt="Avatar">
-                    Steve Rogers
-                  </div>
-                  <div class="chip">
-                    <figure class="avatar avatar-sm" data-initial="TS" style="background-color: #5755d9;"></figure>
-                    Tony Stark
-                  </div>
-                  <span class="chip active">
-                    Natasha Romanoff
-                  </span>
-                  <input class="form-input" type="text" placeholder="">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-<!-- autocomplete -->
-<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-autocomplete&quot;</span>&gt;
-  <span class="com">&lt;!-- autocomplete input container --&gt;</span>
-  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-autocomplete-input form-input&quot;</span>&gt;
-
-    <span class="com">&lt;!-- autocomplete chips --&gt;</span>
-    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;chip&quot;</span>&gt;
-      &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/avatar-1.png&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;avatar avatar-sm&quot;</span> <span class="atn">alt</span>=<span class="atv">&quot;Thor Odinson&quot;</span>&gt;
-      Thor Odinson
-      &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-clear&quot;</span> <span class="atn">aria-label</span>=<span class="atv">&quot;Close&quot;</span> <span class="atn">role</span>=<span class="atv">&quot;button&quot;</span>&gt;&lt;<span class="tag">/a</span>&gt;
-    &lt;<span class="tag">/div</span>&gt;
-
-    <span class="com">&lt;!-- autocomplete real input box --&gt;</span>
-    &lt;<span class="tag">input</span> <span class="atn">class</span>=<span class="atv">&quot;form-input&quot;</span> <span class="atn">type</span>=<span class="atv">&quot;text&quot;</span> <span class="atn">placeholder</span>=<span class="atv">&quot;typing here&quot;</span>&gt;
-  &lt;<span class="tag">/div</span>&gt;
-
-  <span class="com">&lt;!-- autocomplete suggestion list --&gt;</span>
-  &lt;<span class="tag">ul</span> <span class="atn">class</span>=<span class="atv">&quot;menu&quot;</span>&gt;
-    <span class="com">&lt;!-- menu list chips --&gt;</span>
-    &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;menu-item&quot;</span>&gt;
-      &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;
-        &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;tile tile-centered&quot;</span>&gt;
-          &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;tile-icon&quot;</span>&gt;
-            &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/avatar-4.png&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;avatar avatar-sm&quot;</span> <span class="atn">alt</span>=<span class="atv">&quot;Steve Rogers&quot;</span>&gt;
-          &lt;<span class="tag">/div</span>&gt;
-          &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;tile-content&quot;</span>&gt;
-            Steve Rogers
-          &lt;<span class="tag">/div</span>&gt;
-        &lt;<span class="tag">/div</span>&gt;
-      &lt;<span class="tag">/a</span>&gt;
-    &lt;<span class="tag">/li</span>&gt;
-  &lt;<span class="tag">/ul</span>&gt;
-&lt;<span class="tag">/div</span>&gt;
-</code></pre>
-
-      </div>
-
-      <div class="container">
-        <div class="docs-ad docs-ad-sidebar">
-          <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=picturepan2githubio" id="_carbonads_js"></script>
         </div>
       </div>
 
@@ -611,6 +450,21 @@
               </div>
             </div>
           </div>
+        </div>
+
+      </div>
+
+      <div class="container">
+        <div class="docs-ad docs-ad-sidebar">
+          <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+          <!-- github-vertical-sm -->
+          <ins class="adsbygoogle"
+              style="display:inline-block;width:120px;height:240px"
+              data-ad-client="ca-pub-2225124559530218"
+              data-ad-slot="5087273059"></ins>
+          <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
         </div>
       </div>
 

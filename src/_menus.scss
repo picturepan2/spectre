@@ -8,7 +8,7 @@
   min-width: $control-width-xs;
   padding: $unit-2;
   transform: translateY($layout-spacing-sm);
-  z-index: $zindex-3;
+  z-index: $zindex-1;
 
   &.menu-nav {
     background: transparent;
@@ -38,12 +38,6 @@
         background: $secondary-color;
         color: $primary-color;
       }
-    }
-
-    .form-checkbox,
-    .form-radio,
-    .form-switch {
-      margin: $unit-h 0;
     }
 
     & + .menu-item {

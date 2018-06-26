@@ -25,7 +25,7 @@
   position: fixed;
   right: 0;
   top: 0;
-  z-index: $zindex-1;
+  z-index: $zindex-2;
 
   .btn {
     position: absolute;
@@ -169,29 +169,6 @@
       right: $layout-spacing;
       top: $unit-h;
     }
-
-    &.docs-ad-sidebar {
-      &::before {
-        content: none;
-      }
-    }
-  }
-
-  .carbon-wrap {
-    .carbon-img {
-      display: block;
-    }
-
-    .carbon-text {
-      color: $gray-color-dark;
-      display: block;
-      font-size: $font-size-sm;
-    }
-  }
-
-  .carbon-poweredby {
-    color: $gray-color;
-    font-size: $font-size-sm;
   }
 
   .column {
@@ -585,7 +562,6 @@
       bottom: 1rem;
       position: fixed;
       right: 1rem;
-      width: 7.3rem;
     }
   }
 }

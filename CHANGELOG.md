@@ -1,16 +1,5 @@
 ## Spectre.css Changelog
 
-### [v0.5.1](https://github.com/picturepan2/spectre/releases/tag/v0.5.1)
-
-IMPORTANT: Move Autocomplete to the Experimentals
-- Add form checkbox, radio and switch support to Menus
-- Add responsive horizontal form support #375
-- Add Favicons in the docs #398
-- Fix Off-canvas z-index problem #361
-- Fix icons disappearing on group classes on focus
-- Fix Deprecation Warning #396 #356
-- Initial commit of RTL support (not finished)
-
 ### [v0.5.0](https://github.com/picturepan2/spectre/releases/tag/v0.5.0)
 
 - IMPORTANT: Restore /dist folder
