@@ -19,10 +19,7 @@
     color: $light-color;
   }
   &.loading {
-    &::after {
-      border-bottom-color: $light-color;
-      border-left-color: $light-color;
-    }
+    @extend .btn-primary.loading;
   }
 }
 

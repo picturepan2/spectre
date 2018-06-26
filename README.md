@@ -62,6 +62,7 @@ You can compile your custom version of Spectre.css. Read [the documentation](htt
 
 ### Components
 - [Accordions](https://picturepan2.github.io/spectre/components.html#accordions)
+- [Autocomplete](https://picturepan2.github.io/spectre/components.html#autocomplete)
 - [Avatars](https://picturepan2.github.io/spectre/components.html#avatars)
 - [Badges](https://picturepan2.github.io/spectre/components.html#badges)
 - [Breadcrumbs](https://picturepan2.github.io/spectre/components.html#breadcrumbs)
@@ -86,7 +87,6 @@ You can compile your custom version of Spectre.css. Read [the documentation](htt
 - [Utilities](https://picturepan2.github.io/spectre/utilities.html) - colors, display, divider, loading, position, shapes and text utilities
 
 ### Experimentals
-- [Autocomplete](https://picturepan2.github.io/spectre/experimentals.html#autocomplete)
 - [Calendars](https://picturepan2.github.io/spectre/experimentals.html#calendars)
 - [Carousels](https://picturepan2.github.io/spectre/experimentals.html#carousels) - CSS only
 - [Comparison Sliders](https://picturepan2.github.io/spectre/experimentals.html#comparison) - CSS only

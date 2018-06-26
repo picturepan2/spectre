@@ -39,12 +39,7 @@ gulp.task('docs', function() {
     )
     .pipe(autoprefixer())
     .pipe(csscomb())
-    .pipe(gulp.dest('./docs/dist'))
-    .pipe(cleancss())
-    .pipe(rename({
-      suffix: '.min'
-    }))
-    .pipe(gulp.dest('./docs/dist'));
+    .pipe(gulp.dest('./docs/css'));
   gulp.src(paths.source)
     .pipe(sass({outputStyle: 'compact', precision: 10})
       .on('error', sass.logError)

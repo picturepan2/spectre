@@ -165,7 +165,6 @@ textarea.form-input {
     top: 50%;
     transform: translateY(-50%);
     width: $control-icon-size;
-    z-index: $zindex-0 + 1;
   }
 }
 
@@ -535,7 +534,6 @@ input {
 
   .form-group {
     display: flex;
-    flex-wrap: wrap;
   }
 }
 

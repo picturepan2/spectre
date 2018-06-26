@@ -195,8 +195,8 @@
                 <mark>Highlighted</mark><code class="ml-2">mark</code>
               </div>
               <div class="column col-6 col-xs-12">
-                <ruby>漢 
-                  <rt>kan</rt>字 
+                <ruby>漢
+                  <rt>kan</rt>字
                   <rt>ji</rt>
                 </ruby><code class="ml-2">ruby</code>
               </div>
@@ -213,7 +213,7 @@
                 <u>Underline</u><code class="ml-2">u</code>
               </div>
               <div class="column col-6 col-xs-12">
-                <var>x</var> = 
+                <var>x</var> =
                 <var>y</var> + 2<code class="ml-2">var</code>
               </div>
             </div>
@@ -242,7 +242,7 @@
                 <p lang="ja"><u>祇園</u><u>精舎</u>の鐘の声、諸行無常の響きあり。</p>
                 <p lang="ja">
                   <del>祇園</del><del>精舎</del>の鐘の声、諸行無常の響きあり。
-                  
+
                 </p>
               </div>
             </div>
@@ -304,6 +304,330 @@
                   </li>
                   <li>list item 3</li>
                 </ol>
+              </li>
+              <li>list item 3</li>
+            </ol>
+          </div>
+          <div class="column col-4 col-xs-12">
+            <dl class="list">
+              <dt>description list term 1</dt>
+              <dd>description list description 1</dd>
+              <dt>description list term 2</dt>
+              <dd>description list description 2</dd>
+              <dt>description list term 3</dt>
+              <dd>description list description 3</dd>
+            </dl>
+          </div>
+        </div>
+
+<!-- lists -->
+<pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- unordered list --&gt;</span>
+&lt;<span class="tag">ul</span>&gt;
+  &lt;<span class="tag">li</span>&gt;list item 1&lt;<span class="tag">/li</span>&gt;
+  &lt;<span class="tag">li</span>&gt;list item 2
+    &lt;<span class="tag">ul</span>&gt;
+      &lt;<span class="tag">li</span>&gt;list item 2.1&lt;<span class="tag">/li</span>&gt;
+      &lt;<span class="tag">li</span>&gt;list item 2.2&lt;<span class="tag">/li</span>&gt;
+      &lt;<span class="tag">li</span>&gt;list item 2.3&lt;<span class="tag">/li</span>&gt;
+    &lt;<span class="tag">/ul</span>&gt;
+  &lt;<span class="tag">/li</span>&gt;
+  &lt;<span class="tag">li</span>&gt;list item 3&lt;<span class="tag">/li</span>&gt;
+&lt;<span class="tag">/ul</span>&gt;
+
+<span class="com">&lt;!-- description list --&gt;</span>
+&lt;<span class="tag">dl</span>&gt;
+  &lt;<span class="tag">dt</span>&gt;description list term&lt;<span class="tag">/dt</span>&gt;
+  &lt;<span class="tag">dd</span>&gt;description list description&lt;<span class="tag">/dd</span>&gt;
+&lt;<span class="tag">/dl</span>&gt;
+</code></pre>
+
+      </div>
+
+      <div class="container">
+        <div class="docs-ad docs-ad-sidebar">
+          <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+          <!-- github-vertical-sm -->
+          <ins class="adsbygoogle"
+              style="display:inline-block;width:120px;height:240px"
+              data-ad-client="ca-pub-2225124559530218"
+              data-ad-slot="5087273059"></ins>
+          <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+        </div>
+      </div>
+
+      <div id="tables" class="container">
+        <h3 class="s-title"><a href="#tables" class="anchor" aria-hidden="true">#</a>Tables</h3>
+        <div class="docs-note">
+          <p>Tables include default styles for tables and data sets.</p>
+        </div>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Genre</th>
+              <th>Release date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>The Shawshank Redemption</td>
+              <td>Crime, Drama</td>
+              <td>14 October 1994</td>
+            </tr>
+            <tr>
+              <td>The Godfather</td>
+              <td>Crime, Drama</td>
+              <td>24 March 1972</td>
+            </tr>
+            <tr>
+              <td>Schindler's List</td>
+              <td>Biography, Drama, History</td>
+              <td>4 February 1994</td>
+            </tr>
+            <tr>
+              <td>Se7en</td>
+              <td>Crime, Drama, Mystery</td>
+              <td>22 September 1995</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="docs-note">
+          <p>Add the <code>table</code> class to any &lt;table&gt; element. The class will add padding, border and emphasized table header. Use the <code>table-striped</code> class to &lt;table&gt; to add zebra striped style. For hoverable table rows, you can add the <code>table-hover</code> class to enable hover style. </p>
+          <p>Use the <code>active</code> class to make &lt;tr&gt; element highlighted. </p>
+        </div>
+
+<!-- tables -->
+<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">table</span> <span class="atn">class</span>=<span class="atv">&quot;table table-striped table-hover&quot;</span>&gt;
+  &lt;<span class="tag">thead</span>&gt;
+    &lt;<span class="tag">tr</span>&gt;
+      &lt;<span class="tag">th</span>&gt;name&lt;<span class="tag">/th</span>&gt;
+      &lt;<span class="tag">th</span>&gt;genre&lt;<span class="tag">/th</span>&gt;
+      &lt;<span class="tag">th</span>&gt;release date&lt;<span class="tag">/th</span>&gt;
+    &lt;<span class="tag">/tr</span>&gt;
+  &lt;<span class="tag">/thead</span>&gt;
+  &lt;<span class="tag">tbody</span>&gt;
+    &lt;<span class="tag">tr</span> <span class="atn">class</span>=<span class="atv">&quot;active&quot;</span>&gt;
+      &lt;<span class="tag">td</span>&gt;The Shawshank Redemption&lt;<span class="tag">/td</span>&gt;
+      &lt;<span class="tag">td</span>&gt;Crime, Drama&lt;<span class="tag">/td</span>&gt;
+      &lt;<span class="tag">td</span>&gt;14 October 1994&lt;<span class="tag">/td</span>&gt;
+    &lt;<span class="tag">/tr</span>&gt;
+  &lt;<span class="tag">/tbody</span>&gt;
+&lt;<span class="tag">/table</span>&gt;
+</code></pre>
+
+        <div class="docs-note">
+          <p>If you need the tables with horizontal scroll, add the <code>table-scroll</code> class to the &lt;table&gt; element. </p>
+        </div>
+
+        <table class="table table-scroll">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Genre</th>
+              <th>Director</th>
+              <th>Rating</th>
+              <th>Duration</th>
+              <th>Release date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>The Shawshank Redemption</td>
+              <td>Crime, Drama</td>
+              <td>Frank Darabont</td>
+              <td>R</td>
+              <td>2h 22min</td>
+              <td>14 October 1994</td>
+            </tr>
+            <tr>
+              <td>The Godfather</td>
+              <td>Crime, Drama</td>
+              <td>Francis Ford Coppola</td>
+              <td>R</td>
+              <td>2h 55min</td>
+              <td>24 March 1972</td>
+            </tr>
+            <tr>
+              <td>Schindler's List</td>
+              <td>Biography, Drama, History</td>
+              <td>Steven Spielberg</td>
+              <td>R</td>
+              <td>3h 15min</td>
+              <td>4 February 1994</td>
+            </tr>
+            <tr>
+              <td>Se7en</td>
+              <td>Crime, Drama, Mystery</td>
+              <td>David Fincher</td>
+              <td>R</td>
+              <td>2h 7min</td>
+              <td>22 September 1995</td>
+            </tr>
+          </tbody>
+        </table>
+
+<!-- tables -->
+<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">table</span> <span class="atn">class</span>=<span class="atv">&quot;table table-scroll&quot;</span>&gt;
+  <span class="com">&lt;!-- table content --&gt;</span>
+&lt;<span class="tag">/table</span>&gt;
+</code></pre>
+
+      </div>
+
+      <div id="buttons" class="container">
+        <h3 class="s-title"><a href="#buttons" class="anchor" aria-hidden="true">#</a>Buttons</h3>
+        <div class="docs-note">
+          <p>Buttons include simple button styles for actions in different types and sizes. </p>
+        </div>
+        <div class="columns">
+          <div class="column col-xs-12">
+            <button class="btn">default button</button>
+            <button class="btn btn-primary">primary button</button>
+            <button class="btn btn-link">link button</button>
+          </div>
+        </div>
+
+        <div class="docs-note">
+          <p>Add the <code>btn</code> class to &lt;a&gt;, &lt;input&gt; or &lt;button&gt; elements for a default button. There are classes <code>btn-primary</code> and <code>btn-link</code> for predefined primary and link buttons. </p>
+        </div>
+
+<!-- buttons -->
+<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn&quot;</span>&gt;default button&lt;<span class="tag">/button</span>&gt;
+&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary&quot;</span>&gt;primary button&lt;<span class="tag">/button</span>&gt;
+&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-link&quot;</span>&gt;link button&lt;<span class="tag">/button</span>&gt;
+</code></pre>
+
+        <h4 id="buttons-colors" class="s-subtitle">Button colors</h4>
+        <div class="columns">
+          <div class="column col-12">
+            <button class="btn btn-success">success button</button>
+            <button class="btn btn-error">error button</button>
+          </div>
+        </div>
+        <div class="docs-note">
+          <p>Add the <code>btn-success</code> or <code>btn-error</code> class for success (green) or error (red) button color. If you need more button colors, please use <a href="getting-started.html#variables-buttons">button mixins</a> to create your own button color variants. </p>
+        </div>
+
+<!-- buttons -->
+<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-success&quot;</span>&gt;success button&lt;<span class="tag">/button</span>&gt;
+&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-error&quot;</span>&gt;error button&lt;<span class="tag">/button</span>&gt;
+</code></pre>
+
+        <h4 id="buttons-sizes" class="s-subtitle">Button sizes</h4>
+        <div class="columns">
+          <div class="column col-12">
+            <button class="btn btn-primary btn-lg">large <i class="icon icon-arrow-down"></i></button>
+            <button class="btn btn-primary btn-lg">large button</button>
+          </div>
+          <div class="column col-12">
+            <button class="btn btn-primary">normal <i class="icon icon-arrow-down"></i></button>
+            <button class="btn btn-primary">normal button</button>
+          </div>
+          <div class="column col-12">
+            <button class="btn btn-primary btn-sm">small <i class="icon icon-arrow-down"></i></button>
+            <button class="btn btn-primary btn-sm">small button</button>
+          </div>
+        </div>
+        <div class="docs-note">
+          <p>Add the <code>btn-sm</code> or <code>btn-lg</code> class for small or large button size. Also, you can add the <code>btn-block</code> class for a full-width button. </p>
+        </div>
+
+<!-- buttons -->
+<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-lg&quot;</span>&gt;large button&lt;<span class="tag">/button</span>&gt;
+&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-sm&quot;</span>&gt;small button&lt;<span class="tag">/button</span>&gt;
+
+&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-block&quot;</span>&gt;block button&lt;<span class="tag">/button</span>&gt;
+
+&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary btn-lg&quot;</span>&gt;&lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-arrow-left&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; large&lt;<span class="tag">/button</span>&gt;
+&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary&quot;</span>&gt;&lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-arrow-left&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; normal&lt;<span class="tag">/button</span>&gt;
+&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary btn-sm&quot;</span>&gt;&lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-arrow-left&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; small&lt;<span class="tag">/button</span>&gt;
+</code></pre>
+
+        <div class="docs-note">
+          <p>Please note that you could use the <code>btn-action</code> class for a square button, or add another <code>circle</code> class for a round button, which is often used as a Float Action Button (FAB).</p>
+        </div>
+
+        <div class="columns">
+          <div class="column col-xs-12">
+            <button class="btn btn-action btn-primary btn-lg"><i class="icon icon-menu"></i></button>
+            <button class="btn btn-action btn-primary"><i class="icon icon-menu"></i></button>
+            <button class="btn btn-action btn-primary btn-sm"><i class="icon icon-menu"></i></button>
+          </div>
+          <div class="column col-xs-12">
+            <button class="btn btn-action btn-primary btn-lg circle"><i class="icon icon-arrow-up"></i></button>
+            <button class="btn btn-action btn-primary circle"><i class="icon icon-arrow-up"></i></button>
+            <button class="btn btn-action btn-primary btn-sm circle"><i class="icon icon-arrow-up"></i></button>
+          </div>
+        </div>
+
+<!-- buttons -->
+<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-action&quot;</span>&gt;&lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-arrow-left&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt;&lt;<span class="tag">/button</span>&gt;
+&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-action circle&quot;</span>&gt;&lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-arrow-left&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt;&lt;<span class="tag">/button</span>&gt;
+</code></pre>
+
+        <h4 id="buttons-states" class="s-subtitle">Button states</h4>
+
+        <div class="docs-note">
+          <p>Add the <code>active</code> class for active button state style.</p>
+        </div>
+
+        <div class="columns">
+          <div class="column col-xs-12">
+            <button class="btn active">default active</button>
+            <button class="btn btn-primary active">primary active</button>
+            <button class="btn btn-link active">link active</button>
+          </div>
+        </div>
+
+<!-- buttons -->
+<pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- buttons with active state --&gt;</span>
+&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn active&quot;</span>&gt;active button&lt;<span class="tag">/button</span>&gt;
+</code></pre>
+
+        <div class="docs-note">
+          <p>Add the <code>disabled</code> class or the <code>disabled</code> attribute for disabled button state style.</p>
+        </div>
+
+        <div class="columns">
+          <div class="column col-xs-12">
+            <button class="btn disabled" tabindex="-1">default disabled</button>
+            <button class="btn btn-primary" disabled tabindex="-1">primary disabled</button>
+            <button class="btn btn-link" disabled tabindex="-1">link disabled</button>
+          </div>
+        </div>
+
+<!-- buttons -->
+<pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- buttons with disabled state --&gt;</span>
+&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn disabled&quot;</span> <span class="atn">tabindex</span>=<span class="atv">&quot;-1&quot;</span>&gt;disabled button&lt;<span class="tag">/button</span>&gt;
+&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn&quot;</span> <span class="atn">disabled</span> <span class="atn">tabindex</span>=<span class="atv">&quot;-1&quot;</span>&gt;disabled button&lt;<span class="tag">/button</span>&gt;
+</code></pre>
+
+        <div class="docs-note">
+          <p>A button with the <code>loading</code> class can show loading indicator.</p>
+        </div>
+
+        <div class="columns">
+          <div class="column col-xs-12">
+            <button class="btn loading">default button</button>
+            <button class="btn btn-primary loading">primary button</button>
+            <button class="btn btn-link loading">link button</button>
+          </div>
+        </div>
+
+<!-- buttons -->
+<pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- a button with loading state --&gt;</span>
+&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn loading&quot;</span>&gt;button&lt;<span class="tag">/button</span>&gt;
+</code></pre>
+
+        <h4 id="buttons-groups" class="s-subtitle">Button groups</h4>
+        <div class="columns">
+          <div class="column col-md-12">
+            <div class="btn-group">
+              <button class="btn">first button</button>
+              <button class="btn">second button</button>
+              <button class="btn">third button</button>
               </div>
               <div class="column col-4 col-xs-12">
                 <dl class="list">
@@ -373,8 +697,8 @@
                 </table>
               </div>
             </div>
-            <p>Add the <code>table</code> class to any &lt;table&gt; element. 
-              The class will add padding, border and emphasized table header. 
+            <p>Add the <code>table</code> class to any &lt;table&gt; element.
+              The class will add padding, border and emphasized table header.
               Use the <code>table-striped</code> class to &lt;table&gt; to add zebra striped style.
               For hoverable table rows, you can add the <code>table-hover</code> class to enable hover style.
             </p>
@@ -409,7 +733,7 @@
                 <button class="btn btn-link">link button</button>
               </div>
             </div>
-            <p>Add the <code>btn</code> class to &lt;a&gt;, &lt;input&gt; or &lt;button&gt; elements for a default button. 
+            <p>Add the <code>btn</code> class to &lt;a&gt;, &lt;input&gt; or &lt;button&gt; elements for a default button.
               There are classes <code>btn-primary</code> and <code>btn-link</code> for predefined primary and link buttons.
             </p>
             <pre class="code" data-lang="HTML"><code><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn"</span>&gt;</span>default button<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
@@ -444,7 +768,7 @@
                 <button class="btn btn-primary btn-sm">small button</button>
               </div>
             </div>
-            <p>Add the <code>btn-sm</code> or <code>btn-lg</code> class for small or large button size. 
+            <p>Add the <code>btn-sm</code> or <code>btn-lg</code> class for small or large button size.
               Also, you can add the <code>btn-block</code> class for a full-width button.
             </p>
             <pre class="code" data-lang="HTML"><code><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-lg"</span>&gt;</span>large button<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
@@ -690,10 +1014,84 @@
                   </label>
                 </div>
               </div>
+            </form>
+          </div>
+        </div>
+
+<!-- forms -->
+<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">form</span> <span class="atn">class</span>=<span class="atv">&quot;form-horizontal&quot;</span>&gt;
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-group&quot;</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;col-3&quot;</span>&gt;
+      &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;form-label&quot;</span> <span class="atn">for</span>=<span class="atv">&quot;input-example-1&quot;</span>&gt;Name&lt;<span class="tag">/label</span>&gt;
+    &lt;<span class="tag">/div</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;col-9&quot;</span>&gt;
+      &lt;<span class="tag">input</span> <span class="atn">class</span>=<span class="atv">&quot;form-input&quot;</span> <span class="atn">type</span>=<span class="atv">&quot;text&quot;</span> <span class="atn">id</span>=<span class="atv">&quot;input-example-1&quot;</span> <span class="atn">placeholder</span>=<span class="atv">&quot;Name&quot;</span>&gt;
+    &lt;<span class="tag">/div</span>&gt;
+  &lt;<span class="tag">/div</span>&gt;
+  <span class="com">&lt;!-- form structure --&gt;</span>
+&lt;<span class="tag">/form</span>&gt;
+</code></pre>
+
+        <h4 id="forms-sizes" class="s-subtitle">Form sizes</h4>
+        <div class="docs-note">
+          <p>For smaller or larger input and select controls, you could add the <code>input-sm</code>/<code>input-lg</code>, <code>select-sm</code>/<code>select-lg</code> and <code>label-sm</code>/<code>label-lg</code> classes to the elements.</p>
+        </div>
+        <div class="columns">
+          <div class="column col-4 col-xs-12">
+            <label class="form-label label-sm">Label</label>
+          </div>
+          <div class="column col-4 col-xs-12">
+            <input class="form-input input-sm" type="text" placeholder="Name">
+          </div>
+          <div class="column col-4 col-xs-12">
+            <select class="form-select select-sm">
+              <option>Choose an option</option>
+              <option>Slack</option>
+              <option>Skype</option>
+              <option>Hipchat</option>
+            </select>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column col-4 col-xs-12">
+            <label class="form-label label-lg">Label</label>
+          </div>
+          <div class="column col-4 col-xs-12">
+            <input class="form-input input-lg" type="text" placeholder="Name">
+          </div>
+          <div class="column col-4 col-xs-12">
+            <select class="form-select select-lg">
+              <option>Choose an option</option>
+              <option>Slack</option>
+              <option>Skype</option>
+              <option>Hipchat</option>
+            </select>
+          </div>
+        </div>
+        <div class="docs-note">
+          <p>You can add the <code>input-sm</code>/<code>input-lg</code> classes to the input-checkbox, input-radio and input-switch to have different sizes.</p>
+        </div>
+
+        <h4 id="forms-icons" class="s-subtitle">Form icons</h4>
+        <div class="docs-note">
+          <p>Spectre Form components has <a href="#icons">Spectre Icons</a> support.</p>
+          <p>Add a wrapper with the <code>has-icon-left</code>/<code>has-icon-right</code> class to &lt;input&gt; element. And add the icon with <code>form-icon</code> class next to the &lt;input&gt;.</p>
+        </div>
+        <div class="columns">
+          <div class="column col-4 col-xs-12">
+            <div class="has-icon-left">
+              <input class="form-input input-sm" type="text" placeholder="Name">
+              <i class="form-icon icon icon-arrow-right"></i>
+            </div>
+          </div>
+          <div class="column col-4 col-xs-12">
+            <div class="has-icon-left tooltip" data-tooltip="Lorem ipsum dolor sit amet">
+              <input class="form-input" type="text" placeholder="Name">
+              <i class="form-icon icon icon-arrow-right"></i>
             </div>
             <script>
               document.getElementById("docs-demo-checkbox").indeterminate = true;
-              
+
             </script>
             <p>You can change checkbox to indeterminate state by setting the <code>indeterminate</code> property of input checkboxes to <code>true</code>.</p>
             <h4 class="s-subtitle" id="forms-inline">Inline forms<a class="anchor" href="#forms-inline" aria-hidden="true">#</a></h4>
@@ -1498,7 +1896,7 @@
           <div class="container" id="code">
             <h3 class="s-title">Code<a class="anchor" href="#code" aria-hidden="true">#</a></h3>
             <p>Code is used for styling inline and multiline code snippets.</p>
-            <p>For inline code, you can use the &lt;code&gt; element. 
+            <p>For inline code, you can use the &lt;code&gt; element.
               For multiline code snippet blocks, you can use &lt;pre&gt; with the <code>code</code> class as a container, and add &lt;code&gt; inside it.
               The <code>data-lang</code> ibute is rendered as the language name in the top right.
             </p>
@@ -1555,8 +1953,8 @@
               </div>
             </div>
             <h4 class="s-subtitle" id="media-video">Video<a class="anchor" href="#media-video" aria-hidden="true">#</a></h4>
-            <p>For responsive video, add a container with the <code>video-responsive</code> class. 
-              Insert any YouTube, Youku or other iframe/embed video inside the container. 
+            <p>For responsive video, add a container with the <code>video-responsive</code> class.
+              Insert any YouTube, Youku or other iframe/embed video inside the container.
               The ratio is 16:9 by default.
               You may add <code>video-responsive-4-3</code> for 4:3 ratio video container or <code>video-responsive-1-1</code> for 1:1 ratio.
             </p>
@@ -1586,7 +1984,7 @@
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
           m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-      
+
       ga('create', 'UA-2702768-8', 'auto');
       ga('send', 'pageview');
     </script>

@@ -4,6 +4,7 @@
   border-radius: $border-radius;
   display: block;
   min-width: 280px;
+  text-align: center;
 
   .calendar-nav {
     align-items: center;
@@ -33,7 +34,6 @@
     border-bottom: $border-width solid $border-color;
     color: $gray-color;
     font-size: $font-size-sm;
-    text-align: center;
   }
 
   .calendar-body {
@@ -215,6 +215,7 @@
       margin: $unit-h auto;
       overflow: hidden;
       padding: 3px 4px;
+      text-align: left;
       text-overflow: ellipsis;
       white-space: nowrap;
     }

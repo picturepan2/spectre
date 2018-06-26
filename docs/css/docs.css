@@ -23,7 +23,7 @@
   position: fixed;
   right: 0;
   top: 0;
-  z-index: 100;
+  z-index: 200;
 }
 
 .docs-navbar .btn {
@@ -34,7 +34,7 @@
 
 .docs-sidebar .docs-nav {
   bottom: 1.5rem;
-  -webkit-overflow-scrolling: touch; 
+  -webkit-overflow-scrolling: touch;
   overflow-y: auto;
   padding: .5rem 1.5rem;
   position: fixed;
@@ -253,6 +253,7 @@
 }
 
 .docs-content .comparison-slider .filter-grayscale {
+  -webkit-filter: grayscale(75%);
   filter: grayscale(75%);
 }
 
@@ -527,6 +528,5 @@
     margin: 0;
     position: fixed;
     right: 1rem;
-    width: 7.3rem;
   }
 }

@@ -29,7 +29,7 @@
   position: fixed;
   right: 0;
   top: 0;
-  z-index: $zindex-1;
+  z-index: $zindex-2;
 
   .btn {
     position: absolute;
@@ -59,7 +59,7 @@
         font-weight: 600;
         text-transform: uppercase;
       }
-      
+
       &:checked {
         & ~ .accordion-header {
           color: lighten($dark-color, 15%);
@@ -71,7 +71,7 @@
       .menu-item {
         font-size: .7rem;
         padding-left: 1rem;
-        
+
         & > a {
           background: transparent;
           color: $gray-color-dark;
@@ -104,7 +104,7 @@
       text-decoration: none;
     }
   }
-  
+
   .s-title,
   .s-subtitle {
     color: darken($dark-color, 2%);
@@ -120,7 +120,7 @@
       z-index: $zindex-1;
 
       &::before {
-        background: $light-color;      
+        background: $light-color;
         bottom: 0;
         content: "";
         display: block;
@@ -143,6 +143,25 @@
     }
   }
 
+  .docs-note {
+    margin: 1.5rem 0;
+  }
+
+  .docs-ad {
+    background: $bg-color;
+    border-radius: $border-radius;
+    display: inline-block;
+    padding: $layout-spacing;
+    position: relative;
+
+    &::before {
+      color: $gray-color;
+      content: "AD";
+      font-size: $font-size-sm;
+      position: absolute;
+      right: $layout-spacing;
+      top: $unit-h;
+    }
   .docs-demo {
     padding-bottom: 1rem;
     padding-top: 1rem;
@@ -289,18 +308,18 @@
     height: 2rem;
     padding: .2rem;
     width: auto;
-    
+
     &:focus,
     &:hover {
       text-decoration: none;
     }
-  
+
     img {
       display: inline-block;
       height: auto;
       width: 1.6rem;
     }
-  
+
     h2 {
       display: inline-block;
       font-size: .8rem;
@@ -339,14 +358,14 @@
     .carbon-img {
       display: block;
     }
-  
+
     .carbon-text {
       color: $gray-color-dark;
       display: block;
       font-size: $font-size-sm;
     }
   }
-  
+
   .carbon-poweredby {
     color: $gray-color;
     font-size: $font-size-sm;
@@ -525,7 +544,7 @@
       padding: 0;
     }
   }
-  
+
   .off-canvas {
     .off-canvas-toggle {
       left: .5rem;
@@ -548,7 +567,7 @@
     .docs-brand {
       margin: .85rem 1rem;
     }
-  
+
     .docs-nav {
       padding: .5rem 1rem;
     }
@@ -570,7 +589,6 @@
       margin: 0;
       position: fixed;
       right: 1rem;
-      width: 7.3rem;
     }
   }
 }
