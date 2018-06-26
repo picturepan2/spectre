@@ -1,0 +1,85 @@
+extends _layout.pug
+
+block content
+  .section.section-hero.bg-gray
+    #overview.grid-hero.container.grid-lg.text-center
+      .docs-brand
+        a.docs-logo(href='index.html')
+          img(src='img/spectre-logo.svg' alt='Spectre.css CSS Framework')
+          h2 SPECTRE
+      h1 Spectre.css
+      h2
+        | A #[u Lightweight], #[u Responsive] and #[u Modern] CSS Framework
+      p
+        a.btn.btn-primary.btn-lg.mr-2(href='getting-started.html') Docs
+        a.btn.btn-primary.btn-lg(href='https://github.com/picturepan2/spectre' target='_blank') GitHub
+      p.text-gray
+        | Latest version: 
+        span.version
+      .columns
+        .column.col-4.col-xs-12
+          .card.text-center
+            .card-header
+              span.card-title Lightweight
+            .card-body
+              | Lightweight  (~10KB gzipped) starting point for your projects
+        .column.col-4.col-xs-12
+          .card.text-center
+            .card-header
+              span.card-title Responsive
+            .card-body
+              | Flexbox-based, responsive and mobile-friendly layout
+        .column.col-4.col-xs-12
+          .card.text-center
+            .card-header
+              span.card-title Modern
+            .card-body
+              | Elegantly designed and developed elements and components
+  
+  .section.section-ads.bg-gray
+    include contents/_ad-g.pug
+
+  .section.section-features.bg-primary.text-light.text-center
+    .container.grid-lg
+      h2 Introduction
+      .columns
+        .column.col-10.col-sm-12.col-mx-auto.text-left
+          p.text-secondary
+            | Spectre provides basic styles for typography and elements, flexbox based responsive layout system, pure CSS components and utilities with best practice coding and consistent design language.
+        .column.col-10.col-sm-12.col-mx-auto
+          a.btn.btn-lg(href='getting-started.html#installation') Install Spectre.css
+
+  .section.section-updates.bg-gray
+    .container.grid-lg
+      .columns
+        .column.col-4.col-xs-12
+          .card
+            .card-header
+              .card-title.h6 Spectre Twitter
+            .card-body
+              | For the latest announcements and updates, follow on Twitter: 
+              a(href='https://twitter.com/spectrecss' target='_blank') @spectrecss
+              | .
+            .card-footer
+              a.btn.btn-primary(href='https://twitter.com/spectrecss' target='_blank') Follow
+        .column.col-4.col-xs-12
+          .card
+            .card-header
+              .card-title.h6 PayPal Donate
+            .card-body
+              | Spectre.css is completely free to use. If you enjoy it, please consider donating for the further development. &hearts;
+            .card-footer
+              a.btn.btn-primary(href='https://www.paypal.me/picturepan2' target='_blank') Donate
+        .column.col-4.col-xs-12
+          .card
+            .card-header
+              .card-title.h6 Spectre Docs
+            .card-body
+              | Spectre Docs experience has been completely rewritten and improved.
+            .card-footer
+              a.btn.btn-primary(href='getting-started.html') Explore
+  .section.section-ads.bg-gray
+    include contents/_ad-c.pug
+
+  footer.section.section-footer
+    include _footer.pug

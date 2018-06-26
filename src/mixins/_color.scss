@@ -20,5 +20,8 @@
     &:hover {
       color: darken($color, 5%);
     }
+    &:visited {
+      color: lighten($color, 5%);
+    }
   }
 }

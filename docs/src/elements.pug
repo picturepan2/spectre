@@ -1,0 +1,43 @@
+extends _docs-layout.pug
+
+block variables
+  - var title = 'Elements - Spectre.css CSS Framework'
+  - var description = ''
+  - var current = 'elements'
+
+block docs-content
+  //- Typography
+  +docs-heading('typography', 'Typography')
+    include contents/_ad-g.pug
+    include contents/typography.pug
+    
+  //- Tables
+  +docs-heading('tables', 'Tables')
+    include contents/tables.pug
+
+  //- Buttons
+  +docs-heading('buttons', 'Buttons')
+    include contents/_ad-c.pug
+    include contents/buttons.pug
+
+  //- Forms
+  +docs-heading('forms', 'Forms')
+    include contents/forms.pug
+  
+  //- Icons
+  +docs-heading('icons', 'Icons')
+    include contents/icons.pug
+
+  //- Labels
+  +docs-heading('labels', 'Labels')
+    include contents/labels.pug
+
+  //- Codes
+  +docs-heading('code', 'Code')
+    include contents/code.pug
+  
+  //- Media
+  +docs-heading('media', 'Media')
+    include contents/media.pug
+
+  include _footer.pug

@@ -1,0 +1,43 @@
+extends _docs-layout.pug
+
+block variables
+  - var title = 'Utilities - Spectre.css CSS Framework'
+  - var description = ''
+  - var current = 'utilities'
+
+block docs-content
+  //- Colors
+  +docs-heading('colors', 'Color utilities')
+    include contents/_ad-g.pug
+    include contents/colors.pug
+    
+  //- Cursor
+  +docs-heading('cursors', 'Cursor utilities')
+    include contents/cursors.pug
+
+  //- Display
+  +docs-heading('display', 'Display utilities')
+    include contents/_ad-c.pug
+    include contents/display.pug
+
+  //- Divider
+  +docs-heading('divider', 'Divider')
+    include contents/divider.pug
+  
+  //- Loading
+  +docs-heading('loading', 'Loading')
+    include contents/loading.pug
+
+  //- Position
+  +docs-heading('position', 'Position utilities')
+    include contents/position.pug
+
+  //- Shapes
+  +docs-heading('shapes', 'Shape utilities')
+    include contents/shapes.pug
+  
+  //- Text
+  +docs-heading('text', 'Text utilities')
+    include contents/text.pug
+
+  include _footer.pug

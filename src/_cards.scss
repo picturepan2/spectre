@@ -17,6 +17,10 @@
     }
   }
 
+  .card-body {
+    flex: 1 1 auto;
+  }
+
   .card-image {
     padding-top: $layout-spacing-lg;
 

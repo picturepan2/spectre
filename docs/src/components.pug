@@ -1,0 +1,87 @@
+extends _docs-layout.pug
+
+block variables
+  - var title = 'Components - Spectre.css CSS Framework'
+  - var description = ''
+  - var current = 'components'
+
+block docs-content
+  //- Accordions
+  +docs-heading('accordions', 'Accordions')
+    include contents/_ad-g.pug
+    include contents/accordions.pug
+    
+  //- Avatars
+  +docs-heading('avatars', 'Avatars')
+    include contents/avatars.pug
+
+  //- Badges
+  +docs-heading('badges', 'Badges')
+    include contents/badges.pug
+
+  //- Bars
+  +docs-heading('bars', 'Bars')
+    include contents/bars.pug
+  
+  //- Breadcrumbs
+  +docs-heading('breadcrumbs', 'Breadcrumbs')
+    include contents/breadcrumbs.pug
+
+  //- Cards
+  +docs-heading('cards', 'Cards')
+    include contents/_ad-c.pug
+    include contents/cards.pug
+
+  //- Chips
+  +docs-heading('chips', 'Chips')
+    include contents/chips.pug
+  
+  //- Empty states
+  +docs-heading('empty', 'Empty states')
+    include contents/empty.pug
+
+  //- Menu
+  +docs-heading('menu', 'Menu')
+    include contents/menu.pug
+    
+  //- Modals
+  +docs-heading('modals', 'Modals')
+    include contents/modals.pug
+
+  //- Nav
+  +docs-heading('nav', 'Nav')
+    include contents/nav.pug
+
+  //- Pagination
+  +docs-heading('pagination', 'Pagination')
+    include contents/pagination.pug
+  
+  //- Panels
+  +docs-heading('panels', 'Panels')
+    include contents/panels.pug
+
+  //- Popovers
+  +docs-heading('popovers', 'Popovers')
+    include contents/popovers.pug
+
+  //- Steps
+  +docs-heading('steps', 'Steps')
+    include contents/steps.pug
+  
+  //- Tabs
+  +docs-heading('tabs', 'Tabs')
+    include contents/tabs.pug
+
+  //- Tiles
+  +docs-heading('tiles', 'Tiles')
+    include contents/tiles.pug
+    
+  //- Toasts
+  +docs-heading('toasts', 'Toasts')
+    include contents/toasts.pug
+
+  //- Tooltips
+  +docs-heading('tooltips', 'Tooltips')
+    include contents/tooltips.pug
+
+  include _footer.pug

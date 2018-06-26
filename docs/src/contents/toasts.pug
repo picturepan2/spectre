@@ -1,0 +1,49 @@
+p Toasts are used to show alert or information to users.
+
+.docs-demo.columns
+  .column.col-9.col-sm-12
+    .toast
+      button.btn.btn-clear.float-right
+      h6 Toast Title
+      | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  .column.col-9.col-sm-12
+    .toast.toast-primary
+      button.btn.btn-clear.float-right
+      | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+p
+  | Add a container element with the #[code toast] class.
+  | You can add any text within the container, and even icons. 
+  | You may also add a close button with the #[code btn-clear] class if you need.
+
+pre.code(data-lang='HTML')
+  code
+    :highlight(lang="html")
+      <div class="toast">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </div>
+
+.docs-demo.columns
+  .column.col-sm-12
+    .toast.toast-success
+      button.btn.btn-clear.float-right
+      | Toast success
+  .column.col-sm-12
+    .toast.toast-warning
+      button.btn.btn-clear.float-right
+      | Toast warning
+  .column.col-sm-12
+    .toast.toast-error
+      button.btn.btn-clear.float-right
+      | Toast error
+
+p
+  | And you can add the #[code toast-primary], #[code toast-success], #[code toast-warning] or #[code toast-error] class for additional toast colors.
+
+pre.code(data-lang='HTML')
+  code
+    :highlight(lang="html")
+      <div class="toast toast-primary">
+        <button class="btn btn-clear float-right"></button>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </div>

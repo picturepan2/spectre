@@ -1,0 +1,59 @@
+extends _docs-layout.pug
+
+block variables
+  - var title = 'Experimentals - Spectre.css CSS Framework'
+  - var description = ''
+  - var current = 'experimentals'
+
+block docs-content
+  //- Experimentals
+  +docs-heading('experimentals', 'Experimentals')
+    include contents/experimentals.pug
+  
+  //- Autocomplete
+  +docs-heading('autocomplete', 'Autocomplete')
+    include contents/_ad-g.pug
+    include contents/autocomplete.pug
+    
+  //- Calendars
+  +docs-heading('calendars', 'Calendars')
+    include contents/_ad-c.pug
+    include contents/calendars.pug
+
+  //- Carousels
+  +docs-heading('carousels', 'Carousels')
+    include contents/carousels.pug
+
+  //- Comparison sliders
+  +docs-heading('comparison', 'Comparison sliders')
+    include contents/comparison.pug
+  
+  //- Filters
+  +docs-heading('filters', 'Filters')
+    include contents/filters.pug
+
+  //- Meters
+  +docs-heading('meters', 'Meters')
+    include contents/meters.pug
+
+  //- Off-canvas
+  +docs-heading('off-canvas', 'Off-canvas')
+    include contents/off-canvas.pug
+  
+  //- Parallax
+  +docs-heading('parallax', 'Parallax')
+    include contents/parallax.pug
+
+  //- Progress
+  +docs-heading('progress', 'Progress')
+    include contents/progress.pug
+
+  //- Sliders
+  +docs-heading('sliders', 'Sliders')
+    include contents/sliders.pug
+  
+  //- Timelines
+  +docs-heading('timelines', 'Timelines')
+    include contents/timelines.pug
+
+  include _footer.pug

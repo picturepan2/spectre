@@ -1,0 +1,36 @@
+extends _docs-layout.pug
+
+block variables
+  - var title = 'Getting started - Spectre.css CSS Framework'
+  - var description = ''
+  - var current = 'getting-started'
+
+block docs-content
+  //- Introduction
+  +docs-heading('introduction', 'Introduction')
+    include contents/introduction.pug
+    
+  //- Installation
+  +docs-heading('installation', 'Installation')
+    include contents/_ad-g.pug
+    include contents/installation.pug
+
+  //- Custom
+  +docs-heading('custom', 'Custom version')
+    include contents/_ad-c.pug
+    include contents/custom.pug
+
+  //- Accessibility
+  +docs-heading('accessibility', 'Accessibility')
+  
+  //- Browser support
+  +docs-heading('browers', 'Browser support')
+    include contents/browers.pug
+
+  //- What's new
+  +docs-heading('whatsnew', 'What\'s new')
+    include contents/whatsnew.pug
+  
+  include _footer.pug
+
+    

@@ -1,0 +1,29 @@
+p
+  | Comparison Sliders are sliders for comparing two images. It is built in pure CSS.
+
+.docs-demo.columns
+  .column.col-12
+    .comparison-slider
+      figure.comparison-before
+        img.rounded(src="img/macos-sierra-2.jpg" alt="macOS Sierra Wallpaper")
+        .comparison-label Before
+      figure.comparison-after
+        img.filter-grayscale.rounded(src="img/macos-sierra-2.jpg" alt="macOS Sierra Wallpaper")
+        .comparison-label After
+        textarea.comparison-resizer(readonly="")
+
+pre.code(data-lang='HTML')
+  code
+    :highlight(lang="html")
+      <div class="comparison-slider">
+        <figure class="comparison-before">
+          <!-- image (before) -->
+          <div class="comparison-label">Before</div>
+        </figure>
+
+        <figure class="comparison-after">
+          <!-- image (after) -->
+          <div class="comparison-label">After</div>
+          <textarea class="comparison-resizer" readonly></textarea>
+        </figure>
+      </div>

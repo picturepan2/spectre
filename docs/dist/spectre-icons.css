@@ -1,4 +1,4 @@
-/*! Spectre.css Icons v0.5.0 | MIT License | github.com/picturepan2/spectre */
+/*! Spectre.css Icons v0.5.3 | MIT License | github.com/picturepan2/spectre */
 .icon {
   box-sizing: border-box;
   display: inline-block;
@@ -229,7 +229,7 @@
   border-top: 0;
   content: "";
   height: .5em;
-  transform: translate(-50%, -75%) rotate(-45deg); 
+  transform: translate(-50%, -75%) rotate(-45deg);
   width: .9em;
 }
 
@@ -423,7 +423,7 @@
   border-right: 0;
   content: "";
   height: .5em;
-  transform: translate(-50%, -60%) rotate(-135deg); 
+  transform: translate(-50%, -60%) rotate(-135deg);
   width: .5em;
 }
 

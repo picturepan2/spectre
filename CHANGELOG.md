@@ -1,5 +1,36 @@
 ## Spectre.css Changelog
 
+### [v0.5.3](https://github.com/picturepan2/spectre/releases/tag/v0.5.3)
+
+- Add dark text color to utilities
+- Add error state to the indeterminate checkbox
+- Add inline forms
+- Add more code examples
+- Fix errors in the Docs
+
+### [v0.5.2](https://github.com/picturepan2/spectre/releases/tag/v0.5.2)
+
+- IMPORTANT:  Move Docs to Pug templates
+- Add more Docs examples
+- Add visited link style
+- Add 100% modal height class #391
+- Fix off-canvas-overlay bug #392
+- Fix margin and padding values #431
+- Fix Accordion example #438
+- Fix a bug of input addons width on mobile devices #449
+- Separate Simplified Chinese (zh/zh-Hans) from Traditional (zh-Hant)
+
+### [v0.5.1](https://github.com/picturepan2/spectre/releases/tag/v0.5.1)
+
+IMPORTANT: Move Autocomplete to the Experimentals
+- Add form checkbox, radio and switch support to Menus
+- Add responsive horizontal form support #375
+- Add Favicons in the docs #398
+- Fix Off-canvas z-index problem #361
+- Fix icons disappearing on group classes on focus
+- Fix Deprecation Warning #396 #356
+- Initial commit of RTL support (not finished)
+
 ### [v0.5.0](https://github.com/picturepan2/spectre/releases/tag/v0.5.0)
 
 - IMPORTANT: Restore /dist folder
@@ -23,7 +54,7 @@
 
 - Add new Sliders example #328
 - Add Table with horizontal scroll support #333
-- Update Calendar event style which makes use of color utilities #326 
+- Update Calendar event style which makes use of color utilities #326
 - Define $parallax-fade-color as default variable #332
 - Fix the Docs content mistake
 - Fix breadcrumb-item extra spacing #337
@@ -60,7 +91,7 @@
 
 ### [v0.4.1](https://github.com/picturepan2/spectre/releases/tag/v0.4.1)
 
-- Add default modifier to all variables 
+- Add default modifier to all variables
 - Add `address` reset which changes font-style to normal
 - Add Details and Summary Accordions support
 - Fix responsive video
@@ -93,15 +124,15 @@
 
 ### [v0.2.15](https://github.com/picturepan2/spectre/releases/tag/v0.2.15)
 
-- BIG Update to the Docs experience, completely rewritten and improved #240 
-- Add Text and Background colors utilities #205 #219 
-- Add Install from CDN option #191 
+- BIG Update to the Docs experience, completely rewritten and improved #240
+- Add Text and Background colors utilities #205 #219
+- Add Install from CDN option #191
 - Add unit size (4px) and unit size variables
 - Add Responsive container (max width container) #222
-- Add error and success states to checkbox, radio and switch #246 
-- Fix Rem unit issue in East Asian Chrome #110 
+- Add error and success states to checkbox, radio and switch #246
+- Fix Rem unit issue in East Asian Chrome #110
 - Fix icon direction bug #218
-- Fix Dropdown menu max items/height #226 
+- Fix Dropdown menu max items/height #226
 
 ## [v0.2.14](https://github.com/picturepan2/spectre/releases/tag/v0.2.14)
 
@@ -136,7 +167,7 @@
 ### [v0.2.11](https://github.com/picturepan2/spectre/releases/tag/v0.2.11)
 
 - Add pure CSS Popovers
-- Add pure CSS Icons 
+- Add pure CSS Icons
 - Add Slider bars
 - Add tvOS Parallax effect text layer
 - Update shadow mixin

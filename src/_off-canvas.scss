@@ -77,6 +77,10 @@ $off-canvas-breakpoint: $size-lg !default;
         position: relative;
         transform: none;
       }
+
+      .off-canvas-overlay {
+        display: none !important;
+      }
     }
   }
 }

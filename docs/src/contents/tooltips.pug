@@ -1,0 +1,24 @@
+p Tooltips provide context information labels that appear on hover and focus.
+
+.docs-demo.columns.text-center
+  .column.col-xs-12
+    button.btn.btn-primary.tooltip(data-tooltip="Top Tooltip Text") top tooltip
+  .column.col-xs-12
+    button.btn.btn-primary.tooltip.tooltip-right(data-tooltip="Right Tooltip Text") right tooltip
+  .column.col-xs-12
+    button.btn.btn-primary.tooltip.tooltip-bottom(data-tooltip="Bottom Tooltip Text") bottom tooltip
+  .column.col-xs-12
+    button.btn.btn-primary.tooltip.tooltip-left(data-tooltip="Left Tooltip Text") left tooltip
+
+p Tooltips component is built entirely in CSS.
+p
+  | Add the #[code tooltip] class and the #[code data-tooltip] attribute, which contains the tooltip content, to non self closing elements.
+p
+  | And add the #[code tooltip-right], #[code tooltip-bottom] or #[code tooltip-left] class to define the position of a tooltip.
+  | By default, the tooltip appears above the element.
+
+pre.code(data-lang='HTML')
+  code
+    :highlight(lang="html")
+      <button class="btn tooltip" data-tooltip="Lorem ipsum dolor sit amet">top tooltip</button>
+      <button class="btn tooltip tooltip-right" data-tooltip="Lorem ipsum dolor sit amet">right tooltip</button>  

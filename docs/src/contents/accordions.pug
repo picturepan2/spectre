@@ -1,0 +1,113 @@
+p Accordions are used to toggle sections of content.
+
+.docs-demo.columns
+  .column.col-6.col-md-12
+    .accordion
+      input#accordion-1(type="radio" name="accordion-radio" hidden="" checked="")
+      label.accordion-header.c-hand(for="accordion-1")
+        i.icon.icon-arrow-right.mr-1
+        | Elements
+      .accordion-body
+        ul.menu.menu-nav
+          li.menu-item
+            a(href="#accordions") Element 1
+          li.menu-item
+            a(href="#accordions") Element 2
+    .accordion
+      input#accordion-2(type="radio" name="accordion-radio" hidden="")
+      label.accordion-header.c-hand(for="accordion-2")
+        i.icon.icon-arrow-right.mr-1
+        | Layout
+      .accordion-body
+        ul.menu.menu-nav
+          li.menu-item
+            a(href="#accordions") Layout 1
+          li.menu-item
+            a(href="#accordions") Layout 2
+    .accordion
+      input#accordion-3(type="radio" name="accordion-radio" hidden="")
+      label.accordion-header.c-hand(for="accordion-3")
+        i.icon.icon-arrow-right.mr-1
+        | Components
+      .accordion-body
+        ul.menu.menu-nav
+          li.menu-item
+            a(href="#accordions") Component 1
+          li.menu-item
+            a(href="#accordions") Component 2
+  .column.col-6.col-md-12
+    .accordion
+      input#accordion-4(type="checkbox" name="accordion-checkbox" hidden="" checked="")
+      label.accordion-header.c-hand(for="accordion-4")
+        | Elements
+      .accordion-body
+        ul.menu.menu-nav
+          li.menu-item
+            a(href="#accordions") Element 1
+          li.menu-item
+            a(href="#accordions") Element 2
+    .accordion
+      input#accordion-5(type="checkbox" name="accordion-checkbox" hidden="")
+      label.accordion-header.c-hand(for="accordion-5")
+        | Layout
+      .accordion-body
+        ul.menu.menu-nav
+          li.menu-item
+            a(href="#accordions") Layout 1
+          li.menu-item
+            a(href="#accordions") Layout 2
+    .accordion
+      input#accordion-6(type="checkbox" name="accordion-checkbox" hidden="")
+      label.accordion-header.c-hand(for="accordion-6")
+        | Components
+      .accordion-body
+        ul.menu.menu-nav
+          li.menu-item
+            a(href="#accordions") Component 1
+          li.menu-item
+            a(href="#accordions") Component 2
+
+pre.code(data-lang='HTML')
+  code
+    :highlight(lang="html")
+      <!-- standard Accordions example -->
+      <div class="accordion">
+        <input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
+        <label class="accordion-header" for="accordion-1">
+          <i class="icon icon-arrow-right mr-1"></i>
+          Title
+        </label>
+        <div class="accordion-body">
+          <!-- Accordions content -->
+        </div>
+      </div>
+
+      <!-- mutually exclusive Accordions example (with same input names) -->
+      <div class="accordion">
+        <input type="radio" id="accordion-1" name="accordion-radio" hidden>
+        <label class="accordion-header" for="accordion-1">
+          Title
+        </label>
+        <div class="accordion-body">
+          <!-- Accordions content -->
+        </div>
+      </div>
+
+p
+  | Alternatively, you can use #[code details] and #[code summary] instead of #[code input] radio or checkbox trick.
+  | Add the #[code open] attribute to #[code details] to expand it.
+  | Microsoft Edge support is #[a(href="https://developer.microsoft.com/en-us/microsoft-edge/platform/status/detailssummary/" target="_blank") under consideration].
+
+pre.code(data-lang='HTML')
+  code
+    :highlight(lang="html")
+      <!-- details and summary Accordions example -->
+      <details class="accordion" open>
+        <summary class="accordion-header">
+          <i class="icon icon-arrow-right mr-1"></i>
+          Title
+        </summary>
+        <div class="accordion-body">
+          <!-- Accordions content -->
+        </div>
+      </details>

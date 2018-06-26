@@ -7,6 +7,8 @@
 
 @include text-color-variant(".text-light", $light-color);
 
+@include text-color-variant(".text-dark", $body-font-color);
+
 @include text-color-variant(".text-success", $success-color);
 
 @include text-color-variant(".text-warning", $warning-color);

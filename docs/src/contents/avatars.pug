@@ -1,0 +1,98 @@
+p Avatars are user profile pictures. 
+
+.docs-demo.columns
+  .column.col-6.col-xs-12
+    figure.avatar.avatar-xl
+      img(src="img/avatar-1.png" alt="Avatar XL")
+    figure.avatar.avatar-lg
+      img(src="img/avatar-2.png" alt="Avatar LG")
+    figure.avatar
+      img(src="img/avatar-3.png" alt="Avatar")
+    figure.avatar.avatar-sm
+      img(src="img/avatar-4.png" alt="Avatar SM")
+    figure.avatar.avatar-xs
+      img(src="img/avatar-5.png" alt="Avatar XS")
+  .column.col-6.col-xs-12
+    figure.avatar.avatar-xl(data-initial="YZ")
+    figure.avatar.avatar-lg(data-initial="YZ")
+    figure.avatar(data-initial="YZ")
+    figure.avatar.avatar-sm(data-initial="YZ")
+    figure.avatar.avatar-xs(data-initial="YZ")
+
+p
+  | Add the #[code avatar] class to #{'<img>'} element.
+  | There are 4 additional sizes available, including #[code avatar-xl](64px), #[code avatar-lg](48px), #[code avatar-sm](24px), and #[code avatar-xs](16px).
+  | By default, the avatar size is 32px.
+p
+  | For users who don't have profile pictures, you may use their initials for avatars.
+  | Add the #[code avatar] class and avatar size class to #{'<div>'}  element.
+  | The #[code data-initial] attribute is the name appear inside the avatar.
+
+pre.code(data-lang='HTML')
+  code
+    :highlight(lang="html")
+      <!-- Basic avatar examples -->
+      <figure class="avatar avatar-xl">
+        <img src="img/avatar-1.png" alt="...">
+      </figure>
+
+      <figure class="avatar avatar-xl" data-initial="YZ" style="background-color: #5755d9;"></figure>
+
+      <!-- Show initals when avatar image is unavailable or not fully loaded -->
+      <figure class="avatar avatar-xl" data-initial="YZ" style="background-color: #5755d9;">
+        <img src="img/avatar-1.png" alt="...">
+      </figure>
+
+.docs-demo.columns
+  .column.col-6.col-xs-12
+    figure.avatar.avatar-xl
+      img(src="img/avatar-1.png" alt="Avatar")
+      img.avatar-icon(src="img/avatar-2.png" alt="Avatar")
+    figure.avatar.avatar-lg
+      img(src="img/avatar-2.png" alt="Avatar")
+      img.avatar-icon(src="img/avatar-3.png" alt="Avatar")
+    figure.avatar
+      img(src="img/avatar-3.png" alt="Avatar")
+      img.avatar-icon(src="img/avatar-4.png" alt="Avatar")
+    figure.avatar.avatar-sm
+      img(src="img/avatar-4.png" alt="Avatar")
+      img.avatar-icon(src="img/avatar-5.png" alt="Avatar")
+    figure.avatar.avatar-xs
+      img(src="img/avatar-5.png" alt="Avatar")
+      img.avatar-icon(src="img/avatar-1.png" alt="Avatar")
+
+pre.code(data-lang='HTML')
+  code
+    :highlight(lang="html")
+      <figure class="avatar avatar-xl">
+        <img src="img/avatar-1.png" alt="...">
+        <img src="img/avatar-5.png" class="avatar-icon" alt="...">
+      </figure>
+
++docs-subheading('avatars-presence', 'Avatar presence')
+        
+.docs-demo.columns
+  .column.col-6.col-xs-12
+    figure.avatar.avatar-xl(data-initial="YZ")
+      i.avatar-presence.online
+    figure.avatar.avatar-lg(data-initial="YZ")
+      i.avatar-presence.busy
+    figure.avatar(data-initial="YZ")
+      i.avatar-presence.away
+    figure.avatar.avatar-sm(data-initial="YZ")
+      i.avatar-presence.offline
+    figure.avatar.avatar-xs(data-initial="YZ")
+      i.avatar-presence.online
+
+p
+  | Avatars support presence indicators.
+  | You can add an #{'<i>'} element with the #[code avatar-presence] class, and add #[code online], #[code busy] or #[code away] class for different status colors.
+  | The default is gray which means offline.
+
+pre.code(data-lang='HTML')
+  code
+    :highlight(lang="html")
+      <figure class="avatar avatar-xl">
+        <img src="img/avatar-1.png" alt="...">
+        <i class="avatar-presence online"></i>
+      </figure>

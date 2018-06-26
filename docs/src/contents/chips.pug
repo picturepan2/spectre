@@ -1,0 +1,44 @@
+p Chips are complex entities in small blocks. 
+
+.docs-demo.columns
+  .column.col-12
+    span.chip
+      | Crime
+    span.chip
+      | Drama
+    span.chip
+      | Biography
+      a.btn.btn-clear(href="#" aria-label="Close" role="button")
+    span.chip
+      | Mystery
+      a.btn.btn-clear(href="#" aria-label="Close" role="button")
+  .column.col-12
+    .chip
+      figure.avatar.avatar-sm(data-initial="TS" style="background-color: #5755d9;")
+      | Tony Stark
+    .chip
+      img.avatar.avatar-sm(src="img/avatar-1.png" alt="Thor Odinson")
+      | Thor Odinson
+    .chip
+      img.avatar.avatar-sm(src="img/avatar-4.png" alt="Steve Rogers")
+      | Steve Rogers
+
+p
+  | Add a container element with the #[code chip] class.
+  | And add child text element, buttons or avatars with the #[code avatar] class.
+
+pre.code(data-lang='HTML')
+  code
+    :highlight(lang="html")
+      <span class="chip">Crime</span>
+  
+      <span class="chip">
+        Biography
+        <a href="#" class="btn btn-clear" aria-label="Close" role="button"></a>
+      </span>
+
+      <div class="chip">
+        <img src="img/avatar-1.png" class="avatar avatar-sm">
+        Yan Zhu
+        <a href="#" class="btn btn-clear" aria-label="Close" role="button"></a>
+      </div>
