@@ -827,6 +827,107 @@
     <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+
+        <h4 id="dropups" class="s-subtitle"><a href="#dropups" class="anchor" aria-hidden="true">#</a>Dropup menus</h4>
+        <div class="columns">
+          <div class="column col-xs-12">
+            <div class="dropdown">
+              <div class="btn-group">
+                <a class="btn btn-primary">dropup button</a>
+                <a class="btn btn-primary dropdown-toggle" tabindex="0"><i class="icon icon-caret"></i></a>
+                <ul class="menu" data-type="dropup">
+                  <li class="menu-item">
+                    <a href="#dropdowns">
+                      Slack
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#dropdowns">
+                      Hipchat
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#dropdowns">
+                      Skype
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="column col-xs-12">
+            <div class="dropdown">
+              <a class="btn btn-link dropdown-toggle" tabindex="0">dropup button <i class="icon icon-caret"></i></a>
+              <ul class="menu" data-type="dropup">
+                <li class="menu-item">
+                  <a href="#dropdowns">
+                    Slack
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="#dropdowns">
+                    Hipchat
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="#dropdowns">
+                    Skype
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="docs-note">
+          <p>Dropup menus are an extension of the Dropdown menus. Just add <code>data-type=&quot;dropup&quot;</code> attribute to the <mark>dropdown list menu component</mark> to use. This way: <code>&lt;ul class=&quot;menu&quot; data-type=&quot;dropup&quot;&gt;</code></p>
+        </div>
+        <div class="columns">
+          <div class="column col-xs-12 text-right">
+            <div class="dropdown dropdown-right">
+              <a class="btn btn-primary dropdown-toggle" tabindex="0">dropup button <i class="icon icon-caret"></i></a>
+              <ul class="menu text-left" data-type="dropup">
+                <li class="menu-item">
+                  <a href="#dropdowns">Slack</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#dropdowns">Hipchat</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#dropdowns">Skype</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <pre class="code" data-lang="HTML"><code><span class="hljs-comment">&lt;!-- basic dropup button --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-link dropdown-toggle"</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">"0"</span>&gt;</span>
+    dropdown menu <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon icon-caret"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+  <span class="hljs-comment">&lt;!-- menu component --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"menu"</span>&gt;</span> <span class="hljs-attr">data-type</span>=<span class="hljs-string">"dropup"</span>&gt;</span>
+    ...
+  <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- dropup button group --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn-group"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn"</span>&gt;</span>
+      dropdown button
+    <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn dropdown-toggle"</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">"0"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon icon-caret"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+    <span class="hljs-comment">&lt;!-- menu component --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"menu"</span>&gt;</span> <span class="hljs-attr">data-type</span>=<span class="hljs-string">"dropup"</span>&gt;</span>
+      ...
+    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+
           </div>
           <div class="container" id="modals">
             <h3 class="s-title">Modals<a class="anchor" href="#modals" aria-hidden="true">#</a></h3>
@@ -1383,8 +1484,8 @@
                 </ul>
               </div>
             </div>
-            <p>Add a container element with the <code>tab</code> class. 
-              And add child elements with the <code>tab-item</code> class. 
+            <p>Add a container element with the <code>tab</code> class.
+              And add child elements with the <code>tab-item</code> class.
               You can add the <code>tab-block</code> class for a full-width tab.
               The <code>tab-item</code> or its child &lt;a&gt; with the <code>active</code> class will be highlighted.
             </p>
@@ -1572,7 +1673,7 @@
               </div>
             </div>
             <p>Add a container element with the <code>toast</code> class.
-              You can add any text within the container, and even icons. 
+              You can add any text within the container, and even icons.
               You may also add a close button with the <code>btn-clear</code> class if you need.
             </p>
             <pre class="code" data-lang="HTML"><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"toast"</span>&gt;</span>
@@ -1639,7 +1740,7 @@
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
           m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-      
+
       ga('create', 'UA-2702768-8', 'auto');
       ga('send', 'pageview');
     </script>
