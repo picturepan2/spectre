@@ -1,7 +1,7 @@
 /*! Spectre.css Docs | MIT License | github.com/picturepan2/spectre */
 // Core variables and mixins
-@import "../../src/variables";
-@import "../../src/mixins";
+@import "../../../src/variables";
+@import "../../../src/mixins";
 
 .version::after {
   content: "#{$version}";
@@ -17,6 +17,10 @@
 
   .off-canvas-sidebar {
     width: 12rem;
+  }
+
+  .off-canvas-content {
+    padding: 0;
   }
 }
 
@@ -80,11 +84,8 @@
 
 .docs-content {
   flex: 1 1 auto;
+  padding: 0 4rem;
   width: calc(100vw - 12rem);
-
-  &.off-canvas-content {
-    padding: 0 4rem;
-  }
 
   & > .container {
     margin-left: 0;
@@ -94,20 +95,13 @@
 
   .anchor {
     color: $primary-color-light;
-    height: 0;
-    margin-left: -2em;
-    overflow: hidden;
-    padding: 0 1em;
-    position: absolute;
-    text-align: center;
-    width: 0;
-    z-index: $zindex-1;
+    display: none;
+    margin-left: .2rem;
+    padding: 0 .2rem;
     &:focus,
     &:hover {
-      box-shadow: none;
-      height: auto;
+      display: inline;
       text-decoration: none;
-      width: 2em;
     }
   }
   
@@ -140,8 +134,7 @@
 
     &:hover {
       .anchor {
-        height: auto;
-        width: 1em;
+        display: inline;
       }
     }
 
@@ -150,48 +143,9 @@
     }
   }
 
-  .docs-note {
-    margin: 1.5rem 0;
-  }
-
-  .docs-ad {
-    background: $bg-color;
-    border-radius: $border-radius;
-    display: inline-block;
-    padding: $layout-spacing;
-    position: relative;
-
-    &::before {
-      color: $gray-color;
-      content: "AD";
-      font-size: $font-size-sm;
-      position: absolute;
-      right: $layout-spacing;
-      top: $unit-h;
-    }
-
-    &.docs-ad-sidebar {
-      &::before {
-        content: none;
-      }
-    }
-  }
-
-  .carbon-wrap {
-    .carbon-img {
-      display: block;
-    }
-
-    .carbon-text {
-      color: $gray-color-dark;
-      display: block;
-      font-size: $font-size-sm;
-    }
-  }
-
-  .carbon-poweredby {
-    color: $gray-color;
-    font-size: $font-size-sm;
+  .docs-demo {
+    padding-bottom: 1rem;
+    padding-top: 1rem;
   }
 
   .column {
@@ -241,26 +195,31 @@
   }
 
   .code {
-    color: lighten($body-font-color, 10%);
-
-    .com {
-      color: $gray-color;
-    }
-    .tag {
-      color: $primary-color;
-    }
-    .atn {
+    .hljs-tag {
       color: lighten($body-font-color, 10%);
     }
-    .atv {
-      color: #e06870;
+
+    .hljs-comment {
+      color: $gray-color;
     }
 
-    &[data-lang="Bash"] {
-      .tag {
-        margin-right: 1em;
-        user-select: none;
-      }
+    .hljs-title,
+    .hljs-class,
+    .hljs-string {
+      color: $primary-color;
+    }
+
+    .hljs-name,
+    .hljs-attribute,
+    .hljs-variable,
+    .hljs-keyword,
+    .hljs-built_in {
+      color: $code-color;
+    }
+
+    .hljs-value,
+    .hljs-hexcolor {
+      color: lighten($body-font-color, 10%);
     }
   }
 
@@ -337,13 +296,13 @@
     }
   
     img {
-      display: inline;
+      display: inline-block;
       height: auto;
       width: 1.6rem;
     }
   
     h2 {
-      display: inline;
+      display: inline-block;
       font-size: .8rem;
       font-weight: 700;
       line-height: 1.5rem;
@@ -363,10 +322,34 @@
   }
 }
 
-.btn {
-  .feather {
-    height: 1rem;
+.docs-ad {
+  background: $bg-color;
+  border-radius: $border-radius;
+  display: block;
+  margin: 2rem 0;
+  padding: $layout-spacing;
+  position: relative;
+
+  ins {
+    line-height: 1;
     vertical-align: middle;
+  }
+
+  .carbon-wrap {
+    .carbon-img {
+      display: block;
+    }
+  
+    .carbon-text {
+      color: $gray-color-dark;
+      display: block;
+      font-size: $font-size-sm;
+    }
+  }
+  
+  .carbon-poweredby {
+    color: $gray-color;
+    font-size: $font-size-sm;
   }
 }
 
@@ -388,12 +371,15 @@
   }
 }
 
+.section-ads {
+  padding: 1rem .5rem;
+}
+
 .section-updates {
   padding: 4.5rem .5rem 3.5rem .5rem;
 
   .card {
     border: 0;
-    color: lighten($body-font-color, 15%);
     margin-bottom: 1rem;
   }
 }
@@ -424,6 +410,7 @@
   h1 {
     color: $body-font-color;
     font-size: 1.6rem;
+    font-weight: 600;
     margin-bottom: 1.5rem;
   }
 
@@ -449,7 +436,8 @@
 
     .card-title {
       color: $primary-color;
-      font-size: .9rem;
+      font-size: 1rem;
+      font-weight: 700;
       margin-bottom: 0;
     }
   }
@@ -459,6 +447,10 @@
   .off-canvas {
     .off-canvas-toggle {
       z-index: $zindex-3;
+    }
+
+    .off-canvas-content {
+      width: 100%;
     }
   }
 
@@ -486,11 +478,9 @@
   }
 
   .docs-content {
-    &.off-canvas-content {
-      min-width: auto;
-      padding: 0 1.5rem;
-      width: 100%;
-    }
+    min-width: auto;
+    padding: 0 1.5rem;
+    width: 100%;
 
     .s-title,
     .s-subtitle {
@@ -544,13 +534,13 @@
 
   .docs-navbar {
     .btn {
-      right: 1rem;
+      right: .9rem;
     }
   }
 
   .grid-hero {
     .docs-brand {
-      left: 1rem;
+      left: .9rem;
     }
   }
 
@@ -565,16 +555,10 @@
   }
 
   .docs-content {
-    &.off-canvas-content {
-      padding: 0 .5rem;
-    }
+    padding: 0 .5rem;
 
     .docs-block {
       padding: $unit-2 $unit-h;
-    }
-
-    .anchor {
-      display: none;
     }
   }
 }
@@ -583,6 +567,7 @@
   .docs-ad {
     &.docs-ad-sidebar {
       bottom: 1rem;
+      margin: 0;
       position: fixed;
       right: 1rem;
       width: 7.3rem;

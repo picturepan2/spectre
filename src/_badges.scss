@@ -13,7 +13,7 @@
       color: $light-color;
       content: attr(data-badge);
       display: inline-block;
-      transform: translate(-.1rem, -.5rem);
+      transform: translate(-.05rem, -.5rem);
     }
   }
   &[data-badge] {
@@ -55,16 +55,6 @@
       right: 14.64%;
       transform: translate(50%, -50%);
       z-index: $zindex-1;
-    }
-  }
-
-  &.avatar-xs {
-    &::after {
-      content: "";
-      height: $unit-2;
-      min-width: $unit-2;
-      padding: 0;
-      width: $unit-2;
     }
   }
 }

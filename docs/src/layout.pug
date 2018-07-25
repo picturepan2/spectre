@@ -1,0 +1,23 @@
+extends _docs-layout.pug
+
+block variables
+  - var title = 'Layout - Spectre.css CSS Framework'
+  - var description = ''
+  - var current = 'layout'
+
+block docs-content
+  //- Flexbox grid
+  +docs-heading('grid', 'Flexbox grid')
+    include contents/_ad-g.pug
+    include contents/grid.pug
+    
+  //- Responsive
+  +docs-heading('responsive', 'Responsive')
+    include contents/_ad-c.pug
+    include contents/responsive.pug
+
+  //- Navbar
+  +docs-heading('navbar', 'Navbar')
+    include contents/navbar.pug
+
+  include _footer.pug

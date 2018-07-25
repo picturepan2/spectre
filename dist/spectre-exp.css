@@ -1,4 +1,4 @@
-/*! Spectre.css Experimentals v0.5.1 | MIT License | github.com/picturepan2/spectre */
+/*! Spectre.css Experimentals v0.5.3 | MIT License | github.com/picturepan2/spectre */
 .form-autocomplete {
   position: relative;
 }
@@ -158,13 +158,20 @@
   transform: translate(50%, -50%);
 }
 
-.calendar .calendar-date.disabled .date-item,
-.calendar .calendar-date.disabled .calendar-event,
 .calendar .calendar-date .date-item:disabled,
-.calendar .calendar-date .calendar-event:disabled {
+.calendar .calendar-date .date-item.disabled,
+.calendar .calendar-date .calendar-event:disabled,
+.calendar .calendar-date .calendar-event.disabled {
   cursor: default;
   opacity: .25;
   pointer-events: none;
+}
+
+.calendar .calendar-date.prev-month .date-item,
+.calendar .calendar-date.prev-month .calendar-event,
+.calendar .calendar-date.next-month .date-item,
+.calendar .calendar-date.next-month .calendar-event {
+  opacity: .25;
 }
 
 .calendar .calendar-range {
@@ -188,6 +195,13 @@
 
 .calendar .calendar-range.range-end::before {
   right: 50%;
+}
+
+.calendar .calendar-range.range-start .date-item,
+.calendar .calendar-range.range-end .date-item {
+  background: #4b48d6;
+  border-color: #3634d2;
+  color: #fff;
 }
 
 .calendar .calendar-range .date-item {
@@ -671,6 +685,9 @@
     position: relative;
     transform: none;
   }
+  .off-canvas.off-canvas-sidebar-show .off-canvas-overlay {
+    display: none !important;
+  }
 }
 
 .parallax {
@@ -1019,7 +1036,7 @@
 
 .timeline .timeline-item .timeline-icon.icon-lg {
   background: #5755d9;
-  line-height: 1rem;
+  line-height: 1.2rem;
 }
 
 .timeline .timeline-item .timeline-icon.icon-lg::before {

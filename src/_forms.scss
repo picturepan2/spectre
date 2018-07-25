@@ -193,7 +193,7 @@ textarea.form-input {
 .form-checkbox,
 .form-radio,
 .form-switch {
-  display: inline-block;
+  display: block;
   line-height: $line-height;
   margin: ($control-size - $control-size-sm) / 2 0;
   min-height: 1.2rem;
@@ -381,6 +381,7 @@ textarea.form-input {
   .form-input,
   .form-select {
     flex: 1 1 auto;
+    width: 1%;
   }
 
   .input-group-btn {
@@ -461,6 +462,18 @@ textarea.form-input {
   }
 }
 
+.form-checkbox {
+  .has-error &,
+  &.is-error {
+    input {
+      &:indeterminate + .form-icon {
+        background: $error-color;
+        border-color: $error-color;
+      }
+    }
+  }
+}
+
 // validation based on :placeholder-shown (Edge doesn't support it yet)
 .form-input {
   &:not(:placeholder-shown) {
@@ -516,7 +529,7 @@ input {
   }
 }
 
-// Form Horizontal
+// Form horizontal
 .form-horizontal {
   padding: $layout-spacing 0;
 
@@ -524,4 +537,9 @@ input {
     display: flex;
     flex-wrap: wrap;
   }
+}
+
+// Form inline
+.form-inline {
+  display: inline-block;
 }

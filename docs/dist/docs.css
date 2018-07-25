@@ -1,6 +1,6 @@
 /*! Spectre.css Docs | MIT License | github.com/picturepan2/spectre */
 .version::after {
-  content: "0.5.1";
+  content: "0.5.3";
 }
 
 .off-canvas .off-canvas-toggle {
@@ -12,6 +12,10 @@
 
 .off-canvas .off-canvas-sidebar {
   width: 12rem;
+}
+
+.off-canvas .off-canvas-content {
+  padding: 0;
 }
 
 .docs-navbar {
@@ -67,11 +71,8 @@
 .docs-content {
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
-  width: calc(100vw - 12rem);
-}
-
-.docs-content.off-canvas-content {
   padding: 0 4rem;
+  width: calc(100vw - 12rem);
 }
 
 .docs-content > .container {
@@ -82,22 +83,15 @@
 
 .docs-content .anchor {
   color: #6362dc;
-  height: 0;
-  margin-left: -2em;
-  overflow: hidden;
-  padding: 0 1em;
-  position: absolute;
-  text-align: center;
-  width: 0;
-  z-index: 100;
+  display: none;
+  margin-left: .2rem;
+  padding: 0 .2rem;
 }
 
 .docs-content .anchor:focus,
 .docs-content .anchor:hover {
-  box-shadow: none;
-  height: auto;
+  display: inline;
   text-decoration: none;
-  width: 2em;
 }
 
 .docs-content .s-title,
@@ -134,8 +128,7 @@
 
 .docs-content .s-title:hover .anchor,
 .docs-content .s-subtitle:hover .anchor {
-  height: auto;
-  width: 1em;
+  display: inline;
 }
 
 .docs-content .s-title + .docs-note,
@@ -143,44 +136,9 @@
   margin-top: .4rem;
 }
 
-.docs-content .docs-note {
-  margin: 1.5rem 0;
-}
-
-.docs-content .docs-ad {
-  background: #f8f9fa;
-  border-radius: .1rem;
-  display: inline-block;
-  padding: .4rem;
-  position: relative;
-}
-
-.docs-content .docs-ad::before {
-  color: #acb3c2;
-  content: "AD";
-  font-size: .7rem;
-  position: absolute;
-  right: .4rem;
-  top: .1rem;
-}
-
-.docs-content .docs-ad.docs-ad-sidebar::before {
-  content: none;
-}
-
-.docs-content .carbon-wrap .carbon-img {
-  display: block;
-}
-
-.docs-content .carbon-wrap .carbon-text {
-  color: #667189;
-  display: block;
-  font-size: .7rem;
-}
-
-.docs-content .carbon-poweredby {
-  color: #acb3c2;
-  font-size: .7rem;
+.docs-content .docs-demo {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
 }
 
 .docs-content .column {
@@ -227,32 +185,31 @@
   opacity: .75;
 }
 
-.docs-content .code {
+.docs-content .code .hljs-tag {
   color: #667189;
 }
 
-.docs-content .code .com {
+.docs-content .code .hljs-comment {
   color: #acb3c2;
 }
 
-.docs-content .code .tag {
+.docs-content .code .hljs-title,
+.docs-content .code .hljs-class,
+.docs-content .code .hljs-string {
   color: #5755d9;
 }
 
-.docs-content .code .atn {
+.docs-content .code .hljs-name,
+.docs-content .code .hljs-attribute,
+.docs-content .code .hljs-variable,
+.docs-content .code .hljs-keyword,
+.docs-content .code .hljs-built_in {
+  color: #d73e48;
+}
+
+.docs-content .code .hljs-value,
+.docs-content .code .hljs-hexcolor {
   color: #667189;
-}
-
-.docs-content .code .atv {
-  color: #e06870;
-}
-
-.docs-content .code[data-lang="Bash"] .tag {
-  margin-right: 1em;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
 
 .docs-content .panel {
@@ -334,13 +291,13 @@
 }
 
 .docs-brand .docs-logo img {
-  display: inline;
+  display: inline-block;
   height: auto;
   width: 1.6rem;
 }
 
 .docs-brand .docs-logo h2 {
-  display: inline;
+  display: inline-block;
   font-size: .8rem;
   font-weight: 700;
   line-height: 1.5rem;
@@ -358,9 +315,33 @@
   color: #667189;
 }
 
-.btn .feather {
-  height: 1rem;
+.docs-ad {
+  background: #f8f9fa;
+  border-radius: .1rem;
+  display: block;
+  margin: 2rem 0;
+  padding: .4rem;
+  position: relative;
+}
+
+.docs-ad ins {
+  line-height: 1;
   vertical-align: middle;
+}
+
+.docs-ad .carbon-wrap .carbon-img {
+  display: block;
+}
+
+.docs-ad .carbon-wrap .carbon-text {
+  color: #667189;
+  display: block;
+  font-size: .7rem;
+}
+
+.docs-ad .carbon-poweredby {
+  color: #acb3c2;
+  font-size: .7rem;
 }
 
 /* Spectre Homepage style */
@@ -381,13 +362,16 @@
   padding: .4rem;
 }
 
+.section-ads {
+  padding: 1rem .5rem;
+}
+
 .section-updates {
   padding: 4.5rem .5rem 3.5rem .5rem;
 }
 
 .section-updates .card {
   border: 0;
-  color: #727e96;
   margin-bottom: 1rem;
 }
 
@@ -418,6 +402,7 @@
 .grid-hero h1 {
   color: #50596c;
   font-size: 1.6rem;
+  font-weight: 600;
   margin-bottom: 1.5rem;
 }
 
@@ -444,13 +429,17 @@
 
 .grid-hero .card .card-title {
   color: #5755d9;
-  font-size: .9rem;
+  font-size: 1rem;
+  font-weight: 700;
   margin-bottom: 0;
 }
 
 @media (max-width: 960px) {
   .off-canvas .off-canvas-toggle {
     z-index: 300;
+  }
+  .off-canvas .off-canvas-content {
+    width: 100%;
   }
   .docs-sidebar .docs-brand {
     margin: .85rem 1.5rem;
@@ -470,7 +459,7 @@
     background: rgba(248, 249, 250, .65);
     left: 0;
   }
-  .docs-content.off-canvas-content {
+  .docs-content {
     min-width: auto;
     padding: 0 1.5rem;
     width: 100%;
@@ -513,10 +502,10 @@
     left: .5rem;
   }
   .docs-navbar .btn {
-    right: 1rem;
+    right: .9rem;
   }
   .grid-hero .docs-brand {
-    left: 1rem;
+    left: .9rem;
   }
   .docs-sidebar .docs-brand {
     margin: .85rem 1rem;
@@ -524,20 +513,18 @@
   .docs-sidebar .docs-nav {
     padding: .5rem 1rem;
   }
-  .docs-content.off-canvas-content {
+  .docs-content {
     padding: 0 .5rem;
   }
   .docs-content .docs-block {
     padding: .4rem .1rem;
-  }
-  .docs-content .anchor {
-    display: none;
   }
 }
 
 @media (min-width: 1366px) {
   .docs-ad.docs-ad-sidebar {
     bottom: 1rem;
+    margin: 0;
     position: fixed;
     right: 1rem;
     width: 7.3rem;

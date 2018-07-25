@@ -1,678 +1,464 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="robots" content="index, follow">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="author" content="https://github.com/picturepan2/">
-  <title>Utilities - Spectre.css CSS Framework</title>
-  <link rel="shortcut icon" href="https://picturepan2.github.io/spectre/img/favicons/favicon.ico">
-  <link rel="icon" href="https://picturepan2.github.io/spectre/img/favicons/favicon.png">
-  <link rel="stylesheet" href="dist/spectre.min.css">
-  <link rel="stylesheet" href="dist/spectre-icons.min.css">
-  <link rel="stylesheet" href="dist/spectre-exp.min.css">
-  <link rel="stylesheet" href="dist/docs.min.css">
-</head>
-<body>
-  <div class="docs-container off-canvas off-canvas-sidebar-show">
-    <div class="docs-navbar">
-      <a class="off-canvas-toggle btn btn-link btn-action" href="#sidebar">
-        <i class="icon icon-menu"></i>
-      </a>
-      <a href="https://github.com/picturepan2/spectre" target="_blank" class="btn btn-primary">GitHub</a>
-    </div>
-  
-    <div id="sidebar" class="docs-sidebar off-canvas-sidebar">
-      <div class="docs-brand">
-        <a href="index.html" class="docs-logo">
-          <img src="img/spectre-logo.svg" alt="Spectre.css CSS Framework">
-          <h2>SPECTRE</h2>
-        </a>
-      </div>
-      <div class="docs-nav">
-        <div class="accordion-container">
-          <div class="accordion">
-            <input type="checkbox" id="docs-accordion-1" name="docs-accordion-checkbox" hidden>
-            <label class="accordion-header c-hand" for="docs-accordion-1">
-              Getting started
-            </label>
-            <div class="accordion-body">
-              <ul class="menu menu-nav">
-                <li class="menu-item">
-                  <a href="getting-started.html">Introduction</a>
-                </li>
-                <li class="menu-item">
-                  <a href="getting-started.html#installation">Installation</a>
-                </li>
-                <li class="menu-item">
-                  <a href="getting-started.html#custom">Custom version</a>
-                </li>
-                <li class="menu-item">
-                  <a href="getting-started.html#browsers">Browser support</a>
-                </li>
-                <li class="menu-item">
-                  <a href="getting-started.html#whatsnew">What's new</a>
-                </li>
-              </ul>
+  <head>
+    <title>Utilities - Spectre.css CSS Framework</title>
+    <meta charset="utf-8">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="author" content="Yan Zhu">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico">
+    <link rel="icon" href="img/favicons/favicon.png">
+    <link rel="stylesheet" href="dist/spectre.min.css">
+    <link rel="stylesheet" href="dist/spectre-icons.min.css">
+    <link rel="stylesheet" href="dist/spectre-exp.min.css">
+    <link rel="stylesheet" href="dist/docs.min.css">
+  </head>
+  <body>
+    <div class="docs-container off-canvas off-canvas-sidebar-show">
+      <div class="docs-navbar"><a class="off-canvas-toggle btn btn-link btn-action" href="#sidebar"><i class="icon icon-menu"></i></a><a class="btn btn-primary" href="https://github.com/picturepan2/spectre" target="_blank">GitHub</a></div>
+      <div class="docs-sidebar off-canvas-sidebar" id="sidebar">
+        <div class="docs-brand"><a class="docs-logo" href="index.html"><img src="img/spectre-logo.svg" alt="Spectre.css CSS Framework">
+            <h2>SPECTRE</h2></a></div>
+        <div class="docs-nav">
+          <div class="accordion-container">
+            <div class="accordion">
+              <input id="accordion-getting-started" type="checkbox" name="docs-accordion-checkbox" hidden=""/>
+              <label class="accordion-header c-hand" for="accordion-getting-started">Getting started</label>
+              <div class="accordion-body">
+                <ul class="menu menu-nav">
+                  <li class="menu-item"><a href="getting-started.html#introduction">Introduction</a></li>
+                  <li class="menu-item"><a href="getting-started.html#installation">Installation</a></li>
+                  <li class="menu-item"><a href="getting-started.html#custom">Custom version</a></li>
+                  <li class="menu-item"><a href="getting-started.html#browsers">Browser support</a></li>
+                  <li class="menu-item"><a href="getting-started.html#whatsnew">What's new</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="accordion">
+              <input id="accordion-elements" type="checkbox" name="docs-accordion-checkbox" hidden=""/>
+              <label class="accordion-header c-hand" for="accordion-elements">Elements</label>
+              <div class="accordion-body">
+                <ul class="menu menu-nav">
+                  <li class="menu-item"><a href="elements.html#typography">Typography</a></li>
+                  <li class="menu-item"><a href="elements.html#tables">Tables</a></li>
+                  <li class="menu-item"><a href="elements.html#buttons">Buttons</a></li>
+                  <li class="menu-item"><a href="elements.html#forms">Forms</a></li>
+                  <li class="menu-item"><a href="elements.html#icons">Icons</a></li>
+                  <li class="menu-item"><a href="elements.html#labels">Labels</a></li>
+                  <li class="menu-item"><a href="elements.html#code">Code</a></li>
+                  <li class="menu-item"><a href="elements.html#media">Media</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="accordion">
+              <input id="accordion-layout" type="checkbox" name="docs-accordion-checkbox" hidden=""/>
+              <label class="accordion-header c-hand" for="accordion-layout">Layout</label>
+              <div class="accordion-body">
+                <ul class="menu menu-nav">
+                  <li class="menu-item"><a href="layout.html#flexbox">Flexbox grid</a></li>
+                  <li class="menu-item"><a href="layout.html#responsive">Responsive</a></li>
+                  <li class="menu-item"><a href="layout.html#navbar">Navbar</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="accordion">
+              <input id="accordion-components" type="checkbox" name="docs-accordion-checkbox" hidden=""/>
+              <label class="accordion-header c-hand" for="accordion-components">Components</label>
+              <div class="accordion-body">
+                <ul class="menu menu-nav">
+                  <li class="menu-item"><a href="components.html#accordions">Accordions</a></li>
+                  <li class="menu-item"><a href="components.html#avatars">Avatars</a></li>
+                  <li class="menu-item"><a href="components.html#badges">Badges</a></li>
+                  <li class="menu-item"><a href="components.html#bars">Bars</a></li>
+                  <li class="menu-item"><a href="components.html#breadcrumbs">Breadcrumbs</a></li>
+                  <li class="menu-item"><a href="components.html#cards">Cards</a></li>
+                  <li class="menu-item"><a href="components.html#chips">Chips</a></li>
+                  <li class="menu-item"><a href="components.html#empty">Empty states</a></li>
+                  <li class="menu-item"><a href="components.html#menu">Menu</a></li>
+                  <li class="menu-item"><a href="components.html#modals">Modals</a></li>
+                  <li class="menu-item"><a href="components.html#nav">Nav</a></li>
+                  <li class="menu-item"><a href="components.html#pagination">Pagination</a></li>
+                  <li class="menu-item"><a href="components.html#panels">Panels</a></li>
+                  <li class="menu-item"><a href="components.html#popovers">Popovers</a></li>
+                  <li class="menu-item"><a href="components.html#steps">Steps</a></li>
+                  <li class="menu-item"><a href="components.html#tabs">Tabs</a></li>
+                  <li class="menu-item"><a href="components.html#tiles">Tiles</a></li>
+                  <li class="menu-item"><a href="components.html#toasts">Toasts</a></li>
+                  <li class="menu-item"><a href="components.html#tooltips">Tooltips</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="accordion">
+              <input id="accordion-utilities" type="checkbox" name="docs-accordion-checkbox" hidden="" checked="checked"/>
+              <label class="accordion-header c-hand" for="accordion-utilities">Utilities</label>
+              <div class="accordion-body">
+                <ul class="menu menu-nav">
+                  <li class="menu-item"><a href="utilities.html#colors">Colors</a></li>
+                  <li class="menu-item"><a href="utilities.html#cursors">Cursors</a></li>
+                  <li class="menu-item"><a href="utilities.html#display">Display</a></li>
+                  <li class="menu-item"><a href="utilities.html#divider">Divider</a></li>
+                  <li class="menu-item"><a href="utilities.html#loading">Loading</a></li>
+                  <li class="menu-item"><a href="utilities.html#position">Position</a></li>
+                  <li class="menu-item"><a href="utilities.html#shapes">Shapes</a></li>
+                  <li class="menu-item"><a href="utilities.html#text">Text</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="accordion">
+              <input id="accordion-experimentals" type="checkbox" name="docs-accordion-checkbox" hidden=""/>
+              <label class="accordion-header c-hand" for="accordion-experimentals">Experimentals</label>
+              <div class="accordion-body">
+                <ul class="menu menu-nav">
+                  <li class="menu-item"><a href="experimentals.html#autocomplete">Autocomplete</a></li>
+                  <li class="menu-item"><a href="experimentals.html#calendars">Calendars</a></li>
+                  <li class="menu-item"><a href="experimentals.html#carousels">Carousels</a></li>
+                  <li class="menu-item"><a href="experimentals.html#comparison">Comparison sliders</a></li>
+                  <li class="menu-item"><a href="experimentals.html#filters">Filters</a></li>
+                  <li class="menu-item"><a href="experimentals.html#meters">Meters</a></li>
+                  <li class="menu-item"><a href="experimentals.html#off-canvas">Off-canvas</a></li>
+                  <li class="menu-item"><a href="experimentals.html#parallax">Parallax</a></li>
+                  <li class="menu-item"><a href="experimentals.html#progress">Progress</a></li>
+                  <li class="menu-item"><a href="experimentals.html#sliders">Sliders</a></li>
+                  <li class="menu-item"><a href="experimentals.html#timelines">Timelines</a></li>
+                </ul>
+              </div>
             </div>
           </div>
-          <div class="accordion">
-            <input type="checkbox" id="docs-accordion-2" name="docs-accordion-checkbox" hidden>
-            <label class="accordion-header c-hand" for="docs-accordion-2">
-              Elements
-            </label>
-            <div class="accordion-body">
-              <ul class="menu menu-nav">
-                <li class="menu-item">
-                  <a href="elements.html">Typography</a>
-                </li>
-                <li class="menu-item">
-                  <a href="elements.html#tables">Tables</a>
-                </li>
-                <li class="menu-item">
-                  <a href="elements.html#buttons">Buttons</a>
-                </li>
-                <li class="menu-item">
-                  <a href="elements.html#forms">Forms</a>
-                </li>
-                <li class="menu-item">
-                  <a href="elements.html#icons">Icons</a>
-                </li>
-                <li class="menu-item">
-                  <a href="elements.html#labels">Labels</a>
-                </li>
-                <li class="menu-item">
-                  <a href="elements.html#codes">Codes</a>
-                </li>
-                <li class="menu-item">
-                  <a href="elements.html#media">Media</a>
-                </li>
-              </ul>
+        </div>
+      </div><a class="off-canvas-overlay" href="#close"></a>
+      <div class="off-canvas-content">
+        <div class="docs-content" id="content">
+          <div class="container" id="colors">
+            <h3 class="s-title">Color utilities<a class="anchor" href="#colors" aria-hidden="true">#</a></h3>
+            <div class="docs-ad">
+              <div class="hide-md text-center">
+                <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- GitHub-lg--><ins class="adsbygoogle mx-auto" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-2225124559530218" data-ad-slot="9894180784"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+              </div>
+              <div class="show-md text-center">
+                <!-- GitHub-sm--><ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-2225124559530218" data-ad-slot="9278881734"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+              </div>
             </div>
+            <p>Color utilities are used for changing colors for text, link and background.</p>
+            <h4 class="s-subtitle" id="colors-text">Text colors<a class="anchor" href="#colors-text" aria-hidden="true">#</a></h4>
+            <div class="docs-demo columns">
+              <div class="column col-12">
+                <p><span class="text-primary">primary color</span></p>
+                <p><span class="text-secondary">secondary color</span></p>
+                <p><span class="text-dark">dark color</span></p>
+                <p><span class="text-gray">gray color</span></p>
+                <p><span class="text-light bg-dark p-1 rounded">light color</span></p>
+                <p><span class="text-success">success color</span></p>
+                <p><span class="text-warning">warning color</span></p>
+                <p><span class="text-error">error color</span></p>
+              </div>
+            </div>
+            <pre class="code" data-lang="HTML"><code><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-primary"</span>&gt;</span>primary color<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-secondary"</span>&gt;</span>secondary color<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-dark"</span>&gt;</span>dark color<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-gray"</span>&gt;</span>gray color<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-light"</span>&gt;</span>light color<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-success"</span>&gt;</span>success color<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-warning"</span>&gt;</span>warning color<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-error"</span>&gt;</span>error color<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+</code></pre>
+            <div class="docs-demo columns">
+              <div class="column col-12">
+                <p><a class="text-primary p-1" href="#colors">primary link</a></p>
+                <p><a class="text-secondary p-1" href="#colors">secondary link</a></p>
+                <p><a class="text-dark p-1" href="#colors">dark link</a></p>
+                <p><a class="text-gray p-1" href="#colors">gray link</a></p>
+                <p><a class="text-light bg-dark p-1 rounded" href="#colors">light link</a></p>
+                <p><a class="text-success p-1" href="#colors">success link</a></p>
+                <p><a class="text-warning p-1" href="#colors">warning link</a></p>
+                <p><a class="text-error p-1" href="#colors">error link</a></p>
+              </div>
+            </div>
+            <pre class="code" data-lang="HTML"><code><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-primary"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>primary color<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-secondary"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>secondary color<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-dark"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>dark color<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-gray"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>gray color<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-light"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>light color<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-success"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>success color<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-warning"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>warning color<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-error"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>error color<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+</code></pre>
+            <h4 class="s-subtitle" id="colors-background">Background colors<a class="anchor" href="#colors-background" aria-hidden="true">#</a></h4>
+            <div class="docs-demo columns">
+              <div class="column col-12">
+                <p><span class="bg-primary p-1 rounded">primary bg</span></p>
+                <p><span class="bg-secondary text-primary p-1 rounded">secondary bg</span></p>
+                <p><span class="bg-dark p-1 rounded">dark bg</span></p>
+                <p><span class="bg-gray p-1 rounded">gray bg</span></p>
+                <p><span class="bg-success p-1 rounded">success bg</span></p>
+                <p><span class="bg-warning p-1 rounded">warning bg</span></p>
+                <p><span class="bg-error p-1 rounded">error bg</span></p>
+              </div>
+            </div>
+            <pre class="code" data-lang="HTML"><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bg-primary"</span>&gt;</span>primary bg<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bg-secondary"</span>&gt;</span>secondary bg<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bg-dark"</span>&gt;</span>dark bg<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bg-gray"</span>&gt;</span>gray bg<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bg-success"</span>&gt;</span>success bg<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bg-warning"</span>&gt;</span>warning bg<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bg-error"</span>&gt;</span>error bg<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
           </div>
-          <div class="accordion">
-            <input type="checkbox" id="docs-accordion-3" name="docs-accordion-checkbox" hidden>
-            <label class="accordion-header c-hand" for="docs-accordion-3">
-              Layout
-            </label>
-            <div class="accordion-body">
-              <ul class="menu menu-nav">
-                <li class="menu-item">
-                  <a href="layout.html">Flexbox grid</a>
-                </li>
-                <li class="menu-item">
-                  <a href="layout.html#responsive">Responsive</a>
-                </li>
-                <li class="menu-item">
-                  <a href="layout.html#navbar">Navbar</a>
-                </li>
-              </ul>
+          <div class="container" id="cursors">
+            <h3 class="s-title">Cursor utilities<a class="anchor" href="#cursors" aria-hidden="true">#</a></h3>
+            <p>Cursor utilities specify which mouse cursor to display when mouseover.</p>
+            <div class="docs-demo columns">
+              <div class="column col-4">
+                <div class="bg-gray docs-block c-hand">c-hand</div>
+              </div>
+              <div class="column col-4">
+                <div class="bg-gray docs-block c-move">c-move</div>
+              </div>
+              <div class="column col-4">
+                <div class="bg-gray docs-block c-zoom-in">c-zoom-in</div>
+              </div>
+              <div class="column col-4">
+                <div class="bg-gray docs-block c-zoom-out">c-zoom-out</div>
+              </div>
+              <div class="column col-4">
+                <div class="bg-gray docs-block c-not-allowed">c-not-allowed</div>
+              </div>
+              <div class="column col-4">
+                <div class="bg-gray docs-block c-auto">c-auto</div>
+              </div>
             </div>
+            <pre class="code" data-lang="HTML"><code><span class="hljs-comment">&lt;!-- cursor: hand; --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-hand"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- cursor: move; --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-move"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- cursor: zoom-in; --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-zoom-in"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- cursor: zoom-out; --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-zoom-out"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- cursor: not-allowed; --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-not-allowed"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- cursor: auto; --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-auto"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
           </div>
-          <div class="accordion">
-            <input type="checkbox" id="docs-accordion-4" name="docs-accordion-checkbox" hidden>
-            <label class="accordion-header c-hand" for="docs-accordion-4">
-              Components
-            </label>
-            <div class="accordion-body">
-              <ul class="menu menu-nav">
-                <li class="menu-item">
-                  <a href="components.html">Accordions</a>
-                </li>
-                <li class="menu-item">
-                  <a href="components.html#avatars">Avatars</a>
-                </li>
-                <li class="menu-item">
-                  <a href="components.html#badges">Badges</a>
-                </li>
-                <li class="menu-item">
-                  <a href="components.html#bars">Bars</a>
-                </li>
-                <li class="menu-item">
-                  <a href="components.html#breadcrumbs">Breadcrumbs</a>
-                </li>
-                <li class="menu-item">
-                  <a href="components.html#cards">Cards</a>
-                </li>
-                <li class="menu-item">
-                  <a href="components.html#chips">Chips</a>
-                </li>
-                <li class="menu-item">
-                  <a href="components.html#empty">Empty states</a>
-                </li>
-                <li class="menu-item">
-                  <a href="components.html#menus">Menus</a>
-                </li>
-                <li class="menu-item">
-                  <a href="components.html#modals">Modals</a>
-                </li>
-                <li class="menu-item">
-                  <a href="components.html#navs">Navs</a>
-                </li>
-                <li class="menu-item">
-                  <a href="components.html#pagination">Pagination</a>
-                </li>
-                <li class="menu-item">
-                  <a href="components.html#panels">Panels</a>
-                </li>
-                <li class="menu-item">
-                  <a href="components.html#popovers">Popovers</a>
-                </li>
-                <li class="menu-item">
-                  <a href="components.html#steps">Steps</a>
-                </li>
-                <li class="menu-item">
-                  <a href="components.html#tabs">Tabs</a>
-                </li>
-                <li class="menu-item">
-                  <a href="components.html#tiles">Tiles</a>
-                </li>
-                <li class="menu-item">
-                  <a href="components.html#toasts">Toasts</a>
-                </li>
-                <li class="menu-item">
-                  <a href="components.html#tooltips">Tooltips</a>
-                </li>
-              </ul>
+          <div class="container" id="display">
+            <h3 class="s-title">Display utilities<a class="anchor" href="#display" aria-hidden="true">#</a></h3>
+            <div class="docs-ad docs-ad-sidebar text-center">
+              <script id="_carbonads_js" async="" type="text/javascript" src="https://cdn.carbonads.com/carbon.js?serve=CK7DTKQW&amp;placement=picturepan2githubio"></script>
             </div>
+            <p>Display utilities are used for display and hidden things.</p>
+            <pre class="code" data-lang="HTML"><code><span class="hljs-comment">&lt;!-- display: block; --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"d-block"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- display: inline; --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"d-inline"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- display: inline-block; --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"d-inline-block"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- display: flex; --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"d-flex"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- display: inline-flex; --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"d-inline-flex"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- display: none; --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"d-none"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"d-hide"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- visibility: visible; --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"d-visible"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- visibility: hidden; --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"d-invisible"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- hide text contents --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-hide"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- assistive text for screen reader --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-assistive"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
           </div>
-          <div class="accordion">
-            <input type="checkbox" id="docs-accordion-5" name="docs-accordion-checkbox" hidden checked>
-            <label class="accordion-header c-hand" for="docs-accordion-5">
-              Utilities
-            </label>
-            <div class="accordion-body">
-              <ul class="menu menu-nav">
-                <li class="menu-item">
-                  <a href="utilities.html">Colors</a>
-                </li>
-                <li class="menu-item">
-                  <a href="utilities.html#cursors">Cursors</a>
-                </li>
-                <li class="menu-item">
-                  <a href="utilities.html#display">Display</a>
-                </li>
-                <li class="menu-item">
-                  <a href="utilities.html#divider">Divider</a>
-                </li>
-                <li class="menu-item">
-                  <a href="utilities.html#loading">Loading</a>
-                </li>
-                <li class="menu-item">
-                  <a href="utilities.html#position">Position</a>
-                </li>
-                <li class="menu-item">
-                  <a href="utilities.html#shapes">Shapes</a>
-                </li>
-                <li class="menu-item">
-                  <a href="utilities.html#text">Text</a>
-                </li>
-              </ul>
+          <div class="container" id="divider">
+            <h3 class="s-title">Divider<a class="anchor" href="#divider" aria-hidden="true">#</a></h3>
+            <p>A Divider is used for separating elements.</p>
+            <div class="docs-demo columns">
+              <div class="column">
+                <div class="divider"></div>
+              </div>
             </div>
+            <div class="docs-demo columns">
+              <div class="column">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent risus leo, dictum in vehicula sit amet, feugiat tempus tellus.
+                <div class="divider text-center" data-content="OR"></div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent risus leo, dictum in vehicula sit amet, feugiat tempus tellus.
+              </div>
+            </div>
+            <div class="docs-demo columns">
+              <div class="column">
+                <form>
+                  <div class="form-group">
+                    <label class="form-label" for="input-example-1">Email</label>
+                    <input class="form-input" id="input-example-1" type="text" placeholder="Email">
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="input-example-2">Password</label>
+                    <input class="form-input" id="input-example-2" type="password" placeholder="Password">
+                  </div>
+                  <div class="form-group">
+                    <label class="form-checkbox">
+                      <input type="checkbox"><i class="form-icon"></i> Remember me
+                    </label>
+                  </div>
+                  <div class="form-group">
+                    <button class="btn btn-primary">Sign in</button>
+                  </div>
+                </form>
+              </div>
+              <div class="divider-vert" data-content="OR"></div>
+              <div class="column">
+                <form>
+                  <div class="form-group">
+                    <label class="form-label" for="input-example-3">Email</label>
+                    <input class="form-input" id="input-example-3" type="text" placeholder="Email">
+                  </div>
+                  <div class="form-group">
+                    <button class="btn btn-primary btn-block">Sign up</button>
+                    <button class="btn btn-link btn-block">Learn more</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <pre class="code" data-lang="HTML"><code><span class="hljs-comment">&lt;!-- divider element --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"divider"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- divider element with text --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"divider text-center"</span> <span class="hljs-attr">data-content</span>=<span class="hljs-string">"OR"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- vertical divider element with text --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"columns"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"column"</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- column content --&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"divider-vert"</span> <span class="hljs-attr">data-content</span>=<span class="hljs-string">"OR"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"column"</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- column content --&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
           </div>
-          <div class="accordion">
-            <input type="checkbox" id="docs-accordion-6" name="docs-accordion-checkbox" hidden>
-            <label class="accordion-header c-hand" for="docs-accordion-6">
-              Experimentals
-            </label>
-            <div class="accordion-body">
-              <ul class="menu menu-nav">
-                <li class="menu-item">
-                  <a href="experimentals.html">Autocomplete</a>
-                </li>
-                <li class="menu-item">
-                  <a href="experimentals.html">Calendars</a>
-                </li>
-                <li class="menu-item">
-                  <a href="experimentals.html#carousels">Carousels</a>
-                </li>
-                <li class="menu-item">
-                  <a href="experimentals.html#comparison">Comparison sliders</a>
-                </li>
-                <li class="menu-item">
-                  <a href="experimentals.html#filters">Filters</a>
-                </li>
-                <li class="menu-item">
-                  <a href="experimentals.html#meters">Meters</a>
-                </li>
-                <li class="menu-item">
-                  <a href="experimentals.html#off-canvas">Off-canvas</a>
-                </li>
-                <li class="menu-item">
-                  <a href="experimentals.html#parallax">Parallax</a>
-                </li>
-                <li class="menu-item">
-                  <a href="experimentals.html#progress">Progress</a>
-                </li>
-                <li class="menu-item">
-                  <a href="experimentals.html#sliders">Sliders</a>
-                </li>
-                <li class="menu-item">
-                  <a href="experimentals.html#timelines">Timelines</a>
-                </li>
-              </ul>
+          <div class="container" id="loading">
+            <h3 class="s-title">Loading<a class="anchor" href="#loading" aria-hidden="true">#</a></h3>
+            <p>
+              Loading indicator is used for loading or updating.
+              You can add the <code>loading</code> class to a container for loading status.
+            </p>
+            <div class="docs-demo columns">
+              <div class="column col-12 text-center">
+                <div class="loading"></div>
+              </div>
             </div>
+            <p>Add the <code>loading-lg</code> class for large size.</p>
+            <div class="docs-demo columns">
+              <div class="column col-12 text-center">
+                <div class="loading loading-lg"></div>
+              </div>
+            </div>
+            <pre class="code" data-lang="HTML"><code><span class="hljs-comment">&lt;!-- loading element --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"loading"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"loading loading-lg"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+          </div>
+          <div class="container" id="position">
+            <h3 class="s-title">Position utilities<a class="anchor" href="#position" aria-hidden="true">#</a></h3>
+            <p>Position utilities are used for useful layout and position things, including clearfix, float, position and margin/padding utilities.</p>
+            <pre class="code" data-lang="HTML"><code><span class="hljs-comment">&lt;!-- clear float --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"clearfix"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- float: left and right --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"float-left"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"float-right"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- position: relative, absolute and fixed --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"relative"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"absolute"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fixed"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- centered block --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"centered"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- m-1 {margin: 4px;} m-2 {margin: 8px;} --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"m-1"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"m-2"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- margin in 4 directions. mt-1 {margin-top: 4px;} mt-2 {margin-top: 8px;} --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mt-1"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mt-2"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- mx-1 {margin-left: 4px; margin-right: 4px;} --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mx-1"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mx-2"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"my-1"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"my-2"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- p-1 {padding: 4px;} p-2 {padding: 8px;} --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"p-1"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"p-2"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- padding in 4 directions. pt-1 {padding-top: 4px;} pt-2 {padding-top: 8px;} --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"pt-1"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"pt-2"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- px-1 {padding-left: 4px; padding-right: 4px;} --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"px-1"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"px-2"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"py-1"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"py-2"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+          </div>
+          <div class="container" id="shapes">
+            <h3 class="s-title">Shape utilities<a class="anchor" href="#shapes" aria-hidden="true">#</a></h3>
+            <p>Shape utilities are used for change element shapes.</p>
+            <div class="docs-demo columns">
+              <div class="column col-6 text-center">
+                <div class="bg-primary text-light docs-shape s-rounded centered">s-rounded</div>
+              </div>
+              <div class="column col-6 text-center">
+                <div class="bg-primary text-light docs-shape s-circle centered">s-circle</div>
+              </div>
+            </div>
+            <pre class="code" data-lang="HTML"><code><span class="hljs-comment">&lt;!-- rounded element --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"s-rounded"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- circle element --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"s-circle"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+          </div>
+          <div class="container" id="text">
+            <h3 class="s-title">Text utilities<a class="anchor" href="#text" aria-hidden="true">#</a></h3>
+            <p>Text utilities are used for text alignment, styles and overflow things.</p>
+            <pre class="code" data-lang="HTML"><code><span class="hljs-comment">&lt;!-- left-aligned text --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-left"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- center-aligned text --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-center"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- right-aligned text --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-right"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- justified text --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-justify"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- Lowercased text --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-lowercase"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- Uppercased text --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-uppercase"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- Capitalized text --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-capitalize"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- Normal weight text --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-normal"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- Bold text --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-bold"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- Italicized text --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-italic"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- Larger text (120%) --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-large"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- Overflow behavior: display an ellipsis to represent clipped text --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-ellipsis"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- Overflow behavior: truncate the text --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-clip"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- Text may be broken at arbitrary points --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-break"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+          </div>
+          <div class="docs-footer container grid-lg" id="copyright">
+            <p><a href="getting-started.html" target="_blank">Documents</a> · <a href="https://github.com/picturepan2/spectre" target="_blank">GitHub</a> · <a href="https://twitter.com/spectrecss" target="_blank">Twitter</a> · <a href="https://www.paypal.me/picturepan2" target="_blank">PayPal Donate</a> · Version <span class="version"></span></p>
+            <p>Designed and built with <span class="text-error">&hearts;</span> by <a href="https://twitter.com/picturepan2" target="_blank">Yan Zhu</a>. Licensed under the <a href="https://github.com/picturepan2/spectre/blob/master/LICENSE" target="_blank">MIT License</a>.</p>
           </div>
         </div>
       </div>
     </div>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
       
-    <a class="off-canvas-overlay" href="#close"></a>
-
-    <div id="content" class="docs-content off-canvas-content">
-      <div id="utilities" class="container">
-        <h3 class="s-title"><a href="#utilities" class="anchor" aria-hidden="true">#</a>Utilities</h3>
-      </div>
-
-      <div class="container">
-        <div class="docs-ad">
-          <div class="hide-md">
-            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-            <!-- GitHub-lg -->
-            <ins class="adsbygoogle"
-                  style="display:inline-block;width:728px;height:90px"
-                  data-ad-client="ca-pub-2225124559530218"
-                  data-ad-slot="9894180784"></ins>
-            <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
-          </div>
-          <div class="show-md">
-            <!-- GitHub-sm -->
-            <ins class="adsbygoogle"
-                  style="display:inline-block;width:300px;height:250px"
-                  data-ad-client="ca-pub-2225124559530218"
-                  data-ad-slot="9278881734"></ins>
-            <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
-          </div>
-        </div>
-      </div>
-
-      <div id="colors" class="container">
-        <h3 class="s-title"><a href="#colors" class="anchor" aria-hidden="true">#</a>Color utilities</h3>
-        <div class="docs-note">
-          <p>Color utilities are used for changing colors for text, link and background.</p>
-        </div>
-        <h4 id="colors-text" class="s-subtitle">Text colors</h4>
-        <div class="docs-note">
-          <p><span class="text-primary">primary color</span></p>
-          <p><span class="text-secondary">secondary color</span></p>
-          <p><span class="text-gray">gray color</span></p>
-          <p><span class="text-light bg-dark p-1 rounded">light color</span></p>
-          <p><span class="text-success">success color</span></p>
-          <p><span class="text-warning">warning color</span></p>
-          <p><span class="text-error">error color</span></p>
-        </div>
-
-<!-- colors -->
-<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;text-primary&quot;</span>&gt;primary color&lt;<span class="tag">/span</span>&gt;
-&lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;text-secondary&quot;</span>&gt;secondary color&lt;<span class="tag">/span</span>&gt;
-&lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;text-gray&quot;</span>&gt;gray color&lt;<span class="tag">/span</span>&gt;
-&lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;text-light&quot;</span>&gt;light color&lt;<span class="tag">/span</span>&gt;
-&lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;text-success&quot;</span>&gt;success color&lt;<span class="tag">/span</span>&gt;
-&lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;text-warning&quot;</span>&gt;warning color&lt;<span class="tag">/span</span>&gt;
-&lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;text-error&quot;</span>&gt;error color&lt;<span class="tag">/span</span>&gt;
-</code></pre>
-
-        <div class="docs-note">
-          <p><a class="text-primary p-1" href="#colors">primary link</a></p>
-          <p><a class="text-secondary p-1" href="#colors">secondary link</a></p>
-          <p><a class="text-gray p-1" href="#colors">gray link</a></p>
-          <p><a class="text-light bg-dark p-1 rounded" href="#colors">light link</a></p>
-          <p><a class="text-success p-1" href="#colors">success link</a></p>
-          <p><a class="text-warning p-1" href="#colors">warning link</a></p>
-          <p><a class="text-error p-1" href="#colors">error link</a></p>
-        </div>
-
-<!-- colors -->
-<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">a</span> <span class="atn">class</span>=<span class="atv">&quot;text-primary&quot;</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;primary color&lt;<span class="tag">/a</span>&gt;
-&lt;<span class="tag">a</span> <span class="atn">class</span>=<span class="atv">&quot;text-secondary&quot;</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;secondary color&lt;<span class="tag">/a</span>&gt;
-&lt;<span class="tag">a</span> <span class="atn">class</span>=<span class="atv">&quot;text-gray&quot;</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;gray color&lt;<span class="tag">/a</span>&gt;
-&lt;<span class="tag">a</span> <span class="atn">class</span>=<span class="atv">&quot;text-light&quot;</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;light color&lt;<span class="tag">/a</span>&gt;
-&lt;<span class="tag">a</span> <span class="atn">class</span>=<span class="atv">&quot;text-success&quot;</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;success color&lt;<span class="tag">/a</span>&gt;
-&lt;<span class="tag">a</span> <span class="atn">class</span>=<span class="atv">&quot;text-warning&quot;</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;warning color&lt;<span class="tag">/a</span>&gt;
-&lt;<span class="tag">a</span> <span class="atn">class</span>=<span class="atv">&quot;text-error&quot;</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;error color&lt;<span class="tag">/a</span>&gt;
-</code></pre>
-
-        <h4 id="colors-background" class="s-subtitle">Background colors</h4>
-        <div class="docs-note">
-          <p><span class="bg-primary p-1 rounded">primary bg</span></p>
-          <p><span class="bg-secondary text-primary p-1 rounded">secondary bg</span></p>
-          <p><span class="bg-dark p-1 rounded">dark bg</span></p>
-          <p><span class="bg-gray p-1 rounded">gray bg</span></p>
-          <p><span class="bg-success p-1 rounded">success bg</span></p>
-          <p><span class="bg-warning p-1 rounded">warning bg</span></p>
-          <p><span class="bg-error p-1 rounded">error bg</span></p>
-        </div>
-
-<!-- colors -->
-<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;bg-primary&quot;</span>&gt;primary bg&lt;<span class="tag">/div</span>&gt;
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;bg-secondary&quot;</span>&gt;secondary bg&lt;<span class="tag">/div</span>&gt;
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;bg-dark&quot;</span>&gt;dark bg&lt;<span class="tag">/div</span>&gt;
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;bg-gray&quot;</span>&gt;gray bg&lt;<span class="tag">/div</span>&gt;
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;bg-success&quot;</span>&gt;success bg&lt;<span class="tag">/div</span>&gt;
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;bg-warning&quot;</span>&gt;warning bg&lt;<span class="tag">/div</span>&gt;
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;bg-error&quot;</span>&gt;error bg&lt;<span class="tag">/div</span>&gt;
-</code></pre>
-
-      </div>
-
-      <div class="container">
-        <div class="docs-ad docs-ad-sidebar">
-          <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=picturepan2githubio" id="_carbonads_js"></script>
-        </div>
-      </div>
-
-      <div id="cursors" class="container">
-        <h3 class="s-title"><a href="#cursors" class="anchor" aria-hidden="true">#</a>Cursor utilities</h3>
-        <div class="docs-note">
-          <p>Cursor utilities specify which mouse cursor to display when mouseover.</p>
-        </div>
-        <div class="columns">
-          <div class="column">
-            <div class="bg-gray docs-block c-hand">c-hand</div>
-          </div>
-          <div class="column">
-            <div class="bg-gray docs-block c-move">c-move</div>
-          </div>
-          <div class="column">
-            <div class="bg-gray docs-block c-zoom-in">c-zoom-in</div>
-          </div>
-          <div class="column">
-            <div class="bg-gray docs-block c-zoom-out">c-zoom-out</div>
-          </div>
-          <div class="column">
-            <div class="bg-gray docs-block c-not-allowed">c-not-allowed</div>
-          </div>
-          <div class="column">
-            <div class="bg-gray docs-block c-auto">c-auto</div>
-          </div>
-        </div>
-
-<!-- display utilities -->
-<pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- cursor: hand; --&gt;</span>
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;c-hand&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-<span class="com">&lt;!-- cursor: move; --&gt;</span>
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;c-move&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-<span class="com">&lt;!-- cursor: zoom-in; --&gt;</span>
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;c-zoom-in&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-<span class="com">&lt;!-- cursor: zoom-out; --&gt;</span>
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;c-zoom-out&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-<span class="com">&lt;!-- cursor: not-allowed; --&gt;</span>
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;c-not-allowed&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-<span class="com">&lt;!-- cursor: auto; --&gt;</span>
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;c-auto&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-</code></pre>
-
-      </div>
-
-      <div id="display" class="container">
-        <h3 class="s-title"><a href="#display" class="anchor" aria-hidden="true">#</a>Display utilities</h3>
-        <div class="docs-note">
-          <p>Display utilities are used for display and hidden things.</p>
-        </div>
-
-<!-- display utilities -->
-<pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- display: block; --&gt;</span>
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;d-block&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-<span class="com">&lt;!-- display: inline; --&gt;</span>
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;d-inline&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-<span class="com">&lt;!-- display: inline-block; --&gt;</span>
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;d-inline-block&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-<span class="com">&lt;!-- display: flex; --&gt;</span>
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;d-flex&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-<span class="com">&lt;!-- display: inline-flex; --&gt;</span>
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;d-inline-flex&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-<span class="com">&lt;!-- display: none; --&gt;</span>
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;d-none&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;d-hide&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-<span class="com">&lt;!-- visibility: visible; --&gt;</span>
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;d-visible&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-<span class="com">&lt;!-- visibility: hidden; --&gt;</span>
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;d-invisible&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-<span class="com">&lt;!-- hide text contents --&gt;</span>
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;text-hide&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-<span class="com">&lt;!-- assistive text for screen reader --&gt;</span>
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;text-assistive&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-</code></pre>
-
-      </div>
-
-      <div id="divider" class="container">
-        <h3 class="s-title"><a href="#divider" class="anchor" aria-hidden="true">#</a>Divider</h3>
-        <div class="docs-note">
-          <p>A Divider is used for separating elements.</p>
-        </div>
-        <div class="columns">
-          <div class="column">
-            <div class="divider"></div>
-          </div>
-        </div>
-        <div class="columns">
-          <div class="column">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent risus leo, dictum in vehicula sit amet, feugiat tempus tellus.
-            <div class="divider text-center" data-content="OR"></div>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent risus leo, dictum in vehicula sit amet, feugiat tempus tellus.
-          </div>
-        </div>
-
-        <div class="columns">
-          <div class="column">
-            <form>
-              <div class="form-group">
-                <label class="form-label" for="input-example-1">Email</label>
-                <input class="form-input" type="text" id="input-example-1" placeholder="Email">
-              </div>
-              <div class="form-group">
-                <label class="form-label" for="input-example-2">Password</label>
-                <input class="form-input" type="password" id="input-example-2" placeholder="Password">
-              </div>
-              <div class="form-group">
-                <label class="form-checkbox">
-                  <input type="checkbox">
-                  <i class="form-icon"></i> Remember me
-                </label>
-              </div>
-              <div class="form-group">
-                <button class="btn btn-primary">Sign in</button>
-              </div>
-            </form>
-          </div>
-          <div class="divider-vert" data-content="OR"></div>
-          <div class="column">
-            <form>
-              <div class="form-group">
-                <label class="form-label" for="input-example-3">Email</label>
-                <input class="form-input" type="text" id="input-example-3" placeholder="Email">
-              </div>
-              <div class="form-group">
-                <button class="btn btn-primary btn-block">Sign up</button>
-                <button class="btn btn-link btn-block">Learn more</button>
-              </div>
-            </form>
-          </div>
-        </div>
-
-<!-- divider utilities -->
-<pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- divider element --&gt;</span>
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;divider&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-<span class="com">&lt;!-- divider element with text --&gt;</span>
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;divider text-center&quot;</span> <span class="atn">data-content</span>=<span class="atv">&quot;OR&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-
-<span class="com">&lt;!-- vertical divider element with text --&gt;</span>
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;columns&quot;</span>&gt;
-  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;column&quot;</span>&gt;
-    <span class="com">&lt;!-- column content --&gt;</span>
-  &lt;<span class="tag">/div</span>&gt;
-  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;divider-vert&quot;</span> <span class="atn">data-content</span>=<span class="atv">&quot;OR&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;column&quot;</span>&gt;
-    <span class="com">&lt;!-- column content --&gt;</span>
-  &lt;<span class="tag">/div</span>&gt;
-&lt;<span class="tag">/div</span>&gt;
-</code></pre>
-
-      </div>
-
-      <div id="loading" class="container">
-        <h3 class="s-title"><a href="#loading" class="anchor" aria-hidden="true">#</a>Loading</h3>
-        <div class="docs-note">
-          <p>Loading indicator is used for loading or updating. Also, you can add the <code>loading</code> class to buttons for loading status.</p>
-        </div>
-        <div class="columns">
-          <div class="column col-12 text-center">
-            <div class="loading"></div>
-          </div>
-        </div>
-        <div class="docs-note">
-          <p>Add the <code>loading-lg</code> class for large size. </p>
-        </div>
-        <div class="columns">
-          <div class="column col-12 text-center">
-            <div class="loading loading-lg"></div>
-          </div>
-        </div>
-
-<!-- loading -->
-<pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- loading element --&gt;</span>
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;loading&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;loading loading-lg&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-</code></pre>
-
-      </div>
-
-      <div id="position" class="container">
-        <h3 class="s-title"><a href="#position" class="anchor" aria-hidden="true">#</a>Position utilities</h3>
-        <div class="docs-note">
-          <p>Position utilities are used for useful layout and position things, including clearfix, float, position and margin/padding utilities.</p>
-        </div>
-
-<!-- position utilities -->
-<pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- clear float --&gt;</span>
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;clearfix&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-<span class="com">&lt;!-- float: left and right --&gt;</span>
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;float-left&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;float-right&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-<span class="com">&lt;!-- position: relative, absolute and fixed --&gt;</span>
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;relative&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;absolute&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;fixed&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-<span class="com">&lt;!-- centered block --&gt;</span>
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;centered&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-
-<span class="com">&lt;!-- m-1 {margin: 4px;} m-2 {margin: 8px;} --&gt;</span>
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;m-1&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;m-2&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-<span class="com">&lt;!-- margin in 4 directions. mt-1 {margin-top: 4px;} mt-2 {margin-top: 8px;} --&gt;</span>
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;mt-1&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;mt-2&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-<span class="com">&lt;!-- mx-1 {margin-left: 4px; margin-right: 4px;} --&gt;</span>
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;mx-1&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;mx-2&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;my-1&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;my-2&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-<span class="com">&lt;!-- p-1 {padding: 4px;} p-2 {padding: 8px;} --&gt;</span>
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;p-1&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;p-2&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-<span class="com">&lt;!-- padding in 4 directions. pt-1 {padding-top: 4px;} pt-2 {padding-top: 8px;} --&gt;</span>
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;pt-1&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;pt-2&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-<span class="com">&lt;!-- px-1 {padding-left: 4px; padding-right: 4px;} --&gt;</span>
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;px-1&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;px-2&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;py-1&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;py-2&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-</code></pre>
-
-      </div>
-
-      <div id="shapes" class="container">
-        <h3 class="s-title"><a href="#shapes" class="anchor" aria-hidden="true">#</a>Shape utilities</h3>
-        <div class="docs-note">
-          <p>Shape utilities are used for change element shapes.</p>
-        </div>
-        <div class="columns">
-          <div class="column col-6 text-center">
-            <div class="bg-primary text-light docs-shape rounded centered">
-              rounded
-            </div>
-          </div>
-          <div class="column col-6 text-center">
-            <div class="bg-primary text-light docs-shape circle centered">
-              circle
-            </div>
-          </div>
-        </div>
-
-<!-- shape utilities -->
-<pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- rounded element --&gt;</span>
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;rounded&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-<span class="com">&lt;!-- circle element --&gt;</span>
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;circle&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-</code></pre>
-
-      </div>
-
-      <div id="text" class="container">
-        <h3 class="s-title"><a href="#text" class="anchor" aria-hidden="true">#</a>Text utilities</h3>
-        <div class="docs-note">
-          <p>Text utilities are used for text alignment, styles and overflow things.</p>
-        </div>
-
-<!-- text utilities -->
-<pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- left-aligned text --&gt;</span>
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;text-left&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-<span class="com">&lt;!-- center-aligned text --&gt;</span>
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;text-center&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-<span class="com">&lt;!-- right-aligned text --&gt;</span>
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;text-right&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-<span class="com">&lt;!-- justified text --&gt;</span>
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;text-justify&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-
-<span class="com">&lt;!-- Lowercased text --&gt;</span>
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;text-lowercase&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-<span class="com">&lt;!-- Uppercased text --&gt;</span>
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;text-uppercase&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-<span class="com">&lt;!-- Capitalized text --&gt;</span>
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;text-capitalize&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-
-<span class="com">&lt;!-- Normal weight text --&gt;</span>
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;text-normal&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-<span class="com">&lt;!-- Bold text --&gt;</span>
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;text-bold&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-<span class="com">&lt;!-- Italicized text --&gt;</span>
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;text-italic&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-<span class="com">&lt;!-- Larger text (120%) --&gt;</span>
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;text-large&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-
-<span class="com">&lt;!-- Overflow behavior: display an ellipsis to represent clipped text --&gt;</span>
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;text-ellipsis&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-<span class="com">&lt;!-- Overflow behavior: truncate the text --&gt;</span>
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;text-clip&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-<span class="com">&lt;!-- Text may be broken at arbitrary points --&gt;</span>
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;text-break&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-</code></pre>
-
-      </div>
-
-      <footer class="docs-footer">
-        <p><a href="https://github.com/picturepan2/spectre" target="_blank">GitHub</a> | <a href="https://twitter.com/spectrecss" target="_blank">Twitter</a> | <a href="https://www.paypal.me/picturepan2" target="_blank">PayPal Donate</a> | Version <span class="version"></span></p>
-        <p>Designed and built with <span class="text-error">♥</span> by <a href="https://twitter.com/picturepan2" target="_blank">Yan Zhu</a>. Licensed under the <a href="https://github.com/picturepan2/spectre/blob/master/LICENSE" target="_blank">MIT License</a>.</p>
-      </footer>
-
-    </div>
-  </div>
-
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-2702768-8', 'auto');
-    ga('send', 'pageview');
-  </script>
-</body>
+      ga('create', 'UA-2702768-8', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
 </html>

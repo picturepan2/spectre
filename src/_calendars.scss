@@ -98,13 +98,22 @@
       }
     }
 
-    &.disabled .date-item,
-    &.disabled .calendar-event,
-    .date-item:disabled,
-    .calendar-event:disabled {
-      cursor: default;
-      opacity: .25;
-      pointer-events: none;
+    .date-item,
+    .calendar-event {
+      &:disabled,
+      &.disabled {
+        cursor: default;
+        opacity: .25;
+        pointer-events: none;
+      }
+    }
+
+    &.prev-month,
+    &.next-month {
+      .date-item,
+      .calendar-event {
+        opacity: .25;
+      }
     }
   }
 
@@ -132,11 +141,21 @@
       }
     }
 
+    &.range-start,
+    &.range-end {
+      .date-item {
+        background: $primary-color-dark;
+        border-color: darken($primary-color-dark, 5%);
+        color: $light-color;
+      }
+    }
+
     .date-item {
       color: $primary-color;
     }
   }
 
+  // Calendars size
   &.calendar-lg {
     .calendar-body {
       padding: 0;

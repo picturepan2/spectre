@@ -37,4 +37,8 @@ a {
     color: $link-color-dark;
     text-decoration: underline;
   }
+
+  &:visited {
+    color: $link-color-light;
+  }
 }

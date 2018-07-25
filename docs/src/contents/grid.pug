@@ -1,0 +1,171 @@
+p
+  | Layout includes flexbox based responsive grid system with 12 columns.
+
+.docs-demo.columns
+  .column
+    .bg-primary.text-secondary.docs-block
+  .column
+    .bg-primary.text-secondary.docs-block
+  .column
+    .bg-primary.text-secondary.docs-block
+  .column
+    .bg-primary.text-secondary.docs-block
+  .column
+    .bg-primary.text-secondary.docs-block
+  .column
+    .bg-primary.text-secondary.docs-block
+  .column
+    .bg-primary.text-secondary.docs-block
+  .column
+    .bg-primary.text-secondary.docs-block
+  .column
+    .bg-primary.text-secondary.docs-block
+  .column
+    .bg-primary.text-secondary.docs-block
+  .column
+    .bg-primary.text-secondary.docs-block
+  .column
+    .bg-primary.text-secondary.docs-block
+.columns
+  .column.col-12
+    .bg-gray.docs-block col-12 (100%)
+.columns
+  .column.col-9
+    .bg-gray.docs-block col-9 (75%)
+.columns
+  .column.col-6
+    .bg-gray.docs-block col-6 (50%)
+.columns
+  .column.col-3
+    .bg-gray.docs-block col-3 (25%)
+
+pre.code(data-lang='HTML')
+  code
+    :highlight(lang="html")
+      <!-- flexbox grid example -->
+      <div class="container">
+        <div class="columns">
+          <div class="column col-6">col-6</div>
+          <div class="column col-3">col-3</div>
+          <div class="column col-2">col-2</div>
+          <div class="column col-1">col-1</div>
+        </div>
+      </div>
+
+p
+  | Add the #[code columns] class to a container with the #[code container] class. 
+  | And add any element you want with the #[code column] class inside the container. These columns will take up the space equally.
+  | You can specific the width of each column by adding class #[code col-<1-12>].
+p
+  | And you can add the #[code col-gapless] class to the #[code columns] to have gapless columns.
+
+.docs-demo.columns.col-gapless
+  .column.col-6
+    .bg-gray.docs-block col-6 (gapless)
+  .column.col-6
+    .bg-gray.docs-block col-6 (gapless)
+
+pre.code(data-lang='HTML')
+  code
+    :highlight(lang="html")
+      <!-- gapless columns -->
+      <div class="columns col-gapless">
+        <div class="column col-6">col-6</div>
+        <div class="column col-6">col-6</div>
+      </div>
+
+p
+  | By default, Spectre grid has multi-line flexbox enabled. You can add the #[code col-oneline] class to #[code columns] to make all its child columns positioned in the same single row.
+
+.docs-demo.columns.col-oneline
+  .column.col-8
+    .bg-gray.docs-block col-8
+  .column.col-8
+    .bg-gray.docs-block col-8
+
+pre.code(data-lang='HTML')
+  code
+    :highlight(lang="html")
+      <!-- one line columns -->
+      <div class="columns col-oneline">
+        <div class="column col-8">col-8</div>
+        <div class="column col-8">col-8</div>
+      </div>
+
++docs-subheading('grid-offset', 'Grid offset')
+
+p
+  | The Flexbox grid provides margin auto utilities to set offset. 
+  | There are #[code col-mx-auto], #[code col-ml-auto] and #[code col-mr-auto] to set margins between columns without using empty columns.
+
+.columns
+  .column.col-2
+    .bg-gray.docs-block col-2
+  .column.col-4.col-mx-auto
+    .bg-gray.docs-block col-4 col-mx-auto
+.columns
+  .column.col-2
+    .bg-gray.docs-block col-2
+  .column.col-4.col-ml-auto
+    .bg-gray.docs-block col-4 col-ml-auto
+.columns
+  .column.col-4.col-ml-auto
+    .bg-gray.docs-block col-4 col-ml-auto
+  .column.col-2
+    .bg-gray.docs-block col-2
+.columns
+  .column.col-4.col-mx-auto
+    .bg-gray.docs-block col-4 col-mx-auto
+  .column.col-2
+    .bg-gray.docs-block col-2
+.columns
+  .column.col-4.col-mr-auto
+    .bg-gray.docs-block col-4 col-mr-auto
+  .column.col-2
+    .bg-gray.docs-block col-2
+.columns
+  .column.col-4.col-mx-auto
+    .bg-gray.docs-block col-4 col-mx-auto
+
+pre.code(data-lang='HTML')
+  code
+    :highlight(lang="html")
+      <!-- grid offset example -->
+      <div class="container">
+        <div class="columns">
+          <div class="column col-4 col-mr-auto">col-4 col-mr-auto</div>
+          <div class="column col-2">col-2</div>
+        </div>
+      </div>
+
++docs-subheading('grid-nesting', 'Grid nesting')
+
+p
+  | To nest grids, add the new #[code columns] and #[code column] structure within an existing column.
+
+.docs-demo.columns
+  .column.col-6
+    .bg-gray.docs-block col-6
+    .columns
+      .column.col-6
+        .bg-primary.docs-block col-6
+      .column.col-6
+        .bg-primary.docs-block col-6
+  .column.col-6
+    .bg-gray.docs-block col-6
+
+pre.code(data-lang='HTML')
+  code
+    :highlight(lang="html")
+      <!-- grid nesting example -->
+      <div class="container">
+        <div class="columns">
+          <div class="column col-6">col-6
+            <div class="columns">
+              <div class="column col-6">col-6</div>
+              <div class="column col-6">col-6</div>
+            </div>
+          </div>
+          <div class="column col-6">col-6</div>
+        </div>
+      </div>

@@ -1,5 +1,25 @@
 ## Spectre.css Changelog
 
+### [v0.5.3](https://github.com/picturepan2/spectre/releases/tag/v0.5.3)
+
+- Add dark text color to utilities
+- Add error state to the indeterminate checkbox
+- Add inline forms
+- Add more code examples
+- Fix errors in the Docs
+
+### [v0.5.2](https://github.com/picturepan2/spectre/releases/tag/v0.5.2)
+
+- IMPORTANT:  Move Docs to Pug templates
+- Add more Docs examples
+- Add visited link style
+- Add 100% modal height class #391
+- Fix off-canvas-overlay bug #392
+- Fix margin and padding values #431
+- Fix Accordion example #438
+- Fix a bug of input addons width on mobile devices #449
+- Separate Simplified Chinese (zh/zh-Hans) from Traditional (zh-Hant)
+
 ### [v0.5.1](https://github.com/picturepan2/spectre/releases/tag/v0.5.1)
 
 IMPORTANT: Move Autocomplete to the Experimentals

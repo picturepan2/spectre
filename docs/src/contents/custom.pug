@@ -1,0 +1,287 @@
+p
+  | You can customize your version of Spectre.css by editing Sass files in 
+  code /src
+  |  directory or removing unneeded components from 
+  code .scss
+  |  source files.
+p
+  a.btn.btn-primary(href='https://github.com/picturepan2/spectre/', target='_blank') Sass Source Code
+p
+  | If you are looking for Less version of Spectre.css, please switch to 
+  code Less
+  |  branch.
+p
+  a.btn(href='https://github.com/picturepan2/spectre/tree/less', target='_blank') Less Branch
+
++docs-subheading('compiling', 'Compiling CSS')
+
+p
+  | Spectre uses 
+  a(href='http://gulpjs.com/', target='_blank') Gulp
+  |  for compiling CSS. Firstly you need to 
+  a(href='https://www.npmjs.com/get-npm', target='_blank') install NPM
+  | , which is used to manage Gulp and other dependencies.
+p Then, you can build the CSS file from the command line:
+ol
+  li Navigate to the root directory of Spectre.
+  li
+    | Run 
+    code npm install
+    | . NPM will install all dev dependencies as listed in package.json.
+  li
+    | When completed, run 
+    code gulp build
+    |  task to compile Sass to CSS and minify files.
+  li
+    | You can find compiled CSS files in 
+    code /dist
+    |  directory.
+p All available Gulp tasks:
+ul
+  li
+    code gulp build
+    |  - compile Sass to CSS and minify files (default)
+  li
+    code gulp docs
+    |  - compile Docs related files
+  li
+    code gulp watch
+    |  - watch file changes and re-compile CSS files
+
++docs-subheading('importing', 'Importing Sass')
+p
+  | It is recommended to customize Spectre by importing Sass source files to your projects. In this way, you can keep Spectre up to date without conflicts, since Spectre code and your custom code are separate.
+ul
+  li
+    | First, create your own project and install Spectre via 
+    a(href='#installation') NPM or other package managers
+    | .
+  li
+    | Then create your 
+    code project-name.scss
+    |  file in the root folder. You can use 
+    code project-name.scss
+    |  to define your variables.
+  li Compile the Sass file to CSS to get the custom version of Spectre.
+
+//- importing
+pre.code(data-lang='Sass')
+  code
+    :highlight(lang="scss")
+      // Example of project-name.scss
+      // Define variables to override default ones
+      $primary-color: #2e5bec;
+      $dark-color: #3e396b;
+
+      // Import full Spectre source code
+      @import "node_modules/spectre.css/src/spectre";
+
+p
+  | Alternatively, you can create custom 
+  code _variables.scss
+  |  and import it to 
+  code project-name.scss
+  | .
+
+//- custom variables
+pre.code(data-lang='Sass')
+  code
+    :highlight(lang="scss")
+      // Example of project-name.scss
+      @import "variables";
+
+      // Import only the needed components
+      @import "node_modules/spectre.css/src/buttons";
+      @import "node_modules/spectre.css/src/forms";
+
++docs-subheading('folders', 'Folder structure')
+
+//- folder structure
+pre.code
+  code
+    :highlight
+      spectre/
+      ├── dist/                           // Build folder
+      │   ├── spectre-exp.css
+      │   ├── spectre-exp.min.css
+      │   ├── spectre-icons.css
+      │   ├── spectre-icons.min.css
+      │   ├── spectre.css
+      │   └── spectre.min.css
+      │
+      ├── docs/
+      │   ├── dist/                       // Pre-built CSS folder
+      │   │   ├── spectre-exp.css
+      │   │   ├── spectre-exp.min.css
+      │   │   ├── spectre-icons.css
+      │   │   ├── spectre-icons.min.css
+      │   │   ├── spectre.css
+      │   │   └── spectre.min.css
+      |   ├── css/                        // Docs CSS files
+      │   │   └── docs.css
+      |   ├── src/
+      │   │   ├── scss                    // Docs Sass files
+      │   │   │   └── docs.scss
+      │   │   ├── index.pug               // Docs Pug files
+      │   │   └── ...
+      │   ├── examples/                   // Example tempalte
+      │   │   └── starter.html
+      │   ├── ../
+      │   ├── index.html
+      │   └── ...
+      │
+      ├── src/                            // Source Sass files
+      │   ├── spectre.scss
+      │   ├── spectre-icons.scss
+      │   ├── spectre-exp.scss
+      │   ├── _mixins.scss
+      │   ├── _variables.scss
+      │   └── ...
+      │
+      ├── gulpfile.js
+      ├── package.json
+      └── ...
+
++docs-subheading('variables', 'Variables')
+
+p
+  | Spectre.css is designed with consistent design language. You can use your own variables to create your new or match existing design. All variables in 
+  code _variables.scss
+  |  include 
+  code !default
+  |  flag. You can redefine the variables to override the values.
+
++docs-subheading('variables-colors', 'Variables - Colors')
+
+.columns
+  .column.col-3.col-md-6
+    .docs-color(style='background:#5755d9;color:#fff;')
+      .color-title #5755d9
+      .color-subtitle Primary
+  .column.col-3.col-md-6
+    .docs-color(style='background:#f1f1fc;color:#5755d9;')
+      .color-title #f1f1fc
+      .color-subtitle Secondary
+.columns
+  .column.col-3.col-md-6
+    .docs-color(style='background:#32b643;color:#fff;')
+      .color-title #32b643
+      .color-subtitle Success
+  .column.col-3.col-md-6
+    .docs-color(style='background:#ffb700;color:#fff;')
+      .color-title #ffb700
+      .color-subtitle Warning
+  .column.col-3.col-md-6
+    .docs-color(style='background:#e85600;color:#fff;')
+      .color-title #e85600
+      .color-subtitle Error
+.columns
+  .column.col-3.col-md-6
+    .docs-color(style='background:#454d5d;color:#fff;')
+      .color-title #454d5d
+      .color-subtitle Dark
+  .column.col-3.col-md-6
+    .docs-color(style='background:#727e96;color:#fff;')
+      .color-title #727e96
+      .color-subtitle Gray dark
+  .column.col-3.col-md-6
+    .docs-color(style='background:#acb3c2;color:#fff;')
+      .color-title #acb3c2
+      .color-subtitle Gray
+  .column.col-3.col-md-6
+    .docs-color(style='background:#e7e9ed;color:#727e96;')
+      .color-title #e7e9ed
+      .color-subtitle Gray light
+  .column.col-3.col-md-6
+    .docs-color(style='background:#f0f1f4;color:#727e96;')
+      .color-title #f0f1f4
+      .color-subtitle Border
+  .column.col-3.col-md-6
+    .docs-color(style='background:#f8f9fa;color:#727e96;')
+      .color-title #f8f9fa
+      .color-subtitle Background
+  .column.col-3.col-md-6
+    .docs-color(style='background:#fff;color:#727e96;')
+      .color-title #fff
+      .color-subtitle Light
+
++docs-subheading('variables-buttons', 'Variables - Button mixins')
+
+p
+  | There are 2 button variant mixins in 
+  code _mixins.scss
+  |  to generate different color variants.
+ul
+  li
+    | @mixin button-variant(
+    code $color
+    | : $primary-color);
+  li
+    | @mixin button-outline-variant(
+    code $color
+    | : $primary-color);
+
+//- button mixins
+pre.code(data-lang='Sass')
+  code
+    :highlight(lang="scss")
+      <!-- filled button with the success color -->
+      .btn-success {
+        @include button-variant($success-color);
+      }
+
+      <!-- outlined button with the success color -->
+      .btn-outline-success {
+        @include button-outline-variant($success-color);
+      }
+
++docs-subheading('variables-sizes', 'Variables - Sizes')
+
+p
+  | The default REM (root em) size in Spectre.css is 
+  code 20px
+  | .
+p
+  | Please note in the Chinese/Japanese/Korean version, Chrome uses 12px as default minimum font size. That is why Spectre sets rem default html font size to 
+  code 20px
+  | , which is relatively easy to calculate.
+p
+  | Spectre uses 
+  code 4px
+  |  as the unit size. Sizes of components are based on the unit size.
+
++docs-subheading('variables-custom-prefix', 'Variables - Custom prefix')
+p
+  | There is also a way to add custom prefix to all CSS classes. You can use 
+  a(href='https://www.npmjs.com/package/gulp-css-prefix', target='_blank') gulp-css-prefix
+  |  plugin and add a new Gulp task to enable it.
+
+//- custom prefix
+pre.code(data-lang='Bash')
+  code
+    :highlight(lang="Bash")
+      npm install gulp-css-prefix
+
+p
+  | To add 
+  code spectre-
+  |  to all classes, you can add the Gulp task to 
+  code gulpfile.js
+  |  file.
+
+//- custom prefix
+pre.code
+  code
+    :highlight(lang="JavaScript")
+      var cssPrefix = require('gulp-css-prefix');
+  
+      gulp.task('prefix', function() {
+        gulp.src('./dist/*.css')
+            .pipe(cssPrefix('spectre-'))
+            .pipe(gulp.dest('./dist'))
+      });
+
+p
+  | After you compile your version of Spectre in the /dist, run 
+  code gulp prefix
+  |  in the directory of Spectre.

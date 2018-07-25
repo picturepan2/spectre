@@ -1,65 +1,65 @@
 // Margin utility mixin
 @mixin margin-variant($id: 1, $size: $unit-1) {
   .m-#{$id} {
-    margin: $size;
+    margin: $size !important;
   }
 
   .mb-#{$id} {
-    margin-bottom: $size;
+    margin-bottom: $size !important;
   }
 
   .ml-#{$id} {
-    margin-left: $size;
+    margin-left: $size !important;
   }
 
   .mr-#{$id} {
-    margin-right: $size;
+    margin-right: $size !important;
   }
 
   .mt-#{$id} {
-    margin-top: $size;
+    margin-top: $size !important;
   }
 
   .mx-#{$id} {
-    margin-left: $size;
-    margin-right: $size;
+    margin-left: $size !important;
+    margin-right: $size !important;
   }
 
   .my-#{$id} {
-    margin-bottom: $size;
-    margin-top: $size;
+    margin-bottom: $size !important;
+    margin-top: $size !important;
   }
 }
 
 // Padding utility mixin
 @mixin padding-variant($id: 1, $size: $unit-1) {
   .p-#{$id} {
-    padding: $size;
+    padding: $size !important;
   }
 
   .pb-#{$id} {
-    padding-bottom: $size;
+    padding-bottom: $size !important;
   }
 
   .pl-#{$id} {
-    padding-left: $size;
+    padding-left: $size !important;
   }
 
   .pr-#{$id} {
-    padding-right: $size;
+    padding-right: $size !important;
   }
 
   .pt-#{$id} {
-    padding-top: $size;
+    padding-top: $size !important;
   }
 
   .px-#{$id} {
-    padding-left: $size;
-    padding-right: $size;
+    padding-left: $size !important;
+    padding-right: $size !important;
   }
   
   .py-#{$id} {
-    padding-bottom: $size;
-    padding-top: $size;
+    padding-bottom: $size !important;
+    padding-top: $size !important;
   }
 }

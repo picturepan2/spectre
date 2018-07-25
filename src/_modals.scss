@@ -31,8 +31,6 @@
 
     .modal-container {
       animation: slide-down .2s ease 1;
-      max-width: $control-width-md;
-      width: 100%;
       z-index: $zindex-0;
     }
   }
@@ -60,15 +58,23 @@
   @include shadow-variant(.2rem);
   background: $bg-color-light;
   border-radius: $border-radius;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  max-height: 75vh;
+  max-width: $control-width-md;
   padding: 0 $unit-4;
+  width: 100%;
+
+  &.modal-fullheight {
+    max-height: 100vh;
+  }
 
   .modal-header {
+    color: $dark-color;
     padding: $unit-4;
   }
 
   .modal-body {
-    max-height: 50vh;
     overflow-y: auto;
     padding: $unit-4;
     position: relative;

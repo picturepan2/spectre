@@ -1,5 +1,5 @@
 // Core variables
-$version: "0.5.1";
+$version: "0.5.3";
 
 // Core features
 $rtl: false !default;
@@ -31,19 +31,21 @@ $warning-color: #ffb700 !default;
 $error-color: #e85600 !default;
 
 // Other colors
-$code-color: #e06870 !default;
+$code-color: #d73e48 !default;
 $highlight-color: #ffe9b3 !default;
 $body-bg: $bg-color-light !default;
 $body-font-color: lighten($dark-color, 5%) !default;
 $link-color: $primary-color !default;
-$link-color-dark: darken($link-color, 5%) !default;
+$link-color-dark: darken($link-color, 10%) !default;
+$link-color-light: lighten($link-color, 10%) !default;
 
 // Fonts
 // Credit: https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/
 $base-font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto !default;
 $mono-font-family: "SF Mono", "Segoe UI Mono", "Roboto Mono", Menlo, Courier, monospace !default;
 $fallback-font-family: "Helvetica Neue", sans-serif !default;
-$cjk-zh-font-family: $base-font-family, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", $fallback-font-family !default;
+$cjk-zh-hans-font-family: $base-font-family, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", $fallback-font-family !default;
+$cjk-zh-hant-font-family: $base-font-family, "PingFang TC", "Hiragino Sans CNS", "Microsoft JhengHei", $fallback-font-family !default;
 $cjk-jp-font-family: $base-font-family, "Hiragino Sans", "Hiragino Kaku Gothic Pro", "Yu Gothic", YuGothic, Meiryo, $fallback-font-family !default;
 $cjk-ko-font-family: $base-font-family, "Malgun Gothic", $fallback-font-family !default;
 $body-font-family: $base-font-family, $fallback-font-family !default;
@@ -70,7 +72,7 @@ $html-line-height: 1.5 !default;
 $font-size: .8rem !default;
 $font-size-sm: .7rem !default;
 $font-size-lg: .9rem !default;
-$line-height: 1rem !default;
+$line-height: 1.2rem !default;
 
 // Sizes
 $layout-spacing: $unit-2 !default;

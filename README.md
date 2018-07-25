@@ -52,7 +52,7 @@ You can compile your custom version of Spectre.css. Read [the documentation](htt
 - [Forms](https://picturepan2.github.io/spectre/elements.html#forms)
 - [Icons](https://picturepan2.github.io/spectre/elements.html#icons) - CSS only
 - [Labels](https://picturepan2.github.io/spectre/elements.html#labels)
-- [Codes](https://picturepan2.github.io/spectre/elements.html#codes)
+- [Code](https://picturepan2.github.io/spectre/elements.html#code)
 - [Media](https://picturepan2.github.io/spectre/elements.html#media)
 
 ### Layout
@@ -69,8 +69,8 @@ You can compile your custom version of Spectre.css. Read [the documentation](htt
 - [Cards](https://picturepan2.github.io/spectre/components.html#cards)
 - [Chips](https://picturepan2.github.io/spectre/components.html#chips)
 - [Empty states](https://picturepan2.github.io/spectre/components.html#empty)
-- [Menus](https://picturepan2.github.io/spectre/components.html#menus)
-- [Navs](https://picturepan2.github.io/spectre/components.html#navs)
+- [Menu](https://picturepan2.github.io/spectre/components.html#menu)
+- [Nav](https://picturepan2.github.io/spectre/components.html#nav)
 - [Modals](https://picturepan2.github.io/spectre/components.html#modals)
 - [Pagination](https://picturepan2.github.io/spectre/components.html#pagination)
 - [Panels](https://picturepan2.github.io/spectre/components.html#panels)
