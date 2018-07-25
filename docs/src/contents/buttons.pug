@@ -23,10 +23,12 @@ pre.code(data-lang='HTML')
   .column.col-12
     button.btn.btn-success success button
     button.btn.btn-error error button
+    button.btn.btn-warning warning button
 
 p
-  | Add the #[code btn-success] or #[code btn-error] class for success (green) or error (red) button color.
-  | If you need more button colors, please use 
+  | There are a few color variations for buttons, use #[code btn-success], #[code btn-error],
+  | and #[code btn-warning] for green, red and yellow buttons, respectively.
+  | If you need more button colors, please use
   a(href="getting-started.html#variables-buttons") button mixins
   |  to create your own button color variants.
 
@@ -35,29 +37,49 @@ pre.code(data-lang='HTML')
     :highlight(lang="html")
       <button class="btn btn-success">success button</button>
       <button class="btn btn-error">error button</button>
+      <button class="btn btn-warning">warning button</button>
+
++docs-subheading('button-variants','Button variants')
+
+.docs-demo.columns
+  .column.col-12
+    button.btn.btn-success.btn-outline success button
+    button.btn.btn-error.btn-outline error button
+    button.btn.btn-warning.btn-outline warning button
+
+p
+  | In addition to button colors you can also use the class #[code btn-outline]
+  | as an additional modifier to give you an outline-only, colored button.
+
+pre.code(data-lang='HTML')
+  code
+    :highlight(lang="html")
+      <button class="btn btn-success btn-outline">success button</button>
+      <button class="btn btn-error btn-outline">error button</button>
+      <button class="btn btn-warning btn-outline">warning button</button>
 
 +docs-subheading('buttons-sizes', 'Button sizes')
 
 .docs-demo.columns
   .column.col-12
     button.btn.btn-primary.btn-lg
-      | large 
+      | large
       i.icon.icon-arrow-down
     button.btn.btn-primary.btn-lg large button
   .column.col-12
     button.btn.btn-primary
-      | normal 
+      | normal
       i.icon.icon-arrow-down
     button.btn.btn-primary normal button
   .column.col-12
     button.btn.btn-primary.btn-sm
-      | small 
+      | small
       i.icon.icon-arrow-down
     button.btn.btn-primary.btn-sm small button
 
 
 p
-  | Add the #[code btn-sm] or #[code btn-lg] class for small or large button size. 
+  | Add the #[code btn-sm] or #[code btn-lg] class for small or large button size.
   | Also, you can add the #[code btn-block] class for a full-width button.
 
 pre.code(data-lang='HTML')
@@ -125,12 +147,15 @@ pre.code(data-lang='HTML')
       <button class="btn" disabled tabindex="-1">disabled button</button>
 
 p
-  | A button with the #[code loading] class can show loading indicator.
+  | A button with the #[code loading] class will not receive pointer-events and will display the loading
+  | indicator.
 
 .docs-demo.columns
   .column.col-12
     button.btn.loading default button
     button.btn.btn-primary.loading primary button
+    button.btn.btn-error.loading error button
+    button.btn.btn-success.loading.btn-outline success button
     button.btn.btn-link.loading link button
 
 pre.code(data-lang='HTML')
@@ -139,6 +164,9 @@ pre.code(data-lang='HTML')
       <!-- buttons with loading state -->
       <button class="btn loading">button</button>
       <button class="btn btn-primary loading">primary button</button>
+      <button class="btn btn-error loading">error button</button>
+      <button class="btn btn-success btn-outline loading">success button</button>
+      <button class="btn btn-link loading">link button</button>
 
 +docs-subheading('buttons-groups', 'Button groups')
 
