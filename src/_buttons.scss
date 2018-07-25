@@ -76,26 +76,10 @@
   // Button Colors
   &.btn-success {
     @include button-variant($success-color);
-
-    &.btn-outline {
-      @include button-outline-variant($success-color);
-    }
   }
 
   &.btn-error {
     @include button-variant($error-color);
-
-    &.btn-outline {
-      @include button-outline-variant($error-color);
-    }
-  }
-
-  &.btn-warning {
-    @include button-variant($warning-color);
-
-    &.btn-outline {
-      @include button-outline-variant($warning-color);
-    }
   }
 
   // Button Link
