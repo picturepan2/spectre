@@ -122,7 +122,7 @@ textarea.form-input {
   &[size],
   &[multiple] {
     height: auto;
-    
+
     option {
       padding: $unit-h $unit-1;
     }
@@ -253,7 +253,7 @@ textarea.form-input {
 .form-radio {
   .form-icon {
     background: $bg-color-light;
-    height: $control-icon-size;    
+    height: $control-icon-size;
     top: ($control-size-sm - $control-icon-size) / 2;
     width: $control-icon-size;
 
@@ -420,7 +420,7 @@ textarea.form-input {
   .input-group-addon,
   .input-group-btn {
     &:first-child:not(:last-child) {
-      
+
       @if $rtl == true {
         border-bottom-left-radius: 0;
         border-top-left-radius: 0;
@@ -438,10 +438,10 @@ textarea.form-input {
       } @else {
         margin-left: -$border-width;
       }
-      
+
     }
     &:last-child:not(:first-child) {
-      
+
       @if $rtl == true {
         border-bottom-right-radius: 0;
         border-top-right-radius: 0;
@@ -495,7 +495,7 @@ textarea.form-input {
     .form-icon {
       border-color: $error-color;
     }
-    
+
     input {
       &:checked + .form-icon {
         background: $error-color;

@@ -26,13 +26,13 @@
 
     .timeline-content {
       flex: 1 1 auto;
-      
+
       @if $rtl == true {
         padding: 2px $layout-spacing-lg 2px 0;
       } @else {
         padding: 2px 0 2px $layout-spacing-lg;
       }
-      
+
     }
 
     .timeline-icon {

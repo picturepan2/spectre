@@ -30,7 +30,7 @@
 
     &.tab-action {
       flex: 1 0 auto;
-      
+
       @if $rtl == true {
         text-align: left;
       } @else {
@@ -55,7 +55,7 @@
 
       .badge {
         &[data-badge]::after {
-          position: absolute;          
+          position: absolute;
           top: $unit-h;
           transform: translate(0, 0);
 
@@ -64,7 +64,7 @@
           } @else {
             right: $unit-h;
           }
-          
+
         }
       }
     }

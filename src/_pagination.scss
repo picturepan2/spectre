@@ -45,7 +45,7 @@
       flex: 1 0 50%;
     }
 
-    &.page-next {      
+    &.page-next {
       @if $rtl == true {
         text-align: left;
       } @else {

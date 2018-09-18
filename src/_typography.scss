@@ -94,9 +94,9 @@ blockquote {
 
 // Lists
 ul,
-ol {  
+ol {
   padding: 0;
-  
+
   @if $rtl == true {
     margin: $unit-4 $unit-4 $unit-4 0;
   } @else {
@@ -104,7 +104,7 @@ ol {
   }
 
   ul,
-  ol {   
+  ol {
     @if $rtl == true {
       margin: $unit-4 $unit-4 $unit-4 0;
     } @else {
