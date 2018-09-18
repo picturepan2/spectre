@@ -25,13 +25,27 @@
     width: 0;
 
     &:first-child {
-      border-bottom-left-radius: $border-radius;
-      border-top-left-radius: $border-radius;
+      
+      @if $rtl == true {
+        border-bottom-right-radius: $border-radius;
+        border-top-right-radius: $border-radius;
+      } @else {
+        border-bottom-left-radius: $border-radius;
+        border-top-left-radius: $border-radius;
+      }
+      
     }
     &:last-child {
-      border-bottom-right-radius: $border-radius;
-      border-top-right-radius: $border-radius;
       flex-shrink: 1;
+
+      @if $rtl == true {
+        border-bottom-left-radius: $border-radius;
+        border-top-left-radius: $border-radius;
+      } @else {
+        border-bottom-right-radius: $border-radius;
+        border-top-right-radius: $border-radius;
+      }
+
     }
   }
 }

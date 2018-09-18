@@ -22,7 +22,11 @@
       &::before {
         color: $gray-color-light;
         content: "/";
-        padding-right: $unit-2;
+        @if $rtl == true {
+          padding-left: $unit-2;
+        } @else {
+          padding-right: $unit-2;
+        }
       }
     }
   }

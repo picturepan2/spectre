@@ -3,8 +3,12 @@
   input:checked ~,
   &[open] {
     & .accordion-header {
-      .icon {
-        transform: rotate(90deg);
+      .icon {        
+        @if $rtl == true {
+          transform: rotate(-90deg);
+        } @else {
+          transform: rotate(90deg);
+        }
       }
     }
 

@@ -11,10 +11,22 @@
   .tile-content {
     flex: 1 1 auto;
     &:not(:first-child) {
-      padding-left: $unit-2;
+      
+      @if $rtl == true {
+        padding-right: $unit-2;
+      } @else {
+        padding-left: $unit-2;
+      }
+      
     }
     &:not(:last-child) {
-      padding-right: $unit-2;
+
+      @if $rtl == true {
+        padding-left: $unit-2;
+      } @else {
+        padding-right: $unit-2;
+      }
+
     }
   }
   .tile-title,

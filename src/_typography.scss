@@ -77,9 +77,15 @@ mark {
 
 // Blockquote
 blockquote {
-  border-left: $border-width-lg solid $border-color;
-  margin-left: 0;
   padding: $unit-2 $unit-4;
+
+  @if $rtl == true {
+    border-right: $border-width-lg solid $border-color;
+    margin-right: 0;
+  } @else {
+    border-left: $border-width-lg solid $border-color;
+    margin-left: 0;
+  }
 
   p:last-child {
     margin-bottom: 0;
@@ -88,13 +94,22 @@ blockquote {
 
 // Lists
 ul,
-ol {
-  margin: $unit-4 0 $unit-4 $unit-4;
+ol {  
   padding: 0;
+  
+  @if $rtl == true {
+    margin: $unit-4 $unit-4 $unit-4 0;
+  } @else {
+    margin: $unit-4 0 $unit-4 $unit-4;
+  }
 
   ul,
-  ol {
-    margin: $unit-4 0 $unit-4 $unit-4;
+  ol {   
+    @if $rtl == true {
+      margin: $unit-4 $unit-4 $unit-4 0;
+    } @else {
+      margin: $unit-4 0 $unit-4 $unit-4;
+    }
   }
 
   li {

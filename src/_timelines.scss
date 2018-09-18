@@ -8,10 +8,16 @@
       background: $border-color;
       content: "";
       height: 100%;
-      left: 11px;
       position: absolute;
       top: $unit-6;
       width: 2px;
+
+      @if $rtl == true {
+        right: 11px;
+      } @else {
+        left: 11px;
+      }
+
     }
 
     .timeline-left {
@@ -20,7 +26,13 @@
 
     .timeline-content {
       flex: 1 1 auto;
-      padding: 2px 0 2px $layout-spacing-lg;
+      
+      @if $rtl == true {
+        padding: 2px $layout-spacing-lg 2px 0;
+      } @else {
+        padding: 2px 0 2px $layout-spacing-lg;
+      }
+      
     }
 
     .timeline-icon {
