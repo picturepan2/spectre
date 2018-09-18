@@ -10,6 +10,10 @@ code {
   color: $body-font-color;
   position: relative;
 
+  @if $rtl == true {
+    direction: ltr;
+  }
+
   &::before {
     color: $gray-color;
     content: attr(data-lang);

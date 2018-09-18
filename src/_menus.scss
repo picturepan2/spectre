@@ -52,8 +52,13 @@
   }
 
   .menu-badge {
-    float: right;
     padding: $unit-1 0;
+
+    @if $rtl == true {
+      float: left;
+    } @else {
+      float: right;
+    }
 
     .btn {
       margin-top: -$unit-h;

@@ -45,8 +45,12 @@
       flex: 1 0 50%;
     }
 
-    &.page-next {
-      text-align: right;
+    &.page-next {      
+      @if $rtl == true {
+        text-align: left;
+      } @else {
+        text-align: right;
+      }
     }
 
     .page-item-title {

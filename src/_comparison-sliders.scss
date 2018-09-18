@@ -7,6 +7,10 @@
   width: 100%;
   -webkit-overflow-scrolling: touch;
 
+  @if $rtl == true {
+    direction: ltr;
+  }
+
   .comparison-before,
   .comparison-after {
     height: 100%;
