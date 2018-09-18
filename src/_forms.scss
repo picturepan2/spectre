@@ -122,14 +122,21 @@ textarea.form-input {
   &[size],
   &[multiple] {
     height: auto;
-    
+
     option {
       padding: $unit-h $unit-1;
     }
   }
   &:not([multiple]):not([size]) {
-    background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%204%205'%3E%3Cpath%20fill='%23667189'%20d='M2%200L0%202h4zm0%205L0%203h4z'/%3E%3C/svg%3E") no-repeat right .35rem center/.4rem .5rem;
-    padding-right: $control-icon-size + $control-padding-x;
+
+    @if $rtl == true {
+      background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%204%205'%3E%3Cpath%20fill='%23667189'%20d='M2%200L0%202h4zm0%205L0%203h4z'/%3E%3C/svg%3E") no-repeat left .35rem center/.4rem .5rem;
+      padding-left: $control-icon-size + $control-padding-x;
+    } @else {
+      background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%204%205'%3E%3Cpath%20fill='%23667189'%20d='M2%200L0%202h4zm0%205L0%203h4z'/%3E%3C/svg%3E") no-repeat right .35rem center/.4rem .5rem;
+      padding-right: $control-icon-size + $control-padding-x;
+    }
+
   }
   &:focus {
     @include control-shadow();
@@ -197,8 +204,13 @@ textarea.form-input {
   line-height: $line-height;
   margin: ($control-size - $control-size-sm) / 2 0;
   min-height: 1.2rem;
-  padding: (($control-size-sm - $line-height) / 2) $control-padding-x (($control-size-sm - $line-height) / 2) ($control-icon-size + $control-padding-x);
   position: relative;
+
+  @if $rtl == true {
+    padding: (($control-size-sm - $line-height) / 2) ($control-icon-size + $control-padding-x) (($control-size-sm - $line-height) / 2) $control-padding-x;
+  } @else {
+    padding: (($control-size-sm - $line-height) / 2) $control-padding-x (($control-size-sm - $line-height) / 2) ($control-icon-size + $control-padding-x);
+  }
 
   input {
     clip: rect(0, 0, 0, 0);
@@ -242,9 +254,14 @@ textarea.form-input {
   .form-icon {
     background: $bg-color-light;
     height: $control-icon-size;
-    left: 0;
     top: ($control-size-sm - $control-icon-size) / 2;
     width: $control-icon-size;
+
+    @if $rtl == true {
+      right: 0;
+    } @else {
+      left: 0;
+    }
   }
 
   input {
@@ -317,14 +334,17 @@ textarea.form-input {
 
 // Form element: Switch
 .form-switch {
-  padding-left: ($unit-8 + $control-padding-x);
+  @if $rtl == true {
+    padding-right: ($unit-8 + $control-padding-x);
+  } @else {
+    padding-left: ($unit-8 + $control-padding-x);
+  }
 
   .form-icon {
     background: $gray-color-light;
     background-clip: padding-box;
     border-radius: $unit-2 + $border-width;
     height: $unit-4 + $border-width * 2;
-    left: 0;
     top: ($control-size-sm - $unit-4) / 2 - $border-width;
     width: $unit-8;
     &::before {
@@ -339,6 +359,13 @@ textarea.form-input {
       top: 0;
       width: $unit-4;
     }
+
+    @if $rtl == true {
+      right: 0;
+    } @else {
+      left: 0;
+    }
+
   }
 
   input {
@@ -393,17 +420,38 @@ textarea.form-input {
   .input-group-addon,
   .input-group-btn {
     &:first-child:not(:last-child) {
-      border-bottom-right-radius: 0;
-      border-top-right-radius: 0;
+
+      @if $rtl == true {
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+      } @else {
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
+      }
+
     }
     &:not(:first-child):not(:last-child) {
       border-radius: 0;
-      margin-left: -$border-width;
+
+      @if $rtl == true {
+        margin-right: -$border-width;
+      } @else {
+        margin-left: -$border-width;
+      }
+
     }
     &:last-child:not(:first-child) {
-      border-bottom-left-radius: 0;
-      border-top-left-radius: 0;
-      margin-left: -$border-width;
+
+      @if $rtl == true {
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
+        margin-right: -$border-width;
+      } @else {
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+        margin-left: -$border-width;
+      }
+
     }
     &:focus {
       z-index: $zindex-0 + 1;
@@ -447,7 +495,7 @@ textarea.form-input {
     .form-icon {
       border-color: $error-color;
     }
-    
+
     input {
       &:checked + .form-icon {
         background: $error-color;

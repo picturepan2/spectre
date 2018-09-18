@@ -30,7 +30,13 @@
 
     &.tab-action {
       flex: 1 0 auto;
-      text-align: right;
+
+      @if $rtl == true {
+        text-align: left;
+      } @else {
+        text-align: right;
+      }
+
     }
 
     .btn-clear {
@@ -50,9 +56,15 @@
       .badge {
         &[data-badge]::after {
           position: absolute;
-          right: $unit-h;
           top: $unit-h;
           transform: translate(0, 0);
+
+          @if $rtl == true {
+            left: $unit-h;
+          } @else {
+            right: $unit-h;
+          }
+
         }
       }
     }

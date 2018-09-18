@@ -29,6 +29,12 @@
 
   & .nav {
     margin-bottom: $unit-2;
-    margin-left: $unit-4;
+
+    @if $rtl == true {
+      margin-right: $unit-4;
+    } @else {
+      margin-left: $unit-4;
+    }
+
   }
 }

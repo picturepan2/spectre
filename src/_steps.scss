@@ -17,10 +17,16 @@
       background: $primary-color;
       content: "";
       height: 2px;
-      left: -50%;
       position: absolute;
       top: 9px;
       width: 100%;
+
+      @if $rtl == true {
+        right: -50%;
+      } @else {
+        left: -50%;
+      }
+
     }
 
     a {

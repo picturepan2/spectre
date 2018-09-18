@@ -42,8 +42,14 @@
     &::after {
       position: absolute;
       top: 0;
-      right: 0;
-      transform: translate(50%, -50%);
+      
+      @if $rtl == true {
+        left: 0;
+        transform: translate(-50%, -50%);
+      } @else {
+        right: 0;
+        transform: translate(50%, -50%);
+      }
     }
   }
 

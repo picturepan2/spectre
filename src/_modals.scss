@@ -82,6 +82,11 @@
 
   .modal-footer {
     padding: $unit-4;
-    text-align: right;
+
+    @if $rtl == true {
+      text-align: left;
+    } @else {
+      text-align: right;
+    }
   }
 }
