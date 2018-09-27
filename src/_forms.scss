@@ -119,26 +119,6 @@ textarea.form-input {
   vertical-align: middle;
   width: 100%;
 
-  &[size],
-  &[multiple] {
-    height: auto;
-    
-    option {
-      padding: $unit-h $unit-1;
-    }
-  }
-  &:not([multiple]):not([size]) {
-    background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%204%205'%3E%3Cpath%20fill='%23667189'%20d='M2%200L0%202h4zm0%205L0%203h4z'/%3E%3C/svg%3E") no-repeat right .35rem center/.4rem .5rem;
-    padding-right: $control-icon-size + $control-padding-x;
-  }
-  &:focus {
-    @include control-shadow();
-    border-color: $primary-color;
-  }
-  &::-ms-expand {
-    display: none;
-  }
-
   // Select sizes
   &.select-sm {
     font-size: $font-size-sm;
@@ -150,6 +130,28 @@ textarea.form-input {
     font-size: $font-size-lg;
     height: $control-size-lg;
     padding: $control-padding-y-lg ($control-icon-size + $control-padding-x-lg) $control-padding-y-lg $control-padding-x-lg;
+  }
+
+  &:focus {
+    @include control-shadow();
+    border-color: $primary-color;
+  }
+  &::-ms-expand {
+    display: none;
+  }
+
+  // Multiple select
+  &[size],
+  &[multiple] {
+    height: auto;
+    
+    option {
+      padding: $unit-h $unit-1;
+    }
+  }
+  &:not([multiple]):not([size]) {
+    background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%204%205'%3E%3Cpath%20fill='%23667189'%20d='M2%200L0%202h4zm0%205L0%203h4z'/%3E%3C/svg%3E") no-repeat right .35rem center/.4rem .5rem;
+    padding-right: $control-icon-size + $control-padding-x;
   }
 }
 
