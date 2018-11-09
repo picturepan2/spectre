@@ -120,7 +120,7 @@
       z-index: $zindex-1 - 1;
 
       &::before {
-        background: $light-color;      
+        background: $light-color;
         bottom: 0;
         content: "";
         display: block;
@@ -319,7 +319,7 @@
 
 .docs-footer {
   color: $gray-color;
-  padding: .5rem .5rem 1.5rem .5rem;
+  padding: .5rem .5rem 1.5rem;
 
   a {
     color: $gray-color-dark;
@@ -380,7 +380,7 @@
 }
 
 .section-updates {
-  padding: 4.5rem .5rem 3.5rem .5rem;
+  padding: 4.5rem .5rem 3.5rem;
 
   .card {
     border: 0;
@@ -398,7 +398,7 @@
 
 .section-footer {
   color: $gray-color;
-  padding: 1.8rem .75rem 1rem .75rem;
+  padding: 1.8rem .75rem 1rem;
   position: relative;
   z-index: 200;
 
