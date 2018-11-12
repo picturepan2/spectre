@@ -90,7 +90,7 @@ You can compile your custom version of Spectre.css. Read [the documentation](htt
 - [Calendars](https://picturepan2.github.io/spectre/experimentals/calendars.html)
 - [Carousels](https://picturepan2.github.io/spectre/experimentals/carousels.html) - CSS only
 - [Comparison Sliders](https://picturepan2.github.io/spectre/experimentals/comparison.html) - CSS only
-- [Filters](https://picturepan2.github.io/spectre/experimentals/carousels.html) - CSS only
+- [Filters](https://picturepan2.github.io/spectre/experimentals/filters.html) - CSS only
 - [Meters](https://picturepan2.github.io/spectre/experimentals/meters.html)
 - [Off-canvas](https://picturepan2.github.io/spectre/experimentals/off-canvas.html) - CSS only
 - [Parallax](https://picturepan2.github.io/spectre/experimentals/parallax.html) - CSS only
