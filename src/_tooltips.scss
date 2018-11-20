@@ -76,4 +76,38 @@
       }
     }
   }
+
+  &[class*="tooltip-top-"] {
+    &::after {
+      transform: translate(0, -$unit-1);
+    }
+  }
+
+  &[class*="tooltip-bottom-"] {
+    &::after {
+      transform: translate(0, $unit-1);
+    }
+    &:focus,
+    &:hover {
+      &::after {
+        transform: translate(0, $unit-1);
+      }
+    }
+  }
+
+  &.tooltip-bottom-left,
+  &.tooltip-top-left {
+    &::after{
+      left: -$border-width;
+      right: auto;
+    }
+  }
+
+  &.tooltip-bottom-right,
+  &.tooltip-top-right {
+    &::after{
+      left: auto;
+      right: -$border-width;
+    }
+  }
 }
