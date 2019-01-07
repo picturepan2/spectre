@@ -23,8 +23,8 @@
 
   .avatar {
     @if ($rtl == true) {
-      margin-right: -$unit-2;
       margin-left: $unit-1;
+      margin-right: -$unit-2;
     } @else {
       margin-left: -$unit-2;
       margin-right: $unit-1;

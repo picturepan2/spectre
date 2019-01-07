@@ -6,9 +6,9 @@ code {
 }
 
 .code {
-  direction: ltr;
   border-radius: $border-radius;
   color: $body-font-color;
+  direction: ltr;
   position: relative;
 
   &::before {

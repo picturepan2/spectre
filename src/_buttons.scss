@@ -137,8 +137,8 @@
     height: $unit-5;
     line-height: $unit-4;
     @if ($rtl == true) {
-      margin-right: $unit-1;
       margin-left: -2px;
+      margin-right: $unit-1;
     } @else {
       margin-left: $unit-1;
       margin-right: -2px;
