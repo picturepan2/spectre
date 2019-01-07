@@ -56,11 +56,19 @@
     display: flex;
     height: 100%;
     position: absolute;
-    right: 0;
+    @if ($rtl == true) {
+      left: 0;
+    } @else {
+      right: 0;
+    }
     top: 0;
 
     .label {
-      margin-right: $unit-2;
+      @if ($rtl == true) {
+        margin-left: $unit-2;
+      } @else {
+        margin-right: $unit-2;
+      }
     }
   }
 }

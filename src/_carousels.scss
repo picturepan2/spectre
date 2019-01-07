@@ -34,7 +34,11 @@ $carousel-number: 8;
     .carousel-item {
       animation: carousel-slideout 1s ease-in-out 1;
       height: 100%;
-      left: 0;
+      @if ($rtl == true) {
+        right: 0;
+      } @else {
+        left: 0;
+      }
       margin: 0;
       opacity: 0;
       position: absolute;

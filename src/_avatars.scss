@@ -39,7 +39,13 @@
     height: 50%;
     padding: $border-width-lg;
     position: absolute;
-    right: 14.64%;
+    @if $rtl == true {
+      left: 14.64%;
+      transform: translate(-50%, 50%);
+    } @else {
+      right: 14.64%;
+      transform: translate(50%, 50%);
+    }
     transform: translate(50%, 50%);
     width: 50%;
     z-index: $zindex-0 + 1;

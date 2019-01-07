@@ -43,7 +43,11 @@
   position: relative;
 
   .bar-item {
-    left: 0;
+    @if $rtl == true {
+      right: 0;
+    } @else {
+      left: 0;
+    }
     padding: 0;
     position: absolute;
     &:not(:last-child):first-child {
@@ -59,9 +63,14 @@
     height: $unit-3;
     padding: 0;
     position: absolute;
-    right: 0;
     top: 50%;
-    transform: translate(50%, -50%);
+    @if $rtl == true {
+      left: 0;
+      transform: translate(-50%, -50%);
+    } @else {
+      right: 0;
+      transform: translate(50%, -50%);
+    }
     width: $unit-3;
 
     &:active {

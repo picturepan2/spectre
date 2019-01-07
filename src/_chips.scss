@@ -22,8 +22,13 @@
   }
 
   .avatar {
-    margin-left: -$unit-2;
-    margin-right: $unit-1;
+    @if ($rtl == true) {
+      margin-right: -$unit-2;
+      margin-left: $unit-1;
+    } @else {
+      margin-left: -$unit-2;
+      margin-right: $unit-1;
+    }
   }
 
   .btn-clear {

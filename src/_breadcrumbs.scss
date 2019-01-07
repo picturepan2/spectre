@@ -11,7 +11,11 @@
     padding: $unit-1 0;
 
     &:not(:last-child) {
-      margin-right: $unit-1;
+      @if $rtl == true {
+        margin-left: $unit-1;
+      } @else {
+        margin-right: $unit-1;
+      }
 
       a {
         color: $gray-color-dark;
@@ -21,8 +25,13 @@
     &:not(:first-child) {
       &::before {
         color: $gray-color-dark;
-        content: "/";
-        padding-right: $unit-2;
+        @if $rtl == true {
+          content: "\\";
+          padding-left: $unit-2;
+        } @else {
+          content: "/";
+          padding-right: $unit-2;
+        }
       }
     }
   }

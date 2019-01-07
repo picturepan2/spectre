@@ -37,9 +37,17 @@
 
 @keyframes progress-indeterminate {
   0% {
-    background-position: 200% 0;
+    @if ($rtl == true) {
+      background-position: -200% 0;
+    } @else {
+      background-position: 200% 0;
+    }
   }
   100% {
-    background-position: -200% 0;
+    @if ($rtl == true) {
+      background-position: 200% 0;
+    } @else {
+      background-position: -200% 0;
+    }
   }
 }
