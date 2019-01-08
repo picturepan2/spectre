@@ -2224,7 +2224,7 @@ summary.accordion-header::-webkit-details-marker {
 }
 
 .breadcrumb .breadcrumb-item:not(:last-child) {
-  margin-left: .2rem;
+  margin-left: .4rem;
 }
 
 .breadcrumb .breadcrumb-item:not(:last-child) a {
