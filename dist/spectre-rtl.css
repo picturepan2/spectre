@@ -2809,8 +2809,8 @@ summary.accordion-header::-webkit-details-marker {
   background: #5755d9;
   content: "";
   height: 2px;
-  left: -50%;
   position: absolute;
+  right: -50%;
   top: 9px;
   width: 100%;
 }
