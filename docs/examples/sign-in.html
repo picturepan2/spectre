@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Starter Page Example -  Spectre.css CSS Framework</title>
+    <meta charset="utf-8">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="Spectre.css CSS Framework is a lightweight, responsive and modern CSS framework for faster and extensible development. Spectre provides basic styles for typography and elements, flexbox based responsive layout system, pure CSS components and utilities with best practice coding and consistent design language.">
+    <link rel="shortcut icon" href="../img/favicons/favicon.ico">
+    <link rel="icon" href="../img/favicons/favicon.png">
+    <link rel="stylesheet" href="../dist/spectre.min.css">
+    <link rel="stylesheet" href="../dist/spectre-icons.min.css">
+    <link rel="stylesheet" href="../dist/spectre-exp.min.css">
+    <link rel="stylesheet" href="../dist/docs.min.css">
+
+    <style>
+      #sign-in {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+      }
+
+      #sign-in .card {
+        width: 40%;
+        min-width: 320px;
+        max-width: 475px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container centered">
+      <div id="sign-in" class="text-center p-centered">
+        <div class="card">
+          <div class="card-header bg-primary">
+            <div class="card-title">
+              <h2>Login</h2>
+            </div>
+          </div>
+
+          <div class="card-body">
+            <form>
+              <div class="form-group text-left">
+                <label class="form-label" for="input-example-1">Email</label>
+                <input class="form-input" id="input-example-1" type="text" placeholder="Email">
+              </div>
+              <div class="form-group text-left">
+                <label class="form-label" for="input-example-2">Password</label>
+                <input class="form-input" id="input-example-2" type="password" placeholder="Password">
+              </div>
+              <div class="form-group text-left">
+                <label class="form-checkbox">
+                  <input type="checkbox"><i class="form-icon"></i> Remember me
+                </label>
+              </div>
+              <div class="form-group">
+                <button class="btn btn-primary btn-block">Sign in</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
