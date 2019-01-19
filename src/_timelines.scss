@@ -8,7 +8,11 @@
       background: $border-color;
       content: "";
       height: 100%;
-      left: 11px;
+      @if ($rtl == true) {
+        right: 11px;
+      } @else {
+        left: 11px;
+      }
       position: absolute;
       top: $unit-6;
       width: 2px;

@@ -92,8 +92,13 @@
         &::after {
           position: absolute;
           top: 3px;
-          right: 3px;
-          transform: translate(50%, -50%);
+          @if ($rtl == true) {
+            left: 3px;
+            transform: translate(-50%, -50%);
+          } @else {
+            right: 3px;
+            transform: translate(50%, -50%);
+          }
         }
       }
     }
@@ -132,12 +137,20 @@
     }
     &.range-start {
       &::before {
-        left: 50%;
+        @if ($rtl == true) {
+          right: 50%;
+        } @else {
+          left: 50%;
+        }
       }
     }
     &.range-end {
       &::before {
-        right: 50%;
+        @if ($rtl == true) {
+          left: 50%;
+        } @else {
+          right: 50%;
+        }
       }
     }
 

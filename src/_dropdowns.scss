@@ -6,7 +6,11 @@
   .menu {
     animation: slide-down .15s ease 1;
     display: none;
-    left: 0;
+    @if ($rtl == true) {
+      right: 0;
+    } @else {
+      left: 0;
+    }
     max-height: 50vh;
     overflow-y: auto;
     position: absolute;
@@ -29,8 +33,13 @@
   // Fix dropdown-toggle border radius in button groups
   .btn-group {
     .dropdown-toggle:nth-last-child(2) {
-      border-bottom-right-radius: $border-radius;
-      border-top-right-radius: $border-radius;
+      @if ($rtl == true) {
+        border-bottom-left-radius: $border-radius;
+        border-top-left-radius: $border-radius;
+      } @else {
+        border-bottom-right-radius: $border-radius;
+        border-top-right-radius: $border-radius;
+      }
     }
   }
 }

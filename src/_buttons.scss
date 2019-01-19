@@ -136,8 +136,13 @@
     color: currentColor;
     height: $unit-5;
     line-height: $unit-4;
-    margin-left: $unit-1;
-    margin-right: -2px;
+    @if ($rtl == true) {
+      margin-left: -2px;
+      margin-right: $unit-1;
+    } @else {
+      margin-left: $unit-1;
+      margin-right: -2px;
+    }
     opacity: 1;
     padding: $unit-h;
     text-decoration: none;
@@ -163,17 +168,33 @@
   .btn {
     flex: 1 0 auto;
     &:first-child:not(:last-child) {
-      border-bottom-right-radius: 0;
-      border-top-right-radius: 0;
+      @if ($rtl == true) {
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+      } @else {
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
+      }
+
     }
     &:not(:first-child):not(:last-child) {
       border-radius: 0;
-      margin-left: -$border-width;
+      @if ($rtl == true) {
+        margin-right: -$border-width;
+      } @else {
+        margin-left: -$border-width;
+      }
     }
     &:last-child:not(:first-child) {
-      border-bottom-left-radius: 0;
-      border-top-left-radius: 0;
-      margin-left: -$border-width;
+      @if ($rtl == true) {
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
+        margin-right: -$border-width;
+      } @else {
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+        margin-left: -$border-width;
+      }
     }
     &:focus,
     &:hover,

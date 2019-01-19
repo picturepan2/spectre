@@ -78,8 +78,13 @@ mark {
 
 // Blockquote
 blockquote {
-  border-left: $border-width-lg solid $border-color;
-  margin-left: 0;
+  @if ($rtl == true) {
+    border-right: $border-width-lg solid $border-color;
+    margin-right: 0;
+  } @else {
+    border-left: $border-width-lg solid $border-color;
+    margin-left: 0;
+  }
   padding: $unit-2 $unit-4;
 
   p:last-child {
@@ -95,7 +100,11 @@ ol {
 
   ul,
   ol {
-    margin: $unit-4 0 $unit-4 $unit-4;
+    @if ($rtl == true) {
+      margin: $unit-4 $unit-4 $unit-4 0;
+    } @else {
+      margin: $unit-4 0 $unit-4 $unit-4;
+    }
   }
 
   li {
