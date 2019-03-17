@@ -561,6 +561,7 @@ html:lang(ko),
   cursor: pointer;
   display: inline-block;
   font-size: .8rem;
+  font-weight: normal; 
   height: 1.8rem;
   line-height: 1.2rem;
   outline: none;
@@ -758,6 +759,24 @@ html:lang(ko),
 
 .btn.btn-clear::before {
   content: "\2715";
+}
+
+a.btn:visited,
+a.btn:hover {
+  color: #5755d9;
+}
+
+a.btn:active {
+  color: #fff;
+}
+
+a.btn.btn-primary:visited,
+a.btn.btn-primary:hover,
+a.btn.btn-error:visited,
+a.btn.btn-error:hover,
+a.btn.btn-success:visited,
+a.btn.btn-success:hover {
+  color: #fff;
 }
 
 .btn-group {
@@ -3391,6 +3410,7 @@ a.text-error:visited {
 
 .loading::after {
   animation: loading 500ms infinite linear;
+  background: transparent; 
   border: .1rem solid #5755d9;
   border-radius: 50%;
   border-right-color: transparent;
@@ -3401,6 +3421,8 @@ a.text-error:visited {
   left: 50%;
   margin-left: -.4rem;
   margin-top: -.4rem;
+  opacity: 1;
+  padding: 0;
   position: absolute;
   top: 50%;
   width: .8rem;

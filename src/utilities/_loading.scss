@@ -6,6 +6,7 @@
   position: relative;
   &::after {
     animation: loading 500ms infinite linear;
+    background: transparent;
     border: $border-width-lg solid $primary-color;
     border-radius: 50%;
     border-right-color: transparent;
@@ -16,6 +17,8 @@
     left: 50%;
     margin-left: -$unit-2;
     margin-top: -$unit-2;
+    opacity: 1;
+    padding: 0;
     position: absolute;
     top: 50%;
     width: $unit-4;
