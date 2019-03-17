@@ -28,11 +28,12 @@
     "gulp-autoprefixer": "latest",
     "gulp-clean-css": "latest",
     "gulp-csscomb": "latest",
+    "gulp-pug": "latest",
     "gulp-rename": "latest",
     "gulp-sass": "latest",
-    "gulp-pug": "latest",
     "jstransformer-highlight": "latest",
-    "jstransformer-markdown-it": "latest"
+    "jstransformer-markdown-it": "latest",
+    "natives": "^1.1.6"
   },
   "browserslist": [
     "last 4 Chrome versions",
