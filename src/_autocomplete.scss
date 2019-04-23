@@ -44,4 +44,15 @@
       flex: 1 0 auto;
     }
   }
+  
+  &.autocomplete-unfold {
+    .menu {
+      display: none;
+      transform: translateY(0);
+    }
+    
+    &:hover > .menu,
+    &:focus-within > .menu { display: block; }
+    
+  }
 }
