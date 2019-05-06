@@ -76,18 +76,18 @@ block docs-content
     pre.code(data-lang='HTML')
       code
         :highlight(lang="html")
-          <ul class="menu">
+          <ul class="menu" role="menu">
             <!-- menu header text -->
             <li class="divider" data-content="LINKS">
             </li>
             <!-- menu item standard -->
-            <li class="menu-item">
+            <li class="menu-item" role="menuitem">
               <a href="#">
                 <i class="icon icon-link"></i> Slack
               </a>
             </li>
             <!-- menu item with form control -->
-            <li class="menu-item">
+            <li class="menu-item" role="menuitem">
               <label class="form-checkbox">
                 <input type="checkbox">
                 <i class="form-icon"></i> form-checkbox
@@ -96,7 +96,7 @@ block docs-content
             <!-- menu divider -->
             <li class="divider"></li>
             <!-- menu item with badge -->
-            <li class="menu-item">
+            <li class="menu-item" role="menuitem">
               <a href="#">
                 <i class="icon icon-link"></i> Settings
               </a>
@@ -105,7 +105,7 @@ block docs-content
               </div>
             </li>
 
-            <li class="menu-item">
+            <li class="menu-item" role="menuitem">
               <a href="#">My profile</a>
               <div class="menu-badge">
                 <label class="form-checkbox">
@@ -122,7 +122,7 @@ block docs-content
 
     .docs-demo.columns
       .column.col-xs-12
-        .dropdown
+        .dropdown(role="menu" aria-haspopup="true" aria-label="Dropdown menu example with button style")
           .btn-group
             a.btn.btn-primary dropdown button
             a.btn.btn-primary.dropdown-toggle(tabindex="0")
@@ -138,7 +138,7 @@ block docs-content
                 a(href="#dropdowns")
                   | Skype
       .column.col-xs-12
-        .dropdown
+        .dropdown(role="menu" aria-haspopup="true" aria-label="Dropdown menu example with link style")
           a.btn.btn-link.dropdown-toggle(tabindex="0")
             | dropdown button 
             i.icon.icon-caret
@@ -164,7 +164,7 @@ block docs-content
 
     .docs-demo.columns
       .column.col-xs-12.text-right
-        .dropdown.dropdown-right
+        .dropdown.dropdown-right(role="menu" aria-haspopup="true" aria-label="Dropdown menu example positioned right")
           a.btn.btn-primary.dropdown-toggle(tabindex="0")
             | dropdown button 
             i.icon.icon-caret
@@ -183,18 +183,18 @@ block docs-content
       code
         :highlight(lang="html")
           <!-- basic dropdown button -->
-          <div class="dropdown">
+          <div class="dropdown" role="menu" aria-haspopup="true" aria-label="Dropdown menu example with button style">
             <a href="#" class="btn btn-link dropdown-toggle" tabindex="0">
               dropdown menu <i class="icon icon-caret"></i>
             </a>
             <!-- menu component -->
-            <ul class="menu">
+            <ul class="menu" role="menu">
               ...
             </ul>
           </div>
 
           <!-- dropdown button group -->
-          <div class="dropdown">
+          <div class="dropdown" role="menu" aria-haspopup="true" aria-label="Dropdown menu example with link style">
             <div class="btn-group">
               <a href="#" class="btn">
                 dropdown button
@@ -204,7 +204,7 @@ block docs-content
               </a>
 
               <!-- menu component -->
-              <ul class="menu">
+              <ul class="menu" role="menu">
                 ...
               </ul>
             </div>

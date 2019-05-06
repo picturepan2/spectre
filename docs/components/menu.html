@@ -271,18 +271,18 @@
               Spectre.css does not include JavaScript code, you will need to implement your JS to interact with the menus.
             </p>
             <p>Menus also have <a href="../elements/forms.html" target="_blank">Form controls</a> (checkbox, radio and checkbox) support.</p>
-            <pre class="code" data-lang="HTML"><code><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"menu"</span>&gt;</span>
+            <pre class="code" data-lang="HTML"><code><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"menu"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"menu"</span>&gt;</span>
   <span class="hljs-comment">&lt;!-- menu header text --&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"divider"</span> <span class="hljs-attr">data-content</span>=<span class="hljs-string">"LINKS"</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
   <span class="hljs-comment">&lt;!-- menu item standard --&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"menu-item"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"menu-item"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"menuitem"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon icon-link"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span> Slack
     <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
   <span class="hljs-comment">&lt;!-- menu item with form control --&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"menu-item"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"menu-item"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"menuitem"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-checkbox"</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-icon"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span> form-checkbox
@@ -291,7 +291,7 @@
   <span class="hljs-comment">&lt;!-- menu divider --&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"divider"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
   <span class="hljs-comment">&lt;!-- menu item with badge --&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"menu-item"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"menu-item"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"menuitem"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon icon-link"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span> Settings
     <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
@@ -300,7 +300,7 @@
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"menu-item"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"menu-item"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"menuitem"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>My profile<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"menu-badge"</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-checkbox"</span>&gt;</span>
@@ -315,7 +315,7 @@
             <p>The dropdown is a combination of buttons and menus.</p>
             <div class="docs-demo columns">
               <div class="column col-xs-12">
-                <div class="dropdown">
+                <div class="dropdown" role="menu" aria-haspopup="true" aria-label="Dropdown menu example with button style">
                   <div class="btn-group"><a class="btn btn-primary">dropdown button</a><a class="btn btn-primary dropdown-toggle" tabindex="0"><i class="icon icon-caret"></i></a>
                     <ul class="menu">
                       <li class="menu-item"><a href="#dropdowns">Slack</a></li>
@@ -326,7 +326,7 @@
                 </div>
               </div>
               <div class="column col-xs-12">
-                <div class="dropdown"><a class="btn btn-link dropdown-toggle" tabindex="0">dropdown button <i class="icon icon-caret"></i></a>
+                <div class="dropdown" role="menu" aria-haspopup="true" aria-label="Dropdown menu example with link style"><a class="btn btn-link dropdown-toggle" tabindex="0">dropdown button <i class="icon icon-caret"></i></a>
                   <ul class="menu">
                     <li class="menu-item"><a href="#dropdowns">Slack</a></li>
                     <li class="menu-item"><a href="#dropdowns">Hipchat</a></li>
@@ -343,7 +343,7 @@
             <p>If the dropdown is close to the right edge of the browser, you can add the <code>dropdown-right</code> class to the container to prevent it appearing off screen.</p>
             <div class="docs-demo columns">
               <div class="column col-xs-12 text-right">
-                <div class="dropdown dropdown-right"><a class="btn btn-primary dropdown-toggle" tabindex="0">dropdown button <i class="icon icon-caret"></i></a>
+                <div class="dropdown dropdown-right" role="menu" aria-haspopup="true" aria-label="Dropdown menu example positioned right"><a class="btn btn-primary dropdown-toggle" tabindex="0">dropdown button <i class="icon icon-caret"></i></a>
                   <ul class="menu text-left">
                     <li class="menu-item"><a href="#dropdowns">Slack</a></li>
                     <li class="menu-item"><a href="#dropdowns">Hipchat</a></li>
@@ -354,18 +354,18 @@
             </div>
             <p>Also, you can implement your JS to interact with the dropdown menus by adding the <code>active</code> class to the <code>dropdown</code> container.</p>
             <pre class="code" data-lang="HTML"><code><span class="hljs-comment">&lt;!-- basic dropdown button --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"menu"</span> <span class="hljs-attr">aria-haspopup</span>=<span class="hljs-string">"true"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Dropdown menu example with button style"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-link dropdown-toggle"</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">"0"</span>&gt;</span>
     dropdown menu <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon icon-caret"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
   <span class="hljs-comment">&lt;!-- menu component --&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"menu"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"menu"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"menu"</span>&gt;</span>
     ...
   <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
 <span class="hljs-comment">&lt;!-- dropdown button group --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"menu"</span> <span class="hljs-attr">aria-haspopup</span>=<span class="hljs-string">"true"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Dropdown menu example with link style"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn-group"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn"</span>&gt;</span>
       dropdown button
@@ -375,7 +375,7 @@
     <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
     <span class="hljs-comment">&lt;!-- menu component --&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"menu"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"menu"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"menu"</span>&gt;</span>
       ...
     <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>

@@ -2422,6 +2422,10 @@ summary.accordion-header::-webkit-details-marker {
   border-top-right-radius: .1rem;
 }
 
+[aria-haspopup="true"]:focus-within .menu {
+  display: block;
+}
+
 .empty {
   background: #f7f8f9;
   border-radius: .1rem;
