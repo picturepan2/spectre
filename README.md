@@ -42,6 +42,19 @@ Alternatively, you can use the [unpkg](https://unpkg.com/) or [cdnjs](https://cd
 
 You can compile your custom version of Spectre.css. Read [the documentation](https://picturepan2.github.io/spectre/getting-started/custom.html).
 
+## Contributing
+
+### Online one-click setup
+
+You can use Gitpod(a free online VS Code-like IDE) for contributing. With a single-click it'll launch a workspace and automatically:
+
+- clone the repo.
+- install the dependencies.
+
+so that you can start coding straight away.
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/from-referrer/)
+
 ## Documentation and examples
 
 ### Elements
