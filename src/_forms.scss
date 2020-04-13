@@ -34,7 +34,6 @@ legend {
 
 // Form element: Input
 .form-input {
-  @include control-transition();
   appearance: none;
   background: $bg-color-light;
   background-image: none;
@@ -49,6 +48,7 @@ legend {
   outline: none;
   padding: $control-padding-y $control-padding-x;
   position: relative;
+  transition: background .2s, border .2s, box-shadow .2s, color .2s;
   width: 100%;
   &:focus {
     @include control-shadow();
@@ -85,7 +85,11 @@ legend {
 
 // Form element: Textarea
 textarea.form-input {
-  height: auto;
+  &,
+  &.input-lg,
+  &.input-sm {
+    height: auto;
+  }
 }
 
 // Form element: Input hint
@@ -118,19 +122,7 @@ textarea.form-input {
   padding: $control-padding-y $control-padding-x;
   vertical-align: middle;
   width: 100%;
-
-  &[size],
-  &[multiple] {
-    height: auto;
-    
-    option {
-      padding: $unit-h $unit-1;
-    }
-  }
-  &:not([multiple]):not([size]) {
-    background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%204%205'%3E%3Cpath%20fill='%23667189'%20d='M2%200L0%202h4zm0%205L0%203h4z'/%3E%3C/svg%3E") no-repeat right .35rem center/.4rem .5rem;
-    padding-right: $control-icon-size + $control-padding-x;
-  }
+  background: $bg-color-light; 
   &:focus {
     @include control-shadow();
     border-color: $primary-color;
@@ -150,6 +142,21 @@ textarea.form-input {
     font-size: $font-size-lg;
     height: $control-size-lg;
     padding: $control-padding-y-lg ($control-icon-size + $control-padding-x-lg) $control-padding-y-lg $control-padding-x-lg;
+  }
+
+  // Multiple select
+  &[size],
+  &[multiple] {
+    height: auto;
+    padding: $control-padding-y $control-padding-x;
+
+    option {
+      padding: $unit-h $unit-1;
+    }
+  }
+  &:not([multiple]):not([size]) {
+    background: $bg-color-light url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%204%205'%3E%3Cpath%20fill='%23667189'%20d='M2%200L0%202h4zm0%205L0%203h4z'/%3E%3C/svg%3E") no-repeat right .35rem center / .4rem .5rem;
+    padding-right: $control-icon-size + $control-padding-x;
   }
 }
 
@@ -193,10 +200,10 @@ textarea.form-input {
 .form-checkbox,
 .form-radio,
 .form-switch {
-  display: inline-block;
+  display: block;
   line-height: $line-height;
   margin: ($control-size - $control-size-sm) / 2 0;
-  min-height: 1.2rem;
+  min-height: $control-size-sm;
   padding: (($control-size-sm - $line-height) / 2) $control-padding-x (($control-size-sm - $line-height) / 2) ($control-icon-size + $control-padding-x);
   position: relative;
 
@@ -218,11 +225,11 @@ textarea.form-input {
   }
 
   .form-icon {
-    @include control-transition();
     border: $border-width solid $border-color-dark;
     cursor: pointer;
     display: inline-block;
     position: absolute;
+    transition: background .2s, border .2s, box-shadow .2s, color .2s;
   }
 
   // Input checkbox, radio and switch sizes
@@ -266,14 +273,14 @@ textarea.form-input {
         border-left-width: 0;
         border-top-width: 0;
         content: "";
-        height: 12px;
+        height: 9px;
         left: 50%;
-        margin-left: -4px;
-        margin-top: -8px;
+        margin-left: -3px;
+        margin-top: -6px;
         position: absolute;
         top: 50%;
         transform: rotate(45deg);
-        width: 8px;
+        width: 6px;
       }
     }
     &:indeterminate + .form-icon {
@@ -304,12 +311,12 @@ textarea.form-input {
         background: $bg-color-light;
         border-radius: 50%;
         content: "";
-        height: 4px;
+        height: 6px;
         left: 50%;
         position: absolute;
         top: 50%;
         transform: translate(-50%, -50%);
-        width: 4px;
+        width: 6px;
       }
     }
   }
@@ -320,7 +327,7 @@ textarea.form-input {
   padding-left: ($unit-8 + $control-padding-x);
 
   .form-icon {
-    background: $gray-color-light;
+    background: $gray-color;
     background-clip: padding-box;
     border-radius: $unit-2 + $border-width;
     height: $unit-4 + $border-width * 2;
@@ -328,7 +335,6 @@ textarea.form-input {
     top: ($control-size-sm - $unit-4) / 2 - $border-width;
     width: $unit-8;
     &::before {
-      @include control-transition();
       background: $bg-color-light;
       border-radius: 50%;
       content: "";
@@ -337,6 +343,7 @@ textarea.form-input {
       left: 0;
       position: absolute;
       top: 0;
+      transition: background .2s, border .2s, box-shadow .2s, color .2s, left .2s;
       width: $unit-4;
     }
   }
@@ -424,6 +431,7 @@ textarea.form-input {
 .form-select {
   .has-success &,
   &.is-success {
+    background: lighten($success-color, 53%);
     border-color: $success-color;
     &:focus {
       @include control-shadow($success-color);
@@ -432,6 +440,7 @@ textarea.form-input {
 
   .has-error &,
   &.is-error {
+    background: lighten($error-color, 53%);
     border-color: $error-color;
     &:focus {
       @include control-shadow($error-color);
@@ -447,7 +456,7 @@ textarea.form-input {
     .form-icon {
       border-color: $error-color;
     }
-    
+
     input {
       &:checked + .form-icon {
         background: $error-color;
@@ -462,6 +471,18 @@ textarea.form-input {
   }
 }
 
+.form-checkbox {
+  .has-error &,
+  &.is-error {
+    input {
+      &:indeterminate + .form-icon {
+        background: $error-color;
+        border-color: $error-color;
+      }
+    }
+  }
+}
+
 // validation based on :placeholder-shown (Edge doesn't support it yet)
 .form-input {
   &:not(:placeholder-shown) {
@@ -469,6 +490,7 @@ textarea.form-input {
       border-color: $error-color;
       &:focus {
         @include control-shadow($error-color);
+        background: lighten($error-color, 53%);
       }
 
       & + .form-input-hint {
@@ -517,7 +539,7 @@ input {
   }
 }
 
-// Form Horizontal
+// Form horizontal
 .form-horizontal {
   padding: $layout-spacing 0;
 
@@ -525,4 +547,9 @@ input {
     display: flex;
     flex-wrap: wrap;
   }
+}
+
+// Form inline
+.form-inline {
+  display: inline-block;
 }

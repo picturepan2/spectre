@@ -28,7 +28,7 @@ $off-canvas-breakpoint: $size-lg !default;
     overflow-y: auto;
     position: fixed;
     top: 0;
-    transition: transform .25s ease;
+    transition: transform .25s;
     z-index: $zindex-2;
     @if $rtl == true {
       right: 0;

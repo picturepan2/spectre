@@ -20,7 +20,7 @@
 
     &:not(:first-child) {
       &::before {
-        color: $gray-color-light;
+        color: $gray-color-dark;
         content: "/";
         padding-right: $unit-2;
       }

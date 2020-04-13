@@ -1,0 +1,97 @@
+extends ../_layout/_docs-layout.pug
+
+block variables
+  - var slug = 'timelines'
+  - var parent = 'experimentals'
+  - var title = 'Timelines - Experimentals - Spectre.css CSS Framework'
+  - var description = 'The Timelines are ordered sequences of activities. Spectre.css CSS Framework is a lightweight, responsive and modern CSS framework for faster and extensible development.'
+
+block docs-content
+  +docs-heading('timelines', 'Timelines')
+    include ../_layout/_ad-g.pug
+
+    p The Timelines are ordered sequences of activities.
+
+    .docs-demo.columns
+      .column.col-9.col-sm-12
+        .timeline
+          #timeline-example-1.timeline-item
+            .timeline-left
+              a.timeline-icon.tooltip(href="#timeline-example-1" data-tooltip="March 2016")
+            .timeline-content
+              .tile
+                .tile-content
+                  p.tile-subtitle March 2016
+                  p.tile-title Initial commit
+          #timeline-example-2.timeline-item
+            .timeline-left
+              a.timeline-icon.icon-lg.tooltip(href="#timeline-example-2" data-tooltip="February 2017")
+                i.icon.icon-check
+            .timeline-content
+              .tile
+                .tile-content
+                  p.tile-subtitle February 2017
+                  p.tile-title New Documents experience
+                  p.tile-title
+                    a(href="components.html#bars") Bars
+                    | : represent the progress of a task
+                  p.tile-title
+                    a(href="components.html#steps") Steps
+                    | : progress indicators of a sequence of task steps
+                  p.tile-title
+                    a(href="components.html#tiles") Tiles
+                    | : repeatable or embeddable information blocks
+                .tile-action
+                  button.btn View
+          #timeline-example-3.timeline-item
+            .timeline-left
+              a.timeline-icon.icon-lg.tooltip(href="#timeline-example-3" data-tooltip="March 2017")
+                i.icon.icon-check
+            .timeline-content
+              .tile
+                .tile-content
+                  p.tile-subtitle March 2017
+                  p.tile-title
+                    a(href="elements.html#icons") Icons
+                    | : single-element, responsive and pure CSS icons
+                  p.tile-title
+                    a(href="components.html#popovers") Popovers
+                    | : small overlay content containers
+                  p.tile-title
+                    a(href="experimentals.html#calendars") Calendars
+                    | : date or date range picker and events display
+                  p.tile-title
+                    a(href="experimentals.html#carousels") Carousels
+                    | : slideshows for cycling images
+                .tile-action
+                  button.btn View
+
+    pre.code(data-lang='HTML')
+      code
+        :highlight(lang="html")
+          <div class="timeline">
+            <div class="timeline-item" id="timeline-example-1">
+              <div class="timeline-left">
+                <a class="timeline-icon" href="#timeline-example-1"></a>
+              </div>
+              <div class="timeline-content">
+                <!-- tiles structure -->
+              </div>
+            </div>
+
+            <div class="timeline-item" id="timeline-example-2">
+              <div class="timeline-left">
+                <a class="timeline-icon icon-lg" href="#timeline-example-2">
+                  <i class="icon icon-check"></i>
+                </a>
+              </div>
+              <div class="timeline-content">
+                <!-- tiles structure -->
+              </div>
+            </div>
+            ...
+          </div>
+
+    include ../_layout/_ad-c.pug
+
+  include ../_layout/_footer.pug

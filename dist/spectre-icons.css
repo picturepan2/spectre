@@ -1,4 +1,4 @@
-/*! Spectre.css Icons v0.5.2 | MIT License | github.com/picturepan2/spectre */
+/*! Spectre.css Icons v0.5.8 | MIT License | github.com/picturepan2/spectre */
 .icon {
   box-sizing: border-box;
   display: inline-block;
@@ -13,6 +13,7 @@
 
 .icon::before,
 .icon::after {
+  content: "";
   display: block;
   left: 50%;
   position: absolute;
@@ -54,7 +55,6 @@
   border: .1rem solid currentColor;
   border-bottom: 0;
   border-right: 0;
-  content: "";
   height: .65em;
   width: .65em;
 }
@@ -78,7 +78,6 @@
 .icon-back::after,
 .icon-forward::after {
   background: currentColor;
-  content: "";
   height: .1rem;
   width: .8em;
 }
@@ -86,7 +85,6 @@
 .icon-downward::after,
 .icon-upward::after {
   background: currentColor;
-  content: "";
   height: .8em;
   width: .1rem;
 }
@@ -127,7 +125,6 @@
   border-left: .3em solid transparent;
   border-right: .3em solid transparent;
   border-top: .3em solid currentColor;
-  content: "";
   height: 0;
   transform: translate(-50%, -25%);
   width: 0;
@@ -136,7 +133,6 @@
 .icon-menu::before {
   background: currentColor;
   box-shadow: 0 -.35em, 0 .35em;
-  content: "";
   height: .1rem;
   width: 100%;
 }
@@ -144,7 +140,6 @@
 .icon-apps::before {
   background: currentColor;
   box-shadow: -.35em -.35em, -.35em 0, -.35em .35em, 0 -.35em, 0 .35em, .35em -.35em, .35em 0, .35em .35em;
-  content: "";
   height: 3px;
   width: 3px;
 }
@@ -156,7 +151,6 @@
   border: .1rem solid currentColor;
   border-bottom: 0;
   border-right: 0;
-  content: "";
   height: .45em;
   width: .45em;
 }
@@ -184,7 +178,6 @@
   background: currentColor;
   border-radius: 50%;
   box-shadow: -.4em 0, .4em 0;
-  content: "";
   height: 3px;
   width: 3px;
 }
@@ -197,7 +190,6 @@
 .icon-minus::before,
 .icon-cross::before {
   background: currentColor;
-  content: "";
   height: .1rem;
   width: 100%;
 }
@@ -205,7 +197,6 @@
 .icon-plus::after,
 .icon-cross::after {
   background: currentColor;
-  content: "";
   height: 100%;
   width: .1rem;
 }
@@ -227,7 +218,6 @@
   border: .1rem solid currentColor;
   border-right: 0;
   border-top: 0;
-  content: "";
   height: .5em;
   transform: translate(-50%, -75%) rotate(-45deg); 
   width: .9em;
@@ -240,7 +230,6 @@
 
 .icon-stop::before {
   background: currentColor;
-  content: "";
   height: .1rem;
   transform: translate(-50%, -50%) rotate(45deg);
   width: 1em;
@@ -264,7 +253,6 @@
   border: .1rem solid currentColor;
   border-radius: 50%;
   border-right-color: transparent;
-  content: "";
   height: 1em;
   width: 1em;
 }
@@ -273,7 +261,6 @@
   border: .2em solid currentColor;
   border-left-color: transparent;
   border-top-color: transparent;
-  content: "";
   height: 0;
   left: 80%;
   top: 20%;
@@ -283,7 +270,6 @@
 .icon-search::before {
   border: .1rem solid currentColor;
   border-radius: 50%;
-  content: "";
   height: .75em;
   left: 5%;
   top: 5%;
@@ -293,7 +279,6 @@
 
 .icon-search::after {
   background: currentColor;
-  content: "";
   height: .1rem;
   left: 80%;
   top: 80%;
@@ -303,7 +288,6 @@
 
 .icon-edit::before {
   border: .1rem solid currentColor;
-  content: "";
   height: .4em;
   transform: translate(-40%, -60%) rotate(-45deg);
   width: .85em;
@@ -313,7 +297,6 @@
   border: .15em solid currentColor;
   border-right-color: transparent;
   border-top-color: transparent;
-  content: "";
   height: 0;
   left: 5%;
   top: 95%;
@@ -326,7 +309,6 @@
   border-bottom-left-radius: .1rem;
   border-bottom-right-radius: .1rem;
   border-top: 0;
-  content: "";
   height: .75em;
   top: 60%;
   width: .75em;
@@ -335,7 +317,6 @@
 .icon-delete::after {
   background: currentColor;
   box-shadow: -.25em .2em, .25em .2em;
-  content: "";
   height: .1rem;
   top: .05rem;
   width: .5em;
@@ -352,7 +333,6 @@
   border: .1rem solid currentColor;
   border-left: 0;
   border-top: 0;
-  content: "";
   height: .4em;
   left: 100%;
   top: .25em;
@@ -365,14 +345,12 @@
   border-bottom: 0;
   border-radius: 75% 0;
   border-right: 0;
-  content: "";
   height: .5em;
   width: .6em;
 }
 
 .icon-flag::before {
   background: currentColor;
-  content: "";
   height: 1em;
   left: 15%;
   width: .1rem;
@@ -383,7 +361,6 @@
   border-bottom-right-radius: .1rem;
   border-left: 0;
   border-top-right-radius: .1rem;
-  content: "";
   height: .65em;
   left: 60%;
   top: 35%;
@@ -395,7 +372,6 @@
   border-bottom: 0;
   border-top-left-radius: .1rem;
   border-top-right-radius: .1rem;
-  content: "";
   height: .9em;
   width: .8em;
 }
@@ -405,7 +381,6 @@
   border-bottom: 0;
   border-left: 0;
   border-radius: .1rem;
-  content: "";
   height: .5em;
   transform: translate(-50%, 35%) rotate(-45deg) skew(15deg, 15deg);
   width: .5em;
@@ -421,7 +396,6 @@
   border: .1rem solid currentColor;
   border-bottom: 0;
   border-right: 0;
-  content: "";
   height: .5em;
   transform: translate(-50%, -60%) rotate(-135deg); 
   width: .5em;
@@ -430,7 +404,6 @@
 .icon-download::after,
 .icon-upload::after {
   background: currentColor;
-  content: "";
   height: .6em;
   top: 40%;
   width: .1rem;
@@ -444,6 +417,26 @@
   top: 50%;
 }
 
+.icon-copy::before {
+  border: .1rem solid currentColor;
+  border-bottom: 0;
+  border-radius: .1rem;
+  border-right: 0;
+  height: .8em;
+  left: 40%;
+  top: 35%;
+  width: .8em;
+}
+
+.icon-copy::after {
+  border: .1rem solid currentColor;
+  border-radius: .1rem;
+  height: .8em;
+  left: 60%;
+  top: 60%;
+  width: .8em;
+}
+
 .icon-time {
   border: .1rem solid currentColor;
   border-radius: 50%;
@@ -451,7 +444,6 @@
 
 .icon-time::before {
   background: currentColor;
-  content: "";
   height: .4em;
   transform: translate(-50%, -75%);
   width: .1rem;
@@ -459,7 +451,6 @@
 
 .icon-time::after {
   background: currentColor;
-  content: "";
   height: .3em;
   transform: translate(-50%, -75%) rotate(90deg);
   transform-origin: 50% 90%;
@@ -469,7 +460,6 @@
 .icon-mail::before {
   border: .1rem solid currentColor;
   border-radius: .1rem;
-  content: "";
   height: .8em;
   width: 1em;
 }
@@ -478,7 +468,6 @@
   border: .1rem solid currentColor;
   border-right: 0;
   border-top: 0;
-  content: "";
   height: .5em;
   transform: translate(-50%, -90%) rotate(-45deg) skew(10deg, 10deg);
   width: .5em;
@@ -487,7 +476,6 @@
 .icon-people::before {
   border: .1rem solid currentColor;
   border-radius: 50%;
-  content: "";
   height: .45em;
   top: 25%;
   width: .45em;
@@ -496,7 +484,6 @@
 .icon-people::after {
   border: .1rem solid currentColor;
   border-radius: 50% 50% 0 0;
-  content: "";
   height: .4em;
   top: 75%;
   width: .9em;
@@ -514,7 +501,6 @@
   border-bottom-right-radius: .1rem;
   border-left: 0;
   border-top: 0;
-  content: "";
   height: .8em;
   left: 65%;
   top: 40%;
@@ -524,7 +510,6 @@
 .icon-message::after {
   background: currentColor;
   border-radius: .1rem;
-  content: "";
   height: .3em;
   left: 10%;
   top: 100%;
@@ -540,7 +525,6 @@
 .icon-photo::before {
   border: .1rem solid currentColor;
   border-radius: 50%;
-  content: "";
   height: .25em;
   left: 35%;
   top: 35%;
@@ -551,7 +535,6 @@
   border: .1rem solid currentColor;
   border-bottom: 0;
   border-left: 0;
-  content: "";
   height: .5em;
   left: 60%;
   transform: translate(-50%, 25%) rotate(-45deg);
@@ -563,7 +546,6 @@
   border: .1rem solid currentColor;
   border-radius: 5em 0 0 5em;
   border-right: 0;
-  content: "";
   height: .5em;
   width: .75em;
 }
@@ -579,7 +561,6 @@
 .icon-location::before {
   border: .1rem solid currentColor;
   border-radius: 50% 50% 50% 0;
-  content: "";
   height: .8em;
   transform: translate(-50%, -60%) rotate(-45deg);
   width: .8em;
@@ -588,7 +569,6 @@
 .icon-location::after {
   border: .1rem solid currentColor;
   border-radius: 50%;
-  content: "";
   height: .2em;
   transform: translate(-50%, -80%);
   width: .2em;
@@ -601,10 +581,9 @@
 
 .icon-emoji::before {
   border-radius: 50%;
-  box-shadow: -.17em -.15em, .17em -.15em;
-  content: "";
-  height: .1em;
-  width: .1em;
+  box-shadow: -.17em -.1em, .17em -.1em;
+  height: .15em;
+  width: .15em;
 }
 
 .icon-emoji::after {
@@ -612,7 +591,6 @@
   border-bottom-color: transparent;
   border-radius: 50%;
   border-right-color: transparent;
-  content: "";
   height: .5em;
   transform: translate(-50%, -40%) rotate(-135deg);
   width: .5em;

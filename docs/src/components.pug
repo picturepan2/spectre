@@ -1,87 +1,193 @@
-extends _docs-layout.pug
+extends _layout/_docs-layout.pug
 
 block variables
+  - var slug = 'components'
+  - var parent = 'components'
   - var title = 'Components - Spectre.css CSS Framework'
-  - var description = ''
-  - var current = 'components'
+  - var description = 'Accordions, Avatars, Badges, Bars, Breadcrumbs, Cards, Chips, Empty states, Menu, Modals, Nav, Pagination, Panels, Popovers, teps, Tabs, TIles, Toasts, Tooltips'
 
 block docs-content
-  //- Accordions
-  +docs-heading('accordions', 'Accordions')
-    include contents/_ad-g.pug
-    include contents/accordions.pug
-    
-  //- Avatars
-  +docs-heading('avatars', 'Avatars')
-    include contents/avatars.pug
+  +docs-heading('components', 'Components')
+    include _layout/_ad-g.pug
 
-  //- Badges
-  +docs-heading('badges', 'Badges')
-    include contents/badges.pug
+    p 
+      strong Spectre.css 
+      | is a lightweight, responsive and modern CSS framework for faster and extensible development.
+    p 
+      | Spectre provides basic styles for typography and elements, flexbox based responsive layout system, pure CSS components and utilities with best practice coding and consistent design language.
 
-  //- Bars
-  +docs-heading('bars', 'Bars')
-    include contents/bars.pug
-  
-  //- Breadcrumbs
-  +docs-heading('breadcrumbs', 'Breadcrumbs')
-    include contents/breadcrumbs.pug
+    .docs-demo.columns
+      .column.col-6.col-xs-12
+        .card
+          .card-header
+            .card-title.h5 Accordions
+          .card-body
+            | Used to toggle sections of content
+          .card-footer
+            a.btn.btn-primary(href="components/accordions.html") View
+              
+      .column.col-6.col-xs-12
+        .card
+          .card-header
+            .card-title.h5 Avatars
+          .card-body
+            | User profile pictures
+          .card-footer
+            a.btn.btn-primary(href="components/avatars.html") View
+        
+      .column.col-6.col-xs-12
+        .card
+          .card-header
+            .card-title.h5 Badges
+          .card-body
+            | Used as unread number indicators
+          .card-footer
+            a.btn.btn-primary(href="components/badges.html") View
 
-  //- Cards
-  +docs-heading('cards', 'Cards')
-    include contents/_ad-c.pug
-    include contents/cards.pug
+      .column.col-6.col-xs-12
+        .card
+          .card-header
+            .card-title.h5 Bars
+          .card-body
+            | Progress of a task or the value within the known range
+          .card-footer
+            a.btn.btn-primary(href="components/bars.html") View
+              
+      .column.col-6.col-xs-12
+        .card
+          .card-header
+            .card-title.h5 Breadcrumbs
+          .card-body
+            | Navigational hierarchies to indicate current location
+          .card-footer
+            a.btn.btn-primary(href="components/breadcrumbs.html") View
+        
+      .column.col-6.col-xs-12
+        .card
+          .card-header
+            .card-title.h5 Cards
+          .card-body
+            | Flexible content containers
+          .card-footer
+            a.btn.btn-primary(href="components/cards.html") View
 
-  //- Chips
-  +docs-heading('chips', 'Chips')
-    include contents/chips.pug
-  
-  //- Empty states
-  +docs-heading('empty', 'Empty states')
-    include contents/empty.pug
+      .column.col-6.col-xs-12
+        .card
+          .card-header
+            .card-title.h5 Chips
+          .card-body
+            | Complex entities in small blocks
+          .card-footer
+            a.btn.btn-primary(href="components/chips.html") View
+              
+      .column.col-6.col-xs-12
+        .card
+          .card-header
+            .card-title.h5 Empty states
+          .card-body
+            | Navigational hierarchies to indicate current location
+          .card-footer
+            a.btn.btn-primary(href="components/empty.html") View
+        
+      .column.col-6.col-xs-12
+        .card
+          .card-header
+            .card-title.h5 Menu
+          .card-body
+            | Vertical list of links or buttons for actions and navigation
+          .card-footer
+            a.btn.btn-primary(href="components/menu.html") View
 
-  //- Menu
-  +docs-heading('menu', 'Menu')
-    include contents/menu.pug
-    
-  //- Modals
-  +docs-heading('modals', 'Modals')
-    include contents/modals.pug
+      .column.col-6.col-xs-12
+        .card
+          .card-header
+            .card-title.h5 Modals
+          .card-body
+            | Flexible dialog prompts
+          .card-footer
+            a.btn.btn-primary(href="components/modals.html") View
+              
+      .column.col-6.col-xs-12
+        .card
+          .card-header
+            .card-title.h5 Nav
+          .card-body
+            | Vertical list of links
+          .card-footer
+            a.btn.btn-primary(href="components/nav.html") View
+        
+      .column.col-6.col-xs-12
+        .card
+          .card-header
+            .card-title.h5 Pagination
+          .card-body
+            | Vertical list of links or buttons for actions and navigation
+          .card-footer
+            a.btn.btn-primary(href="components/pagination.html") View
 
-  //- Nav
-  +docs-heading('nav', 'Nav')
-    include contents/nav.pug
+      .column.col-6.col-xs-12
+        .card
+          .card-header
+            .card-title.h5 Panels
+          .card-body
+            | Flexible view container with auto-expand content section
+          .card-footer
+            a.btn.btn-primary(href="components/panels.html") View
 
-  //- Pagination
-  +docs-heading('pagination', 'Pagination')
-    include contents/pagination.pug
-  
-  //- Panels
-  +docs-heading('panels', 'Panels')
-    include contents/panels.pug
+      .column.col-6.col-xs-12
+        .card
+          .card-header
+            .card-title.h5 Popovers
+          .card-body
+            | Small overlay content containers
+          .card-footer
+            a.btn.btn-primary(href="components/popovers.html") View
+              
+      .column.col-6.col-xs-12
+        .card
+          .card-header
+            .card-title.h5 Steps
+          .card-body
+            | Progress indicators of a sequence of task steps
+          .card-footer
+            a.btn.btn-primary(href="components/steps.html") View
+        
+      .column.col-6.col-xs-12
+        .card
+          .card-header
+            .card-title.h5 Tabs
+          .card-body
+            | Switch between different views
+          .card-footer
+            a.btn.btn-primary(href="components/tabs.html") View
 
-  //- Popovers
-  +docs-heading('popovers', 'Popovers')
-    include contents/popovers.pug
+      .column.col-6.col-xs-12
+        .card
+          .card-header
+            .card-title.h5 Tiles
+          .card-body
+            | Repeatable or embeddable information blocks
+          .card-footer
+            a.btn.btn-primary(href="components/tiles.html") View
+              
+      .column.col-6.col-xs-12
+        .card
+          .card-header
+            .card-title.h5 Toasts
+          .card-body
+            | Progress indicators of a sequence of task steps
+          .card-footer
+            a.btn.btn-primary(href="components/toasts.html") View
+        
+      .column.col-6.col-xs-12
+        .card
+          .card-header
+            .card-title.h5 Tooltips
+          .card-body
+            | Context information labels that appear on hover and focus
+          .card-footer
+            a.btn.btn-primary(href="components/tooltips.html") View
+              
+    include _layout/_ad-c.pug
 
-  //- Steps
-  +docs-heading('steps', 'Steps')
-    include contents/steps.pug
-  
-  //- Tabs
-  +docs-heading('tabs', 'Tabs')
-    include contents/tabs.pug
-
-  //- Tiles
-  +docs-heading('tiles', 'Tiles')
-    include contents/tiles.pug
-    
-  //- Toasts
-  +docs-heading('toasts', 'Toasts')
-    include contents/toasts.pug
-
-  //- Tooltips
-  +docs-heading('tooltips', 'Tooltips')
-    include contents/tooltips.pug
-
-  include _footer.pug
+  include _layout/_footer.pug

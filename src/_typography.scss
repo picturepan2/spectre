@@ -71,8 +71,9 @@ kbd {
 
 mark {
   @include label-variant($body-font-color, $highlight-color);
+  border-bottom: $unit-o solid darken($highlight-color, 15%);
   border-radius: $border-radius;
-  padding: .05rem;
+  padding: $unit-o $unit-h 0;
 }
 
 // Blockquote

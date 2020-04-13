@@ -24,10 +24,12 @@
     }
 
     .timeline-icon {
+      align-items: center;
       border-radius: 50%;
       color: $light-color;
-      display: block;
+      display: flex;
       height: $unit-6;
+      justify-content: center;
       text-align: center;
       width: $unit-6;
       &::before {

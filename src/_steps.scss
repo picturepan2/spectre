@@ -24,7 +24,7 @@
     }
 
     a {
-      color: $gray-color;
+      color: $primary-color;
       display: inline-block;
       padding: 20px 10px 0;
       text-decoration: none;
@@ -59,9 +59,10 @@
         }
 
         a {
+          color: $gray-color;
 
           &::before {
-            background: $gray-color-light;
+            background: $border-color;
           }
         }
       }

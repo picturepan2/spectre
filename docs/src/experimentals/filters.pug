@@ -1,0 +1,126 @@
+extends ../_layout/_docs-layout.pug
+
+block variables
+  - var slug = 'filters'
+  - var parent = 'experimentals'
+  - var title = 'Filters - Experimentals - Spectre.css CSS Framework'
+  - var description = 'Spectre.css CSS Framework is a lightweight, responsive and modern CSS framework for faster and extensible development. Spectre provides basic styles for typography and elements, flexbox based responsive layout system, pure CSS components and utilities with best practice coding and consistent design language.'
+
+block docs-content
+  +docs-heading('filters', 'Filters')
+    p
+      small.label.label-secondary CSS ONLY
+
+    include ../_layout/_ad-g.pug
+
+    p Filters are CSS only content filters.
+
+    .docs-demo.columns
+      .column.col-12
+        .filter
+          input#tag-0.filter-tag(type="radio" name="filter-radio" hidden="" checked="")
+          input#tag-1.filter-tag(type="radio" name="filter-radio" hidden="")
+          input#tag-2.filter-tag(type="radio" name="filter-radio" hidden="")
+          input#tag-3.filter-tag(type="radio" name="filter-radio" hidden="")
+          input#tag-4.filter-tag(type="radio" name="filter-radio" hidden="")
+          .filter-nav
+            label.chip(for="tag-0") All
+            label.chip(for="tag-1") Action
+            label.chip(for="tag-2") Roleplaying
+            label.chip(for="tag-3") Shooter
+            label.chip(for="tag-4") Sports
+          .filter-body.columns
+            .column.col-4.filter-item(data-tag="tag-2")
+              .card
+                .card-header
+                  .card-title.text-bold Fallout 4
+                  .card-subtitle.text-gray Roleplaying
+            .column.col-4.filter-item(data-tag="tag-3")
+              .card
+                .card-header
+                  .card-title.text-bold Halo 5
+                  .card-subtitle.text-gray Shooter
+            .column.col-4.filter-item(data-tag="tag-1")
+              .card
+                .card-header
+                  .card-title.text-bold Quantum Break
+                  .card-subtitle.text-gray Action
+            .column.col-4.filter-item(data-tag="tag-4")
+              .card
+                .card-header
+                  .card-title.text-bold Forza Horizon 3
+                  .card-subtitle.text-gray Sports
+            .column.col-4.filter-item(data-tag="tag-2")
+              .card
+                .card-header
+                  .card-title.text-bold Final Fantasy XV
+                  .card-subtitle.text-gray Roleplaying
+            .column.col-4.filter-item(data-tag="tag-4")
+              .card
+                .card-header
+                  .card-title.text-bold NBA 2K17
+                  .card-subtitle.text-gray Sports
+            .column.col-4.filter-item(data-tag="tag-3")
+              .card
+                .card-header
+                  .card-title.text-bold Battlefield 1
+                  .card-subtitle.text-gray Shooter
+            .column.col-4.filter-item(data-tag="tag-1")
+              .card
+                .card-header
+                  .card-title.text-bold GTA V
+                  .card-subtitle.text-gray Action
+            .column.col-4.filter-item(data-tag="tag-4")
+              .card
+                .card-header
+                  .card-title.text-bold FIFA 17
+                  .card-subtitle.text-gray Sports
+            .column.col-4.filter-item(data-tag="tag-3")
+              .card
+                .card-header
+                  .card-title.text-bold Overwatch
+                  .card-subtitle.text-gray Shooter
+            .column.col-4.filter-item(data-tag="tag-3")
+              .card
+                .card-header
+                  .card-title.text-bold Titanfall 2
+                  .card-subtitle.text-gray Shooter
+            .column.col-4.filter-item(data-tag="tag-3")
+              .card
+                .card-header
+                  .card-title.text-bold Gears of Wars 4
+                  .card-subtitle.text-gray Shooter
+
+    p
+      | Filters use #[code tag-1] to #[code tag-8] to flag different tags.
+      | #[code tag-0] is reserved for clearing filter (or showing all). 
+      | You can overwrite #[code $filter-number] in #[code _filters.scss] to have more filters.
+
+    pre.code(data-lang='HTML')
+      code
+        :highlight(lang="html")
+          <div class="filter">
+            <input type="radio" id="tag-0" class="filter-tag" name="filter-radio" hidden checked>
+            <input type="radio" id="tag-1" class="filter-tag" name="filter-radio" hidden>
+            <input type="radio" id="tag-2" class="filter-tag" name="filter-radio" hidden>
+
+            <div class="filter-nav">
+              <label class="chip" for="tag-0">All</label>
+              <label class="chip" for="tag-1">Action</label>
+              <label class="chip" for="tag-2">Roleplaying</label>
+            </div>
+
+            <div class="filter-body">
+              <div class="filter-item card" data-tag="tag-1">
+                <!-- Filter item content -->
+              </div>
+              <div class="filter-item card" data-tag="tag-2">
+                <!-- Filter item content -->
+              </div>
+              <!-- Filter items -->
+            </div>
+          </div>
+
+    include ../_layout/_ad-c.pug
+
+  include ../_layout/_footer.pug

@@ -1,4 +1,10 @@
-extends _layout.pug
+extends _layout/_layout.pug
+
+block variables
+  - var slug = 'index'
+  - var parent = 'index'
+  - var title = 'Spectre.css CSS Framework'
+  - var description = 'Spectre.css CSS Framework is a lightweight, responsive and modern CSS framework for faster and extensible development. Spectre provides basic styles for typography and elements, flexbox based responsive layout system, pure CSS components and utilities with best practice coding and consistent design language.'
 
 block content
   .section.section-hero.bg-gray
@@ -7,15 +13,9 @@ block content
         a.docs-logo(href='index.html')
           img(src='img/spectre-logo.svg' alt='Spectre.css CSS Framework')
           h2 SPECTRE
-      h1 Spectre.css
+      h1 SPECTRE.CSS
       h2
-        | A 
-        u Lightweight
-        | , 
-        u Responsive
-        |  and 
-        u Modern
-        |  CSS Framework 
+        | A #[u Lightweight], #[u Responsive] and #[u Modern] CSS Framework
       p
         a.btn.btn-primary.btn-lg.mr-2(href='getting-started.html') Docs
         a.btn.btn-primary.btn-lg(href='https://github.com/picturepan2/spectre' target='_blank') GitHub
@@ -41,9 +41,9 @@ block content
               span.card-title Modern
             .card-body
               | Elegantly designed and developed elements and components
-      .columns
-        .column.col-12
-          include contents/_ad-g.pug
+  
+  .section.section-ads.bg-gray
+    include _layout/_ad-g.pug
 
   .section.section-features.bg-primary.text-light.text-center
     .container.grid-lg
@@ -51,9 +51,12 @@ block content
       .columns
         .column.col-10.col-sm-12.col-mx-auto.text-left
           p.text-secondary
+            strong Spectre.css 
+            | is a lightweight, responsive and modern CSS framework for faster and extensible development.
+          p.text-secondary
             | Spectre provides basic styles for typography and elements, flexbox based responsive layout system, pure CSS components and utilities with best practice coding and consistent design language.
         .column.col-10.col-sm-12.col-mx-auto
-          a.btn.btn-lg(href='getting-started.html#installation') Install Spectre.css
+          a.btn.btn-lg(href='getting-started/installation.html') Install Spectre.css
 
   .section.section-updates.bg-gray
     .container.grid-lg
@@ -73,17 +76,19 @@ block content
             .card-header
               .card-title.h6 PayPal Donate
             .card-body
-              | Spectre.css is completely free to use. If you enjoy it, please consider donating for the further development. &hearts;
+              | Spectre.css is completely free to use. If you enjoy it, please consider donating for the further development.
             .card-footer
               a.btn.btn-primary(href='https://www.paypal.me/picturepan2' target='_blank') Donate
         .column.col-4.col-xs-12
           .card
             .card-header
-              .card-title.h6 Spectre Docs
+              .card-title.h6 Sponsor via Patreon
             .card-body
-              | Spectre Docs experience has been completely rewritten and improved.
+              | Your name or company logo will be put on Spectre Docs homepage.
             .card-footer
-              a.btn.btn-primary(href='getting-started.html') Explore
+              a.btn.btn-primary(href='https://www.patreon.com/spectrecss' target='_blank') Sponsor
+  .section.section-ads.bg-gray
+    include _layout/_ad-c.pug
+
   footer.section.section-footer
-    include contents/_ad-c.pug
-    include _footer.pug
+    include _layout/_footer.pug

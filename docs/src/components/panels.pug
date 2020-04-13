@@ -1,0 +1,130 @@
+extends ../_layout/_docs-layout.pug
+
+block variables
+  - var slug = 'panels'
+  - var parent = 'components'
+  - var title = 'Panels - Components - Spectre.css CSS Framework'
+  - var description = 'Panels are flexible view container with auto-expand content section. Spectre.css CSS Framework is a lightweight, responsive and modern CSS framework for faster and extensible development.'
+
+block docs-content
+  +docs-heading('panels', 'Panels')
+    include ../_layout/_ad-g.pug
+
+    p Panels are flexible view container with auto-expand content section.
+
+    .docs-demo.columns
+      .column.col-6.col-xs-12
+        .panel
+          .panel-header.text-center
+            figure.avatar.avatar-lg
+              img(src="../img/avatar-2.png" alt="Avatar")
+            .panel-title.h5.mt-10 Bruce Banner
+            .panel-subtitle THE HULK
+          nav.panel-nav
+            ul.tab.tab-block
+              li.tab-item.active
+                a(href="#panels")
+                  | Profile
+              li.tab-item
+                a(href="#panels")
+                  | Files
+              li.tab-item
+                a(href="#panels")
+                  | Tasks
+          .panel-body
+            .tile.tile-centered
+              .tile-content
+                .tile-title.text-bold E-mail
+                .tile-subtitle bruce.banner@hulk.com
+              .tile-action
+                button.btn.btn-link.btn-action.btn-lg.tooltip.tooltip-left(data-tooltip="Edit E-mail")
+                  i.icon.icon-edit
+            .tile.tile-centered
+              .tile-content
+                .tile-title.text-bold Skype
+                .tile-subtitle bruce.banner
+              .tile-action
+                button.btn.btn-link.btn-action.btn-lg
+                  i.icon.icon-edit
+            .tile.tile-centered
+              .tile-content
+                .tile-title.text-bold Location
+                .tile-subtitle Dayton, Ohio
+              .tile-action
+                button.btn.btn-link.btn-action.btn-lg
+                  i.icon.icon-edit
+          .panel-footer
+            button.btn.btn-primary.btn-block Save
+      .column.col-6.col-xs-12
+        .panel
+          .panel-header
+            .panel-title.h6 Comments
+          .panel-body
+            .tile
+              .tile-icon
+                figure.avatar
+                  img(src="../img/avatar-1.png" alt="Avatar")
+              .tile-content
+                p.tile-title.text-bold Thor Odinson
+                p.tile-subtitle
+                  | Earth's Mightiest Heroes joined forces to take on threats that were too big for any one hero to tackle...
+            .tile
+              .tile-icon
+                figure.avatar
+                  img(src="../img/avatar-2.png" alt="Avatar")
+              .tile-content
+                p.tile-title.text-bold Bruce Banner
+                p.tile-subtitle The Strategic Homeland Intervention, Enforcement, and Logistics Division...
+            .tile
+              .tile-icon
+                figure.avatar(data-initial="TS")
+              .tile-content
+                p.tile-title.text-bold Tony Stark
+                p.tile-subtitle
+                  | Earth's Mightiest Heroes joined forces to take on threats that were too big for any one hero to tackle...
+            .tile
+              .tile-icon
+                figure.avatar
+                  img(src="../img/avatar-4.png" alt="Avatar")
+              .tile-content
+                p.tile-title.text-bold Steve Rogers
+                p.tile-subtitle The Strategic Homeland Intervention, Enforcement, and Logistics Division...
+            .tile
+              .tile-icon
+                figure.avatar
+                  img(src="../img/avatar-3.png" alt="Avatar")
+              .tile-content
+                p.tile-title.text-bold Natasha Romanoff
+                p.tile-subtitle
+                  | Earth's Mightiest Heroes joined forces to take on threats that were too big for any one hero to tackle...
+          .panel-footer
+            .input-group
+              input.form-input(type="text" placeholder="Hello")
+              button.btn.btn-primary.input-group-btn Send
+
+    p
+      | Add a container element with the #[code panel] class.
+      | And add child elements with the #[code panel-header], #[code panel-nav], #[code panel-body] and/or #[code panel-footer] classes.
+      | The #[code panel-body] can be auto expanded and vertically scrollable.
+
+    pre.code(data-lang='HTML')
+      code
+        :highlight(lang="html")
+          <div class="panel">
+            <div class="panel-header">
+              <div class="panel-title">Comments</div>
+            </div>
+            <div class="panel-nav">
+              <!-- navigation components: tabs, breadcrumbs or pagination -->
+            </div>
+            <div class="panel-body">
+              <!-- contents -->
+            </div>
+            <div class="panel-footer">
+              <!-- buttons or inputs -->
+            </div>
+          </div>
+
+    include ../_layout/_ad-c.pug
+
+  include ../_layout/_footer.pug

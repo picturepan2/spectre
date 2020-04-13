@@ -1,0 +1,157 @@
+extends ../_layout/_docs-layout.pug
+
+block variables
+  - var slug = 'modals'
+  - var parent = 'components'
+  - var title = 'Modals - Components - Spectre.css CSS Framework'
+  - var description = 'Modals are flexible dialog prompts. Spectre.css CSS Framework is a lightweight, responsive and modern CSS framework for faster and extensible development.'
+
+block docs-content
+  +docs-heading('modals', 'Modals')
+    include ../_layout/_ad-g.pug
+
+    p Modals are flexible dialog prompts.
+
+    .docs-demo.columns
+      .column
+        a.btn.btn-primary(href="#example-modal-1") Open Modal
+        #example-modal-1.modal
+          a.modal-overlay(href="#modals" aria-label="Close")
+          .modal-container(role="document")
+            .modal-header
+              a.btn.btn-clear.float-right(href="#modals" aria-label="Close")
+              .modal-title.h5 Modal title
+            .modal-body
+              .content
+                p This is the content inside the modal.
+                h4 Lorem ipsum
+                p
+                  | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent risus leo, dictum in vehicula sit amet, feugiat tempus tellus. Duis quis sodales risus. Etiam euismod ornare consequat.
+                p
+                  | Climb leg rub face on everything give attitude nap all day for under the bed. Chase mice attack feet but rub face on everything hopped up on goofballs.
+                h4 Cupcake ipsum
+                p
+                  | Jelly-o sesame snaps halvah croissant oat cake cookie. Cheesecake bear claw topping. Chupa chups apple pie carrot cake chocolate cake caramels.
+                p
+                  | De braaaiiiins apocalypsi gorger omero prefrontal cortex undead survivor fornix dictum mauris. Hi brains mindless mortuis limbic cortex soulless creaturas optic nerve.
+                h4 Candy ipsum
+                p
+                  | Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas. Dramatically maintain clicks-and-mortar.
+                p
+                  | Caerphilly swiss fromage frais. Brie cheese and wine fromage frais chalk and cheese danish fontina smelly cheese who moved my cheese cow.
+            .modal-footer
+              button.btn.btn-primary Share
+              a.btn.btn-link(href="#modals") Close
+
+    p
+      | Add a container element with the #[code modal] class.
+      | And add a real container #[code modal-container] and overlay #[code modal-overlay] inside it.
+      | You can add child elements with the #[code modal-header], #[code modal-body] and #[code modal-footer] - any or all of them.
+    p
+      | Spectre.css does not include JavaScript code, you will need to implement your JS to interact with modals.
+      | To make a modal appear, add the #[code active] class to the #[code modal] container.
+
+    pre.code(data-lang='HTML')
+      code
+        :highlight(lang="html")
+          <div class="modal active" id="modal-id">
+            <a href="#close" class="modal-overlay" aria-label="Close"></a>
+            <div class="modal-container">
+              <div class="modal-header">
+                <a href="#close" class="btn btn-clear float-right" aria-label="Close"></a>
+                <div class="modal-title h5">Modal title</div>
+              </div>
+              <div class="modal-body">
+                <div class="content">
+                  <!-- content here -->
+                </div>
+              </div>
+              <div class="modal-footer">
+                ...
+              </div>
+            </div>
+          </div>
+          
+    +docs-subheading('modals-sizes', 'Modal sizes')
+
+    .docs-demo.columns
+      .column.col-6.col-xs-12
+        a.btn.btn-primary(href="#example-modal-2") Open small size Modal
+        #example-modal-2.modal.modal-sm
+          a.modal-overlay(href="#modals-sizes" aria-label="Close")
+          .modal-container(role="document")
+            .modal-header
+              a.btn.btn-clear.float-right(href="#modals-sizes" aria-label="Close")
+              .modal-title.h5 Modal title
+            .modal-body
+              .content
+                form
+                  .form-group
+                    label.form-label(for="input-example-7") Name
+                    input#input-example-7.form-input(type="text" placeholder="Name")
+                  .form-group
+                    label.form-label Gender
+                    label.form-radio
+                      input(type="radio" name="gender")
+                      i.form-icon
+                      |  Male
+                    label.form-radio
+                      input(type="radio" name="gender" checked="")
+                      i.form-icon
+                      |  Female
+            .modal-footer
+              button.btn.btn-primary Submit
+              a.btn.btn-link(href="#modals-sizes" aria-label="Close") Close
+
+    p
+      | Use the #[code modal-sm] class for a smaller modal dialog.
+      | The container max width is #[code 320px].
+
+    .docs-demo.columns
+      .column
+        a.btn.btn-primary(href="#example-modal-3") Open large size Modal
+        #example-modal-3.modal.modal-lg
+          a.modal-overlay(href="#modals-sizes" aria-label="Close")
+          .modal-container(role="document")
+            .modal-header
+              a.btn.btn-clear.float-right(href="#modals-sizes" aria-label="Close")
+              .modal-title.h5 Modal title
+            .modal-body
+              .content
+                p This is the content inside the modal.
+                h4 Lorem ipsum
+                p
+                  | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent risus leo, dictum in vehicula sit amet, feugiat tempus tellus. Duis quis sodales risus. Etiam euismod ornare consequat.
+                p
+                  | Climb leg rub face on everything give attitude nap all day for under the bed. Chase mice attack feet but rub face on everything hopped up on goofballs.
+                h4 Cupcake ipsum
+                p
+                  | Jelly-o sesame snaps halvah croissant oat cake cookie. Cheesecake bear claw topping. Chupa chups apple pie carrot cake chocolate cake caramels.
+                p
+                  | De braaaiiiins apocalypsi gorger omero prefrontal cortex undead survivor fornix dictum mauris. Hi brains mindless mortuis limbic cortex soulless creaturas optic nerve.
+                h4 Candy ipsum
+                p
+                  | Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas. Dramatically maintain clicks-and-mortar.
+                p
+                  | Caerphilly swiss fromage frais. Brie cheese and wine fromage frais chalk and cheese danish fontina smelly cheese who moved my cheese cow.
+            .modal-footer
+              button.btn.btn-primary Share
+              a.btn.btn-link(href="#modals-sizes") Close
+
+    p
+      | Use the #[code modal-lg] class for a full size modal.
+      | The container max width is #[code 960px].
+
+    pre.code(data-lang='HTML')
+      code
+        :highlight(lang="html")
+          <div class="modal modal-sm">
+            <a href="#close" class="modal-overlay" aria-label="Close"></a>
+            <div class="modal-container">
+              <!-- modal structure here -->
+            </div>
+          </div>
+
+    include ../_layout/_ad-c.pug
+
+  include ../_layout/_footer.pug

@@ -4,14 +4,12 @@
   border-radius: 50%;
   &::before {
     background: currentColor;
-    content: "";
     height: .4em;
     transform: translate(-50%, -75%);
     width: $icon-border-width;
   }
   &::after {
     background: currentColor;
-    content: "";
     height: .3em;
     transform: translate(-50%, -75%) rotate(90deg);
     transform-origin: 50% 90%;
@@ -24,7 +22,6 @@
   &::before {
     border: $icon-border-width solid currentColor;
     border-radius: $border-radius;
-    content: "";
     height: .8em;
     width: 1em;
   }
@@ -32,7 +29,6 @@
     border: $icon-border-width solid currentColor;
     border-right: 0;
     border-top: 0;
-    content: "";
     height: .5em;
     transform: translate(-50%, -90%) rotate(-45deg) skew(10deg, 10deg);
     width: .5em;
@@ -44,7 +40,6 @@
   &::before {
     border: $icon-border-width solid currentColor;
     border-radius: 50%;
-    content: "";
     height: .45em;
     top: 25%;
     width: .45em;
@@ -52,7 +47,6 @@
   &::after {
     border: $icon-border-width solid currentColor;
     border-radius: 50% 50% 0 0;
-    content: "";
     height: .4em;
     top: 75%;
     width: .9em;
@@ -70,7 +64,6 @@
     border-bottom-right-radius: $border-radius;
     border-left: 0;
     border-top: 0;
-    content: "";
     height: .8em;
     left: 65%;
     top: 40%;
@@ -79,7 +72,6 @@
   &::after {
     background: currentColor;
     border-radius: $border-radius;
-    content: "";
     height: .3em;
     left: 10%;
     top: 100%;
@@ -95,7 +87,6 @@
   &::before {
     border: $icon-border-width solid currentColor;
     border-radius: 50%;
-    content: "";
     height: .25em;
     left: 35%;
     top: 35%;
@@ -105,7 +96,6 @@
     border: $icon-border-width solid currentColor;
     border-bottom: 0;
     border-left: 0;
-    content: "";
     height: .5em;
     left: 60%;
     transform: translate(-50%, 25%) rotate(-45deg);
@@ -120,7 +110,6 @@
     border: $icon-border-width solid currentColor;
     border-radius: 5em 0 0 5em;
     border-right: 0;
-    content: "";
     height: .5em;
     width: .75em;
   }
@@ -137,7 +126,6 @@
   &::before {
     border: $icon-border-width solid currentColor;
     border-radius: 50% 50% 50% 0;
-    content: "";
     height: .8em;
     transform: translate(-50%, -60%) rotate(-45deg);
     width: .8em;
@@ -145,7 +133,6 @@
   &::after {
     border: $icon-border-width solid currentColor;
     border-radius: 50%;
-    content: "";
     height: .2em;
     transform: translate(-50%, -80%);
     width: .2em;
@@ -158,17 +145,15 @@
   border-radius: 50%;
   &::before {
     border-radius: 50%;
-    box-shadow: -.17em -.15em, .17em -.15em;
-    content: "";
-    height: .1em;
-    width: .1em;
+    box-shadow: -.17em -.1em, .17em -.1em;
+    height: .15em;
+    width: .15em;
   }
   &::after {
     border: $icon-border-width solid currentColor;
     border-bottom-color: transparent;
     border-radius: 50%;
     border-right-color: transparent;
-    content: "";
     height: .5em;
     transform: translate(-50%, -40%) rotate(-135deg);
     width: .5em;

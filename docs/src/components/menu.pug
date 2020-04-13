@@ -1,0 +1,215 @@
+extends ../_layout/_docs-layout.pug
+
+block variables
+  - var slug = 'menu'
+  - var parent = 'components'
+  - var title = 'Menu - Components - Spectre.css CSS Framework'
+  - var description = 'Menus are vertical list of links or buttons for actions and navigation. Spectre.css CSS Framework is a lightweight, responsive and modern CSS framework for faster and extensible development.'
+
+block docs-content
+  +docs-heading('menu', 'Menu')
+    include ../_layout/_ad-g.pug
+
+    p Menus are vertical list of links or buttons for actions and navigation.
+
+    .docs-demo.columns
+      .column.col-4.col-xs-12
+        ul.menu
+          li.menu-item
+            .tile.tile-centered
+              .tile-icon
+                img.avatar(src="../img/avatar-4.png" alt="Avatar")
+              .tile-content
+                | Steve Rogers
+          li.divider
+          li.menu-item
+            a.active(href="#menus")
+              | My profile
+            .menu-badge
+              label.form-checkbox
+                input(type="checkbox")
+                i.form-icon
+                | Public
+          li.menu-item
+            a(href="#menus")
+              | Settings
+            .menu-badge
+              label.label.label-primary 2
+          li.menu-item
+            a(href="#menus")
+              | Logout
+      .column.col-4.col-xs-12
+        ul.menu
+          li.divider(data-content="LINKS")
+          li.menu-item
+            a(href="#menus") Slack
+          li.menu-item
+            a(href="#menus") Hipchat
+          li.menu-item
+            a(href="#menus") Skype
+      .column.col-4.col-xs-12
+        ul.menu
+          li.menu-item
+            label.form-checkbox
+              input(type="checkbox" checked="")
+              i.form-icon
+              |  form-checkbox
+          li.menu-item
+            label.form-radio
+              input(type="radio" checked="")
+              i.form-icon
+              |  form-radio
+          li.menu-item
+            label.form-switch
+              input(type="checkbox" checked="")
+              i.form-icon
+              |  form-switch
+
+    p
+      | Add a container element with the #[code menu] class.
+      | And add child elements with the #[code menu-item] class.
+      | You can separate menu items with a #[code divider].
+      | Spectre.css does not include JavaScript code, you will need to implement your JS to interact with the menus.
+    p
+      | Menus also have #[a(href="../elements/forms.html" target="_blank") Form controls] (checkbox, radio and checkbox) support.
+
+    pre.code(data-lang='HTML')
+      code
+        :highlight(lang="html")
+          <ul class="menu">
+            <!-- menu header text -->
+            <li class="divider" data-content="LINKS">
+            </li>
+            <!-- menu item standard -->
+            <li class="menu-item">
+              <a href="#">
+                <i class="icon icon-link"></i> Slack
+              </a>
+            </li>
+            <!-- menu item with form control -->
+            <li class="menu-item">
+              <label class="form-checkbox">
+                <input type="checkbox">
+                <i class="form-icon"></i> form-checkbox
+              </label>
+            </li>
+            <!-- menu divider -->
+            <li class="divider"></li>
+            <!-- menu item with badge -->
+            <li class="menu-item">
+              <a href="#">
+                <i class="icon icon-link"></i> Settings
+              </a>
+              <div class="menu-badge">
+                <label class="label label-primary">2</label>
+              </div>
+            </li>
+
+            <li class="menu-item">
+              <a href="#">My profile</a>
+              <div class="menu-badge">
+                <label class="form-checkbox">
+                  <input type="checkbox">
+                  <i class="form-icon"></i> Public
+                </label>
+              </div>
+            </li>
+          </ul>
+            
+    +docs-subheading('menu-dropdown', 'Dropdown menu')
+
+    p The dropdown is a combination of buttons and menus.
+
+    .docs-demo.columns
+      .column.col-xs-12
+        .dropdown
+          .btn-group
+            a.btn.btn-primary dropdown button
+            a.btn.btn-primary.dropdown-toggle(tabindex="0")
+              i.icon.icon-caret
+            ul.menu
+              li.menu-item
+                a(href="#dropdowns")
+                  | Slack
+              li.menu-item
+                a(href="#dropdowns")
+                  | Hipchat
+              li.menu-item
+                a(href="#dropdowns")
+                  | Skype
+      .column.col-xs-12
+        .dropdown
+          a.btn.btn-link.dropdown-toggle(tabindex="0")
+            | dropdown button 
+            i.icon.icon-caret
+          ul.menu
+            li.menu-item
+              a(href="#dropdowns")
+                | Slack
+            li.menu-item
+              a(href="#dropdowns")
+                | Hipchat
+            li.menu-item
+              a(href="#dropdowns")
+                | Skype
+
+    p
+      | Dropdown menus component is built entirely in CSS. It is triggered by #[code :focus] event.
+    p
+      | Add a container element with the #[code dropdown] class.
+      | And add a focusable element with the #[code dropdown-toggle] class for the button and a #[code menu] component right next to it.
+      | You also need to add #[code tabindex] to make the buttons focusable.
+    p
+      | If the dropdown is close to the right edge of the browser, you can add the #[code dropdown-right] class to the container to prevent it appearing off screen.
+
+    .docs-demo.columns
+      .column.col-xs-12.text-right
+        .dropdown.dropdown-right
+          a.btn.btn-primary.dropdown-toggle(tabindex="0")
+            | dropdown button 
+            i.icon.icon-caret
+          ul.menu.text-left
+            li.menu-item
+              a(href="#dropdowns") Slack
+            li.menu-item
+              a(href="#dropdowns") Hipchat
+            li.menu-item
+              a(href="#dropdowns") Skype
+
+    p
+      | Also, you can implement your JS to interact with the dropdown menus by adding the #[code active] class to the #[code dropdown] container.
+
+    pre.code(data-lang='HTML')
+      code
+        :highlight(lang="html")
+          <!-- basic dropdown button -->
+          <div class="dropdown">
+            <a href="#" class="btn btn-link dropdown-toggle" tabindex="0">
+              dropdown menu <i class="icon icon-caret"></i>
+            </a>
+            <!-- menu component -->
+            <ul class="menu">
+              ...
+            </ul>
+          </div>
+
+          <!-- dropdown button group -->
+          <div class="dropdown">
+            <div class="btn-group">
+              <a href="#" class="btn">
+                dropdown button
+              </a>
+              <a href="#" class="btn dropdown-toggle" tabindex="0">
+                <i class="icon icon-caret"></i>
+              </a>
+
+              <!-- menu component -->
+              <ul class="menu">
+                ...
+              </ul>
+            </div>
+          </div>
+
+    include ../_layout/_ad-c.pug
+
+  include ../_layout/_footer.pug

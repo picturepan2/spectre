@@ -1,4 +1,17 @@
 // Carousels
+// The number of carousel images
+$carousel-number: 8;
+
+%carousel-image-checked { 
+  animation: carousel-slidein .75s ease-in-out 1;
+  opacity: 1;
+  z-index: $zindex-1;
+}
+
+%carousel-nav-checked { 
+  color: $gray-color-light;
+}
+
 .carousel {
   background: $bg-color;
   display: block;
@@ -44,7 +57,7 @@
       opacity: 0;
       position: absolute;
       top: 50%;
-      transition: all .4s ease;
+      transition: all .4s;
       transform: translateY(-50%);
       z-index: $zindex-1;
     }
@@ -57,19 +70,16 @@
   }
 
   .carousel-locator {
-    &:nth-of-type(1):checked ~ .carousel-container .carousel-item:nth-of-type(1),
-    &:nth-of-type(2):checked ~ .carousel-container .carousel-item:nth-of-type(2),
-    &:nth-of-type(3):checked ~ .carousel-container .carousel-item:nth-of-type(3),
-    &:nth-of-type(4):checked ~ .carousel-container .carousel-item:nth-of-type(4) {
-      animation: carousel-slidein .75s ease-in-out 1;
-      opacity: 1;
-      z-index: $zindex-1;
+    @for $i from 1 through ($carousel-number) {
+      &:nth-of-type(#{$i}):checked ~ .carousel-container .carousel-item:nth-of-type(#{$i}) {
+        @extend %carousel-image-checked;
+      }
     }
-    &:nth-of-type(1):checked ~ .carousel-nav .nav-item:nth-of-type(1),
-    &:nth-of-type(2):checked ~ .carousel-nav .nav-item:nth-of-type(2),
-    &:nth-of-type(3):checked ~ .carousel-nav .nav-item:nth-of-type(3),
-    &:nth-of-type(4):checked ~ .carousel-nav .nav-item:nth-of-type(4) {
-      color: $gray-color-light;
+
+    @for $i from 1 through ($carousel-number) {
+      &:nth-of-type(#{$i}):checked ~ .carousel-nav .nav-item:nth-of-type(#{$i}) {
+        @extend %carousel-nav-checked;
+      }
     }
   }
 

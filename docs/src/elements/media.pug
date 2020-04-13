@@ -1,0 +1,101 @@
+extends ../_layout/_docs-layout.pug
+
+block variables
+  - var slug = 'media'
+  - var parent = 'elements'
+  - var title = 'Media - Elements - Spectre.css CSS Framework'
+  - var description = 'Media includes responsive images, figures and video classes. Spectre.css CSS Framework is a lightweight, responsive and modern CSS framework for faster and extensible development.'
+
+block docs-content
+  +docs-heading('media', 'Media')
+    include ../_layout/_ad-g.pug
+
+    p Media includes responsive images, figures and video classes.
+
+    +docs-subheading('media-images', 'Images')
+
+    p
+      | Add the #[code img-responsive] class to #{'<img>'} elements. The images will scale with the parent sizes.
+
+    .docs-demo.columns
+      .column.col-12
+        img.img-responsive.rounded(src="../img/osx-el-capitan.jpg" alt="macOS El Capitan Wallpaper")
+
+    pre.code(data-lang='HTML')
+      code
+        :highlight(lang="html")
+          <img src="img/osx-el-capitan.jpg" class="img-responsive ..." alt="...">
+
+    p
+      | Add the #[code img-fit-contain] or #[code img-fit-cover] class to #{'<img>'} or #{'<video>'} elements. The media will crop itself to fit inside the element (and you don't need another container).
+      | This feature can replace the classic background image trick. Microsoft Edge support 
+      a(href="https://developer.microsoft.com/en-us/microsoft-edge/platform/status/objectfitandobjectposition/" target="_blank") is shipped
+      |   with Build Number 16299+.
+
+    .docs-demo.columns
+      .column.col-6.col-xs-12
+        figure.figure
+          img.img-fit-contain.rounded(src="../img/osx-yosemite.jpg" alt="macOS Yosemite Wallpaper" style="background: #f8f9fa; height: 10rem; width: 100%;")
+          figcaption.figure-caption.text-center img-fit-contain
+      .column.col-6.col-xs-12
+        figure.figure
+          img.img-fit-cover.rounded(src="../img/osx-yosemite-2.jpg" alt="macOS Yosemite Wallpaper" style="background: #f8f9fa; height: 10rem; width: 100%;")
+          figcaption.figure-caption.text-center img-fit-cover
+
+    pre.code(data-lang='HTML')
+      code
+        :highlight(lang="html")
+          <img src="img/osx-el-capitan.jpg" class="img-fit-contain ..." alt="...">
+          <img src="img/osx-el-capitan.jpg" class="img-fit-cover ..." alt="...">
+
+    +docs-subheading('media-figure', 'Figure')
+
+    p
+      | You can use the element #{'<figure>'} for an image with a caption.
+      | Add the #[code figure] class to #{'<figure>'} element.
+      | The images with the #[code img-responsive] class will be responsive.
+      | And the included class #[code figure-caption] will provide basic style for caption.
+      | Also, you can use #[code text-left], #[code text-center] and #[code text-right] for caption alignment.
+
+    .docs-demo.columns
+      .column.col-12
+        figure.figure
+          img.img-responsive.rounded(src="../img/osx-yosemite-2.jpg" alt="macOS Yosemite Wallpaper")
+          figcaption.figure-caption.text-center macOS Yosemite wallpaper
+
+    pre.code(data-lang='HTML')
+      code
+        :highlight(lang="html")
+          <figure class="figure">
+            <img class="img-responsive ..." src="img/osx-yosemite-2.jpg" alt="macOS Yosemite Wallpaper">
+            <figcaption class="figure-caption text-center">macOS Yosemite wallpaper</figcaption>
+          </figure>
+
+    +docs-subheading('media-video', 'Video')
+
+    p
+      | For responsive video, add a container with the #[code video-responsive] class. 
+      | Insert any YouTube, Youku or other iframe/embed video inside the container. 
+      | The ratio is 16:9 by default.
+      | You may add #[code video-responsive-4-3] for 4:3 ratio video container or #[code video-responsive-1-1] for 1:1 ratio.
+
+    .docs-demo.columns
+      .column.col-12
+        .video-responsive
+          iframe(width="560" height="315" src="https://www.youtube.com/embed/7DbslbKsQSk" allowfullscreen="")
+
+    p
+      | For responsive #{'<video>'} elements, you can add the #[code video-responsive] class directly.
+
+    pre.code(data-lang='HTML')
+      code
+        :highlight(lang="html")
+          <div class="video-responsive video-responsive-4-3">
+            <iframe src="..." width="..." height="..." frameborder="0" allowfullscreen></iframe>
+          </div>
+
+          <video class="video-responsive" src="...">...</video>
+
+    include ../_layout/_ad-c.pug
+
+  include ../_layout/_footer.pug

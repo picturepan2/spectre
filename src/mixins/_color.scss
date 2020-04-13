@@ -1,7 +1,7 @@
 // Background color utility mixin
 @mixin bg-color-variant($name: ".bg-primary", $color: $primary-color) {
   #{$name} {
-    background: $color;
+    background: $color !important;
 
     @if (lightness($color) < 60) {
       color: $light-color;
@@ -12,7 +12,7 @@
 // Text color utility mixin
 @mixin text-color-variant($name: ".text-primary", $color: $primary-color) {
   #{$name} {
-    color: $color;
+    color: $color !important;
   }
 
   a#{$name} {

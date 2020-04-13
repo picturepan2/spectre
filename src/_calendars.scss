@@ -45,7 +45,6 @@
     padding: $unit-1;
 
     .date-item {
-      @include control-transition();
       appearance: none;
       background: transparent;
       border: $border-width solid transparent;
@@ -60,6 +59,7 @@
       position: relative;
       text-align: center;
       text-decoration: none;
+      transition: background .2s, border .2s, box-shadow .2s, color .2s;
       vertical-align: middle;
       white-space: nowrap;
       width: $unit-7;

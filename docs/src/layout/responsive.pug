@@ -1,0 +1,271 @@
+extends ../_layout/_docs-layout.pug
+
+block variables
+  - var slug = 'responsive'
+  - var parent = 'layout'
+  - var title = 'Responsive - Layout - Spectre.css CSS Framework'
+  - var description = 'Responsive layout grid system and responsive visibility utilities. Spectre.css CSS Framework is a lightweight, responsive and modern CSS framework for faster and extensible development.'
+
+block docs-content
+  +docs-heading('responsive', 'Responsive')
+    include ../_layout/_ad-g.pug
+
+    p Spectre provides a neat responsive layout grid system and responsive visibility utilities.
+
+    .docs-demo.columns
+      .column.col-10.col-lg-8.col-md-6.col-sm-4
+        .bg-gray.docs-block
+          .text-primary col-10
+          .text-dark.hide-lg col-lg-8
+          .text-primary.show-lg col-lg-8
+          .text-dark.hide-md col-md-6
+          .text-primary.show-md col-md-6
+          .text-dark.hide-sm col-sm-4
+          .text-primary.show-sm col-sm-4
+      .column.col-2.col-lg-4.col-md-6.col-sm-8
+        .bg-gray.docs-block
+          .text-primary col-2
+          .text-dark.hide-lg col-lg-4
+          .text-primary.show-lg col-lg-4
+          .text-dark.hide-md col-md-6
+          .text-primary.show-md col-md-6
+          .text-dark.hide-sm col-sm-8
+          .text-primary.show-sm col-sm-8
+
+    p
+      | There are #[code col-xs-<1-12>], #[code col-sm-<1-12>], #[code col-md-<1-12>], #[code col-lg-<1-12>] and #[code col-xl-<1-12>] available for flexible grid across mobile, tablet and desktop viewport usage.
+
+    ul
+      li
+        | #[code col-xs-<1-12>] apply to window width smaller than or equal to #[strong 480px].
+      li
+        | #[code col-sm-<1-12>] apply to window width smaller than or equal to #[strong 600px].
+      li
+        | #[code col-md-<1-12>] apply to window width smaller than or equal to #[strong 840px].
+      li
+        | #[code col-lg-<1-12>] apply to window width smaller than or equal to #[strong 960px].
+      li
+        | #[code col-xl-<1-12>] apply to window width smaller than or equal to #[strong 1280px].
+      li
+        | #[code col-<1-12>] apply to all window width, including the width wider than #[strong 1280px].
+
+    pre.code(data-lang='HTML')
+      code
+        :highlight(lang="html")
+          <div class="container">
+            <div class="columns">
+              <div class="column col-xs-6">col-xs-6</div>
+              <div class="column col-xs-3">col-xs-3</div>
+              <div class="column col-xs-3">col-xs-3</div>
+            </div>
+          </div>
+
+    +docs-subheading('responsive-container', 'Responsive container')
+
+    p
+      | The responsive layout also provides fixed-width containers.
+      | Use #[code grid-xs](480px), #[code grid-sm](600px), #[code grid-md](840px), #[code grid-lg](960px) or #[code grid-xl](1280px) to the container for a fixed-width container with the specific max-width.
+
+    pre.code(data-lang='HTML')
+      code
+        :highlight(lang="html")
+          <!-- 100% width container with max-width set to grid-lg (960px) -->
+          <div class="container grid-lg">
+            <div class="columns">
+              ...
+            </div>
+          </div>
+
+    +docs-subheading('responsive-visibility', 'Responsive visibility')
+
+    p The responsive visibility utilities help show and hide elements on specific viewport sizes.
+
+    .docs-demo.columns
+      .column.col-12
+        table.docs-table.table.table-striped.text-center
+          thead
+            tr
+              th
+              th size-xs
+              th size-sm
+              th size-md
+              th size-lg
+              th size-xl
+          tbody
+            tr
+              td.text-left hide-xs
+              td
+                .bg-secondary.docs-dot
+              td
+                .bg-primary.docs-dot
+              td
+                .bg-primary.docs-dot
+              td
+                .bg-primary.docs-dot
+              td
+                .bg-primary.docs-dot
+            tr
+              td.text-left hide-sm
+              td
+                .bg-secondary.docs-dot
+              td
+                .bg-secondary.docs-dot
+              td
+                .bg-primary.docs-dot
+              td
+                .bg-primary.docs-dot
+              td
+                .bg-primary.docs-dot
+            tr
+              td.text-left hide-md
+              td
+                .bg-secondary.docs-dot
+              td
+                .bg-secondary.docs-dot
+              td
+                .bg-secondary.docs-dot
+              td
+                .bg-primary.docs-dot
+              td
+                .bg-primary.docs-dot
+            tr
+              td.text-left hide-lg
+              td
+                .bg-secondary.docs-dot
+              td
+                .bg-secondary.docs-dot
+              td
+                .bg-secondary.docs-dot
+              td
+                .bg-secondary.docs-dot
+              td
+                .bg-primary.docs-dot
+            tr
+              td.text-left hide-xl
+              td
+                .bg-secondary.docs-dot
+              td
+                .bg-secondary.docs-dot
+              td
+                .bg-secondary.docs-dot
+              td
+                .bg-secondary.docs-dot
+              td
+                .bg-secondary.docs-dot
+
+    p
+      | For hiding elements on specific viewport sizes, there are classes #[code hide-xs], #[code hide-sm], #[code hide-md], #[code hide-lg] and #[code hide-xl] available.
+
+    ul
+      li
+        | #[code hide-xs] hides elements when the window width is smaller than or equal to #[strong 480px].
+      li
+        | #[code hide-sm] hides elements when the window width is smaller than or equal to #[strong 600px].
+      li
+        | #[code hide-md] hides elements when the window width is smaller than or equal to #[strong 840px].
+      li
+        | #[code hide-lg] hides elements when the window width is smaller than or equal to #[strong 960px].
+      li
+        | #[code hide-xl] hides elements when the window width is smaller than or equal to #[strong 1280px].
+
+    .docs-demo.columns
+      .column.col-12
+        table.docs-table.table.table-striped.text-center
+          thead
+            tr
+              th
+              th size-xs
+              th size-sm
+              th size-md
+              th size-lg
+              th size-xl
+          tbody
+            tr
+              td.text-left show-xs
+              td
+                .bg-primary.docs-dot
+              td
+                .bg-secondary.docs-dot
+              td
+                .bg-secondary.docs-dot
+              td
+                .bg-secondary.docs-dot
+              td
+                .bg-secondary.docs-dot
+            tr
+              td.text-left show-sm
+              td
+                .bg-primary.docs-dot
+              td
+                .bg-primary.docs-dot
+              td
+                .bg-secondary.docs-dot
+              td
+                .bg-secondary.docs-dot
+              td
+                .bg-secondary.docs-dot
+            tr
+              td.text-left show-md
+              td
+                .bg-primary.docs-dot
+              td
+                .bg-primary.docs-dot
+              td
+                .bg-primary.docs-dot
+              td
+                .bg-secondary.docs-dot
+              td
+                .bg-secondary.docs-dot
+            tr
+              td.text-left show-lg
+              td
+                .bg-primary.docs-dot
+              td
+                .bg-primary.docs-dot
+              td
+                .bg-primary.docs-dot
+              td
+                .bg-primary.docs-dot
+              td
+                .bg-secondary.docs-dot
+            tr
+              td.text-left show-xl
+              td
+                .bg-primary.docs-dot
+              td
+                .bg-primary.docs-dot
+              td
+                .bg-primary.docs-dot
+              td
+                .bg-primary.docs-dot
+              td
+                .bg-primary.docs-dot
+
+    p
+      | For showing elements on specific viewport sizes, there are classes #[code show-xs], #[code show-sm], #[code show-md], #[code show-lg] and #[code show-xl] available.
+
+    ul
+      li
+        | #[code show-xs] shows elements when the window width is smaller than or equal to #[strong 480px].
+      li
+        | #[code show-sm] shows elements when the window width is smaller than or equal to #[strong 600px].
+      li
+        | #[code show-md] shows elements when the window width is smaller than or equal to #[strong 840px].
+      li
+        | #[code show-lg] shows elements when the window width is smaller than or equal to #[strong 960px].
+      li
+        | #[code show-xl] shows elements when the window width is smaller than or equal to #[strong 1280px].
+
+    +docs-subheading('responsive-resizer', 'Responsive Resizer')
+
+    p
+      | Spectre also has a responsive web test tool Responsive Resizer. 
+      | You can clone the 
+      a(href="https://github.com/picturepan2/responsive-resizer" target="_blank") GitHub Repo
+      |  to use it locally or use it online.
+    p
+      a.btn.btn-primary(href="https://picturepan2.github.io/responsive-resizer/" target="_blank") Responsive Resizer
+
+    include ../_layout/_ad-c.pug
+
+  include ../_layout/_footer.pug

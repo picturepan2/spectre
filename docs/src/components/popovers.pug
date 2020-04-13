@@ -1,0 +1,99 @@
+extends ../_layout/_docs-layout.pug
+
+block variables
+  - var slug = 'popovers'
+  - var parent = 'components'
+  - var title = 'Popovers - Components - Spectre.css CSS Framework'
+  - var description = 'Popovers are small overlay content containers. Popovers component is built entirely in CSS. Spectre.css CSS Framework is a lightweight, responsive and modern CSS framework for faster and extensible development.'
+
+block docs-content
+  +docs-heading('popovers', 'Popovers')
+    include ../_layout/_ad-g.pug
+
+    p Popovers are small overlay content containers. Popovers component is built entirely in CSS.
+
+    .docs-demo.columns
+      .column.col-3.col-sm-6
+        .popover
+          a.btn.btn-primary(href="#popovers")
+            | top popover
+          .popover-container
+            .card
+              .card-header
+                .card-title.h5 Apple
+                .card-subtitle.text-gray Software and hardware
+              .card-body
+                | To make a contribution to the world by making tools for the mind that advance humankind.
+              .card-footer
+                button.btn.btn-primary Buy
+      .column.col-3.col-sm-6
+        .popover.popover-right
+          a.btn.btn-primary(href="#popovers")
+            | right popover
+          .popover-container
+            .card
+              .card-header
+                .card-title.h5 Apple
+                .card-subtitle.text-gray Software and hardware
+              .card-body
+                | To make a contribution to the world by making tools for the mind that advance humankind.
+              .card-footer
+                button.btn.btn-primary Buy
+      .column.col-3.col-sm-6
+        .popover.popover-bottom
+          a.btn.btn-primary(href="#popovers")
+            | bottom popover
+          .popover-container
+            .card
+              .card-header
+                .card-title.h5 Apple
+                .card-subtitle.text-gray Software and hardware
+              .card-body
+                | To make a contribution to the world by making tools for the mind that advance humankind.
+              .card-footer
+                button.btn.btn-primary Buy
+      .column.col-3.col-sm-6
+        .popover.popover-left
+          a.btn.btn-primary(href="#popovers")
+            | left popover
+          .popover-container
+            .card
+              .card-header
+                .card-title.h5 Apple
+                .card-subtitle.text-gray Software and hardware
+              .card-body
+                | To make a contribution to the world by making tools for the mind that advance humankind.
+              .card-footer
+                button.btn.btn-primary Buy
+
+    p
+      | Wrap an element by a container with the #[code popover] class.
+      | And add a container with the #[code popover-container] next to the element.
+      | You can use #[a(href="#cards") Cards] component inside the #[code popover-container].
+    p
+      | Also, you can add the #[code popover-right], #[code popover-bottom] or #[code popover-left] class to define the position.
+      | By default, the popovers appear above the element.
+      
+    pre.code(data-lang='HTML')
+      code
+        :highlight(lang="html")
+          <div class="popover popover-right">
+            <button class="btn btn-primary">right popover</button>
+            <div class="popover-container">
+              <div class="card">
+                <div class="card-header">
+                  ...
+                </div>
+                <div class="card-body">
+                  ...
+                </div>
+                <div class="card-footer">
+                  ...
+                </div>
+              </div>
+            </div>
+          </div>
+
+    include ../_layout/_ad-c.pug
+
+  include ../_layout/_footer.pug

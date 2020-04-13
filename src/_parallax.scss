@@ -52,7 +52,7 @@ $parallax-fade-color: rgba(255, 255, 255, .35) !default;
     text-shadow: 0 0 20px rgba($dark-color, .75);
     top: 0;
     transform: translateZ($parallax-offset-z) scale($parallax-scale);
-    transition: all .4s ease;
+    transition: transform .4s;
     width: 100%;
     z-index: $zindex-0;
   }

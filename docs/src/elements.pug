@@ -1,43 +1,94 @@
-extends _docs-layout.pug
+extends _layout/_docs-layout.pug
 
 block variables
+  - var slug = 'elements'
+  - var parent = 'elements'
   - var title = 'Elements - Spectre.css CSS Framework'
-  - var description = ''
-  - var current = 'elements'
+  - var description = 'Spectre.css CSS Framework is a lightweight, responsive and modern CSS framework for faster and extensible development. Spectre provides basic styles for typography and elements, flexbox based responsive layout system, pure CSS components and utilities with best practice coding and consistent design language.'
 
 block docs-content
-  //- Typography
-  +docs-heading('typography', 'Typography')
-    include contents/_ad-g.pug
-    include contents/typography.pug
-    
-  //- Tables
-  +docs-heading('tables', 'Tables')
-    include contents/tables.pug
+  +docs-heading('elements', 'Elements')
+    include _layout/_ad-g.pug
 
-  //- Buttons
-  +docs-heading('buttons', 'Buttons')
-    include contents/_ad-c.pug
-    include contents/buttons.pug
+    p 
+      strong Spectre.css 
+      | is a lightweight, responsive and modern CSS framework for faster and extensible development.
+    p 
+      | Spectre provides basic styles for typography and elements, flexbox based responsive layout system, pure CSS components and utilities with best practice coding and consistent design language.
 
-  //- Forms
-  +docs-heading('forms', 'Forms')
-    include contents/forms.pug
-  
-  //- Icons
-  +docs-heading('icons', 'Icons')
-    include contents/icons.pug
+    .docs-demo.columns
+      .column.col-6.col-xs-12
+        .card
+          .card-header
+            .card-title.h5 Typography
+          .card-body
+            | Headings, paragraphs, semantic text, blockquote and lists elements
+          .card-footer
+            a.btn.btn-primary(href="elements/typography.html") View
+              
+      .column.col-6.col-xs-12
+        .card
+          .card-header
+            .card-title.h5 Tables
+          .card-body
+            | Tables and data sets
+          .card-footer
+            a.btn.btn-primary(href="elements/tables.html") View
+        
+      .column.col-6.col-xs-12
+        .card
+          .card-header
+            .card-title.h5 Buttons
+          .card-body
+            | Simple button styles for actions in different types and sizes
+          .card-footer
+            a.btn.btn-primary(href="elements/buttons.html") View
+              
+      .column.col-6.col-xs-12
+        .card
+          .card-header
+            .card-title.h5 Forms
+          .card-body
+            | Input, textarea, select, checkbox, radio and switch
+          .card-footer
+            a.btn.btn-primary(href="elements/forms.html") View
 
-  //- Labels
-  +docs-heading('labels', 'Labels')
-    include contents/labels.pug
+      .column.col-6.col-xs-12
+        .card
+          .card-header
+            .card-title.h5 Icons
+          .card-body
+            | Single-element, responsive and pure CSS icons
+          .card-footer
+            a.btn.btn-primary(href="elements/icons.html") View
+              
+      .column.col-6.col-xs-12
+        .card
+          .card-header
+            .card-title.h5 Labels
+          .card-body
+            | Formatted text tags for highlighted, informative information
+          .card-footer
+            a.btn.btn-primary(href="elements/labels.html") View
+        
+      .column.col-6.col-xs-12
+        .card
+          .card-header
+            .card-title.h5 Code
+          .card-body
+            | Inline and multiline code snippets
+          .card-footer
+            a.btn.btn-primary(href="elements/code.html") View
+              
+      .column.col-6.col-xs-12
+        .card
+          .card-header
+            .card-title.h5 Media
+          .card-body
+            | Responsive images, figures and video
+          .card-footer
+            a.btn.btn-primary(href="elements/media.html") View
 
-  //- Codes
-  +docs-heading('code', 'Code')
-    include contents/code.pug
-  
-  //- Media
-  +docs-heading('media', 'Media')
-    include contents/media.pug
+    include _layout/_ad-c.pug
 
-  include _footer.pug
+  include _layout/_footer.pug

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Accordions - Components - Spectre.css CSS Framework</title>
+    <meta charset="utf-8">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="Accordions are used to toggle sections of content. Spectre.css CSS Framework is a lightweight, responsive and modern CSS framework for faster and extensible development.">
+    <meta name="author" content="Yan Zhu">
+    <meta property="og:url" content="https://picturepan2.github.io/spectre/components/accordions.html">
+    <meta property="og:title" content="Accordions - Components - Spectre.css CSS Framework">
+    <meta property="og:description" content="Accordions are used to toggle sections of content. Spectre.css CSS Framework is a lightweight, responsive and modern CSS framework for faster and extensible development.">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@spectrecss">
+    <meta name="twitter:creator" content="@picturepan2">
+    <link rel="shortcut icon" href="../img/favicons/favicon.ico">
+    <link rel="icon" href="../img/favicons/favicon.png">
+    <link rel="stylesheet" href="../dist/spectre.min.css">
+    <link rel="stylesheet" href="../dist/spectre-icons.min.css">
+    <link rel="stylesheet" href="../dist/spectre-exp.min.css">
+    <link rel="stylesheet" href="../dist/docs.min.css">
+    <link rel="canonical" href="https://picturepan2.github.io/spectre/components/accordions.html">
+  </head>
+  <body>
+    <div class="docs-container off-canvas off-canvas-sidebar-show">
+      <div class="docs-navbar"><a class="off-canvas-toggle btn btn-link btn-action" href="#sidebar"><i class="icon icon-menu"></i></a>
+        <div class="btns d-flex">
+          <input class="docs-search form-input" type="text" placeholder="Search Docs"><a class="btn ml-1" href="https://www.paypal.me/picturepan2" target="_blank">PayPal</a><a class="btn btn-primary ml-1" href="https://github.com/picturepan2/spectre" target="_blank">GitHub</a>
+        </div>
+      </div>
+      <div class="docs-sidebar off-canvas-sidebar" id="sidebar">
+        <div class="docs-brand"><a class="docs-logo" href="../index.html"><img src="../img/spectre-logo.svg" alt="Spectre.css CSS Framework">
+            <h2>SPECTRE</h2><small class="label label-secondary text-bold">DOCS</small></a>
+        </div>
+        <div class="docs-nav">
+          <div class="accordion-container">
+            <div class="accordion">
+              <input id="accordion-getting-started" type="checkbox" name="docs-accordion-checkbox" hidden=""/>
+              <label class="accordion-header c-hand" for="accordion-getting-started">Getting started</label>
+              <div class="accordion-body">
+                <ul class="menu menu-nav">
+                  <li class="menu-item"><a href="../getting-started/installation.html">Installation</a>
+                  </li>
+                  <li class="menu-item"><a href="../getting-started/custom.html">Custom version</a>
+                  </li>
+                  <li class="menu-item"><a href="../getting-started/browsers.html">Browser support</a>
+                  </li>
+                  <li class="menu-item"><a href="../getting-started/whatsnew.html">What's new</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="accordion">
+              <input id="accordion-elements" type="checkbox" name="docs-accordion-checkbox" hidden=""/>
+              <label class="accordion-header c-hand" for="accordion-elements">Elements</label>
+              <div class="accordion-body">
+                <ul class="menu menu-nav">
+                  <li class="menu-item"><a href="../elements/typography.html">Typography</a>
+                  </li>
+                  <li class="menu-item"><a href="../elements/tables.html">Tables</a>
+                  </li>
+                  <li class="menu-item"><a href="../elements/buttons.html">Buttons</a>
+                  </li>
+                  <li class="menu-item"><a href="../elements/forms.html">Forms</a>
+                  </li>
+                  <li class="menu-item"><a href="../elements/icons.html">Icons.css</a>
+                  </li>
+                  <li class="menu-item"><a href="../elements/labels.html">Labels</a>
+                  </li>
+                  <li class="menu-item"><a href="../elements/code.html">Code</a>
+                  </li>
+                  <li class="menu-item"><a href="../elements/media.html">Media</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="accordion">
+              <input id="accordion-layout" type="checkbox" name="docs-accordion-checkbox" hidden=""/>
+              <label class="accordion-header c-hand" for="accordion-layout">Layout</label>
+              <div class="accordion-body">
+                <ul class="menu menu-nav">
+                  <li class="menu-item"><a href="../layout/grid.html">Flexbox grid</a>
+                  </li>
+                  <li class="menu-item"><a href="../layout/responsive.html">Responsive</a>
+                  </li>
+                  <li class="menu-item"><a href="../layout/hero.html">Hero</a>
+                  </li>
+                  <li class="menu-item"><a href="../layout/navbar.html">Navbar</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="accordion">
+              <input id="accordion-components" type="checkbox" name="docs-accordion-checkbox" hidden="" checked="checked"/>
+              <label class="accordion-header c-hand" for="accordion-components">Components</label>
+              <div class="accordion-body">
+                <ul class="menu menu-nav">
+                  <li class="menu-item"><a href="../components/accordions.html">Accordions</a>
+                  </li>
+                  <li class="menu-item"><a href="../components/avatars.html">Avatars</a>
+                  </li>
+                  <li class="menu-item"><a href="../components/badges.html">Badges</a>
+                  </li>
+                  <li class="menu-item"><a href="../components/bars.html">Bars</a>
+                  </li>
+                  <li class="menu-item"><a href="../components/breadcrumbs.html">Breadcrumbs</a>
+                  </li>
+                  <li class="menu-item"><a href="../components/cards.html">Cards</a>
+                  </li>
+                  <li class="menu-item"><a href="../components/chips.html">Chips</a>
+                  </li>
+                  <li class="menu-item"><a href="../components/empty.html">Empty states</a>
+                  </li>
+                  <li class="menu-item"><a href="../components/menu.html">Menu</a>
+                  </li>
+                  <li class="menu-item"><a href="../components/modals.html">Modals</a>
+                  </li>
+                  <li class="menu-item"><a href="../components/nav.html">Nav</a>
+                  </li>
+                  <li class="menu-item"><a href="../components/pagination.html">Pagination</a>
+                  </li>
+                  <li class="menu-item"><a href="../components/panels.html">Panels</a>
+                  </li>
+                  <li class="menu-item"><a href="../components/popovers.html">Popovers</a>
+                  </li>
+                  <li class="menu-item"><a href="../components/steps.html">Steps</a>
+                  </li>
+                  <li class="menu-item"><a href="../components/tabs.html">Tabs</a>
+                  </li>
+                  <li class="menu-item"><a href="../components/tiles.html">Tiles</a>
+                  </li>
+                  <li class="menu-item"><a href="../components/toasts.html">Toasts</a>
+                  </li>
+                  <li class="menu-item"><a href="../components/tooltips.html">Tooltips</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="accordion">
+              <input id="accordion-utilities" type="checkbox" name="docs-accordion-checkbox" hidden=""/>
+              <label class="accordion-header c-hand" for="accordion-utilities">Utilities</label>
+              <div class="accordion-body">
+                <ul class="menu menu-nav">
+                  <li class="menu-item"><a href="../utilities/colors.html">Colors</a>
+                  </li>
+                  <li class="menu-item"><a href="../utilities/cursors.html">Cursors</a>
+                  </li>
+                  <li class="menu-item"><a href="../utilities/display.html">Display</a>
+                  </li>
+                  <li class="menu-item"><a href="../utilities/divider.html">Divider</a>
+                  </li>
+                  <li class="menu-item"><a href="../utilities/loading.html">Loading</a>
+                  </li>
+                  <li class="menu-item"><a href="../utilities/position.html">Position</a>
+                  </li>
+                  <li class="menu-item"><a href="../utilities/shapes.html">Shapes</a>
+                  </li>
+                  <li class="menu-item"><a href="../utilities/text.html">Text</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="accordion">
+              <input id="accordion-experimentals" type="checkbox" name="docs-accordion-checkbox" hidden=""/>
+              <label class="accordion-header c-hand" for="accordion-experimentals">Experimentals</label>
+              <div class="accordion-body">
+                <ul class="menu menu-nav">
+                  <li class="menu-item"><a href="../experimentals/viewer-360.html">360-Degree Viewer</a>
+                  </li>
+                  <li class="menu-item"><a href="../experimentals/autocomplete.html">Autocomplete</a>
+                  </li>
+                  <li class="menu-item"><a href="../experimentals/calendars.html">Calendars</a>
+                  </li>
+                  <li class="menu-item"><a href="../experimentals/carousels.html">Carousels</a>
+                  </li>
+                  <li class="menu-item"><a href="../experimentals/comparison.html">Comparison sliders</a>
+                  </li>
+                  <li class="menu-item"><a href="../experimentals/filters.html">Filters</a>
+                  </li>
+                  <li class="menu-item"><a href="../experimentals/meters.html">Meters</a>
+                  </li>
+                  <li class="menu-item"><a href="../experimentals/off-canvas.html">Off-canvas</a>
+                  </li>
+                  <li class="menu-item"><a href="../experimentals/parallax.html">Parallax</a>
+                  </li>
+                  <li class="menu-item"><a href="../experimentals/progress.html">Progress</a>
+                  </li>
+                  <li class="menu-item"><a href="../experimentals/sliders.html">Sliders</a>
+                  </li>
+                  <li class="menu-item"><a href="../experimentals/timelines.html">Timelines</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><a class="off-canvas-overlay" href="#close"></a>
+      <div class="off-canvas-content">
+        <div class="docs-content" id="content">
+          <div class="container" id="accordions">
+            <h3 class="s-title">Accordions<a class="anchor" href="#accordions" aria-hidden="true">#</a></h3>
+            <div class="docs-ad">
+              <div class="hide-md text-center">
+                <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- GitHub-lg--><ins class="adsbygoogle mx-auto" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-2225124559530218" data-ad-slot="9894180784"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+              </div>
+              <div class="show-md text-center">
+                <!-- GitHub-sm--><ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-2225124559530218" data-ad-slot="9278881734"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+              </div>
+            </div>
+            <p>Accordions are used to toggle sections of content.</p>
+            <div class="docs-demo columns">
+              <div class="column col-6 col-md-12">
+                <div class="accordion">
+                  <input id="accordion-1" type="radio" name="accordion-radio" hidden="" checked="">
+                  <label class="accordion-header c-hand" for="accordion-1"><i class="icon icon-arrow-right mr-1"></i>Elements</label>
+                  <div class="accordion-body">
+                    <ul class="menu menu-nav">
+                      <li class="menu-item"><a href="#accordions">Element 1</a></li>
+                      <li class="menu-item"><a href="#accordions">Element 2</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="accordion">
+                  <input id="accordion-2" type="radio" name="accordion-radio" hidden="">
+                  <label class="accordion-header c-hand" for="accordion-2"><i class="icon icon-arrow-right mr-1"></i>Layout</label>
+                  <div class="accordion-body">
+                    <ul class="menu menu-nav">
+                      <li class="menu-item"><a href="#accordions">Layout 1</a></li>
+                      <li class="menu-item"><a href="#accordions">Layout 2</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="accordion">
+                  <input id="accordion-3" type="radio" name="accordion-radio" hidden="">
+                  <label class="accordion-header c-hand" for="accordion-3"><i class="icon icon-arrow-right mr-1"></i>Components</label>
+                  <div class="accordion-body">
+                    <ul class="menu menu-nav">
+                      <li class="menu-item"><a href="#accordions">Component 1</a></li>
+                      <li class="menu-item"><a href="#accordions">Component 2</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="column col-6 col-md-12">
+                <div class="accordion">
+                  <input id="accordion-4" type="checkbox" name="accordion-checkbox" hidden="" checked="">
+                  <label class="accordion-header c-hand" for="accordion-4">Elements</label>
+                  <div class="accordion-body">
+                    <ul class="menu menu-nav">
+                      <li class="menu-item"><a href="#accordions">Element 1</a></li>
+                      <li class="menu-item"><a href="#accordions">Element 2</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="accordion">
+                  <input id="accordion-5" type="checkbox" name="accordion-checkbox" hidden="">
+                  <label class="accordion-header c-hand" for="accordion-5">Layout</label>
+                  <div class="accordion-body">
+                    <ul class="menu menu-nav">
+                      <li class="menu-item"><a href="#accordions">Layout 1</a></li>
+                      <li class="menu-item"><a href="#accordions">Layout 2</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="accordion">
+                  <input id="accordion-6" type="checkbox" name="accordion-checkbox" hidden="">
+                  <label class="accordion-header c-hand" for="accordion-6">Components</label>
+                  <div class="accordion-body">
+                    <ul class="menu menu-nav">
+                      <li class="menu-item"><a href="#accordions">Component 1</a></li>
+                      <li class="menu-item"><a href="#accordions">Component 2</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <pre class="code" data-lang="HTML"><code><span class="hljs-comment">&lt;!-- standard Accordions example --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"accordion"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"accordion-1"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"accordion-checkbox"</span> <span class="hljs-attr">hidden</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"accordion-header"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"accordion-1"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon icon-arrow-right mr-1"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+    Title
+  <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"accordion-body"</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- Accordions content --&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- mutually exclusive Accordions example (with same input names) --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"accordion"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"radio"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"accordion-1"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"accordion-radio"</span> <span class="hljs-attr">hidden</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"accordion-header"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"accordion-1"</span>&gt;</span>
+    Title
+  <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"accordion-body"</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- Accordions content --&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+            <p>Alternatively, you can use <code>details</code> and <code>summary</code> instead of <code>input</code> radio or checkbox trick.
+              Add the <code>open</code> attribute to <code>details</code> to expand it.
+              Microsoft Edge support is <a href="https://developer.microsoft.com/en-us/microsoft-edge/platform/status/detailssummary/" target="_blank">under consideration</a>.
+            </p>
+            <pre class="code" data-lang="HTML"><code><span class="hljs-comment">&lt;!-- details and summary Accordions example --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">details</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"accordion"</span> <span class="hljs-attr">open</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">summary</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"accordion-header"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon icon-arrow-right mr-1"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+    Title
+  <span class="hljs-tag">&lt;/<span class="hljs-name">summary</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"accordion-body"</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- Accordions content --&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">details</span>&gt;</span>
+</code></pre>
+          </div>
+          <div class="docs-footer container grid-lg" id="copyright">
+            <p><a href="https://github.com/picturepan2/spectre" target="_blank">GitHub</a> · <a href="https://twitter.com/spectrecss" target="_blank">Twitter</a> · <a href="https://www.paypal.me/picturepan2" target="_blank">PayPal Donate</a> · <a href="https://www.patreon.com/spectrecss" target="_blank">Patreon Sponsor</a> · Version <span class="version"></span></p>
+            <p>Designed and built with <span class="text-error">&hearts;</span> by <a href="https://twitter.com/picturepan2" target="_blank">Yan Zhu</a>. Licensed under the <a href="https://github.com/picturepan2/spectre/blob/master/LICENSE" target="_blank">MIT License</a>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+    <script>
+      docsearch({ 
+      apiKey: 'bede06373c5a1fa3c1bbe8401e24c653', 
+      indexName: 'picturepan2_spectre', 
+      inputSelector: '.docs-search', 
+      debug: true
+      }); 
+    </script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      
+      ga('create', 'UA-2702768-8', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>

@@ -1,0 +1,82 @@
+extends ../_layout/_docs-layout.pug
+
+block variables
+  - var slug = 'navbar'
+  - var parent = 'layout'
+  - var title = 'Navbar - Layout - Spectre.css CSS Framework'
+  - var description = 'Navbar is a layout container that appears in the header of apps and websites. Spectre.css CSS Framework is a lightweight, responsive and modern CSS framework for faster and extensible development.'
+
+block docs-content
+  +docs-heading('navbar', 'Navbar')
+    include ../_layout/_ad-g.pug
+
+    p Navbar is a layout container that appears in the header of apps and websites.
+
+    .docs-demo.columns
+      .column
+        .navbar
+          .navbar-section
+            a.navbar-brand.text-bold.mr-2(href="#navbar") SPECTRE.CSS
+            a.btn.btn-link(href="#navbar") Docs
+            a.btn.btn-link(href="https://github.com/picturepan2/spectre") GitHub
+          .navbar-section
+            .input-group.input-inline
+              input.form-input(type="text" placeholder="search")
+              button.btn.btn-primary.input-group-btn Search
+
+    p
+      | The navbar component can include logo brand, nav links and buttons, search box or any combination of those elements.
+      | Each section with the #[code navbar-section] class will be evenly distributed in the container.
+
+    pre.code(data-lang='HTML')
+      code
+        :highlight(lang="html")
+          <header class="navbar">
+            <section class="navbar-section">
+              <a href="..." class="navbar-brand mr-2">Spectre.css</a>
+              <a href="..." class="btn btn-link">Docs</a>
+              <a href="..." class="btn btn-link">GitHub</a>
+            </section>
+            <section class="navbar-section">
+              <div class="input-group input-inline">
+                <input class="form-input" type="text" placeholder="search">
+                <button class="btn btn-primary input-group-btn">Search</button>
+              </div>
+            </section>
+          </header>
+
+    p
+      | You can use #[code navbar-center] class to have a centered section.
+
+    .docs-demo.columns
+      .column.col-12
+        .navbar
+          .navbar-section
+            a.btn.btn-link(href="#navbar") Docs
+            a.btn.btn-link(href="#navbar") Examples
+          .navbar-center
+            img(src="../img/spectre-logo.svg" alt="Spectre.css")
+          .navbar-section
+            a.btn.btn-link(href="https://twitter.com/spectrecss") Twitter
+            a.btn.btn-link(href="https://github.com/picturepan2/spectre") GitHub
+
+    pre.code(data-lang='HTML')
+      code
+        :highlight(lang="html")
+          <header class="navbar">
+            <section class="navbar-section">
+              <a href="#" class="btn btn-link">Docs</a>
+              <a href="#" class="btn btn-link">Examples</a>
+            </section>
+            <section class="navbar-center">
+              <!-- centered logo or brand -->
+            </section>
+            <section class="navbar-section">
+              <a href="#" class="btn btn-link">Twitter</a>
+              <a href="#" class="btn btn-link">GitHub</a>
+            </section>
+          </header>
+        
+    include ../_layout/_ad-c.pug
+
+  include ../_layout/_footer.pug

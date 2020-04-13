@@ -18,7 +18,7 @@
     padding: $unit-1 $unit-2;
 
     .icon {
-      transition: all .2s ease;
+      transition: transform .25s;
     }
   }
 
@@ -26,7 +26,7 @@
     margin-bottom: $layout-spacing;
     max-height: 0;
     overflow: hidden;
-    transition: max-height .2s ease;
+    transition: max-height .25s;
   }
 }
 

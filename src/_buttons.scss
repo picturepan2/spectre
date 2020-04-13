@@ -1,6 +1,5 @@
 // Buttons
 .btn {
-  @include control-transition();
   appearance: none;
   background: $bg-color-light;
   border: $border-width solid $primary-color;
@@ -15,6 +14,7 @@
   padding: $control-padding-y $control-padding-x;
   text-align: center;
   text-decoration: none;
+  transition: background .2s, border .2s, box-shadow .2s, color .2s;
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
@@ -134,16 +134,18 @@
     background: transparent;
     border: 0;
     color: currentColor;
-    height: $unit-4;
+    height: $unit-5;
     line-height: $unit-4;
     margin-left: $unit-1;
     margin-right: -2px;
     opacity: 1;
-    padding: 0;
+    padding: $unit-h;
     text-decoration: none;
-    width: $unit-4;
+    width: $unit-5;
 
+    &:focus,
     &:hover {
+      background: rgba($bg-color, .5);
       opacity: .95;
     }
 

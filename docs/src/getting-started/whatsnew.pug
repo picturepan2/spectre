@@ -1,0 +1,20 @@
+extends ../_layout/_docs-layout.pug
+
+block variables
+  - var slug = 'whatsnew'
+  - var parent = 'getting-started'
+  - var title = 'What\'s New - Getting started - Spectre.css CSS Framework'
+  - var description = 'Spectre.css CSS Framework is a lightweight, responsive and modern CSS framework for faster and extensible development. Spectre provides basic styles for typography and elements, flexbox based responsive layout system, pure CSS components and utilities with best practice coding and consistent design language.'
+
+block docs-content
+  +docs-heading('whatsnew', 'What\'s new')
+    include ../_layout/_ad-g.pug
+    
+    include:markdown-it ../../../changelog.md
+
+    p
+      a.btn.btn-primary(href='https://github.com/picturepan2/spectre/releases', target='_blank') Releases
+    
+    include ../_layout/_ad-c.pug
+
+  include ../_layout/_footer.pug

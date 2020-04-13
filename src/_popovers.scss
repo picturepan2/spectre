@@ -10,14 +10,13 @@
     position: absolute;
     top: 0;
     transform: translate(-50%, -50%) scale(0);
-    transition: transform .2s ease;
+    transition: transform .2s;
     width: $control-width-sm;
     z-index: $zindex-3;
   }
 
   *:focus + .popover-container,
-  &:hover .popover-container,
-  .popover-container:hover {
+  &:hover .popover-container {
     display: block;
     opacity: 1;
     transform: translate(-50%, -100%) scale(1);
@@ -29,9 +28,8 @@
       top: 50%;
     }
 
-    :focus + .popover-container,
-    &:hover .popover-container,
-    .popover-container:hover {
+    *:focus + .popover-container,
+    &:hover .popover-container {
       transform: translate(0, -50%) scale(1);
     }
   }
@@ -42,9 +40,8 @@
       top: 100%;
     }
 
-    :focus + .popover-container,
-    &:hover .popover-container,
-    .popover-container:hover {
+    *:focus + .popover-container,
+    &:hover .popover-container {
       transform: translate(-50%, 0) scale(1);
     }
   }
@@ -55,9 +52,8 @@
       top: 50%;
     }
 
-    :focus + .popover-container,
-    &:hover .popover-container,
-    .popover-container:hover {
+    *:focus + .popover-container,
+    &:hover .popover-container {
       transform: translate(-100%, -50%) scale(1);
     }
   }

@@ -11,19 +11,23 @@
   float: right !important;
 }
 
-.relative {
+.p-relative {
   position: relative !important;
 }
 
-.absolute {
+.p-absolute {
   position: absolute !important;
 }
 
-.fixed {
+.p-fixed {
   position: fixed !important;
 }
 
-.centered {
+.p-sticky {
+  position: sticky !important;
+}
+
+.p-centered {
   display: block;
   float: none;
   margin-left: auto;

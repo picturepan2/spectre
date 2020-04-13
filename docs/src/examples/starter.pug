@@ -1,0 +1,26 @@
+extends ../_layout/_example-layout.pug
+
+block variables
+  - var slug = 'starter'
+  - var parent = 'examples'
+  - var title = 'Starter Page Example -  Spectre.css CSS Framework'
+  - var description = 'Spectre.css CSS Framework is a lightweight, responsive and modern CSS framework for faster and extensible development. Spectre provides basic styles for typography and elements, flexbox based responsive layout system, pure CSS components and utilities with best practice coding and consistent design language.'
+
+block content
+  .section.bg-gray
+    H1 Starter Page Example
+  .section.section-ads.bg-gray
+    include ../_layout/_ad-c.pug
+
+  footer.section.section-footer
+    #copyright.docs-footer.container.grid-lg
+      p
+        a(href='getting-started.html' target='_blank') Documents
+        |  · 
+        a(href='https://github.com/picturepan2/spectre' target='_blank') GitHub
+        |  · 
+        a(href='https://twitter.com/spectrecss' target='_blank') Twitter
+        |  · 
+        a(href='https://www.paypal.me/picturepan2' target='_blank') PayPal Donate
+        |  · Version 
+        span.version

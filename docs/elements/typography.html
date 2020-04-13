@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Typography - Elements - Spectre.css CSS Framework</title>
+    <meta charset="utf-8">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="Typography sets default styles for headings, paragraphs, semantic text, blockquote and lists elements. Spectre.css CSS Framework is a lightweight, responsive and modern CSS framework for faster and extensible development.">
+    <meta name="author" content="Yan Zhu">
+    <meta property="og:url" content="https://picturepan2.github.io/spectre/elements/typography.html">
+    <meta property="og:title" content="Typography - Elements - Spectre.css CSS Framework">
+    <meta property="og:description" content="Typography sets default styles for headings, paragraphs, semantic text, blockquote and lists elements. Spectre.css CSS Framework is a lightweight, responsive and modern CSS framework for faster and extensible development.">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@spectrecss">
+    <meta name="twitter:creator" content="@picturepan2">
+    <link rel="shortcut icon" href="../img/favicons/favicon.ico">
+    <link rel="icon" href="../img/favicons/favicon.png">
+    <link rel="stylesheet" href="../dist/spectre.min.css">
+    <link rel="stylesheet" href="../dist/spectre-icons.min.css">
+    <link rel="stylesheet" href="../dist/spectre-exp.min.css">
+    <link rel="stylesheet" href="../dist/docs.min.css">
+    <link rel="canonical" href="https://picturepan2.github.io/spectre/elements/typography.html">
+  </head>
+  <body>
+    <div class="docs-container off-canvas off-canvas-sidebar-show">
+      <div class="docs-navbar"><a class="off-canvas-toggle btn btn-link btn-action" href="#sidebar"><i class="icon icon-menu"></i></a>
+        <div class="btns d-flex">
+          <input class="docs-search form-input" type="text" placeholder="Search Docs"><a class="btn ml-1" href="https://www.paypal.me/picturepan2" target="_blank">PayPal</a><a class="btn btn-primary ml-1" href="https://github.com/picturepan2/spectre" target="_blank">GitHub</a>
+        </div>
+      </div>
+      <div class="docs-sidebar off-canvas-sidebar" id="sidebar">
+        <div class="docs-brand"><a class="docs-logo" href="../index.html"><img src="../img/spectre-logo.svg" alt="Spectre.css CSS Framework">
+            <h2>SPECTRE</h2><small class="label label-secondary text-bold">DOCS</small></a>
+        </div>
+        <div class="docs-nav">
+          <div class="accordion-container">
+            <div class="accordion">
+              <input id="accordion-getting-started" type="checkbox" name="docs-accordion-checkbox" hidden=""/>
+              <label class="accordion-header c-hand" for="accordion-getting-started">Getting started</label>
+              <div class="accordion-body">
+                <ul class="menu menu-nav">
+                  <li class="menu-item"><a href="../getting-started/installation.html">Installation</a>
+                  </li>
+                  <li class="menu-item"><a href="../getting-started/custom.html">Custom version</a>
+                  </li>
+                  <li class="menu-item"><a href="../getting-started/browsers.html">Browser support</a>
+                  </li>
+                  <li class="menu-item"><a href="../getting-started/whatsnew.html">What's new</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="accordion">
+              <input id="accordion-elements" type="checkbox" name="docs-accordion-checkbox" hidden="" checked="checked"/>
+              <label class="accordion-header c-hand" for="accordion-elements">Elements</label>
+              <div class="accordion-body">
+                <ul class="menu menu-nav">
+                  <li class="menu-item"><a href="../elements/typography.html">Typography</a>
+                  </li>
+                  <li class="menu-item"><a href="../elements/tables.html">Tables</a>
+                  </li>
+                  <li class="menu-item"><a href="../elements/buttons.html">Buttons</a>
+                  </li>
+                  <li class="menu-item"><a href="../elements/forms.html">Forms</a>
+                  </li>
+                  <li class="menu-item"><a href="../elements/icons.html">Icons.css</a>
+                  </li>
+                  <li class="menu-item"><a href="../elements/labels.html">Labels</a>
+                  </li>
+                  <li class="menu-item"><a href="../elements/code.html">Code</a>
+                  </li>
+                  <li class="menu-item"><a href="../elements/media.html">Media</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="accordion">
+              <input id="accordion-layout" type="checkbox" name="docs-accordion-checkbox" hidden=""/>
+              <label class="accordion-header c-hand" for="accordion-layout">Layout</label>
+              <div class="accordion-body">
+                <ul class="menu menu-nav">
+                  <li class="menu-item"><a href="../layout/grid.html">Flexbox grid</a>
+                  </li>
+                  <li class="menu-item"><a href="../layout/responsive.html">Responsive</a>
+                  </li>
+                  <li class="menu-item"><a href="../layout/hero.html">Hero</a>
+                  </li>
+                  <li class="menu-item"><a href="../layout/navbar.html">Navbar</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="accordion">
+              <input id="accordion-components" type="checkbox" name="docs-accordion-checkbox" hidden=""/>
+              <label class="accordion-header c-hand" for="accordion-components">Components</label>
+              <div class="accordion-body">
+                <ul class="menu menu-nav">
+                  <li class="menu-item"><a href="../components/accordions.html">Accordions</a>
+                  </li>
+                  <li class="menu-item"><a href="../components/avatars.html">Avatars</a>
+                  </li>
+                  <li class="menu-item"><a href="../components/badges.html">Badges</a>
+                  </li>
+                  <li class="menu-item"><a href="../components/bars.html">Bars</a>
+                  </li>
+                  <li class="menu-item"><a href="../components/breadcrumbs.html">Breadcrumbs</a>
+                  </li>
+                  <li class="menu-item"><a href="../components/cards.html">Cards</a>
+                  </li>
+                  <li class="menu-item"><a href="../components/chips.html">Chips</a>
+                  </li>
+                  <li class="menu-item"><a href="../components/empty.html">Empty states</a>
+                  </li>
+                  <li class="menu-item"><a href="../components/menu.html">Menu</a>
+                  </li>
+                  <li class="menu-item"><a href="../components/modals.html">Modals</a>
+                  </li>
+                  <li class="menu-item"><a href="../components/nav.html">Nav</a>
+                  </li>
+                  <li class="menu-item"><a href="../components/pagination.html">Pagination</a>
+                  </li>
+                  <li class="menu-item"><a href="../components/panels.html">Panels</a>
+                  </li>
+                  <li class="menu-item"><a href="../components/popovers.html">Popovers</a>
+                  </li>
+                  <li class="menu-item"><a href="../components/steps.html">Steps</a>
+                  </li>
+                  <li class="menu-item"><a href="../components/tabs.html">Tabs</a>
+                  </li>
+                  <li class="menu-item"><a href="../components/tiles.html">Tiles</a>
+                  </li>
+                  <li class="menu-item"><a href="../components/toasts.html">Toasts</a>
+                  </li>
+                  <li class="menu-item"><a href="../components/tooltips.html">Tooltips</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="accordion">
+              <input id="accordion-utilities" type="checkbox" name="docs-accordion-checkbox" hidden=""/>
+              <label class="accordion-header c-hand" for="accordion-utilities">Utilities</label>
+              <div class="accordion-body">
+                <ul class="menu menu-nav">
+                  <li class="menu-item"><a href="../utilities/colors.html">Colors</a>
+                  </li>
+                  <li class="menu-item"><a href="../utilities/cursors.html">Cursors</a>
+                  </li>
+                  <li class="menu-item"><a href="../utilities/display.html">Display</a>
+                  </li>
+                  <li class="menu-item"><a href="../utilities/divider.html">Divider</a>
+                  </li>
+                  <li class="menu-item"><a href="../utilities/loading.html">Loading</a>
+                  </li>
+                  <li class="menu-item"><a href="../utilities/position.html">Position</a>
+                  </li>
+                  <li class="menu-item"><a href="../utilities/shapes.html">Shapes</a>
+                  </li>
+                  <li class="menu-item"><a href="../utilities/text.html">Text</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="accordion">
+              <input id="accordion-experimentals" type="checkbox" name="docs-accordion-checkbox" hidden=""/>
+              <label class="accordion-header c-hand" for="accordion-experimentals">Experimentals</label>
+              <div class="accordion-body">
+                <ul class="menu menu-nav">
+                  <li class="menu-item"><a href="../experimentals/viewer-360.html">360-Degree Viewer</a>
+                  </li>
+                  <li class="menu-item"><a href="../experimentals/autocomplete.html">Autocomplete</a>
+                  </li>
+                  <li class="menu-item"><a href="../experimentals/calendars.html">Calendars</a>
+                  </li>
+                  <li class="menu-item"><a href="../experimentals/carousels.html">Carousels</a>
+                  </li>
+                  <li class="menu-item"><a href="../experimentals/comparison.html">Comparison sliders</a>
+                  </li>
+                  <li class="menu-item"><a href="../experimentals/filters.html">Filters</a>
+                  </li>
+                  <li class="menu-item"><a href="../experimentals/meters.html">Meters</a>
+                  </li>
+                  <li class="menu-item"><a href="../experimentals/off-canvas.html">Off-canvas</a>
+                  </li>
+                  <li class="menu-item"><a href="../experimentals/parallax.html">Parallax</a>
+                  </li>
+                  <li class="menu-item"><a href="../experimentals/progress.html">Progress</a>
+                  </li>
+                  <li class="menu-item"><a href="../experimentals/sliders.html">Sliders</a>
+                  </li>
+                  <li class="menu-item"><a href="../experimentals/timelines.html">Timelines</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><a class="off-canvas-overlay" href="#close"></a>
+      <div class="off-canvas-content">
+        <div class="docs-content" id="content">
+          <div class="container" id="typography">
+            <h3 class="s-title">Typography<a class="anchor" href="#typography" aria-hidden="true">#</a></h3>
+            <div class="docs-ad">
+              <div class="hide-md text-center">
+                <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- GitHub-lg--><ins class="adsbygoogle mx-auto" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-2225124559530218" data-ad-slot="9894180784"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+              </div>
+              <div class="show-md text-center">
+                <!-- GitHub-sm--><ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-2225124559530218" data-ad-slot="9278881734"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+              </div>
+            </div>
+            <p>Typography sets default styles for headings, paragraphs, semantic text, blockquote and lists elements.</p>
+            <h4 class="s-subtitle" id="typography-headings">Headings<a class="anchor" href="#typography-headings" aria-hidden="true">#</a></h4>
+            <div class="docs-demo columns">
+              <div class="column col-12">
+                <h1>H1 Heading <small class="label">40px</small></h1>
+              </div>
+              <div class="column col-12">
+                <h2>H2 Heading <small class="label">32px</small></h2>
+              </div>
+              <div class="column col-12">
+                <h3>H3 Heading <small class="label">28px</small></h3>
+              </div>
+              <div class="column col-12">
+                <h4>H4 Heading <small class="label">24px</small></h4>
+              </div>
+              <div class="column col-12">
+                <h5>H5 Heading <small class="label">20px</small></h5>
+              </div>
+              <div class="column col-12">
+                <h6>H6 Heading <small class="label">16px</small></h6>
+              </div>
+            </div>
+            <pre class="code" data-lang="HTML"><code><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>H1 Heading<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>H1 Heading <span class="hljs-tag">&lt;<span class="hljs-name">small</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"label"</span>&gt;</span>40px<span class="hljs-tag">&lt;/<span class="hljs-name">small</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h1"</span>&gt;</span>H1 Heading<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+</code></pre>
+            <h4 class="s-subtitle" id="typography-paragraphs">Paragraphs<a class="anchor" href="#typography-paragraphs" aria-hidden="true">#</a></h4>
+            <p>Lorem ipsum dolor sit amet, consectetur <a href="#typography">adipiscing elit</a>.
+              Praesent risus leo, dictum in vehicula sit amet, feugiat tempus tellus. Duis quis sodales risus. Etiam euismod ornare consequat.
+            </p>
+            <p>Climb leg rub face on everything give attitude nap all day for under the bed. Chase mice attack feet but rub face on everything hopped up on goofballs.</p>
+            <pre class="code" data-lang="HTML"><code><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet, ...<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+</code></pre>
+            <h4 class="s-subtitle" id="typography-semantic-text">Semantic text elements<a class="anchor" href="#typography-semantic-text" aria-hidden="true">#</a></h4>
+            <div class="docs-demo columns">
+              <div class="column col-6 col-xs-12"><abbr title="Internationalization">I18N</abbr><code class="ml-2">abbr</code></div>
+              <div class="column col-6 col-xs-12"><strong>Bold</strong><code class="ml-2">strong</code><code class="ml-2">b</code></div>
+              <div class="column col-6 col-xs-12">
+                <cite>Citation</cite><code class="ml-2">cite</code>
+              </div>
+              <div class="column col-6 col-xs-12"><code>Hello World!</code><code class="ml-2">code</code></div>
+              <div class="column col-6 col-xs-12">
+                <del>Deleted</del><code class="ml-2">del</code>
+              </div>
+              <div class="column col-6 col-xs-12"><em>Emphasis</em><code class="ml-2">em</code></div>
+              <div class="column col-6 col-xs-12"><i>Italic</i><code class="ml-2">i</code></div>
+              <div class="column col-6 col-xs-12"><ins>Inserted</ins><code class="ml-2">ins</code></div>
+              <div class="column col-6 col-xs-12"><kbd>Ctrl + S</kbd><code class="ml-2">kbd</code></div>
+              <div class="column col-6 col-xs-12">
+                <mark>Highlighted</mark><code class="ml-2">mark</code>
+              </div>
+              <div class="column col-6 col-xs-12">
+                <ruby>漢 
+                  <rt>kan</rt>字 
+                  <rt>ji</rt>
+                </ruby><code class="ml-2">ruby</code>
+              </div>
+              <div class="column col-6 col-xs-12">
+                <s>Strikethrough</s><code class="ml-2">s</code>
+              </div>
+              <div class="column col-6 col-xs-12"><samp>Sample</samp><code class="ml-2">samp</code></div>
+              <div class="column col-6 col-xs-12">Text <sub>Subscripted</sub><code class="ml-2">sub</code></div>
+              <div class="column col-6 col-xs-12">Text <sup>Superscripted</sup><code class="ml-2">sup</code></div>
+              <div class="column col-6 col-xs-12">
+                <time>20:00</time><code class="ml-2">time</code>
+              </div>
+              <div class="column col-6 col-xs-12">
+                <u>Underline</u><code class="ml-2">u</code>
+              </div>
+              <div class="column col-6 col-xs-12">
+                <var>x</var> = 
+                <var>y</var> + 2<code class="ml-2">var</code>
+              </div>
+            </div>
+            <h4 class="s-subtitle" id="typography-east-asian">Optimized for East Asian fonts<a class="anchor" href="#typography-east-asian" aria-hidden="true">#</a></h4>
+            <div class="docs-demo columns">
+              <div class="column">
+                <p class="h5"><small class="lang-zh-hans">你好</small>, <small class="lang-ja">こんにちは</small>, <small class="lang-ko">안녕하세요</small></p>
+                <p class="h6">Chinese (Simplified)</p>
+                <p class="lang-zh-hans">革命不是请客吃饭，不是做文章，不是绘画绣花，不能那样雅致，那样从容不迫，“文质彬彬”，那样“温良恭俭让”。革命就是暴动，是一个阶级推翻一个阶级的暴烈的行动。</p>
+                <p class="h6">Chinese (Tranditional)</p>
+                <p class="lang-zh-hant">山不在高，有仙則名；水不在深，有龍則靈。斯是陋室，惟吾德馨。苔痕上階綠，草色入簾青；談笑有鴻儒，往來無白丁。可以調素琴，閱金經。無絲竹之亂耳，無案牘之勞形。南陽諸葛廬，西蜀子雲亭。孔子云：「何陋之有？」</p>
+                <p class="h6">Japanese</p>
+                <p class="lang-ja">祇園精舎の鐘の声、諸行無常の響きあり。沙羅双樹の花の色、盛者必衰の理をあらはす。おごれる人も久しからず。ただ春の夜の夢のごとし。たけき者も遂にはほろびぬ、ひとへ‌​に風の前の塵に同じ。</p>
+                <p class="h6">Korean</p>
+                <p class="lang-ko">나라말이 중국과 달라, 한문・한자와 서로 통하지 아니하므로, 어리석은 백성들이 말하고자 하는 바가 있어도, 끝내 제 뜻을 펴지 못하는 사람이 많다. 내가 이를 불쌍히 여겨, 새로 스물 여덟 글자를 만드니, 사람마다 하여금 쉽게 익혀, 날마다 씀에 편하게 하고자 할 따름이다.</p>
+              </div>
+            </div>
+            <p>Add the <code>lang</code> attribute to the &lt;html&gt; element or use the class <code>lang-zh</code>, <code>lang-zh-hans</code>, <code>lang-zh-hant</code>, <code>lang-ja</code> or <code>lang-ko</code> to have better Asian CJK (Chinese, Japanese and Korean) font support.</p>
+            <pre class="code" data-lang="HTML"><code><span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"zh-Hans"</span>&gt;</span>……<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"lang-zh-hans"</span>&gt;</span>革命不是请客吃饭，不是做文章……<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"lang-ja"</span>&gt;</span>祇園精舎の鐘の声、諸行無常の響きあり……<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"lang-ko"</span>&gt;</span>나라말이 중국과 달라, 한문・한자와 서로 통하지 아니하므로……<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+</code></pre>
+            <p>And you can use the <code>lang-cjk</code> class or the <code>lang</code> attribute to add spacing between underlines and strike-through text for better Chinese and Japanese readability.</p>
+            <div class="docs-demo columns">
+              <div class="column">
+                <p lang="ja"><u>祇園</u><u>精舎</u>の鐘の声、諸行無常の響きあり。</p>
+                <p lang="ja">
+                  <del>祇園</del><del>精舎</del>の鐘の声、諸行無常の響きあり。
+                  
+                </p>
+              </div>
+            </div>
+            <pre class="code" data-lang="HTML"><code><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"lang-cjk"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">u</span>&gt;</span>祇園<span class="hljs-tag">&lt;/<span class="hljs-name">u</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">u</span>&gt;</span>精舎<span class="hljs-tag">&lt;/<span class="hljs-name">u</span>&gt;</span>の鐘の声、諸行無常の響きあり。……<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"ja"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">del</span>&gt;</span>祇園<span class="hljs-tag">&lt;/<span class="hljs-name">del</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">del</span>&gt;</span>精舎<span class="hljs-tag">&lt;/<span class="hljs-name">del</span>&gt;</span>の鐘の声、諸行無常の響きあり。……<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+</code></pre>
+            <h4 class="s-subtitle" id="typography-fonts">Fonts<a class="anchor" href="#typography-fonts" aria-hidden="true">#</a></h4>
+            <p>Spectre sets the most common and best <code>font-family</code> for each OS with fallback support in old systems.
+              There are also fonts targeted East Asian typography.
+            </p>
+            <pre class="code"><code><span class="hljs-comment">/* Western typography targeted */</span>
+<span class="hljs-attribute">font-family</span>: -apple-system, system-ui, BlinkMacSystemFont, <span class="hljs-string">"Segoe UI"</span>, Roboto, <span class="hljs-string">"Helvetica Neue"</span>, sans-serif;
+<span class="hljs-comment">/* Monospace typography targeted */</span>
+<span class="hljs-attribute">font-family</span>: <span class="hljs-string">"SF Mono"</span>, <span class="hljs-string">"Segoe UI Mono"</span>, <span class="hljs-string">"Roboto Mono"</span>, Menlo, Courier, monospace;
+
+<span class="hljs-comment">/* Chinese (lang="zh" and lang="zh-Hans") targeted */</span>
+<span class="hljs-attribute">font-family</span>: -apple-system, system-ui, BlinkMacSystemFont, <span class="hljs-string">"Segoe UI"</span>, Roboto, <span class="hljs-string">"PingFang SC"</span>, <span class="hljs-string">"Hiragino Sans GB"</span>, <span class="hljs-string">"Microsoft YaHei"</span>, <span class="hljs-string">"Helvetica Neue"</span>, sans-serif;
+<span class="hljs-comment">/* Chinese (lang="zh-Hant") targeted */</span>
+<span class="hljs-attribute">font-family</span>: -apple-system, system-ui, BlinkMacSystemFont, <span class="hljs-string">"Segoe UI"</span>, Roboto, <span class="hljs-string">"PingFang TC"</span>, <span class="hljs-string">"Hiragino Sans CNS"</span>, <span class="hljs-string">"Microsoft JhengHei"</span>, <span class="hljs-string">"Helvetica Neue"</span>, sans-serif;
+<span class="hljs-comment">/* Japanese (lang="ja") targeted */</span>
+<span class="hljs-attribute">font-family</span>: -apple-system, system-ui, BlinkMacSystemFont, <span class="hljs-string">"Segoe UI"</span>, Roboto, <span class="hljs-string">"Hiragino Sans"</span>, <span class="hljs-string">"Hiragino Kaku Gothic Pro"</span>, <span class="hljs-string">"Yu Gothic"</span>, YuGothic, Meiryo, <span class="hljs-string">"Helvetica Neue"</span>, sans-serif;
+<span class="hljs-comment">/* Korean (lang="ko") targeted */</span>
+<span class="hljs-attribute">font-family</span>: -apple-system, system-ui, BlinkMacSystemFont, <span class="hljs-string">"Segoe UI"</span>, Roboto, <span class="hljs-string">"Malgun Gothic"</span>, <span class="hljs-string">"Helvetica Neue"</span>, sans-serif;
+</code></pre>
+            <h4 class="s-subtitle" id="typography-blockquote">Blockquote<a class="anchor" href="#typography-blockquote" aria-hidden="true">#</a></h4>
+            <blockquote>
+              <p>The advance of technology is based on making it fit in so that you don't really even notice it, so it's part of everyday life.</p>
+              <cite>- Bill Gates</cite>
+            </blockquote>
+            <pre class="code" data-lang="HTML"><code><span class="hljs-tag">&lt;<span class="hljs-name">blockquote</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>The advance of technology is based on making it fit in so that you don't really even notice it, so it's part of everyday life. <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">cite</span>&gt;</span>- Bill Gates<span class="hljs-tag">&lt;/<span class="hljs-name">cite</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">blockquote</span>&gt;</span>
+</code></pre>
+            <h4 class="s-subtitle" id="typography-lists">Lists<a class="anchor" href="#typography-lists" aria-hidden="true">#</a></h4>
+            <div class="docs-demo columns">
+              <div class="column col-4 col-xs-12">
+                <ul class="list">
+                  <li>list item 1</li>
+                  <li>list item 2
+                    <ul>
+                      <li>list item 2.1</li>
+                      <li>list item 2.2</li>
+                      <li>list item 2.3</li>
+                    </ul>
+                  </li>
+                  <li>list item 3</li>
+                </ul>
+              </div>
+              <div class="column col-4 col-xs-12">
+                <ol class="list">
+                  <li>list item 1</li>
+                  <li>list item 2
+                    <ol>
+                      <li>list item 2.1</li>
+                      <li>list item 2.2</li>
+                      <li>list item 2.3</li>
+                    </ol>
+                  </li>
+                  <li>list item 3</li>
+                </ol>
+              </div>
+              <div class="column col-4 col-xs-12">
+                <dl class="list">
+                  <dt>description list term 1</dt>
+                  <dd>description list description 1</dd>
+                  <dt>description list term 2</dt>
+                  <dd>description list description 2</dd>
+                  <dt>description list term 3</dt>
+                  <dd>description list description 3</dd>
+                </dl>
+              </div>
+            </div>
+            <pre class="code" data-lang="HTML"><code><span class="hljs-comment">&lt;!-- unordered list --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>list item 1<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>list item 2
+    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>list item 2.1<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>list item 2.2<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>list item 2.3<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>list item 3<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- description list --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">dl</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">dt</span>&gt;</span>description list term<span class="hljs-tag">&lt;/<span class="hljs-name">dt</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">dd</span>&gt;</span>description list description<span class="hljs-tag">&lt;/<span class="hljs-name">dd</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">dl</span>&gt;</span>
+</code></pre>
+          </div>
+          <div class="docs-footer container grid-lg" id="copyright">
+            <p><a href="https://github.com/picturepan2/spectre" target="_blank">GitHub</a> · <a href="https://twitter.com/spectrecss" target="_blank">Twitter</a> · <a href="https://www.paypal.me/picturepan2" target="_blank">PayPal Donate</a> · <a href="https://www.patreon.com/spectrecss" target="_blank">Patreon Sponsor</a> · Version <span class="version"></span></p>
+            <p>Designed and built with <span class="text-error">&hearts;</span> by <a href="https://twitter.com/picturepan2" target="_blank">Yan Zhu</a>. Licensed under the <a href="https://github.com/picturepan2/spectre/blob/master/LICENSE" target="_blank">MIT License</a>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+    <script>
+      docsearch({ 
+      apiKey: 'bede06373c5a1fa3c1bbe8401e24c653', 
+      indexName: 'picturepan2_spectre', 
+      inputSelector: '.docs-search', 
+      debug: true
+      }); 
+    </script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      
+      ga('create', 'UA-2702768-8', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>

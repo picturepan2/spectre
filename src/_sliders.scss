@@ -26,7 +26,7 @@
     border-radius: 50%;
     height: $unit-3;
     margin-top: -($unit-3 - $unit-h) / 2;
-    transition: transform .2s ease;
+    transition: transform .2s;
     width: $unit-3;
   }
   &::-moz-range-thumb {
@@ -34,7 +34,7 @@
     border: 0;
     border-radius: 50%;
     height: $unit-3;
-    transition: transform .2s ease;
+    transition: transform .2s;
     width: $unit-3;
   }
   &::-ms-thumb {
@@ -42,7 +42,7 @@
     border: 0;
     border-radius: 50%;
     height: $unit-3;
-    transition: transform .2s ease;
+    transition: transform .2s;
     width: $unit-3;
   }
 

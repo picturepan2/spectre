@@ -18,8 +18,8 @@
   .menu-item {
     margin-top: 0;
     padding: 0 $unit-2;
+    position: relative;
     text-decoration: none;
-    user-select: none;
 
     & > a {
       border-radius: $border-radius;
@@ -52,11 +52,15 @@
   }
 
   .menu-badge {
-    float: right;
-    padding: $unit-1 0;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
 
-    .btn {
-      margin-top: -$unit-h;
+    .label {
+      margin-right: $unit-2;
     }
   }
 }

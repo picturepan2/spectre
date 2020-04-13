@@ -1,5 +1,5 @@
 // Core variables
-$version: "0.5.2";
+$version: "0.5.8";
 
 // Core features
 $rtl: false !default;
@@ -13,15 +13,16 @@ $secondary-color-dark: darken($secondary-color, 3%) !default;
 $secondary-color-light: lighten($secondary-color, 3%) !default;
 
 // Gray colors
-$dark-color: #454d5d !default;
+$dark-color: #303742 !default;
 $light-color: #fff !default;
-$gray-color: lighten($dark-color, 40%) !default;
-$gray-color-dark: darken($gray-color, 25%) !default;
+$gray-color: lighten($dark-color, 55%) !default;
+$gray-color-dark: darken($gray-color, 30%) !default;
 $gray-color-light: lighten($gray-color, 20%) !default;
 
-$border-color: lighten($dark-color, 60%) !default;
+$border-color: lighten($dark-color, 65%) !default;
 $border-color-dark: darken($border-color, 10%) !default;
-$bg-color: lighten($dark-color, 66%) !default;
+$border-color-light: lighten($border-color, 8%) !default;
+$bg-color: lighten($dark-color, 75%) !default;
 $bg-color-dark: darken($bg-color, 3%) !default;
 $bg-color-light: $light-color !default;
 
@@ -72,7 +73,7 @@ $html-line-height: 1.5 !default;
 $font-size: .8rem !default;
 $font-size-sm: .7rem !default;
 $font-size-lg: .9rem !default;
-$line-height: 1rem !default;
+$line-height: 1.2rem !default;
 
 // Sizes
 $layout-spacing: $unit-2 !default;
