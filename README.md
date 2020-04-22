@@ -2,22 +2,28 @@
   <img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg" width="72" height="72">
 </a>
 
-## Spectre.css
+## Spektro.css
 
-Spectre.css is a lightweight, responsive and modern CSS framework.
+Spektro.css is a lightweight, responsive and modern CSS framework based on the awsome project <a href="https://picturepan2.github.io/spectre">Spectre.css
+ </a>
 
+## Rationale
+Seeing that Spectre.css seemed abandoned, we decided to create our own maintained fork of it to push the project further.
+Therefore if you had pull requests that weren't merged on Spectre we will be happy to review them and merge them.
+
+## Features
 - Lightweight (~10KB gzipped) starting point for your projects
 - Flexbox-based, responsive and mobile-friendly layout
 - Elegantly designed and developed elements and components
 
-Spectre is a side project based on years of CSS development work on a large web service project. Spectre only includes modern base styles, responsive layout system, CSS components and utilities, and it can be modified for your project with Sass/Scss compiler.
+Spektro is a side project based on the years of CSS development work on a large web service project. Spektro only includes modern base styles, responsive layout system, CSS components and utilities, and it can be modified for your project with Sass/Scss compiler.
 
-Spectre.css is completely free to use. If you enjoy it, please consider [donating via Paypal](https://www.paypal.me/picturepan2) or [via Patreon](https://www.patreon.com/spectrecss) for the further development. ♥ 
+Spektro.css is completely free to use.
 
 
 ## Getting started
 
-There are 5 ways to get started with Spectre CSS framework in your projects. You can either manually install or use NPM, Yarn and Bower.
+There are 5 ways to get started with Spektro CSS framework in your projects. You can either manually install or use NPM, Yarn and Bower.
 
 ### Install manually
 Download the compiled and minified [Spectre CSS files](https://github.com/picturepan2/spectre/tree/master/docs/dist). And include `spectre.css` located in `/docs/dist` in your website or Web app &lt;head&gt; part.
@@ -30,13 +36,13 @@ Alternatively, you can use the [unpkg](https://unpkg.com/) or [cdnjs](https://cd
 `<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">`
 
 ### Install with NPM
-`$ npm install spectre.css --save`
+`$ npm install spektro.css --save`
 
 ### Install with Yarn
-`$ yarn add spectre.css`
+`$ yarn add spektro.css`
 
 ### Install with Bower
-`$ bower install spectre.css --save`
+`$ bower install spektro.css --save`
 
 ## Compiling custom version
 
@@ -101,7 +107,7 @@ You can compile your custom version of Spectre.css. Read [the documentation](htt
 - [Timelines](https://picturepan2.github.io/spectre/experimentals/timelines.html)
 
 ## Browser support
-Spectre uses [Autoprefixer](https://github.com/postcss/autoprefixer) to make most styles compatible with earlier browsers and [Normalize.css](https://necolas.github.io/normalize.css/) for CSS resets. Spectre is designed for modern browsers. For best compatibility, these browsers are recommended:
+Spektro uses [Autoprefixer](https://github.com/postcss/autoprefixer) to make most styles compatible with earlier browsers and [Normalize.css](https://necolas.github.io/normalize.css/) for CSS resets. Spectre is designed for modern browsers. For best compatibility, these browsers are recommended:
 
 - Chrome (LAST 4)
 - Microsoft Edge (LAST 4)
@@ -110,6 +116,6 @@ Spectre uses [Autoprefixer](https://github.com/postcss/autoprefixer) to make mos
 - Opera (LAST 4)
 - Internet Explorer 10+
 
-Spectre supports Internet Explorer 10+, but some HTML5 and CSS3 features are not perfectly supported by Internet Explorer.
+Spektro supports Internet Explorer 10+, but some HTML5 and CSS3 features are not perfectly supported by Internet Explorer.
 
-Designed and built with ♥ by [Yan Zhu](https://twitter.com/picturepan2). Feel free to submit a pull request. Help is always appreciated.
+Designed and built with ♥ by the Morebec Team based on the work of [Yan Zhu](https://twitter.com/picturepan2). Feel free to submit a pull request. Help is always appreciated.
