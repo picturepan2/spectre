@@ -103,7 +103,7 @@ $carousel-number: 8;
       position: relative;
 
       &::before {
-        background: currentColor;
+        background: pink;
         content: "";
         display: block;
         height: $unit-h;
