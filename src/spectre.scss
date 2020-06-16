@@ -47,3 +47,15 @@
 // Utility classes
 @import "animations";
 @import "utilities";
+
+h1 {
+    color: $primary-color-dark;
+}
+
+h2 {
+    color: $primary-color;
+}
+
+h3 {
+    color: $primary-color-light;
+}

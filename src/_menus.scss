@@ -30,12 +30,12 @@
       text-decoration: none;
       &:focus,
       &:hover {
-        background: $secondary-color;
+        background: lighten($primary-color-light, 30%);
         color: $primary-color;
       }
       &:active,
       &.active {
-        background: $secondary-color;
+        background: lighten($primary-color-light, 30%);
         color: $primary-color;
       }
     }
