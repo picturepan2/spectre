@@ -8,3 +8,4 @@ package-lock.json
 !.gitattributes
 !.hound.yml
 !.scss-lint.yml
+!.gitpod.yml
