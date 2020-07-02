@@ -60,6 +60,7 @@
   border-radius: $border-radius;
   display: flex;
   flex-direction: column;
+  height: 100%;
   max-height: 75vh;
   max-width: $control-width-md;
   padding: 0 $unit-4;
@@ -71,16 +72,19 @@
 
   .modal-header {
     color: $dark-color;
+    flex: 0 0 auto;
     padding: $unit-4;
   }
 
   .modal-body {
+    flex: 1 1 auto;
     overflow-y: auto;
     padding: $unit-4;
     position: relative;
   }
 
   .modal-footer {
+    flex: 0 0 auto;
     padding: $unit-4;
     text-align: right;
   }
