@@ -1,6 +1,6 @@
 {
   "name": "spectre.css",
-  "version": "0.5.8",
+  "version": "0.5.9",
   "homepage": "http://picturepan2.github.io/spectre",
   "author": "Yan Zhu <picturepan2@hotmail.com>",
   "description": "Spectre.css: A lightweight, responsive and modern CSS framework",
@@ -24,15 +24,15 @@
     "url": "https://github.com/picturepan2/spectre/issues"
   },
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "latest",
-    "gulp-clean-css": "latest",
-    "gulp-csscomb": "latest",
-    "gulp-rename": "latest",
-    "gulp-sass": "latest",
-    "gulp-pug": "latest",
-    "jstransformer-highlight": "latest",
-    "jstransformer-markdown-it": "latest"
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-csscomb": "^3.1.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "jstransformer-highlight": "^2.0.0",
+    "jstransformer-markdown-it": "^2.1.0"
   },
   "browserslist": [
     "last 4 Chrome versions",

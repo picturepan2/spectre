@@ -1,6 +1,6 @@
 /*! Spectre.css Docs | MIT License | github.com/picturepan2/spectre */
 .version::after {
-  content: "0.5.8";
+  content: "0.5.9";
 }
 
 .off-canvas .off-canvas-toggle {
@@ -116,8 +116,8 @@
 @supports ((position: -webkit-sticky) or (position: sticky)) {
   .docs-content .s-title,
   .docs-content .s-subtitle {
-    position: sticky;
     position: -webkit-sticky;
+    position: sticky;
     top: 0;
     z-index: 99;
   }
@@ -257,8 +257,8 @@
   background: #5755d9;
   border-radius: .1rem;
   color: #fff;
-  display: flex;
   display: -ms-flexbox;
+  display: flex;
   -ms-flex-align: center;
   -ms-flex-line-pack: distribute;
   font-size: 1.2rem;
@@ -301,8 +301,8 @@
 .docs-brand .docs-logo {
   align-items: center;
   border-radius: .1rem;
-  display: inline-flex;
   display: -ms-inline-flexbox;
+  display: inline-flex;
   -ms-flex-align: center;
   font-size: .7rem;
   height: 2rem;

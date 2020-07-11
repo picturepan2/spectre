@@ -279,11 +279,14 @@ block docs-content
         :highlight(lang="JavaScript")
           var cssPrefix = require('gulp-css-prefix');
       
-          gulp.task('prefix', function() {
-            gulp.src('./dist/*.css')
-                .pipe(cssPrefix('spectre-'))
-                .pipe(gulp.dest('./dist'))
-          });
+          function prefix() {
+            return gulp
+              .src('./dist/*.css')
+              .pipe(cssPrefix('spectre-'))
+              .pipe(gulp.dest('./dist'));
+          }
+
+          exports.prefix = prefix;
 
     p
       | After you compile your version of Spectre in the /dist, run 

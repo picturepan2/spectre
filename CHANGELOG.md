@@ -1,5 +1,15 @@
 #### Spectre.css Changelog
 
+##### v0.5.9 [#](https://github.com/picturepan2/spectre/releases/tag/v0.5.9)
+
+- Update gulp and dependencies
+- Update docs, fixes typos, merging PRs, and add more examples like Hero layout and custom prefix
+- Update column classes less verbose 
+- Fix #619 by adding pointer-events to 3 dots
+- Fix the behavior of class `loading` together with tooltip
+- Only rotate the first child icon when accordion is open/close
+- Add a "Reviewed by Hound" badge 
+
 ##### v0.5.8 [#](https://github.com/picturepan2/spectre/releases/tag/v0.5.8)
 
 - IMPORTANT: Moving 

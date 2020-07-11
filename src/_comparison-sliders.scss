@@ -58,6 +58,7 @@
       color: $light-color;
       content: "";
       height: 3px;
+      pointer-events: none;
       position: absolute;
       right: $unit-2;
       top: 50%;

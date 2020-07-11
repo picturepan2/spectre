@@ -243,15 +243,15 @@
 <span class="hljs-variable">$dark-color</span>: <span class="hljs-number">#3e396b</span>;
 
 <span class="hljs-comment">// Import full Spectre source code</span>
-@<span class="hljs-keyword">import</span> <span class="hljs-string">"node_modules/spectre.css/src/spectre"</span>;
+<span class="hljs-keyword">@import</span> <span class="hljs-string">"node_modules/spectre.css/src/spectre"</span>;
 </code></pre>
             <p>Alternatively, you can create custom <code>_variables.scss</code> and import it to <code>project-name.scss</code>.</p>
             <pre class="code" data-lang="Sass"><code><span class="hljs-comment">// Example of project-name.scss</span>
-@<span class="hljs-keyword">import</span> <span class="hljs-string">"variables"</span>;
+<span class="hljs-keyword">@import</span> <span class="hljs-string">"variables"</span>;
 
 <span class="hljs-comment">// Import only the needed components</span>
-@<span class="hljs-keyword">import</span> <span class="hljs-string">"node_modules/spectre.css/src/buttons"</span>;
-@<span class="hljs-keyword">import</span> <span class="hljs-string">"node_modules/spectre.css/src/forms"</span>;
+<span class="hljs-keyword">@import</span> <span class="hljs-string">"node_modules/spectre.css/src/buttons"</span>;
+<span class="hljs-keyword">@import</span> <span class="hljs-string">"node_modules/spectre.css/src/forms"</span>;
 </code></pre>
             <h4 class="s-subtitle" id="folders">Folder structure<a class="anchor" href="#folders" aria-hidden="true">#</a></h4>
             <pre class="code"><code>spectre/
@@ -373,12 +373,12 @@
             </ul>
             <pre class="code" data-lang="Sass"><code>&lt;!-- filled <span class="hljs-selector-tag">button</span> with the success <span class="hljs-attribute">color</span> --&gt;
 <span class="hljs-selector-class">.btn-success</span> {
-  @<span class="hljs-keyword">include</span> button-variant(<span class="hljs-variable">$success-color</span>);
+  <span class="hljs-keyword">@include</span> button-variant(<span class="hljs-variable">$success-color</span>);
 }
 
 &lt;!-- outlined <span class="hljs-selector-tag">button</span> with the success <span class="hljs-attribute">color</span> --&gt;
 <span class="hljs-selector-class">.btn-outline-success</span> {
-  @<span class="hljs-keyword">include</span> button-outline-variant(<span class="hljs-variable">$success-color</span>);
+  <span class="hljs-keyword">@include</span> button-outline-variant(<span class="hljs-variable">$success-color</span>);
 }
 </code></pre>
             <h4 class="s-subtitle" id="variables-sizes">Variables - Sizes<a class="anchor" href="#variables-sizes" aria-hidden="true">#</a></h4>
@@ -392,11 +392,14 @@
             <p>To add <code>spectre-</code> to all classes, you can add the Gulp task to <code>gulpfile.js</code> file.</p>
             <pre class="code"><code><span class="hljs-keyword">var</span> cssPrefix = <span class="hljs-built_in">require</span>(<span class="hljs-string">'gulp-css-prefix'</span>);
 
-gulp.task(<span class="hljs-string">'prefix'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
-  gulp.src(<span class="hljs-string">'./dist/*.css'</span>)
-      .pipe(cssPrefix(<span class="hljs-string">'spectre-'</span>))
-      .pipe(gulp.dest(<span class="hljs-string">'./dist'</span>))
-});
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">prefix</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">return</span> gulp
+    .src(<span class="hljs-string">'./dist/*.css'</span>)
+    .pipe(cssPrefix(<span class="hljs-string">'spectre-'</span>))
+    .pipe(gulp.dest(<span class="hljs-string">'./dist'</span>));
+}
+
+exports.prefix = prefix;
 </code></pre>
             <p>After you compile your version of Spectre in the /dist, run <code>gulp prefix</code> in the directory of Spectre.</p>
           </div>

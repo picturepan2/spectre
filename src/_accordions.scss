@@ -2,8 +2,8 @@
 .accordion {
   input:checked ~,
   &[open] {
-    & .accordion-header {
-      .icon {
+    & .accordion-header > {
+      .icon:first-child {
         transform: rotate(90deg);
       }
     }
