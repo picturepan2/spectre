@@ -40,6 +40,13 @@
       max-width: $control-width-sm;
       padding: 0 $unit-2;
     }
+    .modal-header {
+      margin-left: -$unit-2;
+      margin-right: -$unit-2;
+      padding-left: $unit-6;
+      padding-right: $unit-6;
+
+    }
   }
 
   &.modal-lg {
@@ -71,7 +78,9 @@
 
   .modal-header {
     color: $dark-color;
-    padding: $unit-4;
+    margin-left: -$unit-4;
+    margin-right: -$unit-4;
+    padding: $unit-4 $unit-8;
   }
 
   .modal-body {
