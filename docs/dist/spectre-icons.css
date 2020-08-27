@@ -595,3 +595,26 @@
   transform: translate(-50%, -40%) rotate(-135deg);
   width: .5em;
 }
+
+.icon-emoji .icon-wifi::before {
+  background: transparent;
+  border-color: currentColor;
+  border-radius: 0 1em 0 0;
+  border-style: double;
+  border-width: .300em .300em 0 0;
+  height: .60em;
+  left: .125em;
+  top: -.1em;
+  transform: rotate(-45deg); 
+  width: .60em;
+}
+
+.icon-emoji .icon-wifi::after {
+  background-color: currentColor;
+  border-radius: 0 1em 0 0;
+  bottom: .23em;
+  height: .15em;
+  left: .350em; 
+  transform: rotate(-45deg);
+  width: .15em;
+}
