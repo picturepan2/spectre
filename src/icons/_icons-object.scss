@@ -163,10 +163,10 @@
 // Icon wifi
 .icon-wifi {
   &::before {
-    width: 0.75em;
+    width: .75em;
     background: transparent;
-    height: 0.75em;
-    left: 0.125em;
+    height: .75em;
+    left: .125em;
     top: -0.0625em;
     border-style: double;
     border-color: currentColor;
@@ -178,10 +178,10 @@
   &::after {
     border-radius: 0 1em 0 0;
     background-color: currentColor;
-    width: 0.25em;
-    height: 0.25em;
+    width: .25em;
+    height: .25em;
     transform: rotate(-45deg);
-    bottom: 0.1875em;
-    left: 0.375em;
+    bottom: .1875em;
+    left: .375em;
   }
 }
