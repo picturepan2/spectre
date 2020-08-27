@@ -445,7 +445,7 @@
   height: .25em;
   left: .25em;
   top: .3125em;
-  transform: rotate(-45deg); 
+  transform: rotate(-45deg);
   width: .5em;
 }
 
@@ -634,7 +634,7 @@
   border-radius: 0 1em 0 0;
   bottom: .1875em;
   height: .25em;
-  left: .375em; 
+  left: .375em;
   transform: rotate(-45deg);
   width: .25em;
 }
