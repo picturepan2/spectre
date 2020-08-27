@@ -317,15 +317,15 @@
 // Icon check circle
 .icon-circle-check {
   &::before {
-    width: .5em;
-    height: .25em;
-    border: .125em solid currentColor;
-    border-top: 0;
-    border-right: 0;
-    top: .3125em;
-    left: .25em;
     background: transparent;
+    border: .125em solid currentColor;
+    border-right: 0;
+    border-top: 0;
+    height: .25em;
+    left: .25em;
+    top: .3125em;
     transform: rotate(-45deg);
+    width: .5em;
   }
 
   &::after {

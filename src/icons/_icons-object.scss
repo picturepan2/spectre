@@ -167,21 +167,21 @@
     background: transparent;
     height: .75em;
     left: .125em;
-    top: -0.0625em;
+    top: -.0625em;
     border-style: double;
     border-color: currentColor;
-    border-width: 0.375em 0.375em 0 0;
+    border-width: .375em .375em 0 0;
     border-radius: 0 1em 0 0;
     transform: rotate(-45deg);
   }
-  
+
   &::after {
-    border-radius: 0 1em 0 0;
     background-color: currentColor;
-    width: .25em;
-    height: .25em;
-    transform: rotate(-45deg);
+    border-radius: 0 1em 0 0;
     bottom: .1875em;
+    height: .25em;
     left: .375em;
+    transform: rotate(-45deg);
+    width: .25em;
   }
 }
