@@ -437,6 +437,26 @@
   width: .8em;
 }
 
+.icon-circle-check::before {
+  background: transparent;
+  border: .125em solid currentColor;
+  border-right: 0;
+  border-top: 0;
+  height: .25em;
+  left: .25em;
+  top: .3125em;
+  transform: rotate(-45deg);
+  width: .5em;
+}
+
+.icon-circle-check::after {
+  background-color: transparent;
+  border: .125em solid currentColor;
+  border-radius: 100%;
+  height: 1.05em; 
+  width: 1.05em;
+}
+
 .icon-time {
   border: .1rem solid currentColor;
   border-radius: 50%;
@@ -594,4 +614,27 @@
   height: .5em;
   transform: translate(-50%, -40%) rotate(-135deg);
   width: .5em;
+}
+
+.icon-wifi::before {
+  background: transparent;
+  border-color: currentColor;
+  border-radius: 0 1em 0 0;
+  border-style: double;
+  border-width: .375em .375em 0 0;
+  height: .75em;
+  left: .125em;
+  top: -.0625em;
+  transform: rotate(-45deg); 
+  width: .75em;
+}
+
+.icon-wifi::after {
+  background-color: currentColor;
+  border-radius: 0 1em 0 0;
+  bottom: .1875em;
+  height: .25em;
+  left: .375em;
+  transform: rotate(-45deg);
+  width: .25em;
 }

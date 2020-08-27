@@ -761,8 +761,8 @@ html:lang(ko),
 }
 
 .btn-group {
-  display: -ms-inline-flexbox;
   display: inline-flex;
+  display: -ms-inline-flexbox;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
@@ -796,8 +796,8 @@ html:lang(ko),
 }
 
 .btn-group.btn-group-block {
+  display: flex; 
   display: -ms-flexbox;
-  display: flex;
 }
 
 .btn-group.btn-group-block .btn {
@@ -1166,8 +1166,8 @@ textarea.form-input.input-sm {
 }
 
 .input-group {
+  display: flex; 
   display: -ms-flexbox;
-  display: flex;
 }
 
 .input-group .input-group-addon {
@@ -1237,8 +1237,8 @@ textarea.form-input.input-sm {
 }
 
 .input-group.input-inline {
+  display: inline-flex; 
   display: -ms-inline-flexbox;
-  display: inline-flex;
 }
 
 .has-success .form-input,
@@ -1362,8 +1362,8 @@ input.disabled + .form-icon {
 }
 
 .form-horizontal .form-group {
-  display: -ms-flexbox;
   display: flex;
+  display: -ms-flexbox;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
@@ -1551,8 +1551,8 @@ video.video-responsive::before {
 
 .cols,
 .columns {
-  display: -ms-flexbox;
   display: flex;
+  display: -ms-flexbox;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-left: -.4rem;
@@ -2006,8 +2006,8 @@ video.video-responsive::before {
 }
 
 .hero {
-  display: -ms-flexbox;
   display: flex;
+  display: -ms-flexbox;
   -ms-flex-direction: column;
   flex-direction: column;
   -ms-flex-pack: justify;
@@ -2032,8 +2032,8 @@ video.video-responsive::before {
 
 .navbar {
   align-items: stretch;
-  display: -ms-flexbox;
   display: flex;
+  display: -ms-flexbox;
   -ms-flex-align: stretch;
   -ms-flex-pack: justify;
   -ms-flex-wrap: wrap;
@@ -2043,8 +2043,8 @@ video.video-responsive::before {
 
 .navbar .navbar-section {
   align-items: center;
-  display: -ms-flexbox;
   display: flex;
+  display: -ms-flexbox;
   -ms-flex: 1 0 0;
   flex: 1 0 0; 
   -ms-flex-align: center;
@@ -2057,8 +2057,8 @@ video.video-responsive::before {
 
 .navbar .navbar-center {
   align-items: center;
-  display: -ms-flexbox;
   display: flex;
+  display: -ms-flexbox;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto; 
   -ms-flex-align: center;
@@ -2269,8 +2269,8 @@ summary.accordion-header::-webkit-details-marker {
 .bar {
   background: #eef0f3;
   border-radius: .1rem;
-  display: -ms-flexbox;
   display: flex;
+  display: -ms-flexbox;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
   height: .8rem;
@@ -2345,8 +2345,8 @@ summary.accordion-header::-webkit-details-marker {
   background: #fff;
   border: .05rem solid #dadee4;
   border-radius: .1rem;
-  display: -ms-flexbox;
   display: flex;
+  display: -ms-flexbox;
   -ms-flex-direction: column;
   flex-direction: column;
 }
@@ -2391,8 +2391,8 @@ summary.accordion-header::-webkit-details-marker {
   align-items: center;
   background: #eef0f3;
   border-radius: 5rem;
-  display: -ms-inline-flexbox;
   display: inline-flex;
+  display: -ms-inline-flexbox;
   -ms-flex-align: center;
   font-size: 90%;
   height: 1.2rem;
@@ -2531,8 +2531,8 @@ summary.accordion-header::-webkit-details-marker {
 
 .menu .menu-badge {
   align-items: center;
-  display: -ms-flexbox;
   display: flex;
+  display: -ms-flexbox;
   -ms-flex-align: center;
   height: 100%;
   position: absolute;
@@ -2562,8 +2562,8 @@ summary.accordion-header::-webkit-details-marker {
 
 .modal:target,
 .modal.active {
-  display: -ms-flexbox;
   display: flex;
+  display: -ms-flexbox;
   opacity: 1;
   z-index: 400;
 }
@@ -2604,8 +2604,8 @@ summary.accordion-header::-webkit-details-marker {
   background: #fff;
   border-radius: .1rem;
   box-shadow: 0 .2rem .5rem rgba(48, 55, 66, .3);
-  display: -ms-flexbox;
   display: flex;
+  display: -ms-flexbox;
   -ms-flex-direction: column;
   flex-direction: column;
   max-height: 75vh;
@@ -2635,8 +2635,8 @@ summary.accordion-header::-webkit-details-marker {
 }
 
 .nav {
-  display: -ms-flexbox;
   display: flex;
+  display: -ms-flexbox;
   -ms-flex-direction: column;
   flex-direction: column;
   list-style: none;
@@ -2670,8 +2670,8 @@ summary.accordion-header::-webkit-details-marker {
 }
 
 .pagination {
-  display: -ms-flexbox;
   display: flex;
+  display: -ms-flexbox;
   list-style: none;
   margin: .2rem 0;
   padding: .2rem 0;
@@ -2731,8 +2731,8 @@ summary.accordion-header::-webkit-details-marker {
 .panel {
   border: .05rem solid #dadee4;
   border-radius: .1rem;
-  display: -ms-flexbox;
   display: flex;
+  display: -ms-flexbox;
   -ms-flex-direction: column;
   flex-direction: column;
 }
@@ -2816,8 +2816,8 @@ summary.accordion-header::-webkit-details-marker {
 }
 
 .step {
-  display: -ms-flexbox;
   display: flex;
+  display: -ms-flexbox;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
   list-style: none;
@@ -2886,8 +2886,8 @@ summary.accordion-header::-webkit-details-marker {
 .tab {
   align-items: center;
   border-bottom: .05rem solid #dadee4;
-  display: -ms-flexbox;
   display: flex;
+  display: -ms-flexbox;
   -ms-flex-align: center;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -2953,8 +2953,8 @@ summary.accordion-header::-webkit-details-marker {
 .tile {
   align-content: space-between;
   align-items: flex-start;
-  display: -ms-flexbox;
   display: flex; 
+  display: -ms-flexbox;
   -ms-flex-align: start;
   -ms-flex-line-pack: justify;
 }
@@ -3316,13 +3316,13 @@ a.text-error:visited {
 }
 
 .d-flex {
+  display: flex; 
   display: -ms-flexbox;
-  display: flex;
 }
 
 .d-inline-flex {
+  display: inline-flex; 
   display: -ms-inline-flexbox;
-  display: inline-flex;
 }
 
 .d-none,
@@ -3475,8 +3475,8 @@ a.text-error:visited {
 }
 
 .p-sticky {
+  position: sticky !important; 
   position: -webkit-sticky !important;
-  position: sticky !important;
 }
 
 .p-centered {
@@ -3488,8 +3488,8 @@ a.text-error:visited {
 
 .flex-centered {
   align-items: center;
-  display: -ms-flexbox;
   display: flex;
+  display: -ms-flexbox;
   -ms-flex-align: center;
   -ms-flex-pack: center;
   justify-content: center;
