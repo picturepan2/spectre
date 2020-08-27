@@ -158,31 +158,31 @@
     transform: translate(-50%, -40%) rotate(-135deg);
     width: .5em;
   }
+}
 
-  // Icon wifi
-  .icon-wifi {
-    &::before {
-      width: 0.60em;
-      background: transparent;
-      height: 0.60em;
-      left: 0.125em;
-      top: -0.1em;
-      border-style: double;
-      border-color: currentColor;
-      border-width: 0.300em 0.300em 0 0;
-      border-radius: 0 1em 0 0;
-      transform: rotate(-45deg);
-    }
-    
-    &::after {
-      border-radius: 0 1em 0 0;
-      background-color: currentColor;
-      width: 0.15em;
-      height: 0.15em;
-      transform: rotate(-45deg);
-      bottom: 0.23em;
-      left: 0.350em;
-    }
-    
+// Icon wifi
+.icon-wifi {
+  &::before {
+    width: 0.75em;
+    background: transparent;
+    height: 0.75em;
+    left: 0.125em;
+    top: -0.0625em;
+    border-style: double;
+    border-color: currentColor;
+    border-width: 0.375em 0.375em 0 0;
+    border-radius: 0 1em 0 0;
+    transform: rotate(-45deg);
   }
+  
+  &::after {
+    border-radius: 0 1em 0 0;
+    background-color: currentColor;
+    width: 0.25em;
+    height: 0.25em;
+    transform: rotate(-45deg);
+    bottom: 0.1875em;
+    left: 0.375em;
+  }
+  
 }

@@ -116,8 +116,8 @@
 @supports ((position: -webkit-sticky) or (position: sticky)) {
   .docs-content .s-title,
   .docs-content .s-subtitle {
-    position: -webkit-sticky;
     position: sticky;
+    position: -webkit-sticky;
     top: 0;
     z-index: 99;
   }
@@ -257,8 +257,8 @@
   background: #5755d9;
   border-radius: .1rem;
   color: #fff;
-  display: -ms-flexbox;
   display: flex;
+  display: -ms-flexbox;
   -ms-flex-align: center;
   -ms-flex-line-pack: distribute;
   font-size: 1.2rem;
@@ -301,8 +301,8 @@
 .docs-brand .docs-logo {
   align-items: center;
   border-radius: .1rem;
-  display: -ms-inline-flexbox;
   display: inline-flex;
+  display: -ms-inline-flexbox;
   -ms-flex-align: center;
   font-size: .7rem;
   height: 2rem;

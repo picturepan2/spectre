@@ -596,25 +596,25 @@
   width: .5em;
 }
 
-.icon-emoji .icon-wifi::before {
+.icon-wifi::before {
   background: transparent;
   border-color: currentColor;
   border-radius: 0 1em 0 0;
   border-style: double;
-  border-width: .300em .300em 0 0;
-  height: .60em;
+  border-width: .375em .375em 0 0;
+  height: .75em;
   left: .125em;
-  top: -.1em;
+  top: -.0625em;
   transform: rotate(-45deg); 
-  width: .60em;
+  width: .75em;
 }
 
-.icon-emoji .icon-wifi::after {
+.icon-wifi::after {
   background-color: currentColor;
   border-radius: 0 1em 0 0;
-  bottom: .23em;
-  height: .15em;
-  left: .350em; 
+  bottom: .1875em;
+  height: .25em;
+  left: .375em; 
   transform: rotate(-45deg);
-  width: .15em;
+  width: .25em;
 }
