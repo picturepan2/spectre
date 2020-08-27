@@ -437,6 +437,26 @@
   width: .8em;
 }
 
+.icon-circle-check::before {
+  background: transparent;
+  border: .125em solid currentColor;
+  border-right: 0;
+  border-top: 0;
+  height: .25em;
+  left: .25em;
+  top: .3125em;
+  transform: rotate(-45deg); 
+  width: .5em;
+}
+
+.icon-circle-check::after {
+  background-color: transparent;
+  border: .125em solid currentColor;
+  border-radius: 100%;
+  height: 1.05em; 
+  width: 1.05em;
+}
+
 .icon-time {
   border: .1rem solid currentColor;
   border-radius: 50%;

@@ -313,3 +313,27 @@
     width: .8em;
   }
 }
+
+// Icon check circle
+.icon-circle-check {
+  &::before {
+    width: 0.5em;
+    height: 0.25em;
+    border: 0.125em solid currentColor;
+    border-top: 0;
+    border-right: 0;
+    top: 0.3125em;
+    left: 0.25em;
+    background: transparent;
+    transform: rotate(-45deg);
+  }
+
+  &::after {
+    background-color: transparent;
+    border: 0.125em solid currentColor;
+    border-radius: 100%;
+    width: 1.05em;
+    height: 1.05em;
+  }
+}
+
