@@ -14,13 +14,13 @@
     content: "";
     display: block;
     height: $unit-4;
-    left: 50%;
+    left: 50% !important; // !important fixes https://github.com/picturepan2/spectre/issues/649
     margin-left: -$unit-2;
     margin-top: -$unit-2;
     opacity: 1;
     padding: 0;
     position: absolute;
-    top: 50%;
+    top: 50% !important; // !important fixes https://github.com/picturepan2/spectre/issues/649
     width: $unit-4;
     z-index: $zindex-0;
   }
