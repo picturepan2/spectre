@@ -116,6 +116,58 @@ block docs-content
             </tbody>
           </table>
 
+    +docs-subheading('tables-stack', 'Stack tables')
+
+    .docs-demo.columns
+      .column.col-12
+        table.table.table-stack
+          thead
+            tr
+              th Name
+              th Genre
+              th Release date
+          tbody
+            tr
+              td(data-th="Name") The Shawshank Redemption
+              td(data-th="Genre") Crime, Drama
+              td(data-th="Release date") 14 October 1994
+            tr
+              td(data-th="Name") The Godfather
+              td(data-th="Genre") Crime, Drama
+              td(data-th="Release date") 24 March 1972
+            tr
+              td(data-th="Name") Schindler's List
+              td(data-th="Genre") Biography, Drama, History
+              td(data-th="Release date") 4 February 1994
+            tr
+              td(data-th="Name") Se7en
+              td(data-th="Genre") Crime, Drama, Mystery
+              td(data-th="Release date") 22 September 1995
+
+    p
+      | Use the #[code table-stack] class to #{'<table>'} to stack each row in a box style when the window width is smaller than or equal to #[strong 960px].
+      | Add #[code data-th] attribute to each #{'<td>'} tag for header to be displayed before the actual content.
+
+    pre.code(data-lang='HTML')
+      code
+        :highlight(lang="html")
+          <table class="table table-stack">
+            <thead>
+              <tr>
+                <th>name</th>
+                <th>genre</th>
+                <th>release date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-th="name">The Shawshank Redemption</td>
+                <td data-th="genre">Crime, Drama</td>
+                <td data-th="release date">14 October 1994</td>
+              </tr>
+            </tbody>
+          </table>
+
     +docs-subheading('tables-scroll', 'Scrollable tables')
 
     .docs-demo.columns
@@ -161,6 +213,7 @@ block docs-content
 
     p
       | Add the #[code table-scroll] class to #{'<table>'} to have a horizontally scrollable table.
+      | This class will remove the effect of #[code table-stack] class.
 
     pre.code(data-lang='HTML')
       code

@@ -1,4 +1,6 @@
 // Tables
+$table-breakpoint: $size-lg !default;
+
 .table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -53,5 +55,36 @@
   }
   th {
     border-bottom-width: $border-width-lg;
+  }
+}
+
+// Responsive layout
+@media (max-width: $table-breakpoint) {
+  .table:not(.table-scroll) {
+    &.table-stack {
+      thead th {
+        display: none;
+      }
+
+      tr {
+        border-bottom: $border-width solid $border-color;
+
+        &:first-child {
+          border-top: $border-width solid $border-color;
+        }
+      }
+
+      td,
+      th {
+        border-bottom: 0;
+        display: block;
+
+        &[data-th]::before {
+          content: attr(data-th);
+          display: block;
+          font-weight: bold;
+        }
+      }
+    }
   }
 }
