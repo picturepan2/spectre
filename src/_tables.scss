@@ -54,4 +54,11 @@
   th {
     border-bottom-width: $border-width-lg;
   }
+
+  // Add top border on tables without a <thead>
+  tbody:first-child {
+    td {
+      border-top: $border-width solid $border-color;
+    }
+  }
 }
