@@ -1,17 +1,22 @@
+@use "sass:color";
+@use "mixins/button";
+@use "mixins/shadow";
+@use "variables";
+
 // Buttons
 .btn {
   appearance: none;
-  background: $bg-color-light;
-  border: $border-width solid $primary-color;
-  border-radius: $border-radius;
-  color: $primary-color;
+  background: variables.$bg-color-light;
+  border: variables.$border-width solid variables.$primary-color;
+  border-radius: variables.$border-radius;
+  color: variables.$primary-color;
   cursor: pointer;
   display: inline-block;
-  font-size: $font-size;
-  height: $control-size;
-  line-height: $line-height;
+  font-size: variables.$font-size;
+  height: variables.$control-size;
+  line-height: variables.$line-height;
   outline: none;
-  padding: $control-padding-y $control-padding-x;
+  padding: variables.$control-padding-y variables.$control-padding-x;
   text-align: center;
   text-decoration: none;
   transition: background .2s, border .2s, box-shadow .2s, color .2s;
@@ -19,24 +24,24 @@
   vertical-align: middle;
   white-space: nowrap;
   &:focus {
-    @include control-shadow();
+    @include shadow.control-shadow();
   }
   &:focus,
   &:hover {
-    background: $secondary-color;
-    border-color: $primary-color-dark;
+    background: variables.$secondary-color;
+    border-color: variables.$primary-color-dark;
     text-decoration: none;
   }
   &:active,
   &.active {
-    background: $primary-color-dark;
-    border-color: darken($primary-color-dark, 5%);
-    color: $light-color;
+    background: variables.$primary-color-dark;
+    border-color: color.adjust(variables.$primary-color-dark, $lightness: -5%);
+    color: variables.$light-color;
     text-decoration: none;
     &.loading {
       &::after {
-        border-bottom-color: $light-color;
-        border-left-color: $light-color;
+        border-bottom-color: variables.$light-color;
+        border-left-color: variables.$light-color;
       }
     }
   }
@@ -50,62 +55,62 @@
 
   // Button Primary
   &.btn-primary {
-    background: $primary-color;
-    border-color: $primary-color-dark;
-    color: $light-color;
+    background: variables.$primary-color;
+    border-color: variables.$primary-color-dark;
+    color: variables.$light-color;
     &:focus,
     &:hover {
-      background: darken($primary-color-dark, 2%);
-      border-color: darken($primary-color-dark, 5%);
-      color: $light-color;
+      background: color.adjust(variables.$primary-color-dark, $lightness: -2%);
+      border-color: color.adjust(variables.$primary-color-dark, $lightness: -5%);
+      color: variables.$light-color;
     }
     &:active,
     &.active {
-      background: darken($primary-color-dark, 4%);
-      border-color: darken($primary-color-dark, 7%);
-      color: $light-color;
+      background: color.adjust(variables.$primary-color-dark, $lightness: -4%);
+      border-color: color.adjust(variables.$primary-color-dark, $lightness: -7%);
+      color: variables.$light-color;
     }
     &.loading {
       &::after {
-        border-bottom-color: $light-color;
-        border-left-color: $light-color;
+        border-bottom-color: variables.$light-color;
+        border-left-color: variables.$light-color;
       }
     }
   }
 
   // Button Colors
   &.btn-success {
-    @include button-variant($success-color);
+    @include button.button-variant(variables.$success-color);
   }
 
   &.btn-error {
-    @include button-variant($error-color);
+    @include button.button-variant(variables.$error-color);
   }
 
   // Button Link
   &.btn-link {
     background: transparent;
     border-color: transparent;
-    color: $link-color;
+    color: variables.$link-color;
     &:focus,
     &:hover,
     &:active,
     &.active {
-      color: $link-color-dark;
+      color: variables.$link-color-dark;
     }
   }
 
   // Button Sizes
   &.btn-sm {
-    font-size: $font-size-sm;
-    height: $control-size-sm;
-    padding: $control-padding-y-sm $control-padding-x-sm;
+    font-size: variables.$font-size-sm;
+    height: variables.$control-size-sm;
+    padding: variables.$control-padding-y-sm variables.$control-padding-x-sm;
   }
 
   &.btn-lg {
-    font-size: $font-size-lg;
-    height: $control-size-lg;
-    padding: $control-padding-y-lg $control-padding-x-lg;
+    font-size: variables.$font-size-lg;
+    height: variables.$control-size-lg;
+    padding: variables.$control-padding-y-lg variables.$control-padding-x-lg;
   }
 
   // Button Block
@@ -116,16 +121,16 @@
 
   // Button Action
   &.btn-action {
-    width: $control-size;
+    width: variables.$control-size;
     padding-left: 0;
     padding-right: 0;
 
     &.btn-sm {
-      width: $control-size-sm;
+      width: variables.$control-size-sm;
     }
 
     &.btn-lg {
-      width: $control-size-lg;
+      width: variables.$control-size-lg;
     }
   }
 
@@ -134,18 +139,18 @@
     background: transparent;
     border: 0;
     color: currentColor;
-    height: $unit-5;
-    line-height: $unit-4;
-    margin-left: $unit-1;
+    height: variables.$unit-5;
+    line-height: variables.$unit-4;
+    margin-left: variables.$unit-1;
     margin-right: -2px;
     opacity: 1;
-    padding: $unit-h;
+    padding: variables.$unit-h;
     text-decoration: none;
-    width: $unit-5;
+    width: variables.$unit-5;
 
     &:focus,
     &:hover {
-      background: rgba($bg-color, .5);
+      background: rgba(variables.$bg-color, .5);
       opacity: .95;
     }
 
@@ -168,18 +173,18 @@
     }
     &:not(:first-child):not(:last-child) {
       border-radius: 0;
-      margin-left: -$border-width;
+      margin-left: -(variables.$border-width);
     }
     &:last-child:not(:first-child) {
       border-bottom-left-radius: 0;
       border-top-left-radius: 0;
-      margin-left: -$border-width;
+      margin-left: -(variables.$border-width);
     }
     &:focus,
     &:hover,
     &:active,
     &.active {
-      z-index: $zindex-0;
+      z-index: variables.$zindex-0;
     }
   }
 

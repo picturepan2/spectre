@@ -1,31 +1,33 @@
+@use "variables";
+
 // Layout
 .container {
   margin-left: auto;
   margin-right: auto;
-  padding-left: $layout-spacing;
-  padding-right: $layout-spacing;
+  padding-left: variables.$layout-spacing;
+  padding-right: variables.$layout-spacing;
   width: 100%;
 
-  $grid-spacing: ($layout-spacing / ($layout-spacing * 0 + 1)) * $html-font-size;
+  $grid-spacing: (variables.$layout-spacing / (variables.$layout-spacing * 0 + 1)) * variables.$html-font-size;
 
   &.grid-xl {
-    max-width: $grid-spacing * 2 + $size-xl;
+    max-width: $grid-spacing * 2 + variables.$size-xl;
   }
 
   &.grid-lg {
-    max-width: $grid-spacing * 2 + $size-lg;
+    max-width: $grid-spacing * 2 + variables.$size-lg;
   }
 
   &.grid-md {
-    max-width: $grid-spacing * 2 + $size-md;
+    max-width: $grid-spacing * 2 + variables.$size-md;
   }
 
   &.grid-sm {
-    max-width: $grid-spacing * 2 + $size-sm;
+    max-width: $grid-spacing * 2 + variables.$size-sm;
   }
 
   &.grid-xs {
-    max-width: $grid-spacing * 2 + $size-xs;
+    max-width: $grid-spacing * 2 + variables.$size-xs;
   }
 }
 
@@ -43,8 +45,8 @@
 .columns {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -$layout-spacing;
-  margin-right: -$layout-spacing;
+  margin-left: -(variables.$layout-spacing);
+  margin-right: -(variables.$layout-spacing);
 
   &.col-gapless {
     margin-left: 0;
@@ -64,8 +66,8 @@
 .column {
   flex: 1;
   max-width: 100%;
-  padding-left: $layout-spacing;
-  padding-right: $layout-spacing;
+  padding-left: variables.$layout-spacing;
+  padding-right: variables.$layout-spacing;
 
   &.col-12,
   &.col-11,
@@ -134,7 +136,7 @@
 .col-mr-auto {
   margin-right: auto;
 }
-@media (max-width: $size-xl) {
+@media (max-width: variables.$size-xl) {
   .col-xl-12,
   .col-xl-11,
   .col-xl-10,
@@ -196,7 +198,7 @@
     display: block !important;
   }
 }
-@media (max-width: $size-lg) {
+@media (max-width: variables.$size-lg) {
   .col-lg-12,
   .col-lg-11,
   .col-lg-10,
@@ -258,7 +260,7 @@
     display: block !important;
   }
 }
-@media (max-width: $size-md) {
+@media (max-width: variables.$size-md) {
   .col-md-12,
   .col-md-11,
   .col-md-10,
@@ -320,7 +322,7 @@
     display: block !important;
   }
 }
-@media (max-width: $size-sm) {
+@media (max-width: variables.$size-sm) {
   .col-sm-12,
   .col-sm-11,
   .col-sm-10,
@@ -382,7 +384,7 @@
     display: block !important;
   }
 }
-@media (max-width: $size-xs) {
+@media (max-width: variables.$size-xs) {
   .col-xs-12,
   .col-xs-11,
   .col-xs-10,

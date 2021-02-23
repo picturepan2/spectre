@@ -1,5 +1,7 @@
+@use "variables";
+
 // Avatar mixin
-@mixin avatar-base($size: $unit-8) {
+@mixin avatar-base($size: variables.$unit-8) {
   font-size: $size / 2;
   height: $size;
   width: $size;

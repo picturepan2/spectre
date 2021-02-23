@@ -1,3 +1,6 @@
+@use "variables";
+@use "mixins/shadow";
+
 // Autocomplete
 .form-autocomplete {
   position: relative;
@@ -7,12 +10,12 @@
     display: flex;
     flex-wrap: wrap;
     height: auto;
-    min-height: $unit-8;
-    padding: $unit-h;
+    min-height: variables.$unit-8;
+    padding: variables.$unit-h;
 
     &.is-focused {
-      @include control-shadow();
-      border-color: $primary-color;
+      @include shadow.control-shadow();
+      border-color: variables.$primary-color;
     }
 
     .form-input {
@@ -20,9 +23,9 @@
       box-shadow: none;
       display: inline-block;
       flex: 1 0 auto;
-      height: $unit-6;
-      line-height: $unit-4;
-      margin: $unit-h;
+      height: variables.$unit-6;
+      line-height: variables.$unit-4;
+      margin: variables.$unit-h;
       width: auto;
     }
   }

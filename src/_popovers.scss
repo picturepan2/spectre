@@ -1,3 +1,6 @@
+@use "mixins/shadow";
+@use "variables";
+
 // Popovers
 .popover {
   display: inline-block;
@@ -6,13 +9,13 @@
   .popover-container {
     left: 50%;
     opacity: 0;
-    padding: $layout-spacing;
+    padding: variables.$layout-spacing;
     position: absolute;
     top: 0;
     transform: translate(-50%, -50%) scale(0);
     transition: transform .2s;
-    width: $control-width-sm;
-    z-index: $zindex-3;
+    width: variables.$control-width-sm;
+    z-index: variables.$zindex-3;
   }
 
   *:focus + .popover-container,
@@ -59,7 +62,7 @@
   }
 
   .card {
-    @include shadow-variant(.2rem);
+    @include shadow.shadow-variant(.2rem);
     border: 0;
   }
 }

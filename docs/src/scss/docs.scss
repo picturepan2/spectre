@@ -1,10 +1,11 @@
 /*! Spectre.css Docs | MIT License | github.com/picturepan2/spectre */
 // Core variables and mixins
-@import "../../../src/variables";
-@import "../../../src/mixins";
+@use "sass:color";
+@use "../../../src/variables";
+@use "../../../src/mixins";
 
 .version::after {
-  content: "#{$version}";
+  content: "#{variables.$version}";
 }
 
 .off-canvas {
@@ -33,7 +34,7 @@
   position: fixed;
   right: 0;
   top: 0;
-  z-index: $zindex-1;
+  z-index: variables.$zindex-1;
 
   .btns {
     position: absolute;
@@ -63,7 +64,7 @@
 
     input {
       & ~ .accordion-header {
-        color: lighten($dark-color, 10%);
+        color: color.adjust(variables.$dark-color, $lightness: 10%);
         font-size: .65rem;
         font-weight: 600;
         text-transform: uppercase;
@@ -71,7 +72,7 @@
       
       &:checked {
         & ~ .accordion-header {
-          color: lighten($dark-color, 15%);
+          color: color.adjust(variables.$dark-color, $lightness: 15%);
         }
       }
     }
@@ -83,7 +84,7 @@
         
         & > a {
           background: transparent;
-          color: $gray-color-dark;
+          color: variables.$gray-color-dark;
           display: inline-block;
         }
       }
@@ -103,7 +104,7 @@
   }
 
   .anchor {
-    color: $primary-color-light;
+    color: variables.$primary-color-light;
     display: none;
     margin-left: .2rem;
     padding: 0 .2rem;
@@ -125,10 +126,10 @@
     @supports (position: sticky) {
       position: sticky;
       top: 0;
-      z-index: $zindex-1 - 1;
+      z-index: variables.$zindex-1 - 1;
 
       &::before {
-        background: $light-color;
+        background: variables.$light-color;
         bottom: 0;
         content: "";
         display: block;
@@ -136,7 +137,7 @@
         position: absolute;
         right: -10px;
         top: -5px;
-        z-index: -$zindex-0;
+        z-index: -(variables.$zindex-0);
       }
     }
 
@@ -156,22 +157,22 @@
     padding-top: 1rem;
 
     .card {
-      box-shadow: 0 .25rem 1rem rgba($dark-color, .15);
+      box-shadow: 0 .25rem 1rem rgba(variables.$dark-color, .15);
       border: 0;
       height: 100%;
     }
   }
 
   .column {
-    padding: $layout-spacing;
+    padding: variables.$layout-spacing;
   }
 
   .docs-block {
-    border-radius: $border-radius;
-    padding: $unit-2;
+    border-radius: variables.$border-radius;
+    padding: variables.$unit-2;
 
     &.bg-gray {
-      background: $bg-color-dark;
+      background: variables.$bg-color-dark;
     }
   }
 
@@ -198,30 +199,30 @@
   }
 
   .docs-color {
-    border-radius: $border-radius;
+    border-radius: variables.$border-radius;
     margin: .25rem 0;
     padding: 5rem .5rem .5rem;
 
     .color-subtitle {
-      font-size: $font-size-sm;
+      font-size: variables.$font-size-sm;
       opacity: .75;
     }
   }
 
   .code {
     .hljs-tag {
-      color: lighten($body-font-color, 10%);
+      color: color.adjust(variables.$body-font-color, $lightness: 10%);
     }
 
     .hljs-comment {
-      color: $gray-color;
+      color: variables.$gray-color;
     }
 
     .hljs-title,
     .hljs-class,
     .hljs-string,
     .hljs-number {
-      color: $primary-color;
+      color: variables.$primary-color;
     }
 
     .hljs-name,
@@ -229,12 +230,12 @@
     .hljs-variable,
     .hljs-keyword,
     .hljs-built_in {
-      color: $code-color;
+      color: variables.$code-color;
     }
 
     .hljs-value,
     .hljs-hexcolor {
-      color: lighten($body-font-color, 10%);
+      color: color.adjust(variables.$body-font-color, $lightness: 10%);
     }
   }
 
@@ -261,9 +262,9 @@
   .example-tile-icon {
     align-content: space-around;
     align-items: center;
-    background: $primary-color;
-    border-radius: $border-radius;
-    color: $light-color;
+    background: variables.$primary-color;
+    border-radius: variables.$border-radius;
+    color: variables.$light-color;
     display: flex;
     font-size: 1.2rem;
     height: 2rem;
@@ -287,16 +288,16 @@
     position: relative;
 
     .off-canvas-toggle {
-      left: $layout-spacing;
+      left: variables.$layout-spacing;
       position: absolute;
-      top: $layout-spacing;
-      z-index: $zindex-0;
+      top: variables.$layout-spacing;
+      z-index: variables.$zindex-0;
     }
   }
 }
 
 .docs-brand {
-  color: $primary-color;
+  color: variables.$primary-color;
   height: 2rem;
   left: 1.5rem;
   position: fixed;
@@ -304,7 +305,7 @@
 
   .docs-logo {
     align-items: center;
-    border-radius: $border-radius;
+    border-radius: variables.$border-radius;
     display: inline-flex;
     font-size: .7rem;
     height: 2rem;
@@ -335,20 +336,20 @@
 }
 
 .docs-footer {
-  color: $gray-color;
+  color: variables.$gray-color;
   padding: .5rem;
 
   a {
-    color: $gray-color-dark;
+    color: variables.$gray-color-dark;
   }
 }
 
 .docs-ad {
-  background: $bg-color;
-  border-radius: $border-radius;
+  background: variables.$bg-color;
+  border-radius: variables.$border-radius;
   display: block;
   margin: 2rem 0;
-  padding: $layout-spacing;
+  padding: variables.$layout-spacing;
   position: relative;
 
   ins {
@@ -362,15 +363,15 @@
     }
   
     .carbon-text {
-      color: $gray-color-dark;
+      color: variables.$gray-color-dark;
       display: block;
-      font-size: $font-size-sm;
+      font-size: variables.$font-size-sm;
     }
   }
   
   .carbon-poweredby {
-    color: $gray-color;
-    font-size: $font-size-sm;
+    color: variables.$gray-color;
+    font-size: variables.$font-size-sm;
   }
 }
 
@@ -383,12 +384,12 @@
     top: .85rem;
 
     h2 {
-      color: $primary-color;
+      color: variables.$primary-color;
     }
   }
 
   .column {
-    padding: $layout-spacing;
+    padding: variables.$layout-spacing;
   }
 }
 
@@ -409,18 +410,18 @@
   padding: 4.5rem .5rem;
 
   .column {
-    padding: $layout-spacing;
+    padding: variables.$layout-spacing;
   }
 }
 
 .section-footer {
-  color: $gray-color;
+  color: variables.$gray-color;
   padding: 1.8rem .75rem 1rem;
   position: relative;
   z-index: 200;
 
   a {
-    color: $gray-color-dark;
+    color: variables.$gray-color-dark;
   }
 }
 
@@ -429,22 +430,22 @@
   padding-top: 6rem;
 
   h1 {
-    color: $body-font-color;
+    color: variables.$body-font-color;
     font-size: 1.6rem;
     font-weight: 600;
     margin-bottom: 1.5rem;
   }
 
   h2 {
-    color: lighten($body-font-color, 5%);
+    color: color.adjust(variables.$body-font-color, $lightness: 5%);
     font-size: .9rem;
     font-weight: 400;
     line-height: 1.5rem;
     margin-bottom: 1.5rem;
 
     u {
-      border-bottom: $border-width-lg solid currentColor;
-      padding-bottom: $unit-o;
+      border-bottom: variables.$border-width-lg solid currentColor;
+      padding-bottom: variables.$unit-o;
       text-decoration: none;
     }
   }
@@ -452,11 +453,11 @@
   .card {
     background: none;
     border: 0;
-    color: lighten($body-font-color, 15%);
+    color: color.adjust(variables.$body-font-color, $lightness: 15%);
     padding: .5rem;
 
     .card-title {
-      color: $primary-color;
+      color: variables.$primary-color;
       font-size: 1rem;
       font-weight: 700;
       margin-bottom: 0;
@@ -467,7 +468,7 @@
 @media (max-width: 960px) {
   .off-canvas {
     .off-canvas-toggle {
-      z-index: $zindex-3;
+      z-index: variables.$zindex-3;
     }
 
     .off-canvas-content {
@@ -494,7 +495,7 @@
 
   .docs-navbar {
     backdrop-filter: blur(5px);
-    background: rgba($bg-color, .65);
+    background: rgba(variables.$bg-color, .65);
     left: 0;
   }
 
@@ -579,7 +580,7 @@
     padding: 0 .5rem;
 
     .docs-block {
-      padding: $unit-2 $unit-h;
+      padding: variables.$unit-2 variables.$unit-h;
     }
   }
 }
@@ -793,7 +794,7 @@
       cursor: pointer;
       &.ds-cursor .algolia-docsearch-suggestion {
         &.suggestion-layout-simple, &:not(.suggestion-layout-simple) .algolia-docsearch-suggestion--content {
-          background-color: rgba($primary-color, .05);
+          background-color: rgba(variables.$primary-color, .05);
         }
       }
     }
@@ -816,13 +817,13 @@
     position: relative;
     padding: 0 8px;
     background: #fff;
-    color: $dark-color;
+    color: variables.$dark-color;
     overflow: hidden;
   }
 
   .algolia-docsearch-suggestion--highlight {
-    color: $primary-color;
-    background: rgba($primary-color, .1);
+    color: variables.$primary-color;
+    background: rgba(variables.$primary-color, .1);
     padding: 0.1em 0.05em;
   }
 
@@ -830,7 +831,7 @@
     .algolia-docsearch-suggestion--category-header-lvl0 .algolia-docsearch-suggestion--highlight, .algolia-docsearch-suggestion--category-header-lvl1 .algolia-docsearch-suggestion--highlight {
       padding: 0 0 1px;
       background: inherit;
-      box-shadow: inset 0 -2px 0 0 rgba($primary-color, .8);
+      box-shadow: inset 0 -2px 0 0 rgba(variables.$primary-color, .8);
       color: inherit;
     }
   }
@@ -838,7 +839,7 @@
   .algolia-docsearch-suggestion--text .algolia-docsearch-suggestion--highlight {
     padding: 0 0 1px;
     background: inherit;
-    box-shadow: inset 0 -2px 0 0 rgba($primary-color, .8);
+    box-shadow: inset 0 -2px 0 0 rgba(variables.$primary-color, .8);
     color: inherit;
   }
 
@@ -856,19 +857,19 @@
       top: 0;
       height: 100%;
       width: 1px;
-      background: $gray-color-light;
+      background: variables.$gray-color-light;
       left: -1px;
     }
   }
 
   .algolia-docsearch-suggestion--category-header {
     position: relative;
-    border-bottom: 1px solid $gray-color-light;
+    border-bottom: 1px solid variables.$gray-color-light;
     display: none;
     margin-top: 8px;
     padding: 4px 0;
     font-size: 1em;
-    color: $dark-color;
+    color: variables.$dark-color;
   }
 
   .algolia-docsearch-suggestion--wrapper {
@@ -883,7 +884,7 @@
     text-align: right;
     position: relative;
     padding: 5.33333px 10.66667px;
-    color: $gray-color;
+    color: variables.$gray-color;
     font-size: .9em;
     word-wrap: break-word;
     &:before {
@@ -893,7 +894,7 @@
       top: 0;
       height: 100%;
       width: 1px;
-      background: $gray-color-light;
+      background: variables.$gray-color-light;
       right: 0;
     }
   }
@@ -903,7 +904,7 @@
   }
 
   .algolia-docsearch-suggestion--title {
-    color: $dark-color;
+    color: variables.$dark-color;
     font-size: .9em;
     font-weight: 700;
   }
@@ -912,7 +913,7 @@
     display: block;
     line-height: 1.2em;
     font-size: .85em;
-    color: $gray-color-dark;
+    color: variables.$gray-color-dark;
   }
 
   .algolia-docsearch-suggestion--no-results {

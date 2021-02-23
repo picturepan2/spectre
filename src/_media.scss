@@ -1,3 +1,5 @@
+@use "variables";
+
 // Media
 // Image responsive
 .img-responsive {
@@ -66,10 +68,10 @@ video.video-responsive {
 
 // Figure
 .figure {
-  margin: 0 0 $layout-spacing 0;
+  margin: 0 0 variables.$layout-spacing 0;
 
   .figure-caption {
-    color: $gray-color-dark;
-    margin-top: $layout-spacing;
+    color: variables.$gray-color-dark;
+    margin-top: variables.$layout-spacing;
   }
 }

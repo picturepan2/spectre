@@ -1,6 +1,6 @@
 const gulp = require("gulp");
 const { parallel } = require("gulp");
-const sass = require('gulp-sass');
+const sass = require('gulp-dart-sass');
 const cleancss = require('gulp-clean-css');
 const csscomb = require('gulp-csscomb');
 const rename = require('gulp-rename');
@@ -10,7 +10,7 @@ const autoprefixer = require('gulp-autoprefixer');
 function build() {
   return gulp
     .src('./src/*.scss')
-    .pipe(sass({outputStyle: 'compact', precision: 10})
+    .pipe(sass({outputStyle: 'compressed', precision: 10})
       .on('error', sass.logError)
     )
     .pipe(autoprefixer())
@@ -26,7 +26,7 @@ function build() {
 function docs_css() {
   return gulp
     .src(['./src/*.scss', './docs/src/scss/*.scss'])
-    .pipe(sass({outputStyle: 'compact', precision: 10})
+    .pipe(sass({outputStyle: 'compressed', precision: 10})
       .on('error', sass.logError)
     )
     .pipe(autoprefixer())

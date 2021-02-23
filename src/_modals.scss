@@ -1,3 +1,6 @@
+@use "mixins/shadow";
+@use "variables";
+
 // Modals
 .modal {
   align-items: center;
@@ -7,7 +10,7 @@
   left: 0;
   opacity: 0;
   overflow: hidden;
-  padding: $layout-spacing;
+  padding: variables.$layout-spacing;
   position: fixed;
   right: 0;
   top: 0;
@@ -16,10 +19,10 @@
   &.active {
     display: flex;
     opacity: 1;
-    z-index: $zindex-4;
+    z-index: variables.$zindex-4;
 
     .modal-overlay {
-      background: rgba($bg-color, .75);
+      background: rgba(variables.$bg-color, .75);
       bottom: 0;
       cursor: default;
       display: block;
@@ -31,38 +34,38 @@
 
     .modal-container {
       animation: slide-down .2s ease 1;
-      z-index: $zindex-0;
+      z-index: variables.$zindex-0;
     }
   }
 
   &.modal-sm {
     .modal-container {
-      max-width: $control-width-sm;
-      padding: 0 $unit-2;
+      max-width: variables.$control-width-sm;
+      padding: 0 variables.$unit-2;
     }
   }
 
   &.modal-lg {
     .modal-overlay {
-      background: $bg-color-light;
+      background: variables.$bg-color-light;
     }
 
     .modal-container {
       box-shadow: none;
-      max-width: $control-width-lg;
+      max-width: variables.$control-width-lg;
     }
   }
 }
 
 .modal-container {
-  @include shadow-variant(.2rem);
-  background: $bg-color-light;
-  border-radius: $border-radius;
+  @include shadow.shadow-variant(.2rem);
+  background: variables.$bg-color-light;
+  border-radius: variables.$border-radius;
   display: flex;
   flex-direction: column;
   max-height: 75vh;
-  max-width: $control-width-md;
-  padding: 0 $unit-4;
+  max-width: variables.$control-width-md;
+  padding: 0 variables.$unit-4;
   width: 100%;
 
   &.modal-fullheight {
@@ -70,18 +73,18 @@
   }
 
   .modal-header {
-    color: $dark-color;
-    padding: $unit-4;
+    color: variables.$dark-color;
+    padding: variables.$unit-4;
   }
 
   .modal-body {
     overflow-y: auto;
-    padding: $unit-4;
+    padding: variables.$unit-4;
     position: relative;
   }
 
   .modal-footer {
-    padding: $unit-4;
+    padding: variables.$unit-4;
     text-align: right;
   }
 }

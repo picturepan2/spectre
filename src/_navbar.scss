@@ -1,3 +1,5 @@
+@use "variables";
+
 // Navbar
 .navbar {
   align-items: stretch;
@@ -22,7 +24,7 @@
   }
 
   .navbar-brand {
-    font-size: $font-size-lg;
+    font-size: variables.$font-size-lg;
     text-decoration: none;
   }
 }

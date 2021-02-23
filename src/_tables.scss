@@ -1,9 +1,11 @@
+@use "variables";
+
 // Tables
 .table {
   border-collapse: collapse;
   border-spacing: 0;
   width: 100%;
-  @if $rtl == true {
+  @if variables.$rtl == true {
     text-align: right;
   } @else {
     text-align: left;
@@ -12,7 +14,7 @@
   &.table-striped {
     tbody {
       tr:nth-of-type(odd) {
-        background: $bg-color;
+        background: variables.$bg-color;
       }
     }
   }
@@ -22,7 +24,7 @@
     tbody {
       tr {
         &.active {
-          background: $bg-color-dark;
+          background: variables.$bg-color-dark;
         }
       }
     }
@@ -32,7 +34,7 @@
     tbody {
       tr {
         &:hover {
-          background: $bg-color-dark;
+          background: variables.$bg-color-dark;
         }
       }
     }
@@ -48,10 +50,10 @@
 
   td,
   th {
-    border-bottom: $border-width solid $border-color;
-    padding: $unit-3 $unit-2;
+    border-bottom: variables.$border-width solid variables.$border-color;
+    padding: variables.$unit-3 variables.$unit-2;
   }
   th {
-    border-bottom-width: $border-width-lg;
+    border-bottom-width: variables.$border-width-lg;
   }
 }

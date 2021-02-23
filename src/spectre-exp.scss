@@ -1,18 +1,18 @@
 // Variables and mixins
-@import "variables";
-@import "mixins";
+@use "variables";
+@use "mixins";
 
-/*! Spectre.css Experimentals v#{$version} | MIT License | github.com/picturepan2/spectre */
+/*! Spectre.css Experimentals v#{variables.$version} | MIT License | github.com/picturepan2/spectre */
 // Experimentals
-@import "autocomplete";
-@import "calendars";
-@import "carousels";
-@import "comparison-sliders";
-@import "filters";
-@import "meters";
-@import "off-canvas";
-@import "parallax";
-@import "progress";
-@import "sliders";
-@import "timelines";
-@import "viewer-360";
+@use "autocomplete";
+@use "calendars";
+@use "carousels";
+@use "comparison-sliders";
+@use "filters";
+@use "meters";
+@use "off-canvas";
+@use "parallax";
+@use "progress";
+@use "sliders";
+@use "timelines";
+@use "viewer-360";

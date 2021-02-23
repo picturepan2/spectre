@@ -1,3 +1,6 @@
+@use "mixins/text";
+@use "variables";
+
 // Tiles
 .tile {
   align-content: space-between;
@@ -11,15 +14,15 @@
   .tile-content {
     flex: 1 1 auto;
     &:not(:first-child) {
-      padding-left: $unit-2;
+      padding-left: variables.$unit-2;
     }
     &:not(:last-child) {
-      padding-right: $unit-2;
+      padding-right: variables.$unit-2;
     }
   }
   .tile-title,
   .tile-subtitle {
-    line-height: $line-height;
+    line-height: variables.$line-height;
   }
 
   &.tile-centered {
@@ -31,7 +34,7 @@
 
     .tile-title,
     .tile-subtitle {
-      @include text-ellipsis();
+      @include text.text-ellipsis();
       margin-bottom: 0;
     }
   }

@@ -1,26 +1,30 @@
+@use "sass:color";
+@use "mixins/label";
+@use "variables";
+
 // Codes
 code {
-  @include label-base();
-  @include label-variant($code-color, lighten($code-color, 42.5%));
+  @include label.label-base();
+  @include label.label-variant(variables.$code-color, color.adjust(variables.$code-color, $lightness: 42.5%));
   font-size: 85%;
 }
 
 .code {
-  border-radius: $border-radius;
-  color: $body-font-color;
+  border-radius: variables.$border-radius;
+  color: variables.$body-font-color;
   position: relative;
 
   &::before {
-    color: $gray-color;
+    color: variables.$gray-color;
     content: attr(data-lang);
-    font-size: $font-size-sm;
+    font-size: variables.$font-size-sm;
     position: absolute;
-    right: $layout-spacing;
-    top: $unit-h;
+    right: variables.$layout-spacing;
+    top: variables.$unit-h;
   }
 
   code {
-    background: $bg-color;
+    background: variables.$bg-color;
     color: inherit;
     display: block;
     line-height: 1.5;

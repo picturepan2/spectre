@@ -1,3 +1,5 @@
+@use "variables";
+
 // Accordions
 .accordion {
   input:checked ~,
@@ -15,7 +17,7 @@
 
   .accordion-header {
     display: block;
-    padding: $unit-1 $unit-2;
+    padding: variables.$unit-1 variables.$unit-2;
 
     .icon {
       transition: transform .25s;
@@ -23,7 +25,7 @@
   }
 
   .accordion-body {
-    margin-bottom: $layout-spacing;
+    margin-bottom: variables.$layout-spacing;
     max-height: 0;
     overflow: hidden;
     transition: max-height .25s;

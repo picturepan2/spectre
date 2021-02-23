@@ -1,5 +1,7 @@
+@use "variables";
+
 // Icon variables
-$icon-border-width: $border-width-lg;
+$icon-border-width: variables.$border-width-lg;
 $icon-prefix: "icon";
 
 // Icon base style

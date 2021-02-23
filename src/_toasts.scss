@@ -1,31 +1,34 @@
+@use "mixins/toast";
+@use "variables";
+
 // Toasts
 .toast {
-  @include toast-variant($dark-color);
-  border: $border-width solid $dark-color;
-  border-radius: $border-radius;
-  color: $light-color;
+  @include toast.toast-variant(variables.$dark-color);
+  border: variables.$border-width solid variables.$dark-color;
+  border-radius: variables.$border-radius;
+  color: variables.$light-color;
   display: block;
-  padding: $layout-spacing;
+  padding: variables.$layout-spacing;
   width: 100%;
 
   &.toast-primary {
-    @include toast-variant($primary-color);
+    @include toast.toast-variant(variables.$primary-color);
   }
 
   &.toast-success {
-    @include toast-variant($success-color);
+    @include toast.toast-variant(variables.$success-color);
   }
 
   &.toast-warning {
-    @include toast-variant($warning-color);
+    @include toast.toast-variant(variables.$warning-color);
   }
 
   &.toast-error {
-    @include toast-variant($error-color);
+    @include toast.toast-variant(variables.$error-color);
   }
 
   a {
-    color: $light-color;
+    color: variables.$light-color;
     text-decoration: underline;
     
     &:focus,
@@ -37,7 +40,7 @@
   }
 
   .btn-clear {
-    margin: $unit-h;
+    margin: variables.$unit-h;
   }
 
   p {

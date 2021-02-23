@@ -1,26 +1,28 @@
+@use "variables";
+
 // Pagination
 .pagination {
   display: flex;
   list-style: none;
-  margin: $unit-1 0;
-  padding: $unit-1 0;
+  margin: variables.$unit-1 0;
+  padding: variables.$unit-1 0;
 
   .page-item {
-    margin: $unit-1 $unit-o;
+    margin: variables.$unit-1 variables.$unit-o;
 
     span {
       display: inline-block;
-      padding: $unit-1 $unit-1;
+      padding: variables.$unit-1 variables.$unit-1;
     }
 
     a {
-      border-radius: $border-radius;
+      border-radius: variables.$border-radius;
       display: inline-block;
-      padding: $unit-1 $unit-2;
+      padding: variables.$unit-1 variables.$unit-2;
       text-decoration: none;
       &:focus,
       &:hover {
-        color: $primary-color;
+        color: variables.$primary-color;
       }
     }
 
@@ -34,8 +36,8 @@
 
     &.active {
       a {
-        background: $primary-color;
-        color: $light-color;
+        background: variables.$primary-color;
+        color: variables.$light-color;
       }
     }
 

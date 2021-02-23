@@ -1,13 +1,15 @@
+@use "variables";
+
 // Meters
 // Credit: https://css-tricks.com/html5-meter-element/
 .meter {
   appearance: none;
-  background: $bg-color;
+  background: variables.$bg-color;
   border: 0;
-  border-radius: $border-radius;
+  border-radius: variables.$border-radius;
   display: block;
   width: 100%;
-  height: $unit-4;
+  height: variables.$unit-4;
 
   &::-webkit-meter-inner-element {
     display: block;
@@ -17,41 +19,41 @@
   &::-webkit-meter-optimum-value,
   &::-webkit-meter-suboptimum-value,
   &::-webkit-meter-even-less-good-value {
-    border-radius: $border-radius;
+    border-radius: variables.$border-radius;
   }
 
   &::-webkit-meter-bar {
-    background: $bg-color;
+    background: variables.$bg-color;
   }
 
   &::-webkit-meter-optimum-value {
-    background: $success-color;
+    background: variables.$success-color;
   }
 
   &::-webkit-meter-suboptimum-value {
-    background: $warning-color;
+    background: variables.$warning-color;
   }
 
   &::-webkit-meter-even-less-good-value {
-    background: $error-color;
+    background: variables.$error-color;
   }
 
   &::-moz-meter-bar,
   &:-moz-meter-optimum,
   &:-moz-meter-sub-optimum,
   &:-moz-meter-sub-sub-optimum {
-    border-radius: $border-radius;
+    border-radius: variables.$border-radius;
   }
 
   &:-moz-meter-optimum::-moz-meter-bar {
-    background: $success-color;
+    background: variables.$success-color;
   }
 
   &:-moz-meter-sub-optimum::-moz-meter-bar {
-    background: $warning-color;
+    background: variables.$warning-color;
   }
 
   &:-moz-meter-sub-sub-optimum::-moz-meter-bar {
-    background: $error-color;
+    background: variables.$error-color;
   }
 }

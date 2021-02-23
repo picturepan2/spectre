@@ -1,5 +1,7 @@
+@use "variables";
+
 // Margin utility mixin
-@mixin margin-variant($id: 1, $size: $unit-1) {
+@mixin margin-variant($id: 1, $size: variables.$unit-1) {
   .m-#{$id} {
     margin: $size !important;
   }
@@ -32,7 +34,7 @@
 }
 
 // Padding utility mixin
-@mixin padding-variant($id: 1, $size: $unit-1) {
+@mixin padding-variant($id: 1, $size: variables.$unit-1) {
   .p-#{$id} {
     padding: $size !important;
   }

@@ -1,9 +1,11 @@
+@use "variables";
+
 // Steps
 .step {
   display: flex;
   flex-wrap: nowrap;
   list-style: none;
-  margin: $unit-1 0;
+  margin: variables.$unit-1 0;
   width: 100%;
 
   .step-item {
@@ -14,7 +16,7 @@
     position: relative;
 
     &:not(:first-child)::before {
-      background: $primary-color;
+      background: variables.$primary-color;
       content: "";
       height: 2px;
       left: -50%;
@@ -24,45 +26,45 @@
     }
 
     a {
-      color: $primary-color;
+      color: variables.$primary-color;
       display: inline-block;
       padding: 20px 10px 0;
       text-decoration: none;
 
       &::before {
-        background: $primary-color;
-        border: $border-width-lg solid $light-color;
+        background: variables.$primary-color;
+        border: variables.$border-width-lg solid variables.$light-color;
         border-radius: 50%;
         content: "";
         display: block;
-        height: $unit-3;
+        height: variables.$unit-3;
         left: 50%;
         position: absolute;
-        top: $unit-1;
+        top: variables.$unit-1;
         transform: translateX(-50%);
-        width: $unit-3;
-        z-index: $zindex-0;
+        width: variables.$unit-3;
+        z-index: variables.$zindex-0;
       }
     }
 
     &.active {
       a {
         &::before {
-          background: $light-color;
-          border: $border-width-lg solid $primary-color;
+          background: variables.$light-color;
+          border: variables.$border-width-lg solid variables.$primary-color;
         }
       }
 
       & ~ .step-item {
         &::before {
-          background: $border-color;
+          background: variables.$border-color;
         }
 
         a {
-          color: $gray-color;
+          color: variables.$gray-color;
 
           &::before {
-            background: $border-color;
+            background: variables.$border-color;
           }
         }
       }

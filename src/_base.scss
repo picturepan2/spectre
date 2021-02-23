@@ -1,3 +1,6 @@
+@use "mixins/shadow";
+@use "variables";
+
 // Base
 *,
 *::before,
@@ -7,38 +10,38 @@
 
 html {
   box-sizing: border-box;
-  font-size: $html-font-size;
-  line-height: $html-line-height;
+  font-size: variables.$html-font-size;
+  line-height: variables.$html-line-height;
   -webkit-tap-highlight-color: transparent;
 }
 
 body {
-  background: $body-bg;
-  color: $body-font-color;
-  font-family: $body-font-family;
-  font-size: $font-size;
+  background: variables.$body-bg;
+  color: variables.$body-font-color;
+  font-family: variables.$body-font-family;
+  font-size: variables.$font-size;
   overflow-x: hidden;
   text-rendering: optimizeLegibility;
 }
 
 a {
-  color: $link-color;
+  color: variables.$link-color;
   outline: none;
   text-decoration: none;
 
   &:focus {
-    @include control-shadow();
+    @include shadow.control-shadow();
   }
 
   &:focus,
   &:hover,
   &:active,
   &.active {
-    color: $link-color-dark;
+    color: variables.$link-color-dark;
     text-decoration: underline;
   }
 
   &:visited {
-    color: $link-color-light;
+    color: variables.$link-color-light;
   }
 }

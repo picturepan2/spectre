@@ -1,5 +1,7 @@
+@use "variables";
+
 // Off canvas menus
-$off-canvas-breakpoint: $size-lg !default;
+$off-canvas-breakpoint: variables.$size-lg !default;
 
 .off-canvas {
   display: flex;
@@ -11,26 +13,26 @@ $off-canvas-breakpoint: $size-lg !default;
   .off-canvas-toggle {
     display: block;
     position: absolute;
-    top: $layout-spacing;
+    top: variables.$layout-spacing;
     transition: none;
-    z-index: $zindex-0;
-    @if $rtl == true {
-      right: $layout-spacing;
+    z-index: variables.$zindex-0;
+    @if variables.$rtl == true {
+      right: variables.$layout-spacing;
     } @else {
-      left: $layout-spacing;
+      left: variables.$layout-spacing;
     }
   }
 
   .off-canvas-sidebar {
-    background: $bg-color;
+    background: variables.$bg-color;
     bottom: 0;
     min-width: 10rem;
     overflow-y: auto;
     position: fixed;
     top: 0;
     transition: transform .25s;
-    z-index: $zindex-2;
-    @if $rtl == true {
+    z-index: variables.$zindex-2;
+    @if variables.$rtl == true {
       right: 0;
       transform: translateX(100%);
     } @else {
@@ -42,11 +44,11 @@ $off-canvas-breakpoint: $size-lg !default;
   .off-canvas-content {
     flex: 1 1 auto;
     height: 100%;
-    padding: $layout-spacing $layout-spacing $layout-spacing 4rem;
+    padding: variables.$layout-spacing variables.$layout-spacing variables.$layout-spacing 4rem;
   }
 
   .off-canvas-overlay {
-    background: rgba($dark-color, .1);
+    background: rgba(variables.$dark-color, .1);
     border-color: transparent;
     border-radius: 0;
     bottom: 0;
@@ -68,7 +70,7 @@ $off-canvas-breakpoint: $size-lg !default;
     &:target ~ .off-canvas-overlay,
     &.active ~ .off-canvas-overlay {
       display: block;
-      z-index: $zindex-1;
+      z-index: variables.$zindex-1;
     }
   }
 }

@@ -1,3 +1,7 @@
+@use "sass:color";
+@use "mixins/label";
+@use "variables";
+
 // Typography
 // Headings
 h1,
@@ -47,7 +51,7 @@ h6,
 
 // Paragraphs
 p {
-  margin: 0 0 $line-height;
+  margin: 0 0 variables.$line-height;
 }
 
 // Semantic text elements
@@ -58,29 +62,29 @@ u {
 }
 
 abbr[title] {
-  border-bottom: $border-width dotted;
+  border-bottom: variables.$border-width dotted;
   cursor: help;
   text-decoration: none;
 }
 
 kbd {
-  @include label-base();
-  @include label-variant($light-color, $dark-color);
-  font-size: $font-size-sm;
+  @include label.label-base();
+  @include label.label-variant(variables.$light-color, variables.$dark-color);
+  font-size: variables.$font-size-sm;
 }
 
 mark {
-  @include label-variant($body-font-color, $highlight-color);
-  border-bottom: $unit-o solid darken($highlight-color, 15%);
-  border-radius: $border-radius;
-  padding: $unit-o $unit-h 0;
+  @include label.label-variant(variables.$body-font-color, variables.$highlight-color);
+  border-bottom: variables.$unit-o solid color.adjust(variables.$highlight-color, $lightness: -15%);
+  border-radius: variables.$border-radius;
+  padding: variables.$unit-o variables.$unit-h 0;
 }
 
 // Blockquote
 blockquote {
-  border-left: $border-width-lg solid $border-color;
+  border-left: variables.$border-width-lg solid variables.$border-color;
   margin-left: 0;
-  padding: $unit-2 $unit-4;
+  padding: variables.$unit-2 variables.$unit-4;
 
   p:last-child {
     margin-bottom: 0;
@@ -90,16 +94,16 @@ blockquote {
 // Lists
 ul,
 ol {
-  margin: $unit-4 0 $unit-4 $unit-4;
+  margin: variables.$unit-4 0 variables.$unit-4 variables.$unit-4;
   padding: 0;
 
   ul,
   ol {
-    margin: $unit-4 0 $unit-4 $unit-4;
+    margin: variables.$unit-4 0 variables.$unit-4 variables.$unit-4;
   }
 
   li {
-    margin-top: $unit-2;
+    margin-top: variables.$unit-2;
   }
 }
 
@@ -124,6 +128,6 @@ dl {
     font-weight: bold;
   }
   dd {
-    margin: $unit-2 0 $unit-4 0;
+    margin: variables.$unit-2 0 variables.$unit-4 0;
   }
 }

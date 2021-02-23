@@ -1,3 +1,5 @@
+@use "mixins/text";
+
 // Text
 // Text alignment utilities
 .text-left {
@@ -60,7 +62,7 @@
 
 // Text overflow utilities
 .text-ellipsis {
-  @include text-ellipsis();
+  @include text.text-ellipsis();
 }
 
 .text-clip {

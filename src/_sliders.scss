@@ -1,3 +1,6 @@
+@use "variables";
+@use "mixins/shadow";
+
 // Sliders
 // Credit: https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/
 .slider {
@@ -5,10 +8,10 @@
   background: transparent;
   display: block;
   width: 100%;
-  height: $unit-6;
+  height: variables.$unit-6;
 
   &:focus {
-    @include control-shadow();
+    @include shadow.control-shadow();
     outline: none;
   }
 
@@ -21,29 +24,29 @@
   // Slider Thumb
   &::-webkit-slider-thumb {
     -webkit-appearance: none;
-    background: $primary-color;
+    background: variables.$primary-color;
     border: 0;
     border-radius: 50%;
-    height: $unit-3;
-    margin-top: -($unit-3 - $unit-h) / 2;
+    height: variables.$unit-3;
+    margin-top: -(variables.$unit-3 - variables.$unit-h) / 2;
     transition: transform .2s;
-    width: $unit-3;
+    width: variables.$unit-3;
   }
   &::-moz-range-thumb {
-    background: $primary-color;
+    background: variables.$primary-color;
     border: 0;
     border-radius: 50%;
-    height: $unit-3;
+    height: variables.$unit-3;
     transition: transform .2s;
-    width: $unit-3;
+    width: variables.$unit-3;
   }
   &::-ms-thumb {
-    background: $primary-color;
+    background: variables.$primary-color;
     border: 0;
     border-radius: 50%;
-    height: $unit-3;
+    height: variables.$unit-3;
     transition: transform .2s;
-    width: $unit-3;
+    width: variables.$unit-3;
   }
 
   &:active {
@@ -61,39 +64,39 @@
   &:disabled,
   &.disabled {
     &::-webkit-slider-thumb {
-      background: $gray-color-light;
+      background: variables.$gray-color-light;
       transform: scale(1);
     }
     &::-moz-range-thumb {
-      background: $gray-color-light;
+      background: variables.$gray-color-light;
       transform: scale(1);
     }
     &::-ms-thumb {
-      background: $gray-color-light;
+      background: variables.$gray-color-light;
       transform: scale(1);
     }
   }
 
   // Slider Track
   &::-webkit-slider-runnable-track {
-    background: $bg-color-dark;
-    border-radius: $border-radius;
-    height: $unit-h;
+    background: variables.$bg-color-dark;
+    border-radius: variables.$border-radius;
+    height: variables.$unit-h;
     width: 100%;
   }
   &::-moz-range-track {
-    background: $bg-color-dark;
-    border-radius: $border-radius;
-    height: $unit-h;
+    background: variables.$bg-color-dark;
+    border-radius: variables.$border-radius;
+    height: variables.$unit-h;
     width: 100%;
   }
   &::-ms-track {
-    background: $bg-color-dark;
-    border-radius: $border-radius;
-    height: $unit-h;
+    background: variables.$bg-color-dark;
+    border-radius: variables.$border-radius;
+    height: variables.$unit-h;
     width: 100%;
   }
   &::-ms-fill-lower {
-    background: $primary-color;
+    background: variables.$primary-color;
   }
 }

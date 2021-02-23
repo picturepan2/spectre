@@ -1,7 +1,11 @@
+@use "sass:color";
+@use "mixins/label";
+@use "variables";
+
 // Labels
 .label {
-  @include label-base();
-  @include label-variant(lighten($body-font-color, 5%), $bg-color-dark);
+  @include label.label-base();
+  @include label.label-variant(color.adjust(variables.$body-font-color, $lightness: 5%), variables.$bg-color-dark);
   display: inline-block;
 
   // Label rounded
@@ -13,22 +17,22 @@
 
   // Label colors
   &.label-primary {
-    @include label-variant($light-color, $primary-color);
+    @include label.label-variant(variables.$light-color, variables.$primary-color);
   }
 
   &.label-secondary {
-    @include label-variant($primary-color, $secondary-color);
+    @include label.label-variant(variables.$primary-color, variables.$secondary-color);
   }
 
   &.label-success {
-    @include label-variant($light-color, $success-color);
+    @include label.label-variant(variables.$light-color, variables.$success-color);
   }
 
   &.label-warning {
-    @include label-variant($light-color, $warning-color);
+    @include label.label-variant(variables.$light-color, variables.$warning-color);
   }
 
   &.label-error {
-    @include label-variant($light-color, $error-color);
+    @include label.label-variant(variables.$light-color, variables.$error-color);
   }
 }
