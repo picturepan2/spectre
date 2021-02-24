@@ -1,6 +1,5 @@
 @use "sass:color";
-@use "mixins/button";
-@use "mixins/shadow";
+@use "mixins";
 @use "variables";
 
 // Buttons
@@ -24,7 +23,7 @@
   vertical-align: middle;
   white-space: nowrap;
   &:focus {
-    @include shadow.control-shadow();
+    @include mixins.control-shadow();
   }
   &:focus,
   &:hover {
@@ -80,11 +79,11 @@
 
   // Button Colors
   &.btn-success {
-    @include button.button-variant(variables.$success-color);
+    @include mixins.button-variant(variables.$success-color);
   }
 
   &.btn-error {
-    @include button.button-variant(variables.$error-color);
+    @include mixins.button-variant(variables.$error-color);
   }
 
   // Button Link

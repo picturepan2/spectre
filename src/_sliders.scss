@@ -1,5 +1,5 @@
 @use "variables";
-@use "mixins/shadow";
+@use "mixins";
 
 // Sliders
 // Credit: https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/
@@ -11,7 +11,7 @@
   height: variables.$unit-6;
 
   &:focus {
-    @include shadow.control-shadow();
+    @include mixins.control-shadow();
     outline: none;
   }
 

@@ -1,5 +1,5 @@
 @use "sass:color";
-@use "mixins/label";
+@use "mixins";
 @use "variables";
 
 // Typography
@@ -68,13 +68,13 @@ abbr[title] {
 }
 
 kbd {
-  @include label.label-base();
-  @include label.label-variant(variables.$light-color, variables.$dark-color);
+  @include mixins.label-base();
+  @include mixins.label-variant(variables.$light-color, variables.$dark-color);
   font-size: variables.$font-size-sm;
 }
 
 mark {
-  @include label.label-variant(variables.$body-font-color, variables.$highlight-color);
+  @include mixins.label-variant(variables.$body-font-color, variables.$highlight-color);
   border-bottom: variables.$unit-o solid color.adjust(variables.$highlight-color, $lightness: -15%);
   border-radius: variables.$border-radius;
   padding: variables.$unit-o variables.$unit-h 0;

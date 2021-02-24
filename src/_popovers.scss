@@ -1,4 +1,4 @@
-@use "mixins/shadow";
+@use "mixins";
 @use "variables";
 
 // Popovers
@@ -62,7 +62,7 @@
   }
 
   .card {
-    @include shadow.shadow-variant(.2rem);
+    @include mixins.shadow-variant(.2rem);
     border: 0;
   }
 }

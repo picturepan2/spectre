@@ -1,9 +1,9 @@
-@use "mixins/shadow";
+@use "mixins";
 @use "variables";
 
 // Menus
 .menu {
-  @include shadow.shadow-variant(.05rem);
+  @include mixins.shadow-variant(.05rem);
   background: variables.$bg-color-light;
   border-radius: variables.$border-radius;
   list-style: none;

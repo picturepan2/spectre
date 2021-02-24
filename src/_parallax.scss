@@ -1,5 +1,5 @@
 @use "variables";
-@use "mixins/shadow";
+@use "mixins";
 
 // Parallax
 $parallax-deg: 3deg !default;
@@ -25,7 +25,7 @@ $parallax-fade-color: rgba(255, 255, 255, .35) !default;
   width: auto;
 
   .parallax-content {
-    @include shadow.shadow-variant(1rem);
+    @include mixins.shadow-variant(1rem);
     height: auto;
     transform: perspective($parallax-perspective);
     transform-style: preserve-3d;

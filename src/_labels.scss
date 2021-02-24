@@ -1,38 +1,38 @@
 @use "sass:color";
-@use "mixins/label";
+@use "mixins";
 @use "variables";
 
 // Labels
 .label {
-  @include label.label-base();
-  @include label.label-variant(color.adjust(variables.$body-font-color, $lightness: 5%), variables.$bg-color-dark);
+  @include mixins.label-base();
+  @include mixins.label-variant(color.adjust(variables.$body-font-color, $lightness: 5%), variables.$bg-color-dark);
   display: inline-block;
 
   // Label rounded
   &.label-rounded {
     border-radius: 5rem;
     padding-left: .4rem;
-    padding-right: .4rem; 
+    padding-right: .4rem;
   }
 
   // Label colors
   &.label-primary {
-    @include label.label-variant(variables.$light-color, variables.$primary-color);
+    @include mixins.label-variant(variables.$light-color, variables.$primary-color);
   }
 
   &.label-secondary {
-    @include label.label-variant(variables.$primary-color, variables.$secondary-color);
+    @include mixins.label-variant(variables.$primary-color, variables.$secondary-color);
   }
 
   &.label-success {
-    @include label.label-variant(variables.$light-color, variables.$success-color);
+    @include mixins.label-variant(variables.$light-color, variables.$success-color);
   }
 
   &.label-warning {
-    @include label.label-variant(variables.$light-color, variables.$warning-color);
+    @include mixins.label-variant(variables.$light-color, variables.$warning-color);
   }
 
   &.label-error {
-    @include label.label-variant(variables.$light-color, variables.$error-color);
+    @include mixins.label-variant(variables.$light-color, variables.$error-color);
   }
 }

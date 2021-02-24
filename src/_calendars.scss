@@ -1,6 +1,6 @@
 @use "sass:color";
 @use "variables";
-@use "mixins/shadow";
+@use "mixins";
 
 // Calendars
 .calendar {
@@ -74,7 +74,7 @@
       }
 
       &:focus {
-        @include shadow.control-shadow();
+        @include mixins.control-shadow();
       }
 
       &:focus,

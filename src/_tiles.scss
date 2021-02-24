@@ -1,4 +1,4 @@
-@use "mixins/text";
+@use "mixins";
 @use "variables";
 
 // Tiles
@@ -34,7 +34,7 @@
 
     .tile-title,
     .tile-subtitle {
-      @include text.text-ellipsis();
+      @include mixins.text-ellipsis();
       margin-bottom: 0;
     }
   }

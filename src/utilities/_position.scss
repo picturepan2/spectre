@@ -1,10 +1,9 @@
-@use "mixins/clearfix";
-@use "mixins/position";
+@use "mixins";
 @use "variables";
 
 // Position
 .clearfix {
-  @include clearfix.clearfix();
+  @include mixins.clearfix();
 }
 
 .float-left {
@@ -45,14 +44,14 @@
 }
 
 // Spacing
-@include position.margin-variant(0, 0);
+@include mixins.margin-variant(0, 0);
 
-@include position.margin-variant(1, variables.$unit-1);
+@include mixins.margin-variant(1, variables.$unit-1);
 
-@include position.margin-variant(2, variables.$unit-2);
+@include mixins.margin-variant(2, variables.$unit-2);
 
-@include position.padding-variant(0, 0);
+@include mixins.padding-variant(0, 0);
 
-@include position.padding-variant(1, variables.$unit-1);
+@include mixins.padding-variant(1, variables.$unit-1);
 
-@include position.padding-variant(2, variables.$unit-2);
+@include mixins.padding-variant(2, variables.$unit-2);

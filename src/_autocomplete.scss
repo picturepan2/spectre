@@ -1,5 +1,5 @@
 @use "variables";
-@use "mixins/shadow";
+@use "mixins";
 
 // Autocomplete
 .form-autocomplete {
@@ -14,7 +14,7 @@
     padding: variables.$unit-h;
 
     &.is-focused {
-      @include shadow.control-shadow();
+      @include mixins.control-shadow();
       border-color: variables.$primary-color;
     }
 

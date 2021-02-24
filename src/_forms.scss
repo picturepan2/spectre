@@ -1,5 +1,5 @@
 @use "sass:color";
-@use "mixins/shadow";
+@use "mixins";
 @use "variables";
 
 // Forms
@@ -55,7 +55,7 @@ legend {
   transition: background .2s, border .2s, box-shadow .2s, color .2s;
   width: 100%;
   &:focus {
-    @include shadow.control-shadow();
+    @include mixins.control-shadow();
     border-color: variables.$primary-color;
   }
   &::placeholder {
@@ -126,9 +126,9 @@ textarea.form-input {
   padding: variables.$control-padding-y variables.$control-padding-x;
   vertical-align: middle;
   width: 100%;
-  background: variables.$bg-color-light; 
+  background: variables.$bg-color-light;
   &:focus {
-    @include shadow.control-shadow();
+    @include mixins.control-shadow();
     border-color: variables.$primary-color;
   }
   &::-ms-expand {
@@ -219,7 +219,7 @@ textarea.form-input {
     position: absolute;
     width: 1px;
     &:focus + .form-icon {
-      @include shadow.control-shadow();
+      @include mixins.control-shadow();
       border-color: variables.$primary-color;
     }
     &:checked + .form-icon {
@@ -438,7 +438,7 @@ textarea.form-input {
     background: color.adjust(variables.$success-color, $lightness: 53%);
     border-color: variables.$success-color;
     &:focus {
-      @include shadow.control-shadow(variables.$success-color);
+      @include mixins.control-shadow(variables.$success-color);
     }
   }
 
@@ -447,7 +447,7 @@ textarea.form-input {
     background: color.adjust(variables.$error-color, $lightness: 53%);
     border-color: variables.$error-color;
     &:focus {
-      @include shadow.control-shadow(variables.$error-color);
+      @include mixins.control-shadow(variables.$error-color);
     }
   }
 }
@@ -468,7 +468,7 @@ textarea.form-input {
       }
 
       &:focus + .form-icon {
-        @include shadow.control-shadow(variables.$error-color);
+        @include mixins.control-shadow(variables.$error-color);
         border-color: variables.$error-color;
       }
     }
@@ -493,7 +493,7 @@ textarea.form-input {
     &:invalid {
       border-color: variables.$error-color;
       &:focus {
-        @include shadow.control-shadow(variables.$error-color);
+        @include mixins.control-shadow(variables.$error-color);
         background: color.adjust(variables.$error-color, $lightness: 53%);
       }
 

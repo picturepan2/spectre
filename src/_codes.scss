@@ -1,11 +1,11 @@
 @use "sass:color";
-@use "mixins/label";
+@use "mixins";
 @use "variables";
 
 // Codes
 code {
-  @include label.label-base();
-  @include label.label-variant(variables.$code-color, color.adjust(variables.$code-color, $lightness: 42.5%));
+  @include mixins.label-base();
+  @include mixins.label-variant(variables.$code-color, color.adjust(variables.$code-color, $lightness: 42.5%));
   font-size: 85%;
 }
 
