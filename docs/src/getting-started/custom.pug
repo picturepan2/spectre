@@ -86,7 +86,7 @@ block docs-content
           $dark-color: #3e396b;
 
           // Import full Spectre source code
-          @import "node_modules/spectre.css/src/spectre";
+          @use "node_modules/spectre.css/src/spectre";
 
     p
       | Alternatively, you can create custom 
@@ -100,11 +100,9 @@ block docs-content
       code
         :highlight(lang="scss")
           // Example of project-name.scss
-          @import "variables";
-
           // Import only the needed components
-          @import "node_modules/spectre.css/src/buttons";
-          @import "node_modules/spectre.css/src/forms";
+          @use "node_modules/spectre.css/src/buttons";
+          @use "node_modules/spectre.css/src/forms";
 
     +docs-subheading('folders', 'Folder structure')
 

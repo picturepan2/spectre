@@ -2,5 +2,5 @@
 $rtl: true;
 
 // Import Spectre
-@use "../../../src/spectre";
-@use "../../../src/spectre-exp";
+@use "spectre";
+@use "spectre-exp";

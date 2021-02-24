@@ -1,8 +1,8 @@
 /*! Spectre.css Docs | MIT License | github.com/picturepan2/spectre */
 // Core variables and mixins
 @use "sass:color";
-@use "../../../src/variables";
-@use "../../../src/mixins";
+@use "variables";
+@use "mixins";
 
 .version::after {
   content: "#{variables.$version}";
@@ -779,7 +779,7 @@
     z-index: 999;
     max-width: 600px;
     min-width: 500px;
-    @include shadow-variant(.05rem);
+    @include mixins.shadow-variant(.05rem);
 
     .ds-suggestions {
       position: relative;

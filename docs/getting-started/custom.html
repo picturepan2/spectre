@@ -243,15 +243,13 @@
 <span class="hljs-variable">$dark-color</span>: <span class="hljs-number">#3e396b</span>;
 
 <span class="hljs-comment">// Import full Spectre source code</span>
-<span class="hljs-keyword">@import</span> <span class="hljs-string">"node_modules/spectre.css/src/spectre"</span>;
+<span class="hljs-keyword">@use</span> <span class="hljs-string">"node_modules/spectre.css/src/spectre"</span>;
 </code></pre>
             <p>Alternatively, you can create custom <code>_variables.scss</code> and import it to <code>project-name.scss</code>.</p>
             <pre class="code" data-lang="Sass"><code><span class="hljs-comment">// Example of project-name.scss</span>
-<span class="hljs-keyword">@import</span> <span class="hljs-string">"variables"</span>;
-
 <span class="hljs-comment">// Import only the needed components</span>
-<span class="hljs-keyword">@import</span> <span class="hljs-string">"node_modules/spectre.css/src/buttons"</span>;
-<span class="hljs-keyword">@import</span> <span class="hljs-string">"node_modules/spectre.css/src/forms"</span>;
+<span class="hljs-keyword">@use</span> <span class="hljs-string">"node_modules/spectre.css/src/buttons"</span>;
+<span class="hljs-keyword">@use</span> <span class="hljs-string">"node_modules/spectre.css/src/forms"</span>;
 </code></pre>
             <h4 class="s-subtitle" id="folders">Folder structure<a class="anchor" href="#folders" aria-hidden="true">#</a></h4>
             <pre class="code"><code>spectre/

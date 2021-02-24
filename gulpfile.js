@@ -26,7 +26,12 @@ function build() {
 function docs_css() {
   return gulp
     .src(['./src/*.scss', './docs/src/scss/*.scss'])
-    .pipe(sass({outputStyle: 'compressed', precision: 10})
+    .pipe(
+      sass({
+        outputStyle: 'compressed',
+        precision: 10,
+        includePaths: ['./src', './docs/src/scss/*.scss']
+      })
       .on('error', sass.logError)
     )
     .pipe(autoprefixer())
