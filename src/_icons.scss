@@ -1,5 +1,5 @@
 // CSS Icons
-@use "icons/icons-core";
-@use "icons/icons-navigation";
-@use "icons/icons-action";
-@use "icons/icons-object";
+@forward "icons/icons-core";
+@forward "icons/icons-navigation";
+@forward "icons/icons-action";
+@forward "icons/icons-object";

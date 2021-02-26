@@ -1,8 +1,8 @@
-@use "utilities/colors";
-@use "utilities/cursors";
-@use "utilities/display";
-@use "utilities/divider";
-@use "utilities/loading";
-@use "utilities/position";
-@use "utilities/shapes";
-@use "utilities/text";
+@forward "utilities/colors";
+@forward "utilities/cursors";
+@forward "utilities/display";
+@forward "utilities/divider";
+@forward "utilities/loading";
+@forward "utilities/position";
+@forward "utilities/shapes";
+@forward "utilities/text";
