@@ -1,34 +1,37 @@
+@use "sass:color";
+@use "variables";
+
 // Navs
 .nav {
   display: flex;
   flex-direction: column;
   list-style: none;
-  margin: $unit-1 0;
+  margin: variables.$unit-1 0;
 
   .nav-item {
     a {
-      color: $gray-color-dark;
-      padding: $unit-1 $unit-2;
+      color: variables.$gray-color-dark;
+      padding: variables.$unit-1 variables.$unit-2;
       text-decoration: none;
       &:focus,
       &:hover {
-        color: $primary-color;
+        color: variables.$primary-color;
       }
     }
     &.active {
       & > a {
-        color: darken($gray-color-dark, 10%);
+        color: color.adjust(variables.$gray-color-dark, $lightness: -10%);
         font-weight: bold;
         &:focus,
         &:hover {
-          color: $primary-color;
+          color: variables.$primary-color;
         }
       }
     }
   }
 
   & .nav {
-    margin-bottom: $unit-2;
-    margin-left: $unit-4;
+    margin-bottom: variables.$unit-2;
+    margin-left: variables.$unit-4;
   }
 }

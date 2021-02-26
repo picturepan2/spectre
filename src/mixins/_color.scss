@@ -1,16 +1,19 @@
+@use "sass:color";
+@use "variables";
+
 // Background color utility mixin
-@mixin bg-color-variant($name: ".bg-primary", $color: $primary-color) {
+@mixin bg-color-variant($name: ".bg-primary", $color: variables.$primary-color) {
   #{$name} {
     background: $color !important;
 
-    @if (lightness($color) < 60) {
-      color: $light-color;
+    @if (color.lightness($color) < 60) {
+      color: variables.$light-color;
     }
   }
 }
 
 // Text color utility mixin
-@mixin text-color-variant($name: ".text-primary", $color: $primary-color) {
+@mixin text-color-variant($name: ".text-primary", $color: variables.$primary-color) {
   #{$name} {
     color: $color !important;
   }
@@ -18,10 +21,10 @@
   a#{$name} {
     &:focus,
     &:hover {
-      color: darken($color, 5%);
+      color: color.adjust($color, $lightness: -5%);
     }
     &:visited {
-      color: lighten($color, 5%);
+      color: color.adjust($color, $lightness: 5%);
     }
   }
 }

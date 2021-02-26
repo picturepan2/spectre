@@ -1,5 +1,7 @@
+@use "variables";
+
 // Toast variant mixin
-@mixin toast-variant($color: $dark-color) {
+@mixin toast-variant($color: variables.$dark-color) {
   background: rgba($color, .95);
   border-color: $color;
 }

@@ -1,10 +1,12 @@
+@use "variables";
+
 // Filters 
 // The number of filter options 
 $filter-number: 8 !default;
 
 %filter-checked-nav { 
-  background: $primary-color;
-  color: $light-color;
+  background: variables.$primary-color;
+  color: variables.$light-color;
 }
 
 %filter-checked-body { 
@@ -13,7 +15,7 @@ $filter-number: 8 !default;
 
 .filter {
   .filter-nav {
-    margin: $layout-spacing 0;
+    margin: variables.$layout-spacing 0;
   }
 
   .filter-body {

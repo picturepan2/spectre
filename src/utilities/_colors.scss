@@ -1,31 +1,34 @@
+@use "mixins";
+@use "variables";
+
 // Text colors
-@include text-color-variant(".text-primary", $primary-color);
+@include mixins.text-color-variant(".text-primary", variables.$primary-color);
 
-@include text-color-variant(".text-secondary", $secondary-color-dark);
+@include mixins.text-color-variant(".text-secondary", variables.$secondary-color-dark);
 
-@include text-color-variant(".text-gray", $gray-color);
+@include mixins.text-color-variant(".text-gray", variables.$gray-color);
 
-@include text-color-variant(".text-light", $light-color);
+@include mixins.text-color-variant(".text-light", variables.$light-color);
 
-@include text-color-variant(".text-dark", $body-font-color);
+@include mixins.text-color-variant(".text-dark", variables.$body-font-color);
 
-@include text-color-variant(".text-success", $success-color);
+@include mixins.text-color-variant(".text-success", variables.$success-color);
 
-@include text-color-variant(".text-warning", $warning-color);
+@include mixins.text-color-variant(".text-warning", variables.$warning-color);
 
-@include text-color-variant(".text-error", $error-color);
+@include mixins.text-color-variant(".text-error", variables.$error-color);
 
 // Background colors
-@include bg-color-variant(".bg-primary", $primary-color);
+@include mixins.bg-color-variant(".bg-primary", variables.$primary-color);
 
-@include bg-color-variant(".bg-secondary", $secondary-color);
+@include mixins.bg-color-variant(".bg-secondary", variables.$secondary-color);
 
-@include bg-color-variant(".bg-dark", $dark-color);
+@include mixins.bg-color-variant(".bg-dark", variables.$dark-color);
 
-@include bg-color-variant(".bg-gray", $bg-color);
+@include mixins.bg-color-variant(".bg-gray", variables.$bg-color);
 
-@include bg-color-variant(".bg-success", $success-color);
+@include mixins.bg-color-variant(".bg-success", variables.$success-color);
 
-@include bg-color-variant(".bg-warning", $warning-color);
+@include mixins.bg-color-variant(".bg-warning", variables.$warning-color);
 
-@include bg-color-variant(".bg-error", $error-color);
+@include mixins.bg-color-variant(".bg-error", variables.$error-color);

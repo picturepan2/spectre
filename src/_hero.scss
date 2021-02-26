@@ -1,3 +1,5 @@
+@use "variables";
+
 // Hero
 .hero {
   display: flex;
@@ -17,6 +19,6 @@
   }
 
   .hero-body {
-    padding: $layout-spacing;
+    padding: variables.$layout-spacing;
   }
 }

@@ -1,31 +1,33 @@
+@use "variables";
+
 // Tabs
 .tab {
   align-items: center;
-  border-bottom: $border-width solid $border-color;
+  border-bottom: variables.$border-width solid variables.$border-color;
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  margin: $unit-1 0 ($unit-1 - $border-width) 0;
+  margin: variables.$unit-1 0 (variables.$unit-1 - variables.$border-width) 0;
 
   .tab-item {
     margin-top: 0;
 
     a {
-      border-bottom: $border-width-lg solid transparent;
+      border-bottom: variables.$border-width-lg solid transparent;
       color: inherit;
       display: block;
-      margin: 0 $unit-2 0 0;
-      padding: $unit-2 $unit-1 $unit-2 - $border-width-lg $unit-1;
+      margin: 0 variables.$unit-2 0 0;
+      padding: variables.$unit-2 variables.$unit-1 variables.$unit-2 - variables.$border-width-lg variables.$unit-1;
       text-decoration: none;
       &:focus,
       &:hover {
-        color: $link-color;
+        color: variables.$link-color;
       }
     }
     &.active a,
     a.active {
-      border-bottom-color: $primary-color;
-      color: $link-color;
+      border-bottom-color: variables.$primary-color;
+      color: variables.$link-color;
     }
 
     &.tab-action {
@@ -34,7 +36,7 @@
     }
 
     .btn-clear {
-      margin-top: -$unit-1;
+      margin-top: -(variables.$unit-1);
     }
   }
 
@@ -50,8 +52,8 @@
       .badge {
         &[data-badge]::after {
           position: absolute;
-          right: $unit-h;
-          top: $unit-h;
+          right: variables.$unit-h;
+          top: variables.$unit-h;
           transform: translate(0, 0);
         }
       }

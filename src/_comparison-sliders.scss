@@ -1,3 +1,5 @@
+@use "variables";
+
 // Image comparison slider
 // Credit: http://codepen.io/solipsistacp/pen/Gpmaq
 .comparison-slider {
@@ -30,7 +32,7 @@
     z-index: 1;
 
     .comparison-label {
-      right: $unit-4;
+      right: variables.$unit-4;
     }
   }
 
@@ -46,38 +48,38 @@
       height: 100%;
       left: 0;
       position: absolute;
-      right: $unit-4;
+      right: variables.$unit-4;
       top: 0;
-      z-index: $zindex-0;
+      z-index: variables.$zindex-0;
     }
 
     &::after {
       background: currentColor;
       border-radius: 50%;
       box-shadow: 0 -5px, 0 5px;
-      color: $light-color;
+      color: variables.$light-color;
       content: "";
       height: 3px;
       pointer-events: none;
       position: absolute;
-      right: $unit-2;
+      right: variables.$unit-2;
       top: 50%;
       transform: translate(50%, -50%);
       width: 3px;
     }
 
     .comparison-label {
-      left: $unit-4;
+      left: variables.$unit-4;
     }
   }
 
   .comparison-resizer {
     animation: first-run 1.5s 1 ease-in-out;
     cursor: ew-resize;
-    height: $unit-4;
+    height: variables.$unit-4;
     left: 0;
     max-width: 100%;
-    min-width: $unit-4;
+    min-width: variables.$unit-4;
     opacity: 0;
     outline: none;
     position: relative;
@@ -88,10 +90,10 @@
   }
 
   .comparison-label {
-    background: rgba($dark-color, .5);
-    bottom: $unit-4;
-    color: $light-color;
-    padding: $unit-1 $unit-2;
+    background: rgba(variables.$dark-color, .5);
+    bottom: variables.$unit-4;
+    color: variables.$light-color;
+    padding: variables.$unit-1 variables.$unit-2;
     position: absolute;
     user-select: none;
   }
@@ -102,13 +104,13 @@
     width: 0;
   }
   25% {
-    width: $unit-12;
+    width: variables.$unit-12;
   }
   50% {
-    width: $unit-4;
+    width: variables.$unit-4;
   }
   75% {
-    width: $unit-6;
+    width: variables.$unit-6;
   }
   100% {
     width: 0;

@@ -1,36 +1,38 @@
+@use "variables";
+
 // Bars
 .bar {
-  background: $bg-color-dark;
-  border-radius: $border-radius;
+  background: variables.$bg-color-dark;
+  border-radius: variables.$border-radius;
   display: flex;
   flex-wrap: nowrap;
-  height: $unit-4;
+  height: variables.$unit-4;
   width: 100%;
 
   &.bar-sm {
-    height: $unit-1;
+    height: variables.$unit-1;
   }
 
   // TODO: attr() support
   .bar-item {
-    background: $primary-color;
-    color: $light-color;
+    background: variables.$primary-color;
+    color: variables.$light-color;
     display: block;
-    font-size: $font-size-sm;
+    font-size: variables.$font-size-sm;
     flex-shrink: 0;
-    line-height: $unit-4;
+    line-height: variables.$unit-4;
     height: 100%;
     position: relative;
     text-align: center;
     width: 0;
 
     &:first-child {
-      border-bottom-left-radius: $border-radius;
-      border-top-left-radius: $border-radius;
+      border-bottom-left-radius: variables.$border-radius;
+      border-top-left-radius: variables.$border-radius;
     }
     &:last-child {
-      border-bottom-right-radius: $border-radius;
-      border-top-right-radius: $border-radius;
+      border-bottom-right-radius: variables.$border-radius;
+      border-top-right-radius: variables.$border-radius;
       flex-shrink: 1;
     }
   }
@@ -38,8 +40,8 @@
 
 // Slider bar
 .bar-slider {
-  height: $border-width-lg;
-  margin: $layout-spacing 0;
+  height: variables.$border-width-lg;
+  margin: variables.$layout-spacing 0;
   position: relative;
 
   .bar-item {
@@ -47,25 +49,25 @@
     padding: 0;
     position: absolute;
     &:not(:last-child):first-child {
-      background: $bg-color-dark;
-      z-index: $zindex-0;
+      background: variables.$bg-color-dark;
+      z-index: variables.$zindex-0;
     }
   }
 
   .bar-slider-btn {
-    background: $primary-color;
+    background: variables.$primary-color;
     border: 0;
     border-radius: 50%;
-    height: $unit-3;
+    height: variables.$unit-3;
     padding: 0;
     position: absolute;
     right: 0;
     top: 50%;
     transform: translate(50%, -50%);
-    width: $unit-3;
+    width: variables.$unit-3;
 
     &:active {
-      box-shadow: 0 0 0 .1rem $primary-color;
+      box-shadow: 0 0 0 .1rem variables.$primary-color;
     }
   }
 }

@@ -1,18 +1,22 @@
+@use "sass:color";
+@use "variables";
+@use "mixins";
+
 // Calendars
 .calendar {
-  border: $border-width solid $border-color;
-  border-radius: $border-radius;
+  border: variables.$border-width solid variables.$border-color;
+  border-radius: variables.$border-radius;
   display: block;
   min-width: 280px;
 
   .calendar-nav {
     align-items: center;
-    background: $bg-color;
-    border-top-left-radius: $border-radius;
-    border-top-right-radius: $border-radius;
+    background: variables.$bg-color;
+    border-top-left-radius: variables.$border-radius;
+    border-top-right-radius: variables.$border-radius;
     display: flex;
-    font-size: $font-size-lg;
-    padding: $layout-spacing;
+    font-size: variables.$font-size-lg;
+    padding: variables.$layout-spacing;
   }
 
   .calendar-header,
@@ -20,7 +24,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: $layout-spacing 0;
+    padding: variables.$layout-spacing 0;
 
     .calendar-date {
       flex: 0 0 14.28%; // 7 calendar-items each row
@@ -29,62 +33,65 @@
   }
 
   .calendar-header {
-    background: $bg-color;
-    border-bottom: $border-width solid $border-color;
-    color: $gray-color;
-    font-size: $font-size-sm;
+    background: variables.$bg-color;
+    border-bottom: variables.$border-width solid variables.$border-color;
+    color: variables.$gray-color;
+    font-size: variables.$font-size-sm;
     text-align: center;
   }
 
   .calendar-body {
-    color: $gray-color-dark;
+    color: variables.$gray-color-dark;
   }
 
   .calendar-date {
     border: 0;
-    padding: $unit-1;
+    padding: variables.$unit-1;
 
     .date-item {
       appearance: none;
       background: transparent;
-      border: $border-width solid transparent;
+      border: variables.$border-width solid transparent;
       border-radius: 50%;
-      color: $gray-color-dark;
+      color: variables.$gray-color-dark;
       cursor: pointer;
-      font-size: $font-size-sm;
-      height: $unit-7;
-      line-height: $unit-5;
+      font-size: variables.$font-size-sm;
+      height: variables.$unit-7;
+      line-height: variables.$unit-5;
       outline: none;
-      padding: $unit-h;
+      padding: variables.$unit-h;
       position: relative;
       text-align: center;
       text-decoration: none;
-      transition: background .2s, border .2s, box-shadow .2s, color .2s;
+      transition: background 0.2s, border 0.2s, box-shadow 0.2s, color 0.2s;
       vertical-align: middle;
       white-space: nowrap;
-      width: $unit-7;
+      width: variables.$unit-7;
 
       &.date-today {
-        border-color: $secondary-color-dark;
-        color: $primary-color;
+        border-color: variables.$secondary-color-dark;
+        color: variables.$primary-color;
       }
 
       &:focus {
-        @include control-shadow();
+        @include mixins.control-shadow();
       }
 
       &:focus,
       &:hover {
-        background: $secondary-color-light;
-        border-color: $secondary-color-dark;
-        color: $primary-color;
+        background: variables.$secondary-color-light;
+        border-color: variables.$secondary-color-dark;
+        color: variables.$primary-color;
         text-decoration: none;
       }
       &:active,
       &.active {
-        background: $primary-color-dark;
-        border-color: darken($primary-color-dark, 5%);
-        color: $light-color;
+        background: variables.$primary-color-dark;
+        border-color: color.adjust(
+          variables.$primary-color-dark,
+          $lightness: -5%
+        );
+        color: variables.$light-color;
       }
 
       // Calendar badge support
@@ -103,7 +110,7 @@
       &:disabled,
       &.disabled {
         cursor: default;
-        opacity: .25;
+        opacity: 0.25;
         pointer-events: none;
       }
     }
@@ -112,7 +119,7 @@
     &.next-month {
       .date-item,
       .calendar-event {
-        opacity: .25;
+        opacity: 0.25;
       }
     }
   }
@@ -121,9 +128,9 @@
     position: relative;
 
     &::before {
-      background: $secondary-color;
-      content: "";
-      height: $unit-7;
+      background: variables.$secondary-color;
+      content: '';
+      height: variables.$unit-7;
       left: 0;
       position: absolute;
       right: 0;
@@ -144,14 +151,17 @@
     &.range-start,
     &.range-end {
       .date-item {
-        background: $primary-color-dark;
-        border-color: darken($primary-color-dark, 5%);
-        color: $light-color;
+        background: variables.$primary-color-dark;
+        border-color: color.adjust(
+          variables.$primary-color-dark,
+          $lightness: -5%
+        );
+        color: variables.$light-color;
       }
     }
 
     .date-item {
-      color: $primary-color;
+      color: variables.$primary-color;
     }
   }
 
@@ -161,8 +171,8 @@
       padding: 0;
 
       .calendar-date {
-        border-bottom: $border-width solid $border-color;
-        border-right: $border-width solid $border-color;
+        border-bottom: variables.$border-width solid variables.$border-color;
+        border-right: variables.$border-width solid variables.$border-color;
         display: flex;
         flex-direction: column;
         height: 5.5rem;
@@ -171,7 +181,7 @@
         &:nth-child(7n) {
           border-right: 0;
         }
-        &:nth-last-child(-n+7) {
+        &:nth-last-child(-n + 7) {
           border-bottom: 0;
         }
       }
@@ -179,9 +189,9 @@
 
     .date-item {
       align-self: flex-end;
-      height: $unit-7;
-      margin-right: $layout-spacing-sm;
-      margin-top: $layout-spacing-sm;
+      height: variables.$unit-7;
+      margin-right: variables.$layout-spacing-sm;
+      margin-top: variables.$layout-spacing-sm;
     }
 
     .calendar-range {
@@ -205,14 +215,14 @@
       flex-grow: 1;
       line-height: 1;
       overflow-y: auto;
-      padding: $layout-spacing-sm;
+      padding: variables.$layout-spacing-sm;
     }
 
     .calendar-event {
-      border-radius: $border-radius;
-      font-size: $font-size-sm;
+      border-radius: variables.$border-radius;
+      font-size: variables.$font-size-sm;
       display: block;
-      margin: $unit-h auto;
+      margin: variables.$unit-h auto;
       overflow: hidden;
       padding: 3px 4px;
       text-overflow: ellipsis;

@@ -1,14 +1,16 @@
+@use "variables";
+
 // Panels
 .panel {
-  border: $border-width solid $border-color;
-  border-radius: $border-radius;
+  border: variables.$border-width solid variables.$border-color;
+  border-radius: variables.$border-radius;
   display: flex;
   flex-direction: column;
 
   .panel-header,
   .panel-footer {
     flex: 0 0 auto;
-    padding: $layout-spacing-lg;
+    padding: variables.$layout-spacing-lg;
   }
 
   .panel-nav {
@@ -18,6 +20,6 @@
   .panel-body {
     flex: 1 1 auto;
     overflow-y: auto;
-    padding: 0 $layout-spacing-lg;
+    padding: 0 variables.$layout-spacing-lg;
   }
 }
