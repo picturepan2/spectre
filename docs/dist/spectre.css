@@ -2095,7 +2095,7 @@ video.video-responsive::before {
   transition: max-height .25s;
 }
 
-summary.accordion-header::-webkit-details-marker {
+summary.accordion-header::marker {
   display: none;
 }
 
