@@ -313,3 +313,24 @@
     width: .8em;
   }
 }
+
+//Icon home
+.icon-home {
+  &::before {
+    border: $icon-border-width solid currentColor;
+    border-bottom: 0;
+    border-right: 0;
+    transform: translate(-50%, -40%) rotate(45deg);
+    width: .8em;
+    height: .8em;
+  }
+
+  &::after {
+    transform: translate(-50%, -10%);
+    border-bottom: $icon-border-width solid currentColor;
+    border-right: $icon-border-width solid currentColor;
+    border-left: $icon-border-width solid currentColor;
+    height: .6em;
+    width: .8em;
+  }
+}
