@@ -595,3 +595,21 @@
   transform: translate(-50%, -40%) rotate(-135deg);
   width: .5em;
 }
+
+.icon-home::before{
+  border: .1rem solid currentColor;
+  border-bottom: 0;
+  border-right: 0;
+  transform: translate(-50%, -40%) rotate(45deg);
+  width: .8em;
+  height: .8em;
+}
+
+.icon-home::after {
+  transform: translate(-50%, -10%);
+  border-bottom: .1rem solid currentColor;
+  border-right: .1rem solid currentColor;
+  border-left: .1rem solid currentColor;
+  height: .6em;
+  width: .8em;
+}
