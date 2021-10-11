@@ -191,7 +191,7 @@
     background: currentColor;
     box-shadow: -.25em .2em, .25em .2em;
     height: $icon-border-width;
-    top: $icon-border-width/2;
+    top: $icon-border-width*.5;
     width: .5em;
   }
 }

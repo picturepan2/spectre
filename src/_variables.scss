@@ -46,18 +46,20 @@ $base-font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Rob
 $mono-font-family: "SF Mono", "Segoe UI Mono", "Roboto Mono", Menlo, Courier, monospace !default;
 $fallback-font-family: "Helvetica Neue", sans-serif !default;
 $cjk-zh-hans-font-family: $base-font-family, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", $fallback-font-family !default;
-$cjk-zh-hant-font-family: $base-font-family, "PingFang TC", "Hiragino Sans CNS", "Microsoft JhengHei", $fallback-font-family !default;
-$cjk-jp-font-family: $base-font-family, "Hiragino Sans", "Hiragino Kaku Gothic Pro", "Yu Gothic", YuGothic, Meiryo, $fallback-font-family !default;
+$cjk-zh-hant-font-family: $base-font-family, "PingFang TC", "Hiragino Sans CNS", "Microsoft JhengHei",
+    $fallback-font-family !default;
+$cjk-jp-font-family: $base-font-family, "Hiragino Sans", "Hiragino Kaku Gothic Pro", "Yu Gothic", YuGothic, Meiryo,
+    $fallback-font-family !default;
 $cjk-ko-font-family: $base-font-family, "Malgun Gothic", $fallback-font-family !default;
 $body-font-family: $base-font-family, $fallback-font-family !default;
 
 // Unit sizes
-$unit-o: .05rem !default;
-$unit-h: .1rem !default;
-$unit-1: .2rem !default;
-$unit-2: .4rem !default;
-$unit-3: .6rem !default;
-$unit-4: .8rem !default;
+$unit-o: 0.05rem !default;
+$unit-h: 0.1rem !default;
+$unit-1: 0.2rem !default;
+$unit-2: 0.4rem !default;
+$unit-3: 0.6rem !default;
+$unit-4: 0.8rem !default;
 $unit-5: 1rem !default;
 $unit-6: 1.2rem !default;
 $unit-7: 1.4rem !default;
@@ -70,9 +72,9 @@ $unit-16: 3.2rem !default;
 // Font sizes
 $html-font-size: 20px !default;
 $html-line-height: 1.5 !default;
-$font-size: .8rem !default;
-$font-size-sm: .7rem !default;
-$font-size-lg: .9rem !default;
+$font-size: 0.8rem !default;
+$font-size-sm: 0.7rem !default;
+$font-size-lg: 0.9rem !default;
 $line-height: 1.2rem !default;
 
 // Sizes
@@ -86,12 +88,12 @@ $control-size: $unit-9 !default;
 $control-size-sm: $unit-7 !default;
 $control-size-lg: $unit-10 !default;
 $control-padding-x: $unit-2 !default;
-$control-padding-x-sm: $unit-2 * .75 !default;
+$control-padding-x-sm: $unit-2 * 0.75 !default;
 $control-padding-x-lg: $unit-2 * 1.5 !default;
-$control-padding-y: ($control-size - $line-height) / 2 - $border-width !default;
-$control-padding-y-sm: ($control-size-sm - $line-height) / 2 - $border-width !default;
-$control-padding-y-lg: ($control-size-lg - $line-height) / 2 - $border-width !default;
-$control-icon-size: .8rem !default;
+$control-padding-y: ($control-size - $line-height) * 0.5 - $border-width !default;
+$control-padding-y-sm: ($control-size-sm - $line-height) * 0.5 - $border-width !default;
+$control-padding-y-lg: ($control-size-lg - $line-height) * 0.5 - $border-width !default;
+$control-icon-size: 0.8rem !default;
 
 $control-width-xs: 180px !default;
 $control-width-sm: 320px !default;

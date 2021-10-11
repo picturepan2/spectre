@@ -202,9 +202,9 @@ textarea.form-input {
 .form-switch {
   display: block;
   line-height: $line-height;
-  margin: ($control-size - $control-size-sm) / 2 0;
+  margin: ($control-size - $control-size-sm) * .5 0;
   min-height: $control-size-sm;
-  padding: (($control-size-sm - $line-height) / 2) $control-padding-x (($control-size-sm - $line-height) / 2) ($control-icon-size + $control-padding-x);
+  padding: (($control-size-sm - $line-height) * .5) $control-padding-x (($control-size-sm - $line-height) * .5) ($control-icon-size + $control-padding-x);
   position: relative;
 
   input {
@@ -240,7 +240,7 @@ textarea.form-input {
 
   &.input-lg {
     font-size: $font-size-lg;
-    margin: ($control-size-lg - $control-size-sm) / 2 0;
+    margin: ($control-size-lg - $control-size-sm) * .5 0;
   }
 }
 
@@ -250,7 +250,7 @@ textarea.form-input {
     background: $bg-color-light;
     height: $control-icon-size;
     left: 0;
-    top: ($control-size-sm - $control-icon-size) / 2;
+    top: ($control-size-sm - $control-icon-size) * .5;
     width: $control-icon-size;
   }
 
@@ -332,7 +332,7 @@ textarea.form-input {
     border-radius: $unit-2 + $border-width;
     height: $unit-4 + $border-width * 2;
     left: 0;
-    top: ($control-size-sm - $unit-4) / 2 - $border-width;
+    top: ($control-size-sm - $unit-4) * .5 - $border-width;
     width: $unit-8;
     &::before {
       background: $bg-color-light;
