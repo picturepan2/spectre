@@ -32,7 +32,8 @@
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^4.1.0",
     "jstransformer-highlight": "^2.0.0",
-    "jstransformer-markdown-it": "^2.1.0"
+    "jstransformer-markdown-it": "^2.1.0",
+    "sass-migrator": "^1.5.4"
   },
   "browserslist": [
     "last 4 Chrome versions",
