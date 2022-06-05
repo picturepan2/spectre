@@ -1,0 +1,20 @@
+{
+	"name": "Spectre.css",
+	"package": "spectre",
+	"index": "getting-started.html",
+	"selectors": {
+		"h3.s-title": {
+			"type": "Component",
+			"regexp": "#",
+			"replacement": ""
+		},
+		"h4.s-subtitle": {
+			"type": "Section",
+			"regexp": "#",
+			"replacement": ""
+		}
+	},
+	"icon32x32": "img/favicons/favicon.png",
+	"allowJS": true,
+	"ExternalURL": "https://picturepan2.github.io/spectre/"
+}
