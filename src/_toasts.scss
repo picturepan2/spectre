@@ -27,7 +27,7 @@
   a {
     color: $light-color;
     text-decoration: underline;
-    
+
     &:focus,
     &:hover,
     &:active,
@@ -36,7 +36,7 @@
     }
   }
 
-  .btn-clear {
+  .btn--clear {
     margin: $unit-h;
   }
 

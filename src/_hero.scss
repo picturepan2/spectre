@@ -6,17 +6,17 @@
   padding-bottom: 4rem;
   padding-top: 4rem;
 
-  &.hero-sm {
+  &.hero--sm {
     padding-bottom: 2rem;
     padding-top: 2rem;
   }
 
-  &.hero-lg {
+  &.hero--lg {
     padding-bottom: 8rem;
     padding-top: 8rem;
   }
 
-  .hero-body {
+  .hero__body {
     padding: $layout-spacing;
   }
 }

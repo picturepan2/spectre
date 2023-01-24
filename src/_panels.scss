@@ -5,17 +5,17 @@
   display: flex;
   flex-direction: column;
 
-  .panel-header,
-  .panel-footer {
+  .panel__header,
+  .panel__footer {
     flex: 0 0 auto;
     padding: $layout-spacing-lg;
   }
 
-  .panel-nav {
+  .panel__nav {
     flex: 0 0 auto;
   }
 
-  .panel-body {
+  .panel__body {
     flex: 1 1 auto;
     overflow-y: auto;
     padding: 0 $layout-spacing-lg;

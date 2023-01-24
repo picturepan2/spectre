@@ -206,7 +206,7 @@ IMPORTANT: Move Autocomplete to the Experimentals
 - Change Gulp building process and ignore /dist
 - Change naming `danger` to `error`
 - Change label-variant mixin
-- Fix dropdown-toggle border radius in button groups
+- Fix dropdown__toggle border radius in button groups
 - Fix Calendars date item width bug under Firefox
 
 ##### v0.2.12 [#](https://github.com/picturepan2/spectre/releases/tag/v0.2.12)

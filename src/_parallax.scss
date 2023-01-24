@@ -21,7 +21,7 @@ $parallax-fade-color: rgba(255, 255, 255, .35) !default;
   position: relative;
   width: auto;
 
-  .parallax-content {
+  .parallax__content {
     @include shadow-variant(1rem);
     height: auto;
     transform: perspective($parallax-perspective);
@@ -40,7 +40,7 @@ $parallax-fade-color: rgba(255, 255, 255, .35) !default;
     }
   }
 
-  .parallax-front {
+  .parallax__front {
     align-items: center;
     color: $light-color;
     display: flex;
@@ -57,77 +57,77 @@ $parallax-fade-color: rgba(255, 255, 255, .35) !default;
     z-index: $zindex-0;
   }
 
-  .parallax-top-left {
+  .parallax__top-left {
     @include parallax-dir();
     left: 0;
     top: 0;
 
-    &:focus ~ .parallax-content,
-    &:hover ~ .parallax-content {
+    &:focus ~ .parallax__content,
+    &:hover ~ .parallax__content {
       transform: perspective($parallax-perspective) rotateX($parallax-deg) rotateY(-$parallax-deg);
 
       &::before {
         background: linear-gradient(135deg, $parallax-fade-color 0%, transparent 50%);
       }
 
-      .parallax-front {
+      .parallax__front {
         transform: translate3d($parallax-offset, $parallax-offset, $parallax-offset-z) scale($parallax-scale);
       }
     }
   }
 
-  .parallax-top-right {
+  .parallax__top-right {
     @include parallax-dir();
     right: 0;
     top: 0;
 
-    &:focus ~ .parallax-content,
-    &:hover ~ .parallax-content {
+    &:focus ~ .parallax__content,
+    &:hover ~ .parallax__content {
       transform: perspective($parallax-perspective) rotateX($parallax-deg) rotateY($parallax-deg);
 
       &::before {
         background: linear-gradient(-135deg, $parallax-fade-color 0%, transparent 50%);
       }
 
-      .parallax-front {
+      .parallax__front {
         transform: translate3d(-$parallax-offset, $parallax-offset, $parallax-offset-z) scale($parallax-scale);
       }
     }
   }
 
-  .parallax-bottom-left {
+  .parallax__bottom-left {
     @include parallax-dir();
     bottom: 0;
     left: 0;
 
-    &:focus ~ .parallax-content,
-    &:hover ~ .parallax-content {
+    &:focus ~ .parallax__content,
+    &:hover ~ .parallax__content {
       transform: perspective($parallax-perspective) rotateX(-$parallax-deg) rotateY(-$parallax-deg);
 
       &::before {
         background: linear-gradient(45deg, $parallax-fade-color 0%, transparent 50%);
       }
 
-      .parallax-front {
+      .parallax__front {
         transform: translate3d($parallax-offset, -$parallax-offset, $parallax-offset-z) scale($parallax-scale);
       }
     }
   }
 
-  .parallax-bottom-right {
+  .parallax__bottom-right {
     @include parallax-dir();
     bottom: 0;
     right: 0;
 
-    &:focus ~ .parallax-content,
-    &:hover ~ .parallax-content {
+    &:focus ~ .parallax__content,
+    &:hover ~ .parallax__content {
       transform: perspective($parallax-perspective) rotateX(-$parallax-deg) rotateY($parallax-deg);
 
       &::before {
         background: linear-gradient(-45deg, $parallax-fade-color 0%, transparent 50%);
       }
 
-      .parallax-front {
+      .parallax__front {
         transform: translate3d(-$parallax-offset, -$parallax-offset, $parallax-offset-z) scale($parallax-scale);
       }
     }

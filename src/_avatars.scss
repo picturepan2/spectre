@@ -11,16 +11,16 @@
   position: relative;
   vertical-align: middle;
 
-  &.avatar-xs {
+  &.avatar--xs {
     @include avatar-base($unit-4);
   }
-  &.avatar-sm {
+  &.avatar--sm {
     @include avatar-base($unit-6);
   }
-  &.avatar-lg {
+  &.avatar--lg {
     @include avatar-base($unit-12);
   }
-  &.avatar-xl {
+  &.avatar--xl {
     @include avatar-base($unit-16);
   }
 
@@ -32,7 +32,7 @@
     z-index: $zindex-0;
   }
 
-  .avatar-icon,
+  .avatar__icon,
   .avatar-presence {
     background: $bg-color-light;
     bottom: 14.64%;
@@ -52,15 +52,15 @@
     height: .5em;
     width: .5em;
 
-    &.online {
+    &--online {
       background: $success-color;
     }
 
-    &.busy {
+    &--busy {
       background: $error-color;
     }
 
-    &.away {
+    &--away {
       background: $warning-color;
     }
   }

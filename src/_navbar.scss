@@ -5,7 +5,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
 
-  .navbar-section {
+  .navbar__section {
     align-items: center;
     display: flex;
     flex: 1 0 0;
@@ -15,13 +15,13 @@
     }
   }
 
-  .navbar-center {
+  .navbar__center {
     align-items: center;
     display: flex;
     flex: 0 0 auto;
   }
 
-  .navbar-brand {
+  .navbar__brand {
     font-size: $font-size-lg;
     text-decoration: none;
   }

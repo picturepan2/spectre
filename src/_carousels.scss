@@ -2,13 +2,13 @@
 // The number of carousel images
 $carousel-number: 8;
 
-%carousel-image-checked { 
+%carousel-image-checked {
   animation: carousel-slidein .75s ease-in-out 1;
   opacity: 1;
   z-index: $zindex-1;
 }
 
-%carousel-nav-checked { 
+%carousel-nav-checked {
   color: $gray-color-light;
 }
 
@@ -21,7 +21,7 @@ $carousel-number: 8;
   -webkit-overflow-scrolling: touch;
   z-index: $zindex-0;
 
-  .carousel-container {
+  .carousel__container {
     height: 100%;
     left: 0;
     position: relative;
@@ -31,7 +31,7 @@ $carousel-number: 8;
       padding-bottom: 56.25%;
     }
 
-    .carousel-item {
+    .carousel__item {
       animation: carousel-slideout 1s ease-in-out 1;
       height: 100%;
       left: 0;
@@ -69,7 +69,7 @@ $carousel-number: 8;
     }
   }
 
-  .carousel-locator {
+  .carousel__locator {
     @for $i from 1 through ($carousel-number) {
       &:nth-of-type(#{$i}):checked ~ .carousel-container .carousel-item:nth-of-type(#{$i}) {
         @extend %carousel-image-checked;
@@ -77,13 +77,13 @@ $carousel-number: 8;
     }
 
     @for $i from 1 through ($carousel-number) {
-      &:nth-of-type(#{$i}):checked ~ .carousel-nav .nav-item:nth-of-type(#{$i}) {
+      &:nth-of-type(#{$i}):checked ~ .carousel-nav .nav__item:nth-of-type(#{$i}) {
         @extend %carousel-nav-checked;
       }
     }
   }
 
-  .carousel-nav {
+  .carousel__nav {
     bottom: $layout-spacing;
     display: flex;
     justify-content: center;
@@ -93,7 +93,7 @@ $carousel-number: 8;
     width: 10rem;
     z-index: $zindex-1;
 
-    .nav-item {
+    .nav__item {
       color: rgba($gray-color-light, .5);
       display: block;
       flex: 1 0 auto;
@@ -115,6 +115,11 @@ $carousel-number: 8;
   }
 }
 
+
+
+/**
+ Todo: move into animations.scss?
+ */
 @keyframes carousel-slidein {
   0% {
     transform: translateX(100%);

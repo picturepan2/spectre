@@ -16,91 +16,91 @@ block docs-content
     .docs-demo.columns
       .column.col-4.col-md-12
         .calendar
-          .calendar-nav.navbar
-            button.btn.btn-action.btn-link.btn-lg
+          .calendar__nav.navbar
+            button.btn.btn--action.btn--link.btn--lg
               i.icon.icon-arrow-left
             .navbar-primary March 2017
-            button.btn.btn-action.btn-link.btn-lg
+            button.btn.btn--action.btn--link.btn--lg
               i.icon.icon-arrow-right
-          .calendar-container
-            .calendar-header
-              .calendar-date Sun
-              .calendar-date Mon
-              .calendar-date Tue
-              .calendar-date Wed
-              .calendar-date Thu
-              .calendar-date Fri
-              .calendar-date Sat
-            .calendar-body
-              .calendar-date.prev-month
+          .calendar__container
+            .calendar__header
+              .calendar__date Sun
+              .calendar__date Mon
+              .calendar__date Tue
+              .calendar__date Wed
+              .calendar__date Thu
+              .calendar__date Fri
+              .calendar__date Sat
+            .calendar__body
+              .calendar__date.prev-month
                 button.date-item 26
-              .calendar-date.prev-month
+              .calendar__date.prev-month
                 button.date-item 27
-              .calendar-date.prev-month
+              .calendar__date.prev-month
                 button.date-item 28
-              .calendar-date
+              .calendar__date
                 button.date-item 1
-              .calendar-date
+              .calendar__date
                 button.date-item 2
-              .calendar-date
+              .calendar__date
                 button.date-item 3
-              .calendar-date.tooltip(data-tooltip="Today")
-                button.date-item.date-today 4
-              .calendar-date.tooltip(data-tooltip="Not available")
+              .calendar__date.tooltip(data-tooltip="Today")
+                button.date-item.date-item--today 4
+              .calendar__date.tooltip(data-tooltip="Not available")
                 button.date-item(disabled="") 5
-              .calendar-date
+              .calendar__date
                 button.date-item 6
-              .calendar-date
+              .calendar__date
                 button.date-item 7
-              .calendar-date.tooltip(data-tooltip="You have appointments")
+              .calendar__date.tooltip(data-tooltip="You have appointments")
                 button.date-item.badge 8
-              .calendar-date
+              .calendar__date
                 button.date-item 9
-              .calendar-date
+              .calendar__date
                 button.date-item 10
-              .calendar-date
+              .calendar__date
                 button.date-item 11
-              .calendar-date
+              .calendar__date
                 button.date-item 12
-              .calendar-date
+              .calendar__date
                 button.date-item 13
-              .calendar-date
+              .calendar__date
                 button.date-item 14
-              .calendar-date
+              .calendar__date
                 button.date-item 15
-              .calendar-date.calendar-range.range-start
+              .calendar__date.calendar-range.calendar-range--start
                 button.date-item 16
-              .calendar-date.calendar-range
+              .calendar__date.calendar-range
                 button.date-item 17
-              .calendar-date.calendar-range
+              .calendar__date.calendar-range
                 button.date-item 18
-              .calendar-date.calendar-range
+              .calendar__date.calendar-range
                 button.date-item 19
-              .calendar-date.calendar-range.range-end
+              .calendar__date.calendar-range.calendar-range--end
                 button.date-item 20
-              .calendar-date
+              .calendar__date
                 button.date-item 21
-              .calendar-date
+              .calendar__date
                 button.date-item 22
-              .calendar-date
+              .calendar__date
                 button.date-item 23
-              .calendar-date
+              .calendar__date
                 button.date-item 24
-              .calendar-date
+              .calendar__date
                 button.date-item 25
-              .calendar-date
+              .calendar__date
                 button.date-item 26
-              .calendar-date
+              .calendar__date
                 button.date-item 27
-              .calendar-date
+              .calendar__date
                 button.date-item 28
-              .calendar-date
+              .calendar__date
                 button.date-item 29
-              .calendar-date
+              .calendar__date
                 button.date-item 30
-              .calendar-date
+              .calendar__date
                 button.date-item 31
-              .calendar-date.next-month
+              .calendar__date.next-month
                 button.date-item 1
 
     pre.code(data-lang='HTML')
@@ -108,77 +108,77 @@ block docs-content
         :highlight(lang="html")
           <div class="calendar">
             <!-- calendar navbar -->
-            <div class="calendar-nav navbar">
-              <button class="btn btn-action btn-link btn-lg">
+            <div class="calendar__nav navbar">
+              <button class="btn btn--action btn--link btn--lg">
                 <i class="icon icon-arrow-left"></i>
               </button>
               <div class="navbar-primary">March 2017</div>
-              <button class="btn btn-action btn-link btn-lg">
+              <button class="btn btn--action btn--link btn--lg">
                 <i class="icon icon-arrow-right"></i>
               </button>
             </div>
 
-            <div class="calendar-container">
-              <div class="calendar-header">
-                <div class="calendar-date">Sun</div>
-                <div class="calendar-date">Mon</div>
-                <div class="calendar-date">Tue</div>
-                <div class="calendar-date">Wed</div>
-                <div class="calendar-date">Thu</div>
-                <div class="calendar-date">Fri</div>
-                <div class="calendar-date">Sat</div>
+            <div class="calendar__container">
+              <div class="calendar__header">
+                <div class="calendar__date">Sun</div>
+                <div class="calendar__date">Mon</div>
+                <div class="calendar__date">Tue</div>
+                <div class="calendar__date">Wed</div>
+                <div class="calendar__date">Thu</div>
+                <div class="calendar__date">Fri</div>
+                <div class="calendar__date">Sat</div>
               </div>
 
-              <div class="calendar-body">
+              <div class="calendar__body">
                 <!-- calendar previous month -->
-                <div class="calendar-date prev-month">
+                <div class="calendar__date prev-month">
                   <button class="date-item">26</button>
                 </div>
                 ...
-                <div class="calendar-date prev-month">
+                <div class="calendar__date prev-month">
                   <button class="date-item">28</button>
                 </div>
 
                 <!-- calendar current month -->
-                <div class="calendar-date">
+                <div class="calendar__date">
                   <button class="date-item">1</button>
                 </div>
-                <div class="calendar-date">
+                <div class="calendar__date">
                   <button class="date-item">2</button>
                 </div>
-                <div class="calendar-date">
+                <div class="calendar__date">
                   <button class="date-item">3</button>
                 </div>
                 <!-- calendar date: today -->
-                <div class="calendar-date">
-                  <button class="date-item date-today">4</button>
+                <div class="calendar__date">
+                  <button class="date-item date-item--today">4</button>
                 </div>
                 <!-- calendar date: tooltip -->
-                <div class="calendar-date tooltip" data-tooltip="You have appointments">
+                <div class="calendar__date tooltip" data-tooltip="You have appointments">
                   <button class="date-item">5</button>
                 </div>
                 <!-- calendar date: not available -->
-                <div class="calendar-date tooltip" data-tooltip="Not available">
+                <div class="calendar__date tooltip" data-tooltip="Not available">
                   <button class="date-item" disabled="">6</button>
                 </div>
 
                 <!-- calendar range -->
-                <div class="calendar-date calendar-range range-start">
+                <div class="calendar__date calendar-range calendar-range--start">
                   <button class="date-item">7</button>
                 </div>
-                <div class="calendar-date calendar-range">
+                <div class="calendar__date calendar-range">
                   <button class="date-item">8</button>
                 </div>
-                <div class="calendar-date calendar-range range-end">
+                <div class="calendar__date calendar-range calendar-range--end">
                   <button class="date-item">9</button>
                 </div>
                 ...
-                <div class="calendar-date">
+                <div class="calendar__date">
                   <button class="date-item">31</button>
                 </div>
 
                 <!-- calendar next month -->
-                <div class="calendar-date next-month">
+                <div class="calendar__date next-month">
                   <button class="date-item">1</button>
                 </div>
               </div>
@@ -190,103 +190,103 @@ block docs-content
     .docs-demo.columns
       .column.col-12
         .calendar.calendar-lg
-          .calendar-nav.navbar
-            button.btn.btn-action.btn-link.btn-lg
+          .calendar__nav.navbar
+            button.btn.btn--action.btn--link.btn--lg
               i.icon.icon-arrow-left
             .navbar-primary March 2017
-            button.btn.btn-action.btn-link.btn-lg
+            button.btn.btn--action.btn--link.btn--lg
               i.icon.icon-arrow-right
-          .calendar-container
-            .calendar-header
-              .calendar-date Sun
-              .calendar-date Mon
-              .calendar-date Tue
-              .calendar-date Wed
-              .calendar-date Thu
-              .calendar-date Fri
-              .calendar-date Sat
-            .calendar-body
-              .calendar-date.prev-month
+          .calendar__container
+            .calendar__header
+              .calendar__date Sun
+              .calendar__date Mon
+              .calendar__date Tue
+              .calendar__date Wed
+              .calendar__date Thu
+              .calendar__date Fri
+              .calendar__date Sat
+            .calendar__body
+              .calendar__date.prev-month
                 button.date-item 26
-              .calendar-date.prev-month
+              .calendar__date.prev-month
                 button.date-item 27
-                .calendar-events
-                  a.calendar-event.bg-error.text-light(href="#calendars") Zhonghe Festival
-              .calendar-date.prev-month
+                .calendar__events
+                  a.calendar__event.bg-error.text-light(href="#calendars") Zhonghe Festival
+              .calendar__date.prev-month
                 button.date-item 28
-              .calendar-date
+              .calendar__date
                 button.date-item 1
-              .calendar-date
+              .calendar__date
                 button.date-item 2
-              .calendar-date
+              .calendar__date
                 button.date-item 3
-              .calendar-date.tooltip(data-tooltip="Today")
-                button.date-item.date-today 4
-              .calendar-date
+              .calendar__date.tooltip(data-tooltip="Today")
+                button.date-item.date-item--today 4
+              .calendar__date
                 button.date-item(disabled="") 5
-              .calendar-date
+              .calendar__date
                 button.date-item 6
-              .calendar-date
+              .calendar__date
                 button.date-item 7
-              .calendar-date.tooltip(data-tooltip="You have appointments")
+              .calendar__date.tooltip(data-tooltip="You have appointments")
                 button.date-item.badge 8
-                .calendar-events
-                  a.calendar-event.bg-primary.text-light(href="#calendars") Product launch event
-                  a.calendar-event.bg-error.text-light(href="#calendars") International Women's Day
-              .calendar-date
+                .calendar__events
+                  a.calendar__event.bg-primary.text-light(href="#calendars") Product launch event
+                  a.calendar__event.bg-error.text-light(href="#calendars") International Women's Day
+              .calendar__date
                 button.date-item 9
-              .calendar-date
+              .calendar__date
                 button.date-item 10
-              .calendar-date
+              .calendar__date
                 button.date-item 11
-              .calendar-date
+              .calendar__date
                 button.date-item 12
-                .calendar-events
-                  a.calendar-event.bg-error.text-light(href="#calendars") Arbor Day
-              .calendar-date
+                .calendar__events
+                  a.calendar__event.bg-error.text-light(href="#calendars") Arbor Day
+              .calendar__date
                 button.date-item 13
-              .calendar-date
+              .calendar__date
                 button.date-item 14
-              .calendar-date
+              .calendar__date
                 button.date-item 15
-              .calendar-date.calendar-range.range-start
+              .calendar__date.calendar-range.calendar-range--start
                 button.date-item 16
-              .calendar-date.calendar-range
+              .calendar__date.calendar-range
                 button.date-item 17
-              .calendar-date.calendar-range
+              .calendar__date.calendar-range
                 button.date-item 18
-              .calendar-date.calendar-range
+              .calendar__date.calendar-range
                 button.date-item 19
-              .calendar-date.calendar-range.range-end
+              .calendar__date.calendar-range.calendar-range--end
                 button.date-item 20
-                .calendar-events
-                  a.calendar-event.bg-success.text-light(href="#calendars") Spring Equinox
-              .calendar-date
+                .calendar__events
+                  a.calendar__event.bg-success.text-light(href="#calendars") Spring Equinox
+              .calendar__date
                 button.date-item 21
-              .calendar-date
+              .calendar__date
                 button.date-item 22
-              .calendar-date
+              .calendar__date
                 button.date-item 23
-              .calendar-date
+              .calendar__date
                 button.date-item 24
-              .calendar-date
+              .calendar__date
                 button.date-item 25
-              .calendar-date
+              .calendar__date
                 button.date-item 26
-              .calendar-date
+              .calendar__date
                 button.date-item 27
-              .calendar-date
+              .calendar__date
                 button.date-item 28
-              .calendar-date
+              .calendar__date
                 button.date-item 29
-              .calendar-date
+              .calendar__date
                 button.date-item 30
-              .calendar-date
+              .calendar__date
                 button.date-item 31
-              .calendar-date.next-month.disabled
+              .calendar__date.next-month.disabled
                 button.date-item 1
-                .calendar-events
-                  a.calendar-event.bg-error.text-light(href="#calendars") April Fools' Day
+                .calendar__events
+                  a.calendar__event.bg-error.text-light(href="#calendars") April Fools' Day
 
     pre.code(data-lang='HTML')
       code
@@ -294,15 +294,15 @@ block docs-content
           <div class="calendar calendar-lg">
             <!-- calendar navbar structure -->
 
-            <div class="calendar-container">
+            <div class="calendar__container">
               <!-- calendar header structure -->
 
-              <div class="calendar-body">
+              <div class="calendar__body">
                 <!-- calendar date with events -->
-                <div class="calendar-date">
+                <div class="calendar__date">
                   <button class="date-item active">20</button>
-                  <div class="calendar-events">
-                    <a class="calendar-event bg-success text-light" href="#calendars">Spring Equinox</a>
+                  <div class="calendar__events">
+                    <a class="calendar__event bg-success text-light" href="#calendars">Spring Equinox</a>
                   </div>
                 </div>
               </div>

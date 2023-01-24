@@ -15,65 +15,65 @@ block docs-content
     .docs-demo.columns
       .column
         .navbar
-          .navbar-section
-            a.navbar-brand.text-bold.mr-2(href="#navbar") SPECTRE.CSS
-            a.btn.btn-link(href="#navbar") Docs
-            a.btn.btn-link(href="https://github.com/picturepan2/spectre") GitHub
-          .navbar-section
-            .input-group.input-inline
+          .navbar__section
+            a.navbar__brand.text-bold.mr-2(href="#navbar") SPECTRE.CSS
+            a.btn.btn--link(href="#navbar") Docs
+            a.btn.btn--link(href="https://github.com/picturepan2/spectre") GitHub
+          .navbar__section
+            .input-group.form-input--inline
               input.form-input(type="text" placeholder="search")
-              button.btn.btn-primary.input-group-btn Search
+              button.btn.btn--primary.input-group__btn Search
 
     p
       | The navbar component can include logo brand, nav links and buttons, search box or any combination of those elements.
-      | Each section with the #[code navbar-section] class will be evenly distributed in the container.
+      | Each section with the #[code navbar__section] class will be evenly distributed in the container.
 
     pre.code(data-lang='HTML')
       code
         :highlight(lang="html")
           <header class="navbar">
-            <section class="navbar-section">
-              <a href="..." class="navbar-brand mr-2">Spectre.css</a>
-              <a href="..." class="btn btn-link">Docs</a>
-              <a href="..." class="btn btn-link">GitHub</a>
+            <section class="navbar__section">
+              <a href="..." class="navbar__brand mr-2">Spectre.css</a>
+              <a href="..." class="btn btn--link">Docs</a>
+              <a href="..." class="btn btn--link">GitHub</a>
             </section>
-            <section class="navbar-section">
-              <div class="input-group input-inline">
+            <section class="navbar__section">
+              <div class="input-group form-input--inline">
                 <input class="form-input" type="text" placeholder="search">
-                <button class="btn btn-primary input-group-btn">Search</button>
+                <button class="btn btn--primary input-group__btn">Search</button>
               </div>
             </section>
           </header>
 
     p
-      | You can use #[code navbar-center] class to have a centered section.
+      | You can use #[code navbar__center] class to have a centered section.
 
     .docs-demo.columns
       .column.col-12
         .navbar
-          .navbar-section
-            a.btn.btn-link(href="#navbar") Docs
-            a.btn.btn-link(href="#navbar") Examples
-          .navbar-center
+          .navbar__section
+            a.btn.btn--link(href="#navbar") Docs
+            a.btn.btn--link(href="#navbar") Examples
+          .navbar__center
             //img(src="../../img/spectre-logo.svg" alt="Spectre.css")
-          .navbar-section
-            a.btn.btn-link(href="https://twitter.com/spectrecss") Twitter
-            a.btn.btn-link(href="https://github.com/picturepan2/spectre") GitHub
+          .navbar__section
+            a.btn.btn--link(href="https://twitter.com/spectrecss") Twitter
+            a.btn.btn--link(href="https://github.com/picturepan2/spectre") GitHub
 
     pre.code(data-lang='HTML')
       code
         :highlight(lang="html")
           <header class="navbar">
-            <section class="navbar-section">
-              <a href="#" class="btn btn-link">Docs</a>
-              <a href="#" class="btn btn-link">Examples</a>
+            <section class="navbar__section">
+              <a href="#" class="btn btn--link">Docs</a>
+              <a href="#" class="btn btn--link">Examples</a>
             </section>
-            <section class="navbar-center">
+            <section class="navbar__center">
               <!-- centered logo or brand -->
             </section>
-            <section class="navbar-section">
-              <a href="#" class="btn btn-link">Twitter</a>
-              <a href="#" class="btn btn-link">GitHub</a>
+            <section class="navbar__section">
+              <a href="#" class="btn btn--link">Twitter</a>
+              <a href="#" class="btn btn--link">GitHub</a>
             </section>
           </header>
 

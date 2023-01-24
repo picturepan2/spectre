@@ -13,7 +13,7 @@
     top: 100%;
   }
 
-  &.dropdown-right {
+  &.dropdown--right {
     .menu {
       left: auto;
       right: 0;
@@ -21,14 +21,15 @@
   }
 
   &.active .menu,
-  .dropdown-toggle:focus + .menu,
+  &:focus-within .menu,
+  .dropdown__toggle:focus + .menu,
   .menu:hover {
     display: block;
   }
 
-  // Fix dropdown-toggle border radius in button groups
+  // Fix dropdown__toggle border radius in button groups
   .btn-group {
-    .dropdown-toggle:nth-last-child(2) {
+    .dropdown__toggle:nth-last-child(2) {
       border-bottom-right-radius: $border-radius;
       border-top-right-radius: $border-radius;
     }

@@ -4,11 +4,11 @@
   align-items: flex-start;
   display: flex;
 
-  .tile-icon,
-  .tile-action {
+  .tile__icon,
+  .tile__action {
     flex: 0 0 auto;
   }
-  .tile-content {
+  .tile__content {
     flex: 1 1 auto;
     &:not(:first-child) {
       padding-left: $unit-2;
@@ -17,20 +17,20 @@
       padding-right: $unit-2;
     }
   }
-  .tile-title,
-  .tile-subtitle {
+  .tile__title,
+  .tile__subtitle {
     line-height: $line-height;
   }
 
-  &.tile-centered {
+  &.tile--centered {
     align-items: center;
 
-    .tile-content {
+    .tile__content {
       overflow: hidden;
     }
 
-    .tile-title,
-    .tile-subtitle {
+    .tile__title,
+    .tile__subtitle {
       @include text-ellipsis();
       margin-bottom: 0;
     }

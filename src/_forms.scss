@@ -21,12 +21,12 @@ legend {
   line-height: $line-height;
   padding: $control-padding-y + $border-width 0;
 
-  &.label-sm {
+  &.form-label--sm {
     font-size: $font-size-sm;
     padding: $control-padding-y-sm + $border-width 0;
   }
 
-  &.label-lg {
+  &.form-label--lg {
     font-size: $font-size-lg;
     padding: $control-padding-y-lg + $border-width 0;
   }
@@ -59,19 +59,19 @@ legend {
   }
 
   // Input sizes
-  &.input-sm {
+  &.form-input--sm {
     font-size: $font-size-sm;
     height: $control-size-sm;
     padding: $control-padding-y-sm $control-padding-x-sm;
   }
 
-  &.input-lg {
+  &.form-input--lg {
     font-size: $font-size-lg;
     height: $control-size-lg;
     padding: $control-padding-y-lg $control-padding-x-lg;
   }
 
-  &.input-inline {
+  &.form-input--inline {
     display: inline-block;
     vertical-align: middle;
     width: auto;
@@ -86,8 +86,8 @@ legend {
 // Form element: Textarea
 textarea.form-input {
   &,
-  &.input-lg,
-  &.input-sm {
+  &.form-input--lg,
+  &.form-input--sm {
     height: auto;
   }
 }
@@ -122,7 +122,7 @@ textarea.form-input {
   padding: $control-padding-y $control-padding-x;
   vertical-align: middle;
   width: 100%;
-  background: $bg-color-light; 
+  background: $bg-color-light;
   &:focus {
     @include control-shadow();
     border-color: $primary-color;
@@ -132,13 +132,13 @@ textarea.form-input {
   }
 
   // Select sizes
-  &.select-sm {
+  &.form-select--sm {
     font-size: $font-size-sm;
     height: $control-size-sm;
     padding: $control-padding-y-sm ($control-icon-size + $control-padding-x-sm) $control-padding-y-sm $control-padding-x-sm;
   }
 
-  &.select-lg {
+  &.form-select--lg {
     font-size: $font-size-lg;
     height: $control-size-lg;
     padding: $control-padding-y-lg ($control-icon-size + $control-padding-x-lg) $control-padding-y-lg $control-padding-x-lg;
@@ -233,12 +233,12 @@ textarea.form-input {
   }
 
   // Input checkbox, radio and switch sizes
-  &.input-sm {
+  &.form-input--sm {
     font-size: $font-size-sm;
     margin: 0;
   }
 
-  &.input-lg {
+  &.form-input--lg {
     font-size: $font-size-lg;
     margin: ($control-size-lg - $control-size-sm) / 2 0;
   }
@@ -366,7 +366,7 @@ textarea.form-input {
 .input-group {
   display: flex;
 
-  .input-group-addon {
+  .input-group__addon {
     background: $bg-color;
     border: $border-width solid $border-color-dark;
     border-radius: $border-radius;
@@ -374,12 +374,12 @@ textarea.form-input {
     padding: $control-padding-y $control-padding-x;
     white-space: nowrap;
 
-    &.addon-sm {
+    &.input-group__addon--sm {
       font-size: $font-size-sm;
       padding: $control-padding-y-sm $control-padding-x-sm;
     }
 
-    &.addon-lg {
+    &.input-group__addon--lg {
       font-size: $font-size-lg;
       padding: $control-padding-y-lg $control-padding-x-lg;
     }
@@ -391,14 +391,14 @@ textarea.form-input {
     width: 1%;
   }
 
-  .input-group-btn {
+  .input-group__btn {
     z-index: $zindex-0;
   }
 
   .form-input,
   .form-select,
-  .input-group-addon,
-  .input-group-btn {
+  .input-group__addon,
+  .input-group__btn {
     &:first-child:not(:last-child) {
       border-bottom-right-radius: 0;
       border-top-right-radius: 0;
@@ -421,7 +421,7 @@ textarea.form-input {
     width: auto;
   }
 
-  &.input-inline {
+  &.form-input--inline {
     display: inline-flex;
   }
 }
@@ -540,7 +540,7 @@ input {
 }
 
 // Form horizontal
-.form-horizontal {
+.form--horizontal {
   padding: $layout-spacing 0;
 
   .form-group {
@@ -550,6 +550,6 @@ input {
 }
 
 // Form inline
-.form-inline {
+.form--inline {
   display: inline-block;
 }

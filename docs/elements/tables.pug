@@ -66,7 +66,7 @@ block docs-content
 
     .docs-demo.columns
       .column.col-12
-        table.table.table-striped.table-hover
+        table.table.table--striped.table--hover
           thead
             tr
               th Name
@@ -91,15 +91,15 @@ block docs-content
               td 22 September 1995
 
     p
-      | Use the #[code table-striped] class to #{'<table>'} to add zebra striped style.
-      | For hoverable table rows, you can add the #[code table-hover] class to enable hover style.
+      | Use the #[code table--striped] class to #{'<table>'} to add zebra striped style.
+      | For hoverable table rows, you can add the #[code table--hover] class to enable hover style.
     p
       | Use the #[code active] class to make #{'<tr>'} element highlighted.
 
     pre.code(data-lang='HTML')
       code
         :highlight(lang="html")
-          <table class="table table-striped table-hover">
+          <table class="table table--striped table--hover">
             <thead>
               <tr>
                 <th>name</th>
@@ -120,7 +120,7 @@ block docs-content
 
     .docs-demo.columns
       .column.col-12
-        table.table.table-scroll
+        table.table.table--scroll
           thead
             tr
               th Name
@@ -160,12 +160,12 @@ block docs-content
               td David Fincher
 
     p
-      | Add the #[code table-scroll] class to #{'<table>'} to have a horizontally scrollable table.
+      | Add the #[code table--scroll] class to #{'<table>'} to have a horizontally scrollable table.
 
     pre.code(data-lang='HTML')
       code
         :highlight(lang="html")
-          <table class="table table-scroll">
+          <table class="table table--scroll">
             ...
           </table>
 

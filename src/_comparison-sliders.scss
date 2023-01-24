@@ -7,8 +7,8 @@
   width: 100%;
   -webkit-overflow-scrolling: touch;
 
-  .comparison-before,
-  .comparison-after {
+  .comparison__before,
+  .comparison__after {
     height: 100%;
     left: 0;
     margin: 0;
@@ -25,16 +25,16 @@
     }
   }
 
-  .comparison-before {
+  .comparison__before {
     width: 100%;
     z-index: 1;
 
-    .comparison-label {
+    .comparison__label {
       right: $unit-4;
     }
   }
 
-  .comparison-after {
+  .comparison__after {
     max-width: 100%;
     min-width: 0;
     z-index: 2;
@@ -66,12 +66,12 @@
       width: 3px;
     }
 
-    .comparison-label {
+    .comparison__label {
       left: $unit-4;
     }
   }
 
-  .comparison-resizer {
+  .comparison__resizer {
     animation: first-run 1.5s 1 ease-in-out;
     cursor: ew-resize;
     height: $unit-4;
@@ -87,7 +87,7 @@
     width: 0;
   }
 
-  .comparison-label {
+  .comparison__label {
     background: rgba($dark-color, .5);
     bottom: $unit-4;
     color: $light-color;
@@ -97,6 +97,9 @@
   }
 }
 
+/**
+  Todo: move to animations.scss?
+ */
 @keyframes first-run {
   0% {
     width: 0;

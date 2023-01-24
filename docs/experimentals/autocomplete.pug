@@ -17,17 +17,17 @@ block docs-content
       .column.col-9.col-xs-12
         .form-group
           .form-autocomplete
-            .form-autocomplete-input.form-input
+            .form-autocomplete__input.form-input
               span.chip
                 | Bruce Banner
               .chip
-                img.avatar.avatar-sm(src="../../img/avatar-1.png" alt="Avatar")
+                img.avatar.avatar--sm(src="../../img/avatar-1.png" alt="Avatar")
                 | Thor Odinson
               .chip
-                img.avatar.avatar-sm(src="../../img/avatar-4.png" alt="Avatar")
+                img.avatar.avatar--sm(src="../../img/avatar-4.png" alt="Avatar")
                 | Steve Rogers
               .chip
-                figure.avatar.avatar-sm(data-initial="TS" style="background-color: #5755d9;")
+                figure.avatar.avatar--sm(data-initial="TS" style="background-color: #5755d9;")
                 | Tony Stark
               span.chip.active
                 | Natasha Romanoff
@@ -35,41 +35,41 @@ block docs-content
       .column.col-9.col-xs-12
         .form-group
           .form-autocomplete
-            .form-autocomplete-input.form-input.is-focused
+            .form-autocomplete__input.form-input.form-autocomplete__input--focused
               span.chip
                 | Bruce Banner
-                a.btn.btn-clear(href="#" aria-label="Close" role="button")
+                a.btn.btn--clear(href="#" aria-label="Close" role="button")
               span.chip
-                img.avatar.avatar-sm(src="../../img/avatar-1.png" alt="Thor Odinson")
+                img.avatar.avatar--sm(src="../../img/avatar-1.png" alt="Thor Odinson")
                 | Thor Odinson
-                a.btn.btn-clear(href="#" aria-label="Close" role="button")
+                a.btn.btn--clear(href="#" aria-label="Close" role="button")
               .has-icon-left
                 input.form-input(type="text" placeholder="" value="S")
                 i.form-icon.loading
             ul.menu
-              li.menu-item
+              li.menu__item
                 a(href="#autocomplete")
-                  .tile.tile-centered
-                    .tile-icon
-                      img.avatar.avatar-sm(src="../../img/avatar-4.png" alt="Steve Rogers")
-                    .tile-content
+                  .tile.tile--centered
+                    .tile__icon
+                      img.avatar.avatar--sm(src="../../img/avatar-4.png" alt="Steve Rogers")
+                    .tile__content
                       mark S
                       | teve Roger
                       mark s
-              li.menu-item
+              li.menu__item
                 a(href="#autocomplete")
-                  .tile.tile-centered
-                    .tile-icon
-                      figure.avatar.avatar-sm(data-initial="TS" style="background-color: #5755d9;")
-                    .tile-content
+                  .tile.tile--centered
+                    .tile__icon
+                      figure.avatar.avatar--sm(data-initial="TS" style="background-color: #5755d9;")
+                    .tile__content
                       | Tony
                       mark S
                       | tark
 
     p
       | Add a container element with the #[code form-autocomplete] class.
-      | There are 2 parts of it, one is #[code form-autocomplete-input], another is #[code menu] component.
-      | You may add the #[code is-focused] class to #[code form-autocomplete-input] to make it appear as focus state.
+      | There are 2 parts of it, one is #[code form-autocomplete__input], another is #[code menu] component.
+      | You may add the #[code form-autocomplete__input--focused] class to #[code form-autocomplete__input] to make it appear as focus state.
     p
       | Spectre.css does NOT include JavaScript code, you will need to implement your JS to interact with the autocomplete.
       | The autocomplete HTML structure is exampled below.
@@ -77,18 +77,18 @@ block docs-content
     .docs-demo.columns
       .column.col-9.col-xs-12
         .form-group
-          .form-autocomplete.autocomplete-oneline
-            .form-autocomplete-input.form-input
+          .form-autocomplete.autocomplete--oneline
+            .form-autocomplete__input.form-input
               span.chip
                 | Bruce Banner
               .chip
-                img.avatar.avatar-sm(src="../../img/avatar-1.png" alt="Avatar")
+                img.avatar.avatar--sm(src="../../img/avatar-1.png" alt="Avatar")
                 | Thor Odinson
               .chip
-                img.avatar.avatar-sm(src="../../img/avatar-4.png" alt="Avatar")
+                img.avatar.avatar--sm(src="../../img/avatar-4.png" alt="Avatar")
                 | Steve Rogers
               .chip
-                figure.avatar.avatar-sm(data-initial="TS" style="background-color: #5755d9;")
+                figure.avatar.avatar--sm(data-initial="TS" style="background-color: #5755d9;")
                 | Tony Stark
               span.chip.active
                 | Natasha Romanoff
@@ -99,13 +99,13 @@ block docs-content
         :highlight(lang="html")
           <div class="form-autocomplete">
             <!-- autocomplete input container -->
-            <div class="form-autocomplete-input form-input">
+            <div class="form-autocomplete__input form-input">
 
               <!-- autocomplete chips -->
               <div class="chip">
-                <img src="img/avatar-1.png" class="avatar avatar-sm" alt="Thor Odinson">
+                <img src="img/avatar-1.png" class="avatar avatar--sm" alt="Thor Odinson">
                 Thor Odinson
-                <a href="#" class="btn btn-clear" aria-label="Close" role="button"></a>
+                <a href="#" class="btn btn--clear" aria-label="Close" role="button"></a>
               </div>
 
               <!-- autocomplete real input box -->
@@ -115,13 +115,13 @@ block docs-content
             <!-- autocomplete suggestion list -->
             <ul class="menu">
               <!-- menu list items -->
-              <li class="menu-item">
+              <li class="menu__item">
                 <a href="#">
-                  <div class="tile tile-centered">
-                    <div class="tile-icon">
+                  <div class="tile tile--centered">
+                    <div class="tile__icon">
                       ...
                     </div>
-                    <div class="tile-content">
+                    <div class="tile__content">
                       ...
                     </div>
                   </div>

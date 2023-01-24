@@ -15,50 +15,50 @@ block docs-content
     .docs-demo.columns
       .column.col-9.col-sm-12
         .tile
-          .tile-icon
-            figure.avatar.avatar-lg
+          .tile__icon
+            figure.avatar.avatar--lg
               img(src="../../img/avatar-3.png" alt="Avatar")
-          .tile-content
-            p.tile-title The Avengers
-            p.tile-subtitle
+          .tile__content
+            p.tile__title The Avengers
+            p.tile__subtitle
               | Earth's Mightiest Heroes joined forces to take on threats that were too big for any one hero to tackle...
-          .tile-action
-            button.btn.btn-primary Join
+          .tile__action
+            button.btn.btn--primary Join
             button.btn Contact
       .column.col-9.col-sm-12
         .tile
-          .tile-icon
-            figure.avatar.avatar-lg
+          .tile__icon
+            figure.avatar.avatar--lg
               img(src="../../img/avatar-2.png" alt="Avatar")
-          .tile-content
-            p.tile-title The S.H.I.E.L.D.
-            p.tile-subtitle The Strategic Homeland Intervention, Enforcement, and Logistics Division...
+          .tile__content
+            p.tile__title The S.H.I.E.L.D.
+            p.tile__subtitle The Strategic Homeland Intervention, Enforcement, and Logistics Division...
             p
-              button.btn.btn-primary.btn-sm Join
-              button.btn.btn-sm Contact
+              button.btn.btn--primary.btn--sm Join
+              button.btn.btn--sm Contact
 
     p
       | Add a container with the #[code tile] class.
-      | And add child elements with the #[code tile-icon], #[code tile-content] or/and #[code tile-action] classes.
-      | The #[code tile-icon] and #[code tile-action] are optional.
+      | And add child elements with the #[code tile__icon], #[code tile__content] or/and #[code tile__action] classes.
+      | The #[code tile__icon] and #[code tile__action] are optional.
     p
-      | There are #[code tile-title] and #[code tile-subtitle] classes for title and subtitle text styles.
+      | There are #[code tile__title] and #[code tile__subtitle] classes for title and subtitle text styles.
 
     pre.code(data-lang='HTML')
       code
         :highlight(lang="html")
           <div class="tile">
-            <div class="tile-icon">
-              <div class="example-tile-icon">
+            <div class="tile__icon">
+              <div class="example-tile__icon">
                 <i class="icon icon-file centered"></i>
               </div>
             </div>
-            <div class="tile-content">
-              <p class="tile-title">The Avengers</p>
-              <p class="tile-subtitle">Earth's Mightiest Heroes joined forces to take on threats that were too big for any one hero to tackle...</p>
+            <div class="tile__content">
+              <p class="tile__title">The Avengers</p>
+              <p class="tile__subtitle">Earth's Mightiest Heroes joined forces to take on threats that were too big for any one hero to tackle...</p>
             </div>
-            <div class="tile-action">
-              <button class="btn btn-primary">Join</button>
+            <div class="tile__action">
+              <button class="btn btn--primary">Join</button>
             </div>
           </div>
 
@@ -67,37 +67,37 @@ block docs-content
     p
       | There is compact version of Tiles component, which is often used as contact and file info blocks.
     p
-      | Add the #[code tile-centered] class to the container #[code tile].
-      | The #[code tile-icon], #[code tile-content] and #[code tile-action] will be vertically centered.
+      | Add the #[code tile--centered] class to the container #[code tile].
+      | The #[code tile__icon], #[code tile__content] and #[code tile__action] will be vertically centered.
 
     .docs-demo.columns
       .column.col-6.col-md-9.col-xs-12
-        .tile.tile-centered
-          .tile-icon
-            .example-tile-icon
+        .tile.tile--centered
+          .tile__icon
+            .example-tile__icon
               i.icon.icon-mail.centered
-          .tile-content
-            .tile-title spectre-docs.pdf
-            small.tile-subtitle.text-gray 14MB · Public · 1 Jan, 2017
-          .tile-action
-            button.btn.btn-link.btn-action
+          .tile__content
+            .tile__title spectre-docs.pdf
+            small.tile__subtitle.text-gray 14MB · Public · 1 Jan, 2017
+          .tile__action
+            button.btn.btn--link.btn--action
               i.icon.icon-more-vert
 
     pre.code(data-lang='HTML')
       code
         :highlight(lang="html")
-          <div class="tile tile-centered">
-            <div class="tile-icon">
-              <div class="example-tile-icon">
+          <div class="tile tile--centered">
+            <div class="tile__icon">
+              <div class="example-tile__icon">
                 <i class="icon icon-file centered"></i>
               </div>
             </div>
-            <div class="tile-content">
-              <div class="tile-title">spectre-docs.pdf</div>
-              <small class="tile-subtitle text-gray">14MB · Public · 1 Jan, 2017</small>
+            <div class="tile__content">
+              <div class="tile__title">spectre-docs.pdf</div>
+              <small class="tile__subtitle text-gray">14MB · Public · 1 Jan, 2017</small>
             </div>
-            <div class="tile-action">
-              <button class="btn btn-link">
+            <div class="tile__action">
+              <button class="btn btn--link">
                 <i class="icon icon-more-vert"></i>
               </button>
             </div>

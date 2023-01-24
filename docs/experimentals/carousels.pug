@@ -18,40 +18,40 @@ block docs-content
     .docs-demo.columns
       .column.col-12
         .carousel
-          input#slide-1.carousel-locator(type="radio" name="carousel-radio" hidden="" checked="")
-          input#slide-2.carousel-locator(type="radio" name="carousel-radio" hidden="")
-          input#slide-3.carousel-locator(type="radio" name="carousel-radio" hidden="")
-          input#slide-4.carousel-locator(type="radio" name="carousel-radio" hidden="")
-          .carousel-container
-            figure.carousel-item
-              label.item-prev.btn.btn-action.btn-lg(for="slide-4")
+          input#slide-1.carousel__locator(type="radio" name="carousel-radio" hidden="" checked="")
+          input#slide-2.carousel__locator(type="radio" name="carousel-radio" hidden="")
+          input#slide-3.carousel__locator(type="radio" name="carousel-radio" hidden="")
+          input#slide-4.carousel__locator(type="radio" name="carousel-radio" hidden="")
+          .carousel__container
+            figure.carousel__item
+              label.item-prev.btn.btn--action.btn--lg(for="slide-4")
                 i.icon.icon-arrow-left
-              label.item-next.btn.btn-action.btn-lg(for="slide-2")
+              label.item-next.btn.btn--action.btn--lg(for="slide-2")
                 i.icon.icon-arrow-right
               img.img-responsive.rounded(src="../../img/osx-yosemite.jpg" alt="macOS Yosemite Wallpaper")
-            figure.carousel-item
-              label.item-prev.btn.btn-action.btn-lg(for="slide-1")
+            figure.carousel__item
+              label.item-prev.btn.btn--action.btn--lg(for="slide-1")
                 i.icon.icon-arrow-left
-              label.item-next.btn.btn-action.btn-lg(for="slide-3")
+              label.item-next.btn.btn--action.btn--lg(for="slide-3")
                 i.icon.icon-arrow-right
               img.img-responsive.rounded(src="../../img/osx-yosemite-2.jpg" alt="macOS Yosemite Wallpaper")
-            figure.carousel-item
-              label.item-prev.btn.btn-action.btn-lg(for="slide-2")
+            figure.carousel__item
+              label.item-prev.btn.btn--action.btn--lg(for="slide-2")
                 i.icon.icon-arrow-left
-              label.item-next.btn.btn-action.btn-lg(for="slide-4")
+              label.item-next.btn.btn--action.btn--lg(for="slide-4")
                 i.icon.icon-arrow-right
               img.img-responsive.rounded(src="../../img/osx-el-capitan.jpg" alt="macOS El Capitan Wallpaper")
-            figure.carousel-item
-              label.item-prev.btn.btn-action.btn-lg(for="slide-3")
+            figure.carousel__item
+              label.item-prev.btn.btn--action.btn--lg(for="slide-3")
                 i.icon.icon-arrow-left
-              label.item-next.btn.btn-action.btn-lg(for="slide-1")
+              label.item-next.btn.btn--action.btn--lg(for="slide-1")
                 i.icon.icon-arrow-right
               img.img-responsive.rounded(src="../../img/osx-el-capitan-2.jpg" alt="macOS El Capitan Wallpaper")
-          .carousel-nav
-            label.nav-item.text-hide.c-hand(for="slide-1") 1
-            label.nav-item.text-hide.c-hand(for="slide-2") 2
-            label.nav-item.text-hide.c-hand(for="slide-3") 3
-            label.nav-item.text-hide.c-hand(for="slide-4") 4
+          .carousel__nav
+            label.nav__item.text-hide.c-hand(for="slide-1") 1
+            label.nav__item.text-hide.c-hand(for="slide-2") 2
+            label.nav__item.text-hide.c-hand(for="slide-3") 3
+            label.nav__item.text-hide.c-hand(for="slide-4") 4
 
     p
       | The default image number of Carousels is #[code 8]. You can add more images by changing the variable #[code $carousel-number] in #[code _carousels.scss] and re-compiling the CSS.
@@ -61,41 +61,41 @@ block docs-content
         :highlight(lang="html")
           <div class="carousel">
             <!-- carousel locator -->
-            <input class="carousel-locator" id="slide-1" type="radio" name="carousel-radio" hidden="" checked="">
-            <input class="carousel-locator" id="slide-2" type="radio" name="carousel-radio" hidden="">
-            <input class="carousel-locator" id="slide-3" type="radio" name="carousel-radio" hidden="">
-            <input class="carousel-locator" id="slide-4" type="radio" name="carousel-radio" hidden="">
+            <input class="carousel__locator" id="slide-1" type="radio" name="carousel-radio" hidden="" checked="">
+            <input class="carousel__locator" id="slide-2" type="radio" name="carousel-radio" hidden="">
+            <input class="carousel__locator" id="slide-3" type="radio" name="carousel-radio" hidden="">
+            <input class="carousel__locator" id="slide-4" type="radio" name="carousel-radio" hidden="">
 
             <!-- carousel container -->
-            <div class="carousel-container">
+            <div class="carousel__container">
               <!-- carousel item -->
-              <figure class="carousel-item">
-                <label class="item-prev btn btn-action btn-lg" for="slide-4"><i class="icon icon-arrow-left"></i></label>
-                <label class="item-next btn btn-action btn-lg" for="slide-2"><i class="icon icon-arrow-right"></i></label>
+              <figure class="carousel__item">
+                <label class="item-prev btn btn--action btn--lg" for="slide-4"><i class="icon icon-arrow-left"></i></label>
+                <label class="item-next btn btn--action btn--lg" for="slide-2"><i class="icon icon-arrow-right"></i></label>
                 <img class="img-responsive rounded" src="img/osx-yosemite.jpg" alt="macOS Yosemite Wallpaper">
               </figure>
-              <figure class="carousel-item">
-                <label class="item-prev btn btn-action btn-lg" for="slide-1"><i class="icon icon-arrow-left"></i></label>
-                <label class="item-next btn btn-action btn-lg" for="slide-3"><i class="icon icon-arrow-right"></i></label>
+              <figure class="carousel__item">
+                <label class="item-prev btn btn--action btn--lg" for="slide-1"><i class="icon icon-arrow-left"></i></label>
+                <label class="item-next btn btn--action btn--lg" for="slide-3"><i class="icon icon-arrow-right"></i></label>
                 <img class="img-responsive rounded" src="img/osx-yosemite-2.jpg" alt="macOS Yosemite Wallpaper">
               </figure>
-              <figure class="carousel-item">
-                <label class="item-prev btn btn-action btn-lg" for="slide-2"><i class="icon icon-arrow-left"></i></label>
-                <label class="item-next btn btn-action btn-lg" for="slide-4"><i class="icon icon-arrow-right"></i></label>
+              <figure class="carousel__item">
+                <label class="item-prev btn btn--action btn--lg" for="slide-2"><i class="icon icon-arrow-left"></i></label>
+                <label class="item-next btn btn--action btn--lg" for="slide-4"><i class="icon icon-arrow-right"></i></label>
                 <img class="img-responsive rounded" src="img/osx-el-capitan.jpg" alt="macOS El Capitan Wallpaper">
               </figure>
-              <figure class="carousel-item">
-                <label class="item-prev btn btn-action btn-lg" for="slide-3"><i class="icon icon-arrow-left"></i></label>
-                <label class="item-next btn btn-action btn-lg" for="slide-1"><i class="icon icon-arrow-right"></i></label>
+              <figure class="carousel__item">
+                <label class="item-prev btn btn--action btn--lg" for="slide-3"><i class="icon icon-arrow-left"></i></label>
+                <label class="item-next btn btn--action btn--lg" for="slide-1"><i class="icon icon-arrow-right"></i></label>
                 <img class="img-responsive rounded" src="img/osx-el-capitan-2.jpg" alt="macOS El Capitan Wallpaper">
               </figure>
             </div>
             <!-- carousel navigation -->
-            <div class="carousel-nav">
-              <label class="nav-item text-hide c-hand" for="slide-1">1</label>
-              <label class="nav-item text-hide c-hand" for="slide-2">2</label>
-              <label class="nav-item text-hide c-hand" for="slide-3">3</label>
-              <label class="nav-item text-hide c-hand" for="slide-4">4</label>
+            <div class="carousel__nav">
+              <label class="nav__item text-hide c-hand" for="slide-1">1</label>
+              <label class="nav__item text-hide c-hand" for="slide-2">2</label>
+              <label class="nav__item text-hide c-hand" for="slide-3">3</label>
+              <label class="nav__item text-hide c-hand" for="slide-4">4</label>
             </div>
           </div>
 

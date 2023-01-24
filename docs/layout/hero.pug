@@ -16,7 +16,7 @@ block docs-content
     .docs-demo.columns
       .column
         .hero.bg-gray
-          .hero-body
+          .hero__body
             h1 Hero title
             p This is a hero example
 
@@ -25,7 +25,7 @@ block docs-content
       code
         :highlight(lang="html")
           <div class="hero bg-gray">
-            <div class="hero-body">
+            <div class="hero__body">
               <h1>Hero title</h1>
               <p>This is a hero example</p>
             </div>
@@ -33,22 +33,22 @@ block docs-content
 
     p
       | Use
-      code hero-sm
+      code hero--sm
       |  and
-      code hero-lg
+      code hero--lg
       | to the hero container for smaller and larger padding.
 
     .docs-demo.columns
       .column
-        .hero.hero-sm.bg-dark
-          .hero-body
+        .hero.hero--sm.bg-dark
+          .hero__body
             h1 Hero title
             p This is a hero example
 
     .docs-demo.columns
       .column
-        .hero.hero-lg.bg-primary
-          .hero-body
+        .hero.hero--lg.bg-primary
+          .hero__body
             h1 Hero title
             p This is a hero example
 

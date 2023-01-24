@@ -184,44 +184,44 @@ block docs-content
       .column.col-6.col-xs-12
         form
           .form-group
-            label.form-radio.form-inline
+            label.form-radio.form--inline
               input(type="radio" name="gender" checked="")
               i.form-icon
               |  Male
-            label.form-radio.form-inline
+            label.form-radio.form--inline
               input(type="radio" name="gender")
               i.form-icon
               |  Female
           .form-group
-            label.form-checkbox.form-inline
+            label.form-checkbox.form--inline
               input(type="checkbox")
               i.form-icon
               |  Checkbox 1
-            label.form-checkbox.form-inline
+            label.form-checkbox.form--inline
               input(type="checkbox" checked="")
               i.form-icon
               |  Checkbox 2
 
     p
-      | You can add the #[code form-inline] class to the form components to make them inline in one row.
+      | You can add the #[code form--inline] class to the form components to make them inline in one row.
 
     pre.code(data-lang='HTML')
       code
         :highlight(lang="html")
           <div class="form-group">
-            <label class="form-radio form-inline">
+            <label class="form-radio form--inline">
               <input type="radio" name="gender" checked=""><i class="form-icon"></i> Male
             </label>
-            <label class="form-radio form-inline">
+            <label class="form-radio form--inline">
               <input type="radio" name="gender"><i class="form-icon"></i> Female
             </label>
           </div>
 
           <div class="form-group">
-            <label class="form-checkbox form-inline">
+            <label class="form-checkbox form--inline">
               <input type="checkbox"><i class="form-icon"></i> Checkbox 1
             </label>
-            <label class="form-checkbox form-inline">
+            <label class="form-checkbox form--inline">
               <input type="checkbox" checked=""><i class="form-icon"></i> Checkbox 2
             </label>
           </div>
@@ -229,12 +229,12 @@ block docs-content
     +docs-subheading('forms-horizontal', 'Horizontal forms')
 
     p
-      | If you want to have a horizontal form, add the #[code form-horizontal] class to the #{'<form>'} container.
+      | If you want to have a horizontal form, add the #[code form--horizontal] class to the #{'<form>'} container.
       | And add the #[code col-<1-12>] and #[code col-xs/sm/lg/xl-<1-12>] class to the child elements for responsive form row layout.
 
     .docs-demo.columns
       .column.col-9.col-sm-12
-        form.form-horizontal(action="#forms")
+        form.form--horizontal(action="#forms")
           .form-group
             .col-3.col-sm-12
               label.form-label(for="input-example-4") Name
@@ -286,7 +286,7 @@ block docs-content
     pre.code(data-lang='HTML')
       code
         :highlight(lang="html")
-          <form class="form-horizontal">
+          <form class="form--horizontal">
             <div class="form-group">
               <div class="col-3 col-sm-12">
                 <label class="form-label" for="input-example-1">Name</label>
@@ -301,32 +301,32 @@ block docs-content
     +docs-subheading('forms-sizes', 'Form sizes')
 
     p
-      | For smaller or larger input and select controls, you could add the #[code input-sm]/#[code input-lg], #[code select-sm]/#[code select-lg] and #[code label-sm]/#[code label-lg] classes to the elements.
+      | For smaller or larger input and select controls, you could add the #[code form-input--sm]/#[code form-input--lg], #[code form-select--sm]/#[code form-select--lg] and #[code form-label--sm]/#[code form-label--lg] classes to the elements.
 
     .docs-demo.columns
       .column.col-4.col-xs-12
-        label.form-label.label-sm Label
+        label.form-label.form-label--sm Label
       .column.col-4.col-xs-12
-        input.form-input.input-sm(type="text" placeholder="Name")
+        input.form-input.form-input--sm(type="text" placeholder="Name")
       .column.col-4.col-xs-12
-        select.form-select.select-sm
+        select.form-select.form-select--sm
           option Choose an option
           option Slack
           option Skype
           option Hipchat
       .column.col-4.col-xs-12
-        label.form-label.label-lg Label
+        label.form-label.form-label--lg Label
       .column.col-4.col-xs-12
-        input.form-input.input-lg(type="text" placeholder="Name")
+        input.form-input.form-input--lg(type="text" placeholder="Name")
       .column.col-4.col-xs-12
-        select.form-select.select-lg
+        select.form-select.form-select--lg
           option Choose an option
           option Slack
           option Skype
           option Hipchat
 
     p
-      | You can add the #[code input-sm]/#[code input-lg] classes to the input-checkbox, input-radio and input-switch to have different sizes.
+      | You can add the #[code form-input--sm]/#[code form-input--lg] classes to the input-checkbox, input-radio and input-switch to have different sizes.
 
     +docs-subheading('forms-icons', 'Form icons')
 
@@ -341,7 +341,7 @@ block docs-content
     .docs-demo.columns
       .column.col-4.col-xs-12
         .has-icon-left
-          input.form-input.input-sm(type="text" placeholder="Name")
+          input.form-input.form-input--sm(type="text" placeholder="Name")
           i.form-icon.icon.icon-arrow-right
       .column.col-4.col-xs-12
         .has-icon-left.tooltip(data-tooltip="Lorem ipsum dolor sit amet")
@@ -349,11 +349,11 @@ block docs-content
           i.form-icon.icon.icon-arrow-right
       .column.col-4.col-xs-12
         .has-icon-left
-          input.form-input.input-lg(type="text" placeholder="Name")
+          input.form-input.form-input--lg(type="text" placeholder="Name")
           i.form-icon.icon.icon-arrow-right
       .column.col-4.col-xs-12
         .has-icon-right
-          input.form-input.input-sm(type="text" placeholder="Name")
+          input.form-input.form-input--sm(type="text" placeholder="Name")
           i.form-icon.icon.icon-check
       .column.col-4.col-xs-12
         .has-icon-right
@@ -361,7 +361,7 @@ block docs-content
           i.form-icon.icon.icon-check
       .column.col-4.col-xs-12
         .has-icon-right
-          input.form-input.input-lg(type="text" placeholder="Name")
+          input.form-input.form-input--lg(type="text" placeholder="Name")
           i.form-icon.icon.icon-check
 
     pre.code(data-lang='HTML')
@@ -379,7 +379,7 @@ block docs-content
     .docs-demo.columns
       .column.col-4.col-xs-12
         .has-icon-right
-          input.form-input.input-sm(type="text" placeholder="Name")
+          input.form-input.form-input--sm(type="text" placeholder="Name")
           i.form-icon.loading
       .column.col-4.col-xs-12
         .has-icon-right
@@ -387,7 +387,7 @@ block docs-content
           i.form-icon.loading
       .column.col-4.col-xs-12
         .has-icon-right
-          input.form-input.input-lg(type="text" placeholder="Name")
+          input.form-input.form-input--lg(type="text" placeholder="Name")
           i.form-icon.loading
 
     pre.code(data-lang='HTML')
@@ -403,7 +403,7 @@ block docs-content
 
     .docs-demo.columns
       .column.col-9.col-sm-12
-        form.form-horizontal(action="#forms")
+        form.form--horizontal(action="#forms")
           .form-group
             .col-3
               label.form-label(for="input-example-8") Email
@@ -455,16 +455,16 @@ block docs-content
     .docs-demo.columns
       .column.col-6.col-xs-12
         .input-group
-          input.form-input.input-sm(type="text" placeholder="username")
-          select.form-select.select-sm
+          input.form-input.form-input--sm(type="text" placeholder="username")
+          select.form-select.form-select--sm
             option Slack
             option Skype
             option Hipchat
       .column.col-6.col-xs-12
         .input-group
-          span.input-group-addon.addon-sm slack.com/
-          input.form-input.input-sm(type="text" placeholder="site name")
-          button.btn.btn-primary.input-group-btn.btn-sm Submit
+          span.input-group__addon.input-group__addon--sm slack.com/
+          input.form-input.form-input--sm(type="text" placeholder="site name")
+          button.btn.btn--primary.input-group__btn.btn--sm Submit
       .column.col-6.col-xs-12
         .input-group
           input.form-input(type="text" placeholder="username")
@@ -474,9 +474,9 @@ block docs-content
             option Hipchat
       .column.col-6.col-xs-12
         .input-group
-          span.input-group-addon slack.com/
+          span.input-group__addon slack.com/
           input.form-input(type="text" placeholder="site name")
-          button.btn.btn-primary.input-group-btn Submit
+          button.btn.btn--primary.input-group__btn Submit
       .column.col-6.col-xs-12
         .input-group
           label.form-switch
@@ -491,41 +491,41 @@ block docs-content
           input.form-input(type="text" placeholder="name")
       .column.col-6.col-xs-12
         .input-group
-          input.form-input.input-lg(type="text" placeholder="username")
-          select.form-select.select-lg
+          input.form-input.form-input--lg(type="text" placeholder="username")
+          select.form-select.form-select--lg
             option Slack
             option Skype
             option Hipchat
       .column.col-6.col-xs-12
         .input-group
-          span.input-group-addon.addon-lg slack.com/
-          input.form-input.input-lg(type="text" placeholder="site name")
-          button.btn.btn-primary.input-group-btn.btn-lg Submit
+          span.input-group__addon.input-group__addon--lg slack.com/
+          input.form-input.form-input--lg(type="text" placeholder="site name")
+          button.btn.btn--primary.input-group__btn.btn--lg Submit
 
     p
       | If you want to attach text and button along with an input, add the #[code input-group] class to the input container.
-      | And add the #[code input-group-addon] class to the text element and #[code input-group-btn] to the button element.
+      | And add the #[code input-group__addon] class to the text element and #[code input-group__btn] to the button element.
 
     pre.code(data-lang='HTML')
       code
         :highlight(lang="html")
           <!-- normal input group -->
           <div class="input-group">
-            <span class="input-group-addon">...</span>
+            <span class="input-group__addon">...</span>
             <input type="text" class="form-input" placeholder="...">
           </div>
 
           <!-- large input group -->
           <div class="input-group">
-            <span class="input-group-addon addon-lg">...</span>
-            <input type="text" class="form-input input-lg" placeholder="...">
+            <span class="input-group__addon input-group__addon--lg">...</span>
+            <input type="text" class="form-input form-input--lg" placeholder="...">
           </div>
 
           <!-- normal input group with button -->
           <div class="input-group">
-            <span class="input-group-addon">...</span>
+            <span class="input-group__addon">...</span>
             <input type="text" class="form-input" placeholder="...">
-            <button class="btn btn-primary input-group-btn">Submit</button>
+            <button class="btn btn--primary input-group__btn">Submit</button>
           </div>
 
     +docs-subheading('forms-validation', 'Form validation styles')

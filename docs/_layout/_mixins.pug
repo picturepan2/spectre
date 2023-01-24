@@ -1,11 +1,11 @@
 mixin docs-accordion(id, name, ...pages)
   .accordion
     input(id='accordion-' + id type='checkbox' name='docs-accordion-checkbox' hidden='' checked=(parent === id ? true : false))
-    label.accordion-header.c-hand(for='accordion-' + id)= name
-    .accordion-body
-      ul.menu.menu-nav
+    label.accordion__header.c-hand(for='accordion-' + id)= name
+    .accordion__body
+      ul.menu.menu--nav
         each page in pages
-          li.menu-item
+          li.menu__item
             if slug != parent
               a(href='../' + id + '/' + page.url + '.pug')= page.name
             else

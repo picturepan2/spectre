@@ -1,6 +1,6 @@
 // Timelines
 .timeline {
-  .timeline-item {
+  .timeline__item {
     display: flex;
     margin-bottom: $unit-6;
     position: relative;
@@ -14,16 +14,16 @@
       width: 2px;
     }
 
-    .timeline-left {
+    .timeline__left {
       flex: 0 0 auto;
     }
 
-    .timeline-content {
+    .timeline__content {
       flex: 1 1 auto;
       padding: 2px 0 2px $layout-spacing-lg;
     }
 
-    .timeline-icon {
+    .timeline__icon {
       align-items: center;
       border-radius: 50%;
       color: $light-color;
@@ -44,7 +44,7 @@
         width: $unit-2;
       }
 
-      &.icon-lg {
+      &.icon--lg {
         background: $primary-color;
         line-height: $line-height;
         &::before {

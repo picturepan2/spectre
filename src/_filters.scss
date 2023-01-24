@@ -1,13 +1,18 @@
-// Filters 
-// The number of filter options 
+/**
+  Will leave these for now
+ */
+
+
+// Filters
+// The number of filter options
 $filter-number: 8 !default;
 
-%filter-checked-nav { 
+%filter-checked-nav {
   background: $primary-color;
   color: $light-color;
 }
 
-%filter-checked-body { 
+%filter-checked-body {
   display: none;
 }
 

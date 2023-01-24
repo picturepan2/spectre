@@ -6,7 +6,7 @@
   margin: $unit-1 0;
   width: 100%;
 
-  .step-item {
+  .step__item {
     flex: 1 1 0;
     margin-top: 0;
     min-height: 1rem;
@@ -45,7 +45,7 @@
       }
     }
 
-    &.active {
+    &.stem_item--active {
       a {
         &::before {
           background: $light-color;
@@ -53,7 +53,7 @@
         }
       }
 
-      & ~ .step-item {
+      & ~ .step__item {
         &::before {
           background: $border-color;
         }

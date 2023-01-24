@@ -54,9 +54,10 @@
     padding: .5rem 1.5rem;
     position: fixed;
     top: 3.5rem;
-    width: 12rem;
+    width: 15rem;
     -webkit-overflow-scrolling: touch;
   }
+
 
   .accordion {
     margin-bottom: .75rem;
@@ -77,9 +78,9 @@
     }
 
     .menu {
-      .menu-item {
-        font-size: .7rem;
-        padding-left: 1rem;
+      .menu__item {
+        font-size: .875rem;
+        padding-left: .75rem;
 
         & > a {
           background: transparent;
@@ -258,7 +259,7 @@
     position: static;
   }
 
-  .example-tile-icon {
+  .example-tile__icon {
     align-content: space-around;
     align-items: center;
     background: $primary-color;
@@ -487,7 +488,7 @@
       position: static;
     }
 
-    .menu .menu-item > a {
+    .menu .menu__item > a {
       padding: .3rem .4rem;
     }
   }

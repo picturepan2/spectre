@@ -4,12 +4,12 @@ include _mixins
 block content
   .docs-container.off-canvas.off-canvas-sidebar-show
     .docs-navbar
-      a.off-canvas-toggle.btn.btn-link.btn-action(href='#sidebar')
+      a.off-canvas-toggle.btn.btn--link.btn--action(href='#sidebar')
         i.icon.icon-menu
       .btns.d-flex
         input.docs-search.form-input(type="text" placeholder="Search Docs")
         a.btn.ml-1(href='https://www.paypal.me/picturepan2' target='_blank') PayPal
-        a.btn.btn-primary.ml-1(href='https://github.com/picturepan2/spectre' target='_blank') GitHub
+        a.btn.btn--primary.ml-1(href='https://github.com/picturepan2/spectre' target='_blank') GitHub
 
     #sidebar.docs-sidebar.off-canvas-sidebar
       .docs-brand
@@ -109,12 +109,3 @@ block content
     .off-canvas-content
       #content.docs-content
         block docs-content
-
-  script(type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js")
-  script.
-    docsearch({
-    apiKey: 'bede06373c5a1fa3c1bbe8401e24c653',
-    indexName: 'picturepan2_spectre',
-    inputSelector: '.docs-search',
-    debug: true
-    });

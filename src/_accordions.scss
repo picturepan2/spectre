@@ -1,19 +1,20 @@
 // Accordions
 .accordion {
-  input:checked ~,
-  &[open] {
-    & .accordion-header > {
-      .icon:first-child {
+  input:checked ~, // input open
+  &[open], // attribute open
+  &--open { // class open
+    & .accordion__header > {
+      .icon:first-child { // assuming that the first icon is rotatable
         transform: rotate(90deg);
       }
     }
 
-    & .accordion-body {
+    & .accordion__body {
       max-height: 50rem;
     }
   }
 
-  .accordion-header {
+  &__header {
     display: block;
     padding: $unit-1 $unit-2;
 
@@ -22,7 +23,7 @@
     }
   }
 
-  .accordion-body {
+  &__body {
     margin-bottom: $layout-spacing;
     max-height: 0;
     overflow: hidden;
@@ -31,7 +32,7 @@
 }
 
 // Remove default details marker in Webkit
-summary.accordion-header {
+summary.accordion__header {
   &::-webkit-details-marker {
     display: none;
   }

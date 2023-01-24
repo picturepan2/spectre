@@ -6,9 +6,9 @@
   display: flex;
   flex-direction: column;
 
-  .card-header,
-  .card-body,
-  .card-footer {
+  .card__header,
+  .card__body,
+  .card__footer {
     padding: $layout-spacing-lg;
     padding-bottom: 0;
 
@@ -17,11 +17,11 @@
     }
   }
 
-  .card-body {
+  .card__body {
     flex: 1 1 auto;
   }
 
-  .card-image {
+  .card__image {
     padding-top: $layout-spacing-lg;
 
     &:first-child {

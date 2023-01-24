@@ -19,8 +19,8 @@ block docs-content
     .docs-demo.columns
       .column.col-12
         .viewer-360
-          input.viewer-slider.slider(type="range" min="1" max="36" value="1" oninput="this.setAttribute('value', this.value);")
-          figure.viewer-image(style="background-image:url('https://i.loli.net/2018/11/25/5bfa45b4b3f27.jpg');padding-bottom:37.5%;width:100%;")
+          input.viewer__slider.slider(type="range" min="1" max="36" value="1" oninput="this.setAttribute('value', this.value);")
+          figure.view__image(style="background-image:url('https://i.loli.net/2018/11/25/5bfa45b4b3f27.jpg');padding-bottom:37.5%;width:100%;")
 
     p.text-center
       | Photo credits:
@@ -29,8 +29,8 @@ block docs-content
     .docs-demo.columns
       .column.col-12
         .viewer-360
-          input.viewer-slider.slider(type="range" min="1" max="36" value="1" oninput="this.setAttribute('value', this.value);")
-          figure.viewer-image(style="background-image:url('https://i.loli.net/2018/11/26/5bfc0ab4a5a4f.jpg');padding-bottom:37.5%;width:100%;")
+          input.viewer__slider.slider(type="range" min="1" max="36" value="1" oninput="this.setAttribute('value', this.value);")
+          figure.view__image(style="background-image:url('https://i.loli.net/2018/11/26/5bfc0ab4a5a4f.jpg');padding-bottom:37.5%;width:100%;")
 
     p.text-center
       | Photo credits:
@@ -43,8 +43,8 @@ block docs-content
       code
         :highlight(lang="html")
           <div class="viewer-360">
-            <input class="viewer-slider slider" type="range" min="1" max="36" value="1" oninput="this.setAttribute('value', this.value);">
-            <figure class="viewer-image" style="background-image:url('...');"></figure>
+            <input class="viewer__slider slider" type="range" min="1" max="36" value="1" oninput="this.setAttribute('value', this.value);">
+            <figure class="view__image" style="background-image:url('...');"></figure>
           </div>
 
     p
@@ -53,8 +53,8 @@ block docs-content
     pre.code(data-lang='SCSS')
       code
         :highlight(lang="scss")
-          @include viewer-slider-size(36);
-          @include viewer-slider-size(30);
+          @include viewer__slider-size(36);
+          @include viewer__slider-size(30);
 
     include ../_layout/_ad-c
 

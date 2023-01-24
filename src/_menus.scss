@@ -1,6 +1,6 @@
 // Menus
 .menu {
-  @include shadow-variant(.05rem);
+  @include shadow-variant(.0625rem);
   background: $bg-color-light;
   border-radius: $border-radius;
   list-style: none;
@@ -10,12 +10,12 @@
   transform: translateY($layout-spacing-sm);
   z-index: $zindex-3;
 
-  &.menu-nav {
+  &.menu--nav {
     background: transparent;
     box-shadow: none;
   }
 
-  .menu-item {
+  .menu__item {
     margin-top: 0;
     padding: 0 $unit-2;
     position: relative;
@@ -46,12 +46,12 @@
       margin: $unit-h 0;
     }
 
-    & + .menu-item {
+    & + .menu__item {
       margin-top: $unit-1;
     }
   }
 
-  .menu-badge {
+  .menu__badge {
     align-items: center;
     display: flex;
     height: 100%;

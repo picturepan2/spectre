@@ -49,7 +49,7 @@
   }
 
   // Button Primary
-  &.btn-primary {
+  &.btn--primary {
     background: $primary-color;
     border-color: $primary-color-dark;
     color: $light-color;
@@ -74,16 +74,16 @@
   }
 
   // Button Colors
-  &.btn-success {
+  &.btn--success {
     @include button-variant($success-color);
   }
 
-  &.btn-error {
+  &.btn--error {
     @include button-variant($error-color);
   }
 
   // Button Link
-  &.btn-link {
+  &.btn--link {
     background: transparent;
     border-color: transparent;
     color: $link-color;
@@ -96,41 +96,41 @@
   }
 
   // Button Sizes
-  &.btn-sm {
+  &.btn--sm {
     font-size: $font-size-sm;
     height: $control-size-sm;
     padding: $control-padding-y-sm $control-padding-x-sm;
   }
 
-  &.btn-lg {
+  &.btn--lg {
     font-size: $font-size-lg;
     height: $control-size-lg;
     padding: $control-padding-y-lg $control-padding-x-lg;
   }
 
   // Button Block
-  &.btn-block {
+  &.btn--block {
     display: block;
     width: 100%;
   }
 
   // Button Action
-  &.btn-action {
+  &.btn--action {
     width: $control-size;
     padding-left: 0;
     padding-right: 0;
 
-    &.btn-sm {
+    &.btn--sm {
       width: $control-size-sm;
     }
 
-    &.btn-lg {
+    &.btn--lg {
       width: $control-size-lg;
     }
   }
 
   // Button Clear
-  &.btn-clear {
+  &.btn--clear {
     background: transparent;
     border: 0;
     color: currentColor;
@@ -183,7 +183,7 @@
     }
   }
 
-  &.btn-group-block {
+  &.btn-group--block {
     display: flex;
 
     .btn {

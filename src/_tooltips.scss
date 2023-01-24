@@ -34,7 +34,7 @@
     pointer-events: auto;
   }
 
-  &.tooltip-right {
+  &.tooltip--right {
     &::after {
       bottom: 50%;
       left: 100%;
@@ -48,7 +48,7 @@
     }
   }
 
-  &.tooltip-bottom {
+  &.tooltip--bottom {
     &::after {
       bottom: auto;
       top: 100%;
@@ -61,8 +61,8 @@
       }
     }
   }
-  
-  &.tooltip-left {
+
+  &.tooltip--left {
     &::after {
       bottom: 50%;
       left: auto;

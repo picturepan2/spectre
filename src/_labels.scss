@@ -5,30 +5,31 @@
   display: inline-block;
 
   // Label rounded
-  &.label-rounded {
+  &.label--rounded {
     border-radius: 5rem;
     padding-left: .4rem;
-    padding-right: .4rem; 
+    padding-right: .4rem;
   }
 
   // Label colors
-  &.label-primary {
+  // TODO: Loop project colors
+  &.label--primary {
     @include label-variant($light-color, $primary-color);
   }
 
-  &.label-secondary {
+  &.label--secondary {
     @include label-variant($primary-color, $secondary-color);
   }
 
-  &.label-success {
+  &.label--success {
     @include label-variant($light-color, $success-color);
   }
 
-  &.label-warning {
+  &.label--warning {
     @include label-variant($light-color, $warning-color);
   }
 
-  &.label-error {
+  &.label--error {
     @include label-variant($light-color, $error-color);
   }
 }

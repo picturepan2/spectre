@@ -5,7 +5,7 @@
   display: block;
   min-width: 280px;
 
-  .calendar-nav {
+  .calendar__nav {
     align-items: center;
     background: $bg-color;
     border-top-left-radius: $border-radius;
@@ -15,20 +15,20 @@
     padding: $layout-spacing;
   }
 
-  .calendar-header,
-  .calendar-body {
+  .calendar__header,
+  .calendar__body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding: $layout-spacing 0;
 
-    .calendar-date {
+    .calendar__date {
       flex: 0 0 14.28%; // 7 calendar-items each row
       max-width: 14.28%;
     }
   }
 
-  .calendar-header {
+  .calendar__header {
     background: $bg-color;
     border-bottom: $border-width solid $border-color;
     color: $gray-color;
@@ -36,11 +36,11 @@
     text-align: center;
   }
 
-  .calendar-body {
+  .calendar__body {
     color: $gray-color-dark;
   }
 
-  .calendar-date {
+  .calendar__date {
     border: 0;
     padding: $unit-1;
 
@@ -64,7 +64,7 @@
       white-space: nowrap;
       width: $unit-7;
 
-      &.date-today {
+      &.date-item--today {
         border-color: $secondary-color-dark;
         color: $primary-color;
       }
@@ -99,7 +99,7 @@
     }
 
     .date-item,
-    .calendar-event {
+    .calendar__event {
       &:disabled,
       &.disabled {
         cursor: default;
@@ -111,7 +111,7 @@
     &.prev-month,
     &.next-month {
       .date-item,
-      .calendar-event {
+      .calendar__event {
         opacity: .25;
       }
     }
@@ -130,19 +130,19 @@
       top: 50%;
       transform: translateY(-50%);
     }
-    &.range-start {
+    &.calendar-range--start {
       &::before {
         left: 50%;
       }
     }
-    &.range-end {
+    &.calendar-range--end {
       &::before {
         right: 50%;
       }
     }
 
-    &.range-start,
-    &.range-end {
+    &.calendar-range--start,
+    &.calendar-range--end {
       .date-item {
         background: $primary-color-dark;
         border-color: darken($primary-color-dark, 5%);
@@ -156,11 +156,11 @@
   }
 
   // Calendars size
-  &.calendar-lg {
-    .calendar-body {
+  &.calendar--lg {
+    .calendar__body {
       padding: 0;
 
-      .calendar-date {
+      .calendar__date {
         border-bottom: $border-width solid $border-color;
         border-right: $border-width solid $border-color;
         display: flex;
@@ -188,27 +188,27 @@
       &::before {
         top: 19px;
       }
-      &.range-start {
+      &.calendar-range--start {
         &::before {
           left: auto;
           width: 19px;
         }
       }
-      &.range-end {
+      &.calendar-range--end {
         &::before {
           right: 19px;
         }
       }
     }
 
-    .calendar-events {
+    .calendar__events {
       flex-grow: 1;
       line-height: 1;
       overflow-y: auto;
       padding: $layout-spacing-sm;
     }
 
-    .calendar-event {
+    .calendar__event {
       border-radius: $border-radius;
       font-size: $font-size-sm;
       display: block;

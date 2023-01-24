@@ -7,12 +7,12 @@
   height: $unit-4;
   width: 100%;
 
-  &.bar-sm {
+  &.bar--sm {
     height: $unit-1;
   }
 
   // TODO: attr() support
-  .bar-item {
+  .bar__item {
     background: $primary-color;
     color: $light-color;
     display: block;
@@ -42,7 +42,7 @@
   margin: $layout-spacing 0;
   position: relative;
 
-  .bar-item {
+  .bar__item {
     left: 0;
     padding: 0;
     position: absolute;
@@ -52,7 +52,7 @@
     }
   }
 
-  .bar-slider-btn {
+  .bar-slider__btn {
     background: $primary-color;
     border: 0;
     border-radius: 50%;

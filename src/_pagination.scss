@@ -24,7 +24,8 @@
       }
     }
 
-    &.disabled {
+    &.page-item--disabled,
+    &[disabled], {
       a {
         cursor: default;
         opacity: .5;
@@ -32,7 +33,7 @@
       }
     }
 
-    &.active {
+    &.page-item--active {
       a {
         background: $primary-color;
         color: $light-color;
@@ -48,11 +49,11 @@
       text-align: right;
     }
 
-    .page-item-title {
+    .page-item__title {
       margin: 0;
     }
 
-    .page-item-subtitle {
+    .page-item__subtitle {
       margin: 0;
       opacity: .5;
     }

@@ -6,8 +6,6 @@
   max-width: 100%;
 }
 
-// object-fit support is coming to Microsoft Edge
-// https://developer.microsoft.com/en-us/microsoft-edge/platform/status/objectfitandobjectposition/
 .img-fit-cover {
   object-fit: cover;
 }
@@ -41,6 +39,18 @@
     top: 0;
     width: 100%;
   }
+
+  &.video-responsive--4-3 {
+    &::before {
+      padding-bottom: 75%; // Ratio 4:3
+    }
+  }
+
+  &.video-responsive--1-1 {
+    &::before {
+      padding-bottom: 100%; // Ratio 1:1
+    }
+  }
 }
 
 video.video-responsive {
@@ -52,23 +62,11 @@ video.video-responsive {
   }
 }
 
-.video-responsive-4-3 {
-  &::before {
-    padding-bottom: 75%; // Ratio 4:3
-  }
-}
-
-.video-responsive-1-1 {
-  &::before {
-    padding-bottom: 100%; // Ratio 1:1
-  }
-}
-
 // Figure
 .figure {
   margin: 0 0 $layout-spacing 0;
 
-  .figure-caption {
+  .figure__caption {
     color: $gray-color-dark;
     margin-top: $layout-spacing;
   }

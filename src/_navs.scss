@@ -5,7 +5,7 @@
   list-style: none;
   margin: $unit-1 0;
 
-  .nav-item {
+  .nav__item {
     a {
       color: $gray-color-dark;
       padding: $unit-1 $unit-2;
@@ -15,7 +15,7 @@
         color: $primary-color;
       }
     }
-    &.active {
+    &.nav__item--active {
       & > a {
         color: darken($gray-color-dark, 10%);
         font-weight: bold;

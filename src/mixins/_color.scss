@@ -25,3 +25,16 @@
     }
   }
 }
+  
+@mixin text-contrast($n, $light-color: white, $dark-color: black ) {
+  $color-brightness: round((red($n) * 299) + (green($n) * 587) + (blue($n) * 114) / 1000);
+  $mix-light-color: round((red(#ffffff) * 299) + (green(#ffffff) * 587) + (blue(#ffffff) * 114) / 1000);
+
+  @if abs($color-brightness) < ($mix-light-color/2){
+    color: $light-color;
+  }
+
+  @else {
+    color: $dark-color;
+  }
+}
