@@ -4,7 +4,9 @@
   "spectreVersion": "0.5.9",
   "source": "docs/index.pug",
   "browserslist": "> 0.5%, last 2 versions, not dead",
-  "dependencies": {},
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  },
   "scripts": {
     "start": "parcel",
     "build": "parcel build"
