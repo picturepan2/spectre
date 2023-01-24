@@ -71,13 +71,13 @@ $carousel-number: 8;
 
   .carousel__locator {
     @for $i from 1 through ($carousel-number) {
-      &:nth-of-type(#{$i}):checked ~ .carousel-container .carousel-item:nth-of-type(#{$i}) {
+      &:nth-of-type(#{$i}):checked ~ .carousel__container .carousel__item:nth-of-type(#{$i}) {
         @extend %carousel-image-checked;
       }
     }
 
     @for $i from 1 through ($carousel-number) {
-      &:nth-of-type(#{$i}):checked ~ .carousel-nav .nav__item:nth-of-type(#{$i}) {
+      &:nth-of-type(#{$i}):checked ~ .carousel__nav .nav__item:nth-of-type(#{$i}) {
         @extend %carousel-nav-checked;
       }
     }
