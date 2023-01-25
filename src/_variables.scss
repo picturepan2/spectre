@@ -4,6 +4,8 @@ $version: "0.5.9";
 // Core features
 $rtl: false !default;
 
+$font-smoothing: false !default;
+
 // Core colors
 $primary-color: #5755d9 !default;
 $primary-color-dark: darken($primary-color, 3%) !default;
@@ -93,11 +95,25 @@ $control-padding-y-sm: ($control-size-sm - $line-height) / 2 - $border-width !de
 $control-padding-y-lg: ($control-size-lg - $line-height) / 2 - $border-width !default;
 $control-icon-size: .8rem !default;
 
+
+
+$columns: 12;
+$breakpoints: (
+        xs:480px,
+        sm:600px,
+        md:840px,
+        lg: 960px,
+        xl: 1290px,
+        xxl: 1440px, // was 2x before
+) !default;
+
+
 $control-width-xs: 180px !default;
 $control-width-sm: 320px !default;
 $control-width-md: 640px !default;
 $control-width-lg: 960px !default;
 $control-width-xl: 1280px !default;
+
 
 // Responsive breakpoints
 $size-xs: 480px !default;

@@ -14,13 +14,13 @@ block docs-content
       | Bars are custom components for displaying HTML5 #{'<progress>'}, #{'<meter>'} and input range elements.
 
     .docs-demo.columns
-      .column.col-8.col-xs-12
+      .column.col--8.col--xs-12
         .bar.bar--sm
           .bar__item.tooltip(data-tooltip="25%" role="progressbar" style="width:25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100")
-      .column.col-8.col-xs-12
+      .column.col--8.col--xs-12
         .bar
           .bar__item.tooltip(data-tooltip="50%" role="progressbar" style="width:50%;")
-      .column.col-8.col-xs-12
+      .column.col--8.col--xs-12
         .bar
           .bar__item.tooltip(data-tooltip="25%" role="progressbar" style="width:25%;") 25%
           .bar__item.tooltip(data-tooltip="15%" role="progressbar" style="width:15%;background:#817fe3;") 15%
@@ -53,11 +53,11 @@ block docs-content
     +docs-subheading('bars-slider', 'Slider bars')
 
     .docs-demo.columns
-      .column.col-8.col-xs-12
+      .column.col--8.col--xs-12
         .bar.bar-slider
           .bar__item(role="progressbar" style="width:50%;")
             button.bar-slider__btn.btn.tooltip(data-tooltip="50%" role="slider")
-      .column.col-8.col-xs-12
+      .column.col--8.col--xs-12
         .bar.bar-slider
           .bar__item(role="progressbar" style="width:15%;")
             button.bar-slider__btn.btn.tooltip(data-tooltip="25%" role="slider")

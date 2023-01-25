@@ -16,7 +16,7 @@ block docs-content
     +docs-subheading('forms-input', 'Form input')
 
     .docs-demo.columns
-      .column.col-6.col-xs-12
+      .column.col--6.col--xs-12
         .form-group
           label.form-label(for="input-example-1") Name
           input#input-example-1.form-input(type="text" placeholder="Name")
@@ -36,7 +36,7 @@ block docs-content
     +docs-subheading('forms-textarea', 'Form textarea')
 
     .docs-demo.columns
-      .column.col-6.col-xs-12
+      .column.col--6.col--xs-12
         .form-group
           label.form-label(for="input-example-3") Message
           textarea#input-example-3.form-input(placeholder="Textarea" rows="3")
@@ -53,7 +53,7 @@ block docs-content
     +docs-subheading('forms-select', 'Form select')
 
     .docs-demo.columns
-      .column.col-6.col-xs-12
+      .column.col--6.col--xs-12
         .form-group
           select.form-select
             option Choose an option
@@ -83,7 +83,7 @@ block docs-content
     +docs-subheading('forms-radio', 'Form radio')
 
     .docs-demo.columns
-      .column.col-6.col-xs-12
+      .column.col--6.col--xs-12
         form
           .form-group
             label.form-label Gender
@@ -115,7 +115,7 @@ block docs-content
     +docs-subheading('forms-switch', 'Form switch')
 
     .docs-demo.columns
-      .column.col-6.col-xs-12
+      .column.col--6.col--xs-12
         .form-group
           label.form-switch
             input(type="checkbox")
@@ -141,7 +141,7 @@ block docs-content
     +docs-subheading('forms-checkbox', 'Form checkbox')
 
     .docs-demo.columns
-      .column.col-6.col-xs-12
+      .column.col--6.col--xs-12
         .form-group
           label.form-checkbox
             input(type="checkbox")
@@ -181,7 +181,7 @@ block docs-content
     +docs-subheading('forms-inline', 'Inline forms')
 
     .docs-demo.columns
-      .column.col-6.col-xs-12
+      .column.col--6.col--xs-12
         form
           .form-group
             label.form-radio.form--inline
@@ -233,22 +233,22 @@ block docs-content
       | And add the #[code col-<1-12>] and #[code col-xs/sm/lg/xl-<1-12>] class to the child elements for responsive form row layout.
 
     .docs-demo.columns
-      .column.col-9.col-sm-12
+      .column.col--9.col--sm-12
         form.form--horizontal(action="#forms")
           .form-group
-            .col-3.col-sm-12
+            .col--3.col--sm-12
               label.form-label(for="input-example-4") Name
-            .col-9.col-sm-12
+            .col--9.col--sm-12
               input#input-example-4.form-input(type="text" placeholder="Name")
           .form-group
-            .col-3.col-sm-12
+            .col--3.col--sm-12
               label.form-label(for="input-example-5") Email
-            .col-9.col-sm-12
+            .col--9.col--sm-12
               input#input-example-5.form-input(type="email" placeholder="Email")
           .form-group
-            .col-3.col-sm-12
+            .col--3.col--sm-12
               label.form-label Gender
-            .col-9.col-sm-12
+            .col--9.col--sm-12
               label.form-radio
                 input(type="radio" name="gender")
                 i.form-icon
@@ -258,26 +258,26 @@ block docs-content
                 i.form-icon
                 |  Female
           .form-group
-            .col-3.col-sm-12
+            .col--3.col--sm-12
               label.form-label Source
-            .col-9.col-sm-12
+            .col--9.col--sm-12
               select.form-select(multiple="")
                 option Slack
                 option Skype
                 option Hipchat
           .form-group
-            .col-9.col-sm-12.col-ml-auto
+            .col--9.col--sm-12.col--ml-auto
               label.form-switch
                 input(type="checkbox")
                 i.form-icon
                 |  Send me emails with news and tips
           .form-group
-            .col-3.col-sm-12
+            .col--3.col--sm-12
               label.form-label(for="input-example-6") Message
-            .col-9.col-sm-12
+            .col--9.col--sm-12
               textarea#input-example-6.form-input(placeholder="Textarea" rows="3")
           .form-group
-            .col-9.col-sm-12.col-ml-auto
+            .col--9.col--sm-12.col--ml-auto
               label.form-checkbox
                 input(type="checkbox")
                 i.form-icon
@@ -288,10 +288,10 @@ block docs-content
         :highlight(lang="html")
           <form class="form--horizontal">
             <div class="form-group">
-              <div class="col-3 col-sm-12">
+              <div class="col--3 col--sm-12">
                 <label class="form-label" for="input-example-1">Name</label>
               </div>
-              <div class="col-9 col-sm-12">
+              <div class="col--9 col--sm-12">
                 <input class="form-input" type="text" id="input-example-1" placeholder="Name">
               </div>
             </div>
@@ -304,21 +304,21 @@ block docs-content
       | For smaller or larger input and select controls, you could add the #[code form-input--sm]/#[code form-input--lg], #[code form-select--sm]/#[code form-select--lg] and #[code form-label--sm]/#[code form-label--lg] classes to the elements.
 
     .docs-demo.columns
-      .column.col-4.col-xs-12
+      .column.col--4.col--xs-12
         label.form-label.form-label--sm Label
-      .column.col-4.col-xs-12
+      .column.col--4.col--xs-12
         input.form-input.form-input--sm(type="text" placeholder="Name")
-      .column.col-4.col-xs-12
+      .column.col--4.col--xs-12
         select.form-select.form-select--sm
           option Choose an option
           option Slack
           option Skype
           option Hipchat
-      .column.col-4.col-xs-12
+      .column.col--4.col--xs-12
         label.form-label.form-label--lg Label
-      .column.col-4.col-xs-12
+      .column.col--4.col--xs-12
         input.form-input.form-input--lg(type="text" placeholder="Name")
-      .column.col-4.col-xs-12
+      .column.col--4.col--xs-12
         select.form-select.form-select--lg
           option Choose an option
           option Slack
@@ -339,27 +339,27 @@ block docs-content
       | And add the icon with #[code form-icon] class next to the #{'<input>'}.
 
     .docs-demo.columns
-      .column.col-4.col-xs-12
+      .column.col--4.col--xs-12
         .has-icon-left
           input.form-input.form-input--sm(type="text" placeholder="Name")
           i.form-icon.icon.icon-arrow-right
-      .column.col-4.col-xs-12
+      .column.col--4.col--xs-12
         .has-icon-left.tooltip(data-tooltip="Lorem ipsum dolor sit amet")
           input.form-input(type="text" placeholder="Name")
           i.form-icon.icon.icon-arrow-right
-      .column.col-4.col-xs-12
+      .column.col--4.col--xs-12
         .has-icon-left
           input.form-input.form-input--lg(type="text" placeholder="Name")
           i.form-icon.icon.icon-arrow-right
-      .column.col-4.col-xs-12
+      .column.col--4.col--xs-12
         .has-icon-right
           input.form-input.form-input--sm(type="text" placeholder="Name")
           i.form-icon.icon.icon-check
-      .column.col-4.col-xs-12
+      .column.col--4.col--xs-12
         .has-icon-right
           input.form-input(type="text" placeholder="Name")
           i.form-icon.icon.icon-check
-      .column.col-4.col-xs-12
+      .column.col--4.col--xs-12
         .has-icon-right
           input.form-input.form-input--lg(type="text" placeholder="Name")
           i.form-icon.icon.icon-check
@@ -377,15 +377,15 @@ block docs-content
       | You can use the #[code loading] class for loading or posting state.
 
     .docs-demo.columns
-      .column.col-4.col-xs-12
+      .column.col--4.col--xs-12
         .has-icon-right
           input.form-input.form-input--sm(type="text" placeholder="Name")
           i.form-icon.loading
-      .column.col-4.col-xs-12
+      .column.col--4.col--xs-12
         .has-icon-right
           input.form-input(type="text" placeholder="Name")
           i.form-icon.loading
-      .column.col-4.col-xs-12
+      .column.col--4.col--xs-12
         .has-icon-right
           input.form-input.form-input--lg(type="text" placeholder="Name")
           i.form-icon.loading
@@ -402,101 +402,101 @@ block docs-content
     +docs-subheading('forms-input', 'Input types')
 
     .docs-demo.columns
-      .column.col-9.col-sm-12
+      .column.col--9.col--sm-12
         form.form--horizontal(action="#forms")
           .form-group
-            .col-3
+            .col--3
               label.form-label(for="input-example-8") Email
-            .col-9
+            .col--9
               input#input-example-8.form-input(type="email" placeholder="Email" value="spectre@example.com" pattern="[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$")
           .form-group
-            .col-3
+            .col--3
               label.form-label(for="input-example-9") URL
-            .col-9
+            .col--9
               input#input-example-9.form-input(type="url" placeholder="URL" value="https://github.com/picturepan2/spectre")
           .form-group
-            .col-3
+            .col--3
               label.form-label(for="input-example-10") Search
-            .col-9
+            .col--9
               input#input-example-10.form-input(type="search" placeholder="Search")
           .form-group
-            .col-3
+            .col--3
               label.form-label(for="input-example-11") Tel
-            .col-9
+            .col--9
               input#input-example-11.form-input(type="tel" placeholder="Tel" value="1-(888)-888-8888")
           .form-group
-            .col-3
+            .col--3
               label.form-label(for="input-example-12") Password
-            .col-9
+            .col--9
               input#input-example-12.form-input(type="password" placeholder="Password" value="123456789")
           .form-group
-            .col-3
+            .col--3
               label.form-label(for="input-example-13") Number
-            .col-9
+            .col--9
               input#input-example-13.form-input(type="number" placeholder="00" value="66")
           .form-group
-            .col-3
+            .col--3
               label.form-label(for="input-example-14") Date
-            .col-9
+            .col--9
               input#input-example-14.form-input(type="date" value="2016-12-31")
           .form-group
-            .col-3
+            .col--3
               label.form-label(for="input-example-15") Color
-            .col-9
+            .col--9
               input#input-example-15.form-input(type="color" value="#5755d9")
           .form-group
-            .col-3
+            .col--3
               label.form-label(for="input-example-16") File
-            .col-9
+            .col--9
               input#input-example-16.form-input(type="file")
 
     +docs-subheading('forms-input-groups', 'Input groups')
 
     .docs-demo.columns
-      .column.col-6.col-xs-12
+      .column.col--6.col--xs-12
         .input-group
           input.form-input.form-input--sm(type="text" placeholder="username")
           select.form-select.form-select--sm
             option Slack
             option Skype
             option Hipchat
-      .column.col-6.col-xs-12
+      .column.col--6.col--xs-12
         .input-group
           span.input-group__addon.input-group__addon--sm slack.com/
           input.form-input.form-input--sm(type="text" placeholder="site name")
           button.btn.btn--primary.input-group__btn.btn--sm Submit
-      .column.col-6.col-xs-12
+      .column.col--6.col--xs-12
         .input-group
           input.form-input(type="text" placeholder="username")
           select.form-select
             option Slack
             option Skype
             option Hipchat
-      .column.col-6.col-xs-12
+      .column.col--6.col--xs-12
         .input-group
           span.input-group__addon slack.com/
           input.form-input(type="text" placeholder="site name")
           button.btn.btn--primary.input-group__btn Submit
-      .column.col-6.col-xs-12
+      .column.col--6.col--xs-12
         .input-group
           label.form-switch
             input(type="checkbox")
             i.form-icon
           input.form-input(type="text" placeholder="name")
-      .column.col-6.col-xs-12
+      .column.col--6.col--xs-12
         .input-group
           label.form-checkbox
             input(type="checkbox")
             i.form-icon
           input.form-input(type="text" placeholder="name")
-      .column.col-6.col-xs-12
+      .column.col--6.col--xs-12
         .input-group
           input.form-input.form-input--lg(type="text" placeholder="username")
           select.form-select.form-select--lg
             option Slack
             option Skype
             option Hipchat
-      .column.col-6.col-xs-12
+      .column.col--6.col--xs-12
         .input-group
           span.input-group__addon.input-group__addon--lg slack.com/
           input.form-input.form-input--lg(type="text" placeholder="site name")
@@ -531,7 +531,7 @@ block docs-content
     +docs-subheading('forms-validation', 'Form validation styles')
 
     .docs-demo.columns
-      .column.col-9.col-sm-12
+      .column.col--9.col--sm-12
         fieldset
           legend Input
           .form-group
@@ -612,7 +612,7 @@ block docs-content
           </form>
 
     .docs-demo.columns
-      .column.col-9.col-sm-12
+      .column.col--9.col--sm-12
         .form-group
           label.form-label(for="input-example-21") Email
           input#input-example-21.form-input(type="text" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,14}$")
@@ -638,7 +638,7 @@ block docs-content
       | Add the #[code disabled] attribute to the element or #{'<fieldset>'} for a disabled form components style.
 
     .docs-demo.columns
-      .column.col-6.col-xs-12
+      .column.col--6.col--xs-12
         form(action="#forms")
           fieldset(disabled="")
             .form-group

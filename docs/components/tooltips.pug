@@ -13,13 +13,13 @@ block docs-content
     p Tooltips provide context information labels that appear on hover and focus. Tooltips component is built entirely in CSS.
 
     .docs-demo.columns.text-center
-      .column.col-xs-12
+      .column.col--xs-12
         button.btn.btn--primary.tooltip(data-tooltip="Top Tooltip Text") top tooltip
-      .column.col-xs-12
+      .column.col--xs-12
         button.btn.btn--primary.tooltip.tooltip--right(data-tooltip="Right Tooltip Text") right tooltip
-      .column.col-xs-12
+      .column.col--xs-12
         button.btn.btn--primary.tooltip.tooltip--bottom(data-tooltip="Bottom Tooltip Text") bottom tooltip
-      .column.col-xs-12
+      .column.col--xs-12
         button.btn.btn--primary.tooltip.tooltip--left(data-tooltip="Left Tooltip Text\nMultiline") left tooltip
 
     p
@@ -37,7 +37,7 @@ block docs-content
     +docs-subheading('tooltips-multiline', 'Multiline tooltips')
 
     .docs-demo.columns
-      .column.col-12
+      .column.col--12
         button.btn.btn--primary.tooltip(data-tooltip="First Line Tooltip Text \n Second Line Tooltip Text \n Third Line Tooltip Text") multiline tooltip
 
     p

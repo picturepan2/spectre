@@ -19,6 +19,11 @@ body {
   font-size: $font-size;
   overflow-x: hidden;
   text-rendering: optimizeLegibility;
+
+  @if ($font-smoothing) {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 }
 
 a {
