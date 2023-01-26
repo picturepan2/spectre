@@ -1,5 +1,5 @@
 // Off canvas menus
-$off-canvas-breakpoint: $size-lg !default;
+$off-canvas-breakpoint: map-get($breakpoints, lg) !default;
 
 .off-canvas {
   display: flex;
@@ -14,6 +14,7 @@ $off-canvas-breakpoint: $size-lg !default;
     top: $layout-spacing;
     transition: none;
     z-index: $zindex-0;
+
     @if $rtl == true {
       right: $layout-spacing;
     } @else {
@@ -80,7 +81,7 @@ $off-canvas-breakpoint: $size-lg !default;
       .off-canvas-toggle {
         display: none;
       }
-  
+
       .off-canvas-sidebar {
         flex: 0 0 auto;
         position: relative;

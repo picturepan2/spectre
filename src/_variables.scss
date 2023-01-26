@@ -1,9 +1,20 @@
 // Core variables
 $version: "0.5.9";
 
+/**
+Pastel: #F5A623, #F8E71C, #8B572A, #7ED321, #417505
+
+Pale Blue: #82CAFA, #ADD8E6, #87CEEB, #B0E0E6, #00BFFF
+
+Light Green: #90EE90, #98FB98, #8FBC8F, #9ACD32, #6E8B3D
+
+Soft Pink: #FFC0CB, #FFB6C1, #FF69B4, #DB7093, #C71585
+
+Lavender: #E6E6FA, #D8BFD8, #DDA0DD, #EE82EE, #DA70D6
+
+ */
 // Core features
 $rtl: false !default;
-
 $font-smoothing: false !default;
 
 // Core colors
@@ -21,9 +32,6 @@ $gray-color: lighten($dark-color, 55%) !default;
 $gray-color-dark: darken($gray-color, 30%) !default;
 $gray-color-light: lighten($gray-color, 20%) !default;
 
-$border-color: lighten($dark-color, 65%) !default;
-$border-color-dark: darken($border-color, 10%) !default;
-$border-color-light: lighten($border-color, 8%) !default;
 $bg-color: lighten($dark-color, 75%) !default;
 $bg-color-dark: darken($bg-color, 3%) !default;
 $bg-color-light: $light-color !default;
@@ -72,32 +80,56 @@ $unit-16: 4rem !default; // 64px
 // Font sizes
 $html-font-size: 16px !default;
 $html-line-height: 1.5 !default;
-$font-size: 1rem !default; // 16 px
-$font-size-sm: .875rem !default; // 14 px
-$font-size-lg: 1.125rem !default;
-$line-height: 1.2rem !default;
+$font-size: 1rem !default; // 16px
+$font-size-sm: .875rem !default; // 14px
+$font-size-xs: .75rem !default; // 12px
+$font-size-lg: 1.125rem !default; // 18px
+$line-height: 1.5rem !default; // 24px?
+
+// Heading sizes
+$font-size-h1: 2.5rem; // 40px
+$font-size-h2: 2rem;
+$font-size-h3: 1.75rem;
+$font-size-h4: 1.5rem;
+$font-size-h5: 1.25rem;
+$font-size-h6: 1rem;
 
 // Sizes
 $layout-spacing: $unit-2 !default;
 $layout-spacing-sm: $unit-1 !default;
 $layout-spacing-lg: $unit-4 !default;
+$layout-spacing-xl: $unit-6 !default;
+
+// Borders
 $border-radius: $unit-h !default;
 $border-width: $unit-o !default;
 $border-width-lg: $unit-h !default;
+$border-color: lighten($dark-color, 65%) !default;
+$border-color-dark: darken($border-color, 10%) !default;
+$border-color-light: lighten($border-color, 8%) !default;
+
+// Controls
 $control-size: $unit-9 !default;
 $control-size-sm: $unit-7 !default;
 $control-size-lg: $unit-10 !default;
 $control-padding-x: $unit-2 !default;
 $control-padding-x-sm: $unit-2 * .75 !default;
 $control-padding-x-lg: $unit-2 * 1.5 !default;
-$control-padding-y: ($control-size - $line-height) / 2 - $border-width !default;
-$control-padding-y-sm: ($control-size-sm - $line-height) / 2 - $border-width !default;
-$control-padding-y-lg: ($control-size-lg - $line-height) / 2 - $border-width !default;
+$control-padding-y: calc(($control-size - $line-height) / 2 - $border-width) !default;
+$control-padding-y-sm: calc(($control-size-sm - $line-height) / 2 - $border-width) !default;
+$control-padding-y-lg: calc(($control-size-lg - $line-height) / 2 - $border-width) !default;
 $control-icon-size: .8rem !default;
 
 
+$control-width-xs: 180px !default;
+$control-width-sm: 320px !default;
+$control-width-md: 640px !default;
+$control-width-lg: 960px !default;
+$control-width-xl: 1280px !default;
 
+// Layout
 $columns: 12;
+
 $breakpoints: (
         xs:480px,
         sm:600px,
@@ -107,23 +139,7 @@ $breakpoints: (
         xxl: 1440px, // was 2x before
 ) !default;
 
-
-$control-width-xs: 180px !default;
-$control-width-sm: 320px !default;
-$control-width-md: 640px !default;
-$control-width-lg: 960px !default;
-$control-width-xl: 1280px !default;
-
-
-// Responsive breakpoints
-$size-xs: 480px !default;
-$size-sm: 600px !default;
-$size-md: 840px !default;
-$size-lg: 960px !default;
-$size-xl: 1280px !default;
-$size-2x: 1440px !default;
-
-$responsive-breakpoint: $size-xs !default;
+$responsive-breakpoint: map-get($breakpoints, xs) !default;
 
 // Z-index
 $zindex-0: 1 !default;
@@ -131,3 +147,5 @@ $zindex-1: 100 !default;
 $zindex-2: 200 !default;
 $zindex-3: 300 !default;
 $zindex-4: 400 !default;
+$zindex-5: 500 !default;
+$zindex-6: 600 !default;

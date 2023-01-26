@@ -19,16 +19,16 @@ legend {
 .form-label {
   display: block;
   line-height: $line-height;
-  padding: $control-padding-y + $border-width 0;
+  padding: calc($control-padding-y + $border-width) 0;
 
   &.form-label--sm {
     font-size: $font-size-sm;
-    padding: $control-padding-y-sm + $border-width 0;
+    padding: calc($control-padding-y-sm + $border-width) 0;
   }
 
   &.form-label--lg {
     font-size: $font-size-lg;
-    padding: $control-padding-y-lg + $border-width 0;
+    padding: calc($control-padding-y-lg + $border-width) 0;
   }
 }
 
@@ -135,13 +135,13 @@ textarea.form-input {
   &.form-select--sm {
     font-size: $font-size-sm;
     height: $control-size-sm;
-    padding: $control-padding-y-sm ($control-icon-size + $control-padding-x-sm) $control-padding-y-sm $control-padding-x-sm;
+    padding: $control-padding-y-sm calc($control-icon-size + $control-padding-x-sm) $control-padding-y-sm $control-padding-x-sm;
   }
 
   &.form-select--lg {
     font-size: $font-size-lg;
     height: $control-size-lg;
-    padding: $control-padding-y-lg ($control-icon-size + $control-padding-x-lg) $control-padding-y-lg $control-padding-x-lg;
+    padding: $control-padding-y-lg calc($control-icon-size + $control-padding-x-lg) $control-padding-y-lg $control-padding-x-lg;
   }
 
   // Multiple select
@@ -156,7 +156,7 @@ textarea.form-input {
   }
   &:not([multiple]):not([size]) {
     background: $bg-color-light url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%204%205'%3E%3Cpath%20fill='%23667189'%20d='M2%200L0%202h4zm0%205L0%203h4z'/%3E%3C/svg%3E") no-repeat right .35rem center / .4rem .5rem;
-    padding-right: $control-icon-size + $control-padding-x;
+    padding-right:  calc($control-icon-size + $control-padding-x);
   }
 }
 
@@ -202,9 +202,9 @@ textarea.form-input {
 .form-switch {
   display: block;
   line-height: $line-height;
-  margin: ($control-size - $control-size-sm) / 2 0;
+  margin: calc(($control-size - $control-size-sm) / 2) 0;
   min-height: $control-size-sm;
-  padding: (($control-size-sm - $line-height) / 2) $control-padding-x (($control-size-sm - $line-height) / 2) ($control-icon-size + $control-padding-x);
+  padding: calc(($control-size-sm - $line-height) / 2) $control-padding-x calc(($control-size-sm - $line-height) / 2) calc($control-icon-size + $control-padding-x);
   position: relative;
 
   input {
@@ -240,7 +240,7 @@ textarea.form-input {
 
   &.form-input--lg {
     font-size: $font-size-lg;
-    margin: ($control-size-lg - $control-size-sm) / 2 0;
+    margin: calc($control-size-lg - $control-size-sm) / 2 0;
   }
 }
 
@@ -250,7 +250,7 @@ textarea.form-input {
     background: $bg-color-light;
     height: $control-icon-size;
     left: 0;
-    top: ($control-size-sm - $control-icon-size) / 2;
+    top: calc($control-size-sm - $control-icon-size) / 2;
     width: $control-icon-size;
   }
 
@@ -324,15 +324,15 @@ textarea.form-input {
 
 // Form element: Switch
 .form-switch {
-  padding-left: ($unit-8 + $control-padding-x);
+  padding-left: calc($unit-8 + $control-padding-x);
 
   .form-icon {
     background: $gray-color;
     background-clip: padding-box;
     border-radius: $unit-2 + $border-width;
-    height: $unit-4 + $border-width * 2;
+    height: calc($unit-4 + $border-width * 2);
     left: 0;
-    top: ($control-size-sm - $unit-4) / 2 - $border-width;
+    top: calc(($control-size-sm - $unit-4) / 2 - $border-width);
     width: $unit-8;
     &::before {
       background: $bg-color-light;

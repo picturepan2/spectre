@@ -4,10 +4,11 @@
 @mixin viewer__slider-size($image-number: 36) {
   @for $s from 1 through ($image-number) {
     .viewer__slider[max='#{$image-number}'][value='#{$s}'] + .view__image {
-      background-position-y: percentage((($s)-1) * 1/(($image-number)-1));
+      background-position-y: percentage(calc((($s) - 1) * 1 / (($image-number) - 1)));
     }
   }
 }
+
 
 .viewer-360 {
   align-items: center;

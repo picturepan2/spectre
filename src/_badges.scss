@@ -20,9 +20,9 @@
   &[data-badge] {
     &::after {
       font-size: $font-size-sm;
-      height: .9rem;
+      height:1.2em;
       line-height: 1;
-      min-width: .9rem;
+      min-width: 1.2em;
       padding: .1rem .2rem;
       text-align: center;
       white-space: nowrap;
@@ -32,10 +32,10 @@
   &:not([data-badge]),
   &[data-badge=""] {
     &::after {
-      height: 6px;
-      min-width: 6px;
+      height:.375rem;
+      min-width: .375rem;
       padding: 0;
-      width: 6px;
+      width: .375rem;
     }
   }
 
