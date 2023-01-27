@@ -33,7 +33,7 @@
 
 // Remove default details marker in Webkit
 summary.accordion__header {
-  &::-webkit-details-marker {
+  &::marker {
     display: none;
   }
 }
