@@ -114,7 +114,7 @@ textarea.form-input {
   appearance: none;
   border: $border-width solid $border-color-dark;
   border-radius: $border-radius;
-  color: inherit;
+  color: inherit; // color: $body-font-color;  <-- fix dark theme color https://github.com/picturepan2/spectre/pull/660
   font-size: $font-size;
   height: $control-size;
   line-height: $line-height;
